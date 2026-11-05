@@ -78,4 +78,4 @@ Les de `models/` són les de Camins (7 passes, com funciona, Esperança Activa, 
 
 ## Ressenyes de Google
 
-Una secció `{"type": "reviews"}` posa les ressenyes de `reviews` a `data/site.json`. Ara són les mateixes que surten a WordPress (copiades el 5 de novembre de 2026) i no s'actualitzen soles. Si a `"trustindex"` hi poses el codi del giny de Trustindex (el que va darrere de `loader.js?` a la web de WordPress), surten les de Google al dia en lloc de les copiades.
+Una secció `{"type": "reviews"}` posa les ressenyes de `reviews` a `data/site.json`. Ara són les mateixes que surten a WordPress (copiades el 5 de novembre de 2026) i no s'actualitzen soles. A WordPress surten amb el connector de Trustindex per a WordPress, que no serveix fora de WordPress. Per tenir-les al dia aquí cal un giny de Trustindex fet a trustindex.io: dona una línia `<script … loader.js?codi>`, i si poses aquest codi a `"trustindex"`, surten les de Google al dia en lloc de les copiades.
