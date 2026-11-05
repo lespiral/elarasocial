@@ -1,0 +1,223 @@
+{
+  "title": "Quan el món et pesa, deixa't acompanyar.",
+  "kicker": "Persones",
+  "lead": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
+  "description": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "kicker": "no ho sostinguis sol/a",
+      "title": "Per més que t'hi esforcis, el dia a dia et passa per sobre?",
+      "paragraphs": [
+        "A Elara Social, transformem aquest estancament en força compartida.",
+        "Sostenir la vida és al centre de la nostra activitat. Per això no busquem solucions ràpides, sinó processos que es puguin sostenir en el temps.",
+        "A Elara Social treballem amb metodologies estructurades i pràctiques vivencials que t’ajuden a passar de “aguantar” a recuperar direcció, vincle i capacitat d’acció.",
+        "Ho fem cuidant alhora el benestar personal i la dimensió comunitària: el que et passa a tu també té a veure amb el món que compartim."
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Si t'hi reconeixes, descobreix les nostres propostes",
+      "items": [
+        {
+          "icon": "cloud-rain",
+          "title": "Sents bloqueig o desorientació?",
+          "text": "La situació global o personal et pesa, i la preocupació es queda atrapada al cap sense saber cap a on tirar.",
+          "href": "#propostes",
+          "button": "Opcions per començar"
+        },
+        {
+          "icon": "sun",
+          "title": "Notes cansament profund?",
+          "text": "Vas amb el pilot automàtic, complint amb tot però connectant amb poc, i necessites un respir real.",
+          "href": "#propostes",
+          "button": "Opcions per començar"
+        },
+        {
+          "icon": "users-three",
+          "title": "Busques gent amb qui parlar de veritat?",
+          "text": "Si et pesa la buidor i carregar-ho tot en soledat... Aquí toquem de peus a terra. Vine a trobar sentit amb gent com tu.",
+          "href": "#propostes",
+          "button": "Opcions per començar"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "title": "De la paràlisi al pas concret.",
+      "before": [
+        "“Potser el món semblarà que continua igual, però tu el veuràs amb uns altres ulls… i en companyia.”",
+        "A Elara Social t’oferim un camí provat per passar de l’aïllament i el desbordament a la claredat i l’acció amb sentit, coherència i dignitat."
+      ],
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Estaràs acompanyat, acompanyada",
+          "text": "Creem un marc de seguretat on poder compartir el malestar i dissoldre'l en comunitat."
+        },
+        {
+          "icon": "plant",
+          "title": "Esperança Activa",
+          "text": "Acollirem el malestar i el dolor, convertint el que sents en motor cap al canvi, fent passos petits, realistes i revisables."
+        },
+        {
+          "icon": "footprints",
+          "title": "Amb ritmes humans",
+          "text": "Prioritzem el respecte i la cura de la vida per davant de la productivitat."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "title": "Què fem exactament?",
+      "before": [
+        "T’oferim un itinerari continu amb diferents portes d’entrada, perquè puguis participar segons la teva energia disponible."
+      ],
+      "items": [
+        {
+          "title": "Per començar",
+          "subtitle": "Baixa intensitat",
+          "text": "Mini-rituals i recursos autoguiats per quan necessites parar, respirar i orientar-te sense exposar-te."
+        },
+        {
+          "title": "Per aprofundir",
+          "subtitle": "Estructura",
+          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."
+        },
+        {
+          "title": "Per sostenir",
+          "subtitle": "Comunitat",
+          "text": "Trobades mensuals i mentories per teixir xarxa, compartir inquietuds i generar iniciatives transformadores."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "kicker": "que ens mou?",
+      "title": "En un món que ens vol ràpides i eficients, la nostra aposta és la humanitat.",
+      "before": [
+        "Prioritzem la teva cura i la de l’entorn per sobre de tot."
+      ],
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "title": "Seguretat Relacional Radical",
+          "paragraphs": [
+            "Aquí pots treure't la màscara.",
+            "Creem espais on no cal \"quedar bé\", on pots parlar en primera persona i on tens permís per no saber-ho tot."
+          ]
+        },
+        {
+          "icon": "tree",
+          "title": "Integració i arrelament",
+          "paragraphs": [
+            "Tot està connectat: la teva ment, el teu cos i el lloc on vius.",
+            "Entenem que estar bé amb tu mateix passa, inevitablement, per reconnectar amb el món."
+          ]
+        },
+        {
+          "icon": "sneaker",
+          "title": "Acció conscient",
+          "paragraphs": [
+            "T'acompanyem a moure't connectant amb els altres.",
+            "Caminem junts cap a un futur millor, amb passos realistes i assolibles."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "propostes",
+      "align": "left",
+      "title": "T’acompanyem al nivell i ritme que triïs",
+      "before": [
+        "Adaptem la nostra metodologia a tres nivells d’impacte: espais d’acompanyament individual, recursos online per a fer al teu ritme, i tallers i grups de continuïtat."
+      ],
+      "items": [
+        {
+          "title": "7 passes cap a l’Esperança Activa",
+          "badge": "Mini-curs gratuït online",
+          "text": "Un recorregut breu i profund per iniciar El Treball que Reconnecta: tornar al que et sosté, donar espai al que preocupa, obrir la mirada i aterrar un pas possible.",
+          "href": "7-passes-cap-a-lesperanca-activa"
+        },
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "subtitle": "7 passes per reconnectar, amb tu i amb el teu entorn",
+          "paragraphs": [
+            "Una proposta que combina un recorregut digital de Les “7 passes cap a l’Esperança Activa” amb rutes a peu pel teu entorn per cuidar el benestar personal i comunitari, enfortir els vincles i reconnectar amb allò que ens sosté.",
+            "Una manera d’integrar petits passos d’esperança activa en la vida quotidiana, al teu ritme i des del lloc on vius."
+          ],
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Vés a Camins d'Esperança [Activa]"
+        },
+        {
+          "title": "Acompanyament individual",
+          "paragraphs": [
+            "T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.",
+            "Un refugi on aprendre a sostenir les emocions difícils del dia a dia i traçar un full de ruta per transformar la incertesa en acció amb sentit."
+          ],
+          "href": "acompanyament-individual"
+        },
+        {
+          "title": "L'Espiral de l'Esperança Activa",
+          "paragraphs": [
+            "Un taller vivencial i segur per aturar-nos i donar sortida a tot allò que ens angoixa.",
+            "Des de l’estrès quotidià fins a la incertesa pel futur global.",
+            "Venim a reconnectar amb la vida, a metabolitzar el malestar en comunitat i a traçar passos concrets d’esperança activa."
+          ],
+          "href": "lespiral-de-lesperanca-activa"
+        },
+        {
+          "title": "El Treball que Reconnecta",
+          "text": "Un cicle per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
+          "href": "el-treball-que-reconnecta"
+        },
+        {
+          "title": "Un pont d'esperança",
+          "paragraphs": [
+            "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+            "Durant dos dies, teixirem un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com l’esgotament que ens generen els grans reptes globals."
+          ],
+          "href": "un-pont-desperanca-2"
+        },
+        {
+          "title": "El Treball que Reconnecta (Grup regular)",
+          "text": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+          "href": "grup-regular-de-el-treball-que-reconnecta"
+        },
+        {
+          "title": "Cercles de paraula",
+          "subtitle": "(per sostenir organitzacions i col·lectius)",
+          "text": "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) per aprendre l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
+          "href": "cercles-per-sostenir-organitzacions-i-col·lectius"
+        },
+        {
+          "title": "Burnout",
+          "subtitle": "Reconnectar amb la força sense cremar-se",
+          "text": "Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
+          "href": "burnout"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "kicker": "et sumes a fer camí en companyia?",
+      "paragraphs": [
+        "Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix.",
+        "Adaptem la nostra metodologia a la teva realitat."
+      ],
+      "buttons": [
+        {
+          "text": "Parlem-ne",
+          "href": "contacte"
+        }
+      ]
+    }
+  ]
+}

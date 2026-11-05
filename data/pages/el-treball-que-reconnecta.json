@@ -1,0 +1,27 @@
+{
+  "title": "El Treball que Reconnecta",
+  "kicker": "Propostes",
+  "lead": "Un cicle per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "El Treball que Reconnecta",
+          "form": "1FAIpQLSfKqEO_6g0B2jL59h_0nN983hoacescR_bPOTuv1lc7-RZyvA",
+          "height": 3000
+        }
+      ]
+    }
+  ]
+}

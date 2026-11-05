@@ -1,0 +1,27 @@
+{
+  "title": "Cercles de paraula (per a transformar conflictes)",
+  "kicker": "Propostes",
+  "lead": "Un taller pràctic per a grups i organitzacions que volen incorporar l’estructura dels Cercles de paraula com una eina operativa per abordar converses difícils amb més seguretat, equitat i eficàcia.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "Vols que adaptem el programa al teu equip?",
+          "form": "1FAIpQLSdOKlu9GadkbCzoYwZarsQZaibQH3rB2IOxS9nTx9q5CUT2cQ",
+          "height": 3300
+        }
+      ]
+    }
+  ]
+}

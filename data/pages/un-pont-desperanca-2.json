@@ -1,0 +1,27 @@
+{
+  "title": "Un pont d'Esperança",
+  "kicker": "Propostes",
+  "lead": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "Un pont d'Esperança",
+          "form": "1FAIpQLSdFLelJ0SgPVnYnrAA-Lhl6YPODi-VPG8k1umNNveKOvXtzJw",
+          "height": 3000
+        }
+      ]
+    }
+  ]
+}

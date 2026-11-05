@@ -24,7 +24,10 @@ DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
 ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
 # Tipus de secció que saben pintar les plantilles (src/templates/parts.html, macro «section»)
-SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact"}
+SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form"}
+
+# Formulari de Google inserit a la pàgina (les respostes continuen arribant al compte que el va crear)
+FORM_URL = "https://docs.google.com/forms/d/e/{}/viewform"
 
 
 def icon(name, cls=None):
@@ -60,6 +63,18 @@ def prepare_sections(sections, where):
         for k in list(s):
             if k.endswith("_html"):
                 s[k] = html(s[k])
+        # Amb "html": true, els paràgrafs i les llistes poden portar <strong>, <a>, etc.
+        if s.get("html"):
+            for k in ("paragraphs", "list", "after"):
+                s[k] = [html(p) for p in s.get(k) or []]
+            for it in s.get("items", []) if t == "cards" else []:
+                for k in ("paragraphs", "list"):
+                    it[k] = [html(p) for p in it.get(k) or []]
+        if t == "form":
+            for fm in s.get("forms", []):
+                if not re.fullmatch(r"1FAIpQL[\w-]{40,60}", fm.get("form", "")):
+                    errors.append(f"{where}: el formulari «{fm.get('label')}» ha de portar el codi del formulari publicat (comença per 1FAIpQL)")
+                fm["url"] = FORM_URL.format(fm.get("form", ""))
         if t == "faq":
             s["items"] = [(q, html(a), slugify(q)) for q, a in s.get("items", [])]
         if t == "infografia":
@@ -136,6 +151,34 @@ for p in pages:
     pending += render("page.html", p["slug"], section=p["slug"], page_title=p["title"], page_description=p.get("description") or p.get("lead"), page=p).count("[PENDENT]")
 render("404.html", "404.html", page_title="Pàgina no trobada", root=BASE, base=BASE)
 
+# Adreces antigues de la web de WordPress que ja no són una pàgina: porten a la nova.
+# A data/site.json, "redirects": {"adreça-antiga": "pagina/#seccio" o "https://..."}
+REDIRECT = """<!doctype html>
+<html lang="ca"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<title>{title}</title><link rel="canonical" href="{to}"><meta http-equiv="refresh" content="0; url={to}">
+</head><body><p>Aquesta pàgina ha canviat d'adreça: <a href="{to}">{to}</a></p></body></html>
+"""
+n_redirects = 0
+for old, to in (site.get("redirects") or {}).items():
+    old = old.strip("/")
+    if old in slugs:
+        errors.append(f"data/site.json (redirects): /{old}/ és una pàgina de la web; no pot portar a una altra")
+        continue
+    if not to.startswith("http"):
+        page = to.split("#")[0].strip("/")
+        if page and page not in slugs:
+            errors.append(f"data/site.json (redirects): /{old}/ porta a /{page}/, que no existeix")
+            continue
+        to = SITE_URL + to.lstrip("/")
+    dest = OUT / old / "index.html"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(REDIRECT.format(title=site["name"], to=to), encoding="utf-8")
+    n_redirects += 1
+if errors:
+    print("No s'ha generat la web. Cal arreglar:", *("- " + e for e in errors), sep="\n")
+    shutil.rmtree(OUT)
+    sys.exit(1)
+
 (OUT / "assets").mkdir(exist_ok=True)
 shutil.copy(SRC / "site.css", OUT / "assets" / "site.css")
 shutil.copy(SRC / "site.js", OUT / "assets" / "site.js")
@@ -152,4 +195,4 @@ else:
 if (ROOT / "CNAME").exists():
     shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
-print(f"Fet: {len(pages) + 1} pàgines, {pending} marques [PENDENT]. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")
+print(f"Fet: {len(pages) + 1} pàgines, {n_redirects} adreces antigues redirigides, {pending} marques [PENDENT]. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")

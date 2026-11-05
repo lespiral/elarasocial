@@ -1,0 +1,65 @@
+{
+  "title": "Transformem el malestar en Esperança Activa",
+  "kicker": "Què fem",
+  "lead": "Treballem a tres nivells d’impacte: individual, grupal i comunitari.",
+  "sections": [
+    {
+      "type": "text", "band": "white",
+      "title": "On posem la mirada?",
+      "paragraphs": [
+        "El desgast actual no és només individual, és estructural.",
+        "Per això la nostra resposta integra la cura personal amb la transformació col·lectiva."
+      ]
+    },
+    {
+      "type": "cards", "align": "left", "id": "metodologia",
+      "kicker": "el treball que reconnecta",
+      "title": "La nostra metodologia",
+      "before": [
+        "El nostre treball s’inspira en l’Espiral del Treball que Reconnecta: aquesta espiral ens permet integrar emoció, consciència i acció.",
+        "No busquem només comprendre el malestar. Busquem traduir-lo en compromís i transformació."
+      ],
+      "items": [
+        {"icon": "plant", "title": "Gratitud: el primer pas cap a la resiliència", "paragraphs": ["Quan el sistema accelera, a vegades el primer pas no és arreglar el cel, sinó retrobar la terra.", "Entenem la gratitud lluny de l’optimisme naïf; la treballem com un gest radical d’arrelament.", "És la pràctica de tornar a la base, al cos, i reconèixer què ens sosté per, des d’aquí, recuperar la força vital."]},
+        {"icon": "heart", "title": "Acollir el que fa mal per poder avançar", "paragraphs": ["Mirem de cara el malestar.", "Reconeixem la tristesa, la por o el trauma sense maquillar-los.", "L’Espiral ens ofereix un espai segur per fer una cosa revolucionària: reconèixer la ferida, posar-li paraules i sostenir-la en comunitat.", "Evitem que el dolor es converteixi en una identitat tancada i el transformem en consciència i amor actiu."]},
+        {"icon": "globe", "title": "Una mirada sistèmica", "paragraphs": ["Deixem de ser víctimes passives per convertir-nos en part activa de la transformació.", "Entenem que la incertesa és metabolisme i que arrelar no és rendir-se.", "Ampliem la nostra perspectiva cap a una visió comunitària i sistèmica, trobant la inspiració necessària per construir un futur que puguem sostenir juntes."]},
+        {"icon": "footprints", "title": "Anar endavant: acció des del vincle", "paragraphs": ["Passar a l’acció vol dir sortir al món amb connexió.", "El pas final és moure’s des d’una relació estable.", "La comunitat és aquesta xarxa que sosté: un suport mutu que fa possible el nostre moviment cap endavant, garantint que puguem actuar amb força sense por a perdre’ns en el buit."]}
+      ]
+    },
+    {
+      "type": "cards", "band": "white", "align": "left", "id": "per-a-qui",
+      "kicker": "per a qui?",
+      "title": "Adaptem la nostra metodologia a tres nivells d’impacte",
+      "before": ["Acompanyament individual i grupal, dinamització i consultoria per a col·lectius i organitzacions, i creació i suport a comunitats compromeses amb el benestar comú."],
+      "items": [
+        {"icon": "users-three", "title": "Per a persones i grups", "paragraphs": ["Sents el pes de la responsabilitat o la pèrdua de sentit?", "Oferim espais individuals i grupals de mentoria i psicoteràpia per arrelar, recuperar el centre i avançar des de la coherència."], "href": "persones"},
+        {"icon": "buildings", "title": "Per a equips i organitzacions", "paragraphs": ["Noteu que la inèrcia us està cremant?", "Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, transformant conflictes en oportunitats."], "href": "organitzacions"},
+        {"icon": "tree", "title": "Per a la comunitat", "paragraphs": ["Voleu teixir xarxes reals en un món fragmentat?", "Creem espais de trobada on compartir recursos, sabers i suport mutu per fer front als reptes ecosocials."], "href": "comunitats"}
+      ]
+    },
+    {
+      "type": "cards", "band": "soft", "align": "left",
+      "kicker": "que ens mou?",
+      "title": "L’eficiència real neix del benestar.",
+      "before": ["La nostra pràctica es fonamenta en una premissa clara: l’eficiència real neix del benestar. Situem la cura de les persones i del seu entorn al cor de cada decisió estratègica, perquè entenem que l’únic èxit viable és aquell que regenera, no el que esgota."],
+      "items": [
+        {"title": "Converses que transformen", "paragraphs": ["El que no es diu, s’encalla.", "Creem l’espai necessari per posar paraules al que realment importa.", "Acompanyem els equips a baixar la guàrdia i parlar amb autenticitat, l’única via per dissoldre tensions i reactivar la intel·ligència col·lectiva."]},
+        {"title": "Coherència interna, impacte extern.", "paragraphs": ["Tot està connectat: la qualitat del teu impacte al món és un reflex directe de la salut de les teves relacions internes.", "Treballem per alinear el teu propòsit amb la realitat del dia a dia, eliminant la fricció entre el que dius i el que fas."]},
+        {"title": "Esperança Activa: passar a l'acció amb sentit.", "paragraphs": ["La teoria no transforma; l’acció sí.", "Però no qualsevol acció.", "T’acompanyem a fer passos concrets i arrelats a terra ferma, fugint de la immediatesa per construir canvis reals que el teu dia a dia pugui sostenir."]}
+      ]
+    },
+    {
+      "type": "cta", "band": "white",
+      "kicker": "descobreix les nostres propostes",
+      "paragraphs": [
+        "Tant si necessites arrelament individual com si vols impulsar una transformació col·lectiva, a Elara Social trobaràs les eines i l'acompanyament per fer-ho realitat.",
+        "Adaptem la nostra metodologia a la teva realitat. Ja sigui per sostenir processos individuals o per enfortir la salut d’una organització sencera."
+      ],
+      "buttons": [
+        {"text": "Persones", "href": "persones/#propostes"},
+        {"text": "Comunitats", "href": "comunitats/#propostes"},
+        {"text": "Organitzacions", "href": "organitzacions/#propostes"}
+      ]
+    }
+  ]
+}

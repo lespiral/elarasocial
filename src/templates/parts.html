@@ -10,24 +10,33 @@
 </section>
 {%- endmacro %}
 
-{# Botó o enllaç: {"text": ..., "href": ...}. Una adreça sense http ni # és una pàgina de la web ("contacte" → /contacte/). #}
+{# Una adreça sense http, mailto, tel ni # és una pàgina de la web: "contacte" → /contacte/, "persones/#propostes" → /persones/#propostes #}
 {% macro link_href(href, root) -%}
-{%- if href.startswith('http') or href.startswith('mailto:') or href.startswith('tel:') or href.startswith('#') -%}{{ href }}{%- else -%}{{ root }}{{ href.strip('/') }}{{ '/' if href.strip('/') else '' }}{%- endif -%}
+{%- if href.startswith('http') or href.startswith('mailto:') or href.startswith('tel:') or href.startswith('#') -%}{{ href }}
+{%- else -%}{% set p = href.split('#') %}{{ root }}{{ p[0].strip('/') }}{{ '/' if p[0].strip('/') else '' }}{% if p|length > 1 %}#{{ p[1] }}{% endif %}
+{%- endif -%}
 {%- endmacro %}
 
 {% macro button(b, root, cls='btn--primary') -%}
 <a class="btn {{ b.style or cls }}" href="{{ link_href(b.href, root) }}"{% if b.href.startswith('http') %} rel="noopener"{% endif %}>{{ b.text }}{% if b.arrow is not defined or b.arrow %} {{ icon('arrow') }}{% endif %}</a>
 {%- endmacro %}
 
-{# Targetes: [{"icon": ..., "title": ..., "text": ..., "href": ..., "button": ..., "badge": ...}] #}
-{% macro cards(items, root, heading_level=3) -%}
-<ul class="cards cards--3">
+{# Targetes: [{"icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "badge"}] #}
+{% macro cards(items, root, heading_level=3, align='center') -%}
+<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}">
   {% for c in items %}
-  <li class="card card--course">
+  <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
     {% if c.icon %}<span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>{% endif %}
     {% if c.badge %}<span class="card__badge">{{ c.badge }}</span>{% endif %}
     <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>
-    {% if c.text %}<p class="card__text">{{ c.text }}</p>{% endif %}
+    {% if c.subtitle %}<p class="card__subtitle">{{ c.subtitle }}</p>{% endif %}
+    {% if c.meta %}<ul class="card__meta">{% for m in c.meta %}<li>{{ m }}</li>{% endfor %}</ul>{% endif %}
+    <div class="card__text">
+      {% if c.text %}<p>{{ c.text }}</p>{% endif %}
+      {% for p in c.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
+      {% if c.list %}<ul class="ticks">{% for i in c.list %}<li>{{ i }}</li>{% endfor %}</ul>{% endif %}
+      {% if c.foot %}<p class="card__foot">{{ c.foot }}</p>{% endif %}
+    </div>
     {% if c.href %}<a class="btn btn--soft btn--block" href="{{ link_href(c.href, root) }}">{{ c.button or 'Saber-ne més' }}</a>{% endif %}
   </li>
   {% endfor %}
@@ -48,14 +57,14 @@
 </div>
 {%- endmacro %}
 
-{% macro faq_item(q, a_html, id=None) -%}
-<details class="faq"{% if id %} id="{{ id }}"{% endif %}>
+{% macro faq_item(q, a_html, id=None, open=False) -%}
+<details class="faq"{% if id %} id="{{ id }}"{% endif %}{% if open %} open{% endif %}>
   <summary><span>{{ q }}</span>{{ icon('caret', 'faq__caret') }}</summary>
   <div class="faq__body">{{ a_html }}</div>
 </details>
 {%- endmacro %}
 
-{# Nota destacada: "style": "care" (rosada, per a avisos de cura) o "info" (groga) #}
+{# Nota destacada: "style": "care" (rosada, per a avisos de cura) o "info" (verda) #}
 {% macro note(s) -%}
 <aside class="note note--{{ s.style or 'info' }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
   {% if s.title %}<h2 id="h-{{ s.id }}" class="note__title">{{ icon('lifebuoy' if s.style == 'care' else 'info') }}{{ s.title }}</h2>{% endif %}
@@ -64,18 +73,41 @@
 </aside>
 {%- endmacro %}
 
-{# Una secció de pàgina. Tipus: text, cards, list, faq, note, infografia, cta, contact (vegeu el README). #}
+{# Un formulari de Google inserit. Si n'hi ha més d'un (p. ex. el taller obert i la versió per a un equip), cada un es plega. #}
+{% macro forms(s) -%}
+<div class="forms">
+  {% for f in s.forms %}
+  {% if s.forms|length > 1 %}<details class="faq form-box"{% if loop.first %} open{% endif %}>
+    <summary><span>{{ f.label }}</span>{{ icon('caret', 'faq__caret') }}</summary>
+    <div class="faq__body">{% else %}<div class="form-box form-box--single">{% endif %}
+      <iframe class="form-frame" src="{{ f.url }}?embedded=true" title="Formulari: {{ f.label }}" height="{{ f.height or 2400 }}" loading="lazy">S'està carregant el formulari…</iframe>
+      <p class="form-alt"><a href="{{ f.url }}" target="_blank" rel="noopener">{{ icon('external') }}Obre el formulari en una pestanya nova</a></p>
+    {% if s.forms|length > 1 %}</div>
+  </details>{% else %}</div>{% endif %}
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{# Una secció de pàgina. Tipus: text, cards, list, faq, note, infografia, cta, contact, form (vegeu el README). #}
 {% macro section(s, root) -%}
-{% set band = {'white': ' band--white', 'green': ' band--green', 'slim': ' band--slim'}.get(s.band, '') %}
+{% set band = {'white': ' band--white', 'soft': ' band--soft', 'slim': ' band--slim'}.get(s.band, '') %}
 <section class="band{{ band }}" id="{{ s.id }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
-  <div class="wrap{% if s.type in ('text', 'faq', 'note', 'list') %} wrap--narrow{% endif %}">
+  <div class="wrap{% if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide %} wrap--narrow{% endif %}">
+    {% if s.kicker %}<p class="band__kicker">{{ s.kicker }}</p>{% endif %}
     {% if s.title and s.type != 'note' %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
     {% if s.intro %}<div class="band__intro"><p>{{ s.intro }}</p></div>{% endif %}
 
     {% if s.type == 'text' %}
-      <div class="prose">{% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}{% if s.text_html %}{{ s.text_html }}{% endif %}</div>
+      <div class="prose">
+        {% if s.quote %}<blockquote class="quote"><p>{{ s.quote }}</p></blockquote>{% endif %}
+        {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
+        {% if s.list %}<ul class="ticks">{% for i in s.list %}<li>{{ i }}</li>{% endfor %}</ul>{% endif %}
+        {% for p in s.after or [] %}<p>{{ p }}</p>{% endfor %}
+        {% if s.text_html %}{{ s.text_html }}{% endif %}
+      </div>
     {% elif s.type == 'cards' %}
-      {{ cards(s["items"], root) }}
+      {% if s.before %}<div class="prose prose--before">{% for p in s.before %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      {{ cards(s["items"], root, align=s.align or 'center') }}
     {% elif s.type == 'list' %}
       <ul class="checks">{% for i in s["items"] %}<li>{{ icon('check') }}<span>{{ i }}</span></li>{% endfor %}</ul>
     {% elif s.type == 'faq' %}
@@ -85,12 +117,21 @@
     {% elif s.type == 'infografia' %}
       {% include "infografies/infografia-" ~ s.name ~ ".html" %}
     {% elif s.type == 'cta' %}
-      {% for p in s.paragraphs or [] %}<p class="center">{{ p }}</p>{% endfor %}
+      <div class="prose prose--center">{% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}</div>
+    {% elif s.type == 'form' %}
+      {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
+      {{ forms(s) }}
     {% elif s.type == 'contact' %}
       <div class="contact-box">
-        {% if s.text_html %}<p>{{ s.text_html }}</p>{% endif %}
+        {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
+        <ul class="contact-list">
+          {% if site.contact.email %}<li>{{ icon('mail') }}<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>{% endif %}
+          {% if site.contact.phone_tel %}<li>{{ icon('phone') }}<a href="tel:{{ site.contact.phone_tel }}">{{ site.contact.phone }}</a>{% if site.contact.whatsapp %} · <a href="{{ site.contact.whatsapp }}">WhatsApp</a>{% endif %}</li>{% endif %}
+          {% if site.contact.address %}<li>{{ icon('pin') }}<span>{{ site.contact.address }}</span></li>{% endif %}
+        </ul>
         <p class="contact-box__links">
           {% if site.contact.email %}<a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>{% endif %}
+          {% if site.contact.whatsapp %}<a class="btn btn--outline" href="{{ site.contact.whatsapp }}">{{ icon('phone') }}WhatsApp</a>{% endif %}
           {% if site.contact.instagram_url %}<a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>{% endif %}
         </p>
       </div>

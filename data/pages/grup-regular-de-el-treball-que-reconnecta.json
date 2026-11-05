@@ -1,0 +1,27 @@
+{
+  "title": "El Treball que Reconnecta (grup regular)",
+  "kicker": "Propostes",
+  "lead": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "El Treball que Reconnecta (grup regular)",
+          "form": "1FAIpQLSehnsP2-oZVxWyLneSin6uDj-qH0PQqBfqCIxD_y2i_Aw9yyA",
+          "height": 3000
+        }
+      ]
+    }
+  ]
+}

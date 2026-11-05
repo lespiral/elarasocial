@@ -1,0 +1,85 @@
+{
+  "title": "Voleu teixir xarxes reals en un món fragmentat?",
+  "kicker": "Comunitats",
+  "lead": "Creem espais de trobada per compartir recursos, sabers i suport mutu davant els reptes ecosocials.",
+  "sections": [
+    {
+      "type": "text", "band": "white",
+      "kicker": "l'acció ha de ser col·lectiva.",
+      "title": "Sentiu que els reptes actuals són massa grans per entomar-los en solitari?",
+      "paragraphs": [
+        "A Elara Social facilitem llocs de trobada on la preocupació es transforma en vincle, i el vincle en capacitat d’acció col·lectiva.",
+        "Sostenir la vida és al centre de la nostra activitat. Per això no busquem solucions ràpides: construïm vincles, ritmes i estructura perquè l’esperança es pugui sostenir.",
+        "A Elara Social dissenyem i facilitem espais segurs on la vulnerabilitat es transforma en suport mutu, i les ganes d’actuar es concreten en passos petits, compartits i arrelats al territori.",
+        "Una proposta pensada per al benestar individual i la força col·lectiva."
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Transformem la preocupació en comunitat, i la comunitat en passos possibles.",
+      "items": [
+        {"icon": "users-three", "title": "Aïllament en un món fragmentat?", "text": "Recuperem espais autèntics de trobada, vincle i col·laboració real.", "href": "#propostes", "button": "Veure opcions"},
+        {"icon": "cloud-rain", "title": "Sobrecàrrega ecosocial?", "text": "Quan la por i la incertesa paralitzen, el grup ajuda a sostenir i ordenar.", "href": "#propostes", "button": "Veure opcions"},
+        {"icon": "house", "title": "Manca de recursos compartits?", "text": "Si hi ha idees però falten eines, sabers o tribu, fem xarxa al voltant de necessitats comunes.", "href": "#propostes", "button": "Veure opcions"}
+      ]
+    },
+    {
+      "type": "cards", "band": "white",
+      "title": "De l’aïllament a l’acció col·lectiva.",
+      "before": [
+        "“Cap repte ecosocial es pot resoldre des de la solitud. Les solucions reals neixen de la interdependència.”",
+        "A Elara Social facilitem espais segurs on la vulnerabilitat es transforma en motor. Connectem persones i col·lectius per fer xarxa al voltant de necessitats comunes."
+      ],
+      "items": [
+        {"icon": "heart", "title": "Suport mutu i cures", "text": "Generem xarxes de confiança on sostenir-nos emocionalment i materialment davant la incertesa del context."},
+        {"icon": "headphones", "title": "Intercanvi de sabers", "paragraphs": ["Reconeixem que tothom té coneixements valuosos.", "Facilitem espais d'aprenentatge horitzontal i pràctic per a la transició."]},
+        {"icon": "tree", "title": "Acció arrelada al territori", "text": "Apostem per alternatives comunitàries que generen impacte directe al nostre entorn més proper i tangible."}
+      ]
+    },
+    {
+      "type": "cards", "band": "soft",
+      "title": "Com ens organitzem?",
+      "before": ["Oferim diferents formats de participació adaptats a l’energia i disponibilitat de cadascú, posant sempre la comunitat al centre."],
+      "items": [
+        {"title": "Trobades comunitàries", "text": "Espais de diàleg i connexió per teixir vincles de confiança entre veïnes i col·lectius."},
+        {"title": "Espais de recursos", "text": "Una plataforma on compartir eines, estratègies i coneixements pràctics ecosocials."},
+        {"title": "Grups d'acció", "text": "Acompanyament a grups de treball enfocats a resoldre reptes concrets del territori."}
+      ]
+    },
+    {
+      "type": "cards", "band": "white",
+      "kicker": "quins són els nostres pilars?",
+      "title": "En un entorn que empeny cap a l’individualisme i la competència, apostem per la interdependència humana i els sabers compartits com a motor de resiliència.",
+      "items": [
+        {"icon": "users-three", "title": "Interdependència radical", "paragraphs": ["Assumim que ens necessitem les unes a les altres.", "Reivindiquem la vulnerabilitat compartida com la nostra força d'acció col·lectiva més gran."]},
+        {"icon": "globe", "title": "Ecologia de sabers", "text": "Valorem tant el coneixement tècnic i acadèmic com la saviesa popular, pràctica i l'experiència viscuda de cada persona del territori."},
+        {"icon": "plant", "title": "Resiliència ecosocial", "paragraphs": ["Construïm alternatives pràctiques des de la proximitat.", "Apostem per models de vida i consum arrelats, justos i sostenibles en el temps."]}
+      ]
+    },
+    {
+      "type": "cards", "band": "soft", "id": "propostes", "align": "left",
+      "title": "Oferim espais i itineraris de pràctica i trobada per a comunitats que volen reconnectar i construir un món millor.",
+      "before": ["Creem espais de trobada que generen vincles reals: tallers vivencials, mini-rituals, espais de debat i reflexió conscient i cercles comunitaris. Objectiu: passar de la preocupació a l’acció compartida."],
+      "items": [
+        {"title": "7 passes cap a l'Esperança Activa", "badge": "4 mini-cursos online", "paragraphs": ["Un recorregut breu i profund per iniciar El Treball que Reconnecta: tornar al que et sosté, donar espai al que preocupa, obrir la mirada i aterrar un pas possible."], "foot": "Una experiència que podem adaptar a la realitat de la teva comunitat", "href": "7-passes-cap-a-lesperanca-activa-comunitats"},
+        {"title": "Camins d'Esperança [Activa]", "badge": "Mini-cursos online", "text": "Una proposta que combina un recorregut digital de Les “7 passes cap a l’Esperança Activa” amb rutes a peu pel vostre entorn per cuidar el benestar personal i comunitari, enfortir els vincles i reconnectar amb allò que ens sosté.", "foot": "Una experiència que podem adaptar a la realitat de la teva comunitat", "href": "https://xn--esperanaactiva-mjb.cat/", "button": "Vés a Camins d'Esperança [Activa]"},
+        {"title": "L'Espiral de l'Esperança Activa", "meta": ["4 hores", "Màx. 16 participants"], "paragraphs": ["Un taller vivencial i segur per aturar-nos i donar sortida a tot allò que ens angoixa com a comunitat.", "Des de l’estrès quotidià fins a la incertesa pel futur global.", "Venim a reconnectar amb la vida, a metabolitzar el malestar en comunitat i a traçar passos concrets d’esperança activa."], "href": "lespiral-de-lesperanca-activa"},
+        {"title": "El Treball que Reconnecta", "meta": ["4 sessions de 2 hores", "Màx. 16 participants"], "text": "Un cicle per reconnectar amb la vida, transformar el dolor de la comunitat en força activa i trobar formes concretes de compromís personal i comunitari.", "href": "el-treball-que-reconnecta"},
+        {"title": "Un pont d'esperança comunitària", "meta": ["2 sessions de 6 hores (dissabte i diumenge)", "Màx. 16 participants"], "paragraphs": ["Un espai d’immersió col·lectiva per reconnectar amb la vida i transformar el dolor en força compartida.", "Durant dos dies, teixirem amb la comunitat un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com el malestar que ens generen els grans reptes globals."], "href": "un-pont-desperanca-2"},
+        {"title": "El Treball que Reconnecta (Grup regular)", "meta": ["1 sessió de 2 hores al mes o 2 sessions de 2 hores al mes (mensual o quinzenal)", "Màx. 16 participants"], "text": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.", "href": "grup-regular-de-el-treball-que-reconnecta"},
+        {"title": "Cercles de paraula", "subtitle": "(per a transformar conflictes)", "meta": ["4 sessions de 2 hores", "Màx. 20 participants", "Preus per participant o per grup (consulta opcions)"], "text": "Un taller pràctic per a comunitats que volen incorporar l’estructura dels Cercles de paraula com una eina operativa per abordar converses difícils amb més seguretat, equitat i eficàcia.", "href": "cercles-de-paraula-per-a-gestionar-conflictes"},
+        {"title": "Cercles de paraula", "subtitle": "(per sostenir comunitats)", "meta": ["4 sessions de 2 hores", "Màx. 20 participants", "Preus per participant o per grup (consulta opcions)"], "text": "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) perquè el vostre equip aprengui l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.", "href": "cercles-per-sostenir-organitzacions-i-col·lectius"},
+        {"title": "Burnout", "subtitle": "Reconnectar amb la força comunitària sense cremar-se", "meta": ["8 sessions de 2 hores", "Màx. 20 participants", "Preus per participant o per grup (consulta opcions)"], "text": "Un programa en 8 sessions per transformar l’esgotament comunitari, la sobrecàrrega i la culpa en regulació, claredat i límits sostenibles.", "href": "burnout"}
+      ]
+    },
+    {
+      "type": "cta", "band": "white",
+      "kicker": "voleu formar part de la xarxa?",
+      "paragraphs": [
+        "No espereu a tenir totes les respostes o un gran projecte per apropar-vos. El primer pas és trobar-nos, escoltar-nos i començar a caminar juntes.",
+        "Adaptem la nostra presència a la teva realitat."
+      ],
+      "buttons": [{"text": "Parlem-ne", "href": "contacte"}]
+    }
+  ]
+}

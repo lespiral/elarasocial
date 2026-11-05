@@ -1,0 +1,32 @@
+{
+  "title": "Burnout: reconnectar amb la força sense cremar-se",
+  "kicker": "Propostes",
+  "lead": "Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "Inscripció al programa",
+          "form": "1FAIpQLSccqC9QKjj-tNyqNmT755dw_kCxgZGNRAw4arPSSdRvXPSEWA",
+          "height": 2800
+        },
+        {
+          "label": "Vols que adaptem el programa al teu equip?",
+          "form": "1FAIpQLScccqL9HFQYDaDJdXMvFsGdEZOKxfRZ9xOm3a5QUyvzmNdRQw",
+          "height": 3200
+        }
+      ]
+    }
+  ]
+}

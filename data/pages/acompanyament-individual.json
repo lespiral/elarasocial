@@ -1,0 +1,27 @@
+{
+  "title": "Acompanyament individual",
+  "kicker": "Propostes",
+  "lead": "T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "Acompanyament individual",
+          "form": "1FAIpQLScmfRMOdzIL2oKJIX7zlVIVgy0KnYNj1b8Nc0J2iUIn9EaTcg",
+          "height": 8076
+        }
+      ]
+    }
+  ]
+}

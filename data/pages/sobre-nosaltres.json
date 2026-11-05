@@ -1,0 +1,173 @@
+{
+  "title": "Sostenim la vida",
+  "kicker": "Sobre nosaltres",
+  "description": "Elara Social és la línia de treball comunitari de L’Espiral, centrada en reconstruir comunitat en un context que fragmenta i desgasta.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "qui-som",
+      "paragraphs": [
+        "Elara Social és la línia de treball comunitari de [en procés de transformar-nos en cooperativa] L’Espiral, centrada en reconstruir comunitat en un context que fragmenta i desgasta. Creem llocs on la gent pugui trobar-se, escoltar-se i impulsar canvis concrets que cuidin la vida al territori.",
+        "Quan el malestar i la preocupació es viuen en solitud, el vincle social es debilita. I sense vincles i espais segurs, és difícil sostenir processos personals i col·lectius: la consciència es queda sola o es paralitza. Per això facilitem pràctiques i trobades que ajuden a arrelar, reconèixer el malestar i obrir noves mirades, perquè la comunitat pugui transformar la preocupació en esperança activa i en gestos i accions concretes.",
+        "En síntesi: existim per enfortir el teixit comunitari i la capacitat col·lectiva de cuidar la vida, transformant l’aïllament i el malestar en vincle, suport mutu i acció local amb sentit."
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Propòsit",
+      "paragraphs": [
+        "El nostre projecte existeix perquè necessitem reconstruir comunitat en un context que fragmenta i desgasta, creant llocs on la gent pugui trobar-se, escoltar-se i impulsar canvis concrets que cuidin la vida al territori.",
+        "Existim per teixir comunitat i suport mutu."
+      ],
+      "list": [
+        "Perquè moltes persones viuen el malestar i la preocupació en solitud i això desgasta el vincle social.",
+        "Perquè sense vincles i espais segurs és difícil sostenir processos personals i col·lectius, i la consciència es queda sola o es paralitza.",
+        "Perquè necessitem pràctiques i trobades que ajudin a arrelar, reconèixer el malestar i obrir noves mirades.",
+        "Perquè així la comunitat pot convertir la preocupació en esperança activa i en gestos i accions concretes orientades a cuidar la vida i la responsabilitat compartida."
+      ],
+      "after": [
+        "Existim per enfortir el teixit comunitari i la capacitat col·lectiva de cuidar la vida, transformant l’aïllament i el malestar en vincle, suport mutu i acció local amb sentit."
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "align": "left",
+      "id": "missio-i-visio",
+      "items": [
+        {
+          "icon": "footprints",
+          "title": "Missió",
+          "text": "Oferim espais i itineraris de pràctica i trobada per a persones que volen reconnectar i construir comunitat, mitjançant mini-rituals accessibles, recursos online, trobades comunitàries, tallers vivencials i espais d’acompanyament individual que sostenen el procés i el tradueixen en accions concretes al territori."
+        },
+        {
+          "icon": "sun",
+          "title": "Visió",
+          "paragraphs": [
+            "Volem consolidar una xarxa comunitària que posi la vida al centre:",
+            "volem que cada vegada més persones participin en espais de suport mutu i transformin el malestar i l’aïllament en accions locals concretes i sostingudes."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Per a qui és (i què hi trobaràs)",
+      "paragraphs": [
+        "La proposta és per a persones, grups, col·lectius, organitzacions o cooperatives que viuen malestar, solitud, cansament o desorientació i que, més enllà d’eines puntuals, necessiten comunitat i sosteniment per no quedar-se soles amb el que els passa.",
+        "<strong>Benefici clau:</strong> oferim un camí per passar de l’aïllament o el desbordament al vincle, a la claredat i a fer passos concrets amb sentit, de manera que el malestar no es queda només en paraules o en preocupació, sinó que es pot sostenir i transformar en accions realistes.",
+        "<strong>El diferencial:</strong> no oferim una experiència aïllada ni una proposta “d’un sol dia”, sinó un itinerari continu amb pràctiques i espais de trobada (mini-rituals, recursos accessibles, tallers, trobades i acompanyament individual si cal), dins un marc cuidat de seguretat relacional i suport mutu, orientat a fer possible una participació progressiva i sostinguda que arreli al territori i posi la vida al centre."
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "align": "left",
+      "html": true,
+      "title": "Els nostres valors (què fem i què no fem)",
+      "items": [
+        {
+          "title": "1. Cura de la vida",
+          "paragraphs": [
+            "<strong>FEM:</strong> cuidem límits i ritmes, prioritzem el benestar de les persones i del territori, i orientem el que fem a sostenir la vida (emocional, relacional i comunitària).",
+            "<strong>NO FEM:</strong> normalitzar la sobrecàrrega, posar el resultat per davant de la salut, ni exigir més del que es pot sostenir."
+          ]
+        },
+        {
+          "title": "2. Presència i consciència",
+          "paragraphs": [
+            "<strong>FEM:</strong> aturem, escoltem el cos i el moment, parlem conscientment i cultivem una mirada clara i responsable abans d’actuar.",
+            "<strong>NO FEM:</strong> funcionar amb presses, reaccionar des de l’automatisme, ni imposar interpretacions."
+          ]
+        },
+        {
+          "title": "3. Suport mutu i interdependència",
+          "paragraphs": [
+            "<strong>FEM:</strong> cooperem, acollim, ens ajudem a sostenir processos i fem possible que ningú travessi sol/a allò que es pot sostenir en comunitat.",
+            "<strong>NO FEM:</strong> individualitzar-ho tot, competir, ni desentendre’ns quan algú demana suport dins del marc possible."
+          ]
+        },
+        {
+          "title": "4. Acció concreta i responsabilitat compartida",
+          "paragraphs": [
+            "<strong>FEM:</strong> traduïm el que vivim en passos petits, realistes i revisables, i compartim responsabilitat perquè el canvi sigui possible i sostingut.",
+            "<strong>NO FEM:</strong> quedar-nos en ideals abstractes, prometre coses que no es poden sostenir, ni desvincular-nos del que decidim com a comunitat."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "align": "left",
+      "id": "equip",
+      "title": "Qui som",
+      "items": [
+        {
+          "title": "Aleix Boronat",
+          "text": "Director i cofundador de L’espiral. Facilitador de El Treball que Reconnecta, Format en Psicologia Humanista, Terapeuta Gestalt, Mentor i Professor de Mindfulness. Formació en Psicoteràpia Integrativa (programa SAT)."
+        },
+        {
+          "title": "Anna Viñas",
+          "text": "Cofundadora de l'Espiral. Terapeuta Gestalt. Membre adherent de l'AETG. Formació en Psicoteràpia Integrativa (programa SAT). Formada en psicologia i psicopatologia del postpart. Formada en Ioga i Meditació per a l'Embaràs i el Post Part amb Happy Yoga. Formada a Educació Viva. Llicenciada en Humanitats i Periodisme."
+        },
+        {
+          "title": "Montse Molina",
+          "text": "Psicopedagoga. Màster en Psicologia Infanto-juvenil. Formada en Teràpia Gestalt aplicada a la Infància i Adolescència i en Teràpia Sistèmica Relacional. Terapeuta Gestalt i Terapeuta Corporal Integrativa. Especialista en Addiccions: Màster en Conductes Addictives. Formada en Psicoteràpia Integrativa: Programa SAT. Formadora a l'àmbit de l'educació humanista."
+        },
+        {
+          "title": "Elvira Abad",
+          "text": "Psicòloga Sanitària Col. 13460, Terapeuta Gestalt, Màster en Psicogerontologia i Neurociències Aplicades. Coordinadora Grup de Treball Gent Gran al COPC Àrea Intervenció Social. Docent Atenció a la Dependència SAD. Formada a Practitioner P.N.L., Risoteràpia, Constel·lacions Familiars, Acompanyament a la Mort i Moviment Espontani SEITAI. En Formació Psicologia Integrativa Transpersonal i Programa SAT Eneagrama de Claudio Naranjo."
+        },
+        {
+          "title": "Cecilia Cristaldi",
+          "text": "Psicòloga formada en teràpia sistèmica, Gestalt i Coaching. El meu enfocament actual combina la psicologia i el coaching, tant en abordatges individuals com en grup. Acompanyo els meus pacients perquè puguin reconèixer el seu potencial i anar cap a la recerca dels seus objectius."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "kicker": "La nostra manera d'acompanyar",
+      "title": "Som el pont entre el malestar intern i l’acció col·lectiva.",
+      "paragraphs": [
+        "Les arrels del Treball que Reconnecta",
+        "Aquesta proposta va néixer a finals dels anys 70 de la mà de Joanna Macy, com una resposta valenta a l’angoixa que generaven les crisis ecològiques, socials i nuclears d’aquella època.",
+        "Més de 50 anys després, aquesta metodologia està més viva que mai. Avui no només ens sosté davant d’aquells reptes històrics, sinó que s’ha adaptat per acollir tot el ventall d’incerteses i malestars que travessen el nostre present.",
+        "Concebut des de l’inici com un procés vivencial, el Treball que Reconnecta continua oferint a persones i comunitats un espai segur on mirar de cara el dolor pel món i metabolitzar-lo per convertir-lo en força de canvi. Amb el temps, aquesta llavor s’ha expandit a desenes de països, adaptant-se a organitzacions socials, educatives i comunitàries.",
+        "Avui som una xarxa global de milers de persones unides per un mateix propòsit: enfortir la resiliència, recuperar el sentit i contribuir a regenerar la vida.",
+        "Nosaltres vam conèixer aquest treball gràcies a la col·laboració que la Joanna Macy i en Chris Johnstone van fer per donar a llum el llibre “Esperanza Activa”, editat en castellà per Edicions la Llave.",
+        "Els hi estem profundament agraïts pel seu llegat."
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "align": "left",
+      "id": "joanna-macy-i-chris-johnstone",
+      "items": [
+        {
+          "title": "Joanna Macy",
+          "paragraphs": [
+            "Joanna Macy va ser filòsofa, autora i activista reconeguda internacionalment pel seu treball en ecologia profunda, budisme compromès i transformació social.",
+            "Des de finals dels anys 70 va acompanyar milers de persones i comunitats creant espais on poguessin reconèixer el dolor pel món i transformar-lo en una força per al canvi.",
+            "La seva visió va donar origen al treball que reconecta, convertint-lo en un procés que uneix la sanació personal amb l’acció col·lectiva.",
+            "Joanna va morir el 19 de juliol de 2025, deixant un llegat viu que continua inspirant persones i comunitats a tot el món."
+          ]
+        },
+        {
+          "title": "Chris Johnstone",
+          "paragraphs": [
+            "Chris Johnstone és metge i especialista en resiliència, psicologia del benestar i canvi positiu.",
+            "La seva col·laboració amb Joanna Macy va permetre actualitzar i expandir aquest treball, incorporant eines per sostenir el compromís i l’equilibri emocional a llarg termini.",
+            "Junts van escriure el llibre “Esperanza Activa” (Active Hope), que ha inspirat milers de persones a cultivar motivació i sentit fins i tot en temps difícils.",
+            "A més, Chris ofereix un curs online a activehope.training, que permet aprofundir en aquestes pràctiques des de qualsevol lloc del món."
+          ],
+          "foot": "Aquestes dues fonts – el llibre i el curs – han estat la inspiració per continuar expandint el Treball que Reconnecta, adaptant-lo a les nostres realitats actuals i apropant-lo a més persones i organitzacions."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Cercles de paraula (per sostenir organitzacions i col·lectius)",
+  "kicker": "Propostes",
+  "lead": "Un taller pràctic en 4 sessions (2 h cadascuna) per aprendre l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "Inscripció al taller",
+          "form": "1FAIpQLSeO_FZSRrCtAInSCG5hbuCFqwBSc8X8AuMMQntc9hniukroZw",
+          "height": 2800
+        },
+        {
+          "label": "Voleu adaptar el taller a la vostra realitat?",
+          "form": "1FAIpQLSct58yg_oN6k33kXkzh-lolt6o3Lt6W21ZtpJVyptZ-UpYbtw",
+          "height": 3300
+        }
+      ]
+    }
+  ]
+}

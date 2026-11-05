@@ -3,7 +3,7 @@
 Web estàtica d'Elara Social, feta amb el mateix sistema i el mateix aspecte que la web de Camins d'Esperança [Activa] (repositori `lespiral/esperancaactiva`).
 Es publicarà amb GitHub Pages des de la carpeta `docs/`, primer a `lespiral.github.io/elarasocial` i, quan estigui aprovada, a `elarasocial.com`.
 
-Estat: estructura a punt per omplir. Encara no hi ha pàgines: falta decidir quines n'hi haurà. GitHub Pages encara no està activat.
+Estat: estructura A (la de la web de WordPress, endreçada) amb els textos de la web actual a Inici, Sobre nosaltres, Què fem, Persones, Comunitats, Organitzacions i Contacte. Les pàgines de cada proposta tenen el formulari d'inscripció i encara els falten els textos. GitHub Pages encara no està activat.
 
 ## On és cada cosa
 
@@ -11,7 +11,7 @@ Estat: estructura a punt per omplir. Encara no hi ha pàgines: falta decidir qui
 - `data/pages/<adreça>.json`: una pàgina per fitxer. `data/pages/qui-som.json` es publica a `/qui-som/`.
 - `src/templates/`: les plantilles. `page.html` pinta qualsevol pàgina; `parts.html` té les peces (seccions, targetes, preguntes, botons).
 - `src/templates/infografies/`: les infografies animades. A `models/` hi ha les de Camins d'Esperança [Activa], com a model (no surten a cap pàgina).
-- `src/site.css` i `src/site.js`: l'aspecte i el menú del mòbil.
+- `src/site.css` i `src/site.js`: l'aspecte (amb els colors d'Elara: blau marí i verd del logo) i el menú del mòbil.
 - `src/img/`: els logos d'Elara Social (de la carpeta de Drive) i el logo conjunt de L'Espiral i Elara Social.
 - `docs/`: la web generada. No s'edita a mà: es torna a generar.
 
@@ -41,15 +41,27 @@ No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
     {"type": "note", "style": "care", "title": "Abans de començar", "paragraphs": ["Un avís de cura."]},
     {"type": "infografia", "name": "com-funciona", "title": "Com funciona"},
     {"type": "cta", "title": "Parlem-ne", "paragraphs": ["Una frase."], "buttons": [{"text": "Contacte", "href": "contacte"}]},
-    {"type": "contact", "title": "Escriu-nos", "text_html": "Escriu-nos a <a href=\"mailto:...\">...</a>."}
+    {"type": "contact", "title": "Parlem-ne", "paragraphs": ["Una frase."]},
+    {"type": "form", "id": "inscripcio", "title": "Inscripció", "forms": [{"label": "Inscripció al taller", "form": "1FAIpQL...", "height": 3000}]}
   ]
 }
 ```
 
-- Cada secció pot portar `"band": "white"`, `"green"` o `"slim"` (el fons de la franja), `"intro"` (una frase sota el títol), `"buttons"` i `"id"` (l'adreça per enllaçar-hi: `/qui-som/#proposit`; si no n'hi ha, es fa amb el títol).
+- Cada secció pot portar `"band": "white"`, `"soft"` o `"slim"` (el fons de la franja), `"intro"` (una frase sota el títol), `"buttons"` i `"id"` (l'adreça per enllaçar-hi: `/qui-som/#proposit`; si no n'hi ha, es fa amb el títol).
 - Els enllaços (`href`): una paraula sola és una pàgina de la web (`"contacte"` porta a `/contacte/`); també poden ser adreces completes (`https://…`), `mailto:`, `tel:` o `#seccio`.
 - Les icones són les de `src/icons.json` (les mateixes que a Camins d'Esperança [Activa]).
-- Els camps acabats en `_html` poden portar HTML (enllaços, negretes).
+- Els camps acabats en `_html` poden portar HTML (enllaços, negretes). Amb `"html": true` a la secció, també els paràgrafs i les llistes.
+- Altres camps de secció: `"kicker"` (avantítol petit), `"before"` (paràgrafs abans de les targetes), `"list"` i `"after"` (a les de text), `"quote"`, `"align": "left"` (targetes alineades a l'esquerra).
+- Les targetes poden portar `subtitle`, `meta` (p. ex. `["4 hores", "Màx. 16 participants"]`), `paragraphs`, `list`, `foot`, `badge`, `href` i `button` (el text del botó).
+- El contacte (correu, telèfon, WhatsApp, adreça) surt de `contact` a `data/site.json`.
+
+## Formularis d'inscripció
+
+Són els formularis de Google del compte lespiral.cat@gmail.com, inserits a la pàgina com a WordPress: les respostes hi continuen arribant igual. Cada un va en una secció `{"type": "form"}` amb el codi del formulari publicat (el tros de l'adreça entre `/forms/d/e/` i `/viewform`, que comença per `1FAIpQL`) i l'alçada en píxels. Si una proposta en té dos (el taller obert i la versió per a un equip), surten plegats, l'un sota l'altre.
+
+## Adreces antigues
+
+Les adreces de la web de WordPress que ja no són una pàgina (les tres «Propostes a nivell…», els formularis i les pàgines de Camins) porten soles a la pàgina nova. Es configuren a `redirects` de `data/site.json`: `"adreça-antiga": "pagina/#seccio"` o una adreça completa.
 - Per posar la pàgina al menú, afegeix-la a `nav` de `data/site.json`: `{"slug": "qui-som", "title": "Qui som"}`. Un enllaç de fora va amb `href`: `{"title": "Camins d'Esperança [Activa]", "href": "https://…"}`.
 
 ## Infografies animades

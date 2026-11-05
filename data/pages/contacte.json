@@ -1,0 +1,40 @@
+{
+  "title": "Som aquí per acompanyar-te.",
+  "kicker": "Contacte",
+  "lead": "Parlem-ne sense cap compromís.",
+  "sections": [
+    {
+      "type": "contact",
+      "band": "white",
+      "title": "Parlem-ne",
+      "paragraphs": [
+        "Utilitza aquest espai per explicar-nos què necessites, ja sigui per a tu o per a la teva organització. Et llegirem i et respondrem ben aviat per veure com podem acompanyar-te.",
+        "Tant si tens clara la teva necessitat com si només vols fer-nos una consulta prèvia, escriu-nos o truca'ns:"
+      ]
+    },
+    {
+      "type": "cards",
+      "align": "left",
+      "id": "on-som",
+      "items": [
+        {
+          "icon": "pin",
+          "title": "El nostre espai (físic i virtual)",
+          "paragraphs": [
+            "Ens trobaràs al C/ Jaume Casanovas 177, Local 2 (El Prat de Llobregat).",
+            "Però el nostre acompanyament no té fronteres: ens desplacem arreu de Catalunya i la Península per a facilitar tallers.",
+            "També oferim atenció online."
+          ]
+        },
+        {
+          "icon": "sun",
+          "title": "Els nostres ritmes",
+          "paragraphs": [
+            "Som a la teva disposició de dilluns a divendres, de 9 h a 17 h.",
+            "Les trobades presencials al local es fan sempre a hores convingudes."
+          ]
+        }
+      ]
+    }
+  ]
+}

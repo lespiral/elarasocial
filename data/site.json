@@ -4,29 +4,114 @@
     "url": "https://lespiral.github.io/elarasocial/",
     "index": false
   },
-  "description": "[PENDENT] Frase breu que descriu Elara Social (surt als cercadors i quan es comparteix l'enllaç).",
+  "description": "Acompanyem persones, grups i comunitats a trobar sentit, arrelament i direcció en temps de crisi ecosocial.",
   "contact": {
     "email": "elarasocial.com@gmail.com",
+    "phone": "672 86 32 02",
+    "phone_tel": "+34672863202",
+    "whatsapp": "https://wa.me/34672863202",
+    "address": "C/ Jaume Casanovas 177, Local 2 (El Prat de Llobregat)",
     "instagram": "[PENDENT]",
-    "instagram_url": "",
-    "phone": "[PENDENT]",
-    "phone_tel": ""
+    "instagram_url": ""
   },
   "footer": {
     "motto": "Cuidem les persones. Enfortim les comunitats",
-    "text": "[PENDENT] Una o dues frases sobre Elara Social.",
-    "legal": []
+    "text": "La línia de treball comunitari de L’Espiral.",
+    "legal": [
+      {"title": "Avís legal", "href": "https://lespiral.cat/aviso-legal/"},
+      {"title": "Política de privacitat", "href": "https://lespiral.cat/politica-de-privacidad/"},
+      {"title": "Política de galetes", "href": "https://lespiral.cat/politica-de-cookies/"},
+      {"title": "Declaració d'accessibilitat", "href": "https://lespiral.cat/declaracion-de-accesibilidad/"}
+    ]
   },
 
   "nav": [
-    {"slug": "", "title": "Inici"}
+    {"slug": "sobre-nosaltres", "title": "Sobre nosaltres"},
+    {"slug": "que-fem", "title": "Què fem"},
+    {"slug": "persones", "title": "Persones"},
+    {"slug": "comunitats", "title": "Comunitats"},
+    {"slug": "organitzacions", "title": "Organitzacions"},
+    {"slug": "articles", "title": "Articles"},
+    {"slug": "contacte", "title": "Contacte"}
   ],
 
+  "redirects": {
+    "home-2": "",
+    "propostes-a-nivell-individual": "persones/#propostes",
+    "proposes-a-nivell-de-grups-o-organitzacions": "organitzacions/#propostes",
+    "propostes-a-nivell-de-comunitats": "comunitats/#propostes",
+    "acompanyament-individual-formulari": "acompanyament-individual/#inscripcio",
+    "lespiral-de-lesperanca-activa-formulari": "lespiral-de-lesperanca-activa/#inscripcio",
+    "el-treball-que-reconnecta-formulari": "el-treball-que-reconnecta/#inscripcio",
+    "un-pont-desperanca-formulari": "un-pont-desperanca-2/#inscripcio",
+    "grup-regular-de-el-treball-que-reconnecta-formulari": "grup-regular-de-el-treball-que-reconnecta/#inscripcio",
+    "cercles-per-sostenir-organitzacions-i-col·lectius-formulari": "cercles-per-sostenir-organitzacions-i-col·lectius/#inscripcio",
+    "cercles-personalitzats-per-sostenir-organitzacions-i-col·lectius-formulari": "cercles-per-sostenir-organitzacions-i-col·lectius/#inscripcio",
+    "cercles-de-paraula-personalitzats-per-a-gestionar-conflictes-formulari": "cercles-de-paraula-per-a-gestionar-conflictes/#inscripcio",
+    "burnout-formulari": "burnout/#inscripcio",
+    "burnout-personalitzat-formulari": "burnout/#inscripcio",
+    "camins-desperanca-activa": "https://xn--esperanaactiva-mjb.cat/",
+    "camins-desperanca-activa-quan-la-vida-et-desborda": "https://xn--esperanaactiva-mjb.cat/malestar-emocional/",
+    "camins-desperanca-activa-quan-cuidar-nos-es-una-tasca-col·lectiva": "https://xn--esperanaactiva-mjb.cat/prescripcio-social/",
+    "camins-desperanca-activa-el-prat-de-llobregat": "https://xn--esperanaactiva-mjb.cat/el-prat/",
+    "el-prat-de-llobregat": "https://xn--esperanaactiva-mjb.cat/el-prat/",
+    "vic": "https://xn--esperanaactiva-mjb.cat/vic/"
+  },
+
   "home": {
-    "kicker": "[PENDENT]",
-    "title": "Elara Social",
-    "lead": "[PENDENT] Frase principal de la portada.",
-    "actions": [],
-    "sections": []
+    "title": "Transformem el malestar en Esperança Activa",
+    "lead": "Acompanyem persones, grups i comunitats a trobar sentit, arrelament i direcció en temps de crisi ecosocial.",
+    "actions": [
+      {"text": "Descobreix què fem per tu", "href": "que-fem"}
+    ],
+    "sections": [
+      {
+        "type": "text", "band": "white",
+        "kicker": "La línia de treball comunitari de L’Espiral.",
+        "title": "Del procés personal a la transformació col·lectiva.",
+        "paragraphs": ["Treballem des de la intersecció entre:"],
+        "list": ["Salut mental comunitària", "Economia Social i Solidària", "Acció climàtica i cultura del bé comú"],
+        "after": ["La nostra mirada integra el procés personal i la transformació col·lectiva a través del marc del Treball que Reconnecta."]
+      },
+      {
+        "type": "cards",
+        "kicker": "som el pont entre el malestar intern i l'acció col·lectiva.",
+        "title": "Sostenir la vida és al centre de la nostra activitat.",
+        "before": [
+          "Per això, anem més enllà de les solucions ràpides.",
+          "A Elara Social apliquem metodologies d’impacte provat per transformar la inèrcia de la supervivència en dinàmiques de regeneració.",
+          "Una estratègia dissenyada tant per al benestar individual com per a la salut de les estructures col·lectives."
+        ],
+        "items": [
+          {"icon": "lifebuoy", "title": "Seguretat Sistèmica", "text": "Creem entorns de seguretat on equips, col·lectius i persones poden sentir-se segures, compartir la seva vulnerabilitat i, des d’aquí, construir solucions honestes i transformadores.", "href": "que-fem"},
+          {"icon": "plant", "title": "De la resistència a la Resiliència Regenerativa.", "text": "Ensenyem a metabolitzar les crisis: processar el conflicte i la incertesa per transformar-los en nous recursos de transformació i fortalesa col·lectiva.", "href": "que-fem"},
+          {"icon": "sun", "title": "Cuidem els Ritmes.", "paragraphs": ["Acompanyem els processos sense la pressa de la productivitat, però amb la constància de la natura.", "Avancem cap a la coherència, al ritme que el cos pot sostenir."], "href": "que-fem"}
+        ]
+      },
+      {
+        "type": "cards", "band": "soft", "align": "left", "id": "treballem-amb",
+        "kicker": "tant si..",
+        "before": [
+          "necessites un espai individual per ordenar el teu moment vital,",
+          "com si formes part d’una organització que vol cuidar el seu equip,",
+          "o vols impulsar processos comunitaris al territori,",
+          "a Elara Social trobaràs estructura, metodologia i acompanyament."
+        ],
+        "items": [
+          {"icon": "users-three", "title": "Per a persones i grups", "text": "Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció.", "list": ["Processos individuals", "Grups de suport i pràctica", "Itineraris d’Esperança Activa"], "foot": "Objectiu: transformar el bloqueig en acció amb sentit.", "href": "persones"},
+          {"icon": "buildings", "title": "Per a equips i organitzacions", "text": "Acompanyem equips i entitats que volen:", "list": ["Prevenir el burnout", "Enfortir la cohesió interna", "Incorporar mirada ecosocial", "Desenvolupar cultura del bé comú"], "foot": "Treball des de dins, amb metodologia participativa.", "href": "organitzacions"},
+          {"icon": "tree", "title": "Per a la comunitat", "text": "Creem espais de trobada que generen vincles reals:", "list": ["Tallers vivencials", "Mini-rituals", "Espais de debat i reflexió conscient", "Cercles comunitaris"], "foot": "Objectiu: passar de la preocupació compartida a l’acció compartida.", "href": "comunitats"}
+        ]
+      },
+      {
+        "type": "cta", "band": "white",
+        "kicker": "teixim una cultura del bé comú",
+        "paragraphs": [
+          "Tant si necessites arrelament individual com si vols impulsar una transformació col·lectiva, a Elara Social trobaràs les eines i l'acompanyament per fer-ho realitat.",
+          "Adaptem la nostra metodologia a la teva realitat: ja sigui per sostenir processos individuals o per enfortir la salut d’un col·lectiu sencer."
+        ],
+        "buttons": [{"text": "Troba el teu espai", "href": "contacte"}]
+      }
+    ]
   }
 }

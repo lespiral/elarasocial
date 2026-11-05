@@ -1,0 +1,27 @@
+{
+  "title": "L'Espiral de l'Esperança Activa",
+  "kicker": "Propostes",
+  "lead": "Un taller vivencial i segur per aturar-nos i donar sortida a tot allò que ens angoixa.",
+  "sections": [
+    {
+      "type": "note",
+      "style": "info",
+      "title": "Pàgina en construcció",
+      "paragraphs": [
+        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcio",
+      "title": "Inscripció",
+      "forms": [
+        {
+          "label": "L'Espiral de l'Esperança Activa",
+          "form": "1FAIpQLSeqqJrWyF-PciKCxLmkA9lm7m4kaBwFxnmKGcVZKXR4nDw-bg",
+          "height": 3500
+        }
+      ]
+    }
+  ]
+}
