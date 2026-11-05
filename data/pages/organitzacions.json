@@ -4,7 +4,8 @@
   "lead": "Transformem el desgast de l’equip en claredat, cohesió i un pas col·lectiu possible.",
   "sections": [
     {
-      "type": "text", "band": "white",
+      "type": "text",
+      "band": "white",
       "kicker": "sabem que sostenir un projecte a vegades es fa una muntanya.",
       "title": "Per més que us esforceu, el dia a dia i les inèrcies us passen per sobre?",
       "paragraphs": [
@@ -18,70 +19,210 @@
       "type": "cards",
       "title": "Comencem a transformar-ho",
       "items": [
-        {"icon": "nav", "title": "Bloqueig estratègic o desorientació?", "text": "La situació global o sectorial us pesa, i l'equip es queda atrapat en l'apaga-focs sense saber com avançar.", "href": "#propostes", "button": "Veure opcions"},
-        {"icon": "cloud-rain", "title": "Burnout i desgast a l'equip?", "text": "Aneu amb el pilot automàtic, complint els objectius però desconnectats del propòsit inicial, i necessiteu un respir.", "href": "#propostes", "button": "Veure opcions"},
-        {"icon": "check", "title": "Buscant coherència interna?", "paragraphs": ["Us pesa la contradicció entre allò que feu i com ho feu.", "Ajudem a retrobar el sentit i els valors de la vostra organització."], "href": "#propostes", "button": "Veure opcions"}
+        {
+          "icon": "nav",
+          "title": "Bloqueig estratègic o desorientació?",
+          "text": "La situació global o sectorial us pesa, i l'equip es queda atrapat en l'apaga-focs sense saber com avançar.",
+          "href": "#propostes",
+          "button": "Veure opcions"
+        },
+        {
+          "icon": "cloud-rain",
+          "title": "Burnout i desgast a l'equip?",
+          "text": "Aneu amb el pilot automàtic, complint els objectius però desconnectats del propòsit inicial, i necessiteu un respir.",
+          "href": "#propostes",
+          "button": "Veure opcions"
+        },
+        {
+          "icon": "check",
+          "title": "Buscant coherència interna?",
+          "paragraphs": [
+            "Us pesa la contradicció entre allò que feu i com ho feu.",
+            "Ajudem a retrobar el sentit i els valors de la vostra organització."
+          ],
+          "href": "#propostes",
+          "button": "Veure opcions"
+        }
       ]
     },
     {
-      "type": "cards", "band": "white",
+      "type": "cards",
+      "band": "white",
       "title": "De la paràlisi col·lectiva al pas concret.",
       "before": [
         "“El vostre entorn continuarà sent complex, però l’equip tindrà eines per navegar-lo amb claredat i cohesió.”",
         "A Elara Social oferim un procés provat per passar del desbordament dels equips a la claredat estratègica, amb sentit, coherència i cura compartida."
       ],
       "items": [
-        {"icon": "lifebuoy", "title": "Acompanyament integral", "text": "Creem marcs de seguretat psicològica on l'equip pugui avaluar les tensions i dissoldre-les col·lectivament."},
-        {"icon": "sun", "title": "La frustració com a motor de canvi", "paragraphs": ["Fem servir els conflictes per avançar.", "Afrontem els reptes interns per transformar la frustració acumulada en intel·ligència col·lectiva."]},
-        {"icon": "heart", "title": "Cultures de treball sanes", "text": "Prioritzem el respecte i la cura de les persones per garantir una sostenibilitat real a llarg termini."}
+        {
+          "icon": "lifebuoy",
+          "title": "Acompanyament integral",
+          "text": "Creem marcs de seguretat psicològica on l'equip pugui avaluar les tensions i dissoldre-les col·lectivament."
+        },
+        {
+          "icon": "sun",
+          "title": "La frustració com a motor de canvi",
+          "paragraphs": [
+            "Fem servir els conflictes per avançar.",
+            "Afrontem els reptes interns per transformar la frustració acumulada en intel·ligència col·lectiva."
+          ]
+        },
+        {
+          "icon": "heart",
+          "title": "Cultures de treball sanes",
+          "text": "Prioritzem el respecte i la cura de les persones per garantir una sostenibilitat real a llarg termini."
+        }
       ]
     },
     {
-      "type": "cards", "band": "soft",
+      "type": "cards",
+      "band": "soft",
       "title": "Com us acompanyem?",
-      "before": ["Oferim solucions adaptades a la realitat de cada organització, intervenint on el vostre equip més ho necessita."],
+      "before": [
+        "Oferim solucions adaptades a la realitat de cada organització, intervenint on el vostre equip més ho necessita."
+      ],
       "items": [
-        {"title": "Diagnòstic i assessorament", "text": "Avaluació inicial i recursos estratègics per entendre els nusos de l'organització i orientar els primers canvis."},
-        {"title": "Formació i tallers per equips", "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."},
-        {"title": "Acompanyament estructural", "text": "Mentories continuades per a direccions i espais de coordinació per integrar la cultura de les cures a la governança del projecte."}
+        {
+          "title": "Diagnòstic i assessorament",
+          "text": "Avaluació inicial i recursos estratègics per entendre els nusos de l'organització i orientar els primers canvis."
+        },
+        {
+          "title": "Formació i tallers per equips",
+          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."
+        },
+        {
+          "title": "Acompanyament estructural",
+          "text": "Mentories continuades per a direccions i espais de coordinació per integrar la cultura de les cures a la governança del projecte."
+        }
       ]
     },
     {
-      "type": "cards", "band": "white",
+      "type": "cards",
+      "band": "white",
       "kicker": "quins són els nostres pilars?",
       "title": "En un mercat que empeny al límit, apostem per la sostenibilitat humana.",
-      "before": ["Prioritzem la salut de l’equip com a base de qualsevol projecte."],
+      "before": [
+        "Prioritzem la salut de l’equip com a base de qualsevol projecte."
+      ],
       "items": [
-        {"icon": "lifebuoy", "title": "Seguretat psicològica radical", "text": "Creem espais als equips on no cal \"quedar bé\", on es poden abordar els problemes reals i on l'error és font d'aprenentatge compartit."},
-        {"icon": "nav", "title": "Propòsit i governança", "paragraphs": ["Tot està connectat: l'estratègia i el benestar de les persones.", "Entenem que un projecte d'èxit passa per alinear allò que feu amb com ho feu."]},
-        {"icon": "users-three", "title": "Acció col·lectiva", "text": "Acompanyem la transició de les organitzacions cap a models més sans, amb transformacions aplicables i passos assolibles per a tothom."}
+        {
+          "icon": "lifebuoy",
+          "title": "Seguretat psicològica radical",
+          "text": "Creem espais als equips on no cal \"quedar bé\", on es poden abordar els problemes reals i on l'error és font d'aprenentatge compartit."
+        },
+        {
+          "icon": "nav",
+          "title": "Propòsit i governança",
+          "paragraphs": [
+            "Tot està connectat: l'estratègia i el benestar de les persones.",
+            "Entenem que un projecte d'èxit passa per alinear allò que feu amb com ho feu."
+          ]
+        },
+        {
+          "icon": "users-three",
+          "title": "Acció col·lectiva",
+          "text": "Acompanyem la transició de les organitzacions cap a models més sans, amb transformacions aplicables i passos assolibles per a tothom."
+        }
       ]
     },
     {
-      "type": "cards", "band": "soft", "id": "propostes", "align": "left",
+      "type": "cards",
+      "band": "soft",
+      "id": "propostes",
+      "align": "left",
       "title": "Espais i itineraris de pràctica i trobada per a grups i col·lectius que volen reconnectar i construir comunitat.",
-      "before": ["Adaptem la nostra metodologia a tres nivells d’impacte: espais d’acompanyament individuals i en grup, recursos online per a fer al vostre ritme i amb possibilitat d’adaptar-los a la vostra realitat, i tallers i grups de continuïtat."],
+      "before": [
+        "Adaptem la nostra metodologia a tres nivells d’impacte: espais d’acompanyament individuals i en grup, recursos online per a fer al vostre ritme i amb possibilitat d’adaptar-los a la vostra realitat, i tallers i grups de continuïtat."
+      ],
       "items": [
-        {"title": "7 passes cap a l'Esperança Activa", "badge": "4 mini-cursos online", "text": "Un recorregut breu i profund per iniciar El Treball que Reconnecta: tornar al que et sosté, donar espai al que preocupa, obrir la mirada i aterrar un pas possible.", "foot": "Una experiència que podem adaptar a la realitat de la teva organització", "href": "7-passes-cap-a-lesperanca-activa-comunitats"},
-        {"title": "Camins d'Esperança [Activa]", "badge": "Mini-cursos online", "text": "Una proposta que combina un recorregut digital de Les “7 passes cap a l’Esperança Activa” amb rutes a peu pel vostre entorn [i si voleu, des de la vostra seu] per cuidar el benestar personal i comunitari, enfortir els vincles i reconnectar amb allò que ens sosté.", "foot": "Una experiència que podem adaptar a la realitat de la teva organització", "href": "https://xn--esperanaactiva-mjb.cat/", "button": "Vés a Camins d'Esperança [Activa]"},
-        {"title": "Acompanyament individual per a membres del grup", "paragraphs": ["T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.", "Un refugi on aprendre a sostenir les emocions difícils del dia a dia i traçar un full de ruta per transformar la incertesa en acció amb sentit."], "href": "acompanyament-individual"},
-        {"title": "L'Espiral de l'Esperança Activa", "paragraphs": ["Un taller vivencial i segur per aturar-nos i donar sortida a tot allò que ens angoixa.", "Des de l’estrès quotidià fins a la incertesa pel futur global.", "Venim a reconnectar amb la vida, a metabolitzar el malestar en comunitat i a traçar passos concrets d’esperança activa."], "href": "lespiral-de-lesperanca-activa"},
-        {"title": "El Treball que Reconnecta", "text": "Un cicle per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.", "href": "el-treball-que-reconnecta"},
-        {"title": "Un pont d'esperança", "paragraphs": ["Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.", "Durant dos dies, teixirem un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com l’esgotament que ens generen els grans reptes globals."], "href": "un-pont-desperanca-2"},
-        {"title": "El Treball que Reconnecta (Grup regular)", "text": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.", "href": "grup-regular-de-el-treball-que-reconnecta"},
-        {"title": "Cercles de paraula", "subtitle": "(per a transformar conflictes)", "text": "Un taller pràctic per a grups i organitzacions que volen incorporar l’estructura dels Cercles de paraula com una eina operativa per abordar converses difícils amb més seguretat, equitat i eficàcia.", "href": "cercles-de-paraula-per-a-gestionar-conflictes"},
-        {"title": "Cercles de paraula", "subtitle": "(per sostenir organitzacions i col·lectius)", "text": "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) perquè el vostre equip aprengui l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.", "href": "cercles-per-sostenir-organitzacions-i-col·lectius"},
-        {"title": "Burnout", "subtitle": "Reconnectar amb la força sense cremar-se", "text": "Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.", "href": "burnout"}
+        {
+          "title": "7 passes cap a l'Esperança Activa",
+          "badge": "4 mini-cursos online",
+          "text": "Un recorregut breu i profund per iniciar El Treball que Reconnecta: tornar al que et sosté, donar espai al que preocupa, obrir la mirada i aterrar un pas possible.",
+          "foot": "Una experiència que podem adaptar a la realitat de la teva organització",
+          "href": "7-passes-cap-a-lesperanca-activa-comunitats"
+        },
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "badge": "Mini-cursos online",
+          "text": "Una proposta que combina un recorregut digital de Les “7 passes cap a l’Esperança Activa” amb rutes a peu pel vostre entorn [i si voleu, des de la vostra seu] per cuidar el benestar personal i comunitari, enfortir els vincles i reconnectar amb allò que ens sosté.",
+          "foot": "Una experiència que podem adaptar a la realitat de la teva organització",
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Vés a Camins d'Esperança [Activa]"
+        },
+        {
+          "title": "Acompanyament individual per a membres del grup",
+          "paragraphs": [
+            "T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.",
+            "Un refugi on aprendre a sostenir les emocions difícils del dia a dia i traçar un full de ruta per transformar la incertesa en acció amb sentit."
+          ],
+          "href": "acompanyament-individual"
+        },
+        {
+          "title": "L'Espiral de l'Esperança Activa",
+          "paragraphs": [
+            "Un taller vivencial i segur per aturar-nos i donar sortida a tot allò que ens angoixa.",
+            "Des de l’estrès quotidià fins a la incertesa pel futur global.",
+            "Venim a reconnectar amb la vida, a metabolitzar el malestar en comunitat i a traçar passos concrets d’esperança activa."
+          ],
+          "href": "lespiral-de-lesperanca-activa"
+        },
+        {
+          "title": "El Treball que Reconnecta",
+          "text": "Un cicle per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
+          "href": "el-treball-que-reconnecta"
+        },
+        {
+          "title": "Un pont d'esperança",
+          "paragraphs": [
+            "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+            "Durant dos dies, teixirem un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com l’esgotament que ens generen els grans reptes globals."
+          ],
+          "href": "un-pont-desperanca-2"
+        },
+        {
+          "title": "El Treball que Reconnecta (Grup regular)",
+          "text": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+          "href": "grup-regular-de-el-treball-que-reconnecta"
+        },
+        {
+          "title": "Cercles de paraula",
+          "subtitle": "(per a transformar conflictes)",
+          "text": "Un taller pràctic per a grups i organitzacions que volen incorporar l’estructura dels Cercles de paraula com una eina operativa per abordar converses difícils amb més seguretat, equitat i eficàcia.",
+          "href": "cercles-de-paraula-per-a-gestionar-conflictes"
+        },
+        {
+          "title": "Cercles de paraula",
+          "subtitle": "(per sostenir organitzacions i col·lectius)",
+          "text": "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) perquè el vostre equip aprengui l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
+          "href": "cercles-per-sostenir-organitzacions-i-col·lectius"
+        },
+        {
+          "title": "Burnout",
+          "subtitle": "Reconnectar amb la força sense cremar-se",
+          "text": "Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
+          "href": "burnout"
+        }
       ]
     },
     {
-      "type": "cta", "band": "white",
+      "type": "cta",
+      "band": "white",
       "kicker": "voleu transformar la vostra organització?",
       "paragraphs": [
         "No espereu a tocar fons per demanar suport. El primer pas és obrir un espai valent per replantejar el vostre dia a dia.",
         "Adaptem la nostra metodologia a la vostra realitat."
       ],
-      "buttons": [{"text": "Parlem-ne", "href": "contacte"}]
+      "buttons": [
+        {
+          "text": "Parlem-ne",
+          "href": "contacte"
+        }
+      ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

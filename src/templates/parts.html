@@ -121,6 +121,19 @@
     {% elif s.type == 'form' %}
       {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
       {{ forms(s) }}
+    {% elif s.type == 'reviews' %}
+      {# Ressenyes de Google: "reviews" a data/site.json. Amb el codi del giny de Trustindex ("trustindex"), surten les de Google al dia; si no, les copiades. #}
+      {% set r = site.reviews %}
+      <div class="reviews">
+        <p class="reviews__head"><strong>{{ r.title }}</strong> <span>{{ r.summary }}</span></p>
+        {% if r.trustindex %}
+        <script defer async src="https://cdn.trustindex.io/loader.js?{{ r.trustindex }}"></script>
+        {% else %}
+        <ul class="reviews__list">
+          {% for name, text in r["items"] %}<li class="review"><p class="review__text">{{ text }}</p><p class="review__name">{{ name }}</p></li>{% endfor %}
+        </ul>
+        {% endif %}
+      </div>
     {% elif s.type == 'contact' %}
       <div class="contact-box">
         {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}

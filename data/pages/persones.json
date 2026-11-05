@@ -218,6 +218,10 @@
           "href": "contacte"
         }
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

@@ -75,3 +75,7 @@ Les de `models/` són les de Camins (7 passes, com funciona, Esperança Activa, 
 - L'adreça i si surt als cercadors són a `data/site.json`, a `publish`. Ara: `https://lespiral.github.io/elarasocial/` i `"index": false` (no surt als cercadors mentre no estigui aprovada, perquè no faci competència a la web de WordPress).
 - GitHub Pages (branca `main`, carpeta `/docs`) s'activarà quan hi hagi una primera versió aprovada.
 - Quan es canviï el domini: canvia `url` a `publish`, posa `"index": true`, crea el fitxer `CNAME` amb el domini i torna a generar la web.
+
+## Ressenyes de Google
+
+Una secció `{"type": "reviews"}` posa les ressenyes de `reviews` a `data/site.json`. Ara són les mateixes que surten a WordPress (copiades el 5 de novembre de 2026) i no s'actualitzen soles. Si a `"trustindex"` hi poses el codi del giny de Trustindex (el que va darrere de `loader.js?` a la web de WordPress), surten les de Google al dia en lloc de les copiades.

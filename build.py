@@ -24,7 +24,7 @@ DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
 ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
 # Tipus de secció que saben pintar les plantilles (src/templates/parts.html, macro «section»)
-SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form"}
+SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews"}
 
 # Formulari de Google inserit a la pàgina (les respostes continuen arribant al compte que el va crear)
 FORM_URL = "https://docs.google.com/forms/d/e/{}/viewform"

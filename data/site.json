@@ -11,30 +11,61 @@
     "phone_tel": "+34672863202",
     "whatsapp": "https://wa.me/34672863202",
     "address": "C/ Jaume Casanovas 177, Local 2 (El Prat de Llobregat)",
-    "instagram": "[PENDENT]",
-    "instagram_url": ""
+    "instagram": "@elarasocial.com_",
+    "instagram_url": "https://www.instagram.com/elarasocial.com_/"
   },
   "footer": {
     "motto": "Cuidem les persones. Enfortim les comunitats",
     "text": "La línia de treball comunitari de L’Espiral.",
     "legal": [
-      {"title": "Avís legal", "href": "https://lespiral.cat/aviso-legal/"},
-      {"title": "Política de privacitat", "href": "https://lespiral.cat/politica-de-privacidad/"},
-      {"title": "Política de galetes", "href": "https://lespiral.cat/politica-de-cookies/"},
-      {"title": "Declaració d'accessibilitat", "href": "https://lespiral.cat/declaracion-de-accesibilidad/"}
+      {
+        "title": "Avís legal",
+        "href": "https://lespiral.cat/aviso-legal/"
+      },
+      {
+        "title": "Política de privacitat",
+        "href": "https://lespiral.cat/politica-de-privacidad/"
+      },
+      {
+        "title": "Política de galetes",
+        "href": "https://lespiral.cat/politica-de-cookies/"
+      },
+      {
+        "title": "Declaració d'accessibilitat",
+        "href": "https://lespiral.cat/declaracion-de-accesibilidad/"
+      }
     ]
   },
-
   "nav": [
-    {"slug": "sobre-nosaltres", "title": "Sobre nosaltres"},
-    {"slug": "que-fem", "title": "Què fem"},
-    {"slug": "persones", "title": "Persones"},
-    {"slug": "comunitats", "title": "Comunitats"},
-    {"slug": "organitzacions", "title": "Organitzacions"},
-    {"slug": "articles", "title": "Articles"},
-    {"slug": "contacte", "title": "Contacte"}
+    {
+      "slug": "sobre-nosaltres",
+      "title": "Sobre nosaltres"
+    },
+    {
+      "slug": "que-fem",
+      "title": "Què fem"
+    },
+    {
+      "slug": "persones",
+      "title": "Persones"
+    },
+    {
+      "slug": "comunitats",
+      "title": "Comunitats"
+    },
+    {
+      "slug": "organitzacions",
+      "title": "Organitzacions"
+    },
+    {
+      "slug": "articles",
+      "title": "Articles"
+    },
+    {
+      "slug": "contacte",
+      "title": "Contacte"
+    }
   ],
-
   "redirects": {
     "home-2": "",
     "propostes-a-nivell-individual": "persones/#propostes",
@@ -57,21 +88,32 @@
     "el-prat-de-llobregat": "https://xn--esperanaactiva-mjb.cat/el-prat/",
     "vic": "https://xn--esperanaactiva-mjb.cat/vic/"
   },
-
   "home": {
     "title": "Transformem el malestar en Esperança Activa",
     "lead": "Acompanyem persones, grups i comunitats a trobar sentit, arrelament i direcció en temps de crisi ecosocial.",
     "actions": [
-      {"text": "Descobreix què fem per tu", "href": "que-fem"}
+      {
+        "text": "Descobreix què fem per tu",
+        "href": "que-fem"
+      }
     ],
     "sections": [
       {
-        "type": "text", "band": "white",
+        "type": "text",
+        "band": "white",
         "kicker": "La línia de treball comunitari de L’Espiral.",
         "title": "Del procés personal a la transformació col·lectiva.",
-        "paragraphs": ["Treballem des de la intersecció entre:"],
-        "list": ["Salut mental comunitària", "Economia Social i Solidària", "Acció climàtica i cultura del bé comú"],
-        "after": ["La nostra mirada integra el procés personal i la transformació col·lectiva a través del marc del Treball que Reconnecta."]
+        "paragraphs": [
+          "Treballem des de la intersecció entre:"
+        ],
+        "list": [
+          "Salut mental comunitària",
+          "Economia Social i Solidària",
+          "Acció climàtica i cultura del bé comú"
+        ],
+        "after": [
+          "La nostra mirada integra el procés personal i la transformació col·lectiva a través del marc del Treball que Reconnecta."
+        ]
       },
       {
         "type": "cards",
@@ -83,13 +125,34 @@
           "Una estratègia dissenyada tant per al benestar individual com per a la salut de les estructures col·lectives."
         ],
         "items": [
-          {"icon": "lifebuoy", "title": "Seguretat Sistèmica", "text": "Creem entorns de seguretat on equips, col·lectius i persones poden sentir-se segures, compartir la seva vulnerabilitat i, des d’aquí, construir solucions honestes i transformadores.", "href": "que-fem"},
-          {"icon": "plant", "title": "De la resistència a la Resiliència Regenerativa.", "text": "Ensenyem a metabolitzar les crisis: processar el conflicte i la incertesa per transformar-los en nous recursos de transformació i fortalesa col·lectiva.", "href": "que-fem"},
-          {"icon": "sun", "title": "Cuidem els Ritmes.", "paragraphs": ["Acompanyem els processos sense la pressa de la productivitat, però amb la constància de la natura.", "Avancem cap a la coherència, al ritme que el cos pot sostenir."], "href": "que-fem"}
+          {
+            "icon": "lifebuoy",
+            "title": "Seguretat Sistèmica",
+            "text": "Creem entorns de seguretat on equips, col·lectius i persones poden sentir-se segures, compartir la seva vulnerabilitat i, des d’aquí, construir solucions honestes i transformadores.",
+            "href": "que-fem"
+          },
+          {
+            "icon": "plant",
+            "title": "De la resistència a la Resiliència Regenerativa.",
+            "text": "Ensenyem a metabolitzar les crisis: processar el conflicte i la incertesa per transformar-los en nous recursos de transformació i fortalesa col·lectiva.",
+            "href": "que-fem"
+          },
+          {
+            "icon": "sun",
+            "title": "Cuidem els Ritmes.",
+            "paragraphs": [
+              "Acompanyem els processos sense la pressa de la productivitat, però amb la constància de la natura.",
+              "Avancem cap a la coherència, al ritme que el cos pot sostenir."
+            ],
+            "href": "que-fem"
+          }
         ]
       },
       {
-        "type": "cards", "band": "soft", "align": "left", "id": "treballem-amb",
+        "type": "cards",
+        "band": "soft",
+        "align": "left",
+        "id": "treballem-amb",
         "kicker": "tant si..",
         "before": [
           "necessites un espai individual per ordenar el teu moment vital,",
@@ -98,20 +161,109 @@
           "a Elara Social trobaràs estructura, metodologia i acompanyament."
         ],
         "items": [
-          {"icon": "users-three", "title": "Per a persones i grups", "text": "Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció.", "list": ["Processos individuals", "Grups de suport i pràctica", "Itineraris d’Esperança Activa"], "foot": "Objectiu: transformar el bloqueig en acció amb sentit.", "href": "persones"},
-          {"icon": "buildings", "title": "Per a equips i organitzacions", "text": "Acompanyem equips i entitats que volen:", "list": ["Prevenir el burnout", "Enfortir la cohesió interna", "Incorporar mirada ecosocial", "Desenvolupar cultura del bé comú"], "foot": "Treball des de dins, amb metodologia participativa.", "href": "organitzacions"},
-          {"icon": "tree", "title": "Per a la comunitat", "text": "Creem espais de trobada que generen vincles reals:", "list": ["Tallers vivencials", "Mini-rituals", "Espais de debat i reflexió conscient", "Cercles comunitaris"], "foot": "Objectiu: passar de la preocupació compartida a l’acció compartida.", "href": "comunitats"}
+          {
+            "icon": "users-three",
+            "title": "Per a persones i grups",
+            "text": "Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció.",
+            "list": [
+              "Processos individuals",
+              "Grups de suport i pràctica",
+              "Itineraris d’Esperança Activa"
+            ],
+            "foot": "Objectiu: transformar el bloqueig en acció amb sentit.",
+            "href": "persones"
+          },
+          {
+            "icon": "buildings",
+            "title": "Per a equips i organitzacions",
+            "text": "Acompanyem equips i entitats que volen:",
+            "list": [
+              "Prevenir el burnout",
+              "Enfortir la cohesió interna",
+              "Incorporar mirada ecosocial",
+              "Desenvolupar cultura del bé comú"
+            ],
+            "foot": "Treball des de dins, amb metodologia participativa.",
+            "href": "organitzacions"
+          },
+          {
+            "icon": "tree",
+            "title": "Per a la comunitat",
+            "text": "Creem espais de trobada que generen vincles reals:",
+            "list": [
+              "Tallers vivencials",
+              "Mini-rituals",
+              "Espais de debat i reflexió conscient",
+              "Cercles comunitaris"
+            ],
+            "foot": "Objectiu: passar de la preocupació compartida a l’acció compartida.",
+            "href": "comunitats"
+          }
         ]
       },
       {
-        "type": "cta", "band": "white",
+        "type": "cta",
+        "band": "white",
         "kicker": "teixim una cultura del bé comú",
         "paragraphs": [
           "Tant si necessites arrelament individual com si vols impulsar una transformació col·lectiva, a Elara Social trobaràs les eines i l'acompanyament per fer-ho realitat.",
           "Adaptem la nostra metodologia a la teva realitat: ja sigui per sostenir processos individuals o per enfortir la salut d’un col·lectiu sencer."
         ],
-        "buttons": [{"text": "Troba el teu espai", "href": "contacte"}]
+        "buttons": [
+          {
+            "text": "Troba el teu espai",
+            "href": "contacte"
+          }
+        ]
+      },
+      {
+        "type": "reviews",
+        "band": "soft"
       }
+    ]
+  },
+  "reviews": {
+    "title": "Excel·lent",
+    "summary": "Basat en 27 ressenyes de Google",
+    "trustindex": "",
+    "copied": "2026-11-05",
+    "items": [
+      [
+        "Nohara Guardia",
+        "Apropar-me a la pràctica del mindfullness a través del saber de l'Aleix ha estat tot un encert. Molta professionalitat i molt de coneixement. Un acompanyament amorós i ferm a la vegada. Gracies!"
+      ],
+      [
+        "eva ro",
+        "Super interesante y me ayuda a reflexionar y a tener otra perspectiva de las cosas, a entenderme y a reconocer miedos"
+      ],
+      [
+        "Mariadolors Conesa",
+        "La veu càlida de l'Aleix, les seves sàvies paraules i les reconfortants meditacions m'han acompanyat i aportat serenor en aquesta, de vegades, massa atrafegada vida. Gràcies Aleix."
+      ],
+      [
+        "carlos sanchez",
+        "Muy relajante y unas sensaciones diferentes para el cuerpo y la mente"
+      ],
+      [
+        "jsanch22 sanchez enciso",
+        "Magnífiques sessions. M'ha estat impossible continuar amb el full de treball i de vegades costa bastant viure i seguir totes les indicacions que es donen en cada capítol, però, de manera global, aporta molt el curs com a oportunitat per l'autoconeixement i la consciència."
+      ],
+      [
+        "Maite Forcadell",
+        "aquest curs de por i ansietat es complementa amb el d’atenció plena, els vídeos i les explicacions son profunds , ajuden i acompanyen en tot el procés, molt recomenable fer els dos cursos"
+      ],
+      [
+        "Daniel Segura Ocon",
+        "El curs amb L'Aleix i el seu equip ha estat molt profitós i interessant, per mi, que treballo amb grups ha estat una eina molt poderosa on començar a sostenir les meves intervencions."
+      ],
+      [
+        "Manuel Domínguez Albaladejo",
+        "Al principio es un poco complicado hacer un seguimiento de las explicaciones y ejercicios, quizás por la falta de costumbre en la concentración individual. Pero conforme vas avanzando se hace más ameno y sirve de mucha ayuda. No me canso de repetir los audios. Muy contento en general. Gracias"
+      ],
+      [
+        "David Solé",
+        "Un gran curs per descobrir molt més de un mateix"
+      ]
     ]
   }
 }

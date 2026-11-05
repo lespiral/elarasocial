@@ -395,3 +395,12 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 .block__actions--center { justify-content: center; }
 .band__kicker + .prose--before { margin-top: 0; }
 .prose .ticks { margin: 0 0 1em; }
+/* Ressenyes de Google */
+.reviews__head { text-align: center; margin: 0 0 24px; font-family: var(--font-head); }
+.reviews__head strong { display: block; font-size: 1.3rem; color: var(--blau-800); text-transform: uppercase; letter-spacing: .06em; }
+.reviews__head span { color: var(--muted); font-size: .95rem; }
+.reviews__list { list-style: none; margin: 0; padding: 0; columns: 3 300px; column-gap: 18px; }
+.review { break-inside: avoid; margin: 0 0 18px; padding: 18px 20px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+.review__text { margin: 0 0 10px; font-size: .98rem; }
+.review__text::before { content: "“"; color: var(--verd); font: 700 1.4rem/0 var(--font-head); margin-right: 2px; }
+.review__name { margin: 0; font: 700 .9rem/1.3 var(--font-head); color: var(--blau-700); }
