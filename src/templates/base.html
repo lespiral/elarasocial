@@ -50,6 +50,12 @@
         <p class="footer__name">{% if favicon %}<img src="{{ root }}assets/img/simbol-elara.png" alt="" width="40" height="40">{% endif %}{{ site.name }}</p>
         {% if site.footer.motto %}<p class="footer__motto">{{ site.footer.motto }}</p>{% endif %}
         {% if site.footer.text %}<p>{{ site.footer.text }}</p>{% endif %}
+        {% if site.footer.projects %}
+        <div class="footer__projects">
+          <p class="footer__h">{{ site.footer.projects.title }}</p>
+          <ul>{% for pr in site.footer.projects["items"] %}<li><a class="footer__project" href="{{ pr.href }}" rel="noopener"><span>{{ pr.title }}{% if pr.site %}<small>{{ pr.site }}</small>{% endif %}</span>{{ icon('external') }}</a></li>{% endfor %}</ul>
+        </div>
+        {% endif %}
       </div>
       <div class="footer__col">
         <p class="footer__h">La web</p>

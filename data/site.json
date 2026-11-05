@@ -17,6 +17,16 @@
   "footer": {
     "motto": "Cuidem les persones. Enfortim les comunitats",
     "text": "La línia de treball comunitari de L’Espiral.",
+    "projects": {
+      "title": "Projectes",
+      "items": [
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "site": "esperançaactiva.cat",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
     "legal": [
       {
         "title": "Avís legal",
