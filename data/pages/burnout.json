@@ -1,14 +1,135 @@
 {
-  "title": "Burnout: reconnectar amb la força sense cremar-se",
+  "title": "Burnout",
   "kicker": "Propostes",
-  "lead": "Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
+  "lead": "Reconnectar amb la força sense cremar-se. Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
+  "description": "Reconnectar amb la força sense cremar-se. Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+        "Quan treballes per al bé comú, la pressió no queda fora. Entra dins: urgències constants, casos d’alt impacte, manca de recursos, decisions difícils, frustració sistèmica, i la sensació que mai n’hi ha prou.",
+        "Això desgasta. I no només per cansament: perquè va tocant el sentit, la vocació i la manera com et parles per dins.",
+        "Aquest taller és un itinerari pràctic per a persones i grups que volen recuperar energia i coherència sense endurir-se ni col·lapsar.",
+        "Ho fem entrenant una habilitat clau: l’autocompassió, entesa com una manera concreta de respondre al patiment amb presència, humanitat compartida i acció útil, amb tendresa i amb fermesa.",
+        "No és un espai per “aguantar més”. És un espai per sostenir el que és important sense destruir-te."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripció",
+          "href": "#inscripcio"
+        },
+        {
+          "text": "Contacta amb nosaltres",
+          "href": "contacte"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Què t'emportaràs del programa",
+      "paragraphs": [
+        "Aquest taller et dona un marc replicable per sortir del “mode supervivència” i recuperar capacitat de decidir i cuidar-te en entorns exigents. En lloc de quedar-te amb “estic esgotat però he de tirar”, entrenaràs recursos que ajuden a:"
+      ],
+      "list": [
+        "reconèixer el burnout (i diferenciar-lo de l’estrès “normal”) sense culpa ni vergonya",
+        "baixar reactivitat i recuperar presència en moments d’urgència i tensió",
+        "canviar el diàleg intern (de crític implacable a veu útil i sostenible)",
+        "gestionar el backdraft: quan començar a cuidar-te activa dolor antic o resistències",
+        "practicar acceptació tendra: reduir resistència, recuperar energia i claredat",
+        "reconnectar amb valors i propòsit (sense convertir-los en autoexigència)",
+        "posar límits i protegir-te amb autocompassió activa (fermament i sense agressió)",
+        "construir un pla de manteniment realista (micropràctiques, revisió i prevenció de recaiguda)"
+      ],
+      "after": [
+        "El resultat és doble: millora el benestar i el clima humà, i també la qualitat operativa (priorització, coherència, decisions i sostenibilitat del ritme)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Explorarem…",
+      "list": [
+        "<strong>Burnout:</strong> els tres pilars (esgotament, cinisme/desconnexió, eficàcia reduïda) i per què “descansar un cap de setmana” ja no basta.",
+        "<strong>Autocompassió:</strong> què és i què no és (no és autocomplaença, ni egoisme, ni feblesa).",
+        "<strong>Neurobiologia pràctica:</strong> com el sistema d’amenaça domina en burnout i com activar senyals de seguretat.",
+        "<strong>Backdraft i zones de tolerància:</strong> dosi, límits i criteris per practicar sense desbordar.",
+        "<strong>Equació del patiment:</strong> dolor × resistència = patiment, i com transformar resistència en acció útil.",
+        "<strong>Valors i intencionalitat:</strong> diferenciar metes i valors; recuperar brúixola i coherència.",
+        "<strong>Lesió moral (quan apareix):</strong> què passa quan el sistema t’obliga a actuar contra el que consideres just.",
+        "<strong>Autocompassió Activa:</strong> límits, protecció i “claredat empoderada”.",
+        "<strong>Motivació sàvia:</strong> substituir el crític intern per un “entrenador savi” que sosté canvi real.",
+        "<strong>Consolidació:</strong> pla de manteniment, savoring i gratitud com a reentrenament atencional (sense positivisme)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "Micro-pauses d’autocompassió per a moments reals de pressió",
+        "<strong>Grounding discret:</strong> plantes dels peus, orientació, retorn al cos quan hi ha saturació",
+        "Respiració i ritme per baixar activació (adaptat a cada persona)",
+        "Tacte de suport (auto-tacte) i alternatives quan activa rebuig o tristesa",
+        "<strong>Protocols de seguretat:</strong> Stop–Ground–Choose (aturar, ancorar, triar un pas mínim)",
+        "Descans d’autocompassió tendra (pràctica troncal)",
+        "Traduir valors en intencions observables i passos de 7 dies",
+        "<strong>Assaig de límits:</strong> frases curtes, clares, respectuoses (role-play)",
+        "Disseny del teu pla mínim viable post-taller (2 minuts/dia + revisió setmanal)"
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "per-que",
+      "kicker": "Sostenir la feina sense trencar-se per dins",
+      "paragraphs": [
+        "Perquè cap projecte es manté a llarg termini si la gent que el sosté viu en mode emergència.",
+        "Cuidar-nos no és un luxe ni un premi: és una condició de possibilitat.",
+        "L’autocompassió no ens fa menys compromesos. Ens fa més sostenibles."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "items": [
+        [
+          "I si algú està en un burnout molt intens o amb símptomes greus?",
+          "<p>Ho valorem abans. El taller pot ajudar, però hi ha casos en què és recomanable complementar-lo amb suport individual o una intervenció específica.</p><p>En qualsevol cas, el programa està dissenyat amb criteris de dosi i seguretat (zones de tolerància, dret a passar, alternatives a pràctiques activadores).</p>"
+        ],
+        [
+          "Cal experiència prèvia en mindfulness?",
+          "<p>No. El programa és progressiu. Comencem pel bàsic (mapa del burnout + recursos simples) i avancem cap a pràctiques més integradores.</p>"
+        ],
+        [
+          "Això serveix si el problema és “el sistema” i no jo?",
+          "<p>Justament. El burnout sovint té components sistèmics (recursos, ritmes, exigències). El taller no pretén “adaptar-te” a la injustícia, sinó ajudar-te a recuperar marge d’acció: regular-te, posar límits, sostenir valors i fer passos realistes sense autoexplotació.</p>"
+        ],
+        [
+          "Què passa entre sessions?",
+          "<p>Proposem micropràctiques (2–10 minuts) i una observació concreta (per exemple: detectar el crític intern, identificar resistència, practicar una micro-pausa en un moment real). L’objectiu és integrar, no afegir pressió.</p>"
+        ],
+        [
+          "Aquest taller és “teràpia de grup”?",
+          "<p>No. És un programa formatiu i vivencial per entrenar habilitats d’autoregulació, autocompassió i límits.</p><p>Pot obrir emocions (perquè això és humà), però l’objectiu és aprendre recursos replicables i sostenibles.</p>"
+        ],
+        [
+          "Haurem de parlar de coses personals davant de tothom?",
+          "<p>No és obligatori.</p><p>El taller dona espai perquè cada persona participi amb el nivell de paraula que sigui adequat.</p><p>Treballem amb experiències de treball i impactes reals, però respectant límits i confidencialitat.</p>"
+        ],
+        [
+          "Quants participants són recomanables?",
+          "<p>Idealment és millor no passar de 20 participants (però dependrà de la complexitat i el temps disponible).</p><p>Si l’equip és més gran, proposem format amb subgrups o edició escalonada.</p>"
+        ],
+        [
+          "Què ens emportem al final?",
+          "<p>Un kit personal: protocols breus per moments de pressió, frases creïbles d’autocompassió, i un pla de manteniment.</p><p>I, si és per equips, un llenguatge compartit i pràctiques comunes que ajuden a prevenir desgast col·lectiu (ritmes, límits, i cura sostenible).</p>"
+        ]
       ]
     },
     {
@@ -26,7 +147,14 @@
           "form": "1FAIpQLScccqL9HFQYDaDJdXMvFsGdEZOKxfRZ9xOm3a5QUyvzmNdRQw",
           "height": 3200
         }
+      ],
+      "paragraphs": [
+        "Vols que adaptem el programa al teu equip? Expliqueu-nos breument què us passa i us proposem una versió a mida."
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

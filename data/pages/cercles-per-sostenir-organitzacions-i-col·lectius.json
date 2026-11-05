@@ -1,14 +1,132 @@
 {
-  "title": "Cercles de paraula (per sostenir organitzacions i col·lectius)",
+  "title": "Cercles de paraula",
   "kicker": "Propostes",
-  "lead": "Un taller pràctic en 4 sessions (2 h cadascuna) per aprendre l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
+  "lead": "Per sostenir organitzacions i col·lectius",
+  "description": "Per sostenir organitzacions i col·lectius",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+        "Quan una organització treballa amb causes exigents com la crisi climàtica, la precarietat, l’habitatge, la salut comunitària, o els drets socials, la pressió no és només externa.",
+        "També entra dins: ritmes, prioritats, discrepàncies estratègiques, càrrega emocional, cansament i conflictes que s’acumulen.",
+        "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) perquè el vostre equip aprengui l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
+        "No és un espai per “guanyar” debats. És un contenidor per parlar amb veritat, escoltar amb respecte i traduir el que emergeix en passos concrets."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripció",
+          "href": "#inscripcio"
+        },
+        {
+          "text": "Contacta amb nosaltres",
+          "href": "contacte"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Què t'emportaràs del programa",
+      "paragraphs": [
+        "Aquest taller us dona un marc replicable per sostenir converses que sovint queden encallades en polarització, silencis o tensió. En lloc de quedar-vos amb “hem parlat molt però no avancem”, desenvolupareu una estructura que ajuda a:"
+      ],
+      "list": [
+        "baixar reactivitat i recuperar presència en moments de tensió",
+        "distingir posicions de necessitats i valors",
+        "abordar el desacord sense trencar el vincle",
+        "prendre decisions amb consens habitable (quan cal)",
+        "crear acords concrets i un seguiment realista",
+        "prevenir el desgast i el burnout comunitari amb espais de cura col·lectiva"
+      ],
+      "after": [
+        "El resultat és doble: millora la qualitat humana (vincle, confiança) i també la qualitat operativa (decisions, coordinació, acció)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Explorarem…",
+      "list": [
+        "<strong>Què és un Cercle (i què no és):</strong> diferència entre assemblea, debat, reunió, mediació i Cercle.",
+        "<strong>Els 5 elements que creen seguretat:</strong> obertura i tancament, pautes, objecte de paraula, custòdia (keeper) i consens/decisió.",
+        "<strong>Del “qui té raó” al “què ens està passant”:</strong> passar de posicions a impactes, necessitats, valors i responsabilitats.",
+        "<strong>Consens sense pressió silenciosa:</strong> com donar lloc a veus minoritàries i evitar consensos “per cansament”.",
+        "<strong>Confidencialitat i límits en col·lectius:</strong> com protegir l’espai i alhora mantenir transparència i coherència organitzativa.",
+        "<strong>Quan un Cercle és adequat i quan no:</strong> criteris de conveniència, riscos i alternatives."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "<strong>Cercles guiats aplicats a situacions reals:</strong> tensions per estratègia, repartiment de tasques, lideratges, ritmes, conflictes interpersonals, fatiga i desconnexió.",
+        "Check-in / check-out per sostenir el grup quan hi ha intensitat emocional.",
+        "Parla en primera persona i escolta profunda (sense interrupcions ni “ping-pong”).",
+        "Disseny de preguntes que obren comprensió i redueixen polarització.",
+        "<strong>Simulacions amb feedback:</strong> com obrir, sostenir i tancar un Cercle.",
+        "<strong>Creació del vostre protocol intern:</strong> guió d’obertura, pautes, rondes, criteris i seguiment."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "items": [
+        [
+          "Això substitueix una assemblea?",
+          "<p>No. Un Cercle pot complementar una assemblea. De fet, moltes organitzacions utilitzen Cercles per:</p><ul class=\"ticks\"><li>preparar converses difícils abans d’una assemblea,</li><li>desbloquejar polaritzacions,</li><li>fer seguiment d’acords,</li><li>o cuidar el clima relacional de l’organització.</li></ul>"
+        ],
+        [
+          "Cal experiència prèvia en facilitació, comunicació no violenta o treball grupal?",
+          "<p>No. El programa és accessible i progressiu.</p><p>Comencem per l’estructura bàsica del Cercle i avancem cap a pràctica aplicada.</p>"
+        ],
+        [
+          "I si hi ha un conflicte molt intens o una situació delicada?",
+          "<p>Ho valorem abans. Hi ha casos en què cal un format diferent (mediació formal, protocols de cures, processos restauratius específics). El taller pot ajudar molt, però no és l’eina per a tot.</p>"
+        ],
+        [
+          "Ens farà perdre temps d’acció?",
+          "<p>Sovint passa el contrari: quan el grup no té contenidor, es perd temps en tensió, malentesos i reunions improductives.</p><p>El Cercle ajuda a recuperar claredat i a fer acords implementables.</p><p>I, a més, sosté el clima humà que permet continuar.</p>"
+        ],
+        [
+          "Aquest taller és “teràpia de grup”?",
+          "<p>No. És un programa formatiu i vivencial per aprendre una metodologia de conversa segura.</p><p>Pot obrir emocions i necessitats (perquè això és humà), però l’objectiu és dotar el col·lectiu d’una estructura operativa per dialogar i decidir millor.</p>"
+        ],
+        [
+          "Haurem de parlar de coses personals davant de tothom?",
+          "<p>No és obligatori.</p><p>El Cercle dona espai perquè cada persona participi amb el nivell de paraula que sigui adequat.</p><p>Treballem amb experiències de treball i impactes reals, però respectant límits i confidencialitat.</p>"
+        ],
+        [
+          "Quants participants són recomanables?",
+          "<p>Idealment és millor no passar de 20 participants (però dependrà de la complexitat i el temps disponible).</p><p>Si l’equip és més gran, proposem format amb subgrups o edició escalonada.</p>"
+        ],
+        [
+          "Què ens emportem al final?",
+          "<p>Un protocol intern (guió + pautes + preguntes + criteris de convocatòria + seguiment) i un mapa clar de quan convocar Cercles: per cuidar vincle, prendre decisions, sostenir desacords o reorientar estratègia.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "a-mida",
+      "title": "Voleu adaptar el taller a la vostra realitat?",
+      "paragraphs": [
+        "Expliqueu-nos breument:"
+      ],
+      "list": [
+        "qui sou (cooperativa, associació, col·lectiu),",
+        "mida del grup,",
+        "tipus de tensions habituals (estratègia, càrrega, lideratge, coordinació, desgast),",
+        "format (presencial/online)."
+      ],
+      "after": [
+        "I us proposem una versió a mida."
       ]
     },
     {
@@ -27,6 +145,10 @@
           "height": 3300
         }
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

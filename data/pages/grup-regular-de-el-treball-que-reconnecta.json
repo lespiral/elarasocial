@@ -2,13 +2,108 @@
   "title": "El Treball que Reconnecta (grup regular)",
   "kicker": "Propostes",
   "lead": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+  "description": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+        "La transformació i la cura demanen temps i constància.",
+        "Per això, hem creat un grup regular amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+        "Aquest espai de trobada contínua és un lloc segur per anar treballant, pas a pas, tant el pes quotidià (l’estrès laboral, la pressió de l’habitatge o l’angoixa pel teu futur) com l’esgotament que ens generen les crisis globals (la polarització, l’ecoansietat o els discursos d’odi).",
+        "Fer-ho de manera regular ens permet teixir vincles profunds i trobar formes d’acció que puguem mantenir a llarg termini."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripció",
+          "href": "#inscripcio"
+        },
+        {
+          "text": "Contacta amb nosaltres",
+          "href": "contacte"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Què t’emportaràs del cicle",
+      "paragraphs": [
+        "En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta com a brúixola.",
+        "A partir de les necessitats que bateguin al grup o de propostes guiades, dedicarem cada trobada a acollir els malestars del dia a dia, o bé a aprofundir en etapes concretes de l’Espiral (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
+        "Sessió a sessió, anirem teixint un camí compartit d’autocura, resiliència i xarxa.",
+        "Treballarem recursos vius per sostenir les emocions difícils i recuperar la claredat davant la incertesa. L’objectiu no és “arribar al final”, sinó que trobada rere trobada cultivis la força interior i la mirada àmplia necessàries per sostenir el teu quotidià."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Explorarem…",
+      "list": [
+        "<strong>El mètode del TqR:</strong> les quatre estacions per transformar la incertesa (Gratitud, Dolor, Noves Mirades i Acció).",
+        "<strong>L'arrel de la Gratitud:</strong> com utilitzar-la com a eina de resiliència quan tot trontolla.",
+        "<strong>El sentit del malestar:</strong> aprendre a mirar les emocions difícils de cara per transformar-les en força.",
+        "<strong>El salt al \"nosaltres\":</strong> eines per entendre el nostre lloc al món des de la pertinença i no des de la soledat.",
+        "<strong>El tancament actiu:</strong> com definir petits passos i propòsits que puguis sostenir en el teu dia a dia."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "<strong>Tornar al present:</strong> meditacions i pauses d'arrelament per connectar amb el cos i baixar revolucions.",
+        "<strong>Clarificació interna:</strong> dinàmiques suaus per desxifrar, posar nom i endreçar allò que ens remou per dins.",
+        "<strong>Escolta horitzontal:</strong> cercles de diàleg 100% respectuosos amb el teu ritme (tu decideixes si vols compartir o només escoltar).",
+        "<strong>L'art de sostenir-se:</strong> recursos pràctics d'autocura per no trencar-nos davant la intensitat de les emocions.",
+        "<strong>Connexió sistèmica:</strong> exercicis vivencials inspirats en els cicles de la natura i la saviesa col·lectiva.",
+        "<strong>El full de ruta:</strong> dinàmiques de tancament per integrar el procés i marxar amb passos concrets per a l'endemà."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "items": [
+        [
+          "Aquest espai és per a mi si estic passant un moment difícil?",
+          "<p>Pot ser-ho. L’espai està pensat com un lloc segur per explorar emocions difícils i enfortir resiliència i autocura.</p><p>Tu marques el ritme i esculls què compartir.</p><p>Si estàs en una crisi aguda, és millor valorar-ho abans per assegurar el suport adequat.</p><p>Consulta’ns. En el nostre equip hi ha professionals de la psicoteràpia i et podem ajudar a valorar-ho.</p>"
+        ],
+        [
+          "Cal experiència prèvia en atenció plena o treball grupal?",
+          "<p>No. Utilitzem pràctiques guiades i dinàmiques accessibles.</p>"
+        ],
+        [
+          "De què parlarem exactament?",
+          "<p>De crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també de crisis globals (polarització, discursos d’odi, canvi climàtic…).</p>"
+        ],
+        [
+          "Què passa després de cada trobada?",
+          "<p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p>"
+        ],
+        [
+          "És teràpia?",
+          "<p>No. És un espai per compartir i teixir xarxa.</p><p>Pot ser un espai transformador, però no substitueix un procés terapèutic individual quan cal.</p>"
+        ],
+        [
+          "Hauré de parlar davant de tothom?",
+          "<p>No és obligatori.</p><p>Pots participar amb més o menys paraula segons el moment; l’entorn està pensat perquè sigui segur.</p>"
+        ],
+        [
+          "Què vol dir “esperança activa”?",
+          "<p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p>"
+        ],
+        [
+          "I si em preocupa “desbordar-me” emocionalment durant les trobades?",
+          "<p>És una preocupació habitual. Les trobades estan plantejades com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar, no compartir o sortir un moment si ho necessites.</p><p>Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+        ],
+        [
+          "Per què tres preus? (Reduït / Estàndard / Sostenidor)",
+          "<p>A Elara Social treballem amb un sistema de contribució conscient perquè l’accés al taller no depengui només de la situació econòmica de cada persona. El preu reduït facilita que hi pugui participar qui ara mateix té menys marge. El preu estàndard cobreix el cost real de l’activitat (temps de preparació, facilitació, materials i espai). I el preu sostenidor ajuda a mantenir el projecte viu i a compensar places reduïdes.</p><p>Quan el preu sostenidor genera excedents, els destinem a projectes i iniciatives alineades amb el nostre propòsit, missió i valors, reforçant el treball comunitari i l’impacte social del projecte.</p>"
+        ]
       ]
     },
     {
@@ -22,6 +117,10 @@
           "height": 3000
         }
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

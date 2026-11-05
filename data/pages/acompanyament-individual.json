@@ -1,14 +1,132 @@
 {
   "title": "Acompanyament individual",
-  "kicker": "Propostes",
-  "lead": "T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.",
+  "kicker": "Al teu costat i al teu ritme",
+  "lead": "Del malestar a l’acció amb sentit",
+  "description": "Del malestar a l’acció amb sentit",
   "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
+      "paragraphs": [
+        "El pas cap a una vida amb més coherència no l’has de fer en solitud.",
+        "T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.",
+        "Un refugi on aprendre a sostenir les emocions difícils del dia a dia i traçar un full de ruta per transformar la incertesa en acció amb sentit."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripció",
+          "href": "#inscripcio"
+        },
+        {
+          "text": "Contacta amb nosaltres",
+          "href": "contacte"
+        }
+      ]
+    },
     {
       "type": "note",
       "style": "info",
-      "title": "Pàgina en construcció",
+      "id": "dades",
+      "title": "Sessions 1 a 1",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+        "Hores convingudes.",
+        "Sessions d’1 hora: 60 € preu reduït / 70 € preu estàndard / 80 € preu sostenidor.",
+        "Sessions d’1,5 hores: 90 € preu reduït / 110 € preu estàndard / 120 € preu sostenidor."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Què t’emportaràs",
+      "list": [
+        "<strong>Claredat i direcció:</strong> posar nom al que estàs vivint i entendre què et demana el moment actual.",
+        "<strong>Eines reals per al dia a dia:</strong> pràctiques simples per regular-te, reconnectar i recuperar centre quan hi ha desbordament.",
+        "<strong>Capacitat de sostenir emocions difícils:</strong> por, ràbia, tristesa, impotència o bloqueig… sense quedar-hi atrapada/at.",
+        "<strong>Transformació del malestar en acció amb sentit:</strong> passos concrets alineats amb els teus valors, sense autoexigència destructiva.",
+        "<strong>Un pla de compromís i autocura sostenible:</strong> implicar-te amb el món (o amb la teva vida) sense cremar-te.",
+        "<strong>Un espai segur i confidencial:</strong> escolta profunda, ritme respectuós i acompanyament honest."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "En què treballarem (adaptat a tu)",
+      "list": [
+        "<strong>Integrar les pràctiques d’El Treball que Reconnecta a la vida quotidiana:</strong> portar-les més enllà de la reflexió teòrica perquè es converteixin en eines vives que enforteixen la teva resiliència i el teu sentit de propòsit.",
+        "<strong>Sostenir emocions difícils i transformar-les en acció significativa:</strong> aprendre a mirar-les amb compassió, escoltar-les com a missatges, i convertir-les en energia útil per al teu camí personal i col·lectiu.",
+        "<strong>Dissenyar el teu propi pla de compromís i autocura per al canvi:</strong> alinear el que fas amb el que valores, d’una manera sostenible i respectuosa amb tu, perquè puguis implicar-te sense perdre l’equilibri interior."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "<strong>Mapa del teu moment vital:</strong> què està passant, què pesa, què demana atenció.",
+        "<strong>Pràctiques breus de regulació i presència:</strong> tornar al cos, al centre i a la capacitat de triar.",
+        "<strong>Gratitud com a recurs d’arrelament:</strong> no com a positivisme, sinó com a base de seguretat interna.",
+        "<strong>Honrar el dolor pel món (i pel propi):</strong> donar-li lloc sense quedar-hi atrapada/at.",
+        "<strong>Veure amb nous ulls:</strong> identitat, interdependència, mirada sistèmica i ampliació de perspectiva.",
+        "<strong>Passar a l’acció:</strong> decidir un pas possible i realista, i sostenir-lo en el temps.",
+        "<strong>Integració entre sessions:</strong> micropràctiques, preguntes guia, i una línia d’acció concreta per setmana/quinzena."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "per-que",
+      "kicker": "per recuperar la capacitat de sostenir la realitat sense trencar-se",
+      "paragraphs": [
+        "Hi ha moments en què la informació no és el problema.",
+        "El que pesa és la càrrega emocional, la sensació d’anar sola/sol, la fatiga d’aguantar-ho tot, o el buit de no saber com continuar.",
+        "Les mentories individuals són un espai per recuperar la teva capacitat de sostenir la realitat sense trencar-te, i transformar la reacció (bloqueig, pressa, autoexigència, desesperança) en un procés que et doni estructura, sentit i direcció.",
+        "No busquem “arreglar-te”. Busquem que puguis tornar a tu, escoltar què és essencial, i avançar amb passos que respectin la teva vida: el teu cos, les teves relacions i els teus límits."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "items": [
+        [
+          "A qui va dirigit?",
+          "<p>A persones que volen un procés profund i pràctic per integrar El Treball que Reconnecta, sostenir emocions difícils i orientar-se cap a una acció alineada amb valors. No cal experiència prèvia.</p>"
+        ],
+        [
+          "És teràpia?",
+          "<p>És un acompanyament de mentoria vivencial basat en pràctiques, reflexió i integració. Si busques psicoteràpia clínica per un diagnòstic específic, t’ho podem orientar o derivar segons el cas.</p>"
+        ],
+        [
+          "Online funciona igual que presencial?",
+          "<p>Sí. Online permet molta continuïtat i profunditat. Presencial pot ajudar especialment si necessites més contenció corporal i espai físic de calma.</p>"
+        ],
+        [
+          "Quina freqüència recomaneu?",
+          "<p>Habitualment quinzenal (si és sostenible) o setmanal (quan hi ha molta intensitat o un moment clau). Ho decidim juntes.</p>"
+        ],
+        [
+          "Què passa entre sessions?",
+          "<p>Et proposaré micropràctiques i un pas d’integració realista.</p><p>La idea és que el procés tingui impacte, no que quedi només en conversa.</p>"
+        ],
+        [
+          "Puc fer mentories si estic molt desbordada/at?",
+          "<p>Sí, però començarem per regular, estabilitzar i donar estructura.</p><p>Si detectem que cal un suport clínic específic, t’ho diré amb claredat.</p>"
+        ],
+        [
+          "És confidencial?",
+          "<p>Sí. Tot el procés és confidencial.</p>"
+        ],
+        [
+          "I si em preocupa “desbordar-me” emocionalment durant la sessió?",
+          "<p>És una preocupació habitual. Les mentories estan plantejades com un espai segur i respectuós, on tu marques el ritme.</p><p>Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats.</p><p>Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+        ],
+        [
+          "Per què tres preus? (Reduït / Estàndard / Sostenidor)",
+          "<p>A Elara Social treballem amb un sistema de contribució conscient perquè l’accés als nostres serveis no depengui només de la situació econòmica de cada persona. El preu reduït facilita que hi pugui participar qui ara mateix té menys marge. El preu estàndard cobreix el cost real de l’activitat (temps de preparació, facilitació, materials i espai). I el preu sostenidor ajuda a mantenir el projecte viu i a compensar places reduïdes.</p><p>Quan el preu sostenidor genera excedents, els destinem a projectes i iniciatives alineades amb el nostre propòsit, missió i valors, reforçant el treball comunitari i l’impacte social del projecte.</p>"
+        ]
       ]
     },
     {
@@ -22,6 +140,10 @@
           "height": 8076
         }
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

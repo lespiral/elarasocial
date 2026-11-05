@@ -1,14 +1,109 @@
 {
   "title": "Un pont d'Esperança",
-  "kicker": "Propostes",
+  "kicker": "Un parèntesi per reconnectar des de l’arrel",
   "lead": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+  "description": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+        "De vegades, per metabolitzar tot allò que ens travessa, necessitem una pausa més llarga.",
+        "Aquest taller de cap de setmana és un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+        "Durant dos dies, teixirem un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com l’esgotament que ens generen els grans reptes globals.",
+        "Temps de qualitat per trobar, en comunitat, formes concretes d’acció i compromís."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripció",
+          "href": "#inscripcio"
+        },
+        {
+          "text": "Contacta amb nosaltres",
+          "href": "contacte"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Què t’emportaràs del cicle",
+      "paragraphs": [
+        "En aquest espai tindrem el temps necessari per aturar-nos i connectar a fons amb allò que realment ens importa.",
+        "Treballarem des del marc del Treball que Reconnecta, recorrent la famosa espiral de Joanna Macy (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
+        "Un camí compartit d’autocura i xarxa per aprendre a sostenir les emocions difícils davant la incertesa.",
+        "L’objectiu és que recuperis la claredat i surtis d’aquí amb la força interior i els passos concrets per sostenir-te en el temps."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Explorarem…",
+      "list": [
+        "<strong>L’Espiral del TqR:</strong> Gratitud → Honrar el dolor → Veure amb nous ulls → Passar a l’acció.",
+        "<strong>La gratitud com a arrel:</strong> allò que ens sosté (persones, recursos interns, natura).",
+        "<strong>El sentit del dolor pel món:</strong> emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida.",
+        "<strong>Del “jo separat” al “jo comunitari”:</strong> mirada sistèmica i pertinença al teixit de la vida.",
+        "<strong>Com tancar amb petits passos:</strong> propòsit vital, continuïtat i xarxes de suport."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "Meditacions guiades i moments d’aterratge per connectar amb cos i present.",
+        "Dinàmiques d’introspecció per donar nom al que ens passa i ordenar-ho per dins.",
+        "Diàleg profund i escolta mútua, amb participació al teu ritme (sense obligació de compartir).",
+        "Recursos d’autocura i estabilitat interna per sostenir emocions difícils.",
+        "Pràctiques inspirades en la natura i la saviesa col·lectiva (mirada sistèmica).",
+        "Un tancament d’integració amb passos concrets (continuïtat i compromís compartit)."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "items": [
+        [
+          "Aquest taller és per a mi si estic passant un moment difícil?",
+          "<p>Pot ser-ho. El cicle està pensat com un lloc segur per explorar emocions difícils i enfortir resiliència i autocura.</p><p>Tu marques el ritme i esculls què compartir.</p><p>Si estàs en una crisi aguda, és millor valorar-ho abans per assegurar el suport adequat.</p><p>Consulta’ns. En el nostre equip hi ha professionals de la psicoteràpia i et podem ajudar a valorar-ho.</p>"
+        ],
+        [
+          "Cal experiència prèvia en atenció plena o treball grupal?",
+          "<p>No. Utilitzem pràctiques guiades i dinàmiques accessibles.</p>"
+        ],
+        [
+          "De què parlarem exactament?",
+          "<p>De crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també de crisis globals (polarització, discursos d’odi, canvi climàtic…).</p>"
+        ],
+        [
+          "Què passa després del taller?",
+          "<p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p>"
+        ],
+        [
+          "És teràpia?",
+          "<p>No. És un taller vivencial i comunitari.</p><p>Pot ser transformador, però no substitueix un procés terapèutic individual quan cal.</p>"
+        ],
+        [
+          "Hauré de parlar davant de tothom?",
+          "<p>No és obligatori.</p><p>Pots participar amb més o menys paraula segons el moment; l’entorn està pensat perquè sigui segur.</p>"
+        ],
+        [
+          "Què vol dir “esperança activa”?",
+          "<p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p>"
+        ],
+        [
+          "I si em preocupa “desbordar-me” emocionalment durant el cicle?",
+          "<p>És una preocupació habitual. El cicle està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar, no compartir o sortir un moment si ho necessites.</p><p>Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+        ],
+        [
+          "Per què tres preus? (Reduït / Estàndard / Sostenidor)",
+          "<p>A Elara Social treballem amb un sistema de contribució conscient perquè l’accés al taller no depengui només de la situació econòmica de cada persona. El preu reduït facilita que hi pugui participar qui ara mateix té menys marge. El preu estàndard cobreix el cost real de l’activitat (temps de preparació, facilitació, materials i espai). I el preu sostenidor ajuda a mantenir el projecte viu i a compensar places reduïdes.</p><p>Quan el preu sostenidor genera excedents, els destinem a projectes i iniciatives alineades amb el nostre propòsit, missió i valors, reforçant el treball comunitari i l’impacte social del projecte.</p>"
+        ]
       ]
     },
     {
@@ -22,6 +117,10 @@
           "height": 3000
         }
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }

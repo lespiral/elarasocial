@@ -1,14 +1,114 @@
 {
   "title": "L'Espiral de l'Esperança Activa",
   "kicker": "Propostes",
-  "lead": "Un taller vivencial i segur per aturar-nos i donar sortida a tot allò que ens angoixa.",
+  "lead": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
+  "description": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
   "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
+      "paragraphs": [
+        "Un taller segur per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripció",
+          "href": "#inscripcio"
+        },
+        {
+          "text": "Contacta amb nosaltres",
+          "href": "contacte"
+        }
+      ]
+    },
     {
       "type": "note",
       "style": "info",
-      "title": "Pàgina en construcció",
+      "id": "dades",
+      "title": "4 hores",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual d'aquesta proposta (què t’emportaràs, explorarem, practicarem i preguntes freqüents)."
+        "Màx. 16 participants.",
+        "31 / 45 / 59 €: preu reduït / estàndard / sostenidor."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Què t’emportaràs del taller",
+      "list": [
+        "Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
+        "Treballarem autocura, resiliència i suport comunitari per transformar dolor i incertesa en claredat, esperança activa i acció significativa."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Explorarem…",
+      "list": [
+        "<strong>L’Espiral del TqR:</strong> Gratitud → Honrar el dolor → Veure amb nous ulls → Passar a l’acció.",
+        "<strong>La gratitud com a arrel:</strong> allò que ens sosté (persones, recursos interns, natura).",
+        "<strong>El sentit del dolor pel món:</strong> emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida.",
+        "<strong>Del “jo separat” al “jo comunitari”:</strong> mirada sistèmica i pertinença al teixit de la vida.",
+        "<strong>Com tancar amb petits passos:</strong> propòsit vital, continuïtat i xarxes de suport."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "Meditacions guiades i moments d’aterratge per connectar amb cos i present.",
+        "Dinàmiques d’introspecció per donar nom al que ens passa i ordenar-ho per dins.",
+        "Diàleg profund i escolta mútua, amb participació al teu ritme (sense obligació de compartir).",
+        "Recursos d’autocura i estabilitat interna per sostenir emocions difícils.",
+        "Pràctiques inspirades en la natura i la saviesa col·lectiva (mirada sistèmica).",
+        "Un tancament d’integració amb passos concrets (continuïtat i compromís compartit)."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "items": [
+        [
+          "Aquest taller és per a mi si estic passant un moment difícil?",
+          "<p>Sí, perquè està pensat com un espai segur i respectuós per explorar emocions difícils i enfortir resiliència. Cada persona participa al seu ritme i decideix què vol compartir.</p>"
+        ],
+        [
+          "Cal experiència prèvia en atenció plena o treball grupal?",
+          "<p>No. Utilitzem pràctiques guiades i dinàmiques accessibles.</p>"
+        ],
+        [
+          "De què parlarem exactament?",
+          "<p>De crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també de crisis globals (polarització, discursos d’odi, canvi climàtic…).</p>"
+        ],
+        [
+          "Què passa després del taller?",
+          "<p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p>"
+        ],
+        [
+          "És teràpia?",
+          "<p>És un taller vivencial i comunitari. Pot ser transformador, però no substitueix un procés terapèutic individual quan cal.</p>"
+        ],
+        [
+          "Hauré de parlar davant de tothom?",
+          "<p>No és obligatori. Pots participar amb més o menys paraula segons el moment; l’entorn està pensat perquè sigui segur.</p>"
+        ],
+        [
+          "Què vol dir “esperança activa”?",
+          "<p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p>"
+        ],
+        [
+          "I si em preocupa “desbordar-me” emocionalment durant el taller?",
+          "<p>És una preocupació habitual. El taller està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar, no compartir o sortir un moment si ho necessites. Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+        ],
+        [
+          "Per què tres preus? (Reduït / Estàndard / Sostenidor)",
+          "<p>A Elara Social treballem amb un sistema de contribució conscient perquè l’accés al taller no depengui només de la situació econòmica de cada persona. El preu reduït facilita que hi pugui participar qui ara mateix té menys marge. El preu estàndard cobreix el cost real de l’activitat (temps de preparació, facilitació, materials i espai). I el preu sostenidor ajuda a mantenir el projecte viu i a compensar places reduïdes.</p><p>Quan el preu sostenidor genera excedents, els destinem a projectes i iniciatives alineades amb el nostre propòsit, missió i valors, reforçant el treball comunitari i l’impacte social del projecte.</p>"
+        ]
       ]
     },
     {
@@ -22,6 +122,10 @@
           "height": 3500
         }
       ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }
