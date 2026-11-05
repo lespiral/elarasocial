@@ -26,6 +26,16 @@
       ]
     },
     {
+      "type": "note",
+      "style": "info",
+      "id": "dades",
+      "title": "2 sessions de 6 hores (dissabte i diumenge)",
+      "paragraphs": [
+        "Màx. 16 participants.",
+        "92 € preu reduït / 135 € preu estàndard / 179 € preu sostenidor."
+      ]
+    },
+    {
       "type": "text",
       "html": true,
       "title": "Què t’emportaràs del cicle",

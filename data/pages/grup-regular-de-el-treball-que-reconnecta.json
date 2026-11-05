@@ -26,6 +26,17 @@
       ]
     },
     {
+      "type": "note",
+      "style": "info",
+      "id": "dades",
+      "title": "1 sessió de 2 hores al mes o 2 sessions de 2 hores al mes (mensual o quinzenal)",
+      "paragraphs": [
+        "Màx. 16 participants.",
+        "Mensual (1 sessió al mes): 15 € preu reduït / 22,50 € preu estàndard / 30 € preu sostenidor, cada mes.",
+        "Quinzenal (2 sessions al mes): 30 € preu reduït / 45 € preu estàndard / 60 € preu sostenidor, cada mes."
+      ]
+    },
+    {
       "type": "text",
       "html": true,
       "title": "Què t’emportaràs del cicle",
