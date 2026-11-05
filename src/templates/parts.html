@@ -43,6 +43,25 @@
 </ul>
 {%- endmacro %}
 
+{# Llista d'articles (data/articles/), del més nou al més antic #}
+{% macro article_cards(list, root) -%}
+<ul class="posts">
+  {% for a in list %}
+  <li class="post">
+    <a class="post__link" href="{{ root }}{{ a.slug }}/">
+      {% if a.image %}<span class="post__img"><img src="{{ root }}assets/img/{{ a.image }}" alt="" loading="lazy"></span>{% endif %}
+      <span class="post__body">
+        <time class="post__date" datetime="{{ a.date }}">{{ a.date_text }}</time>
+        <span class="post__title">{{ a.title }}</span>
+        <span class="post__summary">{{ a.summary }}</span>
+        <span class="post__more">Llegeix l’article {{ icon('arrow') }}</span>
+      </span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
 {# Desplegable que porta a un lloc de la mateixa pàgina #}
 {% macro picker(id, label, placeholder, options, ic='pin', cls='') -%}
 <div class="picker{% if cls %} {{ cls }}{% endif %}">
@@ -121,6 +140,8 @@
     {% elif s.type == 'form' %}
       {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
       {{ forms(s) }}
+    {% elif s.type == 'articles' %}
+      {{ article_cards(articles, root) }}
     {% elif s.type == 'reviews' %}
       {# Ressenyes de Google: "reviews" a data/site.json. Amb el codi del giny de Trustindex ("trustindex"), surten les de Google al dia; si no, les copiades. #}
       {% set r = site.reviews %}

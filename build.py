@@ -24,7 +24,7 @@ DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
 ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
 # Tipus de secció que saben pintar les plantilles (src/templates/parts.html, macro «section»)
-SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews"}
+SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews", "articles"}
 
 # Formulari de Google inserit a la pàgina (les respostes continuen arribant al compte que el va crear)
 FORM_URL = "https://docs.google.com/forms/d/e/{}/viewform"
@@ -108,6 +108,31 @@ for f in sorted((DATA / "pages").glob("*.json")):
     pages.append(p)
 slugs = {p["slug"] for p in pages}
 
+# Articles: data/articles/<adreça>.json → /<adreça>/ (les mateixes adreces que a WordPress)
+MESOS = ["gener", "febrer", "març", "abril", "maig", "juny", "juliol", "agost", "setembre", "octubre", "novembre", "desembre"]
+
+
+def data_llarga(iso):
+    y, m, d = (int(x) for x in iso.split("-"))
+    mes = MESOS[m - 1]
+    return f"{d} {'d’' if mes[0] in 'ao' else 'de '}{mes} de {y}"
+
+
+articles = []
+for f in sorted((DATA / "articles").glob("*.json")) if (DATA / "articles").exists() else []:
+    a = json.loads(f.read_text(encoding="utf-8"))
+    a["slug"] = f.stem
+    if a["slug"] in slugs:
+        errors.append(f"{f.relative_to(ROOT)}: ja hi ha una pàgina amb l'adreça /{a['slug']}/")
+    if a.get("image") and not (SRC / "img" / a["image"]).exists():
+        errors.append(f"{f.relative_to(ROOT)}: no trobo la imatge src/img/{a['image']}")
+    a["date_text"] = data_llarga(a["date"])
+    first = next(b for b in a["body"] if isinstance(b, str))
+    a["summary"] = a.get("summary") or (first if len(first) <= 230 else first[:230].rsplit(" ", 1)[0] + "…")
+    a["words"] = sum(len(b.split()) for b in a["body"] if isinstance(b, str))
+    articles.append(a)
+articles.sort(key=lambda a: a["date"], reverse=True)
+
 # El menú només pot portar a pàgines que existeixen (o a l'inici, "")
 for n in site.get("nav", []):
     for item in [n] + n.get("children", []):
@@ -123,7 +148,8 @@ env = Environment(loader=FileSystemLoader(SRC / "templates"), autoescape=select_
 env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.time())),
                    logo=(img / "logo-elara.png").exists(),
                    favicon=(img / "favicon-48.png").exists(),
-                   partners_logo=(img / "lespiral-elara.png").exists())
+                   partners_logo=(img / "lespiral-elara.png").exists(),
+                   articles=articles)
 
 PAGES = []
 
@@ -149,6 +175,8 @@ pending = 0
 pending += render("home.html", "", section="", h=home).count("[PENDENT]")
 for p in pages:
     pending += render("page.html", p["slug"], section=p["slug"], page_title=p["title"], page_description=p.get("description") or p.get("lead"), page=p).count("[PENDENT]")
+for a in articles:
+    pending += render("article.html", a["slug"], section="articles", page_title=a["title"], page_description=a["summary"], article=a).count("[PENDENT]")
 render("404.html", "404.html", page_title="Pàgina no trobada", root=BASE, base=BASE)
 
 # Adreces antigues de la web de WordPress que ja no són una pàgina: porten a la nova.
@@ -195,4 +223,4 @@ else:
 if (ROOT / "CNAME").exists():
     shutil.copy(ROOT / "CNAME", OUT / "CNAME")
 
-print(f"Fet: {len(pages) + 1} pàgines, {n_redirects} adreces antigues redirigides, {pending} marques [PENDENT]. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")
+print(f"Fet: {len(pages) + 1} pàgines, {len(articles)} articles, {n_redirects} adreces antigues redirigides, {pending} marques [PENDENT]. adreça={SITE_URL} cercadors={'no' if NOINDEX else 'sí'}")

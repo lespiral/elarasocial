@@ -3,12 +3,13 @@
 Web estàtica d'Elara Social, feta amb el mateix sistema i el mateix aspecte que la web de Camins d'Esperança [Activa] (repositori `lespiral/esperancaactiva`).
 Es publicarà amb GitHub Pages des de la carpeta `docs/`, primer a `lespiral.github.io/elarasocial` i, quan estigui aprovada, a `elarasocial.com`.
 
-Estat: estructura A (la de la web de WordPress, endreçada) amb els textos de la web actual a Inici, Sobre nosaltres, Què fem, Persones, Comunitats, Organitzacions i Contacte. Les pàgines de cada proposta tenen el formulari d'inscripció i encara els falten els textos. GitHub Pages encara no està activat.
+Estat: estructura A (la de la web de WordPress, endreçada) amb tots els textos de la web actual: les pàgines principals, les 8 propostes amb el seu formulari d'inscripció, les 7 passes i els 2 articles. GitHub Pages encara no està activat.
 
 ## On és cada cosa
 
 - `data/site.json`: el nom, l'adreça pública, el menú (`nav`), el contacte, el peu i la pàgina d'inici (`home`).
 - `data/pages/<adreça>.json`: una pàgina per fitxer. `data/pages/qui-som.json` es publica a `/qui-som/`.
+- `data/articles/<adreça>.json`: un article per fitxer (`title`, `date` en format 2026-03-20, `author`, `image` dins de `src/img/`, i `body`: paràgrafs i títols `{"h2": …}` o `{"h3": …}`). Es publica a `/<adreça>/` i surt sol a la pàgina Articles (secció `{"type": "articles"}`), del més nou al més antic.
 - `src/templates/`: les plantilles. `page.html` pinta qualsevol pàgina; `parts.html` té les peces (seccions, targetes, preguntes, botons).
 - `src/templates/infografies/`: les infografies animades. A `models/` hi ha les de Camins d'Esperança [Activa], com a model (no surten a cap pàgina).
 - `src/site.css` i `src/site.js`: l'aspecte (amb els colors d'Elara: blau marí i verd del logo) i el menú del mòbil.

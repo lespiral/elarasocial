@@ -1,14 +1,12 @@
 {
   "title": "Articles",
-  "lead": "[PENDENT]",
+  "kicker": "Elara Social",
+  "lead": "Textos per pensar i sentir el moment que vivim des de l’Esperança Activa i el Treball que Reconnecta.",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
-      "paragraphs": [
-        "[PENDENT] Hi aniran els 2 articles de la web actual (12 i 20 de març de 2026), amb una presentació millorada."
-      ]
+      "type": "articles",
+      "band": "white",
+      "id": "llista"
     }
   ]
 }

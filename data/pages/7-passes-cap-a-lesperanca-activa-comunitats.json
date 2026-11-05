@@ -1,15 +1,234 @@
 {
   "title": "7 passes cap a l’Esperança Activa",
-  "kicker": "Una experiència que podem adaptar a la realitat de la teva comunitat",
-  "lead": "Un recorregut breu i profund per iniciar El Treball que Reconnecta: tornar al que et sosté, donar espai al que preocupa, obrir la mirada i aterrar un pas possible.",
+  "kicker": "Una experiència que podem adaptar a la realitat de la teva organització",
+  "lead": "Quatre recorreguts. Una mateixa Espiral. El vostre context.",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual (els 4 cursos, què t’emportaràs, el recorregut en 7 passes). Són cursos propis d'Elara Social, diferents dels de Camins d'Esperança [Activa]."
+        "Les 7 passes cap a l’Esperança Activa són quatre minicursos vivencials inspirats en l’Espiral del Treball que Reconnecta.",
+        "Podem adaptar-los perquè empreses, associacions, cooperatives, fundacions, administracions, equipaments o comunitats ofereixin a les persones vinculades al seu projecte una experiència pròpia d’Esperança Activa.",
+        "Incorporem al recorregut la realitat, els projectes, els recursos, les iniciatives i les possibilitats de participació de cada organització, perquè l’experiència no acabi només en una reflexió personal, sinó que pugui connectar amb allò que ja està passant al seu entorn."
+      ],
+      "buttons": [
+        {
+          "text": "Contacte",
+          "href": "contacte"
+        }
       ]
+    },
+    {
+      "type": "cards",
+      "id": "cursos",
+      "align": "left",
+      "title": "Tria des d’on vols començar",
+      "before": [
+        "El recorregut de base és el mateix, però podem treballar des de quatre portes d’entrada, segons l’àmbit de la vostra organització, el projecte que voleu impulsar o les persones a qui us adreceu."
+      ],
+      "items": [
+        {
+          "title": "Quan sostenir la vida es fa difícil",
+          "badge": "Economia Social i Solidària",
+          "subtitle": "Feina, habitatge, precarietat i incertesa econòmica",
+          "paragraphs": [
+            "Per a cooperatives, entitats socials, projectes d’ocupació, economia social, habitatge, inserció laboral o desenvolupament comunitari.",
+            "Podem incorporar al recorregut projectes, recursos i alternatives del vostre entorn perquè les persones participants puguin connectar les seves preocupacions amb possibilitats reals de cooperació, suport mutu i participació."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa",
+          "button": "Veure el recorregut base"
+        },
+        {
+          "title": "Quan el futur del planeta et preocupa",
+          "badge": "Acció climàtica",
+          "subtitle": "Canvi climàtic, territori i futur",
+          "paragraphs": [
+            "Per a entitats ambientals, administracions, empreses compromeses amb la sostenibilitat, projectes educatius o iniciatives de transició ecològica.",
+            "El recorregut es pot vincular a accions, projectes, espais naturals, iniciatives de voluntariat o propostes ambientals concretes perquè l’esperança pugui convertir-se en una forma de participació situada."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa",
+          "button": "Veure el recorregut base"
+        },
+        {
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "badge": "Salut Mental Comunitària",
+          "subtitle": "Malestar emocional, vincles, suport i prescripció social",
+          "paragraphs": [
+            "Per a entitats socials i sanitàries, serveis comunitaris, associacions, equipaments, grups d’ajuda mútua o projectes que treballen amb persones i comunitats.",
+            "Podem integrar-hi recursos de suport, activitats, grups, serveis o xarxes comunitàries existents, de manera que el recorregut ajudi també a reconèixer on i amb qui es pot continuar el camí."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa",
+          "button": "Veure el recorregut base"
+        },
+        {
+          "title": "Quan la vida et desborda",
+          "badge": "Malestar personal",
+          "subtitle": "Ansietat, dols i moments difícils",
+          "paragraphs": [
+            "Per a organitzacions que vulguin oferir una eina accessible de reflexió i autocura a les persones que formen part de la seva comunitat.",
+            "El recorregut es pot adaptar perquè les persones coneguin també els recursos d’acompanyament, activitats o serveis que l’organització posa al seu abast, sense convertir el curs en una intervenció terapèutica."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa",
+          "button": "Veure el recorregut base"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "title": "El mateix recorregut, però vinculat a la vostra realitat",
+      "paragraphs": [
+        "No es tracta simplement de posar el vostre logotip en un curs ja creat.",
+        "La proposta és que la vostra realitat entri dins del recorregut.",
+        "Podem adaptar exemples, preguntes, recursos i moments concrets de les pràctiques perquè les persones participants puguin relacionar les 7 passes amb el territori, el sector o la comunitat de la qual formen part.",
+        "Per exemple:"
+      ],
+      "list": [
+        "incorporar projectes i iniciatives que ja impulseu;",
+        "donar a conèixer recursos o serveis disponibles;",
+        "mostrar experiències inspiradores del vostre territori o organització;",
+        "introduir problemàtiques específiques del vostre col·lectiu;",
+        "connectar algunes pràctiques amb activitats o espais que ja existeixen;",
+        "incorporar propostes de participació, voluntariat, suport mutu o acció;",
+        "orientar l’última passa cap a possibilitats reals de continuïtat."
+      ],
+      "after": [
+        "Així, el curs pot convertir-se en una porta d’entrada cap a la vostra comunitat, els vostres recursos i les iniciatives que ja esteu construint."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "html": true,
+      "title": "Com seria l'experiència",
+      "paragraphs": [
+        "La persona continua recorrent les mateixes 7 passes:"
+      ],
+      "list": [
+        "<strong>1. M’estimo, m’encanta…</strong> Què té valor per a mi?",
+        "<strong>2. M’agradaria donar les gràcies a…</strong> Qui i què ens sosté?",
+        "<strong>3. Quan miro cap al futur, una de les coses que em preocupen és…</strong> Què necessita ser escoltat?",
+        "<strong>4. El que m’inspira és…</strong> Qui ja està obrint camins?",
+        "<strong>5. El que espero profundament és…</strong> Cap a quin futur voldria orientar-me?",
+        "<strong>6. Un paper que m’agradaria tenir és…</strong> Quin lloc puc ocupar jo?",
+        "<strong>7. Un pas que faré la setmana vinent és…</strong> Quin és el següent moviment possible?"
+      ],
+      "after": [
+        "La diferència és que, en una versió personalitzada, algunes de les respostes poden començar a connectar amb persones, projectes, recursos i oportunitats que formen part de l’entorn real de l’organització."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "title": "De la reflexió a la vinculació",
+      "paragraphs": [
+        "Moltes organitzacions disposen de projectes, serveis, recursos i oportunitats de participació, però sovint és difícil que les persones els coneguin, els sentin propis o identifiquin quin paper hi podrien tenir.",
+        "Les 7 passes ofereixen una altra porta d’entrada.",
+        "En lloc de començar explicant: “Aquesta és la nostra entitat i aquests són els nostres serveis”, podem començar preguntant:"
+      ],
+      "list": [
+        "Què t’importa?",
+        "Què et preocupa?",
+        "Què t’inspira?",
+        "Què esperes?",
+        "Quin paper t’agradaria tenir?"
+      ],
+      "after": [
+        "I només després mostrar quines persones, iniciatives o recursos del seu entorn poden ajudar a continuar aquest camí.",
+        "D’aquesta manera, la vinculació amb l’organització pot sorgir des dels interessos, les preocupacions i els valors de la mateixa persona."
+      ]
+    },
+    {
+      "type": "cards",
+      "align": "left",
+      "title": "A qui es pot adreçar",
+      "before": [
+        "La proposta pot adaptar-se tant a persones que ja formen part de l’organització com a persones que encara no hi tenen vincle."
+      ],
+      "items": [
+        {
+          "title": "Equips i treballadors/es",
+          "text": "Com a proposta de reflexió, benestar, sostenibilitat, cultura organitzativa o compromís social."
+        },
+        {
+          "title": "Persones usuàries",
+          "text": "Com a complement a programes socials, comunitaris, educatius, ambientals o de salut."
+        },
+        {
+          "title": "Socis, sòcies i comunitats vinculades",
+          "text": "Per aprofundir en els valors compartits i facilitar noves formes de participació."
+        },
+        {
+          "title": "Ciutadania o públic general",
+          "text": "Com a porta d’entrada a una causa, projecte o comunitat."
+        },
+        {
+          "title": "Persones potencialment interessades en els vostres serveis o activitats",
+          "text": "Oferint primer una experiència útil per si mateixa i, després, possibilitats concretes per continuar vinculades."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "esperanca-activa",
+      "title": "L’Esperança Activa és una esperança que toca de peus a terra",
+      "paragraphs": [
+        "Les 7 passes són una adaptació breu i accessible inspirada en l’Espiral del Treball que Reconnecta, desenvolupada per Joanna Macy, eco-filòsofa i activista, i aprofundida, entre altres autors, juntament amb Chris Johnstone en el marc de l’Esperança Activa.",
+        "El recorregut parteix d’allò que té valor, dona espai al que preocupa, amplia la perspectiva i acaba orientant-se cap a una resposta possible.",
+        "En la versió adaptada per a organitzacions hi afegim una dimensió més: connectar aquesta resposta amb les xarxes, recursos i possibilitats de participació que ja existeixen al territori o a la comunitat."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "items": [
+        [
+          "Quant dura i com es fa?",
+          "<p>Són 7 passos amb 3 àudios.</p><ul class=\"ticks\"><li>Un primer àudio d’uns 3 o 5 minuts que dona context i orienta la pràctica.</li><li>Una “meditació” guiada per pas (aprox. 15’) que permet aprofundir en l’experiència.</li><li>Un espai de reflexió personal, que pot ser una petita passejada o estar-te l’estona que dura un cafè reflexionant sobre el que has experimentat.</li><li>I un àudio de tancament per a integrar l’experiència.</li></ul><p>Ho pots fer en 7 dies o al teu ritme.</p>"
+        ],
+        [
+          "He de tenir experiència en meditació?",
+          "<p>No. Les pràctiques estan plantejades perquè siguin accessibles i progressives.</p>"
+        ],
+        [
+          "Què passa quan acabo?",
+          "<p>El tancament del curs obre la porta a continuar el camí en comunitat o amb processos més amplis, si ho vols.</p>"
+        ],
+        [
+          "Què passa després del cicle?",
+          "<p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p>"
+        ],
+        [
+          "És teràpia?",
+          "<p>No. És un mini-curs vivencial de pràctiques i reflexió.</p><p>Pot ajudar molt, però no substitueix psicoteràpia si estàs en un moment clínicament delicat.</p>"
+        ],
+        [
+          "Què vol dir “esperança activa”?",
+          "<p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p>"
+        ],
+        [
+          "I si em preocupa “desbordar-me” emocionalment durant el curs?",
+          "<p>És una preocupació habitual. El cicle està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar o deixar-ho si ho necessites.</p><p>Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "kicker": "Una experiència que podem adaptar a la realitat de la teva organització",
+      "buttons": [
+        {
+          "text": "Contacte",
+          "href": "contacte"
+        }
+      ]
+    },
+    {
+      "type": "reviews",
+      "band": "white"
     }
   ]
 }

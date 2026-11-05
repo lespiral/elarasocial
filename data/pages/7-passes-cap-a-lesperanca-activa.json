@@ -1,15 +1,192 @@
 {
   "title": "7 passes cap a l’Esperança Activa",
   "kicker": "4 mini-cursos gratuïts online",
-  "lead": "Un recorregut breu i profund per iniciar El Treball que Reconnecta: tornar al que et sosté, donar espai al que preocupa, obrir la mirada i aterrar un pas possible.",
+  "lead": "Un recorregut gratuït inspirat en l’Espiral del Treball que Reconnecta.",
+  "description": "Les 7 passes cap a l’Esperança Activa són un recorregut gratuït inspirat en l’Espiral del Treball que Reconnecta.",
   "sections": [
     {
-      "type": "note",
-      "style": "info",
-      "title": "Pàgina en construcció",
+      "type": "text",
+      "band": "white",
+      "id": "presentacio",
       "paragraphs": [
-        "[PENDENT] Falten els textos de la pàgina actual (els 4 cursos, què t’emportaràs, el recorregut en 7 passes). Són cursos propis d'Elara Social, diferents dels de Camins d'Esperança [Activa]."
+        "Hi ha moments en què una preocupació ocupa massa espai.",
+        "Pot tenir a veure amb la teva vida personal, amb el malestar emocional que veus al teu voltant, amb la precarietat i les dificultats per sostenir una vida digna, o amb el futur del planeta.",
+        "Les 7 passes cap a l’Esperança Activa són un recorregut gratuït inspirat en l’Espiral del Treball que Reconnecta que t’acompanya a aturar-te, reconèixer allò que t’importa, donar espai al que et preocupa i trobar una manera possible de respondre-hi."
+      ],
+      "buttons": [
+        {
+          "text": "Tria des d’on vols començar",
+          "href": "#cursos"
+        }
       ]
+    },
+    {
+      "type": "cards",
+      "id": "cursos",
+      "align": "left",
+      "title": "Tria des d’on vols començar",
+      "before": [
+        "El recorregut de base és el mateix, però hem creat quatre portes d’entrada perquè puguis treballar amb exemples, preguntes i pràctiques més properes al tipus de preocupació que estàs vivint:"
+      ],
+      "items": [
+        {
+          "title": "Quan sostenir la vida es fa difícil",
+          "subtitle": "Feina, habitatge, precarietat i incertesa econòmica",
+          "meta": [
+            "7 sessions",
+            "Al teu ritme",
+            "Gratuït"
+          ],
+          "paragraphs": [
+            "Si et preocupa arribar a final de mes, la precarietat laboral, l’accés a l’habitatge, els ritmes de feina o la dificultat de viure i treballar de manera coherent amb els teus valors, aquest recorregut pot ajudar-te a recuperar orientació.",
+            "Exploraràs què voldries cuidar, quins suports existeixen, quin paper pots tenir dins d’una resposta més col·lectiva i quin primer pas és possible per a tu."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa",
+          "button": "Accedeix a «Quan sostenir la vida es fa difícil»"
+        },
+        {
+          "title": "Quan el futur del planeta et preocupa",
+          "subtitle": "Canvi climàtic, degradació dels ecosistemes i incertesa davant del futur",
+          "meta": [
+            "7 sessions",
+            "Al teu ritme",
+            "Gratuït"
+          ],
+          "paragraphs": [
+            "Si et preocupa la crisi climàtica, els incendis, les sequeres, la pèrdua de biodiversitat o el món que trobaran les generacions futures, aquest recorregut t’ajuda a donar espai a aquesta preocupació sense quedar atrapat/da en la impotència.",
+            "La proposta és reconnectar amb allò que estimes del món viu i explorar quin lloc pots ocupar dins d’una resposta que necessàriament és compartida."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa",
+          "button": "Accedeix a «Quan el futur del planeta et preocupa»"
+        },
+        {
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "subtitle": "Malestar emocional, soledat, manca de suport i necessitat de comunitat",
+          "meta": [
+            "7 sessions",
+            "Al teu ritme",
+            "Gratuït"
+          ],
+          "paragraphs": [
+            "Si et preocupa l’augment de l’ansietat, la soledat, el cansament emocional o la manca d’espais humans on sentir-se escoltat/da, aquest recorregut t’ajuda a mirar el malestar des d’una perspectiva més relacional.",
+            "Exploraràs els vincles, els recursos i les formes de suport que poden formar part de la resposta, tant per cuidar-te com per contribuir a construir entorns més cuidadors."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa",
+          "button": "Accedeix a «Quan cuidar-nos és una tasca col·lectiva»"
+        },
+        {
+          "title": "Quan la vida et desborda",
+          "subtitle": "Ansietat, dols, separacions, conflictes i moments de vulnerabilitat",
+          "meta": [
+            "7 sessions",
+            "Al teu ritme",
+            "Gratuït"
+          ],
+          "paragraphs": [
+            "Si estàs passant per una situació difícil i notes que et costa trobar orientació, aquest recorregut et proposa un espai per aturar-te i escoltar què estàs vivint.",
+            "No es tracta de solucionar-ho tot en set passes, sinó de reconnectar amb allò que et sosté, aclarir què et preocupa i trobar un següent pas possible."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa",
+          "button": "Accedeix a «Quan la vida et desborda»"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "title": "Què t’emportaràs en cada curs?",
+      "list": [
+        "Un mapa simple i aplicable per orientar-te quan hi ha inquietud, cansament o sensació de bloqueig.",
+        "Més arrelament i estabilitat interna, començant des del que ja et sosté (no des de l’esforç).",
+        "Una manera segura de donar espai a les preocupacions, sense dramatitzar-les ni reprimir-les.",
+        "Inspiració realista (no “positivisme”), connectada amb valors, persones i moviments que donen aire.",
+        "<strong>Contacte amb l’anhel profund:</strong> una orientació interna que ajuda a recuperar direcció.",
+        "Claredat sobre el teu paper i el teu lloc, com a qualitat de presència (no com a càrrec ni exigència).",
+        "Un pas petit i possible per a la setmana vinent, coherent amb el que has descobert."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "html": true,
+      "title": "El recorregut en 7 passes",
+      "list": [
+        "<strong>“M’encanta… / M’estimo…”:</strong> Tornar a l’arrel: reconèixer el que et nodreix i et dona força.",
+        "<strong>“M’agradaria donar les gràcies a…”:</strong> Obrir la gratitud cap als altres i recordar la interdependència.",
+        "<strong>“Quan miro el futur, les meves preocupacions inclouen…”:</strong> Donar espai al que inquieta amb honestedat i tendresa.",
+        "<strong>“El que m’inspira és…”:</strong> Eixamplar la mirada: deixar entrar aire, perspectiva i sentit.",
+        "<strong>“El que espero profundament és…”:</strong> Escoltar l’esperança profunda com una direcció interna (encara que sigui subtil).",
+        "<strong>“Un paper que m’agradaria tenir és…”:</strong> Reconèixer quin tipus de presència vols aportar al món (i a la teva vida).",
+        "<strong>“Un pas que faré la setmana vinent és…”:</strong> Aterrar l’espiral en un gest realista, coherent i amable."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicarem…",
+      "list": [
+        "<strong>Presència i regulació:</strong> tornar al cos com a lloc segur i punt de partida.",
+        "<strong>Gratitud arrelada:</strong> com a base per sostenir el que vindrà (sense negar res).",
+        "Honorar el dolor, pel món, i pel propi futur, sense quedar-hi atrapats.",
+        "Inspiració com a pont entre el dolor reconegut i el moviment d’esperança.",
+        "<strong>Escolta profunda d’allò essencial:</strong> l’anhel i el paper que vols encarnar.",
+        "<strong>Acció possible:</strong> definir un pas concret que sembri direcció, no exigència."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "esperanca-activa",
+      "title": "L’Esperança Activa és una esperança que toca de peus a terra",
+      "paragraphs": [
+        "Les 7 passes són una adaptació breu i accessible inspirada en l’Espiral del Treball que Reconnecta, desenvolupada per Joanna Macy, eco-filòsofa, activista i referent internacional en ecologia profunda, teoria de sistemes i pràctiques de transformació social, i aprofundida, entre altres autors, juntament amb Chris Johnstone en el marc de l’Esperança Activa.",
+        "Aquest procés proposa reconnectar amb allò que té valor, donar espai al dolor i a la preocupació, ampliar la perspectiva i orientar-se cap a una resposta possible.",
+        "En aquests quatre recorreguts hem convertit aquesta espiral en set frases senzilles que pots explorar des de la teva pròpia experiència i aplicar a una preocupació concreta."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes",
+      "title": "FAQ",
+      "items": [
+        [
+          "Quant dura i com es fa?",
+          "<p>Són 7 passos amb 3 àudios.</p><ul class=\"ticks\"><li>Un primer àudio d’uns 3 o 5 minuts que dona context i orienta la pràctica.</li><li>Una “meditació” guiada per pas (aprox. 15’) que permet aprofundir en l’experiència.</li><li>Un espai de reflexió personal, que pot ser una petita passejada o estar-te l’estona que dura un cafè reflexionant sobre el que has experimentat.</li><li>I un àudio de tancament per a integrar l’experiència.</li></ul><p>Ho pots fer en 7 dies o al teu ritme.</p>"
+        ],
+        [
+          "He de tenir experiència en meditació?",
+          "<p>No. Les pràctiques estan plantejades perquè siguin accessibles i progressives.</p>"
+        ],
+        [
+          "Què passa quan acabo?",
+          "<p>El tancament del curs obre la porta a continuar el camí en comunitat o amb processos més amplis, si ho vols.</p>"
+        ],
+        [
+          "Què passa després del cicle?",
+          "<p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p>"
+        ],
+        [
+          "És teràpia?",
+          "<p>No. És un mini-curs vivencial de pràctiques i reflexió.</p><p>Pot ajudar molt, però no substitueix psicoteràpia si estàs en un moment clínicament delicat.</p>"
+        ],
+        [
+          "És realment gratuït?",
+          "<p>Sí: l’accés al minicurs és gratuït. Només t’has de donar d’alta com a usuari a la nostra plataforma.</p><p>Tindrem les teves dades per a futures comunicacions, però sempre podràs anul·lar-ho si així ho desitges.</p>"
+        ],
+        [
+          "Què vol dir “esperança activa”?",
+          "<p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p>"
+        ],
+        [
+          "I si em preocupa “desbordar-me” emocionalment durant el curs?",
+          "<p>És una preocupació habitual. El cicle està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar o deixar-ho si ho necessites.</p><p>Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "reviews",
+      "band": "soft"
     }
   ]
 }
