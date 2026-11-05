@@ -25,6 +25,8 @@
       "id": "cursos",
       "align": "left",
       "title": "Tria des d’on vols començar",
+      "infografia": "cursos",
+      "variant": "persones",
       "before": [
         "El recorregut de base és el mateix, però hem creat quatre portes d’entrada perquè puguis treballar amb exemples, preguntes i pràctiques més properes al tipus de preocupació que estàs vivint:"
       ],
@@ -111,6 +113,8 @@
       "band": "soft",
       "html": true,
       "title": "El recorregut en 7 passes",
+      "infografia": "7-passes",
+      "variant": "persones",
       "list": [
         "<strong>“M’encanta… / M’estimo…”:</strong> Tornar a l’arrel: reconèixer el que et nodreix i et dona força.",
         "<strong>“M’agradaria donar les gràcies a…”:</strong> Obrir la gratitud cap als altres i recordar la interdependència.",

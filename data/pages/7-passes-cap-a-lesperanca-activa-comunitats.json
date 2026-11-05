@@ -24,6 +24,8 @@
       "id": "cursos",
       "align": "left",
       "title": "Tria des d’on vols començar",
+      "infografia": "cursos",
+      "variant": "organitzacions",
       "before": [
         "El recorregut de base és el mateix, però podem treballar des de quatre portes d’entrada, segons l’àmbit de la vostra organització, el projecte que voleu impulsar o les persones a qui us adreceu."
       ],
@@ -102,6 +104,8 @@
       "band": "soft",
       "html": true,
       "title": "Com seria l'experiència",
+      "infografia": "7-passes",
+      "variant": "organitzacions",
       "paragraphs": [
         "La persona continua recorrent les mateixes 7 passes:"
       ],

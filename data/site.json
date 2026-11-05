@@ -109,6 +109,11 @@
     ],
     "sections": [
       {
+        "type": "infografia",
+        "id": "esperanca-activa",
+        "name": "esperanca-activa"
+      },
+      {
         "type": "text",
         "band": "white",
         "kicker": "La línia de treball comunitari de L’Espiral.",

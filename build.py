@@ -77,8 +77,9 @@ def prepare_sections(sections, where):
                 fm["url"] = FORM_URL.format(fm.get("form", ""))
         if t == "faq":
             s["items"] = [(q, html(a), slugify(q)) for q, a in s.get("items", [])]
-        if t == "infografia":
-            f = SRC / "templates" / "infografies" / f"infografia-{s['name']}.html"
+        # Una infografia sola (tipus "infografia", amb "name") o sota el títol d'una altra secció ("infografia": "<nom>")
+        for name in [s.get("name")] if t == "infografia" else [s.get("infografia")] if s.get("infografia") else []:
+            f = SRC / "templates" / "infografies" / f"infografia-{name}.html"
             if not f.exists():
                 errors.append(f"{where}: no trobo la infografia {f.relative_to(ROOT)}")
         for it in s.get("items", []) if t in ("cards", "list") else []:

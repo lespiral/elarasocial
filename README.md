@@ -67,9 +67,24 @@ Les adreces de la web de WordPress que ja no són una pàgina (les tres «Propos
 
 ## Infografies animades
 
-Funcionen com a Camins d'Esperança [Activa]: una per fitxer, amb el codi del bloc INICI–FINAL, els colors i les lletres de `site.css`; s'animen quan surten a la pantalla i, amb «reduir moviment», surten ja acabades. Una infografia nova es desa a `src/templates/infografies/infografia-<nom>.html` i es posa a una pàgina amb una secció `{"type": "infografia", "name": "<nom>"}`.
+Funcionen com a Camins d'Esperança [Activa]: una per fitxer, amb el codi del bloc INICI–FINAL, els colors i les lletres de `site.css`; s'animen quan surten a la pantalla i, amb «reduir moviment», surten ja acabades. Una infografia nova es desa a `src/templates/infografies/infografia-<nom>.html` i es posa a una pàgina de dues maneres:
 
-Les de `models/` són les de Camins (7 passes, com funciona, Esperança Activa, ciutats, cursos…). Alguna fa servir dades de la web de Camins (els cursos o les ciutats): abans de fer-la servir aquí, cal adaptar-la.
+- Sola, en una franja pròpia: `{"type": "infografia", "name": "<nom>"}`.
+- Dins d'una altra secció, sota el títol (a les targetes, sota el text de `before`): `"infografia": "<nom>"`. Amb `"variant"` es tria la versió quan n'hi ha més d'una (p. ex. `"persones"` o `"organitzacions"`).
+
+Les que es fan servir ara:
+
+| Infografia | On és | Ve de (Camins) |
+|---|---|---|
+| `esperanca-activa` | Inici, sota la capçalera | Què és l'Esperança Activa |
+| `espiral` | Què fem, «La nostra metodologia»: les quatre estacions del Treball que Reconnecta | Com funciona, amb escenes noves |
+| `cursos` | Les dues pàgines de les 7 passes, «Tria des d'on vols començar» (variants `persones` i `organitzacions`) | Els cursos, sense el tram de les ciutats |
+| `7-passes` | Les dues pàgines de les 7 passes, «El recorregut en 7 passes» i «Com seria l'experiència» (variants `persones` i `organitzacions`) | 7 passes |
+
+Les de `models/` són les de Camins, tal com són a esperançaactiva.cat (no surten a cap pàgina). Per fer-ne servir una aquí:
+
+1. Copia-la a `src/templates/infografies/` i canvia-hi els textos pels de la web d'Elara (les dades de Camins, com les ciutats, no hi són).
+2. Passa-la als colors d'Elara: `python3 tools/colors-elara.py src/templates/infografies/infografia-<nom>.html`. L'estructura passa al blau marí, la natura al verd del logo i els grisos verdosos a grisos blavosos; el groc del sol (`--sol`) es queda com l'únic color càlid.
 
 ## Publicació
 

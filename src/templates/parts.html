@@ -115,6 +115,12 @@
     {% if s.kicker %}<p class="band__kicker">{{ s.kicker }}</p>{% endif %}
     {% if s.title and s.type != 'note' %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
     {% if s.intro %}<div class="band__intro"><p>{{ s.intro }}</p></div>{% endif %}
+    {# "infografia": "<nom>" a qualsevol secció: la infografia surt sota el títol (o sota el text de "before" de les targetes), a tota l'amplada, i després el contingut #}
+    {% if s.infografia and not (s.type == 'cards' and s.before) %}
+  </div>
+  <div class="wrap"><div class="infografia infografia--top">{% include "infografies/infografia-" ~ s.infografia ~ ".html" %}</div></div>
+  <div class="wrap{% if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide %} wrap--narrow{% endif %}">
+    {% endif %}
 
     {% if s.type == 'text' %}
       <div class="prose">
@@ -126,6 +132,7 @@
       </div>
     {% elif s.type == 'cards' %}
       {% if s.before %}<div class="prose prose--before">{% for p in s.before %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      {% if s.infografia and s.before %}<div class="infografia infografia--top">{% include "infografies/infografia-" ~ s.infografia ~ ".html" %}</div>{% endif %}
       {{ cards(s["items"], root, align=s.align or 'center') }}
     {% elif s.type == 'list' %}
       <ul class="checks">{% for i in s["items"] %}<li>{{ icon('check') }}<span>{{ i }}</span></li>{% endfor %}</ul>
