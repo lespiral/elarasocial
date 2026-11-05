@@ -1,6 +1,6 @@
 {# infografia-espiral.html: l'Espiral del Treball que Reconnecta en quatre estacions (La nostra metodologia, a Què fem). A partir de «Com funciona» de Camins, amb escenes noves i els colors d'Elara. #}
-<div class="volta" data-volta>
-  <div class="volta__scene" role="group" aria-label="La nostra metodologia: gratitud, acollir el que fa mal, una mirada sistèmica i anar endavant; i torna a començar">
+<div class="volta" data-volta data-variant="{{ s.variant|default('metodologia') }}">
+  <div class="volta__scene" role="group" aria-label="L'Espiral del Treball que Reconnecta en quatre estacions: gratitud, dolor, noves mirades i acció; i torna a començar">
     <svg class="volta__svg" aria-hidden="true" focusable="false"></svg>
     <div class="volta__nodes"></div>
     <div class="volta__pop" aria-live="polite"><p class="volta__pk"></p><p class="volta__pt"></p><p class="volta__px"></p></div>
@@ -160,7 +160,9 @@
   if (!root || root.getAttribute("data-ready")) return;
   root.setAttribute("data-ready", "1");
 
-  /* ---------- TEXTOS (els de «La nostra metodologia», a Què fem; es poden canviar aquí) ---------- */
+  /* ---------- TEXTOS (es poden canviar aquí). Per pàgina, «variant» de la secció ---------- */
+  var V = root.getAttribute("data-variant") || "metodologia";
+  // Què fem («La nostra metodologia»)
   var STEPS = [
     { scene: "arrel", title: "Gratitud", sub: "El primer pas cap a la resiliència",
       text: "Entenem la gratitud lluny de l’optimisme naïf; la treballem com un gest radical d’arrelament." },
@@ -174,6 +176,28 @@
   var BACK = { title: "I torna a començar", sub: "Al ritme que el cos pot sostenir",
     kick: "L’Espiral del Treball que Reconnecta",
     text: "Les quatre estacions per transformar la incertesa: Gratitud, Dolor, Noves Mirades i Acció." };
+  // L'Espiral de l'Esperança Activa, El Treball que Reconnecta i Un pont d'Esperança («Explorarem…» de cada pàgina)
+  var TQR = [
+    { scene: "arrel", title: "Gratitud", sub: "La gratitud com a arrel", text: "Allò que ens sosté (persones, recursos interns, natura)." },
+    { scene: "pluja", title: "Honrar el dolor", sub: "El sentit del dolor pel món", text: "Emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida." },
+    { scene: "xarxa", title: "Veure amb nous ulls", sub: "Del «jo separat» al «jo comunitari»", text: "Mirada sistèmica i pertinença al teixit de la vida." },
+    { scene: "camina", title: "Passar a l’acció", sub: "Com tancar amb petits passos", text: "Propòsit vital, continuïtat i xarxes de suport." }
+  ];
+  // El Treball que Reconnecta (grup regular)
+  var GRUP = [
+    { scene: "arrel", title: "Gratitud", sub: "L’arrel de la Gratitud", text: "Com utilitzar-la com a eina de resiliència quan tot trontolla." },
+    { scene: "pluja", title: "Honrar el dolor", sub: "El sentit del malestar", text: "Aprendre a mirar les emocions difícils de cara per transformar-les en força." },
+    { scene: "xarxa", title: "Veure amb nous ulls", sub: "El salt al «nosaltres»", text: "Eines per entendre el nostre lloc al món des de la pertinença i no des de la soledat." },
+    { scene: "camina", title: "Passar a l’acció", sub: "El tancament actiu", text: "Com definir petits passos i propòsits que puguis sostenir en el teu dia a dia." }
+  ];
+  // El ritme de cada proposta (la nota de durada de cada pàgina)
+  var RHYTHM = { taller: "4 hores", cicle: "4 sessions de 2 hores", pont: "2 sessions de 6 hores (dissabte i diumenge)", grup: "Mensual o quinzenal" };
+  if (V !== "metodologia") {
+    STEPS = V === "grup" ? GRUP : TQR;
+    BACK = { title: "I torna a començar", sub: RHYTHM[V] || "", kick: "L’Espiral del Treball que Reconnecta",
+      text: V === "grup" ? "En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta com a brúixola."
+        : "Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta: Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció." };
+  }
   function stationKick(n) { return "Estació " + n + " de 4"; }
 
   /* ---------- ESCENES (64 x 64) ---------- */

@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="../assets/site.css?v=1793910761">
+  <link rel="stylesheet" href="../assets/site.css?v=1793913822">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -68,7 +68,224 @@
   </div>
 </section><section class="band" id="practicarem" aria-labelledby="h-practicarem">
   <div class="wrap wrap--narrow">
-<h2 class="band__title" id="h-practicarem">Practicarem…</h2>
+<h2 class="band__title" id="h-practicarem">Practicarem…</h2>  </div>
+  <div class="wrap"><div class="infografia infografia--top"><div class="sgc" data-sgc>
+  <div class="sgc__body">
+    <p class="sgc__lh">Protocol de seguretat</p>
+    <div class="sgc__row" role="group" aria-label="Stop–Ground–Choose: aturar, ancorar i triar un pas mínim">
+      <div class="sgc__line" aria-hidden="true"><span class="sgc__fill"></span></div>
+    </div>
+    <div class="sgc__cap" aria-live="polite"><p class="sgc__ck"></p><p class="sgc__ct"></p></div>
+  </div>
+  <div class="sgc__foot">
+    <p class="sgc__hint">Toca cada pas per saber-ne més.</p>
+    <button class="sgc__replay" type="button" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4v4.6h4.6"/></svg>
+      <span>Torna-ho a veure</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.sgc {
+  --c9: var(--blau-900, #002445); --c8: var(--blau-800, #01315b); --c7: var(--blau-700, #1a4a75);
+  --c6: var(--verd, #557e4c); --c2: var(--blau-200, #c8d6e3);
+  --cs: var(--sol, #e2c668); --cs-ink: var(--sol-ink, #6f5711); --cline: var(--line, #e3e7e4);
+  --cink: var(--ink, #1f2a33); --cmuted: var(--muted, #55606a);
+  --fh: var(--font-head, "Montserrat", ui-sans-serif, system-ui, sans-serif);
+  --fb: var(--font-body, "Lato", ui-sans-serif, system-ui, sans-serif);
+  --m: 104px;
+  position: relative; overflow: hidden; max-width: 880px; margin: 0 auto; background: #fff; color: var(--cink); font-family: var(--fb);
+  border: 1px solid var(--cline); border-radius: var(--radius-lg, 22px);
+  box-shadow: 0 1px 2px rgba(1, 49, 91, .06), 0 10px 28px rgba(1, 49, 91, .09);
+  container-type: inline-size;
+}
+.sgc *, .sgc *::before, .sgc *::after { box-sizing: border-box; }
+.sgc p { margin: 0; }
+.sgc__body { padding: 24px clamp(16px, 4vw, 34px) 22px; background: linear-gradient(180deg, #f1f3f5, #f8f3e6); }
+.sgc__lh { text-align: center; font: 700 11.5px/1.3 var(--fh); letter-spacing: .1em; text-transform: uppercase; color: var(--cs-ink); margin-bottom: 18px !important; }
+.sgc__row { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.sgc__line { position: absolute; left: 16.6%; right: 16.6%; top: calc(var(--m) / 2 - 2px); height: 4px; border-radius: 4px; background: repeating-linear-gradient(90deg, rgba(1, 49, 91, .35) 0 2px, transparent 2px 12px); }
+.sgc__fill { position: absolute; inset: 0; width: var(--fill, 0%); border-radius: 4px; background: var(--c8); }
+.sgc__step {
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0; border: 0; background: none;
+  font: inherit; color: inherit; cursor: pointer; -webkit-appearance: none; appearance: none; -webkit-tap-highlight-color: transparent;
+}
+.sgc__step:focus { outline: none; }
+.sgc__step:focus-visible .sgc__med { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--c7); }
+.sgc__med {
+  position: relative; width: var(--m); height: var(--m); border-radius: 50%; overflow: hidden; display: block;
+  border: 3px solid #c3cad1; background: #e9edf0; margin-bottom: 8px;
+  transition: border-color .6s, background-color .8s, box-shadow .3s, transform .3s;
+}
+.sgc__med svg { display: block; width: 100%; height: 100%; }
+.sgc__step:hover .sgc__med { transform: scale(1.04); }
+.sgc__step.is-on .sgc__med { border-color: var(--c8); background: #fbf5e3; }
+.sgc__step.is-now .sgc__med { box-shadow: 0 0 0 8px rgba(226, 198, 104, .45); }
+.sgc__step.is-sel .sgc__med { box-shadow: 0 0 0 4px #fff, 0 0 0 7px var(--cs); }
+.sgc__num {
+  position: absolute; top: 2px; left: calc(50% + var(--m) / 2 - 22px); width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center; background: #fff; border: 2px solid #c3cad1; color: var(--c8); font: 700 13px/1 var(--fh);
+  transition: background-color .5s, border-color .5s;
+}
+.sgc__step.is-on .sgc__num { background: var(--cs); border-color: #fff; color: var(--c9); }
+.sgc__en { font: 700 17px/1.2 var(--fh); color: var(--c9); }
+.sgc__ca { font-size: 15px; line-height: 1.3; color: var(--cmuted); text-align: center; text-wrap: balance; }
+.sgc__cap { margin: 20px auto 0; max-width: 560px; min-height: 74px; padding: 10px 14px 11px; border-radius: 14px; background: #fff; border: 1px dashed var(--c2); text-align: center; }
+.sgc__ck { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
+.sgc__ct { font-size: 15.5px; line-height: 1.45; color: var(--cink); margin-top: 3px !important; }
+.sgc__cap.is-fresh { animation: sgc-fade .35s ease; }
+/* Mòbil: de dalt a baix */
+@container (max-width: 520px) {
+  .sgc { --m: 84px; }
+  .sgc__row { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .sgc__line { left: calc(var(--m) / 2 - 2px); right: auto; top: calc(var(--m) / 2); bottom: calc(var(--m) / 2 + 10px); width: 4px; height: auto; background: repeating-linear-gradient(180deg, rgba(1, 49, 91, .35) 0 2px, transparent 2px 12px); }
+  .sgc__fill { width: 100%; height: var(--fill, 0%); }
+  .sgc__step { display: grid; grid-template-columns: var(--m) 1fr; grid-template-rows: auto auto; align-items: center; justify-items: start; gap: 0 14px; text-align: left; }
+  .sgc__med { grid-row: span 2; margin: 0; }
+  .sgc__num { left: calc(var(--m) - 22px); }
+  .sgc__en { align-self: end; }
+  .sgc__ca { align-self: start; text-align: left; }
+}
+
+/* Escenes (64 x 64) */
+.sg-busy { fill: none; stroke: #9aa3ab; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; transition: opacity .6s; }
+.is-on .sg-busy { opacity: 0; }
+.sg-calm { fill: none; stroke: #01315b; stroke-width: 2.6; stroke-linecap: round; opacity: 0; transition: opacity .8s .3s; }
+.is-on .sg-calm { opacity: 1; }
+.sg-pause { fill: #e2c668; opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.4); transition: opacity .5s .5s, transform .7s .5s cubic-bezier(.34, 1.56, .64, 1); }
+.is-on .sg-pause { opacity: 1; transform: none; }
+.sg-soil { fill: #dcd8cf; transition: fill .8s; } .is-on .sg-soil { fill: #ecdfc2; }
+.sg-body { fill: #a3a9af; transition: fill .8s; } .is-on .sg-body { fill: #01315b; }
+.sg-legs { fill: none; stroke: #a3a9af; stroke-width: 3.4; stroke-linecap: round; transition: stroke .8s; } .is-on .sg-legs { stroke: #01315b; }
+.sg-root { fill: none; stroke: #557e4c; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1 2; stroke-dashoffset: 1; opacity: 0; transition: stroke-dashoffset 1.1s .4s ease-out, opacity .2s .4s; }
+.is-on .sg-root { stroke-dashoffset: 0; opacity: 1; }
+.sg-way { fill: none; stroke: #a3a9af; stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: .1 6; }
+.sg-chosen { fill: none; stroke: #01315b; stroke-width: 3.2; stroke-linecap: round; stroke-dasharray: 1 2; stroke-dashoffset: 1; opacity: 0; transition: stroke-dashoffset .9s .2s, opacity .2s .2s; }
+.is-on .sg-chosen { stroke-dashoffset: 0; opacity: 1; }
+.sg-dot { fill: #e2c668; stroke: #fff; stroke-width: 2; opacity: 0; transition: opacity .4s 1s; }
+.is-on .sg-dot { opacity: 1; }
+.sgc__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap;
+  min-height: 60px; padding: 10px clamp(14px, 3vw, 24px); border-top: 1px solid var(--cline); background: #fff;
+}
+.sgc__hint { font-size: 14.5px; color: var(--cmuted); }
+.sgc__replay {
+  flex: none; display: inline-flex; align-items: center; gap: .45em; padding: .55em 1em;
+  border-radius: 999px; border: 2px solid var(--c2); background: #fff; color: var(--c8);
+  font: 700 14px/1.2 var(--fh); cursor: pointer; transition: border-color .15s, color .15s, transform .15s;
+}
+.sgc__replay:hover { border-color: var(--c7); color: var(--c9); transform: translateY(-1px); }
+.sgc__replay:focus-visible { outline: 3px solid var(--c7); outline-offset: 2px; }
+.sgc__replay svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.sgc__replay[hidden] { display: none; }
+@keyframes sgc-fade { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .sgc *, .sgc *::before, .sgc *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.querySelector("[data-sgc]");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  /* ---------- TEXTOS (els de «Practicarem…» de Burnout; es poden canviar aquí) ---------- */
+  var STEPS = [
+    { en: "Stop", ca: "Aturar", text: "Micro-pauses d’autocompassió per a moments reals de pressió." },
+    { en: "Ground", ca: "Ancorar", text: "Grounding discret: plantes dels peus, orientació, retorn al cos quan hi ha saturació." },
+    { en: "Choose", ca: "Triar un pas mínim", text: "Traduir valors en intencions observables i passos de 7 dies." }
+  ];
+  var INTRO = ["Stop–Ground–Choose", "Aturar, ancorar, triar un pas mínim."];
+  var OUTRO = ["Stop–Ground–Choose", "L’autocompassió no ens fa menys compromesos. Ens fa més sostenibles."];
+  function kick(i) { return "Pas " + (i + 1) + " de 3 · " + STEPS[i].en; }
+
+  var SCENES = [
+    // Aturar: el soroll es calma
+    '<g class="sg-busy"><path d="M9 21l5-5 5 7 5-6 5 6 5-7 5 6 5-6 5 5"/><path d="M9 32l5-6 5 8 5-7 5 7 5-8 5 7 5-7 5 6"/><path d="M9 43l5-5 5 7 5-6 5 6 5-7 5 6 5-6 5 5"/></g>' +
+      '<g class="sg-calm"><path d="M11 22h42M11 32h42M11 42h42"/></g>' +
+      '<g class="sg-pause"><rect x="26" y="49" width="4" height="9" rx="1.5"/><rect x="34" y="49" width="4" height="9" rx="1.5"/></g>',
+    // Ancorar: una persona dreta, amb els peus a terra, que arrela
+    '<path class="sg-soil" d="M0 45C16 42 48 42 64 45V64H0Z"/>' +
+      '<g class="sg-root"><path pathLength="1" d="M28.5 45c0 5-3 8-8 11"/><path pathLength="1" d="M28.5 45c0 6 .5 10-1 15"/><path pathLength="1" d="M35.5 45c0 5 3 8 8 11"/><path pathLength="1" d="M35.5 45c0 6-.5 10 1 15"/></g>' +
+      '<g class="sg-body"><circle cx="32" cy="13" r="5.2"/><path d="M25.5 35C25.5 25 28 20.5 32 20.5S38.5 25 38.5 35Z"/></g>' +
+      '<path class="sg-legs" d="M28.8 35V44.5M35.2 35V44.5"/>',
+    // Triar un pas mínim: de tres camins, un pas pel que tries
+    '<path class="sg-way" d="M32 56C32 40 15 30 12 12"/><path class="sg-way" d="M32 56V10"/><path class="sg-way" d="M32 56C32 40 49 30 52 12"/>' +
+      '<path class="sg-chosen" pathLength="1" d="M32 56C32 50 34 45 37 41"/><circle class="sg-dot" cx="37" cy="41" r="4"/>'
+  ];
+
+  var T = [400, 1600, 2800, 3800];
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var row = root.querySelector(".sgc__row");
+  var cap = root.querySelector(".sgc__cap"), ck = root.querySelector(".sgc__ck"), ct = root.querySelector(".sgc__ct");
+  var replay = root.querySelector(".sgc__replay");
+  var S = { t: 0, sel: -1, playing: false, started: false, last: null, raf: 0 };
+  var lastKey = "";
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+  row.insertAdjacentHTML("beforeend", STEPS.map(function (s, i) {
+    return '<button type="button" class="sgc__step" data-k="' + i + '" aria-label="' + esc(s.en + ", " + s.ca + ": " + s.text) + '">' +
+      '<span class="sgc__med"><svg viewBox="0 0 64 64" aria-hidden="true">' + SCENES[i] + '</svg></span>' +
+      '<span class="sgc__num" aria-hidden="true">' + (i + 1) + '</span>' +
+      '<span class="sgc__en" aria-hidden="true">' + esc(s.en) + '</span><span class="sgc__ca" aria-hidden="true">' + esc(s.ca) + '</span></button>';
+  }).join(""));
+  var steps = Array.prototype.slice.call(row.querySelectorAll(".sgc__step"));
+
+  function apply() {
+    var t = S.t, n = -1, done = t >= T[3];
+    for (var i = 0; i < 3; i++) if (t >= T[i]) n = i;
+    root.style.setProperty("--fill", Math.round(100 * clamp((t - T[0]) / (T[2] - T[0]), 0, 1)) + "%");
+    var key = [n, done, S.sel].join("|");
+    if (key === lastKey) return;
+    lastKey = key;
+    steps.forEach(function (el, i) {
+      el.classList.toggle("is-on", n >= i);
+      el.classList.toggle("is-now", !done && S.sel < 0 && n === i);
+      el.classList.toggle("is-sel", S.sel === i);
+    });
+    var c = S.sel >= 0 ? [kick(S.sel), STEPS[S.sel].text] : done ? OUTRO : n < 0 ? INTRO : [kick(n), STEPS[n].text];
+    ck.textContent = c[0]; ct.textContent = c[1];
+    cap.classList.remove("is-fresh"); void cap.offsetWidth; cap.classList.add("is-fresh");
+    replay.hidden = !(done && !reduce);
+  }
+  function tick(ts) {
+    if (!S.playing) return;
+    if (S.last === null) S.last = ts;
+    S.t += Math.min(64, ts - S.last); S.last = ts;
+    if (S.t >= T[3]) { S.t = T[3]; S.playing = false; }
+    apply();
+    if (S.playing) S.raf = requestAnimationFrame(tick);
+  }
+  function play() {
+    cancelAnimationFrame(S.raf);
+    S.started = true; S.sel = -1;
+    if (reduce) { S.t = T[3]; S.playing = false; lastKey = ""; apply(); return; }
+    S.t = 0; S.last = null; S.playing = true; lastKey = "";
+    apply();
+    setTimeout(function () { S.raf = requestAnimationFrame(tick); }, 300);
+  }
+  row.addEventListener("click", function (e) {
+    var el = e.target.closest ? e.target.closest(".sgc__step") : null;
+    if (!el) return;
+    cancelAnimationFrame(S.raf); S.playing = false; S.t = T[3]; S.started = true;
+    var k = +el.getAttribute("data-k");
+    S.sel = S.sel === k ? -1 : k; lastKey = ""; apply();
+  });
+  replay.addEventListener("click", function (e) { e.stopPropagation(); play(); });
+
+  if (reduce) { S.t = T[3]; apply(); }
+  else if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting && !S.started) { io.disconnect(); play(); } }, { threshold: 0.4 });
+    io.observe(root);
+  } else play();
+})();
+</script></div></div>
+  <div class="wrap wrap--narrow">
+
       <div class="prose">
 <ul class="ticks"><li>Micro-pauses d’autocompassió per a moments reals de pressió</li><li><strong>Grounding discret:</strong> plantes dels peus, orientació, retorn al cos quan hi ha saturació</li><li>Respiració i ritme per baixar activació (adaptat a cada persona)</li><li>Tacte de suport (auto-tacte) i alternatives quan activa rebuig o tristesa</li><li><strong>Protocols de seguretat:</strong> Stop–Ground–Choose (aturar, ancorar, triar un pas mínim)</li><li>Descans d’autocompassió tendra (pràctica troncal)</li><li>Traduir valors en intencions observables i passos de 7 dies</li><li><strong>Assaig de límits:</strong> frases curtes, clares, respectuoses (role-play)</li><li>Disseny del teu pla mínim viable post-taller (2 minuts/dia + revisió setmanal)</li></ul>      </div>
 
@@ -164,6 +381,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1793910761" defer></script>
+  <script src="../assets/site.js?v=1793913822" defer></script>
 </body>
 </html>

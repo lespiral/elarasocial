@@ -36,6 +36,8 @@
       "type": "text",
       "html": true,
       "title": "Què t’emportaràs del taller",
+      "infografia": "espiral",
+      "variant": "taller",
       "list": [
         "Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
         "Treballarem autocura, resiliència i suport comunitari per transformar dolor i incertesa en claredat, esperança activa i acció significativa."

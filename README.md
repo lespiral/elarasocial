@@ -71,15 +71,24 @@ Funcionen com a Camins d'Esperança [Activa]: una per fitxer, amb el codi del bl
 
 - Sola, en una franja pròpia: `{"type": "infografia", "name": "<nom>"}`.
 - Dins d'una altra secció, sota el títol (a les targetes, sota el text de `before`): `"infografia": "<nom>"`. Amb `"variant"` es tria la versió quan n'hi ha més d'una (p. ex. `"persones"` o `"organitzacions"`).
+- A la capçalera d'una pàgina: `"escena": "vida"` (o `"cuidar"`, `"mon"`, `"dia"`) al JSON de la pàgina.
 
 Les que es fan servir ara:
 
 | Infografia | On és | Ve de (Camins) |
 |---|---|---|
 | `esperanca-activa` | Inici, sota la capçalera | Què és l'Esperança Activa |
-| `espiral` | Què fem, «La nostra metodologia»: les quatre estacions del Treball que Reconnecta | Com funciona, amb escenes noves |
+| `espiral` | Què fem, «La nostra metodologia» (variant `metodologia`, la de per defecte); «Què t'emportaràs…» de L'espiral de l'esperança activa (`taller`), El Treball que Reconnecta (`cicle`), Un pont d'esperança (`pont`) i el Grup regular (`grup`) | Com funciona, amb escenes noves |
+| `nivells` | Què fem, «Adaptem la nostra metodologia a tres nivells d'impacte»: cercles Tu · Persones i grups · Equips i organitzacions · Comunitat, amb enllaç a cada pàgina | La iniciativa |
+| `capcalera` | Capçalera de Persones (`vida`), Comunitats (`cuidar`) i Organitzacions (`dia`) | Capçalera dels cursos |
+| `itinerari` | Persones «Què fem exactament?», Organitzacions «Com us acompanyem?» i Comunitats «Com ens organitzem?»: el camí amb tres parades i les propostes de cada parada. Els textos d'inici i final són a `"itinerari"` de la secció, i les propostes a `"propostes"` de cada targeta | Nova, amb la idea del camí |
 | `cursos` | Les dues pàgines de les 7 passes, «Tria des d'on vols començar» (variants `persones` i `organitzacions`) | Els cursos, sense el tram de les ciutats |
 | `7-passes` | Les dues pàgines de les 7 passes, «El recorregut en 7 passes» i «Com seria l'experiència» (variants `persones` i `organitzacions`) | 7 passes |
+| `vinculacio` | 7 passes (organitzacions), «De la reflexió a la vinculació» | I després? |
+| `rotllana` | «Explorarem…» de Cercles de paraula per a gestionar conflictes (`conflictes`) i de Cercles per sostenir organitzacions i col·lectius (`sostenir`): els 5 elements que creen seguretat | Nova |
+| `stop-ground-choose` | Burnout, «Practicarem…»: aturar, ancorar, triar un pas mínim | Nova |
+
+Cada infografia només hi pot ser un cop per pàgina (el codi busca la primera de la pàgina).
 
 Les de `models/` són les de Camins, tal com són a esperançaactiva.cat (no surten a cap pàgina). Per fer-ne servir una aquí:
 

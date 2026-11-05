@@ -40,6 +40,8 @@
       "type": "text",
       "html": true,
       "title": "Què t’emportaràs del cicle",
+      "infografia": "espiral",
+      "variant": "grup",
       "paragraphs": [
         "En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta com a brúixola.",
         "A partir de les necessitats que bateguin al grup o de propostes guiades, dedicarem cada trobada a acollir els malestars del dia a dia, o bé a aprofundir en etapes concretes de l’Espiral (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",

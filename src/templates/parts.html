@@ -1,11 +1,13 @@
 {# Peces que fan servir totes les pàgines. La macro «section» pinta cada secció de data/ segons el seu "type". #}
 
-{% macro page_head(kicker, title, lead=None, center=True) -%}
+{% macro page_head(kicker, title, lead=None, center=True, escena=None) -%}
 <section class="pagehead{% if center %} pagehead--center{% endif %}">
   <div class="wrap">
     {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
     <h1>{{ title }}</h1>
     {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+    {# "escena": "vida" | "cuidar" | "mon" | "dia" a la pàgina: una escena animada sota el títol #}
+    {% if escena %}<div class="infografia infografia--head">{% include "infografies/infografia-capcalera.html" %}</div>{% endif %}
   </div>
 </section>
 {%- endmacro %}

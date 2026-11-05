@@ -3,6 +3,7 @@
   "kicker": "Persones",
   "lead": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
   "description": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
+  "escena": "vida",
   "sections": [
     {
       "type": "text",
@@ -73,6 +74,23 @@
       "type": "cards",
       "band": "soft",
       "title": "Què fem exactament?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un itinerari en tres parades: per començar, per aprofundir i per sostenir",
+        "inici": [
+          "Tal com estàs avui",
+          "Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix."
+        ],
+        "final": [
+          "Un pas concret amb sentit",
+          "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit."
+        ],
+        "icones": [
+          "sprout",
+          "spiral",
+          "people"
+        ]
+      },
       "before": [
         "T’oferim un itinerari continu amb diferents portes d’entrada, perquè puguis participar segons la teva energia disponible."
       ],
@@ -80,17 +98,59 @@
         {
           "title": "Per començar",
           "subtitle": "Baixa intensitat",
-          "text": "Mini-rituals i recursos autoguiats per quan necessites parar, respirar i orientar-te sense exposar-te."
+          "text": "Mini-rituals i recursos autoguiats per quan necessites parar, respirar i orientar-te sense exposar-te.",
+          "propostes": [
+            [
+              "7 passes cap a l’Esperança Activa",
+              "7-passes-cap-a-lesperanca-activa"
+            ],
+            [
+              "Camins d'Esperança [Activa]",
+              "https://xn--esperanaactiva-mjb.cat/"
+            ]
+          ]
         },
         {
           "title": "Per aprofundir",
           "subtitle": "Estructura",
-          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."
+          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència.",
+          "propostes": [
+            [
+              "L'Espiral de l'Esperança Activa",
+              "lespiral-de-lesperanca-activa"
+            ],
+            [
+              "El Treball que Reconnecta",
+              "el-treball-que-reconnecta"
+            ],
+            [
+              "Un pont d'Esperança",
+              "un-pont-desperanca-2"
+            ],
+            [
+              "Cercles de paraula",
+              "cercles-per-sostenir-organitzacions-i-col·lectius"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ]
+          ]
         },
         {
           "title": "Per sostenir",
           "subtitle": "Comunitat",
-          "text": "Trobades mensuals i mentories per teixir xarxa, compartir inquietuds i generar iniciatives transformadores."
+          "text": "Trobades mensuals i mentories per teixir xarxa, compartir inquietuds i generar iniciatives transformadores.",
+          "propostes": [
+            [
+              "El Treball que Reconnecta (grup regular)",
+              "grup-regular-de-el-treball-que-reconnecta"
+            ],
+            [
+              "Acompanyament individual",
+              "acompanyament-individual"
+            ]
+          ]
         }
       ]
     },

@@ -338,6 +338,8 @@ details[open] > summary .faq__caret { transform: rotate(180deg); }
 /* Al mòbil, dins d'un quadre, la infografia agafa una mica del marge perquè els noms no es tallin tant */
 @media (max-width: 560px) { .note .infografia--in, .panel .infografia--in { margin-left: -14px; margin-right: -14px; } }
 .infografia--head { margin: 0 0 28px; }
+/* Escena sota el títol d'una pàgina (Persones, Comunitats, Organitzacions) */
+.pagehead .infografia--head { max-width: 980px; margin: 28px auto 4px; }
 /* Dins la resposta d'una pregunta: una mica més ampla, perquè a l'ordinador es vegi en horitzontal */
 .faq__body .infografia--in { margin: 16px -10px 4px; }
 /* Pàgina de curs: el curs d'un cop d'ull, la nota sota el botó, el que pot aportar i el facilitador */

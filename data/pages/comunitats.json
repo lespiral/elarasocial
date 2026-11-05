@@ -2,6 +2,7 @@
   "title": "Voleu teixir xarxes reals en un món fragmentat?",
   "kicker": "Comunitats",
   "lead": "Creem espais de trobada per compartir recursos, sabers i suport mutu davant els reptes ecosocials.",
+  "escena": "cuidar",
   "sections": [
     {
       "type": "text",
@@ -75,21 +76,84 @@
       "type": "cards",
       "band": "soft",
       "title": "Com ens organitzem?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un camí en tres parades: trobades comunitàries, espais de recursos i grups d'acció",
+        "inici": [
+          "L’aïllament",
+          "Sentiu que els reptes actuals són massa grans per entomar-los en solitari?"
+        ],
+        "final": [
+          "L’acció col·lectiva",
+          "A Elara Social facilitem llocs de trobada on la preocupació es transforma en vincle, i el vincle en capacitat d’acció col·lectiva."
+        ],
+        "icones": [
+          "people",
+          "box",
+          "flag"
+        ]
+      },
       "before": [
         "Oferim diferents formats de participació adaptats a l’energia i disponibilitat de cadascú, posant sempre la comunitat al centre."
       ],
       "items": [
         {
           "title": "Trobades comunitàries",
-          "text": "Espais de diàleg i connexió per teixir vincles de confiança entre veïnes i col·lectius."
+          "text": "Espais de diàleg i connexió per teixir vincles de confiança entre veïnes i col·lectius.",
+          "propostes": [
+            [
+              "L'Espiral de l'Esperança Activa",
+              "lespiral-de-lesperanca-activa"
+            ],
+            [
+              "Un pont d'esperança comunitària",
+              "un-pont-desperanca-2"
+            ],
+            [
+              "El Treball que Reconnecta (grup regular)",
+              "grup-regular-de-el-treball-que-reconnecta"
+            ],
+            [
+              "Cercles de paraula (per sostenir col·lectius)",
+              "cercles-per-sostenir-organitzacions-i-col·lectius"
+            ]
+          ]
         },
         {
           "title": "Espais de recursos",
-          "text": "Una plataforma on compartir eines, estratègies i coneixements pràctics ecosocials."
+          "text": "Una plataforma on compartir eines, estratègies i coneixements pràctics ecosocials.",
+          "propostes": [
+            [
+              "7 passes cap a l'Esperança Activa",
+              "7-passes-cap-a-lesperanca-activa-comunitats"
+            ],
+            [
+              "Camins d'Esperança [Activa]",
+              "https://xn--esperanaactiva-mjb.cat/"
+            ]
+          ]
         },
         {
           "title": "Grups d'acció",
-          "text": "Acompanyament a grups de treball enfocats a resoldre reptes concrets del territori."
+          "text": "Acompanyament a grups de treball enfocats a resoldre reptes concrets del territori.",
+          "propostes": [
+            [
+              "El Treball que Reconnecta",
+              "el-treball-que-reconnecta"
+            ],
+            [
+              "Cercles de paraula (per a transformar conflictes)",
+              "cercles-de-paraula-per-a-gestionar-conflictes"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ],
+            [
+              "Parlem-ne",
+              "contacte"
+            ]
+          ]
         }
       ]
     },

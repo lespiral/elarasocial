@@ -2,6 +2,7 @@
   "title": "Quan el context us supera, deixeu-vos acompanyar.",
   "kicker": "Organitzacions",
   "lead": "Transformem el desgast de l’equip en claredat, cohesió i un pas col·lectiu possible.",
+  "escena": "dia",
   "sections": [
     {
       "type": "text",
@@ -78,21 +79,84 @@
       "type": "cards",
       "band": "soft",
       "title": "Com us acompanyem?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un camí en tres parades: diagnòstic i assessorament, formació i tallers per equips, i acompanyament estructural",
+        "inici": [
+          "Quan el context us supera",
+          "Per més que us esforceu, el dia a dia i les inèrcies us passen per sobre?"
+        ],
+        "final": [
+          "Un pas col·lectiu possible",
+          "Transformem el desgast de l’equip en claredat, cohesió i un pas col·lectiu possible."
+        ],
+        "icones": [
+          "compass",
+          "chat",
+          "equip"
+        ]
+      },
       "before": [
         "Oferim solucions adaptades a la realitat de cada organització, intervenint on el vostre equip més ho necessita."
       ],
       "items": [
         {
           "title": "Diagnòstic i assessorament",
-          "text": "Avaluació inicial i recursos estratègics per entendre els nusos de l'organització i orientar els primers canvis."
+          "text": "Avaluació inicial i recursos estratègics per entendre els nusos de l'organització i orientar els primers canvis.",
+          "propostes": [
+            [
+              "Parlem-ne",
+              "contacte"
+            ]
+          ]
         },
         {
           "title": "Formació i tallers per equips",
-          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."
+          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència.",
+          "propostes": [
+            [
+              "7 passes (per a organitzacions)",
+              "7-passes-cap-a-lesperanca-activa-comunitats"
+            ],
+            [
+              "L'Espiral de l'Esperança Activa",
+              "lespiral-de-lesperanca-activa"
+            ],
+            [
+              "El Treball que Reconnecta",
+              "el-treball-que-reconnecta"
+            ],
+            [
+              "Un pont d'Esperança",
+              "un-pont-desperanca-2"
+            ],
+            [
+              "Cercles de paraula (per a transformar conflictes)",
+              "cercles-de-paraula-per-a-gestionar-conflictes"
+            ],
+            [
+              "Cercles de paraula (per sostenir col·lectius)",
+              "cercles-per-sostenir-organitzacions-i-col·lectius"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ]
+          ]
         },
         {
           "title": "Acompanyament estructural",
-          "text": "Mentories continuades per a direccions i espais de coordinació per integrar la cultura de les cures a la governança del projecte."
+          "text": "Mentories continuades per a direccions i espais de coordinació per integrar la cultura de les cures a la governança del projecte.",
+          "propostes": [
+            [
+              "Acompanyament individual per a membres del grup",
+              "acompanyament-individual"
+            ],
+            [
+              "El Treball que Reconnecta (grup regular)",
+              "grup-regular-de-el-treball-que-reconnecta"
+            ]
+          ]
         }
       ]
     },
