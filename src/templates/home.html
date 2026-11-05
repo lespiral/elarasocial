@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "parts.html" import section, button %}
+{% block content %}
+{# La portada: la capçalera (h.kicker, h.title, h.lead, h.actions) i les seccions de "home" a data/site.json #}
+<section class="hero">
+  <div class="wrap hero__in">
+    {% if h.kicker %}<p class="hero__kicker">{{ h.kicker }}</p>{% endif %}
+    <h1 class="hero__title">{{ h.title }}</h1>
+    {% if h.lead %}<p class="hero__lead">{{ h.lead }}</p>{% endif %}
+    {% if h.actions %}
+    <div class="hero__actions">
+      {% for b in h.actions %}{{ button(b, root, 'btn--light' if loop.first else 'btn--ghost-light') }}{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% for s in h.sections %}{{ section(s, root) }}{% endfor %}
+{% endblock %}

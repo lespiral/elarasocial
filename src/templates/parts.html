@@ -1,0 +1,102 @@
+{# Peces que fan servir totes les pàgines. La macro «section» pinta cada secció de data/ segons el seu "type". #}
+
+{% macro page_head(kicker, title, lead=None, center=True) -%}
+<section class="pagehead{% if center %} pagehead--center{% endif %}">
+  <div class="wrap">
+    {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+  </div>
+</section>
+{%- endmacro %}
+
+{# Botó o enllaç: {"text": ..., "href": ...}. Una adreça sense http ni # és una pàgina de la web ("contacte" → /contacte/). #}
+{% macro link_href(href, root) -%}
+{%- if href.startswith('http') or href.startswith('mailto:') or href.startswith('tel:') or href.startswith('#') -%}{{ href }}{%- else -%}{{ root }}{{ href.strip('/') }}{{ '/' if href.strip('/') else '' }}{%- endif -%}
+{%- endmacro %}
+
+{% macro button(b, root, cls='btn--primary') -%}
+<a class="btn {{ b.style or cls }}" href="{{ link_href(b.href, root) }}"{% if b.href.startswith('http') %} rel="noopener"{% endif %}>{{ b.text }}{% if b.arrow is not defined or b.arrow %} {{ icon('arrow') }}{% endif %}</a>
+{%- endmacro %}
+
+{# Targetes: [{"icon": ..., "title": ..., "text": ..., "href": ..., "button": ..., "badge": ...}] #}
+{% macro cards(items, root, heading_level=3) -%}
+<ul class="cards cards--3">
+  {% for c in items %}
+  <li class="card card--course">
+    {% if c.icon %}<span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>{% endif %}
+    {% if c.badge %}<span class="card__badge">{{ c.badge }}</span>{% endif %}
+    <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>
+    {% if c.text %}<p class="card__text">{{ c.text }}</p>{% endif %}
+    {% if c.href %}<a class="btn btn--soft btn--block" href="{{ link_href(c.href, root) }}">{{ c.button or 'Saber-ne més' }}</a>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{%- endmacro %}
+
+{# Desplegable que porta a un lloc de la mateixa pàgina #}
+{% macro picker(id, label, placeholder, options, ic='pin', cls='') -%}
+<div class="picker{% if cls %} {{ cls }}{% endif %}">
+  <label class="picker__label" for="{{ id }}">{{ icon(ic) }}<span>{{ label }}</span></label>
+  <div class="picker__box">
+    <select id="{{ id }}" class="picker__select" data-jump>
+      <option value="">{{ placeholder }}</option>
+      {% for t, v in options %}<option value="{{ v }}">{{ t }}</option>{% endfor %}
+    </select>
+    {{ icon('caret', 'picker__caret') }}
+  </div>
+</div>
+{%- endmacro %}
+
+{% macro faq_item(q, a_html, id=None) -%}
+<details class="faq"{% if id %} id="{{ id }}"{% endif %}>
+  <summary><span>{{ q }}</span>{{ icon('caret', 'faq__caret') }}</summary>
+  <div class="faq__body">{{ a_html }}</div>
+</details>
+{%- endmacro %}
+
+{# Nota destacada: "style": "care" (rosada, per a avisos de cura) o "info" (groga) #}
+{% macro note(s) -%}
+<aside class="note note--{{ s.style or 'info' }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+  {% if s.title %}<h2 id="h-{{ s.id }}" class="note__title">{{ icon('lifebuoy' if s.style == 'care' else 'info') }}{{ s.title }}</h2>{% endif %}
+  {% for p in s.paragraphs or [] %}<p class="note__p">{{ p }}</p>{% endfor %}
+  {% if s.text_html %}<p class="note__p">{{ s.text_html }}</p>{% endif %}
+</aside>
+{%- endmacro %}
+
+{# Una secció de pàgina. Tipus: text, cards, list, faq, note, infografia, cta, contact (vegeu el README). #}
+{% macro section(s, root) -%}
+{% set band = {'white': ' band--white', 'green': ' band--green', 'slim': ' band--slim'}.get(s.band, '') %}
+<section class="band{{ band }}" id="{{ s.id }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+  <div class="wrap{% if s.type in ('text', 'faq', 'note', 'list') %} wrap--narrow{% endif %}">
+    {% if s.title and s.type != 'note' %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
+    {% if s.intro %}<div class="band__intro"><p>{{ s.intro }}</p></div>{% endif %}
+
+    {% if s.type == 'text' %}
+      <div class="prose">{% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}{% if s.text_html %}{{ s.text_html }}{% endif %}</div>
+    {% elif s.type == 'cards' %}
+      {{ cards(s["items"], root) }}
+    {% elif s.type == 'list' %}
+      <ul class="checks">{% for i in s["items"] %}<li>{{ icon('check') }}<span>{{ i }}</span></li>{% endfor %}</ul>
+    {% elif s.type == 'faq' %}
+      <div class="faqs">{% for q, a, qid in s["items"] %}{{ faq_item(q, a, qid) }}{% endfor %}</div>
+    {% elif s.type == 'note' %}
+      {{ note(s) }}
+    {% elif s.type == 'infografia' %}
+      {% include "infografies/infografia-" ~ s.name ~ ".html" %}
+    {% elif s.type == 'cta' %}
+      {% for p in s.paragraphs or [] %}<p class="center">{{ p }}</p>{% endfor %}
+    {% elif s.type == 'contact' %}
+      <div class="contact-box">
+        {% if s.text_html %}<p>{{ s.text_html }}</p>{% endif %}
+        <p class="contact-box__links">
+          {% if site.contact.email %}<a class="btn btn--primary" href="mailto:{{ site.contact.email }}">{{ icon('mail') }}Escriu-nos</a>{% endif %}
+          {% if site.contact.instagram_url %}<a class="btn btn--outline" href="{{ site.contact.instagram_url }}">{{ icon('instagram') }}{{ site.contact.instagram }}</a>{% endif %}
+        </p>
+      </div>
+    {% endif %}
+
+    {% if s.buttons %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+  </div>
+</section>
+{%- endmacro %}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page_title %}{{ page_title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ page_description or site.description }}">
+  {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+  {% if canonical %}<link rel="canonical" href="{{ canonical }}">
+  <meta property="og:url" content="{{ canonical }}">{% endif %}
+  <meta property="og:title" content="{{ page_title or site.name }}">
+  <meta property="og:description" content="{{ page_description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ca_ES">
+  {% if favicon %}<link rel="icon" type="image/png" sizes="48x48" href="{{ root }}assets/img/favicon-48.png"><link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
+  <link rel="stylesheet" href="{{ root }}assets/site.css?v={{ version }}">
+</head>
+<body>
+  <a class="skip" href="#contingut">Salta al contingut</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a class="brand" href="{{ root }}" aria-label="{{ site.name }}, inici">
+        {% if logo %}<img class="brand__wide" src="{{ root }}assets/img/logo-elara.png" alt="" width="137" height="44">{% else %}<span class="brand__name">{{ site.name }}</span>{% endif %}
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Obre el menú">
+        <span class="menu-btn__open">{{ icon('menu') }}</span><span class="menu-btn__close">{{ icon('close') }}</span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Menú principal">
+        <ul>
+          {# El menú surt de "nav" a data/site.json. Cada element porta a una pàgina (slug) o a una adreça (href). #}
+          {% for n in site.nav %}
+          <li><a href="{{ n.href or (root ~ (n.slug ~ '/' if n.slug else '')) }}"{% if not n.href and n.slug == section %} aria-current="page"{% endif %}>{{ n.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contingut">
+{% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div class="footer__about">
+        <p class="footer__name">{% if favicon %}<img src="{{ root }}assets/img/simbol-elara.png" alt="" width="40" height="40">{% endif %}{{ site.name }}</p>
+        {% if site.footer.motto %}<p class="footer__motto">{{ site.footer.motto }}</p>{% endif %}
+        {% if site.footer.text %}<p>{{ site.footer.text }}</p>{% endif %}
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">La web</p>
+        <ul>{% for n in site.nav %}<li><a href="{{ n.href or (root ~ (n.slug ~ '/' if n.slug else '')) }}">{{ n.title }}</a></li>{% endfor %}</ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__h">Contacte</p>
+        <ul class="footer__contact">
+          {% if site.contact.email %}<li>{{ icon('mail') }}<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>{% endif %}
+          {% if site.contact.instagram %}<li>{{ icon('instagram') }}{% if site.contact.instagram_url %}<a href="{{ site.contact.instagram_url }}">{{ site.contact.instagram }}</a>{% else %}<span>{{ site.contact.instagram }}</span>{% endif %}</li>{% endif %}
+          {% if site.contact.phone %}<li>{{ icon('phone') }}{% if site.contact.phone_tel %}<a href="tel:{{ site.contact.phone_tel }}">{{ site.contact.phone }}</a>{% else %}<span>{{ site.contact.phone }}</span>{% endif %}</li>{% endif %}
+        </ul>
+      </div>
+      {% if site.footer.legal %}
+      <div class="footer__col">
+        <p class="footer__h">Avís legal</p>
+        <ul>{% for l in site.footer.legal %}<li><a href="{{ l.href or (root ~ l.slug ~ '/') }}">{{ l.title }}</a></li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    </div>
+  </footer>
+
+  <script src="{{ root }}assets/site.js?v={{ version }}" defer></script>
+</body>
+</html>

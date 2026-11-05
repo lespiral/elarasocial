@@ -1,0 +1,32 @@
+{
+  "name": "Elara Social",
+  "publish": {
+    "url": "https://lespiral.github.io/elarasocial/",
+    "index": false
+  },
+  "description": "[PENDENT] Frase breu que descriu Elara Social (surt als cercadors i quan es comparteix l'enllaç).",
+  "contact": {
+    "email": "elarasocial.com@gmail.com",
+    "instagram": "[PENDENT]",
+    "instagram_url": "",
+    "phone": "[PENDENT]",
+    "phone_tel": ""
+  },
+  "footer": {
+    "motto": "Cuidem les persones. Enfortim les comunitats",
+    "text": "[PENDENT] Una o dues frases sobre Elara Social.",
+    "legal": []
+  },
+
+  "nav": [
+    {"slug": "", "title": "Inici"}
+  ],
+
+  "home": {
+    "kicker": "[PENDENT]",
+    "title": "Elara Social",
+    "lead": "[PENDENT] Frase principal de la portada.",
+    "actions": [],
+    "sections": []
+  }
+}
