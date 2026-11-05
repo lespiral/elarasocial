@@ -1,5 +1,6 @@
 {
   "title": "Cercles de paraula",
+  "metafora": {"name": "sostenir", "text": "Un cercle d’equip que sosté el que pesa i torna a posar dret el projecte."},
   "kicker": "Propostes",
   "lead": "Per sostenir organitzacions i col·lectius",
   "description": "Per sostenir organitzacions i col·lectius",
@@ -11,8 +12,8 @@
       "paragraphs": [
         "Quan una organització treballa amb causes exigents com la crisi climàtica, la precarietat, l’habitatge, la salut comunitària, o els drets socials, la pressió no és només externa.",
         "També entra dins: ritmes, prioritats, discrepàncies estratègiques, càrrega emocional, cansament i conflictes que s’acumulen.",
-        "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) perquè el vostre equip aprengui l’estructura dels Cercles de paraula: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
-        "No és un espai per “guanyar” debats. És un contenidor per parlar amb veritat, escoltar amb respecte i traduir el que emergeix en passos concrets."
+        "Aquest programa és un taller pràctic en 4 sessions (2 h cadascuna) perquè el vostre equip aprengui **l’estructura dels Cercles de paraula**: una metodologia simple i potent per tenir converses difícils sense escalar, cuidar el vincle i arribar a acords sostenibles.",
+        "No és un espai per “guanyar” debats. És un contenidor per **parlar amb veritat, escoltar amb respecte** i traduir el que emergeix en passos concrets."
       ],
       "buttons": [
         {
@@ -30,7 +31,7 @@
       "html": true,
       "title": "Què t'emportaràs del programa",
       "paragraphs": [
-        "Aquest taller us dona un marc replicable per sostenir converses que sovint queden encallades en polarització, silencis o tensió. En lloc de quedar-vos amb “hem parlat molt però no avancem”, desenvolupareu una estructura que ajuda a:"
+        "Aquest taller us dona **un marc replicable** per sostenir converses que sovint queden encallades en polarització, silencis o tensió. En lloc de quedar-vos amb “hem parlat molt però no avancem”, desenvolupareu una estructura que ajuda a:"
       ],
       "list": [
         "baixar reactivitat i recuperar presència en moments de tensió",

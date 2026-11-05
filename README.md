@@ -51,10 +51,24 @@ No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
 - Cada secció pot portar `"band": "white"`, `"soft"` o `"slim"` (el fons de la franja), `"intro"` (una frase sota el títol), `"buttons"` i `"id"` (l'adreça per enllaçar-hi: `/qui-som/#proposit`; si no n'hi ha, es fa amb el títol).
 - Els enllaços (`href`): una paraula sola és una pàgina de la web (`"contacte"` porta a `/contacte/`); també poden ser adreces completes (`https://…`), `mailto:`, `tel:` o `#seccio`.
 - Les icones són les de `src/icons.json` (les mateixes que a Camins d'Esperança [Activa]).
-- Els camps acabats en `_html` poden portar HTML (enllaços, negretes). Amb `"html": true` a la secció, també els paràgrafs i les llistes.
+- **Negreta**: a qualsevol text, `**així**` surt en negreta (dins dels paràgrafs, amb un subratllat de retolador verd). Els camps acabats en `_html` poden portar HTML (enllaços, negretes). Amb `"html": true` a la secció, també els paràgrafs i les llistes.
 - Altres camps de secció: `"kicker"` (avantítol petit), `"before"` (paràgrafs abans de les targetes), `"list"` i `"after"` (a les de text), `"quote"`, `"align": "left"` (targetes alineades a l'esquerra).
 - Les targetes poden portar `subtitle`, `meta` (p. ex. `["4 hores", "Màx. 16 participants"]`), `paragraphs`, `list`, `foot`, `badge`, `href` i `button` (el text del botó).
 - El contacte (correu, telèfon, WhatsApp, adreça) surt de `contact` a `data/site.json`.
+
+## Com es veu cada secció
+
+- **Text** (`"type": "text"`): el primer paràgraf surt més gran, com a entrada. Si no hi ha llista, la resta de paràgrafs van dins d'un quadre de color (verd clar a les franges blanques, blanc a les altres).
+- **Llistes** d'una secció de text (`"list"`): cada element en un quadre amb una icona, en dues columnes si n'hi ha 4 o més. La icona surt del títol de la secció: «Explorarem…» → brúixola (`compass`), «Practicarem…» → petjades (`footprints`), «Què t'emportaràs…» → fulla (`leaf`), «…treballarem…» → mà amb cor (`hand-heart`); la resta, `check`. Per triar-ne una altra: `"list_icon": "<icona>"` a la secció (vegeu `LIST_ICONS` a `build.py`).
+- **Durada, places i preus** (`"type": "note"` sense `"style"`, o `"style": "info"`): un quadre blau marí. El títol porta un rellotge; cada paràgraf, una icona segons el que diu (`€` → monedes, «participants» → persones, la resta → calendari), i els preus surten en negreta sols.
+- **Avís de cura** (`"style": "care"`): com abans, rosat.
+- **Última crida** (`"type": "cta"`): un quadre blau marí com la portada; el `kicker` hi fa de títol gran i el primer botó és verd clar.
+- **Targetes de propostes**: si una targeta porta a una proposta (`href`) i no té `icon`, agafa la icona de la proposta (`CARD_ICONS` a `build.py`: 7 passes → `steps`, Acompanyament → `hand-heart`, L'Espiral → `spiral`, El TqR → `tree`, Un pont → `bridge`, Grup regular → `moon-stars`, Cercles per a conflictes → `chats-circle`, Cercles per sostenir → `circles-three`, Burnout → `campfire`, Contacte → `chat-circle-dots`, Camins → `map-trifold`, i els quatre cursos de Thinkific). Amb `"icon": ""` no en porta cap. Les targetes sense icona porten una franja verda a dalt.
+- **Preguntes** (FAQ): amb una icona d'interrogant.
+- **Avantítols** (`"kicker"` d'una secció): en cursiva verda, amb el sol al davant; la primera lletra surt sola en majúscula.
+- **Títols que es mouen**: el títol de la capçalera surt paraula a paraula; cada títol de secció puja i es dibuixa la línia d'ona (amb el sol al final) quan arriba a la pantalla. Amb «reduir moviment» o sense JavaScript, tot surt quiet. Els estils són al final de `site.css` («Més vida»), i el codi a `site.js`.
+
+Les icones són de Phosphor (les mateixes que a Camins d'Esperança [Activa]); n'hi ha més a `src/icons.json` (`clock`, `calendar-dots`, `coins`, `users`, `compass`, `leaf`, `bridge`, `campfire`, `spiral`, `moon-stars`…).
 
 ## Formularis d'inscripció
 
@@ -87,6 +101,7 @@ Les que es fan servir ara:
 | `vinculacio` | 7 passes (organitzacions), «De la reflexió a la vinculació» | I després? |
 | `rotllana` | «Explorarem…» de Cercles de paraula per a gestionar conflictes (`conflictes`) i de Cercles per sostenir organitzacions i col·lectius (`sostenir`): els 5 elements que creen seguretat | Nova |
 | `stop-ground-choose` | Burnout, «Practicarem…»: aturar, ancorar, triar un pas mínim | Nova |
+| `metafora` | Sota el títol de cada proposta: una escena petita que explica la proposta amb una imatge, i una frase a sota. Es posa amb `"metafora": {"name": "<escena>", "text": "La frase"}` al JSON de la pàgina. Escenes: `passes` (7 passes: pedres per travessar el riu), `passes-comunitat` (el mateix, amb la comunitat a l'altra riba), `costat` (Acompanyament: dues persones que caminen plegades), `falguera` (L'Espiral: falgueres que es desenrotllen), `arrels` (El TqR: arrels que es troben sota terra), `pont` (Un pont: els taulons es posen un a un), `llunes` (Grup regular: les fases de la lluna sobre una rotllana al voltant del foc), `paraula` (Cercles per a conflictes: el bastó de la paraula fa la volta i la tensió es torna onada), `sostenir` (Cercles per sostenir: el cercle es tanca i la casa es redreça), `foc` (Burnout: el foc que crema es torna foc que escalfa) | Noves |
 
 Cada infografia només hi pot ser un cop per pàgina (el codi busca la primera de la pàgina).
 
@@ -102,4 +117,4 @@ Les de `models/` són les de Camins, tal com són a esperançaactiva.cat (no sur
 
 ## Ressenyes de Google
 
-Una secció `{"type": "reviews"}` posa les ressenyes de `reviews` a `data/site.json`. Ara són les mateixes que surten a WordPress (copiades el 5 de novembre de 2026) i no s'actualitzen soles. A WordPress surten amb el connector de Trustindex per a WordPress, que no serveix fora de WordPress. Per tenir-les al dia aquí cal un giny de Trustindex fet a trustindex.io: dona una línia `<script … loader.js?codi>`, i si poses aquest codi a `"trustindex"`, surten les de Google al dia en lloc de les copiades.
+Des del 5 de novembre de 2026 no surten a cap pàgina (l'Aleix les va fer treure). Si mai es volen tornar a posar: una secció `{"type": "reviews"}` posa les ressenyes de `reviews` a `data/site.json`. Ara són les mateixes que surten a WordPress (copiades el 5 de novembre de 2026) i no s'actualitzen soles. A WordPress surten amb el connector de Trustindex per a WordPress, que no serveix fora de WordPress. Per tenir-les al dia aquí cal un giny de Trustindex fet a trustindex.io: dona una línia `<script … loader.js?codi>`, i si poses aquest codi a `"trustindex"`, surten les de Google al dia en lloc de les copiades.

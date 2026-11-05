@@ -1,5 +1,6 @@
 {
   "title": "El Treball que Reconnecta (grup regular)",
+  "metafora": {"name": "llunes", "text": "Trobada rere trobada, com les fases de la lluna: un ritme que torna i ens sosté."},
   "kicker": "Propostes",
   "lead": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
   "description": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
@@ -10,9 +11,9 @@
       "id": "presentacio",
       "paragraphs": [
         "La transformació i la cura demanen temps i constància.",
-        "Per això, hem creat un grup regular amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+        "Per això, hem creat **un grup regular** amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
         "Aquest espai de trobada contínua és un lloc segur per anar treballant, pas a pas, tant el pes quotidià (l’estrès laboral, la pressió de l’habitatge o l’angoixa pel teu futur) com l’esgotament que ens generen les crisis globals (la polarització, l’ecoansietat o els discursos d’odi).",
-        "Fer-ho de manera regular ens permet teixir vincles profunds i trobar formes d’acció que puguem mantenir a llarg termini."
+        "Fer-ho de manera regular ens permet **teixir vincles profunds** i trobar formes d’acció que puguem mantenir a llarg termini."
       ],
       "buttons": [
         {
@@ -43,10 +44,10 @@
       "infografia": "espiral",
       "variant": "grup",
       "paragraphs": [
-        "En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta com a brúixola.",
+        "En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta **com a brúixola**.",
         "A partir de les necessitats que bateguin al grup o de propostes guiades, dedicarem cada trobada a acollir els malestars del dia a dia, o bé a aprofundir en etapes concretes de l’Espiral (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
         "Sessió a sessió, anirem teixint un camí compartit d’autocura, resiliència i xarxa.",
-        "Treballarem recursos vius per sostenir les emocions difícils i recuperar la claredat davant la incertesa. L’objectiu no és “arribar al final”, sinó que trobada rere trobada cultivis la força interior i la mirada àmplia necessàries per sostenir el teu quotidià."
+        "Treballarem recursos vius per sostenir les emocions difícils i recuperar la claredat davant la incertesa. L’objectiu no és “arribar al final”, sinó que trobada rere trobada **cultivis la força interior** i la mirada àmplia necessàries per sostenir el teu quotidià."
       ]
     },
     {

@@ -1,5 +1,6 @@
 {
   "title": "El Treball que Reconnecta",
+  "metafora": {"name": "arrels", "text": "Sota terra, les arrels es troben: formem part d’una xarxa viva."},
   "kicker": "Propostes",
   "lead": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
   "description": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
@@ -9,7 +10,7 @@
       "band": "white",
       "id": "presentacio",
       "paragraphs": [
-        "Aquest cicle ofereix un lloc segur per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
+        "Aquest cicle ofereix **un lloc segur** per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
       ],
       "buttons": [
         {
@@ -40,8 +41,8 @@
       "variant": "cicle",
       "paragraphs": [
         "Recorrerem de manera vivencial l’espiral del Treball que Reconnecta de Joanna Macy: Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.",
-        "En 4 sessions, anirem fent un camí compartit que combina autocura, resiliència i suport comunitari.",
-        "Treballarem recursos per sostenir emocions difícils i recuperar claredat quan hi ha incertesa. L’objectiu és que puguis sortir amb més força interior, una mirada més ampla i passos concrets per sostenir en el temps allò que hagis descobert i viscut."
+        "En 4 sessions, anirem fent **un camí compartit** que combina autocura, resiliència i suport comunitari.",
+        "Treballarem recursos per sostenir emocions difícils i recuperar claredat quan hi ha incertesa. L’objectiu és que puguis sortir amb més força interior, una mirada més ampla i **passos concrets** per sostenir en el temps allò que hagis descobert i viscut."
       ]
     },
     {

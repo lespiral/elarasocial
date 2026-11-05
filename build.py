@@ -16,7 +16,7 @@ import json, re, shutil, sys, time, unicodedata
 from pathlib import Path
 from urllib.parse import urlparse
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from markupsafe import Markup
+from markupsafe import Markup, escape
 
 ROOT = Path(__file__).resolve().parent
 DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
@@ -45,6 +45,82 @@ def slugify(s):
 def html(s):
     """Els camps acabats en _html són HTML escrit per nosaltres (enllaços, negretes): es pinten tal qual."""
     return Markup(s) if s else s
+
+
+BOLD = re.compile(r"\*\*(.+?)\*\*")
+
+
+def bold(v):
+    """**text** en qualsevol text d'una secció → negreta. Recorre llistes, targetes i preguntes."""
+    if isinstance(v, Markup):
+        return Markup(BOLD.sub(r"<strong>\1</strong>", str(v))) if "**" in v else v
+    if isinstance(v, str):
+        return Markup(BOLD.sub(r"<strong>\1</strong>", str(escape(v)))) if "**" in v else v
+    if isinstance(v, list):
+        return [bold(x) for x in v]
+    if isinstance(v, tuple):
+        return tuple(bold(x) for x in v)
+    if isinstance(v, dict):
+        return {k: (bold(x) if k not in ("id", "href", "icon", "type", "form", "url", "name", "variant", "band") else x) for k, x in v.items()}
+    return v
+
+
+# Icona de cada proposta, perquè les targetes que hi porten la tinguin sense haver-la d'escriure a cada pàgina.
+# Una targeta amb "icon" propi la manté; amb "icon": "" no en porta cap.
+CARD_ICONS = {
+    "7-passes-cap-a-lesperanca-activa": "steps",
+    "7-passes-cap-a-lesperanca-activa-comunitats": "steps",
+    "acompanyament-individual": "hand-heart",
+    "lespiral-de-lesperanca-activa": "spiral",
+    "el-treball-que-reconnecta": "tree",
+    "un-pont-desperanca-2": "bridge",
+    "grup-regular-de-el-treball-que-reconnecta": "moon-stars",
+    "cercles-de-paraula-per-a-gestionar-conflictes": "chats-circle",
+    "cercles-per-sostenir-organitzacions-i-col·lectius": "circles-three",
+    "burnout": "campfire",
+    "contacte": "chat-circle-dots",
+    "xn--esperanaactiva-mjb.cat": "map-trifold",
+    # Els quatre cursos de les 7 passes (Thinkific)
+    "Quan-sostenir-la-vida": "plant",
+    "Quan-el-mon-et-preocupa": "globe",
+    "Quan-cuidar-nos": "users-three",
+    "Quan-la-vida-et-desborda": "cloud-rain",
+}
+
+
+def card_icon(href):
+    if not href:
+        return None
+    page = href.split("#")[0].strip("/")
+    if page in CARD_ICONS:
+        return CARD_ICONS[page]
+    for k, v in CARD_ICONS.items():
+        if k in href:
+            return v
+    return None
+
+
+# Icona de les llistes de les seccions de text, segons el títol ("list_icon" a la secció per triar-ne una altra)
+LIST_ICONS = [("explorarem", "compass"), ("practicarem", "footprints"), ("emportar", "leaf"), ("treballarem", "hand-heart")]
+
+
+def list_icon(title):
+    t = (title or "").lower()
+    return next((ic for k, ic in LIST_ICONS if k in t), "check")
+
+
+# Quadre de dades d'una proposta (nota "info"): cada línia amb la seva icona i els preus en negreta
+PRICE = re.compile(r"(\d+(?:,\d+)?(?:\s?/\s?\d+(?:,\d+)?)*\s?€)")
+
+
+def note_rows(paragraphs):
+    rows = []
+    for p in paragraphs or []:
+        t = str(p)
+        ic = "coins" if "€" in t else "users" if "participant" in t else "calendar-dots"
+        h = t if isinstance(p, Markup) else str(escape(t))
+        rows.append({"icon": ic, "html": Markup(PRICE.sub(r"<strong>\1</strong>", h))})
+    return rows
 
 
 errors = []
@@ -83,8 +159,19 @@ def prepare_sections(sections, where):
             if not f.exists():
                 errors.append(f"{where}: no trobo la infografia {f.relative_to(ROOT)}")
         for it in s.get("items", []) if t in ("cards", "list") else []:
+            if isinstance(it, dict) and "icon" not in it and card_icon(it.get("href")):
+                it["icon"] = card_icon(it.get("href"))
             if isinstance(it, dict) and it.get("icon") and it["icon"] not in ICONS:
                 errors.append(f"{where}: la icona {it['icon']!r} no és a src/icons.json")
+        if t == "text" and s.get("list"):
+            s["list_icon"] = s.get("list_icon") or list_icon(s.get("title"))
+            if s["list_icon"] not in ICONS:
+                errors.append(f"{where}: la icona {s['list_icon']!r} no és a src/icons.json")
+        if t == "note" and s.get("style", "info") == "info":
+            s["rows"] = note_rows(bold(s.get("paragraphs")))
+        for k in list(s):
+            if k not in ("rows",):
+                s[k] = bold(s[k]) if k not in ("id", "type", "band", "infografia", "variant", "name", "list_icon", "style", "align") else s[k]
     dup = {i for i in ids if ids.count(i) > 1}
     if dup:
         errors.append(f"{where}: seccions amb el mateix id {sorted(dup)}: posa'ls un \"id\" diferent")
@@ -106,6 +193,12 @@ for f in sorted((DATA / "pages").glob("*.json")):
     if p["slug"] != f.stem:
         errors.append(f"{f.relative_to(ROOT)}: el camp slug ({p['slug']}) ha de ser igual que el nom del fitxer")
     p["sections"] = prepare_sections(p.get("sections"), str(f.relative_to(ROOT)))
+    # "metafora": {"name": ..., "text": ...}: l'escena petita sota el títol (src/templates/infografies/infografia-metafora.html)
+    if p.get("metafora"):
+        m = p["metafora"]
+        escenes = re.findall(r'SCENES(?:\.([\w]+)|\["([\w-]+)"\])\s*=', (SRC / "templates" / "infografies" / "infografia-metafora.html").read_text(encoding="utf-8"))
+        if m.get("name") not in {a or b for a, b in escenes}:
+            errors.append(f"{f.relative_to(ROOT)}: l'escena «{m.get('name')}» de \"metafora\" no existeix (n'hi ha: {', '.join(sorted(a or b for a, b in escenes))})")
     pages.append(p)
 slugs = {p["slug"] for p in pages}
 
@@ -146,6 +239,8 @@ if errors:
 
 img = SRC / "img"
 env = Environment(loader=FileSystemLoader(SRC / "templates"), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
+# |cap: la primera lletra en majúscula (els avantítols de WordPress anaven en minúscula perquè es pintaven en majúscules)
+env.filters["cap"] = lambda s: (s[:1].upper() + s[1:]) if s else s
 env.globals.update(icon=icon, site=site, noindex=NOINDEX, version=str(int(time.time())),
                    logo=(img / "logo-elara.png").exists(),
                    favicon=(img / "favicon-48.png").exists(),

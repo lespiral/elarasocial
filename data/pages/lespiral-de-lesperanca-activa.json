@@ -1,5 +1,6 @@
 {
   "title": "L'Espiral de l'Esperança Activa",
+  "metafora": {"name": "falguera", "text": "Com una falguera: allò que estava enrotllat es desplega cap a la llum."},
   "kicker": "Propostes",
   "lead": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
   "description": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
@@ -9,7 +10,7 @@
       "band": "white",
       "id": "presentacio",
       "paragraphs": [
-        "Un taller segur per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
+        "**Un taller segur** per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
       ],
       "buttons": [
         {

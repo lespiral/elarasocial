@@ -1,5 +1,6 @@
 {
   "title": "Cercles de paraula",
+  "metafora": {"name": "paraula", "text": "Quan la paraula circula amb ordre, la tensió es pot posar en paraules sense que escali."},
   "kicker": "Propostes",
   "lead": "(per a transformar conflictes)",
   "description": "(per a transformar conflictes)",
@@ -9,8 +10,8 @@
       "band": "white",
       "id": "presentacio",
       "paragraphs": [
-        "De vegades, quan en un equip hi ha fricció, el que falta no és voluntat: falta un contenidor. Un espai on parlar sense interrompre’ns, sense escalar el conflicte i sense quedar atrapats en “qui té raó”.",
-        "Aquest programa és un taller pràctic per a grups i organitzacions que volen incorporar l’estructura dels Cercles de paraula com una eina operativa per abordar converses difícils amb més seguretat, equitat i eficàcia.",
+        "De vegades, quan en un equip hi ha fricció, el que falta no és voluntat: **falta un contenidor**. Un espai on parlar sense interrompre’ns, sense escalar el conflicte i sense quedar atrapats en “qui té raó”.",
+        "Aquest programa és un taller pràctic per a grups i organitzacions que volen incorporar l’estructura dels Cercles de paraula com **una eina operativa** per abordar converses difícils amb més seguretat, equitat i eficàcia.",
         "Durant quatre sessions, teixirem un marc de diàleg segur perquè l’equip pugui:"
       ],
       "buttons": [
@@ -38,8 +39,8 @@
       "title": "Què t'emportaràs del programa",
       "paragraphs": [
         "En aquest espai tindrem el temps necessari per aturar-nos i entendre què hi ha sota el conflicte: interessos, necessitats, pors, malentesos, i dinàmiques que s’han anat cronificant.",
-        "Treballarem amb l’estructura dels Cercles com a metodologia de conversa segura: un marc que combina ritme, equitat i responsabilitat compartida per facilitar diàlegs que, en una reunió convencional, acostumen a escalar o quedar encallats.",
-        "L’objectiu és que l’equip recuperi claredat operativa i surti amb:"
+        "Treballarem amb l’estructura dels Cercles com a **metodologia de conversa segura**: un marc que combina ritme, equitat i responsabilitat compartida per facilitar diàlegs que, en una reunió convencional, acostumen a escalar o quedar encallats.",
+        "L’objectiu és que l’equip **recuperi claredat operativa** i surti amb:"
       ],
       "list": [
         "un protocol aplicable per a converses difícils,",

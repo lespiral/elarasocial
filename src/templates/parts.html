@@ -1,6 +1,6 @@
 {# Peces que fan servir totes les pàgines. La macro «section» pinta cada secció de data/ segons el seu "type". #}
 
-{% macro page_head(kicker, title, lead=None, center=True, escena=None) -%}
+{% macro page_head(kicker, title, lead=None, center=True, escena=None, metafora=None) -%}
 <section class="pagehead{% if center %} pagehead--center{% endif %}">
   <div class="wrap">
     {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
@@ -8,6 +8,8 @@
     {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
     {# "escena": "vida" | "cuidar" | "mon" | "dia" a la pàgina: una escena animada sota el títol #}
     {% if escena %}<div class="infografia infografia--head">{% include "infografies/infografia-capcalera.html" %}</div>{% endif %}
+    {# "metafora": {"name": "<escena>", "text": "…"} a les propostes: una escena petita que explica la proposta amb una imatge #}
+    {% if metafora %}{% include "infografies/infografia-metafora.html" %}{% endif %}
   </div>
 </section>
 {%- endmacro %}
@@ -80,18 +82,33 @@
 
 {% macro faq_item(q, a_html, id=None, open=False) -%}
 <details class="faq"{% if id %} id="{{ id }}"{% endif %}{% if open %} open{% endif %}>
-  <summary><span>{{ q }}</span>{{ icon('caret', 'faq__caret') }}</summary>
+  <summary><span class="faq__q">{{ icon('question') }}<span>{{ q }}</span></span>{{ icon('caret', 'faq__caret') }}</summary>
   <div class="faq__body">{{ a_html }}</div>
 </details>
 {%- endmacro %}
 
-{# Nota destacada: "style": "care" (rosada, per a avisos de cura) o "info" (verda) #}
+{# Nota destacada: "style": "care" (rosada, per a avisos de cura) o "info" (el quadre de dades d'una proposta: durada, places i preus, amb una icona a cada línia) #}
 {% macro note(s) -%}
-<aside class="note note--{{ s.style or 'info' }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
-  {% if s.title %}<h2 id="h-{{ s.id }}" class="note__title">{{ icon('lifebuoy' if s.style == 'care' else 'info') }}{{ s.title }}</h2>{% endif %}
+{% if (s.style or 'info') == 'info' %}
+<aside class="facts-box"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+  {% if s.title %}<h2 id="h-{{ s.id }}" class="facts-box__title"><span class="facts-box__i">{{ icon('clock') }}</span><span>{{ s.title }}</span></h2>{% endif %}
+  {% if s.rows %}<ul class="facts-box__rows">{% for r in s.rows %}<li><span class="facts-box__i">{{ icon(r.icon) }}</span><span>{{ r.html }}</span></li>{% endfor %}</ul>{% endif %}
+  {% if s.text_html %}<p class="facts-box__p">{{ s.text_html }}</p>{% endif %}
+</aside>
+{% else %}
+<aside class="note note--{{ s.style }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+  {% if s.title %}<h2 id="h-{{ s.id }}" class="note__title">{{ icon('lifebuoy') }}{{ s.title }}</h2>{% endif %}
   {% for p in s.paragraphs or [] %}<p class="note__p">{{ p }}</p>{% endfor %}
   {% if s.text_html %}<p class="note__p">{{ s.text_html }}</p>{% endif %}
 </aside>
+{% endif %}
+{%- endmacro %}
+
+{# Llista d'una secció de text: cada element en un quadre, amb la icona de la secció (vegeu LIST_ICONS a build.py) #}
+{% macro tiles(items, ic) -%}
+<ul class="tiles{% if items|length >= 4 %} tiles--2{% endif %}">
+  {% for i in items %}<li class="tile"><span class="tile__i" aria-hidden="true">{{ icon(ic) }}</span><span class="tile__t">{{ i }}</span></li>{% endfor %}
+</ul>
 {%- endmacro %}
 
 {# Un formulari de Google inserit. Si n'hi ha més d'un (p. ex. el taller obert i la versió per a un equip), cada un es plega. #}
@@ -112,24 +129,34 @@
 {# Una secció de pàgina. Tipus: text, cards, list, faq, note, infografia, cta, contact, form (vegeu el README). #}
 {% macro section(s, root) -%}
 {% set band = {'white': ' band--white', 'soft': ' band--soft', 'slim': ' band--slim'}.get(s.band, '') %}
-<section class="band{{ band }}" id="{{ s.id }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
-  <div class="wrap{% if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide %} wrap--narrow{% endif %}">
-    {% if s.kicker %}<p class="band__kicker">{{ s.kicker }}</p>{% endif %}
+{# Amplada: els textos, estrets; si porten una llista de 4 o més elements (en dues columnes), una mica més amples #}
+{% set wcls = ' wrap--mid' if s.type == 'text' and (s.list or [])|length >= 4 else ' wrap--narrow' if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide else '' %}
+<section class="band{{ band }} band--{{ s.type }}" id="{{ s.id }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+  <div class="wrap{{ wcls }}">
+    {% if s.type == 'cta' %}<div class="cta-box">{% endif %}
+    {% if s.kicker %}<p class="band__kicker">{{ s.kicker|cap }}</p>{% endif %}
     {% if s.title and s.type != 'note' %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
     {% if s.intro %}<div class="band__intro"><p>{{ s.intro }}</p></div>{% endif %}
     {# "infografia": "<nom>" a qualsevol secció: la infografia surt sota el títol (o sota el text de "before" de les targetes), a tota l'amplada, i després el contingut #}
     {% if s.infografia and not (s.type == 'cards' and s.before) %}
   </div>
   <div class="wrap"><div class="infografia infografia--top">{% include "infografies/infografia-" ~ s.infografia ~ ".html" %}</div></div>
-  <div class="wrap{% if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide %} wrap--narrow{% endif %}">
+  <div class="wrap{{ wcls }}">
     {% endif %}
 
     {% if s.type == 'text' %}
+      {# El primer paràgraf, més gran; si no hi ha llista, la resta va dins d'un quadre de color #}
+      {% set pars = s.paragraphs or [] %}
       <div class="prose">
         {% if s.quote %}<blockquote class="quote"><p>{{ s.quote }}</p></blockquote>{% endif %}
-        {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
-        {% if s.list %}<ul class="ticks">{% for i in s.list %}<li>{{ i }}</li>{% endfor %}</ul>{% endif %}
-        {% for p in s.after or [] %}<p>{{ p }}</p>{% endfor %}
+        {% if pars %}<p class="prose__lead">{{ pars[0] }}</p>{% endif %}
+        {% if pars|length > 1 and not s.list %}
+        <div class="prose__box">{% for p in pars[1:] %}<p>{{ p }}</p>{% endfor %}</div>
+        {% else %}
+        {% for p in pars[1:] %}<p>{{ p }}</p>{% endfor %}
+        {% endif %}
+        {% if s.list %}{{ tiles(s.list, s.list_icon) }}{% endif %}
+        {% for p in s.after or [] %}<p class="prose__after">{{ p }}</p>{% endfor %}
         {% if s.text_html %}{{ s.text_html }}{% endif %}
       </div>
     {% elif s.type == 'cards' %}
@@ -137,7 +164,7 @@
       {% if s.infografia and s.before %}<div class="infografia infografia--top">{% include "infografies/infografia-" ~ s.infografia ~ ".html" %}</div>{% endif %}
       {{ cards(s["items"], root, align=s.align or 'center') }}
     {% elif s.type == 'list' %}
-      <ul class="checks">{% for i in s["items"] %}<li>{{ icon('check') }}<span>{{ i }}</span></li>{% endfor %}</ul>
+      {{ tiles(s["items"], s.list_icon or 'check') }}
     {% elif s.type == 'faq' %}
       <div class="faqs">{% for q, a, qid in s["items"] %}{{ faq_item(q, a, qid) }}{% endfor %}</div>
     {% elif s.type == 'note' %}
@@ -145,7 +172,9 @@
     {% elif s.type == 'infografia' %}
       {% include "infografies/infografia-" ~ s.name ~ ".html" %}
     {% elif s.type == 'cta' %}
-      <div class="prose prose--center">{% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}</div>
+      {% if s.paragraphs %}<div class="cta-box__text">{% for p in s.paragraphs %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      {% if s.buttons %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--light' if loop.first else 'btn--ghost-light') }}{% endfor %}</p>{% endif %}
+      </div>
     {% elif s.type == 'form' %}
       {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
       {{ forms(s) }}
@@ -180,7 +209,7 @@
       </div>
     {% endif %}
 
-    {% if s.buttons %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+    {% if s.buttons and s.type != 'cta' %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
   </div>
 </section>
 {%- endmacro %}

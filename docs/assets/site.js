@@ -1,5 +1,46 @@
-// Elara Social · menú del mòbil, enllaços directes a seccions i desplegables «Vés directament a…»
+// Elara Social · menú del mòbil, enllaços directes a seccions, desplegables «Vés directament a…» i títols que es mouen
 (function () {
+  window.elaraMoviment = true;
+
+  // Títols que es mouen (només sense «reduir moviment»; els estils són a site.css, «Moviment»)
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    // El títol de la capçalera surt paraula a paraula
+    Array.prototype.forEach.call(document.querySelectorAll('.pagehead h1, .hero__title'), function (h) {
+      var i = 0;
+      (function split(node) {
+        Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+          if (n.nodeType === 3) {
+            var frag = document.createDocumentFragment();
+            n.textContent.split(/(\s+)/).forEach(function (part) {
+              if (!part) return;
+              if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+              var w = document.createElement('span');
+              w.className = 'w';
+              w.style.setProperty('--i', i++);
+              w.textContent = part;
+              frag.appendChild(w);
+            });
+            node.replaceChild(frag, n);
+          } else if (n.nodeType === 1) split(n);
+        });
+      })(h);
+      h.classList.add('is-split');
+    });
+    // Cada títol de secció puja i es dibuixa la línia de sota quan arriba a la pantalla
+    var titles = document.querySelectorAll('.band__kicker, .band__title');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      Array.prototype.forEach.call(titles, function (t) { io.observe(t); });
+    } else {
+      Array.prototype.forEach.call(titles, function (t) { t.classList.add('is-in'); });
+    }
+  }
+
   var bar = document.querySelector('.topbar');
   var btn = document.querySelector('.menu-btn');
   if (bar && btn) {

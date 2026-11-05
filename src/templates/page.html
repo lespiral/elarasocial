@@ -2,6 +2,6 @@
 {% from "parts.html" import page_head, section %}
 {% block content %}
 {# Una pàgina de data/pages/<adreça>.json: capçalera (kicker, title, lead) i seccions #}
-{{ page_head(page.kicker, page.title, page.lead, escena=page.escena) }}
+{{ page_head(page.kicker, page.title, page.lead, escena=page.escena, metafora=page.metafora) }}
 {% for s in page.sections %}{{ section(s, root) }}{% endfor %}
 {% endblock %}

@@ -1,5 +1,6 @@
 {
   "title": "Acompanyament individual",
+  "metafora": {"name": "costat", "text": "Algú que camina al teu costat, al teu ritme, mentre la boira s’aixeca."},
   "kicker": "Al teu costat i al teu ritme",
   "lead": "Del malestar a l’acció amb sentit",
   "description": "Del malestar a l’acció amb sentit",
@@ -10,8 +11,8 @@
       "id": "presentacio",
       "paragraphs": [
         "El pas cap a una vida amb més coherència no l’has de fer en solitud.",
-        "T’oferim un espai de mentoria individual, online o presencial, per aturar-te i aterrar el procés de canvi a la teva realitat.",
-        "Un refugi on aprendre a sostenir les emocions difícils del dia a dia i traçar un full de ruta per transformar la incertesa en acció amb sentit."
+        "T’oferim **un espai de mentoria individual, online o presencial**, per aturar-te i aterrar el procés de canvi a la teva realitat.",
+        "Un refugi on aprendre a sostenir les emocions difícils del dia a dia i traçar un full de ruta per **transformar la incertesa en acció amb sentit**."
       ],
       "buttons": [
         {
@@ -81,8 +82,8 @@
       "paragraphs": [
         "Hi ha moments en què la informació no és el problema.",
         "El que pesa és la càrrega emocional, la sensació d’anar sola/sol, la fatiga d’aguantar-ho tot, o el buit de no saber com continuar.",
-        "Les mentories individuals són un espai per recuperar la teva capacitat de sostenir la realitat sense trencar-te, i transformar la reacció (bloqueig, pressa, autoexigència, desesperança) en un procés que et doni estructura, sentit i direcció.",
-        "No busquem “arreglar-te”. Busquem que puguis tornar a tu, escoltar què és essencial, i avançar amb passos que respectin la teva vida: el teu cos, les teves relacions i els teus límits."
+        "Les mentories individuals són un espai per **recuperar la teva capacitat de sostenir la realitat sense trencar-te**, i transformar la reacció (bloqueig, pressa, autoexigència, desesperança) en un procés que et doni estructura, sentit i direcció.",
+        "**No busquem “arreglar-te”.** Busquem que puguis tornar a tu, escoltar què és essencial, i avançar amb passos que respectin la teva vida: el teu cos, les teves relacions i els teus límits."
       ]
     },
     {

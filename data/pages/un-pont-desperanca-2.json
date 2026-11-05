@@ -1,5 +1,6 @@
 {
   "title": "Un pont d'Esperança",
+  "metafora": {"name": "pont", "text": "Dos dies per fer pont entre el que ens pesa i el que podem fer."},
   "kicker": "Un parèntesi per reconnectar des de l’arrel",
   "lead": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
   "description": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
@@ -10,9 +11,9 @@
       "id": "presentacio",
       "paragraphs": [
         "De vegades, per metabolitzar tot allò que ens travessa, necessitem una pausa més llarga.",
-        "Aquest taller de cap de setmana és un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+        "Aquest taller de cap de setmana és **un espai d’immersió** per reconnectar amb la vida i transformar el dolor en força compartida.",
         "Durant dos dies, teixirem un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com l’esgotament que ens generen els grans reptes globals.",
-        "Temps de qualitat per trobar, en comunitat, formes concretes d’acció i compromís."
+        "Temps de qualitat per trobar, en comunitat, **formes concretes d’acció i compromís**."
       ],
       "buttons": [
         {
@@ -45,7 +46,7 @@
         "En aquest espai tindrem el temps necessari per aturar-nos i connectar a fons amb allò que realment ens importa.",
         "Treballarem des del marc del Treball que Reconnecta, recorrent la famosa espiral de Joanna Macy (Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
         "Un camí compartit d’autocura i xarxa per aprendre a sostenir les emocions difícils davant la incertesa.",
-        "L’objectiu és que recuperis la claredat i surtis d’aquí amb la força interior i els passos concrets per sostenir-te en el temps."
+        "L’objectiu és que recuperis la claredat i surtis d’aquí amb **la força interior i els passos concrets** per sostenir-te en el temps."
       ]
     },
     {

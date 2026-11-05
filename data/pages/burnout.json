@@ -1,5 +1,6 @@
 {
   "title": "Burnout",
+  "metafora": {"name": "foc", "text": "Que el foc que et mou no et cremi: que escalfi i que duri."},
   "kicker": "Propostes",
   "lead": "Reconnectar amb la força sense cremar-se. Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
   "description": "Reconnectar amb la força sense cremar-se. Un programa en 8 sessions per transformar esgotament, sobrecàrrega i culpa en regulació, claredat i límits sostenibles.",
@@ -11,9 +12,9 @@
       "paragraphs": [
         "Quan treballes per al bé comú, la pressió no queda fora. Entra dins: urgències constants, casos d’alt impacte, manca de recursos, decisions difícils, frustració sistèmica, i la sensació que mai n’hi ha prou.",
         "Això desgasta. I no només per cansament: perquè va tocant el sentit, la vocació i la manera com et parles per dins.",
-        "Aquest taller és un itinerari pràctic per a persones i grups que volen recuperar energia i coherència sense endurir-se ni col·lapsar.",
-        "Ho fem entrenant una habilitat clau: l’autocompassió, entesa com una manera concreta de respondre al patiment amb presència, humanitat compartida i acció útil, amb tendresa i amb fermesa.",
-        "No és un espai per “aguantar més”. És un espai per sostenir el que és important sense destruir-te."
+        "Aquest taller és un itinerari pràctic per a persones i grups que volen **recuperar energia i coherència sense endurir-se ni col·lapsar**.",
+        "Ho fem entrenant una habilitat clau: **l’autocompassió**, entesa com una manera concreta de respondre al patiment amb presència, humanitat compartida i acció útil, amb tendresa i amb fermesa.",
+        "No és un espai per “aguantar més”. És un espai per **sostenir el que és important sense destruir-te**."
       ],
       "buttons": [
         {
@@ -31,7 +32,7 @@
       "html": true,
       "title": "Què t'emportaràs del programa",
       "paragraphs": [
-        "Aquest taller et dona un marc replicable per sortir del “mode supervivència” i recuperar capacitat de decidir i cuidar-te en entorns exigents. En lloc de quedar-te amb “estic esgotat però he de tirar”, entrenaràs recursos que ajuden a:"
+        "Aquest taller et dona **un marc replicable** per sortir del “mode supervivència” i recuperar capacitat de decidir i cuidar-te en entorns exigents. En lloc de quedar-te amb “estic esgotat però he de tirar”, entrenaràs recursos que ajuden a:"
       ],
       "list": [
         "reconèixer el burnout (i diferenciar-lo de l’estrès “normal”) sense culpa ni vergonya",
@@ -89,8 +90,8 @@
       "kicker": "Sostenir la feina sense trencar-se per dins",
       "paragraphs": [
         "Perquè cap projecte es manté a llarg termini si la gent que el sosté viu en mode emergència.",
-        "Cuidar-nos no és un luxe ni un premi: és una condició de possibilitat.",
-        "L’autocompassió no ens fa menys compromesos. Ens fa més sostenibles."
+        "Cuidar-nos no és un luxe ni un premi: **és una condició de possibilitat**.",
+        "L’autocompassió no ens fa menys compromesos. **Ens fa més sostenibles.**"
       ]
     },
     {

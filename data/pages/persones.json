@@ -11,9 +11,9 @@
       "kicker": "no ho sostinguis sol/a",
       "title": "Per més que t'hi esforcis, el dia a dia et passa per sobre?",
       "paragraphs": [
-        "A Elara Social, transformem aquest estancament en força compartida.",
+        "A Elara Social, **transformem aquest estancament en força compartida**.",
         "Sostenir la vida és al centre de la nostra activitat. Per això no busquem solucions ràpides, sinó processos que es puguin sostenir en el temps.",
-        "A Elara Social treballem amb metodologies estructurades i pràctiques vivencials que t’ajuden a passar de “aguantar” a recuperar direcció, vincle i capacitat d’acció.",
+        "A Elara Social treballem amb metodologies estructurades i pràctiques vivencials que t’ajuden a **passar de “aguantar” a recuperar direcció, vincle i capacitat d’acció**.",
         "Ho fem cuidant alhora el benestar personal i la dimensió comunitària: el que et passa a tu també té a veure amb el món que compartim."
       ]
     },
@@ -157,7 +157,7 @@
     {
       "type": "cards",
       "band": "white",
-      "kicker": "que ens mou?",
+      "kicker": "què ens mou?",
       "title": "En un món que ens vol ràpides i eficients, la nostra aposta és la humanitat.",
       "before": [
         "Prioritzem la teva cura i la de l’entorn per sobre de tot."

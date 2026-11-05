@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.elaraMoviment)document.documentElement.classList.remove("js")},4000)</script>
   <title>El Treball que Reconnecta · Elara Social</title>
   <meta name="description" content="Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.">
 <link rel="canonical" href="https://elarasocial.com/el-treball-que-reconnecta/">
@@ -12,8 +13,8 @@
   <meta property="og:locale" content="ca_ES">
 <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@600;700&display=swap">
-  <link rel="stylesheet" href="../assets/site.css?v=1793914844">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/site.css?v=1793916695">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -43,23 +44,609 @@
 <section class="pagehead pagehead--center">
   <div class="wrap">
 <p class="kicker">Propostes</p>    <h1>El Treball que Reconnecta</h1>
-<p class="lead">Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.</p>  </div>
+<p class="lead">Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.</p><figure class="metafora">
+  <div class="mt" data-metafora="arrels" aria-label="Sota terra, les arrels es troben: formem part d’una xarxa viva."></div>
+<figcaption class="metafora__cap">Sota terra, les arrels es troben: formem part d’una xarxa viva.</figcaption></figure>
+
+<style>
+.metafora { max-width: 860px; margin: 26px auto 0; }
+.mt { position: relative; overflow: hidden; aspect-ratio: 1000 / 320; background: #e6e8ea; cursor: pointer;
+  border: 1px solid var(--line, #e3e7e4); border-bottom: 0; border-radius: var(--radius-lg, 22px) var(--radius-lg, 22px) 0 0; -webkit-tap-highlight-color: transparent; }
+@media (max-width: 600px) { .mt { aspect-ratio: 16 / 9; } }
+.mt svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.mt:focus { outline: none; }
+.mt:focus-visible { outline: 3px solid var(--blau-700, #1a4a75); outline-offset: 3px; }
+.metafora__cap { margin: 0; padding: 13px 20px 14px; background: var(--paper, #fff); border: 1px solid var(--line, #e3e7e4); border-radius: 0 0 var(--radius-lg, 22px) var(--radius-lg, 22px);
+  box-shadow: 0 10px 28px rgba(1, 49, 91, .08); font: italic 400 1.02rem/1.45 var(--font-body); color: var(--ink-soft, #46525c); text-align: center; text-wrap: balance; }
+
+/* Comú: el cel gris s'escalfa, surt el sol, els turons reverdeixen, la boira se'n va */
+.m-warm, .m-rays, .m-glow, .m-bird { opacity: 0; }
+.m-warm { transition: opacity 2.4s ease; }
+.m-glow { transition: opacity 2.4s .3s; }
+.m-rays { transition: opacity 1.4s 1.6s; }
+.m-sun { transform: translateY(160px); transition: transform 2.6s cubic-bezier(.3, .7, .3, 1); }
+.m-fog { opacity: 1; transition: opacity 2.2s; }
+.m-fog--light { opacity: .45; }
+.m-h1 { fill: #dde0e3; } .m-h2 { fill: #cfd3d8; } .m-h3 { fill: #c2c7cc; }
+.m-h1, .m-h2, .m-h3 { transition: fill 2.4s; }
+.m-bird { fill: none; stroke: #1a4a75; stroke-width: 2.4; stroke-linecap: round; transition: opacity 1s 1.4s; }
+.is-hope .m-warm, .is-hope .m-rays, .is-hope .m-glow, .is-hope .m-bird { opacity: 1; }
+.is-hope .m-sun { transform: none; }
+.is-hope .m-fog { opacity: 0; }
+.is-hope .m-h1 { fill: #d9e6d6; } .is-hope .m-h2 { fill: #c8dcc3; } .is-hope .m-h3 { fill: #b7cfb2; }
+.m-halo { transform-box: fill-box; transform-origin: center; animation: m-pulse 1.8s ease-in-out infinite; }
+.m-water { fill: #cdd3d9; transition: fill 2.4s; }
+.is-hope .m-water { fill: #b9cfe2; }
+.m-ripple { fill: none; stroke: #fff; stroke-opacity: .7; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 14 22; animation: m-flow 2.6s linear infinite; }
+/* Persones: grises al principi; amb l'esperança, cadascuna agafa el seu color */
+.m-p * { fill: #a3a9af; transition: fill 1.6s; }
+.is-hope .m-p.k1 * { fill: #557e4c; } .is-hope .m-p.k2 * { fill: #1a4a75; } .is-hope .m-p.k3 * { fill: #01315b; }
+.is-hope .m-p.k4 * { fill: #c9a53c; } .is-hope .m-p.k5 * { fill: #46703d; }
+.m-p.k0 * { fill: #01315b; }
+.m-ring { fill: none; stroke: #e2c668; stroke-width: 4; stroke-dasharray: 2 9; stroke-linecap: round; opacity: 0; transition: opacity 1s; }
+.m-leaf { fill: #557e4c; fill-opacity: .92; transform-box: fill-box; transform-origin: 50% 100%; transform: scale(0); transition: transform 1.2s cubic-bezier(.34, 1.56, .64, 1); }
+.is-hope .m-leaf { transform: none; }
+.m-trunk { fill: none; stroke: #6f6352; stroke-width: 4; stroke-linecap: round; transition: stroke 2s; }
+.is-hope .m-trunk { stroke: #4e5a48; }
+.m-win { fill: #7d8389; transition: fill .8s; }
+.is-hope .m-win { fill: #f1d77f; }
+.m-wall { fill: #b3b8bd; transition: fill 2s; } .m-roof { fill: #989ea3; transition: fill 2s; }
+.is-hope .m-wall { fill: #e9dfc8; } .is-hope .m-roof { fill: #557e4c; }
+.is-hope .m-house:nth-child(odd) .m-roof { fill: #01315b; }
+
+/* Set passes: les pedres s'encenen quan les trepitges */
+.m-stone ellipse { fill: #9aa1a8; transition: fill .5s; }
+.m-stone text { fill: #eef0f2; font: 700 12px/1 var(--font-head, sans-serif); text-anchor: middle; dominant-baseline: central; transition: fill .5s; }
+.m-stone.is-lit ellipse { fill: #e2c668; }
+.m-stone.is-lit text { fill: #01315b; }
+.mt--passes-comunitat.is-done .m-ring { opacity: 1; }
+
+/* Falguera: el que estava enrotllat es desplega */
+.m-frond { fill: none; stroke: #557e4c; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+.m-pinna { fill: #6f9a63; }
+
+/* Arrels: les arrels creixen i es troben sota terra */
+.m-soil { fill: #e7e1d4; transition: fill 2.4s; }
+.is-hope .m-soil { fill: #efe4c9; }
+.m-grass { fill: none; stroke: #b9c3b4; stroke-width: 5; stroke-linecap: round; transition: stroke 2s; }
+.is-hope .m-grass { stroke: #8fb283; }
+.m-root { fill: none; stroke: #8b7b62; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; }
+.is-on .m-root { stroke-dashoffset: 0; transition: stroke-dashoffset 1.6s cubic-bezier(.4, 0, .2, 1); }
+.m-net { fill: none; stroke: #c9a53c; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; opacity: .85; }
+.is-on .m-net { stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s 1.5s cubic-bezier(.4, 0, .2, 1); }
+.m-pulse { fill: #e2c668; opacity: 0; }
+
+/* Pont: els taulons es posen un a un */
+.m-bank { fill: #c2c7cc; transition: fill 2.4s; }
+.is-hope .m-bank { fill: #b7cfb2; }
+.m-bank--r { fill: #c8dcc3; }
+.m-plank { fill: #8a7356; opacity: 0; transform-box: fill-box; transform-origin: 50% 0; transform: translateY(-14px); }
+.is-on .m-plank { opacity: 1; transform: none; transition: opacity .35s var(--d), transform .5s var(--d) cubic-bezier(.34, 1.56, .64, 1); }
+.m-rope { fill: none; stroke: #6f6352; stroke-width: 2.6; stroke-linecap: round; opacity: 0; }
+.is-on .m-rope { opacity: 1; transition: opacity .8s 2.3s; }
+.m-post { fill: #6f6352; opacity: 0; }
+.is-on .m-post { opacity: 1; transition: opacity .5s .1s; }
+.m-rain { stroke: #7c8895; stroke-width: 2.6; stroke-linecap: round; transition: opacity .9s; }
+.m-rain line { animation: m-rain 1s linear infinite; }
+.m-rain line:nth-child(2n) { animation-delay: -.5s; } .m-rain line:nth-child(3n) { animation-delay: -.25s; }
+.is-hope .m-rain { opacity: 0; }
+.m-cloud { transition: transform 2.6s cubic-bezier(.4, 0, .2, 1); }
+.m-cloud .m-puff { fill: #8e949b; transition: fill 2s; }
+.is-hope .m-cloud .m-puff { fill: #fff; }
+.is-hope .m-cloud--away { transform: translate(-260px, -18px); }
+.is-hope .m-cloud--up { transform: translate(0, -150px); }
+
+/* Llunes: una nit amb la lluna que va canviant de fase, trobada rere trobada */
+.m-night { opacity: 0; transition: opacity 2.4s; }
+.is-hope .m-night { opacity: 1; }
+.m-moon { opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.5); }
+.is-on .m-moon { opacity: 1; transform: none; transition: opacity .8s var(--d), transform .9s var(--d) cubic-bezier(.34, 1.56, .64, 1); }
+.m-star { fill: #fff; opacity: 0; }
+.is-hope .m-star { opacity: .8; transition: opacity 1.5s var(--d); animation: m-twinkle 3s var(--d) ease-in-out infinite; }
+.m-silh * { fill: #8f99a3; transition: fill 2s; }
+.is-hope .m-silh * { fill: #0b2238; }
+.m-fireglow { opacity: 0; transition: opacity 2s 1s; }
+.is-hope .m-fireglow { opacity: 1; }
+.m-dark1 { fill: #c9ced3; } .m-dark2 { fill: #bfc5cb; }
+.m-dark1, .m-dark2 { transition: fill 2.4s; }
+.is-hope .m-dark1 { fill: #1e4566; } .is-hope .m-dark2 { fill: #183a35; }
+.m-bond { fill: none; stroke: #e2c668; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 2 8; opacity: 0; }
+.is-on .m-bond { opacity: var(--o); transition: opacity 1s var(--d); }
+
+/* Cercles de paraula: el bastó passa i la tensió es converteix en onada */
+.m-floor { fill: #d6dbd4; transition: fill 2s; }
+.is-hope .m-floor { fill: #e5ecd9; }
+.m-zig { fill: none; stroke: #7b848c; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; transition: opacity 1s; }
+.is-hope .m-zig { opacity: 0; }
+.m-wave { fill: none; stroke: #557e4c; stroke-width: 3.2; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; }
+.is-hope .m-wave { stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s .4s cubic-bezier(.6, 0, .2, 1); }
+.m-voice { fill: none; stroke: #e2c668; stroke-width: 2.4; stroke-linecap: round; opacity: 0; }
+.mt.is-done .m-ring { opacity: 1; }
+
+/* Cercles per sostenir: el cercle es tanca i la casa es redreça */
+.m-mover { transition: transform 2.2s cubic-bezier(.4, 0, .2, 1); }
+.is-hope .m-mover { transform: translate(var(--dx), var(--dy)); }
+.m-tilt { transform-box: fill-box; transform-origin: 50% 100%; transform: rotate(-8deg); transition: transform 1.8s .5s cubic-bezier(.34, 1.4, .64, 1); }
+.is-hope .m-tilt { transform: none; }
+.m-crack { fill: none; stroke: #7d8389; stroke-width: 1.6; stroke-linecap: round; transition: opacity 1.4s .6s; }
+.is-hope .m-crack { opacity: 0; }
+.is-hope .m-ring--late { opacity: 1; transition: opacity 1s 1.8s; }
+.m-sprout { fill: #557e4c; transform-box: fill-box; transform-origin: 50% 100%; transform: scale(0); transition: transform 1.2s 2.2s cubic-bezier(.34, 1.56, .64, 1); }
+.is-hope .m-sprout { transform: none; }
+
+/* Foc: d'una flama que crema a una flama que escalfa, amb pedres que la contenen */
+.m-flame { transform-box: fill-box; transform-origin: 50% 100%; animation: m-wild .32s ease-in-out infinite alternate; transition: fill 1.6s; }
+.m-flame--a { fill: #d9874a; } .m-flame--b { fill: #e8a25e; } .m-flame--c { fill: #f1c27a; }
+.m-fire { transform-box: fill-box; transform-origin: 50% 100%; transform: scale(1.75); transition: transform 2.2s cubic-bezier(.4, 0, .2, 1); }
+.is-hope .m-fire { transform: none; }
+.is-hope .m-flame { animation: m-calm 1.8s ease-in-out infinite alternate; }
+.is-hope .m-flame--a { fill: #e2c668; } .is-hope .m-flame--b { fill: #edd78f; } .is-hope .m-flame--c { fill: #f8ecc0; }
+.m-spark { fill: #e8a25e; animation: m-spark 1.1s ease-out infinite; }
+.m-sparks, .m-smokes { transition: opacity 1.4s; }
+.is-hope .m-sparks, .is-hope .m-smokes { opacity: 0; }
+.m-smoke { fill: #b9b2a6; transform-box: fill-box; transform-origin: center; animation: m-smoke 2.6s ease-out infinite; }
+.m-log { fill: #6f6352; transition: fill 2s; }
+.is-hope .m-log { fill: #7a6450; }
+.m-rock { fill: #9aa1a8; opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.3); }
+.is-hope .m-rock { opacity: 1; transform: none; transition: opacity .6s var(--d), transform .7s var(--d) cubic-bezier(.34, 1.56, .64, 1); }
+.m-slump { transform-box: fill-box; transform-origin: 50% 100%; transform: rotate(22deg) translateY(3px); transition: transform 1.8s .8s cubic-bezier(.34, 1.3, .64, 1); }
+.is-hope .m-slump { transform: none; }
+.m-warmglow { opacity: 0; transition: opacity 2s .6s; }
+.is-hope .m-warmglow { opacity: 1; }
+
+@keyframes m-pulse { 0%, 100% { transform: scale(1); opacity: .45; } 50% { transform: scale(1.5); opacity: .15; } }
+@keyframes m-flow { to { stroke-dashoffset: -72; } }
+@keyframes m-rain { 0% { transform: translateY(-6px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(14px); opacity: 0; } }
+@keyframes m-twinkle { 0%, 100% { opacity: .85; } 50% { opacity: .3; } }
+@keyframes m-wild { from { transform: scale(.82, 1.12) skewX(-6deg); } to { transform: scale(1.1, .9) skewX(7deg); } }
+@keyframes m-calm { from { transform: scale(.97, 1.03); } to { transform: scale(1.02, .98); } }
+@keyframes m-spark { 0% { transform: translate(0, 0); opacity: 1; } 100% { transform: translate(var(--sx), -90px); opacity: 0; } }
+@keyframes m-smoke { 0% { transform: translate(0, 0) scale(.6); opacity: .8; } 100% { transform: translate(-30px, -110px) scale(1.8); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .mt *, .mt *::before, .mt *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var uid = 0;
+  function r1(n) { return Math.round(n * 10) / 10; }
+  function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
+  function ease(f) { return f < .5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2; }
+  function rays(cx, cy, r) {
+    var s = "";
+    for (var i = 0; i < 12; i++) {
+      var a = i * Math.PI / 6;
+      s += '<line x1="' + r1(cx + Math.cos(a) * r * 1.35) + '" y1="' + r1(cy + Math.sin(a) * r * 1.35) + '" x2="' + r1(cx + Math.cos(a) * r * 1.7) + '" y2="' + r1(cy + Math.sin(a) * r * 1.7) + '"/>';
+    }
+    return s;
+  }
+  // Cel gris + cel càlid + sol que surt. o: {sx, sy, sr, id}
+  function sky(o) {
+    var id = o.id, sx = o.sx, sy = o.sy, sr = o.sr || 36;
+    return '<defs><linearGradient id="m-sky' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3e5e7"/><stop offset="1" stop-color="#eef0ec"/></linearGradient>' +
+      '<linearGradient id="m-warm' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f2e2"/><stop offset=".65" stop-color="#f8ebc8"/><stop offset="1" stop-color="#f3dfa3"/></linearGradient>' +
+      '<radialGradient id="m-glow' + id + '"><stop offset="0" stop-color="#f6e7b0" stop-opacity=".95"/><stop offset=".5" stop-color="#f8efd2" stop-opacity=".5"/><stop offset="1" stop-color="#fcf8ea" stop-opacity="0"/></radialGradient>' +
+      '<filter id="m-blur' + id + '" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter></defs>' +
+      '<rect width="1000" height="320" fill="url(#m-sky' + id + ')"/>' +
+      '<rect class="m-warm" width="1000" height="320" fill="url(#m-warm' + id + ')"/>' +
+      (sx != null ? '<circle class="m-glow" cx="' + sx + '" cy="' + sy + '" r="' + sr * 4.6 + '" fill="url(#m-glow' + id + ')"/>' +
+        '<g class="m-sun"><g class="m-rays" stroke="#e2c668" stroke-width="4" stroke-linecap="round">' + rays(sx, sy, sr) + '</g><circle cx="' + sx + '" cy="' + sy + '" r="' + sr + '" fill="#e2c668"/></g>' : "");
+  }
+  var HILL1 = '<path class="m-h1" d="M0 214C150 186 300 198 450 190S760 168 1000 196V320H0Z"/>';
+  var HILL2 = '<path class="m-h2" d="M0 246C180 226 330 242 520 234S820 216 1000 238V320H0Z"/>';
+  var HILL3 = '<path class="m-h3" d="M0 280C250 268 600 282 1000 271V320H0Z"/>';
+  function fog(id, light) {
+    return '<g class="m-fog' + (light ? ' m-fog--light' : '') + '" filter="url(#m-blur' + id + ')" fill="#fff"><ellipse cx="260" cy="236" rx="170" ry="32"/><ellipse cx="500" cy="262" rx="200" ry="28"/><ellipse cx="760" cy="230" rx="170" ry="30"/></g>';
+  }
+  var BIRDS = '<path class="m-bird" d="M600 92q6-6 12 0q6-6 12 0M632 76q4-4 8 0q4-4 8 0M380 104q5-5 10 0q5-5 10 0"/>';
+  function walker() { return '<g class="m-walker"><circle class="m-halo" r="14" fill="#e2c668"/><circle r="7.5" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>'; }
+  // Persona: la base és (x, y); k = el color que agafa (k0 sempre blau marí)
+  function person(x, y, s, k, extra) {
+    return '<g class="m-p k' + k + (extra ? " " + extra : "") + '" transform="translate(' + r1(x) + ' ' + r1(y) + ') scale(' + s + ')"><circle cx="0" cy="-33" r="8.5"/><path d="M-12 0v-8a12 12 0 0 1 24 0v8z"/></g>';
+  }
+  function cloud(x, y, s, cls) {
+    var c = '<g class="m-cloud ' + cls + '"><g transform="translate(' + x + ' ' + y + ') scale(' + s + ')"><g class="m-rain">';
+    for (var i = 0; i < 6; i++) c += '<line x1="' + (-34 + i * 13) + '" y1="34" x2="' + (-37 + i * 13) + '" y2="46"/>';
+    return c + '</g><g class="m-puff"><circle cx="-28" cy="6" r="19"/><circle cx="2" cy="-10" r="27"/><circle cx="32" cy="6" r="19"/><rect x="-47" y="4" width="96" height="24" rx="12"/></g></g></g>';
+  }
+  function tree(x, b, s, d) {
+    var p = function (dx, dy) { return r1(x + dx * s) + "," + r1(b + dy * s); };
+    return '<path class="m-trunk" d="M' + p(0, 0) + "L" + p(0, -52) + "M" + p(0, -26) + "L" + p(-15, -44) + "M" + p(0, -34) + "L" + p(14, -52) + '"/>' +
+      '<circle class="m-leaf" style="transition-delay:' + (d + .9) + 's" cx="' + r1(x - 15 * s) + '" cy="' + r1(b - 50 * s) + '" r="' + r1(14 * s) + '"/>' +
+      '<circle class="m-leaf" style="transition-delay:' + (d + 1.05) + 's" cx="' + r1(x + 14 * s) + '" cy="' + r1(b - 58 * s) + '" r="' + r1(15 * s) + '"/>' +
+      '<circle class="m-leaf" style="transition-delay:' + (d + 1.2) + 's" cx="' + r1(x) + '" cy="' + r1(b - 68 * s) + '" r="' + r1(17 * s) + '"/>';
+  }
+  function house(x, b, w, h, delay, tilt) {
+    var l = x - w / 2;
+    return '<g class="m-house"><g' + (tilt ? ' class="m-tilt"' : '') + '>' +
+      '<path class="m-roof" d="M' + (l - 5) + ' ' + (b - h) + 'L' + x + ' ' + (b - h - w * .45) + 'L' + (l + w + 5) + ' ' + (b - h) + 'Z"/>' +
+      '<rect class="m-wall" x="' + l + '" y="' + (b - h) + '" width="' + w + '" height="' + h + '"/>' +
+      '<rect class="m-win" style="transition-delay:' + delay + 's" x="' + r1(x - w * .14) + '" y="' + r1(b - h + h * .2) + '" width="' + r1(w * .28) + '" height="' + r1(h * .28) + '" rx="1.5"/>' +
+      (tilt ? '<rect class="m-win" style="transition-delay:' + (delay + .25) + 's" x="' + r1(x - w * .1) + '" y="' + r1(b - h * .36) + '" width="' + r1(w * .2) + '" height="' + r1(h * .36) + '" rx="1.5"/>' +
+        '<path class="m-crack" d="M' + r1(l + w * .2) + ' ' + r1(b - h * .9) + 'l6 9-4 7 5 8M' + r1(l + w * .78) + ' ' + r1(b - h * .7) + 'l-5 8 4 6"/>' : '') +
+      '</g></g>';
+  }
+  // Camí: posa el caminant a la fracció f d'un path
+  function along(path, f) { var L = path.getTotalLength(), p = path.getPointAtLength(L * clamp(f, 0, 1)); return p; }
+
+  /* ---------- Les escenes ----------
+     Cada una torna { svg, dur (ms), hope (fracció en què s'escalfa), frame(f, el) opcional, done (classe al final) } */
+  var SCENES = {};
+
+  // Set passes: pedres per travessar el riu, d'una riba grisa cap al sol
+  function stones(id, comunitat) {
+    var st = [];
+    for (var i = 0; i < 7; i++) {
+      var x = 322 + i * 46, y = 304 - i * 7, rx = 27 - i * 2;
+      st.push({ x: x, y: y, rx: rx });
+    }
+    var g = "";
+    st.forEach(function (s, i) {
+      g += '<g class="m-stone" data-i="' + i + '"><ellipse cx="' + r1(s.x) + '" cy="' + r1(s.y) + '" rx="' + r1(s.rx) + '" ry="' + r1(s.rx * .38) + '"/>' +
+        '<text x="' + r1(s.x) + '" y="' + r1(s.y + .5) + '" style="font-size:' + r1(15 - i * .9) + 'px">' + (i + 1) + '</text></g>';
+    });
+    var start = { x: 262, y: 308 }, end = { x: 640, y: 254 };
+    var pts = [start].concat(st.map(function (s) { return { x: s.x, y: s.y - 5 }; })).concat([end]);
+    var village = comunitat
+      ? house(676, 228, 30, 20, 1.4) + house(716, 220, 34, 24, 1.7) + house(758, 230, 28, 19, 2) +
+        person(660, 262, .55, 1) + person(690, 258, .52, 3) + person(716, 262, .55, 4) +
+        '<ellipse class="m-ring" cx="672" cy="260" rx="70" ry="13"/>'
+      : tree(700, 236, .75, .2) + tree(752, 232, .55, .4);
+    return {
+      svg: sky({ id: id, sx: 672, sy: 112 }) + HILL1 + HILL2 + HILL3 + village +
+        '<path class="m-water" d="M462 232L538 232C610 258 700 290 770 320H230C300 290 390 258 462 232Z"/>' +
+        '<path class="m-ripple" d="M395 290q30-6 60 0t60 0 60 0M430 268q24-5 48 0t48 0 48 0M470 250q16-3 32 0t32 0"/>' +
+        g + tree(232, 262, .8, 0) + BIRDS + fog(id) + walker(),
+      dur: 4600, hope: .38, done: "is-done",
+      frame: function (f, el) {
+        var w = el.querySelector(".m-walker"), n = pts.length - 1, t = ease(f) * n, k = Math.min(n - 1, Math.floor(t)), u = t - k;
+        var a = pts[k], b = pts[k + 1], hop = Math.sin(Math.PI * u) * 16;
+        w.setAttribute("transform", "translate(" + r1(a.x + (b.x - a.x) * u) + "," + r1(a.y + (b.y - a.y) * u - hop) + ")");
+        Array.prototype.forEach.call(el.querySelectorAll(".m-stone"), function (s, i) { s.classList.toggle("is-lit", t >= i + 1 - .02); });
+      }
+    };
+  }
+  SCENES.passes = function (id) { return stones(id, false); };
+  SCENES["passes-comunitat"] = function (id) { return stones(id, true); };
+
+  // Acompanyament individual: dues persones que caminen plegades, i la boira s'aixeca
+  SCENES.costat = function (id) {
+    var d = "M262 340C330 304 300 276 400 264S540 246 560 234S604 218 628 213";
+    return {
+      svg: sky({ id: id, sx: 676, sy: 118 }) + HILL1 + HILL2 + HILL3 +
+        '<path d="' + d + '" fill="none" stroke="#f3eee3" stroke-width="18" stroke-linecap="round" stroke-opacity=".9"/>' +
+        '<path class="m-road" d="' + d + '" fill="none" stroke="#01315b" stroke-opacity=".3" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 9"/>' +
+        tree(300, 228, .9, 0) + tree(712, 222, .7, .3) + tree(470, 238, .55, .15) + BIRDS + fog(id) +
+        '<g class="m-duo"><circle class="m-halo m-lamp-h" r="10" fill="#e2c668"/><circle class="m-lamp" r="4.5" fill="#e2c668"/>' + person(0, 0, 1, 1, "m-a") + person(0, 0, 1, 0, "m-b") + '</g>',
+      dur: 5200, hope: .28,
+      frame: function (f, el) {
+        var road = el.querySelector(".m-road"), p = along(road, .08 + ease(f) * .72), s = 1.4 - .62 * ease(f);
+        var a = el.querySelector(".m-a"), b = el.querySelector(".m-b");
+        a.setAttribute("transform", "translate(" + r1(p.x - 12 * s) + " " + r1(p.y) + ") scale(" + r1(s * 100) / 100 + ")");
+        b.setAttribute("transform", "translate(" + r1(p.x + 12 * s) + " " + r1(p.y) + ") scale(" + r1(s * 100) / 100 * 1.06 + ")");
+        Array.prototype.forEach.call(el.querySelectorAll(".m-lamp, .m-lamp-h"), function (l) { l.setAttribute("transform", "translate(" + r1(p.x) + " " + r1(p.y - 17 * s) + ") scale(" + r1(s * 100) / 100 + ")"); });
+      }
+    };
+  };
+
+  // L'Espiral: falgueres que es desenrotllen cap al sol
+  SCENES.falguera = function (id) {
+    var FR = [
+      { x: 500, y: 296, L: 200, a0: -Math.PI / 2 + .12, dir: 1, w: 1, d: 0 },
+      { x: 430, y: 300, L: 128, a0: -Math.PI / 2 - .42, dir: -1, w: .8, d: .12 },
+      { x: 572, y: 302, L: 138, a0: -Math.PI / 2 + .5, dir: 1, w: .8, d: .2 }
+    ];
+    var N = 44;
+    function frond(o, t) {
+      // t: 0 = enrotllada, 1 = oberta. c: com d'enrotllada està la punta
+      var tt = clamp((t - o.d) / (1 - o.d), 0, 1), c = 1.75 * Math.pow(1 - tt, 1.6) + .09, seg = o.L / N;
+      var x = o.x, y = o.y, a = o.a0, pts = [[x, y]], dirs = [a];
+      for (var j = 1; j <= N; j++) {
+        a += o.dir * c * Math.pow(j / N, 3) * .9;
+        x += Math.cos(a) * seg; y += Math.sin(a) * seg;
+        pts.push([x, y]); dirs.push(a);
+      }
+      var d = "M" + pts.map(function (p) { return r1(p[0]) + " " + r1(p[1]); }).join("L");
+      var leaves = "";
+      for (var k = 6; k < N - 2; k += 2) {
+        var u = clamp((tt - k / N * .45) / .5, 0, 1);
+        if (u <= 0) continue;
+        var len = 26 * o.w * Math.sin(Math.PI * (k / N) * .95) * u, p = pts[k], dd = dirs[k];
+        [1, -1].forEach(function (sd) {
+          var ang = dd + sd * (Math.PI / 2 - .5);
+          var ex = p[0] + Math.cos(ang) * len, ey = p[1] + Math.sin(ang) * len;
+          var mx = p[0] + Math.cos(ang - sd * .3) * len * .55, my = p[1] + Math.sin(ang - sd * .3) * len * .55;
+          var nx = p[0] + Math.cos(ang + sd * .3) * len * .55, ny = p[1] + Math.sin(ang + sd * .3) * len * .55;
+          leaves += "M" + r1(p[0]) + " " + r1(p[1]) + "Q" + r1(mx) + " " + r1(my) + " " + r1(ex) + " " + r1(ey) + "Q" + r1(nx) + " " + r1(ny) + " " + r1(p[0]) + " " + r1(p[1]) + "Z";
+        });
+      }
+      return { d: d, leaves: leaves };
+    }
+    var g = FR.map(function () { return '<path class="m-pinna"/><path class="m-frond"/>'; }).join("");
+    return {
+      svg: sky({ id: id, sx: 500, sy: 86, sr: 30 }) + HILL1 + HILL2 + HILL3 + '<g class="m-fronds">' + g + '</g>' + BIRDS + fog(id),
+      dur: 5200, hope: .25,
+      frame: function (f, el) {
+        var pin = el.querySelectorAll(".m-pinna"), fr = el.querySelectorAll(".m-frond");
+        FR.forEach(function (o, i) { var r = frond(o, ease(f)); fr[i].setAttribute("d", r.d); pin[i].setAttribute("d", r.leaves); fr[i].style.strokeWidth = (3.4 * o.w) + "px"; });
+      }
+    };
+  };
+
+  // El Treball que Reconnecta: arbres que, sota terra, es troben per les arrels
+  SCENES.arrels = function (id) {
+    var T = [330, 500, 670], roots = "", nets = "";
+    T.forEach(function (x, i) {
+      var b = 186;
+      roots += '<path class="m-root" pathLength="1" d="M' + x + ' ' + b + 'C' + (x - 6) + ' 214 ' + (x - 30) + ' 232 ' + (x - 62) + ' 250"/>' +
+        '<path class="m-root" pathLength="1" d="M' + x + ' ' + b + 'C' + (x + 6) + ' 214 ' + (x + 30) + ' 232 ' + (x + 62) + ' 250"/>' +
+        '<path class="m-root" pathLength="1" d="M' + x + ' ' + b + 'C' + (x + 2) + ' 226 ' + (x - 6) + ' 258 ' + x + ' 290"/>' +
+        '<path class="m-root" pathLength="1" style="stroke-width:2" d="M' + (x - 20) + ' 222C' + (x - 34) + ' 230 ' + (x - 42) + ' 246 ' + (x - 40) + ' 270"/>' +
+        '<path class="m-root" pathLength="1" style="stroke-width:2" d="M' + (x + 20) + ' 222C' + (x + 34) + ' 230 ' + (x + 42) + ' 246 ' + (x + 40) + ' 270"/>';
+    });
+    // La xarxa entre arrels veïnes (i una de llarga per sota)
+    nets = '<path class="m-net" pathLength="1" d="M392 250C410 262 420 262 438 250"/>' +
+      '<path class="m-net" pathLength="1" d="M562 250C580 262 590 262 608 250"/>' +
+      '<path class="m-net" pathLength="1" d="M330 290C400 306 430 270 500 290S600 306 670 290"/>' +
+      '<path class="m-net" pathLength="1" d="M290 270C330 282 350 300 380 296M710 270C670 282 650 300 620 296"/>';
+    var pulses = "";
+    for (var i = 0; i < 4; i++) pulses += '<circle class="m-pulse" r="4"/>';
+    return {
+      svg: sky({ id: id, sx: 820, sy: 92, sr: 30 }) +
+        '<path class="m-soil" d="M0 184C200 180 400 188 500 186S800 180 1000 184V320H0Z"/>' +
+        '<path class="m-grass" d="M0 184C200 180 400 188 500 186S800 180 1000 184"/>' +
+        roots + nets + pulses +
+        tree(330, 186, 1.25, 0) + tree(500, 188, 1.45, .2) + tree(670, 186, 1.2, .4) + BIRDS +
+        '<g class="m-fog" filter="url(#m-blur' + id + ')" fill="#fff"><ellipse cx="300" cy="150" rx="170" ry="30"/><ellipse cx="700" cy="140" rx="170" ry="30"/></g>',
+      dur: 5200, hope: .3, loop: true,
+      frame: function (f, el, now) {
+        // Punts de llum que corren per la xarxa (quan ja s'ha dibuixat)
+        var nets = el.querySelectorAll(".m-net"), ps = el.querySelectorAll(".m-pulse");
+        var show = f >= .62;
+        Array.prototype.forEach.call(ps, function (p, i) {
+          if (!show) { p.style.opacity = 0; return; }
+          var path = nets[i % nets.length], ph = ((now / 2400) + i * .27) % 1, L = path.getTotalLength(), q = path.getPointAtLength(L * ph);
+          p.setAttribute("cx", r1(q.x)); p.setAttribute("cy", r1(q.y)); p.style.opacity = Math.sin(Math.PI * ph) * .95;
+        });
+      }
+    };
+  };
+
+  // Un pont d'esperança: els taulons es posen un a un i es travessa
+  SCENES.pont = function (id) {
+    var planks = "", n = 10, x0 = 404, x1 = 596;
+    function deckY(x) { var u = (x - x0) / (x1 - x0); return 234 - 16 * Math.sin(Math.PI * u); }
+    for (var i = 0; i < n; i++) {
+      var x = x0 + (i + .5) * (x1 - x0) / n, y = deckY(x);
+      planks += '<rect class="m-plank" style="--d:' + (.25 + i * .2) + 's" x="' + r1(x - 9.2) + '" y="' + r1(y - 4) + '" width="18.4" height="10" rx="2"/>';
+    }
+    var rope = "M" + (x0 - 3) + " 200";
+    for (var k = 1; k <= 12; k++) { var xx = x0 + k * (x1 - x0) / 12; rope += "L" + r1(xx) + " " + r1(deckY(xx) - 30 + 6 * Math.sin(Math.PI * k / 12)); }
+    var walk = "M300 204C350 206 384 220 " + x0 + " 232";
+    for (var m = 1; m <= 12; m++) { var wx = x0 + m * (x1 - x0) / 12; walk += "L" + r1(wx) + " " + r1(deckY(wx) - 6); }
+    walk += "C620 226 650 210 704 202";
+    return {
+      svg: sky({ id: id, sx: 712, sy: 104 }) + HILL1 +
+        '<path class="m-water" d="M300 320C360 290 420 272 500 270S640 290 700 320Z"/>' +
+        '<path class="m-ripple" d="M420 296q30-6 60 0t60 0 60 0M450 282q20-4 40 0t40 0"/>' +
+        '<path class="m-bank" d="M0 196C140 186 300 196 404 236C420 270 400 300 380 320H0Z"/>' +
+        '<path class="m-bank m-bank--r" d="M1000 192C860 184 700 196 596 236C580 270 600 300 620 320H1000Z"/>' +
+        '<path class="m-post" d="M404 240Q500 196 596 240" fill="none" stroke="#8a7356" stroke-width="5" stroke-linecap="round" style="fill:none"/>' +'<rect class="m-post" x="397" y="196" width="8" height="46" rx="3"/><rect class="m-post" x="595" y="196" width="8" height="46" rx="3"/>' +
+        planks + '<path class="m-rope" d="' + rope + '"/>' +
+        tree(250, 200, .9, 0) + tree(780, 196, .85, .3) + tree(840, 202, .6, .5) +
+        '<path class="m-walk" d="' + walk + '" fill="none" stroke="none"/>' +
+        cloud(300, 96, 1, "m-cloud--away") + BIRDS + walker(),
+      dur: 5600, hope: .55, start: 2400,
+      frame: function (f, el) {
+        var p = along(el.querySelector(".m-walk"), ease(f));
+        el.querySelector(".m-walker").setAttribute("transform", "translate(" + r1(p.x) + "," + r1(p.y) + ")");
+      }
+    };
+  };
+
+  // Grup regular: una nit amb la lluna que canvia de fase sobre una rotllana al voltant del foc
+  SCENES.llunes = function (id) {
+    var moons = "", stars = "", masks = "", n = 7, R = 15;
+    var D = [.6, 1, 1.45, 9, 1.45, 1, .6], S = [-1, -1, -1, 0, 1, 1, 1];
+    for (var i = 0; i < n; i++) {
+      var u = i / (n - 1), x = 250 + 500 * u, y = 156 - 92 * Math.sin(Math.PI * u);
+      masks += '<mask id="m-mk' + id + '-' + i + '"><circle cx="' + r1(x) + '" cy="' + r1(y) + '" r="' + R + '" fill="#fff"/>' +
+        (S[i] ? '<circle cx="' + r1(x + S[i] * D[i] * R) + '" cy="' + r1(y) + '" r="' + (R + .5) + '" fill="#000"/>' : '') + '</mask>';
+      moons += '<g class="m-moon" style="--d:' + (.5 + i * .5) + 's"><circle cx="' + r1(x) + '" cy="' + r1(y) + '" r="' + R + '" fill="#fff" fill-opacity=".12"/>' +
+        '<circle cx="' + r1(x) + '" cy="' + r1(y) + '" r="' + R + '" fill="#f1d77f" mask="url(#m-mk' + id + '-' + i + ')"/></g>';
+    }
+    var SP = [[120, 60], [190, 120], [330, 40], [420, 110], [580, 34], [660, 104], [800, 52], [880, 128], [960, 70], [60, 140], [470, 60]];
+    SP.forEach(function (p, i) { stars += '<circle class="m-star" style="--d:' + (i * .23) + 's" cx="' + p[0] + '" cy="' + p[1] + '" r="' + (1.4 + (i % 3) * .5) + '"/>'; });
+    // Rotllana: sis persones al voltant del foc (les de darrere, més petites)
+    var ring = "", bonds = "", cx = 500, cy = 270, P = [];
+    [200, 250, 290, 340, 20, 160].forEach(function (deg) { var a = deg * Math.PI / 180; P.push({ x: cx + 92 * Math.cos(a), y: cy + 20 * Math.sin(a), s: .62 + .16 * (Math.sin(a) + 1) / 2 }); });
+    P.sort(function (a, b) { return a.y - b.y; });
+    var back = P.filter(function (p) { return p.y < cy; }), front = P.filter(function (p) { return p.y >= cy; });
+    var people = function (arr) { return arr.map(function (p) { return '<g class="m-silh" transform="translate(' + r1(p.x) + ' ' + r1(p.y) + ') scale(' + r1(p.s * 100) / 100 + ')"><circle cx="0" cy="-33" r="8.5"/><path d="M-12 0v-8a12 12 0 0 1 24 0v8z"/></g>'; }).join(""); };
+    for (var b = 0; b < 3; b++) bonds += '<ellipse class="m-bond" style="--d:' + (1.2 + b * 1.1) + 's;--o:' + (.35 + b * .3) + '" cx="' + cx + '" cy="' + (cy - 10) + '" rx="' + (98 + b * 4) + '" ry="' + (24 + b * 2) + '"/>';
+    return {
+      svg: '<defs><linearGradient id="m-n' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#01315b"/><stop offset=".7" stop-color="#2a5a85"/><stop offset="1" stop-color="#6f7f78"/></linearGradient>' +
+        '<linearGradient id="m-d' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7dbdf"/><stop offset="1" stop-color="#e6e8ea"/></linearGradient>' +
+        '<radialGradient id="m-fg' + id + '"><stop offset="0" stop-color="#e2c668" stop-opacity=".75"/><stop offset=".55" stop-color="#e2c668" stop-opacity=".22"/><stop offset="1" stop-color="#e2c668" stop-opacity="0"/></radialGradient>' + masks + '</defs>' +
+        '<rect width="1000" height="320" fill="url(#m-d' + id + ')"/><rect class="m-night" width="1000" height="320" fill="url(#m-n' + id + ')"/>' + stars + moons +
+        '<path class="m-dark1" d="M0 224C150 200 300 210 450 202S760 184 1000 208V320H0Z"/>' +
+        '<path class="m-dark2" d="M0 262C200 246 360 258 520 252S820 238 1000 256V320H0Z"/>' +
+        '<ellipse class="m-fireglow" cx="' + cx + '" cy="' + (cy - 20) + '" rx="190" ry="90" fill="url(#m-fg' + id + ')"/>' +
+        bonds + people(back) +
+        '<g transform="translate(' + cx + ' ' + (cy + 2) + ')"><path class="m-log" d="M-16 2l32-7v5l-32 7z"/><path class="m-log" d="M16 2l-32-7v5l32 7z"/>' +
+        '<g class="m-fire" style="transform:none"><path class="m-flame m-flame--a" style="animation-duration:1.6s" d="M0 0c-11 0-15-8-12-16 2-6 7-8 7-15 6 4 8 10 7 15 3-1 5-4 5-7 5 5 8 10 7 15-1 5-6 8-14 8z"/>' +
+        '<path class="m-flame m-flame--c" style="animation-duration:1.2s" d="M0 0c-5 0-7-4-6-8 1-3 3-4 3-8 3 2 4 5 4 8 1-1 2-2 2-3 2 2 4 5 3 7-1 3-3 4-6 4z"/></g></g>' +
+        people(front),
+      dur: 4200, hope: .12
+    };
+  };
+
+  // Cercles de paraula per a conflictes: el bastó de la paraula passa i la tensió es torna onada
+  SCENES.paraula = function (id) {
+    var cx = 500, cy = 258, rx = 172, ry = 40, ang = [90, 30, -20, -70, -110, -160, 210, 150], P = [];
+    ang.forEach(function (deg, i) { var a = deg * Math.PI / 180; P.push({ x: cx + rx * Math.cos(a), y: cy + ry * Math.sin(a), s: .66 + .3 * (Math.sin(a) + 1) / 2, k: [1, 2, 3, 4, 5, 1, 3, 2][i], deg: deg }); });
+    var order = P.slice().sort(function (a, b) { return a.y - b.y; });
+    var people = order.map(function (p) { return person(p.x, p.y, r1(p.s * 100) / 100, p.k); }).join("");
+    // Les dues persones en tensió: la de l'esquerra (180°) i la de la dreta (−20°)
+    var L = P[6], R = P[2], hy = 212;
+    var zig = "M" + r1(L.x + 18) + " " + hy;
+    for (var z = 1; z <= 12; z++) zig += "L" + r1(L.x + 18 + z * (R.x - L.x - 36) / 12) + " " + (hy + (z % 2 ? -11 : 11) * (z === 12 ? 0 : 1));
+    var wave = "M" + r1(L.x + 18) + " " + hy + "C" + r1(L.x + 80) + " " + (hy - 20) + " " + r1(cx - 60) + " " + (hy - 20) + " " + cx + " " + hy + "S" + r1(R.x - 80) + " " + (hy + 20) + " " + r1(R.x - 18) + " " + hy;
+    return {
+      svg: sky({ id: id, sx: 800, sy: 92, sr: 28 }) + HILL1 + HILL2 + HILL3 +
+        '<ellipse class="m-floor" cx="' + cx + '" cy="' + (cy + 4) + '" rx="' + (rx + 26) + '" ry="' + (ry + 12) + '"/>' +
+        '<ellipse class="m-ring" cx="' + cx + '" cy="' + (cy + 4) + '" rx="' + (rx + 16) + '" ry="' + (ry + 8) + '"/>' +
+        '<path class="m-zig" d="' + zig + '"/><path class="m-wave" pathLength="1" d="' + wave + '"/>' +
+        people + '<path class="m-voice" d=""/>' + BIRDS + fog(id, true) +
+        '<g class="m-walker"><circle class="m-halo" r="12" fill="#e2c668"/><circle r="6.5" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>',
+      dur: 6000, hope: .55, done: "is-done",
+      frame: function (f, el) {
+        // El bastó surt del centre i fa la volta, d'una persona a l'altra (amb una pausa a cadascuna)
+        var w = el.querySelector(".m-walker"), v = el.querySelector(".m-voice");
+        var x, y, s;
+        if (f < .1) { v.style.opacity = 0; var u0 = ease(f / .1); x = cx + (P[0].x - cx) * u0 * .78; y = cy + (P[0].y - cy) * u0 * .78; s = 1; }
+        else {
+          var g = (f - .1) / .9 * P.length, k = Math.min(P.length - 1, Math.floor(g)), u = g - k, m = clamp((u - .55) / .45, 0, 1);
+          var a0 = ang[k] * Math.PI / 180, a1 = (k + 1 < P.length ? ang[k + 1] : ang[0] - 360) * Math.PI / 180;
+          if (a1 > a0) a1 -= 2 * Math.PI;
+          var aa = a0 + (a1 - a0) * ease(m);
+          x = cx + rx * .78 * Math.cos(aa); y = cy + ry * .78 * Math.sin(aa); s = 1;
+          // Qui té el bastó parla: unes ones petites de veu
+          var p = P[k], o = m < .05 ? Math.sin(Math.PI * clamp(u / .55, 0, 1)) : 0;
+          v.setAttribute("d", "M" + r1(p.x + 14 * p.s) + " " + r1(p.y - 46 * p.s) + "q5 6 0 12M" + r1(p.x + 21 * p.s) + " " + r1(p.y - 50 * p.s) + "q8 10 0 20");
+          v.style.opacity = o;
+        }
+        w.setAttribute("transform", "translate(" + r1(x) + "," + r1(y - 8) + ") scale(" + s + ")");
+      }
+    };
+  };
+
+  // Cercles per sostenir: l'equip es tanca en cercle i el projecte (la casa) es redreça
+  SCENES.sostenir = function (id) {
+    var cx = 500, cy = 262, P = [], g = "";
+    [90, 40, -10, -60, -120, -170, 140].forEach(function (deg, i) {
+      var a = deg * Math.PI / 180, far = { x: cx + 250 * Math.cos(a), y: cy + 46 * Math.sin(a) }, near = { x: cx + 150 * Math.cos(a), y: cy + 32 * Math.sin(a) };
+      P.push({ far: far, dx: r1(near.x - far.x), dy: r1(near.y - far.y), s: .62 + .3 * (Math.sin(a) + 1) / 2, k: [1, 2, 3, 4, 5, 2, 1][i] });
+    });
+    P.sort(function (a, b) { return a.far.y - b.far.y; });
+    var back = P.filter(function (p) { return p.far.y < cy; }), front = P.filter(function (p) { return p.far.y >= cy; });
+    function grp(arr) { return arr.map(function (p) { return '<g class="m-mover" style="--dx:' + p.dx + 'px;--dy:' + p.dy + 'px">' + person(p.far.x, p.far.y, r1(p.s * 100) / 100, p.k) + '</g>'; }).join(""); }
+    return {
+      svg: sky({ id: id, sx: 760, sy: 96, sr: 30 }) + HILL1 + HILL2 + HILL3 +
+        '<ellipse class="m-ring m-ring--late" cx="' + cx + '" cy="' + (cy - 12) + '" rx="158" ry="36"/>' +
+        grp(back) + house(cx, 250, 70, 54, .9, true) +
+        '<path class="m-sprout" d="M556 252c0-10 2-18 8-24-8 1-12 6-13 12-2-8-8-12-15-12 6 5 8 12 8 24z"/>' +
+        grp(front) + cloud(500, 92, 1.1, "m-cloud--up") + BIRDS + fog(id, true),
+      dur: 3600, hope: .15
+    };
+  };
+
+  // Burnout: el foc que crema es torna foc que escalfa, amb pedres que el contenen
+  SCENES.foc = function (id) {
+    var fx = 470, fy = 266, rocks = "", sparks = "";
+    for (var i = 0; i < 9; i++) {
+      var a = Math.PI * (i / 8) * 1 + Math.PI * 0, rx = fx + 46 * Math.cos(Math.PI + a), ry = fy + 4 + 11 * Math.sin(a);
+      rocks += '<ellipse class="m-rock" style="--d:' + (.9 + i * .12) + 's" cx="' + r1(rx) + '" cy="' + r1(ry) + '" rx="10" ry="6.5"/>';
+    }
+    [-14, 10, -4, 18, -20].forEach(function (sx, i) { sparks += '<circle class="m-spark" style="--sx:' + sx + 'px;animation-delay:' + (-i * .22) + 's" cx="' + (fx + sx / 3) + '" cy="' + (fy - 40) + '" r="2.4"/>'; });
+    var sm = "";
+    for (var k = 0; k < 3; k++) sm += '<ellipse class="m-smoke" style="animation-delay:' + (-k * .85) + 's" cx="' + (fx - 4) + '" cy="' + (fy - 70) + '" rx="18" ry="12"/>';
+    return {
+      svg: sky({ id: id, sx: 760, sy: 150, sr: 30 }) + HILL1 + HILL2 + HILL3 +
+        '<defs><radialGradient id="m-wg' + id + '"><stop offset="0" stop-color="#e2c668" stop-opacity=".6"/><stop offset="1" stop-color="#e2c668" stop-opacity="0"/></radialGradient></defs>' +
+        '<ellipse class="m-warmglow" cx="' + fx + '" cy="' + (fy - 22) + '" rx="150" ry="70" fill="url(#m-wg' + id + ')"/>' +
+        '<g class="m-smokes">' + sm + '</g><g class="m-sparks">' + sparks + '</g>' +
+        '<g transform="translate(' + fx + ' ' + fy + ')"><path class="m-log" d="M-30 6l58-14v9l-58 14z"/><path class="m-log" d="M30 6l-58-14v9l58 14z"/>' +
+        '<g class="m-fire"><path class="m-flame m-flame--a" d="M0 0c-18 0-25-13-20-26 3-10 11-13 11-24 10 7 13 16 11 24 5-2 8-6 8-11 8 8 13 16 11 24-2 9-10 13-21 13z"/>' +
+        '<path class="m-flame m-flame--b" style="animation-delay:-.12s" d="M0 0c-11 0-15-8-12-16 2-6 6-8 6-14 6 4 8 10 7 15 3-1 4-3 4-6 5 5 8 10 7 14-1 5-6 7-12 7z"/>' +
+        '<path class="m-flame m-flame--c" style="animation-delay:-.2s" d="M0 0c-5 0-7-4-6-8 1-3 3-4 3-7 3 2 4 4 4 7 1-1 2-2 2-3 2 2 3 4 3 6-1 3-3 5-6 5z"/></g></g>' +
+        rocks +
+        '<g class="m-slump">' + person(574, 276, .95, 2) + '</g>' + tree(300, 236, .8, 0) + tree(680, 232, .7, .3) + fog(id, true),
+      dur: 3400, hope: .3
+    };
+  };
+
+  function build(el) {
+    var key = el.getAttribute("data-metafora"), mk = SCENES[key] || SCENES.passes, id = "-" + (uid++);
+    var sc = mk(id);
+    el.classList.add("mt--" + (SCENES[key] ? key : "passes"));
+    el.setAttribute("role", "img");
+    el.setAttribute("tabindex", "0");
+    el.innerHTML = '<svg viewBox="0 0 1000 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">' + sc.svg + '</svg>';
+    var st = { raf: 0, t0: 0, timers: [], loop: 0 };
+    function clear() { cancelAnimationFrame(st.raf); cancelAnimationFrame(st.loop); st.timers.forEach(clearTimeout); st.timers = []; }
+    function finish() { el.classList.add("is-on", "is-hope"); if (sc.done) el.classList.add(sc.done); if (sc.frame) sc.frame(1, el, performance.now()); }
+    function loop(ts) { sc.frame(1, el, ts); st.loop = requestAnimationFrame(loop); }
+    function play() {
+      clear();
+      el.classList.remove("is-on", "is-hope", "is-done");
+      if (sc.frame) sc.frame(0, el, 0);
+      if (reduce) { finish(); return; }
+      void el.offsetWidth;
+      el.classList.add("is-on");
+      var delay = sc.start || 0;
+      st.timers.push(setTimeout(function () { el.classList.add("is-hope"); }, delay + sc.dur * sc.hope));
+      st.timers.push(setTimeout(function () { if (sc.done) el.classList.add(sc.done); }, delay + sc.dur));
+      if (!sc.frame) return;
+      st.t0 = 0;
+      st.timers.push(setTimeout(function () {
+        function tick(ts) {
+          if (!st.t0) st.t0 = ts;
+          var f = Math.min(1, (ts - st.t0) / sc.dur);
+          sc.frame(f, el, ts);
+          if (f < 1) st.raf = requestAnimationFrame(tick);
+          else { st.raf = 0; if (sc.loop) st.loop = requestAnimationFrame(loop); }
+        }
+        st.raf = requestAnimationFrame(tick);
+      }, delay));
+    }
+    el.addEventListener("click", play);
+    el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); } });
+    if (sc.frame) sc.frame(0, el, 0);
+    if (reduce) { finish(); return; }
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); setTimeout(play, 300); } }, { threshold: .45 });
+      io.observe(el);
+    } else play();
+    // Les animacions contínues (la xarxa de les arrels) s'aturen quan l'escena no es veu
+    if (sc.loop && "IntersectionObserver" in window) {
+      new IntersectionObserver(function (en) {
+        if (!en[0].isIntersecting) cancelAnimationFrame(st.loop);
+        else if (el.classList.contains("is-hope") && !st.raf) st.loop = requestAnimationFrame(loop);
+      }).observe(el);
+    }
+  }
+
+  function init() {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-metafora]"), function (el) {
+      if (el.getAttribute("data-ready")) return;
+      el.setAttribute("data-ready", "1");
+      build(el);
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+</script>  </div>
 </section>
-<section class="band band--white" id="presentacio">
+<section class="band band--white band--text" id="presentacio">
   <div class="wrap wrap--narrow">
 
       <div class="prose">
-<p>Aquest cicle ofereix un lloc segur per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides).</p>      </div>
+<p class="prose__lead">Aquest cicle ofereix <strong>un lloc segur</strong> per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides).</p>      </div>
 
 <p class="block__actions block__actions--center"><a class="btn btn--primary" href="#inscripcio">Inscripció <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a><a class="btn btn--outline" href="../contacte/">Contacta amb nosaltres <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>  </div>
-</section><section class="band" id="dades" aria-labelledby="h-dades">
+</section><section class="band band--note" id="dades" aria-labelledby="h-dades">
   <div class="wrap wrap--narrow">
 
-      <aside class="note note--info" aria-labelledby="h-dades">
-<h2 id="h-dades" class="note__title"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"/></svg>4 sessions de 2 hores</h2><p class="note__p">Màx. 16 participants.</p><p class="note__p">61 € preu reduït / 90 € preu estàndard / 119 € preu sostenidor.</p></aside>
+      <aside class="facts-box" aria-labelledby="h-dades">
+<h2 id="h-dades" class="facts-box__title"><span class="facts-box__i"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg></span><span>4 sessions de 2 hores</span></h2><ul class="facts-box__rows"><li><span class="facts-box__i"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"/></svg></span><span>Màx. 16 participants.</span></li><li><span class="facts-box__i"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M184,89.57V84c0-25.08-37.83-44-88-44S8,58.92,8,84v40c0,20.89,26.25,37.49,64,42.46V172c0,25.08,37.83,44,88,44s88-18.92,88-44V132C248,111.3,222.58,94.68,184,89.57ZM232,132c0,13.22-30.79,28-72,28-3.73,0-7.43-.13-11.08-.37C170.49,151.77,184,139,184,124V105.74C213.87,110.19,232,122.27,232,132ZM72,150.25V126.46A183.74,183.74,0,0,0,96,128a183.74,183.74,0,0,0,24-1.54v23.79A163,163,0,0,1,96,152,163,163,0,0,1,72,150.25Zm96-40.32V124c0,8.39-12.41,17.4-32,22.87V123.5C148.91,120.37,159.84,115.71,168,109.93ZM96,56c41.21,0,72,14.78,72,28s-30.79,28-72,28S24,97.22,24,84,54.79,56,96,56ZM24,124V109.93c8.16,5.78,19.09,10.44,32,13.57v23.37C36.41,141.4,24,132.39,24,124Zm64,48v-4.17c2.63.1,5.29.17,8,.17,3.88,0,7.67-.13,11.39-.35A121.92,121.92,0,0,0,120,171.41v23.46C100.41,189.4,88,180.39,88,172Zm48,26.25V174.4a179.48,179.48,0,0,0,24,1.6,183.74,183.74,0,0,0,24-1.54v23.79a165.45,165.45,0,0,1-48,0Zm64-3.38V171.5c12.91-3.13,23.84-7.79,32-13.57V172C232,180.39,219.59,189.4,200,194.87Z"/></svg></span><span><strong>61 €</strong> preu reduït / <strong>90 €</strong> preu estàndard / <strong>119 €</strong> preu sostenidor.</span></li></ul></aside>
+
 
   </div>
-</section><section class="band" id="que-temportaras-del-cicle" aria-labelledby="h-que-temportaras-del-cicle">
+</section><section class="band band--text" id="que-temportaras-del-cicle" aria-labelledby="h-que-temportaras-del-cicle">
   <div class="wrap wrap--narrow">
 <h2 class="band__title" id="h-que-temportaras-del-cicle">Què t’emportaràs del cicle</h2>  </div>
   <div class="wrap"><div class="infografia infografia--top"><div class="volta" data-volta data-variant="cicle">
@@ -560,57 +1147,60 @@
   <div class="wrap wrap--narrow">
 
       <div class="prose">
-<p>Recorrerem de manera vivencial l’espiral del Treball que Reconnecta de Joanna Macy: Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.</p><p>En 4 sessions, anirem fent un camí compartit que combina autocura, resiliència i suport comunitari.</p><p>Treballarem recursos per sostenir emocions difícils i recuperar claredat quan hi ha incertesa. L’objectiu és que puguis sortir amb més força interior, una mirada més ampla i passos concrets per sostenir en el temps allò que hagis descobert i viscut.</p>      </div>
+<p class="prose__lead">Recorrerem de manera vivencial l’espiral del Treball que Reconnecta de Joanna Macy: Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.</p>        <div class="prose__box"><p>En 4 sessions, anirem fent <strong>un camí compartit</strong> que combina autocura, resiliència i suport comunitari.</p><p>Treballarem recursos per sostenir emocions difícils i recuperar claredat quan hi ha incertesa. L’objectiu és que puguis sortir amb més força interior, una mirada més ampla i <strong>passos concrets</strong> per sostenir en el temps allò que hagis descobert i viscut.</p></div>
+      </div>
 
   </div>
-</section><section class="band band--soft" id="explorarem" aria-labelledby="h-explorarem">
-  <div class="wrap wrap--narrow">
+</section><section class="band band--soft band--text" id="explorarem" aria-labelledby="h-explorarem">
+  <div class="wrap wrap--mid">
 <h2 class="band__title" id="h-explorarem">Explorarem…</h2>
       <div class="prose">
-<ul class="ticks"><li><strong>L’Espiral del TqR:</strong> Gratitud → Honrar el dolor → Veure amb nous ulls → Passar a l’acció.</li><li><strong>La gratitud com a arrel:</strong> allò que ens sosté (persones, recursos interns, natura).</li><li><strong>El sentit del dolor pel món:</strong> emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida.</li><li><strong>Del “jo separat” al “jo comunitari”:</strong> mirada sistèmica i pertinença al teixit de la vida.</li><li><strong>Com tancar amb petits passos:</strong> propòsit vital, continuïtat i xarxes de suport.</li></ul>      </div>
+<ul class="tiles tiles--2">
+<li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,72.84l-64,32a8.05,8.05,0,0,0-3.58,3.58l-32,64A8,8,0,0,0,80,184a8.1,8.1,0,0,0,3.58-.84l64-32a8.05,8.05,0,0,0,3.58-3.58l32-64a8,8,0,0,0-10.74-10.74ZM138,138,97.89,158.11,118,118l40.15-20.07Z"/></svg></span><span class="tile__t"><strong>L’Espiral del TqR:</strong> Gratitud → Honrar el dolor → Veure amb nous ulls → Passar a l’acció.</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,72.84l-64,32a8.05,8.05,0,0,0-3.58,3.58l-32,64A8,8,0,0,0,80,184a8.1,8.1,0,0,0,3.58-.84l64-32a8.05,8.05,0,0,0,3.58-3.58l32-64a8,8,0,0,0-10.74-10.74ZM138,138,97.89,158.11,118,118l40.15-20.07Z"/></svg></span><span class="tile__t"><strong>La gratitud com a arrel:</strong> allò que ens sosté (persones, recursos interns, natura).</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,72.84l-64,32a8.05,8.05,0,0,0-3.58,3.58l-32,64A8,8,0,0,0,80,184a8.1,8.1,0,0,0,3.58-.84l64-32a8.05,8.05,0,0,0,3.58-3.58l32-64a8,8,0,0,0-10.74-10.74ZM138,138,97.89,158.11,118,118l40.15-20.07Z"/></svg></span><span class="tile__t"><strong>El sentit del dolor pel món:</strong> emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida.</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,72.84l-64,32a8.05,8.05,0,0,0-3.58,3.58l-32,64A8,8,0,0,0,80,184a8.1,8.1,0,0,0,3.58-.84l64-32a8.05,8.05,0,0,0,3.58-3.58l32-64a8,8,0,0,0-10.74-10.74ZM138,138,97.89,158.11,118,118l40.15-20.07Z"/></svg></span><span class="tile__t"><strong>Del “jo separat” al “jo comunitari”:</strong> mirada sistèmica i pertinença al teixit de la vida.</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,72.84l-64,32a8.05,8.05,0,0,0-3.58,3.58l-32,64A8,8,0,0,0,80,184a8.1,8.1,0,0,0,3.58-.84l64-32a8.05,8.05,0,0,0,3.58-3.58l32-64a8,8,0,0,0-10.74-10.74ZM138,138,97.89,158.11,118,118l40.15-20.07Z"/></svg></span><span class="tile__t"><strong>Com tancar amb petits passos:</strong> propòsit vital, continuïtat i xarxes de suport.</span></li></ul>      </div>
 
   </div>
-</section><section class="band" id="practicarem" aria-labelledby="h-practicarem">
-  <div class="wrap wrap--narrow">
+</section><section class="band band--text" id="practicarem" aria-labelledby="h-practicarem">
+  <div class="wrap wrap--mid">
 <h2 class="band__title" id="h-practicarem">Practicarem…</h2>
       <div class="prose">
-<ul class="ticks"><li>Meditacions guiades i moments d’aterratge per connectar amb cos i present.</li><li>Dinàmiques d’introspecció per donar nom al que ens passa i ordenar-ho per dins.</li><li>Diàleg profund i escolta mútua, amb participació al teu ritme (sense obligació de compartir).</li><li>Recursos d’autocura i estabilitat interna per sostenir emocions difícils.</li><li>Pràctiques inspirades en la natura i la saviesa col·lectiva (mirada sistèmica).</li><li>Un tancament d’integració amb passos concrets (continuïtat i compromís compartit).</li></ul>      </div>
+<ul class="tiles tiles--2">
+<li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208.06,184H152a8,8,0,0,0-8,8v12a36,36,0,0,0,72.05,0V192A8,8,0,0,0,208.06,184Zm-8,20a20,20,0,0,1-40,0v-4h40ZM104,160h-56a8,8,0,0,0-8,8v12A36,36,0,0,0,112,180V168A8,8,0,0,0,104,160Zm-8,20a20,20,0,0,1-40,0v-4H96ZM76,16C64.36,16,53.07,26.31,44.2,45c-13.93,29.38-18.56,73,.29,96a8,8,0,0,0,6.2,2.93h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C98.85,26.31,87.57,16,76,16ZM97.15,128H54.78c-11.4-18.1-7.21-52.7,3.89-76.11C65.14,38.22,72.17,32,76,32s10.82,6.22,17.3,19.89C104.36,75.3,108.55,109.9,97.15,128Zm57.61,40h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C202.93,50.31,191.64,40,180,40s-22.89,10.31-31.77,29c-13.93,29.38-18.56,73,.29,96A8.05,8.05,0,0,0,154.76,168Zm8-92.11C169.22,62.22,176.25,56,180,56s10.82,6.22,17.29,19.89c11.1,23.41,15.29,58,3.9,76.11H158.85C147.45,133.9,151.64,99.3,162.74,75.89Z"/></svg></span><span class="tile__t">Meditacions guiades i moments d’aterratge per connectar amb cos i present.</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208.06,184H152a8,8,0,0,0-8,8v12a36,36,0,0,0,72.05,0V192A8,8,0,0,0,208.06,184Zm-8,20a20,20,0,0,1-40,0v-4h40ZM104,160h-56a8,8,0,0,0-8,8v12A36,36,0,0,0,112,180V168A8,8,0,0,0,104,160Zm-8,20a20,20,0,0,1-40,0v-4H96ZM76,16C64.36,16,53.07,26.31,44.2,45c-13.93,29.38-18.56,73,.29,96a8,8,0,0,0,6.2,2.93h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C98.85,26.31,87.57,16,76,16ZM97.15,128H54.78c-11.4-18.1-7.21-52.7,3.89-76.11C65.14,38.22,72.17,32,76,32s10.82,6.22,17.3,19.89C104.36,75.3,108.55,109.9,97.15,128Zm57.61,40h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C202.93,50.31,191.64,40,180,40s-22.89,10.31-31.77,29c-13.93,29.38-18.56,73,.29,96A8.05,8.05,0,0,0,154.76,168Zm8-92.11C169.22,62.22,176.25,56,180,56s10.82,6.22,17.29,19.89c11.1,23.41,15.29,58,3.9,76.11H158.85C147.45,133.9,151.64,99.3,162.74,75.89Z"/></svg></span><span class="tile__t">Dinàmiques d’introspecció per donar nom al que ens passa i ordenar-ho per dins.</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208.06,184H152a8,8,0,0,0-8,8v12a36,36,0,0,0,72.05,0V192A8,8,0,0,0,208.06,184Zm-8,20a20,20,0,0,1-40,0v-4h40ZM104,160h-56a8,8,0,0,0-8,8v12A36,36,0,0,0,112,180V168A8,8,0,0,0,104,160Zm-8,20a20,20,0,0,1-40,0v-4H96ZM76,16C64.36,16,53.07,26.31,44.2,45c-13.93,29.38-18.56,73,.29,96a8,8,0,0,0,6.2,2.93h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C98.85,26.31,87.57,16,76,16ZM97.15,128H54.78c-11.4-18.1-7.21-52.7,3.89-76.11C65.14,38.22,72.17,32,76,32s10.82,6.22,17.3,19.89C104.36,75.3,108.55,109.9,97.15,128Zm57.61,40h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C202.93,50.31,191.64,40,180,40s-22.89,10.31-31.77,29c-13.93,29.38-18.56,73,.29,96A8.05,8.05,0,0,0,154.76,168Zm8-92.11C169.22,62.22,176.25,56,180,56s10.82,6.22,17.29,19.89c11.1,23.41,15.29,58,3.9,76.11H158.85C147.45,133.9,151.64,99.3,162.74,75.89Z"/></svg></span><span class="tile__t">Diàleg profund i escolta mútua, amb participació al teu ritme (sense obligació de compartir).</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208.06,184H152a8,8,0,0,0-8,8v12a36,36,0,0,0,72.05,0V192A8,8,0,0,0,208.06,184Zm-8,20a20,20,0,0,1-40,0v-4h40ZM104,160h-56a8,8,0,0,0-8,8v12A36,36,0,0,0,112,180V168A8,8,0,0,0,104,160Zm-8,20a20,20,0,0,1-40,0v-4H96ZM76,16C64.36,16,53.07,26.31,44.2,45c-13.93,29.38-18.56,73,.29,96a8,8,0,0,0,6.2,2.93h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C98.85,26.31,87.57,16,76,16ZM97.15,128H54.78c-11.4-18.1-7.21-52.7,3.89-76.11C65.14,38.22,72.17,32,76,32s10.82,6.22,17.3,19.89C104.36,75.3,108.55,109.9,97.15,128Zm57.61,40h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C202.93,50.31,191.64,40,180,40s-22.89,10.31-31.77,29c-13.93,29.38-18.56,73,.29,96A8.05,8.05,0,0,0,154.76,168Zm8-92.11C169.22,62.22,176.25,56,180,56s10.82,6.22,17.29,19.89c11.1,23.41,15.29,58,3.9,76.11H158.85C147.45,133.9,151.64,99.3,162.74,75.89Z"/></svg></span><span class="tile__t">Recursos d’autocura i estabilitat interna per sostenir emocions difícils.</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208.06,184H152a8,8,0,0,0-8,8v12a36,36,0,0,0,72.05,0V192A8,8,0,0,0,208.06,184Zm-8,20a20,20,0,0,1-40,0v-4h40ZM104,160h-56a8,8,0,0,0-8,8v12A36,36,0,0,0,112,180V168A8,8,0,0,0,104,160Zm-8,20a20,20,0,0,1-40,0v-4H96ZM76,16C64.36,16,53.07,26.31,44.2,45c-13.93,29.38-18.56,73,.29,96a8,8,0,0,0,6.2,2.93h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C98.85,26.31,87.57,16,76,16ZM97.15,128H54.78c-11.4-18.1-7.21-52.7,3.89-76.11C65.14,38.22,72.17,32,76,32s10.82,6.22,17.3,19.89C104.36,75.3,108.55,109.9,97.15,128Zm57.61,40h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C202.93,50.31,191.64,40,180,40s-22.89,10.31-31.77,29c-13.93,29.38-18.56,73,.29,96A8.05,8.05,0,0,0,154.76,168Zm8-92.11C169.22,62.22,176.25,56,180,56s10.82,6.22,17.29,19.89c11.1,23.41,15.29,58,3.9,76.11H158.85C147.45,133.9,151.64,99.3,162.74,75.89Z"/></svg></span><span class="tile__t">Pràctiques inspirades en la natura i la saviesa col·lectiva (mirada sistèmica).</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208.06,184H152a8,8,0,0,0-8,8v12a36,36,0,0,0,72.05,0V192A8,8,0,0,0,208.06,184Zm-8,20a20,20,0,0,1-40,0v-4h40ZM104,160h-56a8,8,0,0,0-8,8v12A36,36,0,0,0,112,180V168A8,8,0,0,0,104,160Zm-8,20a20,20,0,0,1-40,0v-4H96ZM76,16C64.36,16,53.07,26.31,44.2,45c-13.93,29.38-18.56,73,.29,96a8,8,0,0,0,6.2,2.93h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C98.85,26.31,87.57,16,76,16ZM97.15,128H54.78c-11.4-18.1-7.21-52.7,3.89-76.11C65.14,38.22,72.17,32,76,32s10.82,6.22,17.3,19.89C104.36,75.3,108.55,109.9,97.15,128Zm57.61,40h50.55a8,8,0,0,0,6.2-2.93c18.85-23,14.22-66.65.29-96C202.93,50.31,191.64,40,180,40s-22.89,10.31-31.77,29c-13.93,29.38-18.56,73,.29,96A8.05,8.05,0,0,0,154.76,168Zm8-92.11C169.22,62.22,176.25,56,180,56s10.82,6.22,17.29,19.89c11.1,23.41,15.29,58,3.9,76.11H158.85C147.45,133.9,151.64,99.3,162.74,75.89Z"/></svg></span><span class="tile__t">Un tancament d’integració amb passos concrets (continuïtat i compromís compartit).</span></li></ul>      </div>
 
   </div>
-</section><section class="band" id="preguntes" aria-labelledby="h-preguntes">
+</section><section class="band band--faq" id="preguntes" aria-labelledby="h-preguntes">
   <div class="wrap wrap--narrow">
 <h2 class="band__title" id="h-preguntes">FAQ</h2><div class="band__intro"><p>Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.</p></div>
       <div class="faqs"><details class="faq" id="aquest-cicle-es-per-a-mi-si-estic-passant-un-moment-dificil">
-  <summary><span>Aquest cicle és per a mi si estic passant un moment difícil?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Aquest cicle és per a mi si estic passant un moment difícil?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>Pot ser-ho. El cicle està pensat com un lloc segur per explorar emocions difícils i enfortir resiliència i autocura.</p><p>Tu marques el ritme i esculls què compartir.</p><p>Si estàs en una crisi aguda, és millor valorar-ho abans per assegurar el suport adequat.</p><p>Consulta’ns. En el nostre equip hi ha professionals de la psicoteràpia i et podem ajudar a valorar-ho.</p></div>
 </details><details class="faq" id="cal-experiencia-previa-en-atencio-plena-o-treball-grupal">
-  <summary><span>Cal experiència prèvia en atenció plena o treball grupal?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Cal experiència prèvia en atenció plena o treball grupal?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>No. Utilitzem pràctiques guiades i dinàmiques accessibles.</p></div>
 </details><details class="faq" id="de-que-parlarem-exactament">
-  <summary><span>De què parlarem exactament?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>De què parlarem exactament?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>De crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també de crisis globals (polarització, discursos d’odi, canvi climàtic…).</p></div>
 </details><details class="faq" id="que-passa-despres-del-cicle">
-  <summary><span>Què passa després del cicle?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Què passa després del cicle?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p></div>
 </details><details class="faq" id="es-terapia">
-  <summary><span>És teràpia?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>És teràpia?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>No. És un taller vivencial i comunitari.</p><p>Pot ser transformador, però no substitueix un procés terapèutic individual quan cal.</p></div>
 </details><details class="faq" id="haure-de-parlar-davant-de-tothom">
-  <summary><span>Hauré de parlar davant de tothom?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Hauré de parlar davant de tothom?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>No és obligatori.</p><p>Pots participar amb més o menys paraula segons el moment; l’entorn està pensat perquè sigui segur.</p></div>
 </details><details class="faq" id="que-vol-dir-esperanca-activa">
-  <summary><span>Què vol dir “esperança activa”?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Què vol dir “esperança activa”?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p></div>
 </details><details class="faq" id="i-si-em-preocupa-desbordar-me-emocionalment-durant-el-cicle">
-  <summary><span>I si em preocupa “desbordar-me” emocionalment durant el cicle?</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>I si em preocupa “desbordar-me” emocionalment durant el cicle?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>És una preocupació habitual. El cicle està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar, no compartir o sortir un moment si ho necessites.</p><p>Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p></div>
 </details><details class="faq" id="per-que-tres-preus-reduit-estandard-sostenidor">
-  <summary><span>Per què tres preus? (Reduït / Estàndard / Sostenidor)</span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
+  <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Per què tres preus? (Reduït / Estàndard / Sostenidor)</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body"><p>A Elara Social treballem amb un sistema de contribució conscient perquè l’accés al taller no depengui només de la situació econòmica de cada persona. El preu reduït facilita que hi pugui participar qui ara mateix té menys marge. El preu estàndard cobreix el cost real de l’activitat (temps de preparació, facilitació, materials i espai). I el preu sostenidor ajuda a mantenir el projecte viu i a compensar places reduïdes.</p><p>Quan el preu sostenidor genera excedents, els destinem a projectes i iniciatives alineades amb el nostre propòsit, missió i valors, reforçant el treball comunitari i l’impacte social del projecte.</p></div>
 </details></div>
 
   </div>
-</section><section class="band" id="inscripcio" aria-labelledby="h-inscripcio">
+</section><section class="band band--form" id="inscripcio" aria-labelledby="h-inscripcio">
   <div class="wrap wrap--narrow">
 <h2 class="band__title" id="h-inscripcio">Inscripció</h2>
       <div class="forms">
@@ -646,6 +1236,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1793914844" defer></script>
+  <script src="../assets/site.js?v=1793916695" defer></script>
 </body>
 </html>
