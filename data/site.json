@@ -1,8 +1,8 @@
 {
   "name": "Elara Social",
   "publish": {
-    "url": "https://lespiral.github.io/elarasocial/",
-    "index": false
+    "url": "https://elarasocial.com/",
+    "index": true
   },
   "description": "Acompanyem persones, grups i comunitats a trobar sentit, arrelament i direcció en temps de crisi ecosocial.",
   "contact": {

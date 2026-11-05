@@ -3,7 +3,7 @@
 Web estàtica d'Elara Social, feta amb el mateix sistema i el mateix aspecte que la web de Camins d'Esperança [Activa] (repositori `lespiral/esperancaactiva`).
 Es publicarà amb GitHub Pages des de la carpeta `docs/`, primer a `lespiral.github.io/elarasocial` i, quan estigui aprovada, a `elarasocial.com`.
 
-Estat: estructura A (la de la web de WordPress, endreçada) amb tots els textos de la web actual: les pàgines principals, les 8 propostes amb el seu formulari d'inscripció, les 7 passes i els 2 articles. GitHub Pages encara no està activat.
+Estat: publicada a elarasocial.com (GitHub Pages) des del 5 de novembre de 2026, amb tots els textos de la web de WordPress: les pàgines principals, les 8 propostes amb el seu formulari d'inscripció, les 7 passes i els 2 articles.
 
 ## On és cada cosa
 
@@ -73,9 +73,8 @@ Les de `models/` són les de Camins (7 passes, com funciona, Esperança Activa, 
 
 ## Publicació
 
-- L'adreça i si surt als cercadors són a `data/site.json`, a `publish`. Ara: `https://lespiral.github.io/elarasocial/` i `"index": false` (no surt als cercadors mentre no estigui aprovada, perquè no faci competència a la web de WordPress).
-- GitHub Pages (branca `main`, carpeta `/docs`) s'activarà quan hi hagi una primera versió aprovada.
-- Quan es canviï el domini: canvia `url` a `publish`, posa `"index": true`, crea el fitxer `CNAME` amb el domini i torna a generar la web.
+- La web es publica amb GitHub Pages (branca `main`, carpeta `/docs`) al domini **elarasocial.com** (fitxer `CNAME`). Els registres DNS del domini són a Bluehost: `@` apunta a les 4 adreces de GitHub Pages i `www` a `lespiral.github.io`; el correu continua a Bluehost (`mail.elarasocial.com`).
+- L'adreça i si surt als cercadors són a `data/site.json`, a `publish`: `https://elarasocial.com/` i `"index": true` (amb `sitemap.xml`).
 
 ## Ressenyes de Google
 
