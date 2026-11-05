@@ -1,7 +1,7 @@
 # Web d'Elara Social
 
 Web estàtica d'Elara Social, feta amb el mateix sistema i el mateix aspecte que la web de Camins d'Esperança [Activa] (repositori `lespiral/esperancaactiva`).
-Es publicarà amb GitHub Pages des de la carpeta `docs/`, primer a `lespiral.github.io/elarasocial` i, quan estigui aprovada, a `elarasocial.com`.
+Es publica amb GitHub Pages des de la carpeta `docs/` al domini `elarasocial.com`.
 
 Estat: publicada a elarasocial.com (GitHub Pages) des del 5 de novembre de 2026, amb tots els textos de la web de WordPress: les pàgines principals, les 8 propostes amb el seu formulari d'inscripció, les 7 passes i els 2 articles.
 
