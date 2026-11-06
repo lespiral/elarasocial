@@ -82,6 +82,7 @@
   opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; z-index: 3;
 }
 .nus__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.nus__pk[hidden] { display: none; }
 .nus__pk { font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink); }
 .nus__pt { font: 700 16px/1.3 var(--fh); color: var(--c9); margin-top: 3px !important; }
 .nus__px { font-size: 15.5px; line-height: 1.45; color: var(--cmuted); margin-top: 3px !important; }
@@ -116,9 +117,9 @@
   /* ---------- TEXTOS (de la web d'Elara: Inici, Què fem, Comunitats i la resposta «Què vol dir esperança activa?» de les 7 passes) ---------- */
   var PAIN = { label: "El malestar i la incertesa", say: "es transformen en", kick: "On comences", title: "El malestar i la incertesa", text: "El desgast actual no és només individual, és estructural." };
   var THREADS = [
-    { label: "Claredat", col: "#e2c668", kick: "Es transformen en", title: "Claredat", text: "Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció." },
-    { label: "Suport", col: "#557e4c", kick: "Es transformen en", title: "Suport", text: "Generem xarxes de confiança on sostenir-nos emocionalment i materialment davant la incertesa del context." },
-    { label: "Acció", col: "#01315b", kick: "Es transformen en", title: "Acció significativa", text: "T’acompanyem a fer passos concrets i arrelats a terra ferma, fugint de la immediatesa per construir canvis reals que el teu dia a dia pugui sostenir." }
+    { label: "Claredat", col: "#e2c668", kick: "", title: "Claredat", text: "Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció." },
+    { label: "Suport", col: "#557e4c", kick: "", title: "Suport", text: "Generem xarxes de confiança on sostenir-nos emocionalment i materialment davant la incertesa del context." },
+    { label: "Acció", col: "#01315b", kick: "", title: "Acció significativa", text: "T’acompanyem a fer passos concrets i arrelats a terra ferma, fugint de la immediatesa per construir canvis reals que el teu dia a dia pugui sostenir." }
   ];
   var CENTER = { title: "Esperança Activa", sub: "sostinguda per la comunitat", kick: "Què vol dir «esperança activa»?",
     text: "Transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat." };
@@ -334,7 +335,9 @@
     var d = k === "pain" ? PAIN : k === "center" ? CENTER : THREADS[+k.slice(1)];
     var el = nodesBox.querySelector('[data-k="' + k + '"]'), r = el.getBoundingClientRect(), sr = scene.getBoundingClientRect();
     var at = [r.left - sr.left + r.width / 2, r.top - sr.top + r.height / 2], half = r.height / 2 + 10;
-    pop.querySelector(".nus__pk").textContent = d.kick;
+    var pk = pop.querySelector(".nus__pk");
+    pk.textContent = d.kick;
+    pk.hidden = !d.kick; // els fils no en porten: «es transformen en…» ja surt al quadre de dalt
     pop.querySelector(".nus__pt").textContent = d.title;
     pop.querySelector(".nus__px").textContent = d.text;
     pop.classList.add("is-open");
