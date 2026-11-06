@@ -105,8 +105,12 @@
               "7-passes-cap-a-lesperanca-activa"
             ],
             [
-              "Camins d'Esperança [Activa]",
+              "Camins d'Esperança [Activa] (en català)",
               "https://xn--esperanaactiva-mjb.cat/"
+            ],
+            [
+              "Caminos de Esperanza [Activa] (en castellà)",
+              "https://esperanzaactiva.org/"
             ]
           ]
         },
@@ -213,7 +217,13 @@
             "Una manera d’integrar petits passos d’esperança activa en la vida quotidiana, al teu ritme i des del lloc on vius."
           ],
           "href": "https://xn--esperanaactiva-mjb.cat/",
-          "button": "Vés a Camins d'Esperança [Activa]"
+          "button": "Vés a la web en català",
+          "links": [
+            {
+              "text": "Vés a la web en castellà",
+              "href": "https://esperanzaactiva.org/"
+            }
+          ]
         },
         {
           "title": "Acompanyament individual",

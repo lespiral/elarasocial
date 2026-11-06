@@ -128,8 +128,12 @@
               "7-passes-cap-a-lesperanca-activa-comunitats"
             ],
             [
-              "Camins d'Esperança [Activa]",
+              "Camins d'Esperança [Activa] (en català)",
               "https://xn--esperanaactiva-mjb.cat/"
+            ],
+            [
+              "Caminos de Esperanza [Activa] (en castellà)",
+              "https://esperanzaactiva.org/"
             ]
           ]
         },
@@ -211,7 +215,13 @@
           "text": "Una proposta que combina un recorregut digital de Les “7 passes cap a l’Esperança Activa” amb rutes a peu pel vostre entorn per cuidar el benestar personal i comunitari, enfortir els vincles i reconnectar amb allò que ens sosté.",
           "foot": "Una experiència que podem adaptar a la realitat de la teva comunitat",
           "href": "https://xn--esperanaactiva-mjb.cat/",
-          "button": "Vés a Camins d'Esperança [Activa]"
+          "button": "Vés a la web en català",
+          "links": [
+            {
+              "text": "Vés a la web en castellà",
+              "href": "https://esperanzaactiva.org/"
+            }
+          ]
         },
         {
           "title": "L'Espiral de l'Esperança Activa",

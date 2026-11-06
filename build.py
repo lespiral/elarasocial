@@ -83,6 +83,7 @@ CARD_ICONS = {
     "burnout": "campfire",
     "contacte": "chat-circle-dots",
     "xn--esperanaactiva-mjb.cat": "map-trifold",
+    "esperanzaactiva.org": "map-trifold",
     # Els quatre cursos de les 7 passes (Thinkific)
     "Quan-sostenir-la-vida": "plant",
     "Quan-el-mon-et-preocupa": "globe",

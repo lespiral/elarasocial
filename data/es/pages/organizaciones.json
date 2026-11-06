@@ -208,12 +208,18 @@
           "href": "7-pasos-hacia-la-esperanza-activa-comunidades"
         },
         {
-          "title": "Camins d'Esperança [Activa]",
+          "title": "Caminos de Esperanza [Activa]",
           "badge": "Mini-cursos online",
-          "text": "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por vuestro entorno [y, si queréis, desde vuestra sede] para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene. (La web está en catalán.)",
+          "text": "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por vuestro entorno [y, si queréis, desde vuestra sede] para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene.",
           "foot": "Una experiencia que podemos adaptar a la realidad de tu organización",
-          "href": "https://xn--esperanaactiva-mjb.cat/",
-          "button": "Ir a Camins d'Esperança [Activa]"
+          "href": "https://esperanzaactiva.org/",
+          "button": "Ir a la web en castellano",
+          "links": [
+            {
+              "text": "Ir a la web en catalán",
+              "href": "https://xn--esperanaactiva-mjb.cat/"
+            }
+          ]
         },
         {
           "title": "Acompañamiento individual para miembros del grupo",

@@ -25,7 +25,7 @@
 <a class="btn {{ b.style or cls }}" href="{{ link_href(b.href, root) }}"{% if b.href.startswith('http') %} rel="noopener"{% endif %}>{{ b.text }}{% if b.arrow is not defined or b.arrow %} {{ icon('arrow') }}{% endif %}</a>
 {%- endmacro %}
 
-{# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "badge"}] #}
+{# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "links": [{"text", "href"}], "badge"}] #}
 {% macro cards(items, root, heading_level=3, align='center') -%}
 <ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}">
   {% for c in items %}
@@ -43,6 +43,8 @@
       {% if c.foot %}<p class="card__foot">{{ c.foot }}</p>{% endif %}
     </div>
     {% if c.href %}<a class="btn btn--soft btn--block" href="{{ link_href(c.href, root) }}">{{ c.button or 'Saber-ne més' }}</a>{% endif %}
+    {# "links": [{"text", "href"}]: més botons a sota (p. ex. la mateixa web en una altra llengua) #}
+    {% for l in c.links or [] %}<a class="btn btn--outline btn--block card__more" href="{{ link_href(l.href, root) }}"{% if l.href.startswith('http') %} rel="noopener"{% endif %}>{{ l.text }}</a>{% endfor %}
   </li>
   {% endfor %}
 </ul>

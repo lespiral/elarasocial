@@ -106,7 +106,11 @@
               "7-pasos-hacia-la-esperanza-activa"
             ],
             [
-              "Camins d'Esperança [Activa]",
+              "Caminos de Esperanza [Activa] (en castellano)",
+              "https://esperanzaactiva.org/"
+            ],
+            [
+              "Camins d'Esperança [Activa] (en catalán)",
               "https://xn--esperanaactiva-mjb.cat/"
             ]
           ]
@@ -207,14 +211,20 @@
           "href": "7-pasos-hacia-la-esperanza-activa"
         },
         {
-          "title": "Camins d'Esperança [Activa]",
+          "title": "Caminos de Esperanza [Activa]",
           "subtitle": "7 pasos para reconectar, contigo y con tu entorno",
           "paragraphs": [
             "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por tu entorno para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene.",
-            "Una manera de integrar pequeños pasos de esperanza activa en la vida cotidiana, a tu ritmo y desde el lugar donde vives. (La web está en catalán.)"
+            "Una manera de integrar pequeños pasos de esperanza activa en la vida cotidiana, a tu ritmo y desde el lugar donde vives."
           ],
-          "href": "https://xn--esperanaactiva-mjb.cat/",
-          "button": "Ir a Camins d'Esperança [Activa]"
+          "href": "https://esperanzaactiva.org/",
+          "button": "Ir a la web en castellano",
+          "links": [
+            {
+              "text": "Ir a la web en catalán",
+              "href": "https://xn--esperanaactiva-mjb.cat/"
+            }
+          ]
         },
         {
           "title": "Acompañamiento individual",

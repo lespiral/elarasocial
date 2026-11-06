@@ -55,7 +55,7 @@ No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
 - Les icones són les de `src/icons.json` (les mateixes que a Camins d'Esperança [Activa]).
 - **Negreta**: a qualsevol text, `**així**` surt en negreta (dins dels paràgrafs, amb un subratllat de retolador verd). Els camps acabats en `_html` poden portar HTML (enllaços, negretes). Amb `"html": true` a la secció, també els paràgrafs i les llistes.
 - Altres camps de secció: `"kicker"` (avantítol petit), `"before"` (paràgrafs abans de les targetes), `"list"` i `"after"` (a les de text), `"quote"`, `"align": "left"` (targetes alineades a l'esquerra).
-- Les targetes poden portar `subtitle`, `meta` (p. ex. `["4 hores", "Màx. 16 participants"]`), `paragraphs`, `list`, `foot`, `badge`, `href` i `button` (el text del botó). Amb `photo` (p. ex. `"equip/aleix-boronat.jpg"`, a `src/img/`) porten una foto rodona a dalt; les de Sobre nosaltres són quadrades, de 320 × 320 px, en JPG.
+- Les targetes poden portar `subtitle`, `meta` (p. ex. `["4 hores", "Màx. 16 participants"]`), `paragraphs`, `list`, `foot`, `badge`, `href` i `button` (el text del botó). Amb `"links": [{"text": …, "href": …}]` porten més botons a sota (les targetes de Camins d'Esperança [Activa] en porten dos: la web en català, esperançaactiva.cat, i la web en castellà, esperanzaactiva.org; a les pàgines en castellà, primer la castellana). Amb `photo` (p. ex. `"equip/aleix-boronat.jpg"`, a `src/img/`) porten una foto rodona a dalt; les de Sobre nosaltres són quadrades, de 320 × 320 px, en JPG.
 - El contacte (correu, telèfon, WhatsApp, adreça) surt de `contact` a `data/site.json`.
 
 ## Com es veu cada secció
@@ -122,7 +122,7 @@ La web en castellà és a `/es/`, amb les adreces en castellà (`/es/personas/`,
 - Quan es canvia una pàgina en català, s'ha de canviar també la seva en castellà. Si una pàgina catalana no en té, `build.py` ho avisa i el selector porta a l'inici en castellà.
 - Després de generar la web, `python3 tools/restes-catala.py` diu si a `docs/es/` hi ha quedat algun text en català.
 - **Formularis**: les pàgines en castellà porten còpies en castellà dels formularis de Google, a la mateixa carpeta del Drive (`Elara Social (castellà) - …`), amb els avisos per correu de les respostes noves activats com els originals. Les respostes de cada còpia queden dins del formulari (no van a cap full de càlcul). Les còpies es van fer amb el projecte d'Apps Script «Elara Social - formularis en castellà» del compte lespiral.cat.
-- Camins d'Esperança [Activa] i els cursos de Thinkific de les 7 passes són en català: les pàgines en castellà ho diuen.
+- Camins d'Esperança [Activa] té web en català (esperançaactiva.cat) i en castellà (Caminos de Esperanza [Activa], esperanzaactiva.org): les targetes, les parades del camí i el peu porten a totes dues. Els cursos de Thinkific de les 7 passes són en català: les pàgines en castellà ho diuen.
 - Al mòbil i fins a 1023 px d'amplada, el menú és el desplegable (amb el selector de llengua al costat); entre 1024 i 1199 px, el menú és una mica més compacte. En castellà, com que els noms són més llargs, el menú és compacte a totes les amplades d'ordinador (`html[lang="es"]` a `site.css`).
 
 ## Publicació
