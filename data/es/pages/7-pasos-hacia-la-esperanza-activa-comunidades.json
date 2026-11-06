@@ -1,0 +1,237 @@
+{
+  "ca": "7-passes-cap-a-lesperanca-activa-comunitats",
+  "title": "7 pasos hacia la Esperanza Activa",
+  "metafora": {"name": "passes-comunitat", "text": "Los mismos siete pasos, y en la otra orilla os espera vuestra comunidad."},
+  "kicker": "Una experiencia que podemos adaptar a la realidad de tu organización",
+  "lead": "Cuatro recorridos. Una misma Espiral. Vuestro contexto.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "Los 7 pasos hacia la Esperanza Activa son **cuatro minicursos vivenciales** inspirados en la Espiral del Trabajo que Reconecta.",
+        "Podemos adaptarlos para que empresas, asociaciones, cooperativas, fundaciones, administraciones, equipamientos o comunidades ofrezcan a las personas vinculadas a su proyecto una experiencia propia de Esperanza Activa.",
+        "Incorporamos al recorrido la realidad, los proyectos, los recursos, las iniciativas y las posibilidades de participación de cada organización, para que la experiencia no termine solo en una reflexión personal, sino que pueda conectar con aquello que ya está pasando en su entorno."
+      ],
+      "buttons": [
+        {
+          "text": "Contacto",
+          "href": "contacto"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "cursos",
+      "align": "left",
+      "title": "Elige desde dónde quieres empezar",
+      "infografia": "cursos",
+      "variant": "organitzacions",
+      "before": [
+        "El recorrido de base es el mismo, pero podemos trabajar desde cuatro puertas de entrada, según el ámbito de vuestra organización, el proyecto que queréis impulsar o las personas a quienes os dirigís (por ahora, los recorridos de base están en catalán)."
+      ],
+      "items": [
+        {
+          "title": "Cuando sostener la vida se hace difícil",
+          "badge": "Economía Social y Solidaria",
+          "subtitle": "Trabajo, vivienda, precariedad e incertidumbre económica",
+          "paragraphs": [
+            "Para cooperativas, entidades sociales, proyectos de ocupación, economía social, vivienda, inserción laboral o desarrollo comunitario.",
+            "Podemos incorporar al recorrido proyectos, recursos y alternativas de vuestro entorno para que las personas participantes puedan conectar sus preocupaciones con posibilidades reales de cooperación, apoyo mutuo y participación."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa",
+          "button": "Ver el recorrido base"
+        },
+        {
+          "title": "Cuando el futuro del planeta te preocupa",
+          "badge": "Acción climática",
+          "subtitle": "Cambio climático, territorio y futuro",
+          "paragraphs": [
+            "Para entidades ambientales, administraciones, empresas comprometidas con la sostenibilidad, proyectos educativos o iniciativas de transición ecológica.",
+            "El recorrido se puede vincular a acciones, proyectos, espacios naturales, iniciativas de voluntariado o propuestas ambientales concretas para que la esperanza pueda convertirse en una forma de participación situada."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa",
+          "button": "Ver el recorrido base"
+        },
+        {
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "badge": "Salud Mental Comunitaria",
+          "subtitle": "Malestar emocional, vínculos, apoyo y prescripción social",
+          "paragraphs": [
+            "Para entidades sociales y sanitarias, servicios comunitarios, asociaciones, equipamientos, grupos de ayuda mutua o proyectos que trabajan con personas y comunidades.",
+            "Podemos integrar recursos de apoyo, actividades, grupos, servicios o redes comunitarias existentes, de manera que el recorrido ayude también a reconocer dónde y con quién se puede continuar el camino."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa",
+          "button": "Ver el recorrido base"
+        },
+        {
+          "title": "Cuando la vida te desborda",
+          "badge": "Malestar personal",
+          "subtitle": "Ansiedad, duelos y momentos difíciles",
+          "paragraphs": [
+            "Para organizaciones que quieran ofrecer una herramienta accesible de reflexión y autocuidado a las personas que forman parte de su comunidad.",
+            "El recorrido se puede adaptar para que las personas conozcan también los recursos de acompañamiento, actividades o servicios que la organización pone a su alcance, sin convertir el curso en una intervención terapéutica."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa",
+          "button": "Ver el recorrido base"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "title": "El mismo recorrido, pero vinculado a vuestra realidad",
+      "paragraphs": [
+        "No se trata simplemente de poner vuestro logotipo en un curso ya creado.",
+        "La propuesta es que **vuestra realidad entre dentro del recorrido**.",
+        "Podemos adaptar ejemplos, preguntas, recursos y momentos concretos de las prácticas para que las personas participantes puedan relacionar los 7 pasos con el territorio, el sector o la comunidad de la que forman parte.",
+        "Por ejemplo:"
+      ],
+      "list": [
+        "incorporar proyectos e iniciativas que ya impulsáis;",
+        "dar a conocer recursos o servicios disponibles;",
+        "mostrar experiencias inspiradoras de vuestro territorio u organización;",
+        "introducir problemáticas específicas de vuestro colectivo;",
+        "conectar algunas prácticas con actividades o espacios que ya existen;",
+        "incorporar propuestas de participación, voluntariado, apoyo mutuo o acción;",
+        "orientar el último paso hacia posibilidades reales de continuidad."
+      ],
+      "after": [
+        "Así, el curso puede convertirse en una puerta de entrada hacia vuestra comunidad, vuestros recursos y las iniciativas que ya estáis construyendo."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "html": true,
+      "title": "Cómo sería la experiencia",
+      "infografia": "7-passes",
+      "variant": "organitzacions",
+      "paragraphs": [
+        "La persona sigue recorriendo los mismos 7 pasos:"
+      ],
+      "list": [
+        "<strong>1. Me quiero, me encanta…</strong> ¿Qué tiene valor para mí?",
+        "<strong>2. Me gustaría dar las gracias a…</strong> ¿Quién y qué nos sostiene?",
+        "<strong>3. Cuando miro hacia el futuro, una de las cosas que me preocupan es…</strong> ¿Qué necesita ser escuchado?",
+        "<strong>4. Lo que me inspira es…</strong> ¿Quién ya está abriendo caminos?",
+        "<strong>5. Lo que espero profundamente es…</strong> ¿Hacia qué futuro querría orientarme?",
+        "<strong>6. Un papel que me gustaría tener es…</strong> ¿Qué lugar puedo ocupar yo?",
+        "<strong>7. Un paso que daré la semana que viene es…</strong> ¿Cuál es el siguiente movimiento posible?"
+      ],
+      "after": [
+        "La diferencia es que, en una versión personalizada, algunas de las respuestas pueden empezar a conectar con personas, proyectos, recursos y oportunidades que forman parte del entorno real de la organización."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "title": "De la reflexión a la vinculación",
+      "infografia": "vinculacio",
+      "paragraphs": [
+        "Muchas organizaciones disponen de proyectos, servicios, recursos y oportunidades de participación, pero a menudo es difícil que las personas los conozcan, los sientan propios o identifiquen qué papel podrían tener en ellos.",
+        "Los 7 pasos ofrecen **otra puerta de entrada**.",
+        "En lugar de empezar explicando: “Esta es nuestra entidad y estos son nuestros servicios”, podemos empezar preguntando:"
+      ],
+      "list": [
+        "¿Qué te importa?",
+        "¿Qué te preocupa?",
+        "¿Qué te inspira?",
+        "¿Qué esperas?",
+        "¿Qué papel te gustaría tener?"
+      ],
+      "after": [
+        "Y solo después mostrar qué personas, iniciativas o recursos de su entorno pueden ayudar a continuar este camino.",
+        "De esta manera, la vinculación con la organización puede surgir desde los intereses, las preocupaciones y los valores de la propia persona."
+      ]
+    },
+    {
+      "type": "cards",
+      "align": "left",
+      "title": "A quién se puede dirigir",
+      "before": [
+        "La propuesta puede adaptarse tanto a personas que ya forman parte de la organización como a personas que todavía no tienen vínculo con ella."
+      ],
+      "items": [
+        {
+          "title": "Equipos y trabajadores/as",
+          "text": "Como propuesta de reflexión, bienestar, sostenibilidad, cultura organizativa o compromiso social."
+        },
+        {
+          "title": "Personas usuarias",
+          "text": "Como complemento a programas sociales, comunitarios, educativos, ambientales o de salud."
+        },
+        {
+          "title": "Socios, socias y comunidades vinculadas",
+          "text": "Para profundizar en los valores compartidos y facilitar nuevas formas de participación."
+        },
+        {
+          "title": "Ciudadanía o público general",
+          "text": "Como puerta de entrada a una causa, proyecto o comunidad."
+        },
+        {
+          "title": "Personas potencialmente interesadas en vuestros servicios o actividades",
+          "text": "Ofreciendo primero una experiencia útil por sí misma y, después, posibilidades concretas para seguir vinculadas."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "esperanza-activa",
+      "title": "La Esperanza Activa es una esperanza con los pies en la tierra",
+      "paragraphs": [
+        "Los 7 pasos son una adaptación breve y accesible inspirada en la Espiral del Trabajo que Reconecta, desarrollada por Joanna Macy, ecofilósofa y activista, y profundizada, entre otros autores, junto con Chris Johnstone en el marco de la Esperanza Activa.",
+        "El recorrido parte de aquello que tiene valor, da espacio a lo que preocupa, amplía la perspectiva y termina orientándose hacia una respuesta posible.",
+        "En la versión adaptada para organizaciones añadimos **una dimensión más**: conectar esta respuesta con las redes, los recursos y las posibilidades de participación que ya existen en el territorio o en la comunidad."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿Cuánto dura y cómo se hace?",
+          "<p>Son 7 pasos con 3 audios.</p><ul class=\"ticks\"><li>Un primer audio de unos 3 o 5 minutos que da contexto y orienta la práctica.</li><li>Una “meditación” guiada por paso (aprox. 15’) que permite profundizar en la experiencia.</li><li>Un espacio de reflexión personal, que puede ser un pequeño paseo o quedarte el rato que dura un café reflexionando sobre lo que has experimentado.</li><li>Y un audio de cierre para integrar la experiencia.</li></ul><p>Lo puedes hacer en 7 días o a tu ritmo.</p>"
+        ],
+        [
+          "¿Tengo que tener experiencia en meditación?",
+          "<p>No. Las prácticas están planteadas para que sean accesibles y progresivas.</p>"
+        ],
+        [
+          "¿Qué pasa cuando termino?",
+          "<p>El cierre del curso abre la puerta a continuar el camino en comunidad o con procesos más amplios, si lo quieres.</p>"
+        ],
+        [
+          "¿Qué pasa después del ciclo?",
+          "<p>Cerramos con pasos pequeños y concretos y con la idea de continuidad: redes de apoyo y compromiso compartido.</p>"
+        ],
+        [
+          "¿Es terapia?",
+          "<p>No. Es un mini-curso vivencial de prácticas y reflexión.</p><p>Puede ayudar mucho, pero no sustituye la psicoterapia si estás en un momento clínicamente delicado.</p>"
+        ],
+        [
+          "¿Qué quiere decir “esperanza activa”?",
+          "<p>Es el resultado de este recorrido: transformar dolor e incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.</p>"
+        ],
+        [
+          "¿Y si me preocupa “desbordarme” emocionalmente durante el curso?",
+          "<p>Es una preocupación habitual. El ciclo está planteado como un espacio seguro y respetuoso, donde tú marcas el ritmo: puedes parar, respirar o dejarlo si lo necesitas.</p><p>Si estás en un momento especialmente sensible, nos lo puedes comentar antes y lo valoramos juntos para asegurar que sea el entorno adecuado para ti.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "kicker": "Una experiencia que podemos adaptar a la realidad de tu organización",
+      "buttons": [
+        {
+          "text": "Contacto",
+          "href": "contacto"
+        }
+      ]
+    }
+  ]
+}

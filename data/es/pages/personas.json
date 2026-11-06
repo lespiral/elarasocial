@@ -1,0 +1,284 @@
+{
+  "ca": "persones",
+  "title": "Cuando el mundo te pesa, déjate acompañar.",
+  "kicker": "Personas",
+  "lead": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
+  "description": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
+  "escena": "vida",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "kicker": "no lo sostengas solo/a",
+      "title": "Por mucho que te esfuerces, ¿el día a día te pasa por encima?",
+      "paragraphs": [
+        "En Elara Social, **transformamos este estancamiento en fuerza compartida**.",
+        "Sostener la vida está en el centro de nuestra actividad. Por eso no buscamos soluciones rápidas, sino procesos que puedan sostenerse en el tiempo.",
+        "En Elara Social trabajamos con metodologías estructuradas y prácticas vivenciales que te ayudan a **pasar de “aguantar” a recuperar dirección, vínculo y capacidad de acción**.",
+        "Lo hacemos cuidando a la vez el bienestar personal y la dimensión comunitaria: lo que te pasa a ti también tiene que ver con el mundo que compartimos."
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Si te reconoces, descubre nuestras propuestas",
+      "items": [
+        {
+          "icon": "cloud-rain",
+          "title": "¿Sientes bloqueo o desorientación?",
+          "text": "La situación global o personal te pesa, y la preocupación se queda atrapada en la cabeza sin saber hacia dónde tirar.",
+          "href": "#propuestas",
+          "button": "Opciones para empezar"
+        },
+        {
+          "icon": "sun",
+          "title": "¿Notas un cansancio profundo?",
+          "text": "Vas con el piloto automático, cumpliendo con todo pero conectando con poco, y necesitas un respiro de verdad.",
+          "href": "#propuestas",
+          "button": "Opciones para empezar"
+        },
+        {
+          "icon": "users-three",
+          "title": "¿Buscas gente con quien hablar de verdad?",
+          "text": "Si te pesa el vacío y cargarlo todo en soledad... Aquí tocamos de pies en el suelo. Ven a encontrar sentido con gente como tú.",
+          "href": "#propuestas",
+          "button": "Opciones para empezar"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "title": "De la parálisis al paso concreto.",
+      "before": [
+        "“Puede que el mundo parezca seguir igual, pero tú lo verás con otros ojos… y en compañía.”",
+        "En Elara Social te ofrecemos un camino probado para pasar del aislamiento y el desbordamiento a la claridad y la acción con sentido, coherencia y dignidad."
+      ],
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Estarás acompañado, acompañada",
+          "text": "Creamos un marco de seguridad donde poder compartir el malestar y disolverlo en comunidad."
+        },
+        {
+          "icon": "plant",
+          "title": "Esperanza Activa",
+          "text": "Acogeremos el malestar y el dolor, convirtiendo lo que sientes en motor hacia el cambio, con pasos pequeños, realistas y revisables."
+        },
+        {
+          "icon": "footprints",
+          "title": "Con ritmos humanos",
+          "text": "Priorizamos el respeto y el cuidado de la vida por delante de la productividad."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "title": "¿Qué hacemos exactamente?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un itinerario en tres paradas: para empezar, para profundizar y para sostener",
+        "inici": [
+          "Tal como estás hoy",
+          "Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo."
+        ],
+        "final": [
+          "Un paso concreto con sentido",
+          "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido."
+        ],
+        "icones": [
+          "sprout",
+          "spiral",
+          "people"
+        ]
+      },
+      "before": [
+        "Te ofrecemos un itinerario continuo con diferentes puertas de entrada, para que puedas participar según tu energía disponible."
+      ],
+      "items": [
+        {
+          "title": "Para empezar",
+          "subtitle": "Baja intensidad",
+          "text": "Mini-rituales y recursos autoguiados para cuando necesitas parar, respirar y orientarte sin exponerte.",
+          "propostes": [
+            [
+              "7 pasos hacia la Esperanza Activa",
+              "7-pasos-hacia-la-esperanza-activa"
+            ],
+            [
+              "Camins d'Esperança [Activa]",
+              "https://xn--esperanaactiva-mjb.cat/"
+            ]
+          ]
+        },
+        {
+          "title": "Para profundizar",
+          "subtitle": "Estructura",
+          "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia.",
+          "propostes": [
+            [
+              "La Espiral de la Esperanza Activa",
+              "la-espiral-de-la-esperanza-activa"
+            ],
+            [
+              "El Trabajo que Reconecta",
+              "el-trabajo-que-reconecta"
+            ],
+            [
+              "Un puente de Esperanza",
+              "un-puente-de-esperanza"
+            ],
+            [
+              "Círculos de palabra",
+              "circulos-para-sostener-organizaciones-y-colectivos"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ]
+          ]
+        },
+        {
+          "title": "Para sostener",
+          "subtitle": "Comunidad",
+          "text": "Encuentros mensuales y mentorías para tejer red, compartir inquietudes y generar iniciativas transformadoras.",
+          "propostes": [
+            [
+              "El Trabajo que Reconecta (grupo regular)",
+              "grupo-regular-de-el-trabajo-que-reconecta"
+            ],
+            [
+              "Acompañamiento individual",
+              "acompanamiento-individual"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "kicker": "¿qué nos mueve?",
+      "title": "En un mundo que nos quiere rápidas y eficientes, nuestra apuesta es la humanidad.",
+      "before": [
+        "Priorizamos tu cuidado y el de tu entorno por encima de todo."
+      ],
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "title": "Seguridad Relacional Radical",
+          "paragraphs": [
+            "Aquí puedes quitarte la máscara.",
+            "Creamos espacios donde no hace falta \"quedar bien\", donde puedes hablar en primera persona y donde tienes permiso para no saberlo todo."
+          ]
+        },
+        {
+          "icon": "tree",
+          "title": "Integración y arraigo",
+          "paragraphs": [
+            "Todo está conectado: tu mente, tu cuerpo y el lugar donde vives.",
+            "Entendemos que estar bien contigo mismo pasa, inevitablemente, por reconectar con el mundo."
+          ]
+        },
+        {
+          "icon": "sneaker",
+          "title": "Acción consciente",
+          "paragraphs": [
+            "Te acompañamos a moverte conectando con los demás.",
+            "Caminamos juntos hacia un futuro mejor, con pasos realistas y alcanzables."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "propuestas",
+      "align": "left",
+      "title": "Te acompañamos al nivel y al ritmo que elijas",
+      "before": [
+        "Adaptamos nuestra metodología a tres niveles de impacto: espacios de acompañamiento individual, recursos online para hacer a tu ritmo, y talleres y grupos de continuidad."
+      ],
+      "items": [
+        {
+          "title": "7 pasos hacia la Esperanza Activa",
+          "badge": "Mini-curso gratuito online",
+          "text": "Un recorrido breve y profundo para iniciarte en El Trabajo que Reconecta: volver a lo que te sostiene, dar espacio a lo que preocupa, abrir la mirada y aterrizar un paso posible.",
+          "href": "7-pasos-hacia-la-esperanza-activa"
+        },
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "subtitle": "7 pasos para reconectar, contigo y con tu entorno",
+          "paragraphs": [
+            "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por tu entorno para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene.",
+            "Una manera de integrar pequeños pasos de esperanza activa en la vida cotidiana, a tu ritmo y desde el lugar donde vives. (La web está en catalán.)"
+          ],
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Ir a Camins d'Esperança [Activa]"
+        },
+        {
+          "title": "Acompañamiento individual",
+          "paragraphs": [
+            "Te ofrecemos un espacio de mentoría individual, online o presencial, para detenerte y aterrizar el proceso de cambio en tu realidad.",
+            "Un refugio donde aprender a sostener las emociones difíciles del día a día y trazar una hoja de ruta para transformar la incertidumbre en acción con sentido."
+          ],
+          "href": "acompanamiento-individual"
+        },
+        {
+          "title": "La Espiral de la Esperanza Activa",
+          "paragraphs": [
+            "Un taller vivencial y seguro para detenernos y dar salida a todo aquello que nos angustia.",
+            "Desde el estrés cotidiano hasta la incertidumbre por el futuro global.",
+            "Venimos a reconectar con la vida, a metabolizar el malestar en comunidad y a trazar pasos concretos de esperanza activa."
+          ],
+          "href": "la-espiral-de-la-esperanza-activa"
+        },
+        {
+          "title": "El Trabajo que Reconecta",
+          "text": "Un ciclo para reconectar con la vida, transformar el dolor personal y/o por el mundo en fuerza activa y encontrar formas concretas de compromiso personal y comunitario.",
+          "href": "el-trabajo-que-reconecta"
+        },
+        {
+          "title": "Un puente de esperanza",
+          "paragraphs": [
+            "Un espacio de inmersión para reconectar con la vida y transformar el dolor en fuerza compartida.",
+            "Durante dos días, tejeremos un lugar seguro para trabajar con calma tanto las crisis personales (el estrés, la incertidumbre vital) como el agotamiento que nos generan los grandes retos globales."
+          ],
+          "href": "un-puente-de-esperanza"
+        },
+        {
+          "title": "El Trabajo que Reconecta (Grupo regular)",
+          "text": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+          "href": "grupo-regular-de-el-trabajo-que-reconecta"
+        },
+        {
+          "title": "Círculos de palabra",
+          "subtitle": "(para sostener organizaciones y colectivos)",
+          "text": "Este programa es un taller práctico en 4 sesiones (2 h cada una) para aprender la estructura de los Círculos de palabra: una metodología sencilla y potente para tener conversaciones difíciles sin que escalen, cuidar el vínculo y llegar a acuerdos sostenibles.",
+          "href": "circulos-para-sostener-organizaciones-y-colectivos"
+        },
+        {
+          "title": "Burnout",
+          "subtitle": "Reconectar con la fuerza sin quemarse",
+          "text": "Un programa en 8 sesiones para transformar agotamiento, sobrecarga y culpa en regulación, claridad y límites sostenibles.",
+          "href": "burnout"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "kicker": "¿te sumas a hacer camino en compañía?",
+      "paragraphs": [
+        "Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo.",
+        "Adaptamos nuestra metodología a tu realidad."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos",
+          "href": "contacto"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "ca": "7-passes-cap-a-lesperanca-activa",
+  "title": "7 pasos hacia la Esperanza Activa",
+  "metafora": {"name": "passes", "text": "Siete pasos pequeños, de uno en uno, para atravesar aquello que te preocupa."},
+  "kicker": "4 mini-cursos gratuitos online",
+  "lead": "Un recorrido gratuito inspirado en la Espiral del Trabajo que Reconecta.",
+  "description": "Los 7 pasos hacia la Esperanza Activa son un recorrido gratuito inspirado en la Espiral del Trabajo que Reconecta.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "Hay momentos en los que una preocupación ocupa demasiado espacio.",
+        "Puede tener que ver con tu vida personal, con el malestar emocional que ves a tu alrededor, con la precariedad y las dificultades para sostener una vida digna, o con el futuro del planeta.",
+        "Los 7 pasos hacia la Esperanza Activa son **un recorrido gratuito** inspirado en la Espiral del Trabajo que Reconecta que te acompaña a detenerte, reconocer aquello que te importa, dar espacio a lo que te preocupa y encontrar una manera posible de responder."
+      ],
+      "buttons": [
+        {
+          "text": "Elige desde dónde quieres empezar",
+          "href": "#cursos"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "id": "cursos",
+      "align": "left",
+      "title": "Elige desde dónde quieres empezar",
+      "infografia": "cursos",
+      "variant": "persones",
+      "before": [
+        "El recorrido de base es el mismo, pero hemos creado cuatro puertas de entrada para que puedas trabajar con ejemplos, preguntas y prácticas más cercanas al tipo de preocupación que estás viviendo (por ahora, los cursos están en catalán):"
+      ],
+      "items": [
+        {
+          "title": "Cuando sostener la vida se hace difícil",
+          "subtitle": "Trabajo, vivienda, precariedad e incertidumbre económica",
+          "meta": [
+            "7 sesiones",
+            "A tu ritmo",
+            "Gratuito"
+          ],
+          "paragraphs": [
+            "Si te preocupa llegar a fin de mes, la precariedad laboral, el acceso a la vivienda, los ritmos de trabajo o la dificultad de vivir y trabajar de manera coherente con tus valores, este recorrido puede ayudarte a recuperar la orientación.",
+            "Explorarás qué querrías cuidar, qué apoyos existen, qué papel puedes tener dentro de una respuesta más colectiva y qué primer paso es posible para ti."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa",
+          "button": "Accede a «Cuando sostener la vida se hace difícil»"
+        },
+        {
+          "title": "Cuando el futuro del planeta te preocupa",
+          "subtitle": "Cambio climático, degradación de los ecosistemas e incertidumbre ante el futuro",
+          "meta": [
+            "7 sesiones",
+            "A tu ritmo",
+            "Gratuito"
+          ],
+          "paragraphs": [
+            "Si te preocupa la crisis climática, los incendios, las sequías, la pérdida de biodiversidad o el mundo que encontrarán las generaciones futuras, este recorrido te ayuda a dar espacio a esta preocupación sin quedarte atrapado/a en la impotencia.",
+            "La propuesta es reconectar con aquello que amas del mundo vivo y explorar qué lugar puedes ocupar dentro de una respuesta que necesariamente es compartida."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa",
+          "button": "Accede a «Cuando el futuro del planeta te preocupa»"
+        },
+        {
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "subtitle": "Malestar emocional, soledad, falta de apoyo y necesidad de comunidad",
+          "meta": [
+            "7 sesiones",
+            "A tu ritmo",
+            "Gratuito"
+          ],
+          "paragraphs": [
+            "Si te preocupa el aumento de la ansiedad, la soledad, el cansancio emocional o la falta de espacios humanos donde sentirse escuchado/a, este recorrido te ayuda a mirar el malestar desde una perspectiva más relacional.",
+            "Explorarás los vínculos, los recursos y las formas de apoyo que pueden formar parte de la respuesta, tanto para cuidarte como para contribuir a construir entornos más cuidadores."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa",
+          "button": "Accede a «Cuando cuidarnos es una tarea colectiva»"
+        },
+        {
+          "title": "Cuando la vida te desborda",
+          "subtitle": "Ansiedad, duelos, separaciones, conflictos y momentos de vulnerabilidad",
+          "meta": [
+            "7 sesiones",
+            "A tu ritmo",
+            "Gratuito"
+          ],
+          "paragraphs": [
+            "Si estás pasando por una situación difícil y notas que te cuesta encontrar orientación, este recorrido te propone un espacio para detenerte y escuchar lo que estás viviendo.",
+            "No se trata de solucionarlo todo en siete pasos, sino de reconectar con aquello que te sostiene, aclarar qué te preocupa y encontrar un siguiente paso posible."
+          ],
+          "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa",
+          "button": "Accede a «Cuando la vida te desborda»"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "title": "¿Qué te llevarás de cada curso?",
+      "list": [
+        "Un mapa sencillo y aplicable para orientarte cuando hay inquietud, cansancio o sensación de bloqueo.",
+        "Más arraigo y estabilidad interna, empezando desde lo que ya te sostiene (no desde el esfuerzo).",
+        "Una manera segura de dar espacio a las preocupaciones, sin dramatizarlas ni reprimirlas.",
+        "Inspiración realista (no “positivismo”), conectada con valores, personas y movimientos que dan aire.",
+        "<strong>Contacto con el anhelo profundo:</strong> una orientación interna que ayuda a recuperar la dirección.",
+        "Claridad sobre tu papel y tu lugar, como cualidad de presencia (no como cargo ni exigencia).",
+        "Un paso pequeño y posible para la semana que viene, coherente con lo que has descubierto."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "html": true,
+      "title": "El recorrido en 7 pasos",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "list": [
+        "<strong>“Me encanta… / Me quiero…”:</strong> Volver a la raíz: reconocer lo que te nutre y te da fuerza.",
+        "<strong>“Me gustaría dar las gracias a…”:</strong> Abrir la gratitud hacia los demás y recordar la interdependencia.",
+        "<strong>“Cuando miro el futuro, mis preocupaciones incluyen…”:</strong> Dar espacio a lo que inquieta con honestidad y ternura.",
+        "<strong>“Lo que me inspira es…”:</strong> Ensanchar la mirada: dejar entrar aire, perspectiva y sentido.",
+        "<strong>“Lo que espero profundamente es…”:</strong> Escuchar la esperanza profunda como una dirección interna (aunque sea sutil).",
+        "<strong>“Un papel que me gustaría tener es…”:</strong> Reconocer qué tipo de presencia quieres aportar al mundo (y a tu vida).",
+        "<strong>“Un paso que daré la semana que viene es…”:</strong> Aterrizar la espiral en un gesto realista, coherente y amable."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "list": [
+        "<strong>Presencia y regulación:</strong> volver al cuerpo como lugar seguro y punto de partida.",
+        "<strong>Gratitud arraigada:</strong> como base para sostener lo que vendrá (sin negar nada).",
+        "Honrar el dolor, por el mundo y por el propio futuro, sin quedarnos atrapados en él.",
+        "Inspiración como puente entre el dolor reconocido y el movimiento de esperanza.",
+        "<strong>Escucha profunda de lo esencial:</strong> el anhelo y el papel que quieres encarnar.",
+        "<strong>Acción posible:</strong> definir un paso concreto que siembre dirección, no exigencia."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "esperanza-activa",
+      "title": "La Esperanza Activa es una esperanza con los pies en la tierra",
+      "paragraphs": [
+        "Los 7 pasos son una adaptación breve y accesible inspirada en la Espiral del Trabajo que Reconecta, desarrollada por Joanna Macy, ecofilósofa, activista y referente internacional en ecología profunda, teoría de sistemas y prácticas de transformación social, y profundizada, entre otros autores, junto con Chris Johnstone en el marco de la Esperanza Activa.",
+        "Este proceso propone reconectar con aquello que tiene valor, dar espacio al dolor y a la preocupación, ampliar la perspectiva y orientarse hacia una respuesta posible.",
+        "En estos cuatro recorridos hemos convertido esta espiral en **siete frases sencillas** que puedes explorar desde tu propia experiencia y aplicar a una preocupación concreta."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿Cuánto dura y cómo se hace?",
+          "<p>Son 7 pasos con 3 audios.</p><ul class=\"ticks\"><li>Un primer audio de unos 3 o 5 minutos que da contexto y orienta la práctica.</li><li>Una “meditación” guiada por paso (aprox. 15’) que permite profundizar en la experiencia.</li><li>Un espacio de reflexión personal, que puede ser un pequeño paseo o quedarte el rato que dura un café reflexionando sobre lo que has experimentado.</li><li>Y un audio de cierre para integrar la experiencia.</li></ul><p>Lo puedes hacer en 7 días o a tu ritmo.</p>"
+        ],
+        [
+          "¿Tengo que tener experiencia en meditación?",
+          "<p>No. Las prácticas están planteadas para que sean accesibles y progresivas.</p>"
+        ],
+        [
+          "¿Qué pasa cuando termino?",
+          "<p>El cierre del curso abre la puerta a continuar el camino en comunidad o con procesos más amplios, si lo quieres.</p>"
+        ],
+        [
+          "¿Qué pasa después del ciclo?",
+          "<p>Cerramos con pasos pequeños y concretos y con la idea de continuidad: redes de apoyo y compromiso compartido.</p>"
+        ],
+        [
+          "¿Es terapia?",
+          "<p>No. Es un mini-curso vivencial de prácticas y reflexión.</p><p>Puede ayudar mucho, pero no sustituye la psicoterapia si estás en un momento clínicamente delicado.</p>"
+        ],
+        [
+          "¿Es realmente gratuito?",
+          "<p>Sí: el acceso al minicurso es gratuito. Solo tienes que darte de alta como usuario en nuestra plataforma.</p><p>Tendremos tus datos para futuras comunicaciones, pero siempre podrás darte de baja si así lo deseas.</p>"
+        ],
+        [
+          "¿Qué quiere decir “esperanza activa”?",
+          "<p>Es el resultado de este recorrido: transformar dolor e incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.</p>"
+        ],
+        [
+          "¿Y si me preocupa “desbordarme” emocionalmente durante el curso?",
+          "<p>Es una preocupación habitual. El ciclo está planteado como un espacio seguro y respetuoso, donde tú marcas el ritmo: puedes parar, respirar o dejarlo si lo necesitas.</p><p>Si estás en un momento especialmente sensible, nos lo puedes comentar antes y lo valoramos juntos para asegurar que sea el entorno adecuado para ti.</p>"
+        ]
+      ]
+    }
+  ]
+}

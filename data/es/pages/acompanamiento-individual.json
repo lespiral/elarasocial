@@ -1,0 +1,147 @@
+{
+  "ca": "acompanyament-individual",
+  "title": "Acompañamiento individual",
+  "metafora": {"name": "costat", "text": "Alguien que camina a tu lado, a tu ritmo, mientras la niebla se levanta."},
+  "kicker": "A tu lado y a tu ritmo",
+  "lead": "Del malestar a la acción con sentido",
+  "description": "Del malestar a la acción con sentido",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "El paso hacia una vida con más coherencia no tienes que darlo en soledad.",
+        "Te ofrecemos **un espacio de mentoría individual, online o presencial**, para detenerte y aterrizar el proceso de cambio en tu realidad.",
+        "Un refugio donde aprender a sostener las emociones difíciles del día a día y trazar una hoja de ruta para **transformar la incertidumbre en acción con sentido**."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripción",
+          "href": "#inscripcion"
+        },
+        {
+          "text": "Contacta con nosotros",
+          "href": "contacto"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "info",
+      "id": "datos",
+      "title": "Sesiones 1 a 1",
+      "paragraphs": [
+        "Horas convenidas.",
+        "Sesiones de 1 hora: 60 € precio reducido / 70 € precio estándar / 80 € precio sostenedor.",
+        "Sesiones de 1,5 horas: 90 € precio reducido / 110 € precio estándar / 120 € precio sostenedor."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Qué te llevarás",
+      "list": [
+        "<strong>Claridad y dirección:</strong> poner nombre a lo que estás viviendo y entender qué te pide el momento actual.",
+        "<strong>Herramientas reales para el día a día:</strong> prácticas sencillas para regularte, reconectar y recuperar el centro cuando hay desbordamiento.",
+        "<strong>Capacidad de sostener emociones difíciles:</strong> miedo, rabia, tristeza, impotencia o bloqueo… sin quedarte atrapada/o.",
+        "<strong>Transformación del malestar en acción con sentido:</strong> pasos concretos alineados con tus valores, sin autoexigencia destructiva.",
+        "<strong>Un plan de compromiso y autocuidado sostenible:</strong> implicarte con el mundo (o con tu vida) sin quemarte.",
+        "<strong>Un espacio seguro y confidencial:</strong> escucha profunda, ritmo respetuoso y acompañamiento honesto."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "En qué trabajaremos (adaptado a ti)",
+      "list": [
+        "<strong>Integrar las prácticas de El Trabajo que Reconecta en la vida cotidiana:</strong> llevarlas más allá de la reflexión teórica para que se conviertan en herramientas vivas que fortalecen tu resiliencia y tu sentido de propósito.",
+        "<strong>Sostener emociones difíciles y transformarlas en acción significativa:</strong> aprender a mirarlas con compasión, escucharlas como mensajes y convertirlas en energía útil para tu camino personal y colectivo.",
+        "<strong>Diseñar tu propio plan de compromiso y autocuidado para el cambio:</strong> alinear lo que haces con lo que valoras, de una manera sostenible y respetuosa contigo, para que puedas implicarte sin perder el equilibrio interior."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "list": [
+        "<strong>Mapa de tu momento vital:</strong> qué está pasando, qué pesa, qué pide atención.",
+        "<strong>Prácticas breves de regulación y presencia:</strong> volver al cuerpo, al centro y a la capacidad de elegir.",
+        "<strong>Gratitud como recurso de arraigo:</strong> no como positivismo, sino como base de seguridad interna.",
+        "<strong>Honrar el dolor por el mundo (y el propio):</strong> darle lugar sin quedarte atrapada/o.",
+        "<strong>Ver con nuevos ojos:</strong> identidad, interdependencia, mirada sistémica y ampliación de perspectiva.",
+        "<strong>Pasar a la acción:</strong> decidir un paso posible y realista, y sostenerlo en el tiempo.",
+        "<strong>Integración entre sesiones:</strong> microprácticas, preguntas guía y una línea de acción concreta por semana/quincena."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "por-que",
+      "kicker": "para recuperar la capacidad de sostener la realidad sin romperse",
+      "paragraphs": [
+        "Hay momentos en los que la información no es el problema.",
+        "Lo que pesa es la carga emocional, la sensación de ir sola/o, la fatiga de aguantarlo todo, o el vacío de no saber cómo continuar.",
+        "Las mentorías individuales son un espacio para **recuperar tu capacidad de sostener la realidad sin romperte**, y transformar la reacción (bloqueo, prisa, autoexigencia, desesperanza) en un proceso que te dé estructura, sentido y dirección.",
+        "**No buscamos “arreglarte”.** Buscamos que puedas volver a ti, escuchar qué es esencial y avanzar con pasos que respeten tu vida: tu cuerpo, tus relaciones y tus límites."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "intro": "Si tienes dudas sobre si este acompañamiento es para ti, aquí tienes respuestas rápidas. Si quieres, escríbenos y te orientamos.",
+      "items": [
+        [
+          "¿A quién va dirigido?",
+          "<p>A personas que quieren un proceso profundo y práctico para integrar El Trabajo que Reconecta, sostener emociones difíciles y orientarse hacia una acción alineada con sus valores. No hace falta experiencia previa.</p>"
+        ],
+        [
+          "¿Es terapia?",
+          "<p>Es un acompañamiento de mentoría vivencial basado en prácticas, reflexión e integración. Si buscas psicoterapia clínica por un diagnóstico específico, te podemos orientar o derivar según el caso.</p>"
+        ],
+        [
+          "¿Online funciona igual que presencial?",
+          "<p>Sí. Online permite mucha continuidad y profundidad. Presencial puede ayudar especialmente si necesitas más contención corporal y un espacio físico de calma.</p>"
+        ],
+        [
+          "¿Qué frecuencia recomendáis?",
+          "<p>Habitualmente quincenal (si es sostenible) o semanal (cuando hay mucha intensidad o un momento clave). Lo decidimos juntas.</p>"
+        ],
+        [
+          "¿Qué pasa entre sesiones?",
+          "<p>Te propondré microprácticas y un paso de integración realista.</p><p>La idea es que el proceso tenga impacto, no que se quede solo en conversación.</p>"
+        ],
+        [
+          "¿Puedo hacer mentorías si estoy muy desbordada/o?",
+          "<p>Sí, pero empezaremos por regular, estabilizar y dar estructura.</p><p>Si detectamos que hace falta un apoyo clínico específico, te lo diré con claridad.</p>"
+        ],
+        [
+          "¿Es confidencial?",
+          "<p>Sí. Todo el proceso es confidencial.</p>"
+        ],
+        [
+          "¿Y si me preocupa “desbordarme” emocionalmente durante la sesión?",
+          "<p>Es una preocupación habitual. Las mentorías están planteadas como un espacio seguro y respetuoso, donde tú marcas el ritmo.</p><p>Trabajamos recursos de autocuidado y estabilización para que las emociones difíciles puedan ser escuchadas sin quedarnos atrapados en ellas.</p><p>Si estás en un momento especialmente sensible, nos lo puedes comentar antes y lo valoramos juntos para asegurar que sea el entorno adecuado para ti.</p>"
+        ],
+        [
+          "¿Por qué tres precios? (Reducido / Estándar / Sostenedor)",
+          "<p>En Elara Social trabajamos con un sistema de contribución consciente para que el acceso a nuestros servicios no dependa solo de la situación económica de cada persona. El precio reducido facilita que pueda participar quien ahora mismo tiene menos margen. El precio estándar cubre el coste real de la actividad (tiempo de preparación, facilitación, materiales y espacio). Y el precio sostenedor ayuda a mantener vivo el proyecto y a compensar las plazas reducidas.</p><p>Cuando el precio sostenedor genera excedentes, los destinamos a proyectos e iniciativas alineadas con nuestro propósito, misión y valores, reforzando el trabajo comunitario y el impacto social del proyecto.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcion",
+      "title": "Inscripción",
+      "forms": [
+        {
+          "label": "Acompañamiento individual",
+          "form": "1FAIpQLSc1T4EkW3Jt6dXAM-3XdGsBFy1JJvJuIjw0Gpz7JiG9XjBMSg",
+          "height": 8076
+        }
+      ]
+    }
+  ]
+}

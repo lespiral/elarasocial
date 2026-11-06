@@ -1,0 +1,137 @@
+{
+  "ca": "cercles-de-paraula-per-a-gestionar-conflictes",
+  "title": "Círculos de palabra",
+  "metafora": {"name": "paraula", "text": "Cuando la palabra circula con orden, la tensión puede ponerse en palabras sin que escale."},
+  "kicker": "Propuestas",
+  "lead": "(para transformar conflictos)",
+  "description": "(para transformar conflictos)",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "A veces, cuando en un equipo hay fricción, lo que falta no es voluntad: **falta un contenedor**. Un espacio donde hablar sin interrumpirnos, sin escalar el conflicto y sin quedar atrapados en “quién tiene razón”.",
+        "Este programa es un taller práctico para grupos y organizaciones que quieren incorporar la estructura de los Círculos de palabra como **una herramienta operativa** para abordar conversaciones difíciles con más seguridad, equidad y eficacia.",
+        "Durante cuatro sesiones, tejeremos un marco de diálogo seguro para que el equipo pueda:"
+      ],
+      "buttons": [
+        {
+          "text": "¿Quieres que adaptemos el programa a tu equipo?",
+          "href": "#inscripcion"
+        },
+        {
+          "text": "Contacta con nosotros",
+          "href": "contacto"
+        }
+      ],
+      "list": [
+        "escuchar con más precisión qué está pasando,",
+        "expresar impactos y necesidades sin atacar,",
+        "y generar acuerdos y seguimiento sin dejar a nadie fuera."
+      ],
+      "after": [
+        "Tiempo de calidad para reordenar lo que está tenso y convertirlo en una manera de trabajar más madura y sostenible."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Qué te llevarás del programa",
+      "paragraphs": [
+        "En este espacio tendremos el tiempo necesario para detenernos y entender qué hay debajo del conflicto: intereses, necesidades, miedos, malentendidos y dinámicas que se han ido cronificando.",
+        "Trabajaremos con la estructura de los Círculos como **metodología de conversación segura**: un marco que combina ritmo, equidad y responsabilidad compartida para facilitar diálogos que, en una reunión convencional, suelen escalar o quedarse atascados.",
+        "El objetivo es que el equipo **recupere claridad operativa** y salga con:"
+      ],
+      "list": [
+        "un protocolo aplicable para conversaciones difíciles,",
+        "y pasos concretos para sostener acuerdos y prevenir futuras escaladas."
+      ],
+      "after": []
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Exploraremos…",
+      "infografia": "rotllana",
+      "variant": "conflictes",
+      "list": [
+        "<strong>Qué es un Círculo y qué no es:</strong> diferencias con un debate, una reunión, la mediación clásica o “ponerlo sobre la mesa”.",
+        "<strong>Los 5 elementos que crean seguridad:</strong> apertura/cierre (ceremonia), pautas, objeto de palabra, rol de custodia (keeper) y consenso/decisión (cuando hace falta).",
+        "<strong>Del “quién tiene razón” al impacto real:</strong> cómo pasar de posiciones a experiencias, necesidades y responsabilidades.",
+        "<strong>Consenso habitable:</strong> cómo llegar a acuerdos que todo el mundo pueda sostener (y cómo evitar la presión silenciosa).",
+        "<strong>Confidencialidad y límites:</strong> qué se puede prometer y qué no; cómo proteger el espacio en contextos laborales.",
+        "<strong>Seguimiento:</strong> cómo revisar acuerdos, ajustarlos y consolidar cambios (sin que el Círculo se quede en “una conversación bonita”)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "list": [
+        "Círculos guiados con preguntas concretas para conflictos de equipo (roles, carga, comunicación, confianza).",
+        "Dinámicas de check-in / check-out para bajar la reactividad y aumentar la presencia.",
+        "Entrenamiento de escucha profunda y habla en primera persona (sin interrupciones ni “ping-pong”).",
+        "Simulaciones de situaciones reales (casos típicos de empresa) con feedback estructurado.",
+        "<strong>Diseño de vuestro protocolo interno:</strong> guion de apertura, pautas, preguntas, cierre y seguimiento.",
+        "Recursos para sostener emociones difíciles en el ámbito laboral (tensión, rabia, frustración) sin perder la profesionalidad."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "intro": "Si tenéis dudas sobre si este taller es para vosotros, aquí tenéis respuestas rápidas. Si queréis, escribidnos y os orientamos.",
+      "items": [
+        [
+          "¿Este programa es para nosotros si ahora mismo hay un conflicto abierto?",
+          "<p>Puede serlo. El taller está pensado como un lugar seguro y estructurado para abordar conversaciones difíciles sin que escalen.</p><p>Ahora bien, si hay una situación especialmente delicada (acoso, procesos disciplinarios en curso, riesgo legal o emocional elevado), lo valoramos antes para asegurar el formato adecuado y los límites necesarios.</p>"
+        ],
+        [
+          "¿Hace falta experiencia previa en facilitación, comunicación no violenta o trabajo grupal?",
+          "<p>No. El programa es accesible y progresivo.</p><p>Empezamos por la estructura básica del Círculo y avanzamos hacia la práctica aplicada.</p>"
+        ],
+        [
+          "¿Cómo se trabaja la confidencialidad?",
+          "<p>Definimos pautas claras: qué queda dentro del Círculo, qué puede salir de él y con qué acuerdo.</p><p>También delimitamos qué pasa con la información sensible y qué temas requieren canales formales.</p>"
+        ],
+        [
+          "¿Qué pasa entre sesiones?",
+          "<p>Entre sesiones proponemos micro-prácticas cortas (5–10’) y observación de dinámicas (sin exposición personal), para que lo que se aprende en el taller empiece a incorporarse al día a día.</p>"
+        ],
+        [
+          "¿Esto es mediación? ¿Es terapia de equipo?",
+          "<p>No. Es un taller formativo y vivencial para que la organización aprenda una metodología de conversación segura.</p><p>Puede ser transformador, pero no sustituye procesos específicos cuando hacen falta (mediación formal, RR. HH., asesoramiento legal o intervención clínica).</p>"
+        ],
+        [
+          "¿Tendremos que hablar de cosas personales delante de todo el mundo?",
+          "<p>No es obligatorio.</p><p>El Círculo da espacio para que cada persona participe con el nivel de palabra que le resulte adecuado.</p><p>Trabajamos con experiencias de trabajo e impactos reales, pero respetando límites y confidencialidad.</p>"
+        ],
+        [
+          "¿Cuántos participantes son recomendables?",
+          "<p>Idealmente es mejor no pasar de 20 participantes (aunque dependerá de la complejidad y el tiempo disponible).</p><p>Si el equipo es más grande, proponemos un formato con subgrupos o una edición escalonada.</p>"
+        ],
+        [
+          "¿Qué pasa después del taller?",
+          "<p>Cerramos con un protocolo de uso interno (guion + pautas + preguntas + seguimiento) y con recomendaciones sobre cuándo convocar Círculos y cuándo no.</p><p>Opcionalmente, se puede añadir una sesión de seguimiento al cabo de 4–6 semanas.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcion",
+      "title": "Inscripción",
+      "forms": [
+        {
+          "label": "¿Quieres que adaptemos el programa a tu equipo?",
+          "form": "1FAIpQLSf0g4uwTP2W2wm8L-oOBTIvd6ExvZUg6U34bKEjazzF7iDF4w",
+          "height": 3300
+        }
+      ],
+      "paragraphs": [
+        "Explícanos brevemente el contexto y te proponemos una versión a medida."
+      ]
+    }
+  ]
+}

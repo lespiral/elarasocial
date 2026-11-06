@@ -1,0 +1,136 @@
+{
+  "ca": "un-pont-desperanca-2",
+  "title": "Un puente de Esperanza",
+  "metafora": {"name": "pont", "text": "Dos días para tender un puente entre lo que nos pesa y lo que podemos hacer."},
+  "kicker": "Un paréntesis para reconectar desde la raíz",
+  "lead": "Un espacio de inmersión para reconectar con la vida y transformar el dolor en fuerza compartida.",
+  "description": "Un espacio de inmersión para reconectar con la vida y transformar el dolor en fuerza compartida.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "A veces, para metabolizar todo aquello que nos atraviesa, necesitamos una pausa más larga.",
+        "Este taller de fin de semana es **un espacio de inmersión** para reconectar con la vida y transformar el dolor en fuerza compartida.",
+        "Durante dos días, tejeremos un lugar seguro para trabajar con calma tanto las crisis personales (el estrés, la incertidumbre vital) como el agotamiento que nos generan los grandes retos globales.",
+        "Tiempo de calidad para encontrar, en comunidad, **formas concretas de acción y compromiso**."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripción",
+          "href": "#inscripcion"
+        },
+        {
+          "text": "Contacta con nosotros",
+          "href": "contacto"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "info",
+      "id": "datos",
+      "title": "2 sesiones de 6 horas (sábado y domingo)",
+      "paragraphs": [
+        "Máx. 16 participantes.",
+        "92 € precio reducido / 135 € precio estándar / 179 € precio sostenedor."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Qué te llevarás del ciclo",
+      "infografia": "espiral",
+      "variant": "pont",
+      "paragraphs": [
+        "En este espacio tendremos el tiempo necesario para detenernos y conectar a fondo con aquello que realmente nos importa.",
+        "Trabajaremos desde el marco del Trabajo que Reconecta, recorriendo la famosa espiral de Joanna Macy (Gratitud, Honrar el dolor, Ver con nuevos ojos y Pasar a la acción).",
+        "Un camino compartido de autocuidado y red para aprender a sostener las emociones difíciles ante la incertidumbre.",
+        "El objetivo es que recuperes la claridad y salgas de aquí con **la fuerza interior y los pasos concretos** para sostenerte en el tiempo."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Exploraremos…",
+      "list": [
+        "<strong>La Espiral del TqR:</strong> Gratitud → Honrar el dolor → Ver con nuevos ojos → Pasar a la acción.",
+        "<strong>La gratitud como raíz:</strong> aquello que nos sostiene (personas, recursos internos, naturaleza).",
+        "<strong>El sentido del dolor por el mundo:</strong> emociones difíciles (tristeza, miedo, rabia) como expresión de vínculo con la vida.",
+        "<strong>Del “yo separado” al “yo comunitario”:</strong> mirada sistémica y pertenencia al tejido de la vida.",
+        "<strong>Cómo cerrar con pequeños pasos:</strong> propósito vital, continuidad y redes de apoyo."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "list": [
+        "Meditaciones guiadas y momentos de aterrizaje para conectar con el cuerpo y el presente.",
+        "Dinámicas de introspección para poner nombre a lo que nos pasa y ordenarlo por dentro.",
+        "Diálogo profundo y escucha mutua, con participación a tu ritmo (sin obligación de compartir).",
+        "Recursos de autocuidado y estabilidad interna para sostener emociones difíciles.",
+        "Prácticas inspiradas en la naturaleza y la sabiduría colectiva (mirada sistémica).",
+        "Un cierre de integración con pasos concretos (continuidad y compromiso compartido)."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "intro": "Si tienes dudas sobre si este taller es para ti, aquí tienes respuestas rápidas. Si quieres, escríbenos y te orientamos.",
+      "items": [
+        [
+          "¿Este taller es para mí si estoy pasando un momento difícil?",
+          "<p>Puede serlo. El ciclo está pensado como un lugar seguro para explorar emociones difíciles y fortalecer la resiliencia y el autocuidado.</p><p>Tú marcas el ritmo y escoges qué compartir.</p><p>Si estás en una crisis aguda, es mejor valorarlo antes para asegurar el apoyo adecuado.</p><p>Consúltanos. En nuestro equipo hay profesionales de la psicoterapia y te podemos ayudar a valorarlo.</p>"
+        ],
+        [
+          "¿Hace falta experiencia previa en atención plena o trabajo grupal?",
+          "<p>No. Utilizamos prácticas guiadas y dinámicas accesibles.</p>"
+        ],
+        [
+          "¿De qué hablaremos exactamente?",
+          "<p>De crisis personales (angustia por el futuro, estrés laboral, dificultades de vivienda…) y también de crisis globales (polarización, discursos de odio, cambio climático…).</p>"
+        ],
+        [
+          "¿Qué pasa después del taller?",
+          "<p>Cerramos con pasos pequeños y concretos y con la idea de continuidad: redes de apoyo y compromiso compartido.</p>"
+        ],
+        [
+          "¿Es terapia?",
+          "<p>No. Es un taller vivencial y comunitario.</p><p>Puede ser transformador, pero no sustituye un proceso terapéutico individual cuando hace falta.</p>"
+        ],
+        [
+          "¿Tendré que hablar delante de todo el mundo?",
+          "<p>No es obligatorio.</p><p>Puedes participar con más o menos palabra según el momento; el entorno está pensado para que sea seguro.</p>"
+        ],
+        [
+          "¿Qué quiere decir “esperanza activa”?",
+          "<p>Es el resultado de este recorrido: transformar dolor e incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.</p>"
+        ],
+        [
+          "¿Y si me preocupa “desbordarme” emocionalmente durante el ciclo?",
+          "<p>Es una preocupación habitual. El ciclo está planteado como un espacio seguro y respetuoso, donde tú marcas el ritmo: puedes parar, respirar, no compartir o salir un momento si lo necesitas.</p><p>Trabajamos recursos de autocuidado y estabilización para que las emociones difíciles puedan ser escuchadas sin quedarnos atrapados en ellas. Si estás en un momento especialmente sensible, nos lo puedes comentar antes y lo valoramos juntos para asegurar que sea el entorno adecuado para ti.</p>"
+        ],
+        [
+          "¿Por qué tres precios? (Reducido / Estándar / Sostenedor)",
+          "<p>En Elara Social trabajamos con un sistema de contribución consciente para que el acceso al taller no dependa solo de la situación económica de cada persona. El precio reducido facilita que pueda participar quien ahora mismo tiene menos margen. El precio estándar cubre el coste real de la actividad (tiempo de preparación, facilitación, materiales y espacio). Y el precio sostenedor ayuda a mantener vivo el proyecto y a compensar las plazas reducidas.</p><p>Cuando el precio sostenedor genera excedentes, los destinamos a proyectos e iniciativas alineadas con nuestro propósito, misión y valores, reforzando el trabajo comunitario y el impacto social del proyecto.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcion",
+      "title": "Inscripción",
+      "forms": [
+        {
+          "label": "Un puente de Esperanza",
+          "form": "1FAIpQLSekA0YK4xxoeJtL4K2PwCnYHdusIWyj1Vqj4Bt-tDiBIRdKgg",
+          "height": 3000
+        }
+      ]
+    }
+  ]
+}

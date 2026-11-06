@@ -1,0 +1,154 @@
+{
+  "ca": "cercles-per-sostenir-organitzacions-i-col·lectius",
+  "title": "Círculos de palabra",
+  "metafora": {"name": "sostenir", "text": "Un círculo de equipo que sostiene lo que pesa y vuelve a poner en pie el proyecto."},
+  "kicker": "Propuestas",
+  "lead": "Para sostener organizaciones y colectivos",
+  "description": "Para sostener organizaciones y colectivos",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "Cuando una organización trabaja con causas exigentes como la crisis climática, la precariedad, la vivienda, la salud comunitaria o los derechos sociales, la presión no es solo externa.",
+        "También entra dentro: ritmos, prioridades, discrepancias estratégicas, carga emocional, cansancio y conflictos que se acumulan.",
+        "Este programa es un taller práctico en 4 sesiones (2 h cada una) para que vuestro equipo aprenda **la estructura de los Círculos de palabra**: una metodología sencilla y potente para tener conversaciones difíciles sin que escalen, cuidar el vínculo y llegar a acuerdos sostenibles.",
+        "No es un espacio para “ganar” debates. Es un contenedor para **hablar con verdad, escuchar con respeto** y traducir lo que emerge en pasos concretos."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripción",
+          "href": "#inscripcion"
+        },
+        {
+          "text": "Contacta con nosotros",
+          "href": "contacto"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Qué te llevarás del programa",
+      "paragraphs": [
+        "Este taller os da **un marco replicable** para sostener conversaciones que a menudo se quedan atascadas en polarización, silencios o tensión. En lugar de quedaros con “hemos hablado mucho pero no avanzamos”, desarrollaréis una estructura que ayuda a:"
+      ],
+      "list": [
+        "bajar la reactividad y recuperar presencia en momentos de tensión",
+        "distinguir posiciones de necesidades y valores",
+        "abordar el desacuerdo sin romper el vínculo",
+        "tomar decisiones con un consenso habitable (cuando hace falta)",
+        "crear acuerdos concretos y un seguimiento realista",
+        "prevenir el desgaste y el burnout comunitario con espacios de cuidado colectivo"
+      ],
+      "after": [
+        "El resultado es doble: mejora la calidad humana (vínculo, confianza) y también la calidad operativa (decisiones, coordinación, acción)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Exploraremos…",
+      "infografia": "rotllana",
+      "variant": "sostenir",
+      "list": [
+        "<strong>Qué es un Círculo (y qué no es):</strong> diferencia entre asamblea, debate, reunión, mediación y Círculo.",
+        "<strong>Los 5 elementos que crean seguridad:</strong> apertura y cierre, pautas, objeto de palabra, custodia (keeper) y consenso/decisión.",
+        "<strong>Del “quién tiene razón” al “qué nos está pasando”:</strong> pasar de posiciones a impactos, necesidades, valores y responsabilidades.",
+        "<strong>Consenso sin presión silenciosa:</strong> cómo dar lugar a las voces minoritarias y evitar consensos “por cansancio”.",
+        "<strong>Confidencialidad y límites en colectivos:</strong> cómo proteger el espacio y a la vez mantener la transparencia y la coherencia organizativa.",
+        "<strong>Cuándo un Círculo es adecuado y cuándo no:</strong> criterios de conveniencia, riesgos y alternativas."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "list": [
+        "<strong>Círculos guiados aplicados a situaciones reales:</strong> tensiones por la estrategia, el reparto de tareas, los liderazgos, los ritmos, conflictos interpersonales, fatiga y desconexión.",
+        "Check-in / check-out para sostener al grupo cuando hay intensidad emocional.",
+        "Habla en primera persona y escucha profunda (sin interrupciones ni “ping-pong”).",
+        "Diseño de preguntas que abren la comprensión y reducen la polarización.",
+        "<strong>Simulaciones con feedback:</strong> cómo abrir, sostener y cerrar un Círculo.",
+        "<strong>Creación de vuestro protocolo interno:</strong> guion de apertura, pautas, rondas, criterios y seguimiento."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "intro": "Si tenéis dudas sobre si este taller es para vosotros, aquí tenéis respuestas rápidas. Si queréis, escribidnos y os orientamos.",
+      "items": [
+        [
+          "¿Esto sustituye a una asamblea?",
+          "<p>No. Un Círculo puede complementar una asamblea. De hecho, muchas organizaciones utilizan Círculos para:</p><ul class=\"ticks\"><li>preparar conversaciones difíciles antes de una asamblea,</li><li>desbloquear polarizaciones,</li><li>hacer seguimiento de acuerdos,</li><li>o cuidar el clima relacional de la organización.</li></ul>"
+        ],
+        [
+          "¿Hace falta experiencia previa en facilitación, comunicación no violenta o trabajo grupal?",
+          "<p>No. El programa es accesible y progresivo.</p><p>Empezamos por la estructura básica del Círculo y avanzamos hacia la práctica aplicada.</p>"
+        ],
+        [
+          "¿Y si hay un conflicto muy intenso o una situación delicada?",
+          "<p>Lo valoramos antes. Hay casos en los que hace falta un formato diferente (mediación formal, protocolos de cuidados, procesos restaurativos específicos). El taller puede ayudar mucho, pero no es la herramienta para todo.</p>"
+        ],
+        [
+          "¿Nos hará perder tiempo de acción?",
+          "<p>A menudo pasa lo contrario: cuando el grupo no tiene un contenedor, se pierde tiempo en tensión, malentendidos y reuniones improductivas.</p><p>El Círculo ayuda a recuperar claridad y a hacer acuerdos implementables.</p><p>Y, además, sostiene el clima humano que permite continuar.</p>"
+        ],
+        [
+          "¿Este taller es “terapia de grupo”?",
+          "<p>No. Es un programa formativo y vivencial para aprender una metodología de conversación segura.</p><p>Puede abrir emociones y necesidades (porque eso es humano), pero el objetivo es dotar al colectivo de una estructura operativa para dialogar y decidir mejor.</p>"
+        ],
+        [
+          "¿Tendremos que hablar de cosas personales delante de todo el mundo?",
+          "<p>No es obligatorio.</p><p>El Círculo da espacio para que cada persona participe con el nivel de palabra que le resulte adecuado.</p><p>Trabajamos con experiencias de trabajo e impactos reales, pero respetando límites y confidencialidad.</p>"
+        ],
+        [
+          "¿Cuántos participantes son recomendables?",
+          "<p>Idealmente es mejor no pasar de 20 participantes (aunque dependerá de la complejidad y el tiempo disponible).</p><p>Si el equipo es más grande, proponemos un formato con subgrupos o una edición escalonada.</p>"
+        ],
+        [
+          "¿Qué nos llevamos al final?",
+          "<p>Un protocolo interno (guion + pautas + preguntas + criterios de convocatoria + seguimiento) y un mapa claro de cuándo convocar Círculos: para cuidar el vínculo, tomar decisiones, sostener desacuerdos o reorientar la estrategia.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "a-medida",
+      "title": "¿Queréis adaptar el taller a vuestra realidad?",
+      "paragraphs": [
+        "Explicadnos brevemente:"
+      ],
+      "list": [
+        "quiénes sois (cooperativa, asociación, colectivo),",
+        "el tamaño del grupo,",
+        "el tipo de tensiones habituales (estrategia, carga, liderazgo, coordinación, desgaste),",
+        "el formato (presencial/online)."
+      ],
+      "after": [
+        "Y os proponemos una versión a medida."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcion",
+      "title": "Inscripción",
+      "forms": [
+        {
+          "label": "Inscripción al taller",
+          "form": "1FAIpQLSeP-eBuJV7Zz3DBXHulV_9A2SZH2OwUg-5WYTn_anQ7L-WTKw",
+          "height": 2800
+        },
+        {
+          "label": "¿Queréis adaptar el taller a vuestra realidad?",
+          "form": "1FAIpQLSdhTm6t1bP6H4Jpk6Cj7uMww3JIkRixXS1Foqy2WuC192gXlQ",
+          "height": 3300
+        }
+      ]
+    }
+  ]
+}

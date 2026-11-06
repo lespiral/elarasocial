@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "parts.html" import section, button %}
+{% from "parts.html" import section, button with context %}
 {% block content %}
 {# La portada: la capçalera (h.kicker, h.title, h.lead, h.actions) i les seccions de "home" a data/site.json #}
 <section class="hero">

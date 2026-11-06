@@ -3,7 +3,7 @@
 Web estàtica d'Elara Social, feta amb el mateix sistema i el mateix aspecte que la web de Camins d'Esperança [Activa] (repositori `lespiral/esperancaactiva`).
 Es publica amb GitHub Pages des de la carpeta `docs/` al domini `elarasocial.com`.
 
-Estat: publicada a elarasocial.com (GitHub Pages) des del 5 de novembre de 2026, amb tots els textos de la web de WordPress: les pàgines principals, les 8 propostes amb el seu formulari d'inscripció, les 7 passes i els 2 articles.
+Estat: publicada a elarasocial.com (GitHub Pages) des del 5 de novembre de 2026, amb tots els textos de la web de WordPress: les pàgines principals, les 8 propostes amb el seu formulari d'inscripció, les 7 passes i els 2 articles. Des del 6 de novembre de 2026, també en castellà a elarasocial.com/es/ (vegeu «Versió en castellà»).
 
 ## On és cada cosa
 
@@ -15,6 +15,8 @@ Estat: publicada a elarasocial.com (GitHub Pages) des del 5 de novembre de 2026,
 - `src/site.css` i `src/site.js`: l'aspecte (amb els colors d'Elara: blau marí i verd del logo) i el menú del mòbil.
 - `src/img/`: els logos d'Elara Social (de la carpeta de Drive) i el logo conjunt de L'Espiral i Elara Social.
 - `docs/`: la web generada. No s'edita a mà: es torna a generar.
+- `data/es/`: la versió en castellà (vegeu «Versió en castellà»).
+- `tools/restes-catala.py`: busca textos en català que s'hagin quedat a la versió en castellà.
 
 ## Com es fa un canvi
 
@@ -109,6 +111,19 @@ Les de `models/` són les de Camins, tal com són a esperançaactiva.cat (no sur
 
 1. Copia-la a `src/templates/infografies/` i canvia-hi els textos pels de la web d'Elara (les dades de Camins, com les ciutats, no hi són).
 2. Passa-la als colors d'Elara: `python3 tools/colors-elara.py src/templates/infografies/infografia-<nom>.html`. L'estructura passa al blau marí, la natura al verd del logo i els grisos verdosos a grisos blavosos; el groc del sol (`--sol`) es queda com l'únic color càlid.
+
+## Versió en castellà
+
+La web en castellà és a `/es/`, amb les adreces en castellà (`/es/personas/`, `/es/sobre-nosotros/`…). A la capçalera, el selector **CA · ES** porta a la mateixa pàgina en l'altra llengua; cada pàgina diu als cercadors quina és la seva en l'altra llengua (`hreflang`), i el `sitemap.xml` porta les adreces de totes dues.
+
+- `data/es/site.json`: només el que canvia respecte a `data/site.json` (la descripció, el menú amb les adreces en castellà, el peu i la pàgina d'inici). El contacte i la resta són els mateixos.
+- `data/es/pages/<adreça>.json` i `data/es/articles/<adreça>.json`: com les catalanes, però amb el text en castellà i un camp més, `"ca"`, que diu quina és la mateixa pàgina en català (p. ex. `"ca": "persones"` a `personas.json`). Els enllaços d'aquestes pàgines (`href`) porten a les adreces en castellà (`"contacto"`, `"personas/#propuestas"`).
+- `data/es/plantilles.json`: els textos de les plantilles i de les infografies en castellà, en parells `["text en català, tal com és a la plantilla", "text en castellà"]`, per fitxer de `src/templates/`. Les plantilles i les infografies són les mateixes per a les dues llengües: en generar la web en castellà, `build.py` hi canvia aquests textos. Si es canvia un text català d'una plantilla o d'una infografia, `build.py` avisa que també cal canviar-lo aquí (i no genera res fins que hi és).
+- Quan es canvia una pàgina en català, s'ha de canviar també la seva en castellà. Si una pàgina catalana no en té, `build.py` ho avisa i el selector porta a l'inici en castellà.
+- Després de generar la web, `python3 tools/restes-catala.py` diu si a `docs/es/` hi ha quedat algun text en català.
+- **Formularis**: les pàgines en castellà porten còpies en castellà dels formularis de Google, a la mateixa carpeta del Drive (`Elara Social (castellà) - …`), amb els avisos per correu de les respostes noves activats com els originals. Les respostes de cada còpia queden dins del formulari (no van a cap full de càlcul). Les còpies es van fer amb el projecte d'Apps Script «Elara Social - formularis en castellà» del compte lespiral.cat.
+- Camins d'Esperança [Activa] i els cursos de Thinkific de les 7 passes són en català: les pàgines en castellà ho diuen.
+- Al mòbil i fins a 1023 px d'amplada, el menú és el desplegable (amb el selector de llengua al costat); entre 1024 i 1199 px, el menú és una mica més compacte.
 
 ## Publicació
 

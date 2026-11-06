@@ -1,17 +1,17 @@
 {% extends "base.html" %}
-{% from "parts.html" import article_cards %}
+{% from "parts.html" import article_cards with context %}
 {% block content %}
 {# Un article de data/articles/<adreça>.json: "title", "date", "author", "image", "body" (paràgrafs i {"h2": ...} / {"h3": ...}) #}
 <article class="article">
   <header class="pagehead pagehead--center article__head">
     <div class="wrap wrap--narrow">
-      <p class="kicker"><a href="{{ root }}articles/">Articles</a> · <time datetime="{{ article.date }}">{{ article.date_text }}</time></p>
+      <p class="kicker"><a href="{{ root }}{{ articles_slug }}/">Articles</a> · <time datetime="{{ article.date }}">{{ article.date_text }}</time></p>
       <h1>{{ article.title }}</h1>
       <p class="article__meta">{{ article.author }} · {{ (article.words / 200)|round(0, 'ceil')|int }} minuts de lectura</p>
     </div>
   </header>
   {% if article.image %}
-  <figure class="article__image wrap wrap--mid"><img src="{{ root }}assets/img/{{ article.image }}" alt="{{ article.image_alt or '' }}" loading="eager"></figure>
+  <figure class="article__image wrap wrap--mid"><img src="{{ aroot }}assets/img/{{ article.image }}" alt="{{ article.image_alt or '' }}" loading="eager"></figure>
   {% endif %}
   <div class="article__body wrap wrap--narrow">
     {% for b in article.body %}
@@ -28,7 +28,7 @@
   <div class="wrap">
     <h2 class="band__title" id="h-altres">Altres articles</h2>
     {{ article_cards(others, root) }}
-    <p class="block__actions block__actions--center"><a class="btn btn--outline" href="{{ root }}articles/">Tots els articles {{ icon('arrow') }}</a></p>
+    <p class="block__actions block__actions--center"><a class="btn btn--outline" href="{{ root }}{{ articles_slug }}/">Tots els articles {{ icon('arrow') }}</a></p>
   </div>
 </section>
 {% endif %}

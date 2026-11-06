@@ -1,0 +1,137 @@
+{
+  "ca": "grup-regular-de-el-treball-que-reconnecta",
+  "title": "El Trabajo que Reconecta (grupo regular)",
+  "metafora": {"name": "llunes", "text": "Encuentro tras encuentro, como las fases de la luna: un ritmo que vuelve y nos sostiene."},
+  "kicker": "Propuestas",
+  "lead": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+  "description": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "La transformación y el cuidado piden tiempo y constancia.",
+        "Por eso, hemos creado **un grupo regular** con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+        "Este espacio de encuentro continuo es un lugar seguro para ir trabajando, paso a paso, tanto el peso cotidiano (el estrés laboral, la presión de la vivienda o la angustia por tu futuro) como el agotamiento que nos generan las crisis globales (la polarización, la ecoansiedad o los discursos de odio).",
+        "Hacerlo de manera regular nos permite **tejer vínculos profundos** y encontrar formas de acción que podamos mantener a largo plazo."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripción",
+          "href": "#inscripcion"
+        },
+        {
+          "text": "Contacta con nosotros",
+          "href": "contacto"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "info",
+      "id": "datos",
+      "title": "1 sesión de 2 horas al mes o 2 sesiones de 2 horas al mes (mensual o quincenal)",
+      "paragraphs": [
+        "Máx. 16 participantes.",
+        "Mensual (1 sesión al mes): 15 € precio reducido / 22,50 € precio estándar / 30 € precio sostenedor, cada mes.",
+        "Quincenal (2 sesiones al mes): 30 € precio reducido / 45 € precio estándar / 60 € precio sostenedor, cada mes."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Qué te llevarás del ciclo",
+      "infografia": "espiral",
+      "variant": "grup",
+      "paragraphs": [
+        "En lugar de seguir un temario rígido, utilizaremos el Trabajo que Reconecta **como brújula**.",
+        "A partir de las necesidades que laten en el grupo o de propuestas guiadas, dedicaremos cada encuentro a acoger los malestares del día a día, o bien a profundizar en etapas concretas de la Espiral (Gratitud, Honrar el dolor, Ver con nuevos ojos y Pasar a la acción).",
+        "Sesión a sesión, iremos tejiendo un camino compartido de autocuidado, resiliencia y red.",
+        "Trabajaremos recursos vivos para sostener las emociones difíciles y recuperar la claridad ante la incertidumbre. El objetivo no es “llegar al final”, sino que encuentro tras encuentro **cultives la fuerza interior** y la mirada amplia necesarias para sostener tu día a día."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Exploraremos…",
+      "list": [
+        "<strong>El método del TqR:</strong> las cuatro estaciones para transformar la incertidumbre (Gratitud, Dolor, Nuevas Miradas y Acción).",
+        "<strong>La raíz de la Gratitud:</strong> cómo utilizarla como herramienta de resiliencia cuando todo se tambalea.",
+        "<strong>El sentido del malestar:</strong> aprender a mirar de frente las emociones difíciles para transformarlas en fuerza.",
+        "<strong>El salto al \"nosotros\":</strong> herramientas para entender nuestro lugar en el mundo desde la pertenencia y no desde la soledad.",
+        "<strong>El cierre activo:</strong> cómo definir pequeños pasos y propósitos que puedas sostener en tu día a día."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "list": [
+        "<strong>Volver al presente:</strong> meditaciones y pausas de arraigo para conectar con el cuerpo y bajar revoluciones.",
+        "<strong>Clarificación interna:</strong> dinámicas suaves para descifrar, poner nombre y ordenar aquello que nos remueve por dentro.",
+        "<strong>Escucha horizontal:</strong> círculos de diálogo 100 % respetuosos con tu ritmo (tú decides si quieres compartir o solo escuchar).",
+        "<strong>El arte de sostenerse:</strong> recursos prácticos de autocuidado para no rompernos ante la intensidad de las emociones.",
+        "<strong>Conexión sistémica:</strong> ejercicios vivenciales inspirados en los ciclos de la naturaleza y la sabiduría colectiva.",
+        "<strong>La hoja de ruta:</strong> dinámicas de cierre para integrar el proceso y marcharse con pasos concretos para el día siguiente."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "intro": "Si tienes dudas sobre si este espacio es para ti, aquí tienes respuestas rápidas. Si quieres, escríbenos y te orientamos.",
+      "items": [
+        [
+          "¿Este espacio es para mí si estoy pasando un momento difícil?",
+          "<p>Puede serlo. El espacio está pensado como un lugar seguro para explorar emociones difíciles y fortalecer la resiliencia y el autocuidado.</p><p>Tú marcas el ritmo y escoges qué compartir.</p><p>Si estás en una crisis aguda, es mejor valorarlo antes para asegurar el apoyo adecuado.</p><p>Consúltanos. En nuestro equipo hay profesionales de la psicoterapia y te podemos ayudar a valorarlo.</p>"
+        ],
+        [
+          "¿Hace falta experiencia previa en atención plena o trabajo grupal?",
+          "<p>No. Utilizamos prácticas guiadas y dinámicas accesibles.</p>"
+        ],
+        [
+          "¿De qué hablaremos exactamente?",
+          "<p>De crisis personales (angustia por el futuro, estrés laboral, dificultades de vivienda…) y también de crisis globales (polarización, discursos de odio, cambio climático…).</p>"
+        ],
+        [
+          "¿Qué pasa después de cada encuentro?",
+          "<p>Cerramos con pasos pequeños y concretos y con la idea de continuidad: redes de apoyo y compromiso compartido.</p>"
+        ],
+        [
+          "¿Es terapia?",
+          "<p>No. Es un espacio para compartir y tejer red.</p><p>Puede ser un espacio transformador, pero no sustituye un proceso terapéutico individual cuando hace falta.</p>"
+        ],
+        [
+          "¿Tendré que hablar delante de todo el mundo?",
+          "<p>No es obligatorio.</p><p>Puedes participar con más o menos palabra según el momento; el entorno está pensado para que sea seguro.</p>"
+        ],
+        [
+          "¿Qué quiere decir “esperanza activa”?",
+          "<p>Es el resultado de este recorrido: transformar dolor e incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.</p>"
+        ],
+        [
+          "¿Y si me preocupa “desbordarme” emocionalmente durante los encuentros?",
+          "<p>Es una preocupación habitual. Los encuentros están planteados como un espacio seguro y respetuoso, donde tú marcas el ritmo: puedes parar, respirar, no compartir o salir un momento si lo necesitas.</p><p>Trabajamos recursos de autocuidado y estabilización para que las emociones difíciles puedan ser escuchadas sin quedarnos atrapados en ellas. Si estás en un momento especialmente sensible, nos lo puedes comentar antes y lo valoramos juntos para asegurar que sea el entorno adecuado para ti.</p>"
+        ],
+        [
+          "¿Por qué tres precios? (Reducido / Estándar / Sostenedor)",
+          "<p>En Elara Social trabajamos con un sistema de contribución consciente para que el acceso no dependa solo de la situación económica de cada persona. El precio reducido facilita que pueda participar quien ahora mismo tiene menos margen. El precio estándar cubre el coste real de la actividad (tiempo de preparación, facilitación, materiales y espacio). Y el precio sostenedor ayuda a mantener vivo el proyecto y a compensar las plazas reducidas.</p><p>Cuando el precio sostenedor genera excedentes, los destinamos a proyectos e iniciativas alineadas con nuestro propósito, misión y valores, reforzando el trabajo comunitario y el impacto social del proyecto.</p>"
+        ]
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcion",
+      "title": "Inscripción",
+      "forms": [
+        {
+          "label": "El Trabajo que Reconecta (grupo regular)",
+          "form": "1FAIpQLScQD4PfdFAwCxfZn5qs7vs48hAuSoMuzzZsJpZalPCpQQdC_A",
+          "height": 3000
+        }
+      ]
+    }
+  ]
+}

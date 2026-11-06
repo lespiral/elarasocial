@@ -1,0 +1,311 @@
+{
+  "ca": "comunitats",
+  "title": "¿Queréis tejer redes reales en un mundo fragmentado?",
+  "kicker": "Comunidades",
+  "lead": "Creamos espacios de encuentro para compartir recursos, saberes y apoyo mutuo ante los retos ecosociales.",
+  "escena": "cuidar",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "kicker": "la acción tiene que ser colectiva.",
+      "title": "¿Sentís que los retos actuales son demasiado grandes para asumirlos en solitario?",
+      "paragraphs": [
+        "En Elara Social facilitamos lugares de encuentro donde **la preocupación se transforma en vínculo, y el vínculo en capacidad de acción colectiva**.",
+        "Sostener la vida está en el centro de nuestra actividad. Por eso no buscamos soluciones rápidas: construimos vínculos, ritmos y estructura para que la esperanza pueda sostenerse.",
+        "En Elara Social diseñamos y facilitamos espacios seguros donde la vulnerabilidad se transforma en apoyo mutuo, y las ganas de actuar se concretan en **pasos pequeños, compartidos y arraigados en el territorio**.",
+        "Una propuesta pensada para el bienestar individual y la fuerza colectiva."
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Transformamos la preocupación en comunidad, y la comunidad en pasos posibles.",
+      "items": [
+        {
+          "icon": "users-three",
+          "title": "¿Aislamiento en un mundo fragmentado?",
+          "text": "Recuperamos espacios auténticos de encuentro, vínculo y colaboración real.",
+          "href": "#propuestas",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "cloud-rain",
+          "title": "¿Sobrecarga ecosocial?",
+          "text": "Cuando el miedo y la incertidumbre paralizan, el grupo ayuda a sostener y ordenar.",
+          "href": "#propuestas",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "house",
+          "title": "¿Faltan recursos compartidos?",
+          "text": "Si hay ideas pero faltan herramientas, saberes o tribu, hacemos red alrededor de necesidades comunes.",
+          "href": "#propuestas",
+          "button": "Ver opciones"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "title": "Del aislamiento a la acción colectiva.",
+      "before": [
+        "“Ningún reto ecosocial puede resolverse desde la soledad. Las soluciones reales nacen de la interdependencia.”",
+        "En Elara Social facilitamos espacios seguros donde la vulnerabilidad se transforma en motor. Conectamos personas y colectivos para hacer red alrededor de necesidades comunes."
+      ],
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Apoyo mutuo y cuidados",
+          "text": "Generamos redes de confianza donde sostenernos emocional y materialmente ante la incertidumbre del contexto."
+        },
+        {
+          "icon": "headphones",
+          "title": "Intercambio de saberes",
+          "paragraphs": [
+            "Reconocemos que todo el mundo tiene conocimientos valiosos.",
+            "Facilitamos espacios de aprendizaje horizontal y práctico para la transición."
+          ]
+        },
+        {
+          "icon": "tree",
+          "title": "Acción arraigada en el territorio",
+          "text": "Apostamos por alternativas comunitarias que generan un impacto directo en nuestro entorno más cercano y tangible."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "title": "¿Cómo nos organizamos?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un camino en tres paradas: encuentros comunitarios, espacios de recursos y grupos de acción",
+        "inici": [
+          "El aislamiento",
+          "¿Sentís que los retos actuales son demasiado grandes para asumirlos en solitario?"
+        ],
+        "final": [
+          "La acción colectiva",
+          "En Elara Social facilitamos lugares de encuentro donde la preocupación se transforma en vínculo, y el vínculo en capacidad de acción colectiva."
+        ],
+        "icones": [
+          "people",
+          "box",
+          "flag"
+        ]
+      },
+      "before": [
+        "Ofrecemos diferentes formatos de participación adaptados a la energía y la disponibilidad de cada cual, poniendo siempre la comunidad en el centro."
+      ],
+      "items": [
+        {
+          "title": "Encuentros comunitarios",
+          "text": "Espacios de diálogo y conexión para tejer vínculos de confianza entre vecinas y colectivos.",
+          "propostes": [
+            [
+              "La Espiral de la Esperanza Activa",
+              "la-espiral-de-la-esperanza-activa"
+            ],
+            [
+              "Un puente de esperanza comunitaria",
+              "un-puente-de-esperanza"
+            ],
+            [
+              "El Trabajo que Reconecta (grupo regular)",
+              "grupo-regular-de-el-trabajo-que-reconecta"
+            ],
+            [
+              "Círculos de palabra (para sostener colectivos)",
+              "circulos-para-sostener-organizaciones-y-colectivos"
+            ]
+          ]
+        },
+        {
+          "title": "Espacios de recursos",
+          "text": "Una plataforma donde compartir herramientas, estrategias y conocimientos prácticos ecosociales.",
+          "propostes": [
+            [
+              "7 pasos hacia la Esperanza Activa",
+              "7-pasos-hacia-la-esperanza-activa-comunidades"
+            ],
+            [
+              "Camins d'Esperança [Activa]",
+              "https://xn--esperanaactiva-mjb.cat/"
+            ]
+          ]
+        },
+        {
+          "title": "Grupos de acción",
+          "text": "Acompañamiento a grupos de trabajo enfocados a resolver retos concretos del territorio.",
+          "propostes": [
+            [
+              "El Trabajo que Reconecta",
+              "el-trabajo-que-reconecta"
+            ],
+            [
+              "Círculos de palabra (para transformar conflictos)",
+              "circulos-de-palabra-para-gestionar-conflictos"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ],
+            [
+              "Hablemos",
+              "contacto"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "kicker": "¿cuáles son nuestros pilares?",
+      "title": "En un entorno que empuja hacia el individualismo y la competencia, apostamos por la interdependencia humana y los saberes compartidos como motor de resiliencia.",
+      "items": [
+        {
+          "icon": "users-three",
+          "title": "Interdependencia radical",
+          "paragraphs": [
+            "Asumimos que nos necesitamos las unas a las otras.",
+            "Reivindicamos la vulnerabilidad compartida como nuestra mayor fuerza de acción colectiva."
+          ]
+        },
+        {
+          "icon": "globe",
+          "title": "Ecología de saberes",
+          "text": "Valoramos tanto el conocimiento técnico y académico como la sabiduría popular, práctica y la experiencia vivida de cada persona del territorio."
+        },
+        {
+          "icon": "plant",
+          "title": "Resiliencia ecosocial",
+          "paragraphs": [
+            "Construimos alternativas prácticas desde la proximidad.",
+            "Apostamos por modelos de vida y consumo arraigados, justos y sostenibles en el tiempo."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "propuestas",
+      "align": "left",
+      "title": "Ofrecemos espacios e itinerarios de práctica y encuentro para comunidades que quieren reconectar y construir un mundo mejor.",
+      "before": [
+        "Creamos espacios de encuentro que generan vínculos reales: talleres vivenciales, mini-rituales, espacios de debate y reflexión consciente y círculos comunitarios. Objetivo: pasar de la preocupación a la acción compartida."
+      ],
+      "items": [
+        {
+          "title": "7 pasos hacia la Esperanza Activa",
+          "badge": "4 mini-cursos online",
+          "paragraphs": [
+            "Un recorrido breve y profundo para iniciarse en El Trabajo que Reconecta: volver a lo que te sostiene, dar espacio a lo que preocupa, abrir la mirada y aterrizar un paso posible."
+          ],
+          "foot": "Una experiencia que podemos adaptar a la realidad de tu comunidad",
+          "href": "7-pasos-hacia-la-esperanza-activa-comunidades"
+        },
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "badge": "Mini-cursos online",
+          "text": "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por vuestro entorno para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene. (La web está en catalán.)",
+          "foot": "Una experiencia que podemos adaptar a la realidad de tu comunidad",
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Ir a Camins d'Esperança [Activa]"
+        },
+        {
+          "title": "La Espiral de la Esperanza Activa",
+          "meta": [
+            "4 horas",
+            "Máx. 16 participantes"
+          ],
+          "paragraphs": [
+            "Un taller vivencial y seguro para detenernos y dar salida a todo aquello que nos angustia como comunidad.",
+            "Desde el estrés cotidiano hasta la incertidumbre por el futuro global.",
+            "Venimos a reconectar con la vida, a metabolizar el malestar en comunidad y a trazar pasos concretos de esperanza activa."
+          ],
+          "href": "la-espiral-de-la-esperanza-activa"
+        },
+        {
+          "title": "El Trabajo que Reconecta",
+          "meta": [
+            "4 sesiones de 2 horas",
+            "Máx. 16 participantes"
+          ],
+          "text": "Un ciclo para reconectar con la vida, transformar el dolor de la comunidad en fuerza activa y encontrar formas concretas de compromiso personal y comunitario.",
+          "href": "el-trabajo-que-reconecta"
+        },
+        {
+          "title": "Un puente de esperanza comunitaria",
+          "meta": [
+            "2 sesiones de 6 horas (sábado y domingo)",
+            "Máx. 16 participantes"
+          ],
+          "paragraphs": [
+            "Un espacio de inmersión colectiva para reconectar con la vida y transformar el dolor en fuerza compartida.",
+            "Durante dos días, tejeremos con la comunidad un lugar seguro para trabajar con calma tanto las crisis personales (el estrés, la incertidumbre vital) como el malestar que nos generan los grandes retos globales."
+          ],
+          "href": "un-puente-de-esperanza"
+        },
+        {
+          "title": "El Trabajo que Reconecta (Grupo regular)",
+          "meta": [
+            "1 sesión de 2 horas al mes o 2 sesiones de 2 horas al mes (mensual o quincenal)",
+            "Máx. 16 participantes"
+          ],
+          "text": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+          "href": "grupo-regular-de-el-trabajo-que-reconecta"
+        },
+        {
+          "title": "Círculos de palabra",
+          "subtitle": "(para transformar conflictos)",
+          "meta": [
+            "4 sesiones de 2 horas",
+            "Máx. 20 participantes",
+            "Precios por participante o por grupo (consulta opciones)"
+          ],
+          "text": "Un taller práctico para comunidades que quieren incorporar la estructura de los Círculos de palabra como una herramienta operativa para abordar conversaciones difíciles con más seguridad, equidad y eficacia.",
+          "href": "circulos-de-palabra-para-gestionar-conflictos"
+        },
+        {
+          "title": "Círculos de palabra",
+          "subtitle": "(para sostener comunidades)",
+          "meta": [
+            "4 sesiones de 2 horas",
+            "Máx. 20 participantes",
+            "Precios por participante o por grupo (consulta opciones)"
+          ],
+          "text": "Este programa es un taller práctico en 4 sesiones (2 h cada una) para que vuestro equipo aprenda la estructura de los Círculos de palabra: una metodología sencilla y potente para tener conversaciones difíciles sin que escalen, cuidar el vínculo y llegar a acuerdos sostenibles.",
+          "href": "circulos-para-sostener-organizaciones-y-colectivos"
+        },
+        {
+          "title": "Burnout",
+          "subtitle": "Reconectar con la fuerza comunitaria sin quemarse",
+          "meta": [
+            "8 sesiones de 2 horas",
+            "Máx. 20 participantes",
+            "Precios por participante o por grupo (consulta opciones)"
+          ],
+          "text": "Un programa en 8 sesiones para transformar el agotamiento comunitario, la sobrecarga y la culpa en regulación, claridad y límites sostenibles.",
+          "href": "burnout"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "kicker": "¿queréis formar parte de la red?",
+      "paragraphs": [
+        "No esperéis a tener todas las respuestas o un gran proyecto para acercaros. El primer paso es encontrarnos, escucharnos y empezar a caminar juntas.",
+        "Adaptamos nuestra presencia a tu realidad."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos",
+          "href": "contacto"
+        }
+      ]
+    }
+  ]
+}

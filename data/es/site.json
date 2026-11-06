@@ -1,0 +1,201 @@
+{
+  "_": "Versión en castellano (/es/). Solo lo que cambia respecto a data/site.json: el resto (contacto, publicación, reseñas) es el mismo.",
+  "description": "Acompañamos a personas, grupos y comunidades a encontrar sentido, arraigo y dirección en tiempos de crisis ecosocial.",
+  "footer": {
+    "motto": "Cuidamos a las personas. Fortalecemos las comunidades",
+    "text": "La línea de trabajo comunitario de L’Espiral.",
+    "projects": {
+      "title": "Proyectos",
+      "items": [
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "site": "esperançaactiva.cat (en catalán)",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    "legal": [
+      {
+        "title": "Aviso legal",
+        "href": "https://lespiral.cat/aviso-legal/"
+      },
+      {
+        "title": "Política de privacidad",
+        "href": "https://lespiral.cat/politica-de-privacidad/"
+      },
+      {
+        "title": "Política de cookies",
+        "href": "https://lespiral.cat/politica-de-cookies/"
+      },
+      {
+        "title": "Declaración de accesibilidad",
+        "href": "https://lespiral.cat/declaracion-de-accesibilidad/"
+      }
+    ]
+  },
+  "nav": [
+    {
+      "slug": "sobre-nosotros",
+      "title": "Sobre nosotros"
+    },
+    {
+      "slug": "que-hacemos",
+      "title": "Qué hacemos"
+    },
+    {
+      "slug": "personas",
+      "title": "Personas"
+    },
+    {
+      "slug": "comunidades",
+      "title": "Comunidades"
+    },
+    {
+      "slug": "organizaciones",
+      "title": "Organizaciones"
+    },
+    {
+      "slug": "articulos",
+      "title": "Artículos"
+    },
+    {
+      "slug": "contacto",
+      "title": "Contacto"
+    }
+  ],
+  "home": {
+    "title": "Transformamos el malestar en Esperanza Activa",
+    "lead": "Acompañamos a personas, grupos y comunidades a encontrar sentido, arraigo y dirección en tiempos de crisis ecosocial.",
+    "actions": [
+      {
+        "text": "Descubre qué hacemos por ti",
+        "href": "que-hacemos"
+      }
+    ],
+    "sections": [
+      {
+        "type": "infografia",
+        "id": "esperanza-activa",
+        "name": "esperanca-activa"
+      },
+      {
+        "type": "text",
+        "band": "white",
+        "kicker": "La línea de trabajo comunitario de L’Espiral.",
+        "title": "Del proceso personal a la transformación colectiva.",
+        "paragraphs": [
+          "Trabajamos desde la intersección entre:"
+        ],
+        "list": [
+          "Salud mental comunitaria",
+          "Economía Social y Solidaria",
+          "Acción climática y cultura del bien común"
+        ],
+        "after": [
+          "Nuestra mirada integra el proceso personal y la transformación colectiva a través del marco del Trabajo que Reconecta."
+        ]
+      },
+      {
+        "type": "cards",
+        "kicker": "somos el puente entre el malestar interno y la acción colectiva.",
+        "title": "Sostener la vida está en el centro de nuestra actividad.",
+        "before": [
+          "Por eso, vamos más allá de las soluciones rápidas.",
+          "En Elara Social aplicamos metodologías de impacto probado para transformar la inercia de la supervivencia en dinámicas de regeneración.",
+          "Una estrategia diseñada tanto para el bienestar individual como para la salud de las estructuras colectivas."
+        ],
+        "items": [
+          {
+            "icon": "lifebuoy",
+            "title": "Seguridad Sistémica",
+            "text": "Creamos entornos de seguridad donde equipos, colectivos y personas pueden sentirse seguras, compartir su vulnerabilidad y, desde ahí, construir soluciones honestas y transformadoras.",
+            "href": "que-hacemos"
+          },
+          {
+            "icon": "plant",
+            "title": "De la resistencia a la Resiliencia Regenerativa.",
+            "text": "Enseñamos a metabolizar las crisis: procesar el conflicto y la incertidumbre para transformarlos en nuevos recursos de transformación y fortaleza colectiva.",
+            "href": "que-hacemos"
+          },
+          {
+            "icon": "sun",
+            "title": "Cuidamos los Ritmos.",
+            "paragraphs": [
+              "Acompañamos los procesos sin la prisa de la productividad, pero con la constancia de la naturaleza.",
+              "Avanzamos hacia la coherencia, al ritmo que el cuerpo puede sostener."
+            ],
+            "href": "que-hacemos"
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "band": "soft",
+        "align": "left",
+        "id": "trabajamos-con",
+        "kicker": "tanto si..",
+        "before": [
+          "necesitas un espacio individual para ordenar tu momento vital,",
+          "como si formas parte de una organización que quiere cuidar a su equipo,",
+          "o quieres impulsar procesos comunitarios en el territorio,",
+          "en Elara Social encontrarás estructura, metodología y acompañamiento."
+        ],
+        "items": [
+          {
+            "icon": "users-three",
+            "title": "Para personas y grupos",
+            "text": "Espacios para sostener momentos difíciles, elaborar el malestar y recuperar la dirección.",
+            "list": [
+              "Procesos individuales",
+              "Grupos de apoyo y práctica",
+              "Itinerarios de Esperanza Activa"
+            ],
+            "foot": "Objetivo: transformar el bloqueo en acción con sentido.",
+            "href": "personas"
+          },
+          {
+            "icon": "buildings",
+            "title": "Para equipos y organizaciones",
+            "text": "Acompañamos a equipos y entidades que quieren:",
+            "list": [
+              "Prevenir el burnout",
+              "Fortalecer la cohesión interna",
+              "Incorporar una mirada ecosocial",
+              "Desarrollar una cultura del bien común"
+            ],
+            "foot": "Trabajo desde dentro, con metodología participativa.",
+            "href": "organizaciones"
+          },
+          {
+            "icon": "tree",
+            "title": "Para la comunidad",
+            "text": "Creamos espacios de encuentro que generan vínculos reales:",
+            "list": [
+              "Talleres vivenciales",
+              "Mini-rituales",
+              "Espacios de debate y reflexión consciente",
+              "Círculos comunitarios"
+            ],
+            "foot": "Objetivo: pasar de la preocupación compartida a la acción compartida.",
+            "href": "comunidades"
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "band": "white",
+        "kicker": "tejemos una cultura del bien común",
+        "paragraphs": [
+          "Tanto si necesitas arraigo individual como si quieres impulsar una transformación colectiva, en Elara Social encontrarás las herramientas y el acompañamiento para hacerlo realidad.",
+          "Adaptamos nuestra metodología a tu realidad: ya sea para sostener procesos individuales o para fortalecer la salud de un colectivo entero."
+        ],
+        "buttons": [
+          {
+            "text": "Encuentra tu espacio",
+            "href": "contacto"
+          }
+        ]
+      }
+    ]
+  }
+}

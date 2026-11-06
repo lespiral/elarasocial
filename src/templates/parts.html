@@ -30,7 +30,7 @@
 <ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}">
   {% for c in items %}
   <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
-    {% if c.photo %}<span class="card__photo"><img src="{{ root }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
+    {% if c.photo %}<span class="card__photo"><img src="{{ aroot }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
     {% if c.icon %}<span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>{% endif %}
     {% if c.badge %}<span class="card__badge">{{ c.badge }}</span>{% endif %}
     <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>
@@ -54,7 +54,7 @@
   {% for a in list %}
   <li class="post">
     <a class="post__link" href="{{ root }}{{ a.slug }}/">
-      {% if a.image %}<span class="post__img"><img src="{{ root }}assets/img/{{ a.image }}" alt="" loading="lazy"></span>{% endif %}
+      {% if a.image %}<span class="post__img"><img src="{{ aroot }}assets/img/{{ a.image }}" alt="" loading="lazy"></span>{% endif %}
       <span class="post__body">
         <time class="post__date" datetime="{{ a.date }}">{{ a.date_text }}</time>
         <span class="post__title">{{ a.title }}</span>

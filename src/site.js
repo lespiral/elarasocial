@@ -47,7 +47,7 @@
     btn.addEventListener('click', function () {
       var open = bar.classList.toggle('is-open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.setAttribute('aria-label', open ? 'Tanca el menú' : 'Obre el menú');
+      btn.setAttribute('aria-label', open ? (btn.getAttribute('data-label-close') || 'Tanca el menú') : (btn.getAttribute('data-label-open') || 'Obre el menú'));
     });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && bar.classList.contains('is-open')) { btn.click(); btn.focus(); }

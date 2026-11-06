@@ -1,0 +1,1049 @@
+{
+ "_": "Textos de las plantillas y de las infografías en castellano. Cada par es [texto en catalán tal como está en la plantilla, texto en castellano]. Si se cambia el texto catalán de una plantilla, build.py avisa de que hay que cambiarlo aquí también.",
+ "base.html": [
+  [
+   "Salta al contingut",
+   "Saltar al contenido"
+  ],
+  [
+   "aria-label=\"{{ site.name }}, inici\"",
+   "aria-label=\"{{ site.name }}, inicio\""
+  ],
+  [
+   "aria-label=\"Tria la llengua\"",
+   "aria-label=\"Elige el idioma\""
+  ],
+  [
+   "Obre el menú",
+   "Abrir el menú"
+  ],
+  [
+   "Tanca el menú",
+   "Cerrar el menú"
+  ],
+  [
+   "<p class=\"footer__h\">Contacte</p>",
+   "<p class=\"footer__h\">Contacto</p>"
+  ],
+  [
+   "<p class=\"footer__h\">Avís legal</p>",
+   "<p class=\"footer__h\">Aviso legal</p>"
+  ]
+ ],
+ "parts.html": [
+  [
+   "'Saber-ne més'",
+   "'Saber más'"
+  ],
+  [
+   "Llegeix l’article",
+   "Leer el artículo"
+  ],
+  [
+   "title=\"Formulari: {{ f.label }}\"",
+   "title=\"Formulario: {{ f.label }}\""
+  ],
+  [
+   "S'està carregant el formulari…",
+   "Cargando el formulario…"
+  ],
+  [
+   "Obre el formulari en una pestanya nova",
+   "Abrir el formulario en una pestaña nueva"
+  ],
+  [
+   "Escriu-nos",
+   "Escríbenos"
+  ]
+ ],
+ "article.html": [
+  [
+   "/\">Articles</a>",
+   "/\">Artículos</a>"
+  ],
+  [
+   "minuts de lectura",
+   "minutos de lectura"
+  ],
+  [
+   "Altres articles",
+   "Otros artículos"
+  ],
+  [
+   "Tots els articles",
+   "Todos los artículos"
+  ]
+ ],
+ "infografies/infografia-esperanca-activa.html": [
+  [
+   "aria-label=\"El malestar i la incertesa es transformen en claredat, suport i acció significativa, sostinguda per la comunitat\"",
+   "aria-label=\"El malestar y la incertidumbre se transforman en claridad, apoyo y acción significativa, sostenida por la comunidad\""
+  ],
+  [
+   "Toca cada part per saber-ne més.",
+   "Toca cada parte para saber más."
+  ],
+  [
+   "Torna-ho a veure",
+   "Volver a verlo"
+  ],
+  [
+   "\"El malestar i la incertesa\"",
+   "\"El malestar y la incertidumbre\""
+  ],
+  [
+   "\"es transformen en\"",
+   "\"se transforman en\""
+  ],
+  [
+   "\"On comences\"",
+   "\"Dónde empiezas\""
+  ],
+  [
+   "\"El desgast actual no és només individual, és estructural.\"",
+   "\"El desgaste actual no es solo individual, es estructural.\""
+  ],
+  [
+   "\"Claredat\"",
+   "\"Claridad\""
+  ],
+  [
+   "\"Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció.\"",
+   "\"Espacios para sostener momentos difíciles, elaborar el malestar y recuperar la dirección.\""
+  ],
+  [
+   "\"Suport\"",
+   "\"Apoyo\""
+  ],
+  [
+   "\"Generem xarxes de confiança on sostenir-nos emocionalment i materialment davant la incertesa del context.\"",
+   "\"Generamos redes de confianza donde sostenernos emocional y materialmente ante la incertidumbre del contexto.\""
+  ],
+  [
+   "\"Acció\"",
+   "\"Acción\""
+  ],
+  [
+   "\"Acció significativa\"",
+   "\"Acción significativa\""
+  ],
+  [
+   "\"T’acompanyem a fer passos concrets i arrelats a terra ferma, fugint de la immediatesa per construir canvis reals que el teu dia a dia pugui sostenir.\"",
+   "\"Te acompañamos a dar pasos concretos y arraigados en tierra firme, huyendo de la inmediatez para construir cambios reales que tu día a día pueda sostener.\""
+  ],
+  [
+   "\"Esperança Activa\"",
+   "\"Esperanza Activa\""
+  ],
+  [
+   "\"sostinguda per la comunitat\"",
+   "\"sostenida por la comunidad\""
+  ],
+  [
+   "\"Què vol dir «esperança activa»?\"",
+   "\"¿Qué quiere decir «esperanza activa»?\""
+  ],
+  [
+   "\"Transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.\"",
+   "\"Transformar el dolor y la incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.\""
+  ]
+ ],
+ "infografies/infografia-espiral.html": [
+  [
+   "aria-label=\"L'Espiral del Treball que Reconnecta en quatre estacions: gratitud, dolor, noves mirades i acció; i torna a començar\"",
+   "aria-label=\"La Espiral del Trabajo que Reconecta en cuatro estaciones: gratitud, dolor, nuevas miradas y acción; y vuelta a empezar\""
+  ],
+  [
+   "Toca un punt per saber-ne més.",
+   "Toca un punto para saber más."
+  ],
+  [
+   "Torna-ho a veure",
+   "Volver a verlo"
+  ],
+  [
+   "\"El primer pas cap a la resiliència\"",
+   "\"El primer paso hacia la resiliencia\""
+  ],
+  [
+   "\"Entenem la gratitud lluny de l’optimisme naïf; la treballem com un gest radical d’arrelament.\"",
+   "\"Entendemos la gratitud lejos del optimismo naíf; la trabajamos como un gesto radical de arraigo.\""
+  ],
+  [
+   "\"Acollir el que fa mal\"",
+   "\"Acoger lo que duele\""
+  ],
+  [
+   "\"Per poder avançar\"",
+   "\"Para poder avanzar\""
+  ],
+  [
+   "\"Mirem de cara el malestar. Reconeixem la tristesa, la por o el trauma sense maquillar-los.\"",
+   "\"Miramos de frente el malestar. Reconocemos la tristeza, el miedo o el trauma sin maquillarlos.\""
+  ],
+  [
+   "\"Una mirada sistèmica\"",
+   "\"Una mirada sistémica\""
+  ],
+  [
+   "\"Veure amb nous ulls\"",
+   "\"Ver con nuevos ojos\""
+  ],
+  [
+   "\"Ampliem la nostra perspectiva cap a una visió comunitària i sistèmica, trobant la inspiració necessària per construir un futur que puguem sostenir juntes.\"",
+   "\"Ampliamos nuestra perspectiva hacia una visión comunitaria y sistémica, encontrando la inspiración necesaria para construir un futuro que podamos sostener juntas.\""
+  ],
+  [
+   "\"Anar endavant\"",
+   "\"Seguir adelante\""
+  ],
+  [
+   "\"Acció des del vincle\"",
+   "\"Acción desde el vínculo\""
+  ],
+  [
+   "\"Passar a l’acció vol dir sortir al món amb connexió. El pas final és moure’s des d’una relació estable.\"",
+   "\"Pasar a la acción quiere decir salir al mundo con conexión. El paso final es moverse desde una relación estable.\""
+  ],
+  [
+   "\"I torna a començar\"",
+   "\"Y vuelta a empezar\""
+  ],
+  [
+   "\"Al ritme que el cos pot sostenir\"",
+   "\"Al ritmo que el cuerpo puede sostener\""
+  ],
+  [
+   "\"L’Espiral del Treball que Reconnecta\"",
+   "\"La Espiral del Trabajo que Reconecta\""
+  ],
+  [
+   "\"Les quatre estacions per transformar la incertesa: Gratitud, Dolor, Noves Mirades i Acció.\"",
+   "\"Las cuatro estaciones para transformar la incertidumbre: Gratitud, Dolor, Nuevas Miradas y Acción.\""
+  ],
+  [
+   "\"La gratitud com a arrel\"",
+   "\"La gratitud como raíz\""
+  ],
+  [
+   "\"Allò que ens sosté (persones, recursos interns, natura).\"",
+   "\"Aquello que nos sostiene (personas, recursos internos, naturaleza).\""
+  ],
+  [
+   "\"El sentit del dolor pel món\"",
+   "\"El sentido del dolor por el mundo\""
+  ],
+  [
+   "\"Emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida.\"",
+   "\"Emociones difíciles (tristeza, miedo, rabia) como expresión de vínculo con la vida.\""
+  ],
+  [
+   "\"Del «jo separat» al «jo comunitari»\"",
+   "\"Del «yo separado» al «yo comunitario»\""
+  ],
+  [
+   "\"Mirada sistèmica i pertinença al teixit de la vida.\"",
+   "\"Mirada sistémica y pertenencia al tejido de la vida.\""
+  ],
+  [
+   "\"Passar a l’acció\"",
+   "\"Pasar a la acción\""
+  ],
+  [
+   "\"Com tancar amb petits passos\"",
+   "\"Cómo cerrar con pequeños pasos\""
+  ],
+  [
+   "\"Propòsit vital, continuïtat i xarxes de suport.\"",
+   "\"Propósito vital, continuidad y redes de apoyo.\""
+  ],
+  [
+   "\"L’arrel de la Gratitud\"",
+   "\"La raíz de la Gratitud\""
+  ],
+  [
+   "\"Com utilitzar-la com a eina de resiliència quan tot trontolla.\"",
+   "\"Cómo utilizarla como herramienta de resiliencia cuando todo se tambalea.\""
+  ],
+  [
+   "\"El sentit del malestar\"",
+   "\"El sentido del malestar\""
+  ],
+  [
+   "\"Aprendre a mirar les emocions difícils de cara per transformar-les en força.\"",
+   "\"Aprender a mirar de frente las emociones difíciles para transformarlas en fuerza.\""
+  ],
+  [
+   "\"El salt al «nosaltres»\"",
+   "\"El salto al «nosotros»\""
+  ],
+  [
+   "\"Eines per entendre el nostre lloc al món des de la pertinença i no des de la soledat.\"",
+   "\"Herramientas para entender nuestro lugar en el mundo desde la pertenencia y no desde la soledad.\""
+  ],
+  [
+   "\"El tancament actiu\"",
+   "\"El cierre activo\""
+  ],
+  [
+   "\"Com definir petits passos i propòsits que puguis sostenir en el teu dia a dia.\"",
+   "\"Cómo definir pequeños pasos y propósitos que puedas sostener en tu día a día.\""
+  ],
+  [
+   "\"4 hores\"",
+   "\"4 horas\""
+  ],
+  [
+   "\"4 sessions de 2 hores\"",
+   "\"4 sesiones de 2 horas\""
+  ],
+  [
+   "\"2 sessions de 6 hores (dissabte i diumenge)\"",
+   "\"2 sesiones de 6 horas (sábado y domingo)\""
+  ],
+  [
+   "\"Mensual o quinzenal\"",
+   "\"Mensual o quincenal\""
+  ],
+  [
+   "\"En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta com a brúixola.\"",
+   "\"En lugar de seguir un temario rígido, utilizaremos el Trabajo que Reconecta como brújula.\""
+  ],
+  [
+   "\"Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta: Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.\"",
+   "\"Recorreremos de manera vivencial la Espiral del Trabajo que Reconecta: Gratitud, Honrar el dolor, Ver con nuevos ojos y Pasar a la acción.\""
+  ],
+  [
+   "\"Estació \" + n + \" de 4\"",
+   "\"Estación \" + n + \" de 4\""
+  ]
+ ],
+ "infografies/infografia-capcalera.html": [
+  [
+   "\"Els núvols de pluja s'aparten i surt el sol\"",
+   "\"Las nubes de lluvia se apartan y sale el sol\""
+  ],
+  [
+   "\"Persones que estaven soles s'apropen i fan rotllana\"",
+   "\"Personas que estaban solas se acercan y forman un corro\""
+  ],
+  [
+   "\"La terra seca torna a reverdir i tornen els ocells\"",
+   "\"La tierra seca vuelve a reverdecer y vuelven los pájaros\""
+  ],
+  [
+   "\"Un carrer apagat s'il·lumina i una casa torta es redreça, sostinguda\"",
+   "\"Una calle apagada se ilumina y una casa torcida se endereza, sostenida\""
+  ]
+ ],
+ "infografies/infografia-nivells.html": [
+  [
+   "aria-label=\"Tres nivells d'impacte, com cercles que s'obren: tu, persones i grups, equips i organitzacions, i la comunitat\"",
+   "aria-label=\"Tres niveles de impacto, como círculos que se abren: tú, personas y grupos, equipos y organizaciones, y la comunidad\""
+  ],
+  [
+   "<span>Des de la salut mental comunitària, l’Economia Social i Solidària i l’acció climàtica</span>",
+   "<span>Desde la salud mental comunitaria, la Economía Social y Solidaria y la acción climática</span>"
+  ],
+  [
+   "Toca cada cercle per saber-ne més.",
+   "Toca cada círculo para saber más."
+  ],
+  [
+   "Torna-ho a veure",
+   "Volver a verlo"
+  ],
+  [
+   "\"Tu\"",
+   "\"Tú\""
+  ],
+  [
+   "\"Tal com estàs avui\"",
+   "\"Tal como estás hoy\""
+  ],
+  [
+   "\"El centre\"",
+   "\"El centro\""
+  ],
+  [
+   "\"Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix.\"",
+   "\"Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo.\""
+  ],
+  [
+   "\"Persones i grups\"",
+   "\"Personas y grupos\""
+  ],
+  [
+   "\"Per a persones i grups\"",
+   "\"Para personas y grupos\""
+  ],
+  [
+   "\"Processos individuals i grups de suport\"",
+   "\"Procesos individuales y grupos de apoyo\""
+  ],
+  [
+   "\"El primer cercle\"",
+   "\"El primer círculo\""
+  ],
+  [
+   "\"Oferim espais individuals i grupals de mentoria i psicoteràpia per arrelar, recuperar el centre i avançar des de la coherència.\"",
+   "\"Ofrecemos espacios individuales y grupales de mentoría y psicoterapia para arraigar, recuperar el centro y avanzar desde la coherencia.\""
+  ],
+  [
+   "href: \"persones\"",
+   "href: \"personas\""
+  ],
+  [
+   "\"Equips i organitzacions\"",
+   "\"Equipos y organizaciones\""
+  ],
+  [
+   "\"Per a equips i organitzacions\"",
+   "\"Para equipos y organizaciones\""
+  ],
+  [
+   "\"Cohesió interna i prevenció del burnout\"",
+   "\"Cohesión interna y prevención del burnout\""
+  ],
+  [
+   "\"El segon cercle\"",
+   "\"El segundo círculo\""
+  ],
+  [
+   "\"Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, transformant conflictes en oportunitats.\"",
+   "\"Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, transformando conflictos en oportunidades.\""
+  ],
+  [
+   "href: \"organitzacions\"",
+   "href: \"organizaciones\""
+  ],
+  [
+   "\"Comunitat\"",
+   "\"Comunidad\""
+  ],
+  [
+   "\"Per a la comunitat\"",
+   "\"Para la comunidad\""
+  ],
+  [
+   "\"Tallers, cercles i espais de trobada\"",
+   "\"Talleres, círculos y espacios de encuentro\""
+  ],
+  [
+   "\"El tercer cercle\"",
+   "\"El tercer círculo\""
+  ],
+  [
+   "\"Creem espais de trobada on compartir recursos, sabers i suport mutu per fer front als reptes ecosocials.\"",
+   "\"Creamos espacios de encuentro donde compartir recursos, saberes y apoyo mutuo para hacer frente a los retos ecosociales.\""
+  ],
+  [
+   "href: \"comunitats\"",
+   "href: \"comunidades\""
+  ],
+  [
+   "\"Des d’on treballem\"",
+   "\"Desde dónde trabajamos\""
+  ],
+  [
+   "\"La intersecció\"",
+   "\"La intersección\""
+  ],
+  [
+   "\"Treballem des de la intersecció entre la salut mental comunitària, l’Economia Social i Solidària, i l’acció climàtica i la cultura del bé comú.\"",
+   "\"Trabajamos desde la intersección entre la salud mental comunitaria, la Economía Social y Solidaria, y la acción climática y la cultura del bien común.\""
+  ],
+  [
+   "\"Tres nivells d’impacte\"",
+   "\"Tres niveles de impacto\""
+  ],
+  [
+   "\"Del procés personal a la transformació col·lectiva.\"",
+   "\"Del proceso personal a la transformación colectiva.\""
+  ],
+  [
+   "\"Adaptem la nostra metodologia a la teva realitat.\"",
+   "\"Adaptamos nuestra metodología a tu realidad.\""
+  ]
+ ],
+ "infografies/infografia-itinerari.html": [
+  [
+   "'Un camí amb tres parades'",
+   "'Un camino con tres paradas'"
+  ],
+  [
+   "Toca una parada per veure'n les propostes.",
+   "Toca una parada para ver sus propuestas."
+  ],
+  [
+   "<span>Torna a caminar</span>",
+   "<span>Volver a caminar</span>"
+  ],
+  [
+   "kick: \"On comences\"",
+   "kick: \"Dónde empiezas\""
+  ],
+  [
+   "kick: \"On porta el camí\"",
+   "kick: \"Adónde lleva el camino\""
+  ]
+ ],
+ "infografies/infografia-cursos.html": [
+  [
+   "aria-label=\"Els quatre cursos: portes d'entrada diferents a un mateix camí cap a l'Esperança Activa\"",
+   "aria-label=\"Los cuatro cursos: puertas de entrada diferentes a un mismo camino hacia la Esperanza Activa\""
+  ],
+  [
+   "Toca un curs per veure de què va.",
+   "Toca un curso para ver de qué va."
+  ],
+  [
+   "<span>Torna a caminar</span>",
+   "<span>Volver a caminar</span>"
+  ],
+  [
+   "\"Quan sostenir la vida es fa difícil\"",
+   "\"Cuando sostener la vida se hace difícil\""
+  ],
+  [
+   "\"Sostenir la vida\"",
+   "\"Sostener la vida\""
+  ],
+  [
+   "\"feina, habitatge, precarietat…\"",
+   "\"trabajo, vivienda, precariedad…\""
+  ],
+  [
+   "\"Feina, habitatge, precarietat i incertesa econòmica\"",
+   "\"Trabajo, vivienda, precariedad e incertidumbre económica\""
+  ],
+  [
+   "\"Economia Social i Solidària\"",
+   "\"Economía Social y Solidaria\""
+  ],
+  [
+   "\"Quan el futur del planeta et preocupa\"",
+   "\"Cuando el futuro del planeta te preocupa\""
+  ],
+  [
+   "\"El futur del planeta\"",
+   "\"El futuro del planeta\""
+  ],
+  [
+   "\"canvi climàtic, ecosistemes…\"",
+   "\"cambio climático, ecosistemas…\""
+  ],
+  [
+   "\"Canvi climàtic, territori i futur\"",
+   "\"Cambio climático, territorio y futuro\""
+  ],
+  [
+   "\"Canvi climàtic, degradació dels ecosistemes i incertesa davant del futur\"",
+   "\"Cambio climático, degradación de los ecosistemas e incertidumbre ante el futuro\""
+  ],
+  [
+   "\"Acció climàtica\"",
+   "\"Acción climática\""
+  ],
+  [
+   "\"Quan cuidar-nos és una tasca col·lectiva\"",
+   "\"Cuando cuidarnos es una tarea colectiva\""
+  ],
+  [
+   "\"Cuidar-nos\"",
+   "\"Cuidarnos\""
+  ],
+  [
+   "\"malestar, soledat, suport…\"",
+   "\"malestar, soledad, apoyo…\""
+  ],
+  [
+   "\"Malestar emocional, vincles, suport i prescripció social\"",
+   "\"Malestar emocional, vínculos, apoyo y prescripción social\""
+  ],
+  [
+   "\"Malestar emocional, soledat, manca de suport i necessitat de comunitat\"",
+   "\"Malestar emocional, soledad, falta de apoyo y necesidad de comunidad\""
+  ],
+  [
+   "\"Salut Mental Comunitària\"",
+   "\"Salud Mental Comunitaria\""
+  ],
+  [
+   "\"Quan la vida et desborda\"",
+   "\"Cuando la vida te desborda\""
+  ],
+  [
+   "\"La vida et desborda\"",
+   "\"La vida te desborda\""
+  ],
+  [
+   "\"ansietat, dols, conflictes…\"",
+   "\"ansiedad, duelos, conflictos…\""
+  ],
+  [
+   "\"Ansietat, dols i moments difícils\"",
+   "\"Ansiedad, duelos y momentos difíciles\""
+  ],
+  [
+   "\"Ansietat, dols, separacions, conflictes i moments de vulnerabilitat\"",
+   "\"Ansiedad, duelos, separaciones, conflictos y momentos de vulnerabilidad\""
+  ],
+  [
+   "\"Cada curs\"",
+   "\"Cada curso\""
+  ],
+  [
+   "\"7 passes\"",
+   "\"7 pasos\""
+  ],
+  [
+   "\"set frases senzilles\"",
+   "\"siete frases sencillas\""
+  ],
+  [
+   "\"En aquests quatre recorreguts hem convertit l’Espiral del Treball que Reconnecta en set frases senzilles. Ho pots fer en 7 dies o al teu ritme.\"",
+   "\"En estos cuatro recorridos hemos convertido la Espiral del Trabajo que Reconecta en siete frases sencillas. Lo puedes hacer en 7 días o a tu ritmo.\""
+  ],
+  [
+   "\"On porta el camí\"",
+   "\"Adónde lleva el camino\""
+  ],
+  [
+   "\"Esperança Activa\"",
+   "\"Esperanza Activa\""
+  ],
+  [
+   "\"Transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.\"",
+   "\"Transformar el dolor y la incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.\""
+  ],
+  [
+   "\"Curs gratuït\"",
+   "\"Curso gratuito · en catalán\""
+  ],
+  [
+   "\"Properament\"",
+   "\"Próximamente\""
+  ],
+  [
+   "\"Veure el recorregut base\"",
+   "\"Ver el recorrido base\""
+  ],
+  [
+   "\"Accedeix al curs\"",
+   "\"Accede al curso\""
+  ]
+ ],
+ "infografies/infografia-7-passes.html": [
+  [
+   "aria-label=\"L'espiral de les 7 passes; cada passa té quatre moments\"",
+   "aria-label=\"La espiral de los 7 pasos; cada paso tiene cuatro momentos\""
+  ],
+  [
+   "Cada passa, quatre moments",
+   "Cada paso, cuatro momentos"
+  ],
+  [
+   "Toca una passa per veure'n la pregunta.",
+   "Toca un paso para ver su pregunta."
+  ],
+  [
+   "<span>Torna a caminar</span>",
+   "<span>Volver a caminar</span>"
+  ],
+  [
+   "\"Què té valor per a mi?\"",
+   "\"¿Qué tiene valor para mí?\""
+  ],
+  [
+   "\"Qui i què ens sosté?\"",
+   "\"¿Quién y qué nos sostiene?\""
+  ],
+  [
+   "\"Què necessita ser escoltat?\"",
+   "\"¿Qué necesita ser escuchado?\""
+  ],
+  [
+   "\"Qui ja està obrint camins?\"",
+   "\"¿Quién ya está abriendo caminos?\""
+  ],
+  [
+   "\"Cap a quin futur voldria orientar-me?\"",
+   "\"¿Hacia qué futuro querría orientarme?\""
+  ],
+  [
+   "\"Quin lloc puc ocupar jo?\"",
+   "\"¿Qué lugar puedo ocupar yo?\""
+  ],
+  [
+   "\"Quin és el següent moviment possible?\"",
+   "\"¿Cuál es el siguiente movimiento posible?\""
+  ],
+  [
+   "\"M’encanta… M’estimo…\"",
+   "\"Me encanta… Me quiero…\""
+  ],
+  [
+   "\"Donar les gràcies a…\"",
+   "\"Dar las gracias a…\""
+  ],
+  [
+   "\"Quan miro el futur…\"",
+   "\"Cuando miro el futuro…\""
+  ],
+  [
+   "\"El que m’inspira…\"",
+   "\"Lo que me inspira…\""
+  ],
+  [
+   "\"El que espero profundament…\"",
+   "\"Lo que espero profundamente…\""
+  ],
+  [
+   "\"Un paper que m’agradaria tenir…\"",
+   "\"Un papel que me gustaría tener…\""
+  ],
+  [
+   "\"Un pas que faré…\"",
+   "\"Un paso que daré…\""
+  ],
+  [
+   "\"M’encanta… / M’estimo…\"",
+   "\"Me encanta… / Me quiero…\""
+  ],
+  [
+   "\"M’agradaria donar les gràcies a…\"",
+   "\"Me gustaría dar las gracias a…\""
+  ],
+  [
+   "\"Quan miro el futur, les meves preocupacions inclouen…\"",
+   "\"Cuando miro el futuro, mis preocupaciones incluyen…\""
+  ],
+  [
+   "\"El que m’inspira és…\"",
+   "\"Lo que me inspira es…\""
+  ],
+  [
+   "\"El que espero profundament és…\"",
+   "\"Lo que espero profundamente es…\""
+  ],
+  [
+   "\"Un paper que m’agradaria tenir és…\"",
+   "\"Un papel que me gustaría tener es…\""
+  ],
+  [
+   "\"Un pas que faré la setmana vinent és…\"",
+   "\"Un paso que daré la semana que viene es…\""
+  ],
+  [
+   "\"M’estimo, m’encanta…\"",
+   "\"Me quiero, me encanta…\""
+  ],
+  [
+   "\"Quan miro cap al futur, una de les coses que em preocupen és…\"",
+   "\"Cuando miro hacia el futuro, una de las cosas que me preocupan es…\""
+  ],
+  [
+   "\"Escolta\"",
+   "\"Escucha\""
+  ],
+  [
+   "\"Un primer àudio que dona context i orienta la pràctica\"",
+   "\"Un primer audio que da contexto y orienta la práctica\""
+  ],
+  [
+   "\"uns 15 min\"",
+   "\"unos 15 min\""
+  ],
+  [
+   "\"Una meditació guiada per aprofundir en l’experiència\"",
+   "\"Una meditación guiada para profundizar en la experiencia\""
+  ],
+  [
+   "\"Una petita passejada o l’estona que dura un cafè\"",
+   "\"Un pequeño paseo o el rato que dura un café\""
+  ],
+  [
+   "\"Un àudio de tancament per integrar l’experiència\"",
+   "\"Un audio de cierre para integrar la experiencia\""
+  ],
+  [
+   "\"7 dies o al teu ritme\"",
+   "\"7 días o a tu ritmo\""
+  ],
+  [
+   "\"No cal experiència en meditació\"",
+   "\"No hace falta experiencia en meditación\""
+  ],
+  [
+   "\"L’Espiral\"",
+   "\"La Espiral\""
+  ],
+  [
+   "\"7 passes\"",
+   "\"7 pasos\""
+  ],
+  [
+   "\"Els quatre cursos\"",
+   "\"Los cuatro cursos\""
+  ],
+  [
+   "\"Toca’n una per veure’n la pregunta.\"",
+   "\"Toca uno para ver su pregunta.\""
+  ],
+  [
+   "\"Passa \" + n + \" de 7\"",
+   "\"Paso \" + n + \" de 7\""
+  ]
+ ],
+ "infografies/infografia-vinculacio.html": [
+  [
+   "aria-label=\"Després de la setena passa, el camí porta a la vostra organització: als projectes i iniciatives, als recursos i serveis, i a la participació\"",
+   "aria-label=\"Después del séptimo paso, el camino lleva a vuestra organización: a los proyectos e iniciativas, a los recursos y servicios, y a la participación\""
+  ],
+  [
+   "Toca cada camí per saber-ne més.",
+   "Toca cada camino para saber más."
+  ],
+  [
+   "Torna-ho a veure",
+   "Volver a verlo"
+  ],
+  [
+   "\"{{ root }}contacte/\"",
+   "\"{{ root }}contacto/\""
+  ],
+  [
+   "\"Després de la passa 7\"",
+   "\"Después del paso 7\""
+  ],
+  [
+   "\"L’última passa\"",
+   "\"El último paso\""
+  ],
+  [
+   "\"Cap a possibilitats reals de continuïtat\"",
+   "\"Hacia posibilidades reales de continuidad\""
+  ],
+  [
+   "\"I només després mostrar quines persones, iniciatives o recursos del seu entorn poden ajudar a continuar aquest camí.\"",
+   "\"Y solo después mostrar qué personas, iniciativas o recursos de su entorno pueden ayudar a continuar este camino.\""
+  ],
+  [
+   "\"Projectes i iniciatives\"",
+   "\"Proyectos e iniciativas\""
+  ],
+  [
+   "\"que ja impulseu\"",
+   "\"que ya impulsáis\""
+  ],
+  [
+   "\"Un camí\"",
+   "\"Un camino\""
+  ],
+  [
+   "\"Incorporar projectes i iniciatives que ja impulseu.\"",
+   "\"Incorporar proyectos e iniciativas que ya impulsáis.\""
+  ],
+  [
+   "\"Parlem-ne\"",
+   "\"Hablemos\""
+  ],
+  [
+   "\"Recursos i serveis\"",
+   "\"Recursos y servicios\""
+  ],
+  [
+   "\"que teniu a l’abast\"",
+   "\"que tenéis a vuestro alcance\""
+  ],
+  [
+   "\"Un altre camí\"",
+   "\"Otro camino\""
+  ],
+  [
+   "\"Donar a conèixer recursos o serveis disponibles.\"",
+   "\"Dar a conocer recursos o servicios disponibles.\""
+  ],
+  [
+   "\"Participació\"",
+   "\"Participación\""
+  ],
+  [
+   "\"voluntariat, suport mutu o acció\"",
+   "\"voluntariado, apoyo mutuo o acción\""
+  ],
+  [
+   "\"I un altre\"",
+   "\"Y otro más\""
+  ],
+  [
+   "\"Incorporar propostes de participació, voluntariat, suport mutu o acció.\"",
+   "\"Incorporar propuestas de participación, voluntariado, apoyo mutuo o acción.\""
+  ]
+ ],
+ "infografies/infografia-rotllana.html": [
+  [
+   "aria-label=\"Un Cercle de paraula: persones en rotllana i els cinc elements que creen seguretat\"",
+   "aria-label=\"Un Círculo de palabra: personas en corro y los cinco elementos que crean seguridad\""
+  ],
+  [
+   "Els 5 elements que creen seguretat",
+   "Los 5 elementos que crean seguridad"
+  ],
+  [
+   "Toca cada element per veure'l al cercle.",
+   "Toca cada elemento para verlo en el círculo."
+  ],
+  [
+   "Torna-ho a veure",
+   "Volver a verlo"
+  ],
+  [
+   "\"Obertura i tancament\"",
+   "\"Apertura y cierre\""
+  ],
+  [
+   "\"cerimònia\"",
+   "\"ceremonia\""
+  ],
+  [
+   "\"Check-in / check-out per sostenir el grup quan hi ha intensitat emocional.\"",
+   "\"Check-in / check-out para sostener al grupo cuando hay intensidad emocional.\""
+  ],
+  [
+   "\"Dinàmiques de check-in / check-out per baixar reactivitat i augmentar presència.\"",
+   "\"Dinámicas de check-in / check-out para bajar la reactividad y aumentar la presencia.\""
+  ],
+  [
+   "\"Pautes\"",
+   "\"Pautas\""
+  ],
+  [
+   "\"Parla en primera persona i escolta profunda (sense interrupcions ni “ping-pong”).\"",
+   "\"Habla en primera persona y escucha profunda (sin interrupciones ni “ping-pong”).\""
+  ],
+  [
+   "\"Entrenament d’escolta profunda i parla en primera persona (sense interrupció ni “ping-pong”).\"",
+   "\"Entrenamiento de escucha profunda y habla en primera persona (sin interrupciones ni “ping-pong”).\""
+  ],
+  [
+   "\"Objecte de paraula\"",
+   "\"Objeto de palabra\""
+  ],
+  [
+   "\"Qui té l’objecte de paraula parla; la resta escolta. I passa a la persona del costat.\"",
+   "\"Quien tiene el objeto de palabra habla; el resto escucha. Y pasa a la persona de al lado.\""
+  ],
+  [
+   "\"Custòdia\"",
+   "\"Custodia\""
+  ],
+  [
+   "\"Rol de custòdia\"",
+   "\"Rol de custodia\""
+  ],
+  [
+   "\"Com obrir, sostenir i tancar un Cercle.\"",
+   "\"Cómo abrir, sostener y cerrar un Círculo.\""
+  ],
+  [
+   "\"Consens/decisió\"",
+   "\"Consenso/decisión\""
+  ],
+  [
+   "\"quan cal\"",
+   "\"cuando hace falta\""
+  ],
+  [
+   "\"Com donar lloc a veus minoritàries i evitar consensos “per cansament”.\"",
+   "\"Cómo dar lugar a las voces minoritarias y evitar consensos “por cansancio”.\""
+  ],
+  [
+   "\"Com arribar a acords que tothom pot sostenir (i com evitar la pressió silenciosa).\"",
+   "\"Cómo llegar a acuerdos que todo el mundo pueda sostener (y cómo evitar la presión silenciosa).\""
+  ],
+  [
+   "\"Un Cercle de paraula\"",
+   "\"Un Círculo de palabra\""
+  ],
+  [
+   "\"No és un espai per “guanyar” debats.\"",
+   "\"No es un espacio para “ganar” debates.\""
+  ],
+  [
+   "\"Falta un contenidor: un espai on parlar sense interrompre’ns.\"",
+   "\"Falta un contenedor: un espacio donde hablar sin interrumpirnos.\""
+  ],
+  [
+   "\"Un contenidor\"",
+   "\"Un contenedor\""
+  ],
+  [
+   "\"Per parlar amb veritat, escoltar amb respecte i traduir el que emergeix en passos concrets.\"",
+   "\"Para hablar con verdad, escuchar con respeto y traducir lo que emerge en pasos concretos.\""
+  ],
+  [
+   "\"Un espai on parlar sense interrompre’ns, sense escalar el conflicte i sense quedar atrapats en “qui té raó”.\"",
+   "\"Un espacio donde hablar sin interrumpirnos, sin escalar el conflicto y sin quedar atrapados en “quién tiene razón”.\""
+  ],
+  [
+   "\"Element \" + (i + 1) + \" de 5\"",
+   "\"Elemento \" + (i + 1) + \" de 5\""
+  ]
+ ],
+ "infografies/infografia-stop-ground-choose.html": [
+  [
+   "Protocol de seguretat",
+   "Protocolo de seguridad"
+  ],
+  [
+   "aria-label=\"Stop–Ground–Choose: aturar, ancorar i triar un pas mínim\"",
+   "aria-label=\"Stop–Ground–Choose: parar, anclarse y elegir un paso mínimo\""
+  ],
+  [
+   "Toca cada pas per saber-ne més.",
+   "Toca cada paso para saber más."
+  ],
+  [
+   "Torna-ho a veure",
+   "Volver a verlo"
+  ],
+  [
+   "ca: \"Aturar\"",
+   "ca: \"Parar\""
+  ],
+  [
+   "ca: \"Ancorar\"",
+   "ca: \"Anclarse\""
+  ],
+  [
+   "ca: \"Triar un pas mínim\"",
+   "ca: \"Elegir un paso mínimo\""
+  ],
+  [
+   "\"Micro-pauses d’autocompassió per a moments reals de pressió.\"",
+   "\"Micro-pausas de autocompasión para momentos reales de presión.\""
+  ],
+  [
+   "\"Grounding discret: plantes dels peus, orientació, retorn al cos quan hi ha saturació.\"",
+   "\"Grounding discreto: plantas de los pies, orientación, regreso al cuerpo cuando hay saturación.\""
+  ],
+  [
+   "\"Traduir valors en intencions observables i passos de 7 dies.\"",
+   "\"Traducir valores en intenciones observables y pasos de 7 días.\""
+  ],
+  [
+   "\"Aturar, ancorar, triar un pas mínim.\"",
+   "\"Parar, anclarse, elegir un paso mínimo.\""
+  ],
+  [
+   "\"L’autocompassió no ens fa menys compromesos. Ens fa més sostenibles.\"",
+   "\"La autocompasión no nos hace menos comprometidos. Nos hace más sostenibles.\""
+  ],
+  [
+   "\"Pas \" + (i + 1) + \" de 3 · \"",
+   "\"Paso \" + (i + 1) + \" de 3 · \""
+  ]
+ ]
+}

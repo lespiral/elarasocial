@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ca">
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,15 @@
   <meta property="og:title" content="{{ page_title or site.name }}">
   <meta property="og:description" content="{{ page_description or site.description }}">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ca_ES">
-  {% if favicon %}<link rel="icon" type="image/png" sizes="48x48" href="{{ root }}assets/img/favicon-48.png"><link rel="apple-touch-icon" href="{{ root }}assets/img/apple-touch-icon.png">{% endif %}
+  <meta property="og:locale" content="{{ locale }}">
+  {# La mateixa pàgina en les altres llengües (alts surt de build.py) #}
+  {% for a in alts if not a.missing %}<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url }}">
+  {% endfor %}{% if alts %}<link rel="alternate" hreflang="x-default" href="{{ (alts|selectattr('lang', 'equalto', 'ca')|first).url }}">{% endif %}
+  {% if favicon %}<link rel="icon" type="image/png" sizes="48x48" href="{{ aroot }}assets/img/favicon-48.png"><link rel="apple-touch-icon" href="{{ aroot }}assets/img/apple-touch-icon.png">{% endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700;800&display=swap">
-  <link rel="stylesheet" href="{{ root }}assets/site.css?v={{ version }}">
+  <link rel="stylesheet" href="{{ aroot }}assets/site.css?v={{ version }}">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -26,9 +29,15 @@
   <header class="topbar">
     <div class="wrap topbar__in">
       <a class="brand" href="{{ root }}" aria-label="{{ site.name }}, inici">
-        {% if logo %}<img class="brand__wide" src="{{ root }}assets/img/logo-elara.png" alt="" width="137" height="44">{% else %}<span class="brand__name">{{ site.name }}</span>{% endif %}
+        {% if logo %}<img class="brand__wide" src="{{ aroot }}assets/img/logo-elara.png" alt="" width="137" height="44">{% else %}<span class="brand__name">{{ site.name }}</span>{% endif %}
       </a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Obre el menú">
+      {# Selector de llengua: porta a la mateixa pàgina en l'altra llengua (o a l'inici, si encara no hi és) #}
+      {% if alts %}
+      <p class="lang" role="group" aria-label="Tria la llengua">
+        {% for a in alts %}{% if a.current %}<span class="lang__a is-current" lang="{{ a.lang }}" title="{{ a.name }}" aria-current="true"><span aria-hidden="true">{{ a.short }}</span><span class="sr-only">{{ a.name }}</span></span>{% else %}<a class="lang__a" href="{{ a.href }}" hreflang="{{ a.lang }}" lang="{{ a.lang }}" title="{{ a.name }}"><span aria-hidden="true">{{ a.short }}</span><span class="sr-only">{{ a.name }}</span></a>{% endif %}{% endfor %}
+      </p>
+      {% endif %}
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Obre el menú" data-label-open="Obre el menú" data-label-close="Tanca el menú">
         <span class="menu-btn__open">{{ icon('menu') }}</span><span class="menu-btn__close">{{ icon('close') }}</span>
       </button>
       <nav id="menu" class="menu" aria-label="Menú principal">
@@ -49,7 +58,7 @@
   <footer class="footer">
     <div class="wrap footer__in">
       <div class="footer__about">
-        <p class="footer__name">{% if favicon %}<img src="{{ root }}assets/img/simbol-elara.png" alt="" width="40" height="40">{% endif %}{{ site.name }}</p>
+        <p class="footer__name">{% if favicon %}<img src="{{ aroot }}assets/img/simbol-elara.png" alt="" width="40" height="40">{% endif %}{{ site.name }}</p>
         {% if site.footer.motto %}<p class="footer__motto">{{ site.footer.motto }}</p>{% endif %}
         {% if site.footer.text %}<p>{{ site.footer.text }}</p>{% endif %}
         {% if site.footer.projects %}
@@ -80,6 +89,6 @@
     </div>
   </footer>
 
-  <script src="{{ root }}assets/site.js?v={{ version }}" defer></script>
+  <script src="{{ aroot }}assets/site.js?v={{ version }}" defer></script>
 </body>
 </html>

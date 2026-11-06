@@ -1,0 +1,167 @@
+{
+  "ca": "que-fem",
+  "title": "Transformamos el malestar en Esperanza Activa",
+  "kicker": "Qué hacemos",
+  "lead": "Trabajamos en tres niveles de impacto: individual, grupal y comunitario.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "title": "¿Dónde ponemos la mirada?",
+      "paragraphs": [
+        "El desgaste actual no es solo individual, **es estructural**.",
+        "Por eso nuestra respuesta integra el cuidado personal con la transformación colectiva."
+      ]
+    },
+    {
+      "type": "cards",
+      "align": "left",
+      "id": "metodologia",
+      "kicker": "el trabajo que reconecta",
+      "title": "Nuestra metodología",
+      "infografia": "espiral",
+      "before": [
+        "Nuestro trabajo se inspira en la Espiral del Trabajo que Reconecta: esta espiral nos permite integrar emoción, conciencia y acción.",
+        "No buscamos solo comprender el malestar. Buscamos traducirlo en compromiso y transformación."
+      ],
+      "items": [
+        {
+          "icon": "plant",
+          "title": "Gratitud: el primer paso hacia la resiliencia",
+          "paragraphs": [
+            "Cuando el sistema acelera, a veces el primer paso no es arreglar el cielo, sino reencontrar la tierra.",
+            "Entendemos la gratitud lejos del optimismo naíf; la trabajamos como un gesto radical de arraigo.",
+            "Es la práctica de volver a la base, al cuerpo, y reconocer qué nos sostiene para, desde ahí, recuperar la fuerza vital."
+          ]
+        },
+        {
+          "icon": "heart",
+          "title": "Acoger lo que duele para poder avanzar",
+          "paragraphs": [
+            "Miramos de frente el malestar.",
+            "Reconocemos la tristeza, el miedo o el trauma sin maquillarlos.",
+            "La Espiral nos ofrece un espacio seguro para hacer algo revolucionario: reconocer la herida, ponerle palabras y sostenerla en comunidad.",
+            "Evitamos que el dolor se convierta en una identidad cerrada y lo transformamos en conciencia y amor activo."
+          ]
+        },
+        {
+          "icon": "globe",
+          "title": "Una mirada sistémica",
+          "paragraphs": [
+            "Dejamos de ser víctimas pasivas para convertirnos en parte activa de la transformación.",
+            "Entendemos que la incertidumbre es metabolismo y que arraigar no es rendirse.",
+            "Ampliamos nuestra perspectiva hacia una visión comunitaria y sistémica, encontrando la inspiración necesaria para construir un futuro que podamos sostener juntas."
+          ]
+        },
+        {
+          "icon": "footprints",
+          "title": "Seguir adelante: acción desde el vínculo",
+          "paragraphs": [
+            "Pasar a la acción quiere decir salir al mundo con conexión.",
+            "El paso final es moverse desde una relación estable.",
+            "La comunidad es esa red que sostiene: un apoyo mutuo que hace posible nuestro movimiento hacia delante, garantizando que podamos actuar con fuerza sin miedo a perdernos en el vacío."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "align": "left",
+      "id": "para-quien",
+      "kicker": "¿para quién?",
+      "title": "Adaptamos nuestra metodología a tres niveles de impacto",
+      "infografia": "nivells",
+      "before": [
+        "Acompañamiento individual y grupal, dinamización y consultoría para colectivos y organizaciones, y creación y apoyo a comunidades comprometidas con el bienestar común."
+      ],
+      "items": [
+        {
+          "icon": "users-three",
+          "title": "Para personas y grupos",
+          "paragraphs": [
+            "¿Sientes el peso de la responsabilidad o la pérdida de sentido?",
+            "Ofrecemos espacios individuales y grupales de mentoría y psicoterapia para arraigar, recuperar el centro y avanzar desde la coherencia."
+          ],
+          "href": "personas"
+        },
+        {
+          "icon": "buildings",
+          "title": "Para equipos y organizaciones",
+          "paragraphs": [
+            "¿Notáis que la inercia os está quemando?",
+            "Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, transformando conflictos en oportunidades."
+          ],
+          "href": "organizaciones"
+        },
+        {
+          "icon": "tree",
+          "title": "Para la comunidad",
+          "paragraphs": [
+            "¿Queréis tejer redes reales en un mundo fragmentado?",
+            "Creamos espacios de encuentro donde compartir recursos, saberes y apoyo mutuo para hacer frente a los retos ecosociales."
+          ],
+          "href": "comunidades"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "align": "left",
+      "kicker": "¿qué nos mueve?",
+      "title": "La eficiencia real nace del bienestar.",
+      "before": [
+        "Nuestra práctica se fundamenta en una premisa clara: la eficiencia real nace del bienestar. Situamos el cuidado de las personas y de su entorno en el corazón de cada decisión estratégica, porque entendemos que el único éxito viable es aquel que regenera, no el que agota."
+      ],
+      "items": [
+        {
+          "title": "Conversaciones que transforman",
+          "paragraphs": [
+            "Lo que no se dice, se atasca.",
+            "Creamos el espacio necesario para poner palabras a lo que realmente importa.",
+            "Acompañamos a los equipos a bajar la guardia y hablar con autenticidad, la única vía para disolver tensiones y reactivar la inteligencia colectiva."
+          ]
+        },
+        {
+          "title": "Coherencia interna, impacto externo.",
+          "paragraphs": [
+            "Todo está conectado: la calidad de tu impacto en el mundo es un reflejo directo de la salud de tus relaciones internas.",
+            "Trabajamos para alinear tu propósito con la realidad del día a día, eliminando la fricción entre lo que dices y lo que haces."
+          ]
+        },
+        {
+          "title": "Esperanza Activa: pasar a la acción con sentido.",
+          "paragraphs": [
+            "La teoría no transforma; la acción sí.",
+            "Pero no cualquier acción.",
+            "Te acompañamos a dar pasos concretos y arraigados en tierra firme, huyendo de la inmediatez para construir cambios reales que tu día a día pueda sostener."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "kicker": "descubre nuestras propuestas",
+      "paragraphs": [
+        "Tanto si necesitas arraigo individual como si quieres impulsar una transformación colectiva, en Elara Social encontrarás las herramientas y el acompañamiento para hacerlo realidad.",
+        "Adaptamos nuestra metodología a tu realidad. Ya sea para sostener procesos individuales o para fortalecer la salud de una organización entera."
+      ],
+      "buttons": [
+        {
+          "text": "Personas",
+          "href": "personas/#propuestas"
+        },
+        {
+          "text": "Comunidades",
+          "href": "comunidades/#propuestas"
+        },
+        {
+          "text": "Organizaciones",
+          "href": "organizaciones/#propuestas"
+        }
+      ]
+    }
+  ]
+}

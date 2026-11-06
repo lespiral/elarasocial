@@ -1,0 +1,159 @@
+{
+  "ca": "burnout",
+  "title": "Burnout",
+  "metafora": {"name": "foc", "text": "Que el fuego que te mueve no te queme: que caliente y que dure."},
+  "kicker": "Propuestas",
+  "lead": "Reconectar con la fuerza sin quemarse. Un programa en 8 sesiones para transformar agotamiento, sobrecarga y culpa en regulación, claridad y límites sostenibles.",
+  "description": "Reconectar con la fuerza sin quemarse. Un programa en 8 sesiones para transformar agotamiento, sobrecarga y culpa en regulación, claridad y límites sostenibles.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "presentacion",
+      "paragraphs": [
+        "Cuando trabajas por el bien común, la presión no se queda fuera. Entra dentro: urgencias constantes, casos de alto impacto, falta de recursos, decisiones difíciles, frustración sistémica y la sensación de que nunca es suficiente.",
+        "Eso desgasta. Y no solo por cansancio: porque va tocando el sentido, la vocación y la manera en que te hablas por dentro.",
+        "Este taller es un itinerario práctico para personas y grupos que quieren **recuperar energía y coherencia sin endurecerse ni colapsar**.",
+        "Lo hacemos entrenando una habilidad clave: **la autocompasión**, entendida como una manera concreta de responder al sufrimiento con presencia, humanidad compartida y acción útil, con ternura y con firmeza.",
+        "No es un espacio para “aguantar más”. Es un espacio para **sostener lo que es importante sin destruirte**."
+      ],
+      "buttons": [
+        {
+          "text": "Inscripción",
+          "href": "#inscripcion"
+        },
+        {
+          "text": "Contacta con nosotros",
+          "href": "contacto"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Qué te llevarás del programa",
+      "paragraphs": [
+        "Este taller te da **un marco replicable** para salir del “modo supervivencia” y recuperar la capacidad de decidir y cuidarte en entornos exigentes. En lugar de quedarte con “estoy agotado pero tengo que tirar”, entrenarás recursos que ayudan a:"
+      ],
+      "list": [
+        "reconocer el burnout (y diferenciarlo del estrés “normal”) sin culpa ni vergüenza",
+        "bajar la reactividad y recuperar presencia en momentos de urgencia y tensión",
+        "cambiar el diálogo interno (de crítico implacable a voz útil y sostenible)",
+        "gestionar el backdraft: cuando empezar a cuidarte activa dolor antiguo o resistencias",
+        "practicar la aceptación tierna: reducir la resistencia, recuperar energía y claridad",
+        "reconectar con valores y propósito (sin convertirlos en autoexigencia)",
+        "poner límites y protegerte con autocompasión activa (con firmeza y sin agresión)",
+        "construir un plan de mantenimiento realista (microprácticas, revisión y prevención de recaídas)"
+      ],
+      "after": [
+        "El resultado es doble: mejora el bienestar y el clima humano, y también la calidad operativa (priorización, coherencia, decisiones y sostenibilidad del ritmo)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "title": "Exploraremos…",
+      "list": [
+        "<strong>Burnout:</strong> los tres pilares (agotamiento, cinismo/desconexión, eficacia reducida) y por qué “descansar un fin de semana” ya no basta.",
+        "<strong>Autocompasión:</strong> qué es y qué no es (no es autocomplacencia, ni egoísmo, ni debilidad).",
+        "<strong>Neurobiología práctica:</strong> cómo el sistema de amenaza domina en el burnout y cómo activar señales de seguridad.",
+        "<strong>Backdraft y zonas de tolerancia:</strong> dosis, límites y criterios para practicar sin desbordarse.",
+        "<strong>Ecuación del sufrimiento:</strong> dolor × resistencia = sufrimiento, y cómo transformar la resistencia en acción útil.",
+        "<strong>Valores e intencionalidad:</strong> diferenciar metas y valores; recuperar la brújula y la coherencia.",
+        "<strong>Lesión moral (cuando aparece):</strong> qué pasa cuando el sistema te obliga a actuar en contra de lo que consideras justo.",
+        "<strong>Autocompasión Activa:</strong> límites, protección y “claridad empoderada”.",
+        "<strong>Motivación sabia:</strong> sustituir al crítico interno por un “entrenador sabio” que sostiene un cambio real.",
+        "<strong>Consolidación:</strong> plan de mantenimiento, savoring y gratitud como reentrenamiento atencional (sin positivismo)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "title": "Practicaremos…",
+      "infografia": "stop-ground-choose",
+      "list": [
+        "Micro-pausas de autocompasión para momentos reales de presión",
+        "<strong>Grounding discreto:</strong> plantas de los pies, orientación, regreso al cuerpo cuando hay saturación",
+        "Respiración y ritmo para bajar la activación (adaptado a cada persona)",
+        "Tacto de apoyo (auto-tacto) y alternativas cuando activa rechazo o tristeza",
+        "<strong>Protocolos de seguridad:</strong> Stop–Ground–Choose (parar, anclarse, elegir un paso mínimo)",
+        "Descanso de autocompasión tierna (práctica troncal)",
+        "Traducir valores en intenciones observables y pasos de 7 días",
+        "<strong>Ensayo de límites:</strong> frases cortas, claras y respetuosas (role-play)",
+        "Diseño de tu plan mínimo viable después del taller (2 minutos/día + revisión semanal)"
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "por-que",
+      "kicker": "Sostener el trabajo sin romperse por dentro",
+      "paragraphs": [
+        "Porque ningún proyecto se mantiene a largo plazo si la gente que lo sostiene vive en modo emergencia.",
+        "Cuidarnos no es un lujo ni un premio: **es una condición de posibilidad**.",
+        "La autocompasión no nos hace menos comprometidos. **Nos hace más sostenibles.**"
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas",
+      "title": "Preguntas frecuentes",
+      "intro": "Si tienes dudas sobre si este taller es para ti, aquí tienes respuestas rápidas. Si quieres, escríbenos y te orientamos.",
+      "items": [
+        [
+          "¿Y si alguien está en un burnout muy intenso o con síntomas graves?",
+          "<p>Lo valoramos antes. El taller puede ayudar, pero hay casos en los que es recomendable complementarlo con apoyo individual o una intervención específica.</p><p>En cualquier caso, el programa está diseñado con criterios de dosis y seguridad (zonas de tolerancia, derecho a pasar, alternativas a prácticas activadoras).</p>"
+        ],
+        [
+          "¿Hace falta experiencia previa en mindfulness?",
+          "<p>No. El programa es progresivo. Empezamos por lo básico (mapa del burnout + recursos sencillos) y avanzamos hacia prácticas más integradoras.</p>"
+        ],
+        [
+          "¿Esto sirve si el problema es “el sistema” y no yo?",
+          "<p>Justamente. El burnout a menudo tiene componentes sistémicos (recursos, ritmos, exigencias). El taller no pretende “adaptarte” a la injusticia, sino ayudarte a recuperar margen de acción: regularte, poner límites, sostener valores y dar pasos realistas sin autoexplotación.</p>"
+        ],
+        [
+          "¿Qué pasa entre sesiones?",
+          "<p>Proponemos microprácticas (2–10 minutos) y una observación concreta (por ejemplo: detectar al crítico interno, identificar la resistencia, practicar una micro-pausa en un momento real). El objetivo es integrar, no añadir presión.</p>"
+        ],
+        [
+          "¿Este taller es “terapia de grupo”?",
+          "<p>No. Es un programa formativo y vivencial para entrenar habilidades de autorregulación, autocompasión y límites.</p><p>Puede abrir emociones (porque eso es humano), pero el objetivo es aprender recursos replicables y sostenibles.</p>"
+        ],
+        [
+          "¿Tendremos que hablar de cosas personales delante de todo el mundo?",
+          "<p>No es obligatorio.</p><p>El taller da espacio para que cada persona participe con el nivel de palabra que le resulte adecuado.</p><p>Trabajamos con experiencias de trabajo e impactos reales, pero respetando límites y confidencialidad.</p>"
+        ],
+        [
+          "¿Cuántos participantes son recomendables?",
+          "<p>Idealmente es mejor no pasar de 20 participantes (aunque dependerá de la complejidad y el tiempo disponible).</p><p>Si el equipo es más grande, proponemos un formato con subgrupos o una edición escalonada.</p>"
+        ],
+        [
+          "¿Qué nos llevamos al final?",
+          "<p>Un kit personal: protocolos breves para momentos de presión, frases creíbles de autocompasión y un plan de mantenimiento.</p><p>Y, si es para equipos, un lenguaje compartido y prácticas comunes que ayudan a prevenir el desgaste colectivo (ritmos, límites y cuidado sostenible).</p>"
+        ]
+      ]
+    },
+    {
+      "type": "form",
+      "id": "inscripcion",
+      "title": "Inscripción",
+      "forms": [
+        {
+          "label": "Inscripción al programa",
+          "form": "1FAIpQLSd2fnk6tLNd6tHTiBtmcFY_0Q7m4NXu0BOXPQKDFvBgnpaF1w",
+          "height": 2800
+        },
+        {
+          "label": "¿Quieres que adaptemos el programa a tu equipo?",
+          "form": "1FAIpQLScoYITN7EBxzQ7e0aYXMBTRbcKH4zUWjBMDlSfJqXVy_lWgYQ",
+          "height": 3200
+        }
+      ],
+      "paragraphs": [
+        "¿Quieres que adaptemos el programa a tu equipo? Explicadnos brevemente qué os pasa y os proponemos una versión a medida."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "ca": "organitzacions",
+  "title": "Cuando el contexto os supera, dejaos acompañar.",
+  "kicker": "Organizaciones",
+  "lead": "Transformamos el desgaste del equipo en claridad, cohesión y un paso colectivo posible.",
+  "escena": "dia",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "kicker": "sabemos que sostener un proyecto a veces se hace una montaña.",
+      "title": "Por mucho que os esforcéis, ¿el día a día y las inercias os pasan por encima?",
+      "paragraphs": [
+        "En Elara Social, ayudamos a organizaciones y cooperativas a **transformar el estancamiento en fuerza de equipo**. Transformaremos este desgaste en impulso para dar el siguiente paso colectivo.",
+        "Sostener la vida está en el centro de nuestra actividad. Por eso no ofrecemos “soluciones rápidas” que no cambian el día a día: trabajamos para que vuestro equipo recupere ritmo, coherencia y capacidad de decisión.",
+        "En Elara Social utilizamos metodologías estructuradas y prácticas vivenciales para pasar **de apagar fuegos a acuerdos claros**, y del desgaste crónico a una cultura de cuidado y responsabilidad compartida.",
+        "Un enfoque pensado para el bienestar de las personas y la sostenibilidad del proyecto."
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Empecemos a transformarlo",
+      "items": [
+        {
+          "icon": "nav",
+          "title": "¿Bloqueo estratégico o desorientación?",
+          "text": "La situación global o sectorial os pesa, y el equipo se queda atrapado apagando fuegos sin saber cómo avanzar.",
+          "href": "#propuestas",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "cloud-rain",
+          "title": "¿Burnout y desgaste en el equipo?",
+          "text": "Vais con el piloto automático, cumpliendo los objetivos pero desconectados del propósito inicial, y necesitáis un respiro.",
+          "href": "#propuestas",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "check",
+          "title": "¿Buscáis coherencia interna?",
+          "paragraphs": [
+            "Os pesa la contradicción entre lo que hacéis y cómo lo hacéis.",
+            "Ayudamos a reencontrar el sentido y los valores de vuestra organización."
+          ],
+          "href": "#propuestas",
+          "button": "Ver opciones"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "title": "De la parálisis colectiva al paso concreto.",
+      "before": [
+        "“Vuestro entorno seguirá siendo complejo, pero el equipo tendrá herramientas para navegarlo con claridad y cohesión.”",
+        "En Elara Social ofrecemos un proceso probado para pasar del desbordamiento de los equipos a la claridad estratégica, con sentido, coherencia y cuidado compartido."
+      ],
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "title": "Acompañamiento integral",
+          "text": "Creamos marcos de seguridad psicológica donde el equipo pueda evaluar las tensiones y disolverlas colectivamente."
+        },
+        {
+          "icon": "sun",
+          "title": "La frustración como motor de cambio",
+          "paragraphs": [
+            "Utilizamos los conflictos para avanzar.",
+            "Afrontamos los retos internos para transformar la frustración acumulada en inteligencia colectiva."
+          ]
+        },
+        {
+          "icon": "heart",
+          "title": "Culturas de trabajo sanas",
+          "text": "Priorizamos el respeto y el cuidado de las personas para garantizar una sostenibilidad real a largo plazo."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "title": "¿Cómo os acompañamos?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un camino en tres paradas: diagnóstico y asesoramiento, formación y talleres para equipos, y acompañamiento estructural",
+        "inici": [
+          "Cuando el contexto os supera",
+          "Por mucho que os esforcéis, ¿el día a día y las inercias os pasan por encima?"
+        ],
+        "final": [
+          "Un paso colectivo posible",
+          "Transformamos el desgaste del equipo en claridad, cohesión y un paso colectivo posible."
+        ],
+        "icones": [
+          "compass",
+          "chat",
+          "equip"
+        ]
+      },
+      "before": [
+        "Ofrecemos soluciones adaptadas a la realidad de cada organización, interviniendo donde vuestro equipo más lo necesita."
+      ],
+      "items": [
+        {
+          "title": "Diagnóstico y asesoramiento",
+          "text": "Evaluación inicial y recursos estratégicos para entender los nudos de la organización y orientar los primeros cambios.",
+          "propostes": [
+            [
+              "Hablemos",
+              "contacto"
+            ]
+          ]
+        },
+        {
+          "title": "Formación y talleres para equipos",
+          "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia.",
+          "propostes": [
+            [
+              "7 pasos (para organizaciones)",
+              "7-pasos-hacia-la-esperanza-activa-comunidades"
+            ],
+            [
+              "La Espiral de la Esperanza Activa",
+              "la-espiral-de-la-esperanza-activa"
+            ],
+            [
+              "El Trabajo que Reconecta",
+              "el-trabajo-que-reconecta"
+            ],
+            [
+              "Un puente de Esperanza",
+              "un-puente-de-esperanza"
+            ],
+            [
+              "Círculos de palabra (para transformar conflictos)",
+              "circulos-de-palabra-para-gestionar-conflictos"
+            ],
+            [
+              "Círculos de palabra (para sostener colectivos)",
+              "circulos-para-sostener-organizaciones-y-colectivos"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ]
+          ]
+        },
+        {
+          "title": "Acompañamiento estructural",
+          "text": "Mentorías continuadas para direcciones y espacios de coordinación para integrar la cultura de los cuidados en la gobernanza del proyecto.",
+          "propostes": [
+            [
+              "Acompañamiento individual para miembros del grupo",
+              "acompanamiento-individual"
+            ],
+            [
+              "El Trabajo que Reconecta (grupo regular)",
+              "grupo-regular-de-el-trabajo-que-reconecta"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "kicker": "¿cuáles son nuestros pilares?",
+      "title": "En un mercado que empuja al límite, apostamos por la sostenibilidad humana.",
+      "before": [
+        "Priorizamos la salud del equipo como base de cualquier proyecto."
+      ],
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "title": "Seguridad psicológica radical",
+          "text": "Creamos espacios en los equipos donde no hace falta \"quedar bien\", donde se pueden abordar los problemas reales y donde el error es fuente de aprendizaje compartido."
+        },
+        {
+          "icon": "nav",
+          "title": "Propósito y gobernanza",
+          "paragraphs": [
+            "Todo está conectado: la estrategia y el bienestar de las personas.",
+            "Entendemos que un proyecto de éxito pasa por alinear lo que hacéis con cómo lo hacéis."
+          ]
+        },
+        {
+          "icon": "users-three",
+          "title": "Acción colectiva",
+          "text": "Acompañamos la transición de las organizaciones hacia modelos más sanos, con transformaciones aplicables y pasos alcanzables para todo el mundo."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "propuestas",
+      "align": "left",
+      "title": "Espacios e itinerarios de práctica y encuentro para grupos y colectivos que quieren reconectar y construir comunidad.",
+      "before": [
+        "Adaptamos nuestra metodología a tres niveles de impacto: espacios de acompañamiento individuales y en grupo, recursos online para hacer a vuestro ritmo y con la posibilidad de adaptarlos a vuestra realidad, y talleres y grupos de continuidad."
+      ],
+      "items": [
+        {
+          "title": "7 pasos hacia la Esperanza Activa",
+          "badge": "4 mini-cursos online",
+          "text": "Un recorrido breve y profundo para iniciarse en El Trabajo que Reconecta: volver a lo que te sostiene, dar espacio a lo que preocupa, abrir la mirada y aterrizar un paso posible.",
+          "foot": "Una experiencia que podemos adaptar a la realidad de tu organización",
+          "href": "7-pasos-hacia-la-esperanza-activa-comunidades"
+        },
+        {
+          "title": "Camins d'Esperança [Activa]",
+          "badge": "Mini-cursos online",
+          "text": "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por vuestro entorno [y, si queréis, desde vuestra sede] para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene. (La web está en catalán.)",
+          "foot": "Una experiencia que podemos adaptar a la realidad de tu organización",
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Ir a Camins d'Esperança [Activa]"
+        },
+        {
+          "title": "Acompañamiento individual para miembros del grupo",
+          "paragraphs": [
+            "Te ofrecemos un espacio de mentoría individual, online o presencial, para detenerte y aterrizar el proceso de cambio en tu realidad.",
+            "Un refugio donde aprender a sostener las emociones difíciles del día a día y trazar una hoja de ruta para transformar la incertidumbre en acción con sentido."
+          ],
+          "href": "acompanamiento-individual"
+        },
+        {
+          "title": "La Espiral de la Esperanza Activa",
+          "paragraphs": [
+            "Un taller vivencial y seguro para detenernos y dar salida a todo aquello que nos angustia.",
+            "Desde el estrés cotidiano hasta la incertidumbre por el futuro global.",
+            "Venimos a reconectar con la vida, a metabolizar el malestar en comunidad y a trazar pasos concretos de esperanza activa."
+          ],
+          "href": "la-espiral-de-la-esperanza-activa"
+        },
+        {
+          "title": "El Trabajo que Reconecta",
+          "text": "Un ciclo para reconectar con la vida, transformar el dolor personal y/o por el mundo en fuerza activa y encontrar formas concretas de compromiso personal y comunitario.",
+          "href": "el-trabajo-que-reconecta"
+        },
+        {
+          "title": "Un puente de esperanza",
+          "paragraphs": [
+            "Un espacio de inmersión para reconectar con la vida y transformar el dolor en fuerza compartida.",
+            "Durante dos días, tejeremos un lugar seguro para trabajar con calma tanto las crisis personales (el estrés, la incertidumbre vital) como el agotamiento que nos generan los grandes retos globales."
+          ],
+          "href": "un-puente-de-esperanza"
+        },
+        {
+          "title": "El Trabajo que Reconecta (Grupo regular)",
+          "text": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+          "href": "grupo-regular-de-el-trabajo-que-reconecta"
+        },
+        {
+          "title": "Círculos de palabra",
+          "subtitle": "(para transformar conflictos)",
+          "text": "Un taller práctico para grupos y organizaciones que quieren incorporar la estructura de los Círculos de palabra como una herramienta operativa para abordar conversaciones difíciles con más seguridad, equidad y eficacia.",
+          "href": "circulos-de-palabra-para-gestionar-conflictos"
+        },
+        {
+          "title": "Círculos de palabra",
+          "subtitle": "(para sostener organizaciones y colectivos)",
+          "text": "Este programa es un taller práctico en 4 sesiones (2 h cada una) para que vuestro equipo aprenda la estructura de los Círculos de palabra: una metodología sencilla y potente para tener conversaciones difíciles sin que escalen, cuidar el vínculo y llegar a acuerdos sostenibles.",
+          "href": "circulos-para-sostener-organizaciones-y-colectivos"
+        },
+        {
+          "title": "Burnout",
+          "subtitle": "Reconectar con la fuerza sin quemarse",
+          "text": "Un programa en 8 sesiones para transformar agotamiento, sobrecarga y culpa en regulación, claridad y límites sostenibles.",
+          "href": "burnout"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "kicker": "¿queréis transformar vuestra organización?",
+      "paragraphs": [
+        "No esperéis a tocar fondo para pedir apoyo. El primer paso es abrir un espacio valiente para replantear vuestro día a día.",
+        "Adaptamos nuestra metodología a vuestra realidad."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos",
+          "href": "contacto"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "ca": "contacte",
+  "title": "Estamos aquí para acompañarte.",
+  "kicker": "Contacto",
+  "lead": "Hablemos sin ningún compromiso.",
+  "sections": [
+    {
+      "type": "contact",
+      "band": "white",
+      "title": "Hablemos",
+      "paragraphs": [
+        "Utiliza este espacio para explicarnos qué necesitas, ya sea para ti o para tu organización. Te leeremos y te responderemos muy pronto para ver cómo podemos acompañarte.",
+        "Tanto si tienes clara tu necesidad como si solo quieres hacernos una consulta previa, escríbenos o llámanos:"
+      ]
+    },
+    {
+      "type": "cards",
+      "align": "left",
+      "id": "donde-estamos",
+      "items": [
+        {
+          "icon": "pin",
+          "title": "Nuestro espacio (físico y virtual)",
+          "paragraphs": [
+            "Nos encontrarás en la C/ Jaume Casanovas 177, Local 2 (El Prat de Llobregat).",
+            "Pero nuestro acompañamiento no tiene fronteras: nos desplazamos por toda Cataluña y la Península para facilitar talleres.",
+            "También ofrecemos atención online."
+          ]
+        },
+        {
+          "icon": "sun",
+          "title": "Nuestros ritmos",
+          "paragraphs": [
+            "Estamos a tu disposición de lunes a viernes, de 9 h a 17 h.",
+            "Los encuentros presenciales en el local se hacen siempre a horas convenidas."
+          ]
+        }
+      ]
+    }
+  ]
+}
