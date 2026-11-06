@@ -25,11 +25,12 @@
 <a class="btn {{ b.style or cls }}" href="{{ link_href(b.href, root) }}"{% if b.href.startswith('http') %} rel="noopener"{% endif %}>{{ b.text }}{% if b.arrow is not defined or b.arrow %} {{ icon('arrow') }}{% endif %}</a>
 {%- endmacro %}
 
-{# Targetes: [{"icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "badge"}] #}
+{# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "badge"}] #}
 {% macro cards(items, root, heading_level=3, align='center') -%}
 <ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}">
   {% for c in items %}
   <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
+    {% if c.photo %}<span class="card__photo"><img src="{{ root }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
     {% if c.icon %}<span class="card__icon" aria-hidden="true">{{ icon(c.icon) }}</span>{% endif %}
     {% if c.badge %}<span class="card__badge">{{ c.badge }}</span>{% endif %}
     <h{{ heading_level }} class="card__title">{{ c.title }}</h{{ heading_level }}>

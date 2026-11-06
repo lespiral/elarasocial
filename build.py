@@ -161,6 +161,8 @@ def prepare_sections(sections, where):
         for it in s.get("items", []) if t in ("cards", "list") else []:
             if isinstance(it, dict) and "icon" not in it and card_icon(it.get("href")):
                 it["icon"] = card_icon(it.get("href"))
+            if isinstance(it, dict) and it.get("photo") and not (SRC / "img" / it["photo"]).exists():
+                errors.append(f"{where}: no trobo la foto src/img/{it['photo']}")
             if isinstance(it, dict) and it.get("icon") and it["icon"] not in ICONS:
                 errors.append(f"{where}: la icona {it['icon']!r} no és a src/icons.json")
         if t == "text" and s.get("list"):

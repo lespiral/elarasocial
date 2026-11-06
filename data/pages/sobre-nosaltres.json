@@ -106,22 +106,27 @@
       "title": "Qui som",
       "items": [
         {
+          "photo": "equip/aleix-boronat.jpg",
           "title": "Aleix Boronat",
           "text": "Director i cofundador de L’espiral. Facilitador de El Treball que Reconnecta, Format en Psicologia Humanista, Terapeuta Gestalt, Mentor i Professor de Mindfulness. Formació en Psicoteràpia Integrativa (programa SAT)."
         },
         {
+          "photo": "equip/anna-vinas.jpg",
           "title": "Anna Viñas",
           "text": "Cofundadora de l'Espiral. Terapeuta Gestalt. Membre adherent de l'AETG. Formació en Psicoteràpia Integrativa (programa SAT). Formada en psicologia i psicopatologia del postpart. Formada en Ioga i Meditació per a l'Embaràs i el Post Part amb Happy Yoga. Formada a Educació Viva. Llicenciada en Humanitats i Periodisme."
         },
         {
+          "photo": "equip/montse-molina.jpg",
           "title": "Montse Molina",
           "text": "Psicopedagoga. Màster en Psicologia Infanto-juvenil. Formada en Teràpia Gestalt aplicada a la Infància i Adolescència i en Teràpia Sistèmica Relacional. Terapeuta Gestalt i Terapeuta Corporal Integrativa. Especialista en Addiccions: Màster en Conductes Addictives. Formada en Psicoteràpia Integrativa: Programa SAT. Formadora a l'àmbit de l'educació humanista."
         },
         {
+          "photo": "equip/elvira-abad.jpg",
           "title": "Elvira Abad",
           "text": "Psicòloga Sanitària Col. 13460, Terapeuta Gestalt, Màster en Psicogerontologia i Neurociències Aplicades. Coordinadora Grup de Treball Gent Gran al COPC Àrea Intervenció Social. Docent Atenció a la Dependència SAD. Formada a Practitioner P.N.L., Risoteràpia, Constel·lacions Familiars, Acompanyament a la Mort i Moviment Espontani SEITAI. En Formació Psicologia Integrativa Transpersonal i Programa SAT Eneagrama de Claudio Naranjo."
         },
         {
+          "photo": "equip/cecilia-cristaldi.jpg",
           "title": "Cecilia Cristaldi",
           "text": "Psicòloga formada en teràpia sistèmica, Gestalt i Coaching. El meu enfocament actual combina la psicologia i el coaching, tant en abordatges individuals com en grup. Acompanyo els meus pacients perquè puguin reconèixer el seu potencial i anar cap a la recerca dels seus objectius."
         }
@@ -149,6 +154,7 @@
       "id": "joanna-macy-i-chris-johnstone",
       "items": [
         {
+          "photo": "equip/joanna-macy.jpg",
           "title": "Joanna Macy",
           "paragraphs": [
             "Joanna Macy va ser filòsofa, autora i activista reconeguda internacionalment pel seu treball en ecologia profunda, budisme compromès i transformació social.",
@@ -158,6 +164,7 @@
           ]
         },
         {
+          "photo": "equip/chris-johnstone.jpg",
           "title": "Chris Johnstone",
           "paragraphs": [
             "Chris Johnstone és metge i especialista en resiliència, psicologia del benestar i canvi positiu.",

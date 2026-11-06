@@ -53,7 +53,7 @@ No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
 - Les icones són les de `src/icons.json` (les mateixes que a Camins d'Esperança [Activa]).
 - **Negreta**: a qualsevol text, `**així**` surt en negreta (dins dels paràgrafs, amb un subratllat de retolador verd). Els camps acabats en `_html` poden portar HTML (enllaços, negretes). Amb `"html": true` a la secció, també els paràgrafs i les llistes.
 - Altres camps de secció: `"kicker"` (avantítol petit), `"before"` (paràgrafs abans de les targetes), `"list"` i `"after"` (a les de text), `"quote"`, `"align": "left"` (targetes alineades a l'esquerra).
-- Les targetes poden portar `subtitle`, `meta` (p. ex. `["4 hores", "Màx. 16 participants"]`), `paragraphs`, `list`, `foot`, `badge`, `href` i `button` (el text del botó).
+- Les targetes poden portar `subtitle`, `meta` (p. ex. `["4 hores", "Màx. 16 participants"]`), `paragraphs`, `list`, `foot`, `badge`, `href` i `button` (el text del botó). Amb `photo` (p. ex. `"equip/aleix-boronat.jpg"`, a `src/img/`) porten una foto rodona a dalt; les de Sobre nosaltres són quadrades, de 320 × 320 px, en JPG.
 - El contacte (correu, telèfon, WhatsApp, adreça) surt de `contact` a `data/site.json`.
 
 ## Com es veu cada secció
