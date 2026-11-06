@@ -65,6 +65,7 @@
         <div class="footer__projects">
           <p class="footer__h">{{ site.footer.projects.title }}</p>
           <ul>{% for pr in site.footer.projects["items"] %}<li><a class="footer__project" href="{{ pr.href }}" rel="noopener"><span>{{ pr.title }}{% if pr.site %}<small>{{ pr.site }}</small>{% endif %}</span>{{ icon('external') }}</a></li>{% endfor %}</ul>
+          {% if site.footer.projects.email %}<p class="footer__project-mail">{{ icon('mail') }}<a href="mailto:{{ site.footer.projects.email }}">{{ site.footer.projects.email }}</a></p>{% endif %}
         </div>
         {% endif %}
       </div>

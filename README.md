@@ -7,7 +7,7 @@ Estat: publicada a elarasocial.com (GitHub Pages) des del 5 de novembre de 2026,
 
 ## On és cada cosa
 
-- `data/site.json`: el nom, l'adreça pública, el menú (`nav`), el contacte, el peu i la pàgina d'inici (`home`). Al peu, `projects` posa els projectes d'Elara amb web pròpia (ara, Camins d'Esperança [Activa]) a totes les pàgines.
+- `data/site.json`: el nom, l'adreça pública, el menú (`nav`), el contacte, el peu i la pàgina d'inici (`home`). Al peu, `projects` posa els projectes d'Elara amb web pròpia (ara, Camins d'Esperança [Activa], esperançaactiva.cat, i Caminos de Esperanza [Activa], esperanzaactiva.org, la seva web en castellà) a totes les pàgines, i `projects.email` el correu dels projectes (esperanza@elarasocial.com). El correu de contacte d'Elara (`contact.email`) també és esperanza@elarasocial.com des del 6 de novembre de 2026 (abans, elarasocial.com@gmail.com).
 - `data/pages/<adreça>.json`: una pàgina per fitxer. `data/pages/qui-som.json` es publica a `/qui-som/`.
 - `data/articles/<adreça>.json`: un article per fitxer (`title`, `date` en format 2026-03-20, `author`, `image` dins de `src/img/`, i `body`: paràgrafs i títols `{"h2": …}` o `{"h3": …}`). Es publica a `/<adreça>/` i surt sol a la pàgina Articles (secció `{"type": "articles"}`), del més nou al més antic.
 - `src/templates/`: les plantilles. `page.html` pinta qualsevol pàgina; `parts.html` té les peces (seccions, targetes, preguntes, botons).
