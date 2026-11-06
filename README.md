@@ -123,7 +123,7 @@ La web en castellà és a `/es/`, amb les adreces en castellà (`/es/personas/`,
 - Després de generar la web, `python3 tools/restes-catala.py` diu si a `docs/es/` hi ha quedat algun text en català.
 - **Formularis**: les pàgines en castellà porten còpies en castellà dels formularis de Google, a la mateixa carpeta del Drive (`Elara Social (castellà) - …`), amb els avisos per correu de les respostes noves activats com els originals. Les respostes de cada còpia queden dins del formulari (no van a cap full de càlcul). Les còpies es van fer amb el projecte d'Apps Script «Elara Social - formularis en castellà» del compte lespiral.cat.
 - Camins d'Esperança [Activa] i els cursos de Thinkific de les 7 passes són en català: les pàgines en castellà ho diuen.
-- Al mòbil i fins a 1023 px d'amplada, el menú és el desplegable (amb el selector de llengua al costat); entre 1024 i 1199 px, el menú és una mica més compacte.
+- Al mòbil i fins a 1023 px d'amplada, el menú és el desplegable (amb el selector de llengua al costat); entre 1024 i 1199 px, el menú és una mica més compacte. En castellà, com que els noms són més llargs, el menú és compacte a totes les amplades d'ordinador (`html[lang="es"]` a `site.css`).
 
 ## Publicació
 

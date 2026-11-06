@@ -80,7 +80,7 @@ strong { font-weight: 700; }
 /* ---------- Capçalera i menú ---------- */
 .topbar { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .97); box-shadow: 0 1px 0 var(--line), 0 4px 16px rgba(1, 49, 91, .05); }
 .topbar__in { display: flex; align-items: center; justify-content: space-between; min-height: var(--topbar-h); gap: 16px; }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--blau-900); }
+.brand { flex: none; display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--blau-900); }
 .brand__logo { width: 48px; height: 48px; object-fit: contain; }
 .brand__wide { display: block; height: 44px; width: auto; }
 .brand__sun { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--verd-100); color: var(--verd-ink); }
@@ -107,6 +107,14 @@ a.lang__a:hover { color: var(--blau-900); background: var(--blau-50); }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .menu ul { gap: 2px; }
   .menu a { padding: 9px 9px; font-size: .92rem; }
+}
+/* En castellà els noms del menú són més llargs: el menú compacte a totes les amplades d'ordinador, i encara més entre 1024 i 1099 px */
+@media (min-width: 1024px) {
+  html[lang="es"] .menu ul { gap: 2px; }
+  html[lang="es"] .menu a { padding: 9px 9px; font-size: .92rem; }
+}
+@media (min-width: 1024px) and (max-width: 1099px) {
+  html[lang="es"] .menu a { padding: 8px 6px; font-size: .88rem; }
 }
 @media (max-width: 1023px) {
   .lang { margin-left: auto; }
