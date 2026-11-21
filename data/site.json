@@ -234,7 +234,7 @@
               ],
               [
                 "Format",
-                "[PENDENT: presencial o en línia]"
+                "Presencial, en línia o híbrid, segons el cas"
               ]
             ]
           },
@@ -250,7 +250,7 @@
               ],
               [
                 "Format",
-                "Presencial o en línia, a convenir"
+                "Presencial, en línia o híbrid, a convenir"
               ]
             ]
           }
@@ -352,8 +352,7 @@
         "pill": "Estem començant",
         "title": "Busquem les primeres entitats aliades",
         "paragraphs": [
-          "Cooperatives, associacions, col·lectius i entitats de l'economia social i solidària que vulguin provar aquests tallers al seu espai. Ho dissenyem plegats.",
-          "[PENDENT: condicions de la primera col·laboració]"
+          "Cooperatives, associacions, col·lectius i entitats de l'economia social i solidària que vulguin provar aquests tallers al seu espai. Ho dissenyem plegats."
         ],
         "buttons": [
           {
@@ -368,7 +367,7 @@
         "id": "cta-final",
         "kicker": "Explica'ns què necessites",
         "paragraphs": [
-          "Sense compromís. Et responem en [PENDENT: X dies laborables] amb una proposta o una primera conversa."
+          "Sense compromís. Et responem en 5 dies laborables amb una proposta o una primera conversa. Si tens pressa, escriu-nos per WhatsApp."
         ],
         "buttons": [
           {

@@ -382,8 +382,19 @@
       "id": "demana-proposta",
       "title": "Demana una proposta",
       "paragraphs": [
-        "Explica'ns què necessiteu i us responem amb una proposta o una primera conversa.",
-        "[PENDENT: formulari de Google per a entitats]"
+        "Explica'ns què necessiteu i us responem amb una proposta o una primera conversa."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "formulari-entitats",
+      "title": "Formulari de sol·licitud",
+      "forms": [
+        {
+          "label": "Demana una proposta",
+          "form": "1FAIpQLSejHP-fDmCZ45zeOBVjpRFbqFLmIhIXJ2uoo9kCHsZLw4F5Bw",
+          "height": 3000
+        }
       ]
     },
     {
@@ -394,7 +405,7 @@
       "items": [
         {
           "title": "Us responem",
-          "text": "En [PENDENT: X dies laborables]."
+          "text": "En 5 dies laborables. Si teniu pressa, escriviu-nos per WhatsApp."
         },
         {
           "title": "Parlem",
@@ -416,8 +427,8 @@
           "Depèn de les sessions, del nombre de persones i del lloc. Us enviem un pressupost a mida, sense compromís."
         ],
         [
-          "Treballeu en línia o a la nostra seu?",
-          "[PENDENT: modalitat i desplaçaments]"
+          "Treballeu en línia o presencialment?",
+          "Depèn del cas: podem fer-ho presencial, en línia o híbrid. Ens desplacem arreu de Catalunya i la Península."
         ],
         [
           "És teràpia?",

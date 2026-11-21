@@ -283,7 +283,7 @@
                 ],
                 [
                   "Próxima edición",
-                  "[PENDENT: fecha · lugar]"
+                  "Próximas fechas por determinar"
                 ]
               ],
               "button": "Ver el taller"
@@ -301,7 +301,7 @@
                 ],
                 [
                   "Próxima edición",
-                  "[PENDENT: fecha · lugar]"
+                  "Próximas fechas por determinar"
                 ]
               ],
               "button": "Ver el ciclo"
@@ -319,7 +319,7 @@
                 ],
                 [
                   "Próxima edición",
-                  "[PENDENT: fecha · lugar]"
+                  "Próximas fechas por determinar"
                 ]
               ],
               "button": "Ver el fin de semana"
@@ -388,7 +388,7 @@
         },
         {
           "title": "Te confirmamos",
-          "text": "Te respondemos en [PENDENT: X días] con las fechas, el lugar y cómo hacer el pago."
+          "text": "Te respondemos en 5 días laborables con las fechas, el lugar y cómo hacer el pago. Si tienes prisa, escríbenos por WhatsApp."
         }
       ]
     },
@@ -411,7 +411,7 @@
         ],
         [
           "¿Puedo cancelar?",
-          "[PENDENT: política de cancelación y devolución]"
+          "Sí. Si nos avisas con 7 días o más de antelación, te devolvemos todo el importe. Con menos tiempo no hay devolución, pero puedes ceder la plaza a otra persona o pasarla a una edición futura. Si somos nosotros quienes cancelamos, te devolvemos todo el importe o te guardamos la plaza para la próxima edición. Las sesiones de acompañamiento individual se pueden anular o cambiar sin coste hasta 24 horas antes."
         ]
       ]
     },

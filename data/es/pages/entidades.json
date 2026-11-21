@@ -383,8 +383,19 @@
       "id": "pide-propuesta",
       "title": "Pide una propuesta",
       "paragraphs": [
-        "Cuéntanos qué necesitáis y te respondemos con una propuesta o una primera conversación.",
-        "[PENDENT: formulario de Google para entidades]"
+        "Cuéntanos qué necesitáis y te respondemos con una propuesta o una primera conversación."
+      ]
+    },
+    {
+      "type": "form",
+      "id": "formulario-entidades",
+      "title": "Formulario de solicitud",
+      "forms": [
+        {
+          "label": "Pide una propuesta",
+          "form": "1FAIpQLSfiKArvyh91JIE2lJROdN1V9H0tmNvnozcRqQUWmPd_8DDpTA",
+          "height": 3000
+        }
       ]
     },
     {
@@ -395,7 +406,7 @@
       "items": [
         {
           "title": "Os respondemos",
-          "text": "En [PENDENT: X días laborables]."
+          "text": "En 5 días laborables. Si tenéis prisa, escribidnos por WhatsApp."
         },
         {
           "title": "Hablamos",
@@ -417,8 +428,8 @@
           "Depende de las sesiones, del número de personas y del lugar. Os enviamos un presupuesto a medida, sin compromiso."
         ],
         [
-          "¿Trabajáis en línea o en nuestra sede?",
-          "[PENDENT: modalidad y desplazamientos]"
+          "¿Trabajáis en línea o presencialmente?",
+          "Depende del caso: podemos hacerlo presencial, en línea o híbrido. Nos desplazamos por toda Cataluña y la Península."
         ],
         [
           "¿Es terapia?",

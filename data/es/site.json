@@ -196,7 +196,7 @@
               ],
               [
                 "Formato",
-                "[PENDENT: presencial o en línea]"
+                "Presencial, en línea o híbrido, según el caso"
               ]
             ]
           },
@@ -212,7 +212,7 @@
               ],
               [
                 "Formato",
-                "Presencial o en línea, a convenir"
+                "Presencial, en línea o híbrido, a convenir"
               ]
             ]
           }
@@ -314,8 +314,7 @@
         "pill": "Estamos empezando",
         "title": "Buscamos las primeras entidades aliadas",
         "paragraphs": [
-          "Cooperativas, asociaciones, colectivos y entidades de la economía social y solidaria que quieran probar estos talleres en su espacio. Lo diseñamos juntos.",
-          "[PENDENT: condiciones de la primera colaboración]"
+          "Cooperativas, asociaciones, colectivos y entidades de la economía social y solidaria que quieran probar estos talleres en su espacio. Lo diseñamos juntos."
         ],
         "buttons": [
           {
@@ -330,7 +329,7 @@
         "id": "cta-final",
         "kicker": "Cuéntanos qué necesitas",
         "paragraphs": [
-          "Sin compromiso. Te respondemos en [PENDENT: X días laborables] con una propuesta o una primera conversación."
+          "Sin compromiso. Te respondemos en 5 días laborables con una propuesta o una primera conversación. Si tienes prisa, escríbenos por WhatsApp."
         ],
         "buttons": [
           {

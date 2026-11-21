@@ -282,7 +282,7 @@
                 ],
                 [
                   "Propera edició",
-                  "[PENDENT: data · lloc]"
+                  "Properes dates per determinar"
                 ]
               ],
               "button": "Veure el taller"
@@ -300,7 +300,7 @@
                 ],
                 [
                   "Propera edició",
-                  "[PENDENT: data · lloc]"
+                  "Properes dates per determinar"
                 ]
               ],
               "button": "Veure el cicle"
@@ -318,7 +318,7 @@
                 ],
                 [
                   "Propera edició",
-                  "[PENDENT: data · lloc]"
+                  "Properes dates per determinar"
                 ]
               ],
               "button": "Veure el cap de setmana"
@@ -387,7 +387,7 @@
         },
         {
           "title": "Et confirmem",
-          "text": "Et responem en [PENDENT: X dies] amb les dates, el lloc i com fer el pagament."
+          "text": "Et responem en 5 dies laborables amb les dates, el lloc i com fer el pagament. Si tens pressa, escriu-nos per WhatsApp."
         }
       ]
     },
@@ -410,7 +410,7 @@
         ],
         [
           "Puc cancel·lar?",
-          "[PENDENT: política de cancel·lació i devolució]"
+          "Sí. Si ens ho dius amb 7 dies o més d'antelació, et retornem tot l'import. Amb menys temps no hi ha devolució, però pots cedir la plaça a una altra persona o passar-la a una edició futura. Si som nosaltres qui cancel·lem, et retornem tot l'import o et guardem la plaça per a la propera edició. Les sessions d'acompanyament individual es poden anul·lar o canviar sense cost fins a 24 hores abans."
         ]
       ]
     },
