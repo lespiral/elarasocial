@@ -246,24 +246,24 @@
           "title": "Elige desde dónde quieres empezar",
           "items": [
             {
-              "title": "Cuando sostener la vida se hace difícil",
-              "text": "Precariedad, vivienda, ritmos de trabajo",
-              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa"
-            },
-            {
-              "title": "Cuando el futuro del planeta te preocupa",
-              "text": "Crisis climática, incendios, sequías",
-              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa"
+              "title": "Cuando la vida te desborda",
+              "text": "Ansiedad, duelo, conflictos y cansancio emocional",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa"
             },
             {
               "title": "Cuando cuidarnos es una tarea colectiva",
-              "text": "Ansiedad, soledad, cansancio emocional",
+              "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa"
             },
             {
-              "title": "Cuando la vida te desborda",
-              "text": "Una situación difícil y poca orientación",
-              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa"
+              "title": "Cuando el futuro del planeta te preocupa",
+              "text": "Crisis climática, ecoansiedad y futuro incierto",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa"
+            },
+            {
+              "title": "Cuando sostener la vida se hace difícil",
+              "text": "Trabajo, vivienda, precariedad e incertidumbre económica",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa"
             }
           ]
         }
