@@ -57,7 +57,7 @@
     },
     {
       "type": "cards",
-      "tone": "accent",
+      "tone": "row",
       "band": "white",
       "title": "De la paràlisi al pas concret.",
       "before": [

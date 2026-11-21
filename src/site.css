@@ -775,3 +775,24 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 /* Targetes amb el títol destacat (secció amb "tone": "accent") */
 .cards--accent .card--course { border-top: 5px solid var(--verd); padding-top: 26px; }
 .cards--accent .card__title { font-size: clamp(1.3rem, 2.4vw, 1.5rem); line-height: 1.2; color: var(--blau-800); font-weight: 800; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 2px solid var(--blau-200); }
+
+/* Targetes en fila: icona a l'esquerra i text a la dreta (secció amb "tone": "row") */
+.cards--row { grid-template-columns: 1fr; max-width: 860px; margin-left: auto; margin-right: auto; gap: 16px; }
+.cards--row .card--course { display: grid; grid-template-columns: 84px 1fr; column-gap: 24px; align-items: center; text-align: left; padding: 22px 28px; border-left: 6px solid var(--verd); }
+.cards--row .card__icon { grid-row: 1 / span 2; margin: 0; }
+.cards--row .card__title { margin-bottom: 4px; }
+.cards--row .card__text { margin-bottom: 0; }
+@media (max-width: 560px) { .cards--row .card--course { grid-template-columns: 56px 1fr; column-gap: 16px; padding: 18px; } .cards--row .card__icon { width: 56px; height: 56px; } .cards--row .card__icon .i { width: 30px; height: 30px; } }
+
+/* Franja en blau marí (secció amb "band": "navy"): títols i textos en clar */
+.band--navy { background: var(--blau-800); color: #fff; }
+.band--navy .band__title { color: #fff; }
+.band--navy .band__kicker { color: var(--verd-clar); }
+.band--navy .prose--before, .band--navy .band__intro { color: #e3ebf2; }
+.band--navy .prose--before strong { color: #fff; background: linear-gradient(transparent 58%, rgba(185, 212, 173, .35) 58%); }
+
+/* Ombres de color per diferenciar blocs de targetes consecutius */
+.cards--accent .card--course { box-shadow: 0 2px 4px rgba(53, 92, 45, .18), 0 14px 30px rgba(53, 92, 45, .30); }
+.cards--accent .card--course:hover { box-shadow: 0 2px 4px rgba(53, 92, 45, .2), 0 18px 36px rgba(53, 92, 45, .36); }
+.cards--row .card--course { border-left-color: var(--blau-800); box-shadow: 0 2px 4px rgba(1, 49, 91, .16), 0 14px 30px rgba(1, 49, 91, .28); }
+.cards--row .card--course:hover { box-shadow: 0 2px 4px rgba(1, 49, 91, .18), 0 18px 36px rgba(1, 49, 91, .34); transform: none; }

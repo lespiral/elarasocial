@@ -58,7 +58,7 @@
     },
     {
       "type": "cards",
-      "tone": "accent",
+      "tone": "row",
       "band": "white",
       "title": "De la parálisis al paso concreto.",
       "before": [

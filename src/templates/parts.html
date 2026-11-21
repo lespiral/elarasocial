@@ -36,7 +36,7 @@
 
 {# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "links": [{"text", "href"}], "badge"}] #}
 {% macro cards(items, root, heading_level=3, align='center', tone='') -%}
-<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}{% if tone == 'accent' %} cards--accent{% endif %}">
+<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}{% if tone == 'accent' %} cards--accent{% endif %}{% if tone == 'row' %} cards--row{% endif %}">
   {% for c in items %}
   <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
     {% if c.photo %}<span class="card__photo"><img src="{{ aroot }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
@@ -198,7 +198,7 @@
 
 {# Una secció de pàgina. Tipus: text, cards, list, faq, note, infografia, cta, contact, form (vegeu el README). #}
 {% macro section(s, root) -%}
-{% set band = {'white': ' band--white', 'soft': ' band--soft', 'slim': ' band--slim'}.get(s.band, '') %}
+{% set band = {'white': ' band--white', 'soft': ' band--soft', 'slim': ' band--slim', 'navy': ' band--navy'}.get(s.band, '') %}
 {# Amplada: els textos, estrets; si porten una llista de 4 o més elements (en dues columnes), una mica més amples #}
 {% set wcls = ' wrap--mid' if s.type == 'text' and (s.list or [])|length >= 4 else ' wrap--narrow' if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide else '' %}
 <section class="band{{ band }} band--{{ s.type }}" id="{{ s.id }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
