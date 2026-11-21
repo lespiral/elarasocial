@@ -16,6 +16,7 @@
     {
       "type": "cards",
       "align": "left",
+      "tone": "blue",
       "id": "metodologia",
       "kicker": "el trabajo que reconecta",
       "title": "Nuestra metodología",

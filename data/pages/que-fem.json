@@ -15,6 +15,7 @@
     {
       "type": "cards",
       "align": "left",
+      "tone": "blue",
       "id": "metodologia",
       "kicker": "el treball que reconnecta",
       "title": "La nostra metodologia",
