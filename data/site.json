@@ -191,7 +191,7 @@
             "kicker": "Sol/a · al teu ritme",
             "title": "Minicurs en línia",
             "scene": "passes",
-            "text": "Cada pas: una meditació guiada d'uns 15 minuts i una pregunta per pensar.",
+            "text": "Cada pas: una pràctica guiada d'uns 15 minuts i una pregunta per pensar.",
             "rows": [
               [
                 "Durada",
@@ -227,7 +227,7 @@
             "kicker": "En grup · fins a 16 persones",
             "title": "Tallers i grups",
             "scene": "arrels",
-            "text": "Meditació guiada, conversa en parella i en grup, pràctiques d'autocura i un pas concret per tancar.",
+            "text": "Pràctica guiada, conversa en parella i en grup, pràctiques d'autocura i un pas concret per tancar.",
             "rows": [
               [
                 "Durada",
@@ -270,7 +270,7 @@
         "pill": "Vols provar-ho abans? · Gratuït · en línia · al teu ritme",
         "title": "«7 passes cap a l'Esperança Activa»",
         "paragraphs": [
-          "Un minicurs per provar el camí a casa. Pots fer-lo en 7 dies o al teu ritme. Cada pas porta una meditació guiada d'uns 15 minuts i una pregunta per reflexionar, amb un àudio d'introducció i un de tancament."
+          "Un minicurs per provar el camí a casa. Pots fer-lo en 7 dies o al teu ritme. Cada pas porta una pràctica guiada d'uns 15 minuts i una pregunta per reflexionar, amb un àudio d'introducció i un de tancament."
         ],
         "chips": [
           "Àudios guiats",

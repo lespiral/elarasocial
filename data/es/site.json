@@ -151,7 +151,7 @@
             "kicker": "Solo/a · a tu ritmo",
             "title": "Minicurso en línea",
             "scene": "passes",
-            "text": "Cada paso: una meditación guiada de unos 15 minutos y una pregunta para pensar.",
+            "text": "Cada paso: una práctica guiada de unos 15 minutos y una pregunta para pensar.",
             "rows": [
               [
                 "Duración",
@@ -187,7 +187,7 @@
             "kicker": "En grupo · hasta 16 personas",
             "title": "Talleres y grupos",
             "scene": "arrels",
-            "text": "Meditación guiada, conversación en pareja y en grupo, prácticas de autocuidado y un paso concreto para cerrar.",
+            "text": "Práctica guiada, conversación en pareja y en grupo, prácticas de autocuidado y un paso concreto para cerrar.",
             "rows": [
               [
                 "Duración",
@@ -230,7 +230,7 @@
         "pill": "¿Quieres probarlo antes? · Gratuito · en línea · a tu ritmo",
         "title": "«7 pasos hacia la Esperanza Activa»",
         "paragraphs": [
-          "Un minicurso para probar el camino en casa. Puedes hacerlo en 7 días o a tu ritmo. Cada paso lleva una meditación guiada de unos 15 minutos y una pregunta para reflexionar, con un audio de introducción y otro de cierre."
+          "Un minicurso para probar el camino en casa. Puedes hacerlo en 7 días o a tu ritmo. Cada paso lleva una práctica guiada de unos 15 minutos y una pregunta para reflexionar, con un audio de introducción y otro de cierre."
         ],
         "chips": [
           "Audios guiados",
