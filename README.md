@@ -50,7 +50,7 @@ No s'han d'inventar dades: si en falta alguna, es deixa marcada amb `[PENDENT]`.
 }
 ```
 
-- Cada secció pot portar `"band": "white"`, `"soft"` o `"slim"` (el fons de la franja), `"intro"` (una frase sota el títol), `"buttons"` i `"id"` (l'adreça per enllaçar-hi: `/qui-som/#proposit`; si no n'hi ha, es fa amb el títol).
+- Cada secció pot portar `"band": "white"`, `"soft"`, `"slim"` o `"navy"` (el fons de la franja; `navy` és el blau marí de la web, amb títol i textos en blanc), `"intro"` (una frase sota el títol), `"buttons"` i `"id"` (l'adreça per enllaçar-hi: `/qui-som/#proposit`; si no n'hi ha, es fa amb el títol).
 - Els enllaços (`href`): una paraula sola és una pàgina de la web (`"contacte"` porta a `/contacte/`); també poden ser adreces completes (`https://…`), `mailto:`, `tel:` o `#seccio`.
 - Les icones són les de `src/icons.json` (les mateixes que a Camins d'Esperança [Activa]).
 - **Negreta**: a qualsevol text, `**així**` surt en negreta (dins dels paràgrafs, amb un subratllat de retolador verd). Els camps acabats en `_html` poden portar HTML (enllaços, negretes). Amb `"html": true` a la secció, també els paràgrafs i les llistes.
@@ -138,3 +138,10 @@ Des del 5 de novembre de 2026 no surten a cap pàgina (l'Aleix les va fer treure
 - **Tipus de secció nous**: `doors` (dues portes de la portada o d'Entitats), `steps` (passos numerats), `formats` (formats amb escena), `feature` (bloc destacat), `strip` (franja de l'equip), `offers` (propostes sense preu fix, «a mida») i `prices` (propostes amb els tres preus). Qualsevol pàgina pot portar `actions` (botons al capçal).
 - **Preus d'una sola font**: cada proposta porta `"prices": {"options": [{"label", "values": [reduït, estàndard, de suport]}]}` al seu JSON català (a l'ES, `"prices": {"labels": [...]}`). La secció `prices` de Persones els llegeix. `build.py` s'atura si els números no surten a la nota «dades» de la proposta. Un element amb `price_text` no genera files de preu.
 - **Entitats i comunitats** (`entitats` / `entidades`): una sola pàgina amb `#equip` i `#territori`; formulari de Google incrustat (CA i ES); preus «a mida». Propostes d'equip: Burnout i El Treball que Reconnecta per a equips i col·lectius (4 × 2 h). Els Cercles de paraula ja no existeixen (pàgines esborrades, adreces redirigides).
+
+## Tons de targetes, capçalera blava i subratllats (retocs del 21/11/2026)
+- **Targetes amb to** (`"type": "cards"`, `"tone"`): `"blue"` (targetes blau marí amb text blanc), `"accent"` (franja verda a dalt, títol gran en blau de la web i ombra verd fosc) o `"row"` (una columna, la icona a l'esquerra, barra i ombra en blau). Serveixen per no repetir dos blocs de targetes seguits amb el mateix aspecte; a Sobre nosaltres, Persones, Entitats i Què fem es fan servir així. Estils al final de `src/site.css`.
+- **Capçalera de les pàgines** (`page_head` a `src/templates/parts.html`): blau marí com la portada, amb l'onada, el títol en verd clar i els botons clars. L'escena de la metàfora i l'entradeta passen a una segona franja (`pagehead--after`). Els articles conserven la seva capçalera.
+- **Subratllat verd**: `**així**` també funciona dins de les caselles de les llistes (`.tile__t`) i de la introducció de franja (`.band__intro`). A les franges `navy`, el subratllat és més suau.
+- **Nom i vocabulari**: «El Treball que Reconnecta» (sempre amb «El»; «l'Espiral d'El Treball que Reconnecta»); el primer pas de l'espiral és «Arrelar» (castellà «Arraigar»); es parla de «pràctiques guiades», no de «meditacions». Si es canvia el text català d'una plantilla o infografia, cal canviar el parell a `data/es/plantilles.json`.
+- **Nota de preus per a entitats**: a les pàgines de taller amb preus individuals (El Treball que Reconnecta, Un pont d'esperança, L'Espiral de l'Esperança Activa), la nota «dades» porta una frase per a entitats i col·lectius (preu a mida, escriviu-nos).
