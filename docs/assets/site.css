@@ -508,7 +508,7 @@ h1 { font-weight: 800; letter-spacing: -.022em; }
 .prose__after:last-child { margin-bottom: 0; }
 /* Negretes: en blau fosc i, dins dels paràgrafs, amb un subratllat de retolador verd */
 .prose strong, .card__text strong, .faq__body strong, .tile strong, .band__intro strong { color: var(--blau-900); }
-.prose__lead strong, .band__intro strong, .prose__box p strong, .prose > p strong { background: linear-gradient(transparent 58%, rgba(185, 212, 173, .6) 58%); padding: 0 .03em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.prose__lead strong, .band__intro strong, .prose__box p strong, .prose > p strong, .tile__t strong { background: linear-gradient(transparent 58%, rgba(185, 212, 173, .6) 58%); padding: 0 .03em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
 /* Llistes: cada element en un quadre amb la seva icona (dues columnes si n'hi ha 4 o més) */
 .tiles { list-style: none; margin: 8px 0 1.2em; padding: 0; display: grid; gap: 12px; font-size: 1rem; }
