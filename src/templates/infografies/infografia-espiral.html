@@ -1,6 +1,6 @@
-{# infografia-espiral.html: l'Espiral del Treball que Reconnecta en quatre estacions (La nostra metodologia, a Què fem). A partir de «Com funciona» de Camins, amb escenes noves i els colors d'Elara. #}
+{# infografia-espiral.html: l'Espiral d'El Treball que Reconnecta en quatre estacions (La nostra metodologia, a Què fem). A partir de «Com funciona» de Camins, amb escenes noves i els colors d'Elara. #}
 <div class="volta" data-volta data-variant="{{ s.variant|default('metodologia') }}">
-  <div class="volta__scene" role="group" aria-label="L'Espiral del Treball que Reconnecta en quatre estacions: gratitud, dolor, noves mirades i acció; i torna a començar">
+  <div class="volta__scene" role="group" aria-label="L'Espiral d'El Treball que Reconnecta en quatre estacions: gratitud, dolor, noves mirades i acció; i torna a començar">
     <svg class="volta__svg" aria-hidden="true" focusable="false"></svg>
     <div class="volta__nodes"></div>
     <div class="volta__pop" aria-live="polite"><p class="volta__pk"></p><p class="volta__pt"></p><p class="volta__px"></p></div>
@@ -174,7 +174,7 @@
       text: "Passar a l’acció vol dir sortir al món amb connexió. El pas final és moure’s des d’una relació estable." }
   ];
   var BACK = { title: "I torna a començar", sub: "Al ritme que el cos pot sostenir",
-    kick: "L’Espiral del Treball que Reconnecta",
+    kick: "L’Espiral d'El Treball que Reconnecta",
     text: "Les quatre estacions per transformar la incertesa: Arrelar, Dolor, Noves Mirades i Acció." };
   // L'Espiral de l'Esperança Activa, El Treball que Reconnecta i Un pont d'Esperança («Explorarem…» de cada pàgina)
   var TQR = [
@@ -194,9 +194,9 @@
   var RHYTHM = { taller: "4 hores", cicle: "4 sessions de 2 hores", pont: "2 sessions de 6 hores (dissabte i diumenge)", grup: "Mensual o quinzenal" };
   if (V !== "metodologia") {
     STEPS = V === "grup" ? GRUP : TQR;
-    BACK = { title: "I torna a començar", sub: RHYTHM[V] || "", kick: "L’Espiral del Treball que Reconnecta",
-      text: V === "grup" ? "En lloc de seguir un temari rígid, farem servir el Treball que Reconnecta com a brúixola."
-        : "Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta: Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció." };
+    BACK = { title: "I torna a començar", sub: RHYTHM[V] || "", kick: "L’Espiral d'El Treball que Reconnecta",
+      text: V === "grup" ? "En lloc de seguir un temari rígid, farem servir El Treball que Reconnecta com a brúixola."
+        : "Recorrerem de manera vivencial l’Espiral d’El Treball que Reconnecta: Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció." };
   }
   function stationKick(n) { return "Estació " + n + " de 4"; }
 
