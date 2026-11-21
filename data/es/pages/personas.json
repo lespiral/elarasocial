@@ -3,6 +3,16 @@
   "title": "Cuando el mundo te pesa, déjate acompañar.",
   "kicker": "Personas",
   "lead": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
+  "actions": [
+    {
+      "text": "Encuentra tu propuesta",
+      "href": "#propuestas"
+    },
+    {
+      "text": "Prueba el minicurso gratuito",
+      "href": "7-pasos-hacia-la-esperanza-activa"
+    }
+  ],
   "description": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
   "escena": "vida",
   "sections": [
@@ -195,84 +205,214 @@
       ]
     },
     {
-      "type": "cards",
+      "type": "prices",
       "band": "soft",
       "id": "propuestas",
-      "align": "left",
-      "title": "Te acompañamos al nivel y al ritmo que elijas",
-      "before": [
-        "Adaptamos nuestra metodología a tres niveles de impacto: espacios de acompañamiento individual, recursos online para hacer a tu ritmo, y talleres y grupos de continuidad."
+      "title": "Propuestas y precios",
+      "intro": "Tres precios en cada propuesta. El estándar cubre preparación, facilitación, materiales y espacio. El de apoyo financia plazas reducidas. Elige el que te resulte justo, sin justificarte.",
+      "tiers": [
+        "Reducido",
+        "Estándar",
+        "De apoyo"
       ],
-      "items": [
+      "groups": [
         {
-          "title": "7 pasos hacia la Esperanza Activa",
-          "badge": "Mini-curso gratuito online",
-          "text": "Un recorrido breve y profundo para iniciarte en El Trabajo que Reconecta: volver a lo que te sostiene, dar espacio a lo que preocupa, abrir la mirada y aterrizar un paso posible.",
-          "href": "7-pasos-hacia-la-esperanza-activa"
-        },
-        {
-          "title": "Caminos de Esperanza [Activa]",
-          "subtitle": "7 pasos para reconectar, contigo y con tu entorno",
-          "paragraphs": [
-            "Una propuesta que combina un recorrido digital de los “7 pasos hacia la Esperanza Activa” con rutas a pie por tu entorno para cuidar el bienestar personal y comunitario, fortalecer los vínculos y reconectar con aquello que nos sostiene.",
-            "Una manera de integrar pequeños pasos de esperanza activa en la vida cotidiana, a tu ritmo y desde el lugar donde vives."
-          ],
-          "href": "https://esperanzaactiva.org/",
-          "button": "Ir a la web en castellano",
-          "links": [
+          "id": "para-empezar",
+          "kicker": "Para empezar",
+          "title": "Sin compromiso, a tu ritmo",
+          "items": [
             {
-              "text": "Ir a la web en catalán",
-              "href": "https://xn--esperanaactiva-mjb.cat/"
+              "page": "7-passes-cap-a-lesperanca-activa",
+              "href": "7-pasos-hacia-la-esperanza-activa",
+              "badge": "Gratuito · en línea",
+              "title": "7 pasos hacia la Esperanza Activa",
+              "text": "Minicurso para probar el camino en casa: una meditación guiada de unos 15 minutos y una pregunta para pensar en cada paso.",
+              "rows": [
+                [
+                  "Duración",
+                  "7 pasos, en 7 días o a tu ritmo"
+                ],
+                [
+                  "Formato",
+                  "Audio y reflexión, en línea"
+                ]
+              ],
+              "price_text": "Precio: gratuito",
+              "button": "Empieza el minicurso gratuito"
+            },
+            {
+              "href": "https://esperanzaactiva.org/",
+              "badge": "En línea + rutas a pie",
+              "title": "Caminos de Esperanza [Activa]",
+              "text": "Cursos digitales de 7 pasos combinados con rutas a pie cerca de casa. Vive en su propia web.",
+              "rows": [
+                [
+                  "Cursos",
+                  "Cuatro, según lo que te preocupa"
+                ],
+                [
+                  "Rutas",
+                  "Por pueblos y ciudades"
+                ]
+              ],
+              "button": "Ir a la web en castellano",
+              "links": [
+                {
+                  "text": "Ir a la web en catalán",
+                  "href": "https://xn--esperanaactiva-mjb.cat/"
+                }
+              ]
             }
           ]
         },
         {
-          "title": "Acompañamiento individual",
-          "paragraphs": [
-            "Te ofrecemos un espacio de mentoría individual, online o presencial, para detenerte y aterrizar el proceso de cambio en tu realidad.",
-            "Un refugio donde aprender a sostener las emociones difíciles del día a día y trazar una hoja de ruta para transformar la incertidumbre en acción con sentido."
-          ],
-          "href": "acompanamiento-individual"
+          "id": "para-profundizar",
+          "kicker": "Para profundizar",
+          "title": "Un espacio estructurado, en grupo",
+          "items": [
+            {
+              "page": "lespiral-de-lesperanca-activa",
+              "href": "la-espiral-de-la-esperanza-activa",
+              "badge": "Taller · 4 h",
+              "title": "La Espiral de la Esperanza Activa",
+              "text": "Un taller seguro para reconectar con la vida y transformar el dolor en compromiso concreto.",
+              "rows": [
+                [
+                  "Duración",
+                  "4 horas · máx. 16 personas"
+                ],
+                [
+                  "Próxima edición",
+                  "[PENDENT: fecha · lugar]"
+                ]
+              ],
+              "button": "Ver el taller"
+            },
+            {
+              "page": "el-treball-que-reconnecta",
+              "href": "el-trabajo-que-reconecta",
+              "badge": "Ciclo · 4 sesiones",
+              "title": "El Trabajo que Reconecta",
+              "text": "Cuatro sesiones para recorrer la espiral: agradecer, hacer sitio al dolor, mirar con ojos nuevos y pasar a la acción.",
+              "rows": [
+                [
+                  "Duración",
+                  "4 sesiones de 2 h · máx. 16"
+                ],
+                [
+                  "Próxima edición",
+                  "[PENDENT: fecha · lugar]"
+                ]
+              ],
+              "button": "Ver el ciclo"
+            },
+            {
+              "page": "un-pont-desperanca-2",
+              "href": "un-puente-de-esperanza",
+              "badge": "Fin de semana",
+              "title": "Un puente de esperanza",
+              "text": "Una inmersión de dos días para profundizar en grupo, con tiempo para integrarlo.",
+              "rows": [
+                [
+                  "Duración",
+                  "2 sesiones de 6 h · máx. 16"
+                ],
+                [
+                  "Próxima edición",
+                  "[PENDENT: fecha · lugar]"
+                ]
+              ],
+              "button": "Ver el fin de semana"
+            }
+          ]
         },
         {
-          "title": "La Espiral de la Esperanza Activa",
-          "paragraphs": [
-            "Un taller vivencial y seguro para detenernos y dar salida a todo aquello que nos angustia.",
-            "Desde el estrés cotidiano hasta la incertidumbre por el futuro global.",
-            "Venimos a reconectar con la vida, a metabolizar el malestar en comunidad y a trazar pasos concretos de esperanza activa."
-          ],
-          "href": "la-espiral-de-la-esperanza-activa"
-        },
-        {
-          "title": "El Trabajo que Reconecta",
-          "text": "Un ciclo para reconectar con la vida, transformar el dolor personal y/o por el mundo en fuerza activa y encontrar formas concretas de compromiso personal y comunitario.",
-          "href": "el-trabajo-que-reconecta"
-        },
-        {
-          "title": "Un puente de esperanza",
-          "paragraphs": [
-            "Un espacio de inmersión para reconectar con la vida y transformar el dolor en fuerza compartida.",
-            "Durante dos días, tejeremos un lugar seguro para trabajar con calma tanto las crisis personales (el estrés, la incertidumbre vital) como el agotamiento que nos generan los grandes retos globales."
-          ],
-          "href": "un-puente-de-esperanza"
-        },
-        {
-          "title": "El Trabajo que Reconecta (Grupo regular)",
-          "text": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
-          "href": "grupo-regular-de-el-trabajo-que-reconecta"
-        },
-        {
-          "title": "Círculos de palabra",
-          "subtitle": "(para sostener organizaciones y colectivos)",
-          "text": "Este programa es un taller práctico en 4 sesiones (2 h cada una) para aprender la estructura de los Círculos de palabra: una metodología sencilla y potente para tener conversaciones difíciles sin que escalen, cuidar el vínculo y llegar a acuerdos sostenibles.",
-          "href": "circulos-para-sostener-organizaciones-y-colectivos"
-        },
-        {
-          "title": "Burnout",
-          "subtitle": "Reconectar con la fuerza sin quemarse",
-          "text": "Un programa en 8 sesiones para transformar agotamiento, sobrecarga y culpa en regulación, claridad y límites sostenibles.",
-          "href": "burnout"
+          "id": "para-sostener",
+          "kicker": "Para sostener",
+          "title": "Continuidad y acompañamiento",
+          "items": [
+            {
+              "page": "grup-regular-de-el-treball-que-reconnecta",
+              "href": "grupo-regular-de-el-trabajo-que-reconecta",
+              "badge": "Grupo · continuidad",
+              "title": "El Trabajo que Reconecta · grupo regular",
+              "text": "Un espacio estable para detenerte y reconectar. Cada sesión se modela según lo que necesita el grupo.",
+              "rows": [
+                [
+                  "Duración",
+                  "Sesiones de 2 h · máx. 16"
+                ],
+                [
+                  "Frecuencia",
+                  "Cada mes o cada 15 días"
+                ]
+              ],
+              "price_note": "Precios por mes.",
+              "button": "Ver el grupo regular"
+            },
+            {
+              "page": "acompanyament-individual",
+              "href": "acompanamiento-individual#inscripcion",
+              "badge": "De tú a tú",
+              "title": "Acompañamiento individual",
+              "text": "Hablamos de lo que te pesa, practicamos herramientas para regularte y diseñamos un plan de acción y de autocuidado.",
+              "rows": [
+                [
+                  "Duración",
+                  "Sesiones de 1 h o de 1,5 h"
+                ],
+                [
+                  "Formato",
+                  "En línea o presencial"
+                ]
+              ],
+              "button": "Reserva una sesión"
+            }
+          ]
         }
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "white",
+      "id": "como-te-apuntas",
+      "title": "Cómo te apuntas",
+      "items": [
+        {
+          "title": "Elige la propuesta",
+          "text": "Mira duración, grupo y precio. Si dudas, escríbenos."
+        },
+        {
+          "title": "Rellena el formulario",
+          "text": "Tres datos y el precio que elijas. Ningún compromiso hasta que confirmemos."
+        },
+        {
+          "title": "Te confirmamos",
+          "text": "Te respondemos en [PENDENT: X días] con las fechas, el lugar y cómo hacer el pago."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas-frecuentes",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿Es terapia?",
+          "No. Son espacios vivenciales y seguros, y participar es voluntario. Si ahora estás pasando un momento difícil, cuéntanoslo antes y lo valoramos juntos."
+        ],
+        [
+          "¿Qué precio debo elegir?",
+          "El que te resulte justo. El estándar cubre el coste de la propuesta y el de apoyo ayuda a financiar plazas reducidas."
+        ],
+        [
+          "¿Hace falta experiencia previa?",
+          "No. Puedes venir sin haber hecho nunca nada parecido."
+        ],
+        [
+          "¿Puedo cancelar?",
+          "[PENDENT: política de cancelación y devolución]"
+        ]
       ]
     },
     {

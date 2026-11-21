@@ -1,7 +1,7 @@
 {
   "ca": "que-fem",
   "title": "Transformamos el malestar en Esperanza Activa",
-  "kicker": "Qué hacemos",
+  "kicker": "Qué es la Esperanza Activa",
   "lead": "Trabajamos en tres niveles de impacto: individual, grupal y comunitario.",
   "sections": [
     {
@@ -92,7 +92,7 @@
             "¿Notáis que la inercia os está quemando?",
             "Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, transformando conflictos en oportunidades."
           ],
-          "href": "organizaciones"
+          "href": "entidades/#equipo"
         },
         {
           "icon": "tree",
@@ -101,42 +101,7 @@
             "¿Queréis tejer redes reales en un mundo fragmentado?",
             "Creamos espacios de encuentro donde compartir recursos, saberes y apoyo mutuo para hacer frente a los retos ecosociales."
           ],
-          "href": "comunidades"
-        }
-      ]
-    },
-    {
-      "type": "cards",
-      "band": "soft",
-      "align": "left",
-      "kicker": "¿qué nos mueve?",
-      "title": "La eficiencia real nace del bienestar.",
-      "before": [
-        "Nuestra práctica se fundamenta en una premisa clara: la eficiencia real nace del bienestar. Situamos el cuidado de las personas y de su entorno en el corazón de cada decisión estratégica, porque entendemos que el único éxito viable es aquel que regenera, no el que agota."
-      ],
-      "items": [
-        {
-          "title": "Conversaciones que transforman",
-          "paragraphs": [
-            "Lo que no se dice, se atasca.",
-            "Creamos el espacio necesario para poner palabras a lo que realmente importa.",
-            "Acompañamos a los equipos a bajar la guardia y hablar con autenticidad, la única vía para disolver tensiones y reactivar la inteligencia colectiva."
-          ]
-        },
-        {
-          "title": "Coherencia interna, impacto externo.",
-          "paragraphs": [
-            "Todo está conectado: la calidad de tu impacto en el mundo es un reflejo directo de la salud de tus relaciones internas.",
-            "Trabajamos para alinear tu propósito con la realidad del día a día, eliminando la fricción entre lo que dices y lo que haces."
-          ]
-        },
-        {
-          "title": "Esperanza Activa: pasar a la acción con sentido.",
-          "paragraphs": [
-            "La teoría no transforma; la acción sí.",
-            "Pero no cualquier acción.",
-            "Te acompañamos a dar pasos concretos y arraigados en tierra firme, huyendo de la inmediatez para construir cambios reales que tu día a día pueda sostener."
-          ]
+          "href": "entidades/#territorio"
         }
       ]
     },
@@ -154,12 +119,8 @@
           "href": "personas/#propuestas"
         },
         {
-          "text": "Comunidades",
-          "href": "comunidades/#propuestas"
-        },
-        {
-          "text": "Organizaciones",
-          "href": "organizaciones/#propuestas"
+          "text": "Entidades y comunidades",
+          "href": "entidades"
         }
       ]
     }

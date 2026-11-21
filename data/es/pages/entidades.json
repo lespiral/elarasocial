@@ -1,0 +1,430 @@
+{
+  "ca": "entitats",
+  "title": "Cuando el contexto os supera, dejaos acompañar.",
+  "kicker": "Entidades y comunidades",
+  "lead": "Transformamos el desgaste del equipo y el aislamiento del territorio en claridad, vínculo y un paso colectivo posible.",
+  "escena": "dia",
+  "actions": [
+    {
+      "text": "Ver propuestas",
+      "href": "#equipo"
+    },
+    {
+      "text": "Pide una propuesta",
+      "href": "#pide-propuesta"
+    }
+  ],
+  "sections": [
+    {
+      "type": "doors",
+      "id": "caminos",
+      "items": [
+        {
+          "kicker": "Equipos y entidades",
+          "title": "Un equipo, cooperativa o colectivo",
+          "ask": "¿Os reconocéis?",
+          "style": "dark",
+          "list": [
+            "El equipo va agotado",
+            "Hay tensiones que no sabemos cómo llevar",
+            "Queremos poner el cuidado en el centro"
+          ],
+          "href": "#equipo",
+          "button": "Propuestas para equipos"
+        },
+        {
+          "kicker": "Territorio y comunidades",
+          "title": "Una comunidad, un barrio, una red",
+          "ask": "¿Os reconocéis?",
+          "style": "light",
+          "list": [
+            "Nos faltan espacios de encuentro",
+            "La preocupación nos paraliza",
+            "Queremos actuar juntos en el territorio"
+          ],
+          "href": "#territorio",
+          "button": "Propuestas para el territorio"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "kicker": "sabemos que sostener un proyecto a veces se hace una montaña.",
+      "title": "Por mucho que os esforcéis, ¿el día a día y las inercias os pasan por encima?",
+      "paragraphs": [
+        "En Elara Social, ayudamos a organizaciones y cooperativas a **transformar el estancamiento en fuerza de equipo**. Transformaremos este desgaste en impulso para dar el siguiente paso colectivo.",
+        "Sostener la vida está en el centro de nuestra actividad. Por eso no ofrecemos “soluciones rápidas” que no cambian el día a día: trabajamos para que vuestro equipo recupere ritmo, coherencia y capacidad de decisión.",
+        "En Elara Social utilizamos metodologías estructuradas y prácticas vivenciales para pasar **de apagar fuegos a acuerdos claros**, y del desgaste crónico a una cultura de cuidado y responsabilidad compartida.",
+        "Un enfoque pensado para el bienestar de las personas y la sostenibilidad del proyecto."
+      ],
+      "id": "equipos-intro"
+    },
+    {
+      "type": "cards",
+      "title": "Empecemos a transformarlo",
+      "items": [
+        {
+          "icon": "nav",
+          "title": "¿Bloqueo estratégico o desorientación?",
+          "text": "La situación global o sectorial os pesa, y el equipo se queda atrapado apagando fuegos sin saber cómo avanzar.",
+          "href": "#equipo-propostes",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "cloud-rain",
+          "title": "¿Burnout y desgaste en el equipo?",
+          "text": "Vais con el piloto automático, cumpliendo los objetivos pero desconectados del propósito inicial, y necesitáis un respiro.",
+          "href": "#equipo-propostes",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "check",
+          "title": "¿Buscáis coherencia interna?",
+          "paragraphs": [
+            "Os pesa la contradicción entre lo que hacéis y cómo lo hacéis.",
+            "Ayudamos a reencontrar el sentido y los valores de vuestra organización."
+          ],
+          "href": "#equipo-propostes",
+          "button": "Ver opciones"
+        }
+      ],
+      "id": "equipos-situaciones"
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "id": "precio",
+      "title": "Cómo se calcula el precio",
+      "paragraphs": [
+        "Las propuestas para equipos y entidades no tienen precio fijo: lo calculamos a medida, según el número de personas, las sesiones y el lugar.",
+        "Cuando nos contéis qué necesitáis, os enviamos un presupuesto antes de decidir nada. Sin compromiso."
+      ]
+    },
+    {
+      "type": "offers",
+      "band": "white",
+      "id": "equipo",
+      "title": "Propuestas para equipos y entidades",
+      "intro": "Tres propuestas pensadas para un equipo: hasta 20 personas, presenciales o en línea, a convenir.",
+      "groups": [
+        {
+          "id": "equipo-propostes",
+          "items": [
+            {
+              "page": "burnout",
+              "href": "burnout",
+              "badge": "Programa · 8 sesiones",
+              "title": "Burnout",
+              "text": "Reconectar con la fuerza sin quemarse: transformar agotamiento, sobrecarga y culpa en regulación, claridad y límites sostenibles.",
+              "rows": [
+                [
+                  "Duración",
+                  "8 sesiones"
+                ]
+              ],
+              "price_text": "Precio: a medida",
+              "button": "Pide presupuesto",
+              "style": "btn--primary",
+              "links": [
+                {
+                  "text": "Ver la propuesta",
+                  "href": "burnout"
+                }
+              ]
+            },
+            {
+              "page": "cercles-de-paraula-per-a-gestionar-conflictes",
+              "href": "#pide-propuesta",
+              "badge": "Taller · 4 sesiones",
+              "title": "Círculos de palabra para transformar conflictos",
+              "text": "Un taller práctico para incorporar la estructura de los Círculos de palabra como herramienta para abordar conversaciones difíciles con más seguridad y equidad.",
+              "rows": [
+                [
+                  "Duración",
+                  "4 sesiones"
+                ]
+              ],
+              "price_text": "Precio: a medida",
+              "button": "Pide presupuesto",
+              "style": "btn--primary",
+              "links": [
+                {
+                  "text": "Ver la propuesta",
+                  "href": "circulos-de-palabra-para-gestionar-conflictos"
+                }
+              ]
+            },
+            {
+              "page": "cercles-per-sostenir-organitzacions-i-col·lectius",
+              "href": "#pide-propuesta",
+              "badge": "Ciclo · 4 × 2 h",
+              "title": "Círculos de palabra para sostener",
+              "text": "Círculos para cuidar el clima relacional de una organización o colectivo y sostener sus acuerdos.",
+              "rows": [
+                [
+                  "Duración",
+                  "4 sesiones de 2 h"
+                ]
+              ],
+              "price_text": "Precio: a medida",
+              "button": "Pide presupuesto",
+              "style": "btn--primary",
+              "links": [
+                {
+                  "text": "Ver la propuesta",
+                  "href": "circulos-para-sostener-organizaciones-y-colectivos"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "kicker": "la acción tiene que ser colectiva.",
+      "title": "¿Sentís que los retos actuales son demasiado grandes para asumirlos en solitario?",
+      "paragraphs": [
+        "En Elara Social facilitamos lugares de encuentro donde **la preocupación se transforma en vínculo, y el vínculo en capacidad de acción colectiva**.",
+        "Sostener la vida está en el centro de nuestra actividad. Por eso no buscamos soluciones rápidas: construimos vínculos, ritmos y estructura para que la esperanza pueda sostenerse.",
+        "En Elara Social diseñamos y facilitamos espacios seguros donde la vulnerabilidad se transforma en apoyo mutuo, y las ganas de actuar se concretan en **pasos pequeños, compartidos y arraigados en el territorio**.",
+        "Una propuesta pensada para el bienestar individual y la fuerza colectiva."
+      ],
+      "id": "territorio-intro"
+    },
+    {
+      "type": "cards",
+      "title": "Transformamos la preocupación en comunidad, y la comunidad en pasos posibles.",
+      "items": [
+        {
+          "icon": "users-three",
+          "title": "¿Aislamiento en un mundo fragmentado?",
+          "text": "Recuperamos espacios auténticos de encuentro, vínculo y colaboración real.",
+          "href": "#territorio-propostes",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "cloud-rain",
+          "title": "¿Sobrecarga ecosocial?",
+          "text": "Cuando el miedo y la incertidumbre paralizan, el grupo ayuda a sostener y ordenar.",
+          "href": "#territorio-propostes",
+          "button": "Ver opciones"
+        },
+        {
+          "icon": "house",
+          "title": "¿Faltan recursos compartidos?",
+          "text": "Si hay ideas pero faltan herramientas, saberes o tribu, hacemos red alrededor de necesidades comunes.",
+          "href": "#territorio-propostes",
+          "button": "Ver opciones"
+        }
+      ],
+      "id": "territorio-situaciones"
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "title": "¿Cómo nos organizamos?",
+      "infografia": "itinerari",
+      "itinerari": {
+        "aria": "Un camino en tres paradas: encuentros comunitarios, espacios de recursos y grupos de acción",
+        "inici": [
+          "El aislamiento",
+          "¿Sentís que los retos actuales son demasiado grandes para asumirlos en solitario?"
+        ],
+        "final": [
+          "La acción colectiva",
+          "En Elara Social facilitamos lugares de encuentro donde la preocupación se transforma en vínculo, y el vínculo en capacidad de acción colectiva."
+        ],
+        "icones": [
+          "people",
+          "box",
+          "flag"
+        ]
+      },
+      "before": [
+        "Ofrecemos diferentes formatos de participación adaptados a la energía y la disponibilidad de cada cual, poniendo siempre la comunidad en el centro."
+      ],
+      "items": [
+        {
+          "title": "Encuentros comunitarios",
+          "text": "Espacios de diálogo y conexión para tejer vínculos de confianza entre vecinas y colectivos.",
+          "propostes": [
+            [
+              "La Espiral de la Esperanza Activa",
+              "la-espiral-de-la-esperanza-activa"
+            ],
+            [
+              "Un puente de esperanza comunitaria",
+              "un-puente-de-esperanza"
+            ],
+            [
+              "El Trabajo que Reconecta (grupo regular)",
+              "grupo-regular-de-el-trabajo-que-reconecta"
+            ],
+            [
+              "Círculos de palabra (para sostener colectivos)",
+              "circulos-para-sostener-organizaciones-y-colectivos"
+            ]
+          ]
+        },
+        {
+          "title": "Espacios de recursos",
+          "text": "Una plataforma donde compartir herramientas, estrategias y conocimientos prácticos ecosociales.",
+          "propostes": [
+            [
+              "7 pasos hacia la Esperanza Activa",
+              "7-pasos-hacia-la-esperanza-activa-comunidades"
+            ],
+            [
+              "Caminos de Esperanza [Activa] (en castellano)",
+              "https://esperanzaactiva.org/"
+            ],
+            [
+              "Camins d'Esperança [Activa] (en catalán)",
+              "https://xn--esperanaactiva-mjb.cat/"
+            ]
+          ]
+        },
+        {
+          "title": "Grupos de acción",
+          "text": "Acompañamiento a grupos de trabajo enfocados a resolver retos concretos del territorio.",
+          "propostes": [
+            [
+              "El Trabajo que Reconecta",
+              "el-trabajo-que-reconecta"
+            ],
+            [
+              "Círculos de palabra (para transformar conflictos)",
+              "circulos-de-palabra-para-gestionar-conflictos"
+            ],
+            [
+              "Burnout",
+              "burnout"
+            ],
+            [
+              "Hablemos",
+              "contacto"
+            ]
+          ]
+        }
+      ],
+      "id": "territorio-formatos"
+    },
+    {
+      "type": "offers",
+      "band": "white",
+      "id": "territorio",
+      "title": "Propuestas para el territorio",
+      "intro": "Se pueden adaptar a la realidad de vuestra comunidad. El precio también es a medida.",
+      "groups": [
+        {
+          "id": "territorio-propostes",
+          "items": [
+            {
+              "page": "7-passes-cap-a-lesperanca-activa-comunitats",
+              "href": "7-pasos-hacia-la-esperanza-activa-comunidades",
+              "badge": "4 minicursos en línea",
+              "title": "7 pasos hacia la Esperanza Activa, adaptados",
+              "text": "Un recorrido breve para iniciar el Trabajo que Reconecta, que podemos adaptar a la realidad de vuestra comunidad.",
+              "price_text": "Precio: a medida",
+              "button": "Ver la propuesta"
+            },
+            {
+              "page": "un-pont-desperanca-2",
+              "href": "un-puente-de-esperanza",
+              "badge": "Fin de semana",
+              "title": "Un puente de esperanza comunitaria",
+              "text": "Una inmersión de dos días para tejer vínculo y acción compartida en el territorio.",
+              "price_text": "Precio: a medida",
+              "button": "Ver la propuesta"
+            },
+            {
+              "page": "el-treball-que-reconnecta",
+              "href": "el-trabajo-que-reconecta",
+              "badge": "Ciclo · 4 sesiones",
+              "title": "El Trabajo que Reconecta",
+              "text": "Cuatro sesiones para recorrer la espiral con un grupo del territorio.",
+              "price_text": "Precio: a medida",
+              "button": "Ver la propuesta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "como-trabajamos",
+      "title": "Cómo trabajamos con vosotros",
+      "items": [
+        {
+          "title": "Nos contáis la situación",
+          "text": "Por escrito o en una llamada, como prefiráis."
+        },
+        {
+          "title": "Una primera conversación",
+          "text": "Entendemos qué os pasa y qué queréis conseguir."
+        },
+        {
+          "title": "Propuesta y presupuesto a medida",
+          "text": "Os lo enviamos antes de que decidáis nada."
+        },
+        {
+          "title": "Facilitamos y hacemos seguimiento",
+          "text": "Os dejamos un plan propio para mantenerlo."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "band": "white",
+      "id": "pide-propuesta",
+      "title": "Pide una propuesta",
+      "paragraphs": [
+        "Cuéntanos qué necesitáis y te respondemos con una propuesta o una primera conversación.",
+        "[PENDENT: formulario de Google para entidades]"
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "despues",
+      "title": "¿Qué pasa después?",
+      "items": [
+        {
+          "title": "Os respondemos",
+          "text": "En [PENDENT: X días laborables]."
+        },
+        {
+          "title": "Hablamos",
+          "text": "Una primera conversación, sin compromiso."
+        },
+        {
+          "title": "Decidís",
+          "text": "Con el presupuesto en la mano, donde y cuando os vaya bien."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas-frecuentes",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿Cuánto cuesta?",
+          "Depende de las sesiones, del número de personas y del lugar. Os enviamos un presupuesto a medida, sin compromiso."
+        ],
+        [
+          "¿Trabajáis en línea o en nuestra sede?",
+          "[PENDENT: modalidad y desplazamientos]"
+        ],
+        [
+          "¿Es terapia?",
+          "No. Son espacios vivenciales y seguros, y participar es voluntario."
+        ]
+      ]
+    }
+  ]
+}

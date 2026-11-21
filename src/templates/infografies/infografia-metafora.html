@@ -3,10 +3,10 @@
    Escenes: passes, passes-comunitat, costat, falguera, arrels, pont, llunes, paraula, sostenir, foc.
    Com les altres: comença grisa i, quan es veu a la pantalla, s'anima i s'escalfa (el sol). Tocar-la la torna a fer.
    Amb «reduir moviment», surt directament acabada. #}
-<figure class="metafora">
+{% if metafora %}<figure class="metafora">
   <div class="mt" data-metafora="{{ metafora.name }}" aria-label="{{ metafora.text }}"></div>
   {% if metafora.text %}<figcaption class="metafora__cap">{{ metafora.text }}</figcaption>{% endif %}
-</figure>
+</figure>{% endif %}
 
 <style>
 .metafora { max-width: 860px; margin: 26px auto 0; }

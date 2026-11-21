@@ -5,6 +5,7 @@
   "kicker": "Propuestas",
   "lead": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
   "description": "Grupos regulares con encuentros (quincenales / mensuales) donde detenernos, reconectar con la vida y transformar el malestar en fuerza colectiva a nuestro propio ritmo.",
+  "prices": {"labels": ["Mensual (1 sesión al mes)", "Quincenal (2 sesiones al mes)"]},
   "sections": [
     {
       "type": "text",

@@ -5,6 +5,7 @@
   "kicker": "A tu lado y a tu ritmo",
   "lead": "Del malestar a la acción con sentido",
   "description": "Del malestar a la acción con sentido",
+  "prices": {"labels": ["Sesión de 1 hora", "Sesión de 1,5 horas"]},
   "sections": [
     {
       "type": "text",

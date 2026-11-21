@@ -4,6 +4,7 @@
   "kicker": "Un parèntesi per reconnectar des de l’arrel",
   "lead": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
   "description": "Un espai d’immersió per reconnectar amb la vida i transformar el dolor en força compartida.",
+  "prices": {"options": [{"values": [92, 135, 179]}]},
   "sections": [
     {
       "type": "text",

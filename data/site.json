@@ -59,19 +59,15 @@
     },
     {
       "slug": "que-fem",
-      "title": "Què fem"
+      "title": "Què és l'Esperança Activa"
     },
     {
       "slug": "persones",
       "title": "Persones"
     },
     {
-      "slug": "comunitats",
-      "title": "Comunitats"
-    },
-    {
-      "slug": "organitzacions",
-      "title": "Organitzacions"
+      "slug": "entitats",
+      "title": "Entitats i comunitats"
     },
     {
       "slug": "articles",
@@ -85,8 +81,8 @@
   "redirects": {
     "home-2": "",
     "propostes-a-nivell-individual": "persones/#propostes",
-    "proposes-a-nivell-de-grups-o-organitzacions": "organitzacions/#propostes",
-    "propostes-a-nivell-de-comunitats": "comunitats/#propostes",
+    "proposes-a-nivell-de-grups-o-organitzacions": "entitats/#equip",
+    "propostes-a-nivell-de-comunitats": "entitats/#territori",
     "acompanyament-individual-formulari": "acompanyament-individual/#inscripcio",
     "lespiral-de-lesperanca-activa-formulari": "lespiral-de-lesperanca-activa/#inscripcio",
     "el-treball-que-reconnecta-formulari": "el-treball-que-reconnecta/#inscripcio",
@@ -102,138 +98,288 @@
     "camins-desperanca-activa-quan-cuidar-nos-es-una-tasca-col·lectiva": "https://xn--esperanaactiva-mjb.cat/prescripcio-social/",
     "camins-desperanca-activa-el-prat-de-llobregat": "https://xn--esperanaactiva-mjb.cat/el-prat/",
     "el-prat-de-llobregat": "https://xn--esperanaactiva-mjb.cat/el-prat/",
-    "vic": "https://xn--esperanaactiva-mjb.cat/vic/"
+    "vic": "https://xn--esperanaactiva-mjb.cat/vic/",
+    "organitzacions": "entitats/#equip",
+    "comunitats": "entitats/#territori"
   },
   "home": {
+    "kicker": "Elara Social · la línia de treball comunitari de L'Espiral",
     "title": "Transformem el malestar en Esperança Activa",
-    "lead": "Acompanyem persones, grups i comunitats a trobar sentit, arrelament i direcció en temps de crisi ecosocial.",
-    "actions": [
-      {
-        "text": "Descobreix què fem per tu",
-        "href": "que-fem"
-      }
-    ],
+    "lead": "Espais per parlar del que ens preocupa i convertir-ho en acció. Acompanyem persones, equips i comunitats davant la crisi ecosocial.",
     "sections": [
+      {
+        "type": "doors",
+        "id": "portes",
+        "items": [
+          {
+            "kicker": "Per a persones",
+            "title": "Sóc una persona",
+            "ask": "T'hi reconeixes?",
+            "style": "light",
+            "list": [
+              "Estic esgotat i desorientat",
+              "Em preocupa el futur i no sé què fer-ne",
+              "Vull actuar, però no sol ni sola"
+            ],
+            "href": "persones",
+            "button": "Veure com et podem acompanyar"
+          },
+          {
+            "kicker": "Per a entitats",
+            "title": "Represento una entitat, cooperativa o col·lectiu",
+            "ask": "T'hi reconeixes?",
+            "style": "dark",
+            "list": [
+              "El nostre equip va esgotat",
+              "Hi ha tensions que no sabem com portar",
+              "Volem posar la cura i el bé comú al centre"
+            ],
+            "href": "entitats",
+            "button": "Veure què podem fer al vostre espai"
+          }
+        ]
+      },
       {
         "type": "infografia",
         "id": "esperanca-activa",
         "name": "esperanca-activa"
       },
       {
-        "type": "text",
-        "band": "white",
-        "kicker": "La línia de treball comunitari de L’Espiral.",
-        "title": "Del procés personal a la transformació col·lectiva.",
+        "type": "steps",
+        "band": "soft",
+        "id": "que-es",
+        "kicker": "què fem exactament",
+        "title": "Què és l'Esperança Activa?",
         "paragraphs": [
-          "Treballem des de la intersecció entre:"
-        ],
-        "list": [
-          "Salut mental comunitària",
-          "Economia Social i Solidària",
-          "Acció climàtica i cultura del bé comú"
-        ],
-        "after": [
-          "La nostra mirada integra el procés personal i la transformació col·lectiva a través del marc del Treball que Reconnecta."
-        ]
-      },
-      {
-        "type": "cards",
-        "kicker": "som el pont entre el malestar intern i l'acció col·lectiva.",
-        "title": "Sostenir la vida és al centre de la nostra activitat.",
-        "before": [
-          "Per això, anem més enllà de les solucions ràpides.",
-          "A Elara Social apliquem metodologies d’impacte provat per transformar la inèrcia de la supervivència en dinàmiques de regeneració.",
-          "Una estratègia dissenyada tant per al benestar individual com per a la salut de les estructures col·lectives."
+          "No és optimisme ni esperar que tot vagi bé. És una pràctica: mirar de cara allò que ens preocupa i triar, amb altres persones, un pas concret.",
+          "Ho treballem amb el **Treball que Reconnecta**, un camí en quatre passos desenvolupat per Joanna Macy. L'anomenem l'espiral, perquè hi tornem sempre que cal."
         ],
         "items": [
           {
-            "icon": "lifebuoy",
-            "title": "Seguretat Sistèmica",
-            "text": "Creem entorns de seguretat on equips, col·lectius i persones poden sentir-se segures, compartir la seva vulnerabilitat i, des d’aquí, construir solucions honestes i transformadores.",
-            "href": "que-fem"
+            "title": "Agrair",
+            "text": "Partim d'allò que ens sosté, per tenir terra ferma."
           },
           {
-            "icon": "plant",
-            "title": "De la resistència a la Resiliència Regenerativa.",
-            "text": "Ensenyem a metabolitzar les crisis: processar el conflicte i la incertesa per transformar-los en nous recursos de transformació i fortalesa col·lectiva.",
-            "href": "que-fem"
+            "title": "Fer lloc al dolor",
+            "text": "Posem paraules al que ens preocupa, sense negar-ho ni quedar-nos-hi."
           },
           {
-            "icon": "sun",
-            "title": "Cuidem els Ritmes.",
-            "paragraphs": [
-              "Acompanyem els processos sense la pressa de la productivitat, però amb la constància de la natura.",
-              "Avancem cap a la coherència, al ritme que el cos pot sostenir."
-            ],
+            "title": "Mirar amb ulls nous",
+            "text": "Ampliem la mirada: no ens passa només a nosaltres."
+          },
+          {
+            "title": "Passar a l'acció",
+            "text": "Triem un pas petit, concret i revisable."
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Llegeix-ne més: què és el Treball que Reconnecta",
             "href": "que-fem"
           }
         ]
       },
       {
-        "type": "cards",
-        "band": "soft",
-        "align": "left",
-        "id": "treballem-amb",
-        "kicker": "tant si..",
-        "before": [
-          "necessites un espai individual per ordenar el teu moment vital,",
-          "com si formes part d’una organització que vol cuidar el seu equip,",
-          "o vols impulsar processos comunitaris al territori,",
-          "a Elara Social trobaràs estructura, metodologia i acompanyament."
-        ],
+        "type": "formats",
+        "band": "white",
+        "id": "formats",
+        "title": "Com és una sessió? Depèn del format",
+        "intro": "No és el mateix un minicurs que un taller o un acompanyament. Aquí tens què passa a cada un.",
         "items": [
           {
-            "icon": "users-three",
-            "title": "Per a persones i grups",
-            "text": "Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció.",
-            "list": [
-              "Processos individuals",
-              "Grups de suport i pràctica",
-              "Itineraris d’Esperança Activa"
-            ],
-            "foot": "Objectiu: transformar el bloqueig en acció amb sentit.",
-            "href": "persones"
+            "kicker": "Sol/a · al teu ritme",
+            "title": "Minicurs en línia",
+            "scene": "passes",
+            "text": "Cada pas: una meditació guiada d'uns 15 minuts i una pregunta per pensar.",
+            "rows": [
+              [
+                "Durada",
+                "7 passes, en 7 dies o al teu ritme"
+              ],
+              [
+                "Format",
+                "Àudio i reflexió, en línia"
+              ],
+              [
+                "Preu",
+                "Gratuït"
+              ]
+            ]
           },
           {
-            "icon": "buildings",
-            "title": "Per a equips i organitzacions",
-            "text": "Acompanyem equips i entitats que volen:",
-            "list": [
-              "Prevenir el burnout",
-              "Enfortir la cohesió interna",
-              "Incorporar mirada ecosocial",
-              "Desenvolupar cultura del bé comú"
-            ],
-            "foot": "Treball des de dins, amb metodologia participativa.",
-            "href": "organitzacions"
+            "kicker": "Tu i una persona acompanyant",
+            "title": "Acompanyament individual",
+            "scene": "costat",
+            "text": "Parlem del que et pesa, practiquem eines per regular-te i dissenyem un pla d'acció i d'autocura.",
+            "rows": [
+              [
+                "Durada",
+                "Sessions d'1 h o 1,5 h, setmanals o cada 15 dies"
+              ],
+              [
+                "Format",
+                "En línia o presencial"
+              ]
+            ]
           },
           {
-            "icon": "tree",
-            "title": "Per a la comunitat",
-            "text": "Creem espais de trobada que generen vincles reals:",
-            "list": [
-              "Tallers vivencials",
-              "Mini-rituals",
-              "Espais de debat i reflexió conscient",
-              "Cercles comunitaris"
-            ],
-            "foot": "Objectiu: passar de la preocupació compartida a l’acció compartida.",
-            "href": "comunitats"
+            "kicker": "En grup · fins a 16 persones",
+            "title": "Tallers i grups",
+            "scene": "arrels",
+            "text": "Meditació guiada, conversa en parella i en grup, pràctiques d'autocura i un pas concret per tancar.",
+            "rows": [
+              [
+                "Durada",
+                "Taller de 4 h, cicle de 4 × 2 h, grup regular de 2 h o cap de setmana"
+              ],
+              [
+                "Format",
+                "[PENDENT: presencial o en línia]"
+              ]
+            ]
+          },
+          {
+            "kicker": "El vostre equip · fins a 20",
+            "title": "Per a equips i entitats",
+            "scene": "sostenir",
+            "text": "Pràctiques breus entre sessions i eines per a converses difícils. Us n'emporteu un pla propi per mantenir-ho.",
+            "rows": [
+              [
+                "Durada",
+                "Burnout: 8 sessions · Cercles de paraula: 4 × 2 h"
+              ],
+              [
+                "Format",
+                "Presencial o en línia, a convenir"
+              ]
+            ]
+          }
+        ],
+        "chips": [
+          "No és teràpia",
+          "No cal experiència prèvia",
+          "Participar és voluntari"
+        ]
+      },
+      {
+        "type": "feature",
+        "band": "slim",
+        "id": "minicurs",
+        "variant": "dark",
+        "pill": "Vols provar-ho abans? · Gratuït · en línia · al teu ritme",
+        "title": "«7 passes cap a l'Esperança Activa»",
+        "paragraphs": [
+          "Un minicurs per provar el camí a casa. Pots fer-lo en 7 dies o al teu ritme. Cada pas porta una meditació guiada d'uns 15 minuts i una pregunta per reflexionar, amb un àudio d'introducció i un de tancament."
+        ],
+        "chips": [
+          "Àudios guiats",
+          "Una pregunta per pas",
+          "No és teràpia"
+        ],
+        "buttons": [
+          {
+            "text": "Comença el minicurs gratuït",
+            "href": "7-passes-cap-a-lesperanca-activa"
+          }
+        ],
+        "side": {
+          "title": "Tria des d'on vols començar",
+          "items": [
+            {
+              "title": "Quan sostenir la vida es fa difícil",
+              "text": "Precarietat, habitatge, ritmes de feina",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa"
+            },
+            {
+              "title": "Quan el futur del planeta et preocupa",
+              "text": "Crisi climàtica, incendis, sequeres",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa"
+            },
+            {
+              "title": "Quan cuidar-nos és una tasca col·lectiva",
+              "text": "Ansietat, soledat, cansament emocional",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa"
+            },
+            {
+              "title": "Quan la vida et desborda",
+              "text": "Una situació difícil i poca orientació",
+              "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa"
+            }
+          ]
+        }
+      },
+      {
+        "type": "strip",
+        "id": "equip-strip",
+        "title": "Qui t'acompanya",
+        "people": [
+          {
+            "name": "Aleix Boronat",
+            "photo": "equip/aleix-boronat.jpg"
+          },
+          {
+            "name": "Anna Viñas",
+            "photo": "equip/anna-vinas.jpg"
+          },
+          {
+            "name": "Montse Molina",
+            "photo": "equip/montse-molina.jpg"
+          },
+          {
+            "name": "Elvira Abad",
+            "photo": "equip/elvira-abad.jpg"
+          },
+          {
+            "name": "Cecilia Cristaldi",
+            "photo": "equip/cecilia-cristaldi.jpg"
+          }
+        ],
+        "paragraphs": [
+          "Aleix Boronat, Anna Viñas, Montse Molina, Elvira Abad i Cecilia Cristaldi: professionals de la psicoteràpia i l'acompanyament."
+        ],
+        "buttons": [
+          {
+            "text": "Coneix l'equip",
+            "href": "sobre-nosaltres/#equip"
+          }
+        ]
+      },
+      {
+        "type": "feature",
+        "band": "slim",
+        "id": "aliances",
+        "variant": "sun",
+        "pill": "Estem començant",
+        "title": "Busquem les primeres entitats aliades",
+        "paragraphs": [
+          "Cooperatives, associacions, col·lectius i entitats de l'economia social i solidària que vulguin provar aquests tallers al seu espai. Ho dissenyem plegats.",
+          "[PENDENT: condicions de la primera col·laboració]"
+        ],
+        "buttons": [
+          {
+            "text": "Proposa'ns una col·laboració",
+            "href": "contacte"
           }
         ]
       },
       {
         "type": "cta",
         "band": "white",
-        "kicker": "teixim una cultura del bé comú",
+        "id": "cta-final",
+        "kicker": "Explica'ns què necessites",
         "paragraphs": [
-          "Tant si necessites arrelament individual com si vols impulsar una transformació col·lectiva, a Elara Social trobaràs les eines i l'acompanyament per fer-ho realitat.",
-          "Adaptem la nostra metodologia a la teva realitat: ja sigui per sostenir processos individuals o per enfortir la salut d’un col·lectiu sencer."
+          "Sense compromís. Et responem en [PENDENT: X dies laborables] amb una proposta o una primera conversa."
         ],
         "buttons": [
           {
-            "text": "Troba el teu espai",
-            "href": "contacte"
+            "text": "Escriu-nos",
+            "href": "mailto:esperanza@elarasocial.com",
+            "arrow": false
+          },
+          {
+            "text": "WhatsApp",
+            "href": "https://wa.me/34672863202",
+            "arrow": false
           }
         ]
       }

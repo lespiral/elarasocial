@@ -2,7 +2,7 @@
 {% from "parts.html" import section, button with context %}
 {% block content %}
 {# La portada: la capçalera (h.kicker, h.title, h.lead, h.actions) i les seccions de "home" a data/site.json #}
-<section class="hero">
+<section class="hero hero--home">
   <div class="wrap hero__in">
     {% if h.kicker %}<p class="hero__kicker">{{ h.kicker }}</p>{% endif %}
     <h1 class="hero__title">{{ h.title }}</h1>
@@ -13,6 +13,9 @@
     </div>
     {% endif %}
   </div>
+  {# Decoració: el sol i l'ona (colors de la web) #}
+  <svg class="hero__sun" viewBox="0 0 520 440" aria-hidden="true" focusable="false"><circle cx="330" cy="130" r="86" fill="none" stroke="#e2c668" stroke-width="2" opacity=".4"/><circle cx="330" cy="130" r="62" fill="#e2c668"/></svg>
+  <svg class="hero__wave" viewBox="0 0 1360 150" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 70 C240 20 430 70 700 84 C960 98 1140 40 1360 20 L1360 150 L0 150Z" fill="#46703d" opacity=".55"/><path d="M0 104 C260 70 480 108 760 112 C1040 116 1180 82 1360 66 L1360 150 L0 150Z" fill="#b9d4ad" opacity=".85"/><path d="M0 134 C300 118 560 138 820 140 C1060 142 1220 128 1360 120 L1360 150 L0 150Z" fill="#f6f7f4"/></svg>
 </section>
 
 {% for s in h.sections %}{{ section(s, root) }}{% endfor %}

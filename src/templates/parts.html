@@ -1,11 +1,13 @@
 {# Peces que fan servir totes les pàgines. La macro «section» pinta cada secció de data/ segons el seu "type". #}
 
-{% macro page_head(kicker, title, lead=None, center=True, escena=None, metafora=None) -%}
+{% macro page_head(kicker, title, lead=None, center=True, escena=None, metafora=None, actions=None) -%}
 <section class="pagehead{% if center %} pagehead--center{% endif %}">
   <div class="wrap">
     {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
     <h1>{{ title }}</h1>
     {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+    {# "actions": [{"text", "href"}] a la pàgina: botons sota el lead (el primer ple, els altres de contorn) #}
+    {% if actions %}<p class="pagehead__actions">{% for b in actions %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
     {# "escena": "vida" | "cuidar" | "mon" | "dia" a la pàgina: una escena animada sota el títol #}
     {% if escena %}<div class="infografia infografia--head">{% include "infografies/infografia-capcalera.html" %}</div>{% endif %}
     {# "metafora": {"name": "<escena>", "text": "…"} a les propostes: una escena petita que explica la proposta amb una imatge #}
@@ -129,6 +131,64 @@
 </div>
 {%- endmacro %}
 
+{# Dues portes de la portada o d'una pàgina: [{"kicker", "title", "ask", "list": [...], "text", "href", "button", "style": "light"|"dark"}] #}
+{% macro doors(items, root) -%}
+<div class="doors">
+  {% for d in items %}
+  <article class="door door--{{ d.style or 'light' }}">
+    {% if d.kicker %}<p class="door__kicker">{{ d.kicker }}</p>{% endif %}
+    <h2 class="door__title">{{ d.title }}</h2>
+    {% if d.ask %}<p class="door__ask">{{ d.ask }}</p>{% endif %}
+    {% if d.text %}<p class="door__text">{{ d.text }}</p>{% endif %}
+    {% if d.list %}<ul class="door__list">{% for i in d.list %}<li><span class="door__tick" aria-hidden="true">{{ icon('check') }}</span><span>{{ i }}</span></li>{% endfor %}</ul>{% endif %}
+    <a class="btn {{ 'btn--light' if d.style == 'dark' else 'btn--primary' }} btn--block door__go" href="{{ link_href(d.href, root) }}">{{ d.button }}</a>
+  </article>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{# Passos numerats: [{"title", "text"}] #}
+{% macro steps(items) -%}
+<ol class="nsteps">
+  {% for it in items %}<li class="nstep"><span class="nstep__n" aria-hidden="true">{{ loop.index }}</span><span class="nstep__b"><strong class="nstep__t">{{ it.title }}</strong>{% if it.text %}<span class="nstep__d">{{ it.text }}</span>{% endif %}</span></li>{% endfor %}
+</ol>
+{%- endmacro %}
+
+{# Preus: una fila de tres preus per opció, agafats del JSON de la proposta (vegeu «Preus: una sola font» a build.py) #}
+{% macro tiers(rows, names) -%}
+{% for o in rows %}
+<div class="tiers">
+  {% if o.label %}<p class="tiers__l">{{ o.label }}</p>{% endif %}
+  <ul class="tiers__v">{% for v in o["values"] %}<li><span class="tiers__n">{{ names[loop.index0] }}</span><strong class="tiers__p">{{ v }}</strong></li>{% endfor %}</ul>
+</div>
+{% endfor %}
+{%- endmacro %}
+
+{# Propostes en grups: "prices" (amb els tres preus de cada proposta) i "offers" (sense preu fix: «a mida») #}
+{% macro offer_groups(s, root, with_prices) -%}
+{% for g in s.groups %}
+<div class="pgroup"{% if g.id %} id="{{ g.id }}"{% endif %}>
+  {% if g.kicker %}<p class="pgroup__k">{{ g.kicker }}</p>{% endif %}
+  {% if g.title %}<h3 class="pgroup__t">{{ g.title }}</h3>{% endif %}
+  {% if g.text %}<p class="pgroup__p">{{ g.text }}</p>{% endif %}
+  <ul class="pcards">
+    {% for it in g["items"] %}
+    <li class="pcard">
+      {% if it.badge %}<p class="pcard__badge">{{ it.badge }}</p>{% endif %}
+      <h4 class="pcard__title">{{ it.title }}</h4>
+      {% if it.text %}<p class="pcard__text">{{ it.text }}</p>{% endif %}
+      {% if it.rows %}<dl class="pcard__rows">{% for k, v in it.rows %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+      {% if with_prices and it.price_rows %}<div class="pcard__prices">{{ tiers(it.price_rows, s.tiers) }}{% if it.price_note %}<p class="pcard__pnote">{{ it.price_note }}</p>{% endif %}</div>{% endif %}
+      {% if it.price_text %}<p class="pcard__quote">{{ it.price_text }}</p>{% endif %}
+      {% if it.href %}<a class="btn {{ it.style or 'btn--soft' }} btn--block pcard__go" href="{{ link_href(it.href, root) }}"{% if it.href.startswith('http') %} rel="noopener"{% endif %}>{{ it.button or 'Saber-ne més' }}</a>{% endif %}
+      {% for l in it.links or [] %}<a class="btn btn--outline btn--block pcard__more" href="{{ link_href(l.href, root) }}"{% if l.href.startswith('http') %} rel="noopener"{% endif %}>{{ l.text }}</a>{% endfor %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+{%- endmacro %}
+
 {# Una secció de pàgina. Tipus: text, cards, list, faq, note, infografia, cta, contact, form (vegeu el README). #}
 {% macro section(s, root) -%}
 {% set band = {'white': ' band--white', 'soft': ' band--soft', 'slim': ' band--slim'}.get(s.band, '') %}
@@ -138,7 +198,7 @@
   <div class="wrap{{ wcls }}">
     {% if s.type == 'cta' %}<div class="cta-box">{% endif %}
     {% if s.kicker %}<p class="band__kicker">{{ s.kicker|cap }}</p>{% endif %}
-    {% if s.title and s.type != 'note' %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
+    {% if s.title and s.type not in ('note', 'feature', 'strip') %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
     {% if s.intro %}<div class="band__intro"><p>{{ s.intro }}</p></div>{% endif %}
     {# "infografia": "<nom>" a qualsevol secció: la infografia surt sota el títol (o sota el text de "before" de les targetes), a tota l'amplada, i després el contingut #}
     {% if s.infografia and not (s.type == 'cards' and s.before) %}
@@ -196,6 +256,61 @@
         </ul>
         {% endif %}
       </div>
+    {% elif s.type == 'doors' %}
+      {{ doors(s["items"], root) }}
+    {% elif s.type == 'steps' %}
+      {% if s.paragraphs %}<div class="prose prose--before">{% for p in s.paragraphs %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      {{ steps(s["items"]) }}
+      {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
+    {% elif s.type == 'formats' %}
+      {# Cada format amb la seva escena (infografia «metafora»). A mòbil es plega (el primer, obert); a l'ordinador, tot obert (site.js). #}
+      {% set metafora = none %}{% include "infografies/infografia-metafora.html" %}
+      <ul class="formats">
+        {% for f in s["items"] %}
+        <li class="fmt-li"><details class="fmt" open>
+          <summary class="fmt__sum"><span class="fmt__h"><span class="fmt__k">{{ f.kicker }}</span><span class="fmt__t">{{ f.title }}</span></span>{{ icon('caret', 'fmt__caret') }}</summary>
+          <div class="fmt__body">
+            {% if f.scene %}<div class="mt" data-metafora="{{ f.scene }}" aria-label="{{ f.title }}"></div>{% endif %}
+            <p class="fmt__text">{{ f.text }}</p>
+            {% if f.rows %}<dl class="fmt__rows">{% for k, v in f.rows %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+          </div>
+        </details></li>
+        {% endfor %}
+      </ul>
+      {% if s.chips %}<ul class="chips">{% for c in s.chips %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+    {% elif s.type == 'feature' %}
+      {# Quadre destacat: "variant": "dark" (blau marí) o "sun" (crema); "pill", "title", "paragraphs", "chips", "buttons", "side": {"title", "items": [{"title", "text", "href"}]} #}
+      <div class="feature feature--{{ s.variant or 'dark' }}{% if s.side %} feature--2{% endif %}">
+        <div class="feature__main">
+          {% if s.pill %}<p class="feature__pill">{{ s.pill }}</p>{% endif %}
+          {% if s.title %}<h2 class="feature__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
+          {% for p in s.paragraphs or [] %}<p class="feature__p">{{ p }}</p>{% endfor %}
+          {% if s.chips %}<ul class="chips chips--dark">{% for c in s.chips %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+          {% if s.buttons %}<p class="feature__actions">{% for b in s.buttons %}{{ button(b, root, ('btn--light' if s.variant != 'sun' else 'btn--primary') if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+        </div>
+        {% if s.side %}
+        <div class="feature__side">
+          <p class="feature__sidetitle">{{ s.side.title }}</p>
+          <ul class="feature__opts">{% for o in s.side["items"] %}<li>{% if o.href %}<a class="feature__opt" href="{{ link_href(o.href, root) }}" rel="noopener"><span><strong>{{ o.title }}</strong>{% if o.text %}<small>{{ o.text }}</small>{% endif %}</span>{{ icon('external') }}</a>{% else %}<span class="feature__opt"><span><strong>{{ o.title }}</strong>{% if o.text %}<small>{{ o.text }}</small>{% endif %}</span></span>{% endif %}</li>{% endfor %}</ul>
+        </div>
+        {% endif %}
+      </div>
+    {% elif s.type == 'strip' %}
+      <div class="strip">
+        {% if s.people %}<ul class="strip__people">{% for pe in s.people %}<li><img src="{{ aroot }}assets/img/{{ pe.photo }}" alt="{{ pe.name }}" width="56" height="56" loading="lazy" decoding="async"></li>{% endfor %}</ul>{% endif %}
+        <div class="strip__t">
+          {% if s.title %}<h2 class="strip__h" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
+          {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
+        </div>
+        {% if s.buttons %}<p class="strip__go">{% for b in s.buttons %}{{ button(b, root, 'btn--outline') }}{% endfor %}</p>{% endif %}
+      </div>
+    {% elif s.type == 'prices' %}
+      {% if s.intro_list %}<ul class="tier-legend">{% for t in s.intro_list %}<li><strong>{{ t[0] }}</strong> {{ t[1] }}</li>{% endfor %}</ul>{% endif %}
+      {{ offer_groups(s, root, true) }}
+      {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
+    {% elif s.type == 'offers' %}
+      {{ offer_groups(s, root, false) }}
+      {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
     {% elif s.type == 'contact' %}
       <div class="contact-box">
         {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
@@ -212,7 +327,7 @@
       </div>
     {% endif %}
 
-    {% if s.buttons and s.type != 'cta' %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+    {% if s.buttons and s.type not in ('cta', 'feature', 'strip') %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
   </div>
 </section>
 {%- endmacro %}

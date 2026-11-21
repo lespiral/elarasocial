@@ -84,4 +84,20 @@
       sel.value = '';
     });
   });
+  // Formats de la portada: a l'ordinador, tot obert; al mòbil i a la tauleta, plegats (només el primer, obert)
+  (function () {
+    var fmts = Array.prototype.slice.call(document.querySelectorAll('.fmt'));
+    if (!fmts.length || !window.matchMedia) return;
+    var wide = window.matchMedia('(min-width: 1100px)');
+    function apply() {
+      fmts.forEach(function (d, i) { d.open = wide.matches ? true : (i === 0 ? true : d.open && d.dataset.touched === '1'); d.classList.toggle('fmt--static', wide.matches); });
+    }
+    fmts.forEach(function (d) {
+      var sum = d.querySelector('summary');
+      sum.addEventListener('click', function (e) { if (wide.matches) { e.preventDefault(); return; } d.dataset.touched = '1'; });
+    });
+    // Es plega un cop les escenes ja s'han construït (el seu codi corre a DOMContentLoaded, abans d'aquest)
+    if (document.readyState === 'complete') apply(); else document.addEventListener('DOMContentLoaded', apply);
+    if (wide.addEventListener) wide.addEventListener('change', apply); else if (wide.addListener) wide.addListener(apply);
+  })();
 })();

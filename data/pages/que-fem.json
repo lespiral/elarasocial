@@ -1,6 +1,6 @@
 {
   "title": "Transformem el malestar en Esperança Activa",
-  "kicker": "Què fem",
+  "kicker": "Què és l'Esperança Activa",
   "lead": "Treballem a tres nivells d’impacte: individual, grupal i comunitari.",
   "sections": [
     {
@@ -91,7 +91,7 @@
             "Noteu que la inèrcia us està cremant?",
             "Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, transformant conflictes en oportunitats."
           ],
-          "href": "organitzacions"
+          "href": "entitats/#equip"
         },
         {
           "icon": "tree",
@@ -100,42 +100,7 @@
             "Voleu teixir xarxes reals en un món fragmentat?",
             "Creem espais de trobada on compartir recursos, sabers i suport mutu per fer front als reptes ecosocials."
           ],
-          "href": "comunitats"
-        }
-      ]
-    },
-    {
-      "type": "cards",
-      "band": "soft",
-      "align": "left",
-      "kicker": "què ens mou?",
-      "title": "L’eficiència real neix del benestar.",
-      "before": [
-        "La nostra pràctica es fonamenta en una premissa clara: l’eficiència real neix del benestar. Situem la cura de les persones i del seu entorn al cor de cada decisió estratègica, perquè entenem que l’únic èxit viable és aquell que regenera, no el que esgota."
-      ],
-      "items": [
-        {
-          "title": "Converses que transformen",
-          "paragraphs": [
-            "El que no es diu, s’encalla.",
-            "Creem l’espai necessari per posar paraules al que realment importa.",
-            "Acompanyem els equips a baixar la guàrdia i parlar amb autenticitat, l’única via per dissoldre tensions i reactivar la intel·ligència col·lectiva."
-          ]
-        },
-        {
-          "title": "Coherència interna, impacte extern.",
-          "paragraphs": [
-            "Tot està connectat: la qualitat del teu impacte al món és un reflex directe de la salut de les teves relacions internes.",
-            "Treballem per alinear el teu propòsit amb la realitat del dia a dia, eliminant la fricció entre el que dius i el que fas."
-          ]
-        },
-        {
-          "title": "Esperança Activa: passar a l'acció amb sentit.",
-          "paragraphs": [
-            "La teoria no transforma; l’acció sí.",
-            "Però no qualsevol acció.",
-            "T’acompanyem a fer passos concrets i arrelats a terra ferma, fugint de la immediatesa per construir canvis reals que el teu dia a dia pugui sostenir."
-          ]
+          "href": "entitats/#territori"
         }
       ]
     },
@@ -153,12 +118,8 @@
           "href": "persones/#propostes"
         },
         {
-          "text": "Comunitats",
-          "href": "comunitats/#propostes"
-        },
-        {
-          "text": "Organitzacions",
-          "href": "organitzacions/#propostes"
+          "text": "Entitats i comunitats",
+          "href": "entitats"
         }
       ]
     }

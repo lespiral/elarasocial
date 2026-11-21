@@ -22,12 +22,14 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape, TemplateNot
 from markupsafe import Markup, escape
 
 ROOT = Path(__file__).resolve().parent
+PENDENT = re.compile(r"\[PENDENT[^\]]*\]")   # [PENDENT] o [PENDENT: què falta]
 DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
 
 ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
 # Tipus de secció que saben pintar les plantilles (src/templates/parts.html, macro «section»)
-SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews", "articles"}
+SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews", "articles",
+                 "doors", "steps", "formats", "feature", "strip", "offers", "prices"}
 
 # Formulari de Google inserit a la pàgina (les respostes continuen arribant al compte que el va crear)
 FORM_URL = "https://docs.google.com/forms/d/e/{}/viewform"
@@ -131,6 +133,64 @@ def note_rows(paragraphs):
 
 errors = []
 
+# ---------- Preus: una sola font ----------
+# Els preus d'una proposta són al seu JSON català (data/pages/<proposta>.json, camp "prices"). Les pàgines que els mostren
+# (secció "prices", p. ex. Persones) els llegeixen d'allà, i build.py comprova que el text de «Durada i preus» de la
+# proposta (en català i en castellà) digui el mateix. A la proposta en castellà, "prices": {"labels": [...]} només
+# tradueix els rètols de cada opció.
+PRICES = {}
+PRICE_WHERE = {}
+
+
+def fmt_price(v):
+    return str(int(v)) if float(v) == int(v) else f"{v:.2f}".replace(".", ",")
+
+
+def collect_prices(raw):
+    for f, p in raw["ca"][1]:
+        if p.get("prices"):
+            PRICES[p["slug"]] = p["prices"]["options"]
+            PRICE_WHERE[p["slug"]] = f.relative_to(ROOT)
+
+
+def info_text(sections):
+    return " ".join(" ".join(s.get("paragraphs", []) if s.get("paragraphs") else []) for s in sections or [] if s.get("type") == "note" and s.get("id") == "dades")
+
+
+def check_prices(raw):
+    """Els números dels preus han de sortir al text de «Durada i preus» (id «dades») de la proposta, en totes les llengües."""
+    for lang, (s, pgs, arts) in raw.items():
+        for f, p in pgs:
+            ca = p["slug"] if lang == "ca" else p.get("ca")
+            txt = info_text(p.get("sections"))
+            if "€" in txt and ca not in PRICES:
+                errors.append(f"{f.relative_to(ROOT)}: «dades» porta preus però la proposta no té \"prices\" a {ca}.json (la pàgina Persones no els podria agafar)")
+            for o in PRICES.get(ca, []) if "€" in txt or lang == "ca" else []:
+                for v in o["values"]:
+                    if not re.search(r"(?<![\d,.])" + re.escape(fmt_price(v)) + r"(?![\d,])", txt):
+                        errors.append(f"{f.relative_to(ROOT)}: el preu {fmt_price(v)} € ({o['label']}) de \"prices\" no surt al text de «dades»")
+            if lang != "ca" and ca in PRICES:
+                lab = (p.get("prices") or {}).get("labels")
+                if not lab and any(o.get("label") for o in PRICES[ca]):
+                    errors.append(f"{f.relative_to(ROOT)}: falten els rètols en aquesta llengua: \"prices\": {{\"labels\": [...]}}")
+                if lab and len(lab) != len(PRICES[ca]):
+                    errors.append(f"{f.relative_to(ROOT)}: \"prices.labels\" ha de tenir {len(PRICES[ca])} rètols")
+
+
+def price_rows(slug, lang, where):
+    """Les files de preus d'una proposta [{label, values: ["60 €", ...]}], amb els rètols de la llengua."""
+    if slug not in PRICES:
+        errors.append(f"{where}: la proposta «{slug}» no té \"prices\"")
+        return []
+    labels = None
+    if lang != "ca":
+        es = next((p for f, p in raw[lang][1] if p.get("ca") == slug), None)
+        labels = (es or {}).get("prices", {}).get("labels") if es else None
+    rows = []
+    for i, o in enumerate(PRICES[slug]):
+        rows.append({"label": labels[i] if labels else o.get("label"), "values": [fmt_price(v) + " €" for v in o["values"]]})
+    return rows
+
 
 def prepare_sections(sections, where, lang="ca"):
     """Revisa les seccions d'una pàgina i hi posa un id per enllaçar-hi (/pagina/#el-titol)."""
@@ -175,6 +235,24 @@ def prepare_sections(sections, where, lang="ca"):
             s["list_icon"] = s.get("list_icon") or list_icon(s.get("title"))
             if s["list_icon"] not in ICONS:
                 errors.append(f"{where}: la icona {s['list_icon']!r} no és a src/icons.json")
+        if t in ("offers", "prices"):
+            for g in s.get("groups", []):
+                for it in g.get("items", []):
+                    if it.get("page"):
+                        if it["page"] not in slugs_ca:
+                            errors.append(f"{where}: «page» {it['page']!r} no és una pàgina catalana")
+                        elif t == "prices" and not it.get("price_text"):
+                            it["price_rows"] = price_rows(it["page"], lang, where)
+                    if it.get("scene") and it["scene"] not in ESCENES:
+                        errors.append(f"{where}: l'escena {it['scene']!r} no existeix")
+        if t == "formats":
+            for it in s.get("items", []):
+                if it.get("scene") and it["scene"] not in ESCENES:
+                    errors.append(f"{where}: l'escena {it['scene']!r} no existeix")
+        if t == "strip":
+            for pe in s.get("people", []):
+                if not (SRC / "img" / pe["photo"]).exists():
+                    errors.append(f"{where}: no trobo la foto src/img/{pe['photo']}")
         if t == "note" and s.get("style", "info") == "info":
             s["rows"] = note_rows(bold(s.get("paragraphs")))
         for k in list(s):
@@ -228,7 +306,9 @@ def load_lang(lang):
     d = L["data"]
     s = site if lang == "ca" else merge(site, json.loads((d / "site.json").read_text(encoding="utf-8")))
     if lang != "ca":
-        s.pop("redirects", None)   # les adreces antigues de WordPress només són en català
+        # Les adreces antigues de WordPress només són en català; en castellà, data/es/site.json només porta
+        # les de les pàgines que han canviat d'adreça (p. ex. /es/organizaciones/ → /es/entidades/#equipo)
+        s["redirects"] = json.loads((d / "site.json").read_text(encoding="utf-8")).get("redirects", {})
     pgs = []
     for f in sorted((d / "pages").glob("*.json")):
         p = json.loads(f.read_text(encoding="utf-8"))
@@ -248,6 +328,9 @@ raw = {lang: load_lang(lang) for lang in LANGS}
 
 # Les pàgines de cada llengua diuen quina és la seva en català ("ca"): així el selector porta a la mateixa pàgina
 ca_slugs = {p["slug"] for _, p in raw["ca"][1]} | {a["slug"] for _, a in raw["ca"][2]}
+slugs_ca = ca_slugs
+collect_prices(raw)
+check_prices(raw)
 for lang in LANGS:
     TO_CA[lang], FROM_CA[lang] = {}, {"": ""}
     for f, x in raw[lang][1] + raw[lang][2]:
@@ -395,12 +478,12 @@ OUT.mkdir()
 pending = 0
 for lang, L in LANG.items():
     pre = LANGS[lang]["prefix"]
-    pending += render("home.html", pre.rstrip("/"), lang, "", section="", h=L["home"]).count("[PENDENT]")
+    pending += len(PENDENT.findall(render("home.html", pre.rstrip("/"), lang, "", section="", h=L["home"])))
     for p in L["pages"]:
-        pending += render("page.html", pre + p["slug"], lang, p["slug"], section=p["slug"], page_title=p["title"], page_description=p.get("description") or p.get("lead"), page=p).count("[PENDENT]")
+        pending += len(PENDENT.findall(render("page.html", pre + p["slug"], lang, p["slug"], section=p["slug"], page_title=p["title"], page_description=p.get("description") or p.get("lead"), page=p)))
     art_section = next((p["slug"] for p in L["pages"] if any(s.get("type") == "articles" for s in p["sections"])), "articles")
     for a in L["articles"]:
-        pending += render("article.html", pre + a["slug"], lang, a["slug"], section=art_section, page_title=a["title"], page_description=a["summary"], article=a, articles_slug=art_section).count("[PENDENT]")
+        pending += len(PENDENT.findall(render("article.html", pre + a["slug"], lang, a["slug"], section=art_section, page_title=a["title"], page_description=a["summary"], article=a, articles_slug=art_section)))
     unused = set(ENVS[lang].loader.repl) - ENVS[lang].loader.used if lang != "ca" else set()
     if unused:
         errors.append(f"data/{pre}plantilles.json: aquestes plantilles no es fan servir enlloc: {', '.join(sorted(unused))}")
@@ -412,26 +495,30 @@ articles = LANG["ca"]["articles"]
 # Adreces antigues de la web de WordPress que ja no són una pàgina: porten a la nova.
 # A data/site.json, "redirects": {"adreça-antiga": "pagina/#seccio" o "https://..."}
 REDIRECT = """<!doctype html>
-<html lang="ca"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="robots" content="noindex">
 <title>{title}</title><link rel="canonical" href="{to}"><meta http-equiv="refresh" content="0; url={to}">
-</head><body><p>Aquesta pàgina ha canviat d'adreça: <a href="{to}">{to}</a></p></body></html>
+</head><body><p>{msg}: <a href="{to}">{to}</a></p></body></html>
 """
 n_redirects = 0
-for old, to in (site.get("redirects") or {}).items():
-    old = old.strip("/")
-    if old in slugs:
-        errors.append(f"data/site.json (redirects): /{old}/ és una pàgina de la web; no pot portar a una altra")
-        continue
-    if not to.startswith("http"):
-        page = to.split("#")[0].strip("/")
-        if page and page not in slugs:
-            errors.append(f"data/site.json (redirects): /{old}/ porta a /{page}/, que no existeix")
+for lang in LANGS:
+    pre = LANGS[lang]["prefix"]
+    lslugs = LANG[lang]["slugs"]
+    for old, to in (LANG[lang]["site"].get("redirects") or {}).items():
+        old = old.strip("/")
+        where = f"data/{pre}site.json (redirects)"
+        if old in lslugs:
+            errors.append(f"{where}: /{pre}{old}/ és una pàgina de la web; no pot portar a una altra")
             continue
-        to = SITE_URL + to.lstrip("/")
-    dest = OUT / old / "index.html"
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(REDIRECT.format(title=site["name"], to=to), encoding="utf-8")
-    n_redirects += 1
+        if not to.startswith("http"):
+            page = to.split("#")[0].strip("/")
+            if page and page not in lslugs:
+                errors.append(f"{where}: /{pre}{old}/ porta a /{pre}{page}/, que no existeix")
+                continue
+            to = SITE_URL + pre + to.lstrip("/")
+        dest = OUT / (pre + old) / "index.html"
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(REDIRECT.format(title=site["name"], to=to, lang=lang, msg="Esta página ha cambiado de dirección" if lang == "es" else "Aquesta pàgina ha canviat d'adreça"), encoding="utf-8")
+        n_redirects += 1
 if errors:
     print("No s'ha generat la web. Cal arreglar:", *("- " + e for e in errors), sep="\n")
     shutil.rmtree(OUT)

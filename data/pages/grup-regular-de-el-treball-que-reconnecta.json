@@ -4,6 +4,7 @@
   "kicker": "Propostes",
   "lead": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
   "description": "Grups regulars amb trobades (quinzenals / mensuals) on aturar-nos, reconnectar amb la vida i transformar el malestar en força col·lectiva al nostre propi ritme.",
+  "prices": {"options": [{"label": "Mensual (1 sessió al mes)", "values": [15, 22.5, 30]}, {"label": "Quinzenal (2 sessions al mes)", "values": [30, 45, 60]}]},
   "sections": [
     {
       "type": "text",

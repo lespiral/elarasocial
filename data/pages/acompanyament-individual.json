@@ -4,6 +4,7 @@
   "kicker": "Al teu costat i al teu ritme",
   "lead": "Del malestar a l’acció amb sentit",
   "description": "Del malestar a l’acció amb sentit",
+  "prices": {"options": [{"label": "Sessió d'1 hora", "values": [60, 70, 80]}, {"label": "Sessió d'1,5 hores", "values": [90, 110, 120]}]},
   "sections": [
     {
       "type": "text",
