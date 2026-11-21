@@ -68,6 +68,7 @@
       "band": "soft",
       "align": "left",
       "html": true,
+      "tone": "accent",
       "title": "Nuestros valores (qué hacemos y qué no hacemos)",
       "items": [
         {

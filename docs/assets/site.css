@@ -771,3 +771,7 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .pagehead--blue .kicker { background: var(--blau-700); color: var(--verd-clar); }
 .pagehead--blue .pagehead__wave { position: absolute; z-index: 1; left: 0; right: 0; bottom: -1px; width: 100%; height: clamp(40px, 7vw, 84px); }
 .pagehead--after { padding-top: 8px; padding-bottom: 24px; }
+
+/* Targetes amb el títol destacat (secció amb "tone": "accent") */
+.cards--accent .card--course { border-top: 5px solid var(--verd); padding-top: 26px; }
+.cards--accent .card__title { font-size: clamp(1.3rem, 2.4vw, 1.5rem); line-height: 1.2; color: var(--blau-800); font-weight: 800; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 2px solid var(--blau-200); }

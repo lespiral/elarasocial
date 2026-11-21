@@ -36,7 +36,7 @@
 
 {# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "links": [{"text", "href"}], "badge"}] #}
 {% macro cards(items, root, heading_level=3, align='center', tone='') -%}
-<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}">
+<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}{% if tone == 'accent' %} cards--accent{% endif %}">
   {% for c in items %}
   <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
     {% if c.photo %}<span class="card__photo"><img src="{{ aroot }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
