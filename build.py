@@ -80,8 +80,6 @@ CARD_ICONS = {
     "el-treball-que-reconnecta": "tree",
     "un-pont-desperanca-2": "bridge",
     "grup-regular-de-el-treball-que-reconnecta": "moon-stars",
-    "cercles-de-paraula-per-a-gestionar-conflictes": "chats-circle",
-    "cercles-per-sostenir-organitzacions-i-col·lectius": "circles-three",
     "burnout": "campfire",
     "contacte": "chat-circle-dots",
     "xn--esperanaactiva-mjb.cat": "map-trifold",

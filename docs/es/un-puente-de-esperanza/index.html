@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="x-default" href="https://elarasocial.com/un-pont-desperanca-2/"><link rel="icon" type="image/png" sizes="48x48" href="../../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;700;800&display=swap">
-  <link rel="stylesheet" href="../../assets/site.css?v=1795277795">
+  <link rel="stylesheet" href="../../assets/site.css?v=1795284895">
 </head>
 <body>
   <a class="skip" href="#contingut">Saltar al contenido</a>
@@ -486,47 +486,7 @@
     };
   };
 
-  // Cercles de paraula per a conflictes: el bastó de la paraula passa i la tensió es torna onada
-  SCENES.paraula = function (id) {
-    var cx = 500, cy = 258, rx = 172, ry = 40, ang = [90, 30, -20, -70, -110, -160, 210, 150], P = [];
-    ang.forEach(function (deg, i) { var a = deg * Math.PI / 180; P.push({ x: cx + rx * Math.cos(a), y: cy + ry * Math.sin(a), s: .66 + .3 * (Math.sin(a) + 1) / 2, k: [1, 2, 3, 4, 5, 1, 3, 2][i], deg: deg }); });
-    var order = P.slice().sort(function (a, b) { return a.y - b.y; });
-    var people = order.map(function (p) { return person(p.x, p.y, r1(p.s * 100) / 100, p.k); }).join("");
-    // Les dues persones en tensió: la de l'esquerra (180°) i la de la dreta (−20°)
-    var L = P[6], R = P[2], hy = 212;
-    var zig = "M" + r1(L.x + 18) + " " + hy;
-    for (var z = 1; z <= 12; z++) zig += "L" + r1(L.x + 18 + z * (R.x - L.x - 36) / 12) + " " + (hy + (z % 2 ? -11 : 11) * (z === 12 ? 0 : 1));
-    var wave = "M" + r1(L.x + 18) + " " + hy + "C" + r1(L.x + 80) + " " + (hy - 20) + " " + r1(cx - 60) + " " + (hy - 20) + " " + cx + " " + hy + "S" + r1(R.x - 80) + " " + (hy + 20) + " " + r1(R.x - 18) + " " + hy;
-    return {
-      svg: sky({ id: id, sx: 800, sy: 92, sr: 28 }) + HILL1 + HILL2 + HILL3 +
-        '<ellipse class="m-floor" cx="' + cx + '" cy="' + (cy + 4) + '" rx="' + (rx + 26) + '" ry="' + (ry + 12) + '"/>' +
-        '<ellipse class="m-ring" cx="' + cx + '" cy="' + (cy + 4) + '" rx="' + (rx + 16) + '" ry="' + (ry + 8) + '"/>' +
-        '<path class="m-zig" d="' + zig + '"/><path class="m-wave" pathLength="1" d="' + wave + '"/>' +
-        people + '<path class="m-voice" d=""/>' + BIRDS + fog(id, true) +
-        '<g class="m-walker"><circle class="m-halo" r="12" fill="#e2c668"/><circle r="6.5" fill="#e2c668" stroke="#fff" stroke-width="3"/></g>',
-      dur: 6000, hope: .55, done: "is-done",
-      frame: function (f, el) {
-        // El bastó surt del centre i fa la volta, d'una persona a l'altra (amb una pausa a cadascuna)
-        var w = el.querySelector(".m-walker"), v = el.querySelector(".m-voice");
-        var x, y, s;
-        if (f < .1) { v.style.opacity = 0; var u0 = ease(f / .1); x = cx + (P[0].x - cx) * u0 * .78; y = cy + (P[0].y - cy) * u0 * .78; s = 1; }
-        else {
-          var g = (f - .1) / .9 * P.length, k = Math.min(P.length - 1, Math.floor(g)), u = g - k, m = clamp((u - .55) / .45, 0, 1);
-          var a0 = ang[k] * Math.PI / 180, a1 = (k + 1 < P.length ? ang[k + 1] : ang[0] - 360) * Math.PI / 180;
-          if (a1 > a0) a1 -= 2 * Math.PI;
-          var aa = a0 + (a1 - a0) * ease(m);
-          x = cx + rx * .78 * Math.cos(aa); y = cy + ry * .78 * Math.sin(aa); s = 1;
-          // Qui té el bastó parla: unes ones petites de veu
-          var p = P[k], o = m < .05 ? Math.sin(Math.PI * clamp(u / .55, 0, 1)) : 0;
-          v.setAttribute("d", "M" + r1(p.x + 14 * p.s) + " " + r1(p.y - 46 * p.s) + "q5 6 0 12M" + r1(p.x + 21 * p.s) + " " + r1(p.y - 50 * p.s) + "q8 10 0 20");
-          v.style.opacity = o;
-        }
-        w.setAttribute("transform", "translate(" + r1(x) + "," + r1(y - 8) + ") scale(" + s + ")");
-      }
-    };
-  };
-
-  // Cercles per sostenir: l'equip es tanca en cercle i el projecte (la casa) es redreça
+  // Equips (home, «sostenir»): l'equip es tanca en cercle i el projecte (la casa) es redreça
   SCENES.sostenir = function (id) {
     var cx = 500, cy = 262, P = [], g = "";
     [90, 40, -10, -60, -120, -170, 140].forEach(function (deg, i) {
@@ -1239,6 +1199,6 @@
     </div>
   </footer>
 
-  <script src="../../assets/site.js?v=1795277795" defer></script>
+  <script src="../../assets/site.js?v=1795284895" defer></script>
 </body>
 </html>

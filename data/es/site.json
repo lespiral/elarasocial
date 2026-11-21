@@ -93,7 +93,6 @@
             "style": "dark",
             "list": [
               "Nuestro equipo va agotado",
-              "Hay tensiones que no sabemos cómo llevar",
               "Queremos poner el cuidado y el bien común en el centro"
             ],
             "href": "entidades",
@@ -204,11 +203,11 @@
             "kicker": "Vuestro equipo · hasta 20",
             "title": "Para equipos y entidades",
             "scene": "sostenir",
-            "text": "Prácticas breves entre sesiones y herramientas para conversaciones difíciles. Os lleváis un plan propio para mantenerlo.",
+            "text": "Prácticas breves entre sesiones y espacios para cuidaros como equipo. Os lleváis un plan propio para mantenerlo.",
             "rows": [
               [
                 "Duración",
-                "Burnout: 8 sesiones · Círculos de palabra: 4 × 2 h"
+                "Burnout: 8 sesiones · Trabajo que Reconecta: 4 × 2 h"
               ],
               [
                 "Formato",
@@ -348,6 +347,8 @@
   },
   "redirects": {
     "organizaciones": "entidades/#equipo",
-    "comunidades": "entidades/#territorio"
+    "comunidades": "entidades/#territorio",
+    "circulos-de-palabra-para-gestionar-conflictos": "entidades/#equipo",
+    "circulos-para-sostener-organizaciones-y-colectivos": "entidades/#equipo"
   }
 }

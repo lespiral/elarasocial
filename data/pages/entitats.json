@@ -25,7 +25,6 @@
           "style": "dark",
           "list": [
             "L'equip va esgotat",
-            "Hi ha tensions que no sabem com portar",
             "Volem posar la cura al centre"
           ],
           "href": "#equip",
@@ -105,7 +104,7 @@
       "band": "white",
       "id": "equip",
       "title": "Propostes per a equips i entitats",
-      "intro": "Tres propostes pensades per a un equip: fins a 20 persones, presencials o en línia, a convenir.",
+      "intro": "Dues propostes pensades per a un equip: fins a 20 persones, presencials, en línia o híbrides, a convenir.",
       "groups": [
         {
           "id": "equip-propostes",
@@ -133,33 +132,11 @@
               ]
             },
             {
-              "page": "cercles-de-paraula-per-a-gestionar-conflictes",
-              "href": "#demana-proposta",
-              "badge": "Taller · 4 sessions",
-              "title": "Cercles de paraula per transformar conflictes",
-              "text": "Un taller pràctic per incorporar l'estructura dels Cercles de paraula com a eina per abordar converses difícils amb més seguretat i equitat.",
-              "rows": [
-                [
-                  "Durada",
-                  "4 sessions"
-                ]
-              ],
-              "price_text": "Preu: a mida",
-              "button": "Demana pressupost",
-              "style": "btn--primary",
-              "links": [
-                {
-                  "text": "Veure la proposta",
-                  "href": "cercles-de-paraula-per-a-gestionar-conflictes"
-                }
-              ]
-            },
-            {
-              "page": "cercles-per-sostenir-organitzacions-i-col·lectius",
+              "page": "el-treball-que-reconnecta",
               "href": "#demana-proposta",
               "badge": "Cicle · 4 × 2 h",
-              "title": "Cercles de paraula per sostenir",
-              "text": "Cercles per cuidar el clima relacional d'una organització o col·lectiu i sostenir-ne els acords.",
+              "title": "El Treball que Reconnecta per a equips i col·lectius",
+              "text": "Quatre sessions de dues hores per recórrer l'espiral amb el vostre equip o col·lectiu: agrair, fer lloc al dolor, mirar amb ulls nous i passar a l'acció. Cuida el clima relacional i us ajuda a sostenir els acords.",
               "rows": [
                 [
                   "Durada",
@@ -172,7 +149,7 @@
               "links": [
                 {
                   "text": "Veure la proposta",
-                  "href": "cercles-per-sostenir-organitzacions-i-col·lectius"
+                  "href": "el-treball-que-reconnecta"
                 }
               ]
             }
@@ -261,10 +238,6 @@
             [
               "El Treball que Reconnecta (grup regular)",
               "grup-regular-de-el-treball-que-reconnecta"
-            ],
-            [
-              "Cercles de paraula (per sostenir col·lectius)",
-              "cercles-per-sostenir-organitzacions-i-col·lectius"
             ]
           ]
         },
@@ -293,10 +266,6 @@
             [
               "El Treball que Reconnecta",
               "el-treball-que-reconnecta"
-            ],
-            [
-              "Cercles de paraula (per a transformar conflictes)",
-              "cercles-de-paraula-per-a-gestionar-conflictes"
             ],
             [
               "Burnout",

@@ -130,20 +130,16 @@
           "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència.",
           "propostes": [
             [
-              "L'Espiral de l'Esperança Activa",
+              "L'Espiral de l'Esperança Activa (4 h)",
               "lespiral-de-lesperanca-activa"
             ],
             [
-              "El Treball que Reconnecta",
+              "El Treball que Reconnecta (cicle, 4 × 2 h)",
               "el-treball-que-reconnecta"
             ],
             [
-              "Un pont d'Esperança",
+              "Un pont d'Esperança (2 × 6 h)",
               "un-pont-desperanca-2"
-            ],
-            [
-              "Cercles de paraula",
-              "cercles-per-sostenir-organitzacions-i-col·lectius"
             ],
             [
               "Burnout",
@@ -265,9 +261,10 @@
           ]
         },
         {
-          "id": "per-aprofundir",
-          "kicker": "Per aprofundir",
-          "title": "Un espai estructurat, en grup",
+          "id": "treball-que-reconnecta",
+          "kicker": "El Treball que Reconnecta",
+          "title": "És el mateix camí, el Treball que Reconnecta, en quatre durades",
+          "text": "Comença per la durada que et vagi millor i continua quan vulguis.",
           "items": [
             {
               "page": "lespiral-de-lesperanca-activa",
@@ -290,7 +287,7 @@
             {
               "page": "el-treball-que-reconnecta",
               "href": "el-treball-que-reconnecta",
-              "badge": "Cicle · 4 sessions",
+              "badge": "Cicle · 4 × 2 h",
               "title": "El Treball que Reconnecta",
               "text": "Quatre sessions per recórrer l'espiral: agrair, fer lloc al dolor, mirar amb ulls nous i passar a l'acció.",
               "rows": [
@@ -308,7 +305,7 @@
             {
               "page": "un-pont-desperanca-2",
               "href": "un-pont-desperanca-2",
-              "badge": "Cap de setmana",
+              "badge": "Cap de setmana · 2 × 6 h",
               "title": "Un pont d'esperança",
               "text": "Una immersió de dos dies per aprofundir en grup, amb temps per integrar-ho.",
               "rows": [
@@ -322,14 +319,7 @@
                 ]
               ],
               "button": "Veure el cap de setmana"
-            }
-          ]
-        },
-        {
-          "id": "per-sostenir",
-          "kicker": "Per sostenir",
-          "title": "Continuïtat i acompanyament",
-          "items": [
+            },
             {
               "page": "grup-regular-de-el-treball-que-reconnecta",
               "href": "grup-regular-de-el-treball-que-reconnecta",
@@ -348,7 +338,14 @@
               ],
               "price_note": "Preus per mes.",
               "button": "Veure el grup regular"
-            },
+            }
+          ]
+        },
+        {
+          "id": "individual",
+          "kicker": "De tu a tu",
+          "title": "Un espai només per a tu",
+          "items": [
             {
               "page": "acompanyament-individual",
               "href": "acompanyament-individual#inscripcio",

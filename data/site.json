@@ -88,9 +88,9 @@
     "el-treball-que-reconnecta-formulari": "el-treball-que-reconnecta/#inscripcio",
     "un-pont-desperanca-formulari": "un-pont-desperanca-2/#inscripcio",
     "grup-regular-de-el-treball-que-reconnecta-formulari": "grup-regular-de-el-treball-que-reconnecta/#inscripcio",
-    "cercles-per-sostenir-organitzacions-i-col·lectius-formulari": "cercles-per-sostenir-organitzacions-i-col·lectius/#inscripcio",
-    "cercles-personalitzats-per-sostenir-organitzacions-i-col·lectius-formulari": "cercles-per-sostenir-organitzacions-i-col·lectius/#inscripcio",
-    "cercles-de-paraula-personalitzats-per-a-gestionar-conflictes-formulari": "cercles-de-paraula-per-a-gestionar-conflictes/#inscripcio",
+    "cercles-per-sostenir-organitzacions-i-col·lectius-formulari": "entitats/#equip",
+    "cercles-personalitzats-per-sostenir-organitzacions-i-col·lectius-formulari": "entitats/#equip",
+    "cercles-de-paraula-personalitzats-per-a-gestionar-conflictes-formulari": "entitats/#equip",
     "burnout-formulari": "burnout/#inscripcio",
     "burnout-personalitzat-formulari": "burnout/#inscripcio",
     "camins-desperanca-activa": "https://xn--esperanaactiva-mjb.cat/",
@@ -100,7 +100,9 @@
     "el-prat-de-llobregat": "https://xn--esperanaactiva-mjb.cat/el-prat/",
     "vic": "https://xn--esperanaactiva-mjb.cat/vic/",
     "organitzacions": "entitats/#equip",
-    "comunitats": "entitats/#territori"
+    "comunitats": "entitats/#territori",
+    "cercles-de-paraula-per-a-gestionar-conflictes": "entitats/#equip",
+    "cercles-per-sostenir-organitzacions-i-col·lectius": "entitats/#equip"
   },
   "home": {
     "kicker": "Elara Social · la línia de treball comunitari de L'Espiral",
@@ -131,7 +133,6 @@
             "style": "dark",
             "list": [
               "El nostre equip va esgotat",
-              "Hi ha tensions que no sabem com portar",
               "Volem posar la cura i el bé comú al centre"
             ],
             "href": "entitats",
@@ -242,11 +243,11 @@
             "kicker": "El vostre equip · fins a 20",
             "title": "Per a equips i entitats",
             "scene": "sostenir",
-            "text": "Pràctiques breus entre sessions i eines per a converses difícils. Us n'emporteu un pla propi per mantenir-ho.",
+            "text": "Pràctiques breus entre sessions i espais per cuidar-vos com a equip. Us n'emporteu un pla propi per mantenir-ho.",
             "rows": [
               [
                 "Durada",
-                "Burnout: 8 sessions · Cercles de paraula: 4 × 2 h"
+                "Burnout: 8 sessions · Treball que Reconnecta: 4 × 2 h"
               ],
               [
                 "Format",

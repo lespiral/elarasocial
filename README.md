@@ -78,7 +78,7 @@ Són els formularis de Google del compte lespiral.cat@gmail.com, inserits a la p
 
 ## Adreces antigues
 
-Les adreces de la web de WordPress que ja no són una pàgina (les tres «Propostes a nivell…», els formularis i les pàgines de Camins) porten soles a la pàgina nova. Es configuren a `redirects` de `data/site.json`: `"adreça-antiga": "pagina/#seccio"` o una adreça completa.
+Les adreces de la web de WordPress que ja no són una pàgina (les tres «Propostes a nivell…», els formularis, les pàgines de Camins i, des del 21/11/2026, Organitzacions, Comunitats i els dos Cercles de paraula, que ara porten a `entitats/#equip` o `#territori`) porten soles a la pàgina nova. Es configuren a `redirects` de `data/site.json` (català) i de `data/es/site.json` (castellà, a /es/): `"adreça-antiga": "pagina/#seccio"` o una adreça completa.
 - Per posar la pàgina al menú, afegeix-la a `nav` de `data/site.json`: `{"slug": "qui-som", "title": "Qui som"}`. Un enllaç de fora va amb `href`: `{"title": "Camins d'Esperança [Activa]", "href": "https://…"}`.
 
 ## Infografies animades
@@ -101,7 +101,6 @@ Les que es fan servir ara:
 | `cursos` | Les dues pàgines de les 7 passes, «Tria des d'on vols començar» (variants `persones` i `organitzacions`) | Els cursos, sense el tram de les ciutats |
 | `7-passes` | Les dues pàgines de les 7 passes, «El recorregut en 7 passes» i «Com seria l'experiència» (variants `persones` i `organitzacions`) | 7 passes |
 | `vinculacio` | 7 passes (organitzacions), «De la reflexió a la vinculació» | I després? |
-| `rotllana` | «Explorarem…» de Cercles de paraula per a gestionar conflictes (`conflictes`) i de Cercles per sostenir organitzacions i col·lectius (`sostenir`): els 5 elements que creen seguretat | Nova |
 | `stop-ground-choose` | Burnout, «Practicarem…»: aturar, ancorar, triar un pas mínim | Nova |
 | `metafora` | Sota el títol de cada proposta: una escena petita que explica la proposta amb una imatge, i una frase a sota. Es posa amb `"metafora": {"name": "<escena>", "text": "La frase"}` al JSON de la pàgina. Escenes: `passes` (7 passes: pedres per travessar el riu), `passes-comunitat` (el mateix, amb la comunitat a l'altra riba), `costat` (Acompanyament: dues persones que caminen plegades), `falguera` (L'Espiral: falgueres que es desenrotllen), `arrels` (El TqR: arrels que es troben sota terra), `pont` (Un pont: els taulons es posen un a un), `llunes` (Grup regular: les fases de la lluna sobre una rotllana al voltant del foc), `paraula` (Cercles per a conflictes: el bastó de la paraula fa la volta i la tensió es torna onada), `sostenir` (Cercles per sostenir: el cercle es tanca i la casa es redreça), `foc` (Burnout: el foc que crema es torna foc que escalfa) | Noves |
 
@@ -133,3 +132,9 @@ La web en castellà és a `/es/`, amb les adreces en castellà (`/es/personas/`,
 ## Ressenyes de Google
 
 Des del 5 de novembre de 2026 no surten a cap pàgina (l'Aleix les va fer treure). Si mai es volen tornar a posar: una secció `{"type": "reviews"}` posa les ressenyes de `reviews` a `data/site.json`. Ara són les mateixes que surten a WordPress (copiades el 5 de novembre de 2026) i no s'actualitzen soles. A WordPress surten amb el connector de Trustindex per a WordPress, que no serveix fora de WordPress. Per tenir-les al dia aquí cal un giny de Trustindex fet a trustindex.io: dona una línia `<script … loader.js?codi>`, i si poses aquest codi a `"trustindex"`, surten les de Google al dia en lloc de les copiades.
+
+## Preus, portes i pàgines noves (redisseny del 21/11/2026)
+
+- **Tipus de secció nous**: `doors` (dues portes de la portada o d'Entitats), `steps` (passos numerats), `formats` (formats amb escena), `feature` (bloc destacat), `strip` (franja de l'equip), `offers` (propostes sense preu fix, «a mida») i `prices` (propostes amb els tres preus). Qualsevol pàgina pot portar `actions` (botons al capçal).
+- **Preus d'una sola font**: cada proposta porta `"prices": {"options": [{"label", "values": [reduït, estàndard, de suport]}]}` al seu JSON català (a l'ES, `"prices": {"labels": [...]}`). La secció `prices` de Persones els llegeix. `build.py` s'atura si els números no surten a la nota «dades» de la proposta. Un element amb `price_text` no genera files de preu.
+- **Entitats i comunitats** (`entitats` / `entidades`): una sola pàgina amb `#equip` i `#territori`; formulari de Google incrustat (CA i ES); preus «a mida». Propostes d'equip: Burnout i El Treball que Reconnecta per a equips i col·lectius (4 × 2 h). Els Cercles de paraula ja no existeixen (pàgines esborrades, adreces redirigides).

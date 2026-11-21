@@ -131,20 +131,16 @@
           "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia.",
           "propostes": [
             [
-              "La Espiral de la Esperanza Activa",
+              "La Espiral de la Esperanza Activa (4 h)",
               "la-espiral-de-la-esperanza-activa"
             ],
             [
-              "El Trabajo que Reconecta",
+              "El Trabajo que Reconecta (ciclo, 4 × 2 h)",
               "el-trabajo-que-reconecta"
             ],
             [
-              "Un puente de Esperanza",
+              "Un puente de Esperanza (2 × 6 h)",
               "un-puente-de-esperanza"
-            ],
-            [
-              "Círculos de palabra",
-              "circulos-para-sostener-organizaciones-y-colectivos"
             ],
             [
               "Burnout",
@@ -266,9 +262,10 @@
           ]
         },
         {
-          "id": "para-profundizar",
-          "kicker": "Para profundizar",
-          "title": "Un espacio estructurado, en grupo",
+          "id": "trabajo-que-reconecta",
+          "kicker": "El Trabajo que Reconecta",
+          "title": "Es el mismo camino, el Trabajo que Reconecta, en cuatro duraciones",
+          "text": "Empieza por la duración que mejor te vaya y continúa cuando quieras.",
           "items": [
             {
               "page": "lespiral-de-lesperanca-activa",
@@ -291,7 +288,7 @@
             {
               "page": "el-treball-que-reconnecta",
               "href": "el-trabajo-que-reconecta",
-              "badge": "Ciclo · 4 sesiones",
+              "badge": "Ciclo · 4 × 2 h",
               "title": "El Trabajo que Reconecta",
               "text": "Cuatro sesiones para recorrer la espiral: agradecer, hacer sitio al dolor, mirar con ojos nuevos y pasar a la acción.",
               "rows": [
@@ -309,7 +306,7 @@
             {
               "page": "un-pont-desperanca-2",
               "href": "un-puente-de-esperanza",
-              "badge": "Fin de semana",
+              "badge": "Fin de semana · 2 × 6 h",
               "title": "Un puente de esperanza",
               "text": "Una inmersión de dos días para profundizar en grupo, con tiempo para integrarlo.",
               "rows": [
@@ -323,14 +320,7 @@
                 ]
               ],
               "button": "Ver el fin de semana"
-            }
-          ]
-        },
-        {
-          "id": "para-sostener",
-          "kicker": "Para sostener",
-          "title": "Continuidad y acompañamiento",
-          "items": [
+            },
             {
               "page": "grup-regular-de-el-treball-que-reconnecta",
               "href": "grupo-regular-de-el-trabajo-que-reconecta",
@@ -349,7 +339,14 @@
               ],
               "price_note": "Precios por mes.",
               "button": "Ver el grupo regular"
-            },
+            }
+          ]
+        },
+        {
+          "id": "individual",
+          "kicker": "De tú a tú",
+          "title": "Un espacio solo para ti",
+          "items": [
             {
               "page": "acompanyament-individual",
               "href": "acompanamiento-individual#inscripcion",
