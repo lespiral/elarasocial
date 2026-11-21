@@ -185,7 +185,7 @@
         "band": "white",
         "id": "formats",
         "title": "Com són les propostes?",
-        "intro": "No és el mateix un minicurs que un taller o un acompanyament. Aquí tens què passa a cada un.",
+        "intro": "**Depèn del format.** No és el mateix un minicurs que un taller o un acompanyament. Aquí tens què passa a cada un.",
         "items": [
           {
             "kicker": "Sol/a · al teu ritme",

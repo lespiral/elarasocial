@@ -145,7 +145,7 @@
         "band": "white",
         "id": "formatos",
         "title": "¿Cómo son las propuestas?",
-        "intro": "No es lo mismo un minicurso que un taller o un acompañamiento. Aquí tienes qué pasa en cada uno.",
+        "intro": "**Depende del formato.** No es lo mismo un minicurso que un taller o un acompañamiento. Aquí tienes qué pasa en cada uno.",
         "items": [
           {
             "kicker": "Solo/a · a tu ritmo",
