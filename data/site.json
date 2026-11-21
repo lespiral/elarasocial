@@ -115,7 +115,7 @@
         "items": [
           {
             "kicker": "Per a persones",
-            "title": "Vull que m'acompanyin, sol o en grup",
+            "title": "Vull que m'acompanyin, sol/a o en grup",
             "ask": "T'hi reconeixes?",
             "style": "light",
             "list": [
