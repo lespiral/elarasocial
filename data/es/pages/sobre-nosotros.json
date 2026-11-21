@@ -35,6 +35,7 @@
       "type": "cards",
       "band": "white",
       "align": "left",
+      "tone": "blue",
       "id": "mision-y-vision",
       "items": [
         {

@@ -28,8 +28,8 @@
 {%- endmacro %}
 
 {# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "links": [{"text", "href"}], "badge"}] #}
-{% macro cards(items, root, heading_level=3, align='center') -%}
-<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}">
+{% macro cards(items, root, heading_level=3, align='center', tone='') -%}
+<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}">
   {% for c in items %}
   <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
     {% if c.photo %}<span class="card__photo"><img src="{{ aroot }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
@@ -225,7 +225,7 @@
     {% elif s.type == 'cards' %}
       {% if s.before %}<div class="prose prose--before">{% for p in s.before %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
       {% if s.infografia and s.before %}<div class="infografia infografia--top">{% include "infografies/infografia-" ~ s.infografia ~ ".html" %}</div>{% endif %}
-      {{ cards(s["items"], root, align=s.align or 'center') }}
+      {{ cards(s["items"], root, align=s.align or 'center', tone=s.tone or '') }}
     {% elif s.type == 'list' %}
       {{ tiles(s["items"], s.list_icon or 'check') }}
     {% elif s.type == 'faq' %}

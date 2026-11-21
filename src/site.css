@@ -752,3 +752,11 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .tier-legend strong { color: var(--blau-900); }
 .band--white .tier-legend li { background: var(--verd-50); border-color: var(--verd-100); }
 @media (max-width: 560px) { .tiers__p { font-size: 1.02rem; } .hero--home .hero__in { padding-top: 48px; } }
+
+/* Targetes en blau marí (secció amb "tone": "blue") */
+.cards--blue .card--course { background: var(--blau-800); border-color: var(--blau-800); color: #fff; }
+.cards--blue .card--course:hover { box-shadow: var(--shadow-sm); transform: none; }
+.cards--blue .card__icon { background: rgba(255,255,255,.12); color: #fff; }
+.cards--blue .card__title { color: #fff; }
+.cards--blue .card__text, .cards--blue .card--course p { color: #e6edf4; }
+.cards--blue .card--course a { color: #fff; }
