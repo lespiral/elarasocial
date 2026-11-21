@@ -167,6 +167,7 @@
     {
       "type": "cards",
       "band": "white",
+      "tone": "blue",
       "kicker": "què ens mou?",
       "title": "En un món que ens vol ràpides i eficients, la nostra aposta és la humanitat.",
       "before": [

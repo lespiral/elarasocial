@@ -168,6 +168,7 @@
     {
       "type": "cards",
       "band": "white",
+      "tone": "blue",
       "kicker": "¿qué nos mueve?",
       "title": "En un mundo que nos quiere rápidas y eficientes, nuestra apuesta es la humanidad.",
       "before": [
