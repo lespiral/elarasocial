@@ -760,3 +760,14 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .cards--blue .card__title { color: #fff; }
 .cards--blue .card__text, .cards--blue .card--course p { color: #e6edf4; }
 .cards--blue .card--course a { color: #fff; }
+
+/* Capçalera de pàgina en blau marí, com la de la portada */
+.pagehead--blue { position: relative; overflow: hidden; background: var(--blau-800); color: #fff; padding: clamp(52px, 8vw, 92px) 0 clamp(84px, 11vw, 132px); }
+.pagehead--blue::before { content: ""; position: absolute; inset: auto -10% -55% -10%; height: 90%; background: radial-gradient(closest-side, rgba(85, 126, 76, .45), rgba(85, 126, 76, 0)); pointer-events: none; }
+.pagehead--blue::after { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 80% at 85% 0%, rgba(255, 255, 255, .07), transparent 70%); pointer-events: none; }
+.pagehead--blue .pagehead__in { position: relative; z-index: 1; }
+.pagehead--blue h1 { color: var(--verd-clar); }
+.pagehead--blue .lead { color: #e3ebf2; }
+.pagehead--blue .kicker { background: var(--blau-700); color: var(--verd-clar); }
+.pagehead--blue .pagehead__wave { position: absolute; z-index: 1; left: 0; right: 0; bottom: -1px; width: 100%; height: clamp(40px, 7vw, 84px); }
+.pagehead--after { padding-top: 8px; padding-bottom: 24px; }

@@ -1,19 +1,26 @@
 {# Peces que fan servir totes les pàgines. La macro «section» pinta cada secció de data/ segons el seu "type". #}
 
 {% macro page_head(kicker, title, lead=None, center=True, escena=None, metafora=None, actions=None) -%}
-<section class="pagehead{% if center %} pagehead--center{% endif %}">
-  <div class="wrap">
+<section class="pagehead pagehead--blue{% if center %} pagehead--center{% endif %}">
+  <div class="wrap pagehead__in">
     {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
     <h1>{{ title }}</h1>
     {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
     {# "actions": [{"text", "href"}] a la pàgina: botons sota el lead (el primer ple, els altres de contorn) #}
-    {% if actions %}<p class="pagehead__actions">{% for b in actions %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+    {% if actions %}<p class="pagehead__actions">{% for b in actions %}{{ button(b, root, 'btn--light' if loop.first else 'btn--ghost-light') }}{% endfor %}</p>{% endif %}
+  </div>
+  <svg class="pagehead__wave" viewBox="0 0 1360 150" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 70 C240 20 430 70 700 84 C960 98 1140 40 1360 20 L1360 150 L0 150Z" fill="#46703d" opacity=".55"/><path d="M0 104 C260 70 480 108 760 112 C1040 116 1180 82 1360 66 L1360 150 L0 150Z" fill="#b9d4ad" opacity=".85"/><path d="M0 134 C300 118 560 138 820 140 C1060 142 1220 128 1360 120 L1360 150 L0 150Z" fill="#f6f7f4"/></svg>
+</section>
+{% if escena or metafora %}
+<section class="pagehead pagehead--after{% if center %} pagehead--center{% endif %}">
+  <div class="wrap">
     {# "escena": "vida" | "cuidar" | "mon" | "dia" a la pàgina: una escena animada sota el títol #}
     {% if escena %}<div class="infografia infografia--head">{% include "infografies/infografia-capcalera.html" %}</div>{% endif %}
     {# "metafora": {"name": "<escena>", "text": "…"} a les propostes: una escena petita que explica la proposta amb una imatge #}
     {% if metafora %}{% include "infografies/infografia-metafora.html" %}{% endif %}
   </div>
 </section>
+{% endif %}
 {%- endmacro %}
 
 {# Una adreça sense http, mailto, tel ni # és una pàgina de la web: "contacte" → /contacte/, "persones/#propostes" → /persones/#propostes #}
