@@ -184,7 +184,7 @@
         "type": "formats",
         "band": "white",
         "id": "formats",
-        "title": "Com és una sessió? Depèn del format",
+        "title": "Com són les propostes?",
         "intro": "No és el mateix un minicurs que un taller o un acompanyament. Aquí tens què passa a cada un.",
         "items": [
           {

@@ -144,7 +144,7 @@
         "type": "formats",
         "band": "white",
         "id": "formatos",
-        "title": "¿Cómo es una sesión? Depende del formato",
+        "title": "¿Cómo son las propuestas?",
         "intro": "No es lo mismo un minicurso que un taller o un acompañamiento. Aquí tienes qué pasa en cada uno.",
         "items": [
           {
