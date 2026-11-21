@@ -218,8 +218,8 @@
    "\"La Espiral del Trabajo que Reconecta\""
   ],
   [
-   "\"Les quatre estacions per transformar la incertesa: Gratitud, Dolor, Noves Mirades i Acció.\"",
-   "\"Las cuatro estaciones para transformar la incertidumbre: Gratitud, Dolor, Nuevas Miradas y Acción.\""
+   "\"Les quatre estacions per transformar la incertesa: Arrelar, Dolor, Noves Mirades i Acció.\"",
+   "\"Las cuatro estaciones para transformar la incertidumbre: Arraigar, Dolor, Nuevas Miradas y Acción.\""
   ],
   [
    "\"La gratitud com a arrel\"",
@@ -310,12 +310,16 @@
    "\"En lugar de seguir un temario rígido, utilizaremos el Trabajo que Reconecta como brújula.\""
   ],
   [
-   "\"Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta: Gratitud, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.\"",
-   "\"Recorreremos de manera vivencial la Espiral del Trabajo que Reconecta: Gratitud, Honrar el dolor, Ver con nuevos ojos y Pasar a la acción.\""
+   "\"Recorrerem de manera vivencial l’Espiral del Treball que Reconnecta: Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.\"",
+   "\"Recorreremos de manera vivencial la Espiral del Trabajo que Reconecta: Arraigar, Honrar el dolor, Ver con nuevos ojos y Pasar a la acción.\""
   ],
   [
    "\"Estació \" + n + \" de 4\"",
    "\"Estación \" + n + \" de 4\""
+  ],
+  [
+   "\"Arrelar\"",
+   "\"Arraigar\""
   ]
  ],
  "infografies/infografia-capcalera.html": [
