@@ -1,0 +1,22 @@
+{
+  "title": "Avís legal",
+  "kicker": "Elara Social",
+  "description": "Titular d'aquesta web i dades de contacte.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "titular",
+      "html": true,
+      "list_icon": "check",
+      "paragraphs": [
+        "Titular d'aquesta web: **Aleix Boronat Monfort**."
+      ],
+      "list": [
+        "NIF: 46789790Q",
+        "Adreça: C/ Jaume Casanovas 177, local 2, 08820 El Prat de Llobregat (Barcelona)",
+        "Correu electrònic: <a href=\"mailto:lespiral.cat@gmail.com\">lespiral.cat@gmail.com</a>"
+      ]
+    }
+  ]
+}

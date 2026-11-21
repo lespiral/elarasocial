@@ -36,15 +36,15 @@
     "legal": [
       {
         "title": "Avís legal",
-        "href": "https://lespiral.cat/aviso-legal/"
+        "slug": "avis-legal"
       },
       {
         "title": "Política de privacitat",
-        "href": "https://lespiral.cat/politica-de-privacidad/"
+        "slug": "politica-de-privacitat"
       },
       {
         "title": "Política de galetes",
-        "href": "https://lespiral.cat/politica-de-cookies/"
+        "slug": "politica-de-galetes"
       },
       {
         "title": "Declaració d'accessibilitat",

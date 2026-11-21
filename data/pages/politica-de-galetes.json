@@ -1,0 +1,18 @@
+{
+  "title": "Política de galetes",
+  "kicker": "Elara Social",
+  "description": "Quines galetes i serveis d'altres empreses fa servir aquesta web.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "galetes",
+      "html": true,
+      "paragraphs": [
+        "Aquesta web no fa servir galetes ni tecnologies similars que calgui que acceptis. [Per confirmar: això depèn dels formularis de Google incrustats, vegeu la nota de sota.]",
+        "Els tipus de lletra es serveixen des d'aquesta mateixa web: el teu navegador no es connecta a Google per carregar-los. [Per confirmar: el model diu «Tampoc carrega cap servei d'altres empreses», però les pàgines amb formulari (sol·licitud de proposta o inscripció) incrusten un formulari de Google Forms i en carregar-lo Google rep la teva adreça IP i pot fer servir galetes. Cal decidir el text, o canviar els formularis per un enllaç, abans de publicar.]",
+        "Si algun dia fem servir galetes d'anàlisi, mapes, vídeos o altres serveis, ho indicarem aquí i et demanarem el consentiment abans d'activar-les."
+      ]
+    }
+  ]
+}

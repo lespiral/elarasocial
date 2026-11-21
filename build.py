@@ -22,7 +22,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape, TemplateNot
 from markupsafe import Markup, escape
 
 ROOT = Path(__file__).resolve().parent
-PENDENT = re.compile(r"\[PENDENT[^\]]*\]")   # [PENDENT] o [PENDENT: què falta]
+PENDENT = re.compile(r"\[(?:PENDENT|Per confirmar)[^\]]*\]")   # [PENDENT], [PENDENT: què falta] o [Per confirmar: ...]
 DATA, SRC, OUT = ROOT / "data", ROOT / "src", ROOT / "docs"
 
 ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
@@ -525,6 +525,8 @@ if errors:
 (OUT / "assets").mkdir(exist_ok=True)
 shutil.copy(SRC / "site.css", OUT / "assets" / "site.css")
 shutil.copy(SRC / "site.js", OUT / "assets" / "site.js")
+if (SRC / "fonts").exists():
+    shutil.copytree(SRC / "fonts", OUT / "assets" / "fonts")
 if img.exists():
     shutil.copytree(img, OUT / "assets" / "img")
 (OUT / ".nojekyll").write_text("")
