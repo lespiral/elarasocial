@@ -29,6 +29,7 @@
     },
     {
       "type": "cards",
+      "tone": "accent",
       "title": "Si t'hi reconeixes, descobreix les nostres propostes",
       "items": [
         {
@@ -56,6 +57,7 @@
     },
     {
       "type": "cards",
+      "tone": "accent",
       "band": "white",
       "title": "De la paràlisi al pas concret.",
       "before": [

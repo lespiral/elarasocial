@@ -67,6 +67,7 @@
     },
     {
       "type": "cards",
+      "tone": "accent",
       "band": "white",
       "align": "left",
       "id": "para-quien",

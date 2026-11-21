@@ -60,6 +60,7 @@
     },
     {
       "type": "cards",
+      "tone": "accent",
       "title": "Comencem a transformar-ho",
       "items": [
         {
@@ -172,6 +173,7 @@
     },
     {
       "type": "cards",
+      "tone": "accent",
       "title": "Transformem la preocupació en comunitat, i la comunitat en passos possibles.",
       "items": [
         {

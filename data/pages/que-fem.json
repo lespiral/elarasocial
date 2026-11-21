@@ -66,6 +66,7 @@
     },
     {
       "type": "cards",
+      "tone": "accent",
       "band": "white",
       "align": "left",
       "id": "per-a-qui",
