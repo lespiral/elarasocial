@@ -280,6 +280,7 @@
             {% if f.scene %}<div class="mt" data-metafora="{{ f.scene }}" aria-label="{{ f.title }}"></div>{% endif %}
             <p class="fmt__text">{{ f.text }}</p>
             {% if f.rows %}<dl class="fmt__rows">{% for k, v in f.rows %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+            {% if f.button %}<p class="fmt__go">{{ button(f.button, root, 'btn--primary') }}</p>{% endif %}
           </div>
         </details></li>
         {% endfor %}

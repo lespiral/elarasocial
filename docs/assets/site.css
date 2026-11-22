@@ -796,3 +796,7 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .cards--accent .card--course:hover { box-shadow: 0 2px 4px rgba(53, 92, 45, .2), 0 18px 36px rgba(53, 92, 45, .36); }
 .cards--row .card--course { border-left-color: var(--blau-800); box-shadow: 0 2px 4px rgba(1, 49, 91, .16), 0 14px 30px rgba(1, 49, 91, .28); }
 .cards--row .card--course:hover { box-shadow: 0 2px 4px rgba(1, 49, 91, .18), 0 18px 36px rgba(1, 49, 91, .34); transform: none; }
+
+/* Botó al final de cada format de la portada */
+.fmt__go { margin: 6px 0 0; }
+.fmt__go .btn { width: 100%; }
