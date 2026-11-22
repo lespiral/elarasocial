@@ -205,7 +205,11 @@
                 "Preu",
                 "Gratuït"
               ]
-            ]
+            ],
+            "button": {
+              "text": "M'inscric al minicurs gratuït",
+              "href": "7-passes-cap-a-lesperanca-activa"
+            }
           },
           {
             "kicker": "Tu i una persona acompanyant",
@@ -221,7 +225,11 @@
                 "Format",
                 "En línia o presencial"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Vull conèixer la proposta",
+              "href": "acompanyament-individual"
+            }
           },
           {
             "kicker": "En grup · fins a 16 persones",
@@ -237,7 +245,11 @@
                 "Format",
                 "Presencial, en línia o híbrid, segons el cas"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Veure els tallers i inscriure'm",
+              "href": "persones#propostes"
+            }
           },
           {
             "kicker": "El vostre equip · fins a 20",
@@ -253,7 +265,11 @@
                 "Format",
                 "Presencial, en línia o híbrid, a convenir"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Demana una proposta",
+              "href": "entitats#demana-proposta"
+            }
           }
         ],
         "chips": [

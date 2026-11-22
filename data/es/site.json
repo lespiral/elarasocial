@@ -165,7 +165,11 @@
                 "Precio",
                 "Gratuito"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Me inscribo al minicurso gratuito",
+              "href": "7-pasos-hacia-la-esperanza-activa"
+            }
           },
           {
             "kicker": "Tú y una persona acompañante",
@@ -181,7 +185,11 @@
                 "Formato",
                 "En línea o presencial"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Quiero conocer la propuesta",
+              "href": "acompanamiento-individual"
+            }
           },
           {
             "kicker": "En grupo · hasta 16 personas",
@@ -197,7 +205,11 @@
                 "Formato",
                 "Presencial, en línea o híbrido, según el caso"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Ver los talleres e inscribirme",
+              "href": "personas#propuestas"
+            }
           },
           {
             "kicker": "Vuestro equipo · hasta 20",
@@ -213,7 +225,11 @@
                 "Formato",
                 "Presencial, en línea o híbrido, a convenir"
               ]
-            ]
+            ],
+            "button": {
+              "text": "Pide una propuesta",
+              "href": "entidades#pide-propuesta"
+            }
           }
         ],
         "chips": [

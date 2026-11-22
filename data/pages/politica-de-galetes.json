@@ -9,8 +9,9 @@
       "id": "galetes",
       "html": true,
       "paragraphs": [
-        "Aquesta web no fa servir galetes ni tecnologies similars que calgui que acceptis. [Per confirmar: això depèn dels formularis de Google incrustats, vegeu la nota de sota.]",
-        "Els tipus de lletra es serveixen des d'aquesta mateixa web: el teu navegador no es connecta a Google per carregar-los. [Per confirmar: el model diu «Tampoc carrega cap servei d'altres empreses», però les pàgines amb formulari (sol·licitud de proposta o inscripció) incrusten un formulari de Google Forms i en carregar-lo Google rep la teva adreça IP i pot fer servir galetes. Cal decidir el text, o canviar els formularis per un enllaç, abans de publicar.]",
+        "Aquesta web no fa servir galetes pròpies ni eines d'anàlisi.",
+        "Els tipus de lletra es serveixen des d'aquesta mateixa web: el teu navegador no es connecta a Google per carregar-los.",
+        "Les pàgines on hi ha un formulari (per demanar una proposta, inscriure't o fer una reserva) porten incrustat un formulari de Google Forms. Quan es carrega aquest formulari, Google rep la teva adreça IP i pot fer servir les seves pròpies galetes, amb les seves condicions. Si prefereixes no fer servir el formulari, pots escriure'ns per correu, trucar-nos o enviar-nos un WhatsApp.",
         "Si algun dia fem servir galetes d'anàlisi, mapes, vídeos o altres serveis, ho indicarem aquí i et demanarem el consentiment abans d'activar-les."
       ]
     }

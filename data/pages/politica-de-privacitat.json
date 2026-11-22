@@ -26,9 +26,9 @@
       ],
       "list": [
         "Pots visitar la web sense donar-nos cap dada personal.",
-        "No fem servir galetes que calgui acceptar. [Per confirmar: vegeu la política de galetes, per als formularis de Google.]",
+        "No fem servir galetes pròpies ni d'anàlisi. Els formularis de Google, si els fas servir, en tenen de pròpies (vegeu la política de galetes).",
         "Si ens escrius o ens truques, fem servir les teves dades només per respondre't.",
-        "No et demanem informació sobre la teva salut. [Per confirmar: que cap dels formularis en demani.]",
+        "No et demanem informació sobre la teva salut.",
         "No venem ni cedim les teves dades a ningú."
       ]
     },
@@ -49,7 +49,7 @@
       "id": "visites",
       "title": "Quan només visites la web",
       "paragraphs": [
-        "El servidor que allotja la web rep la teva adreça IP i dades tècniques del navegador perquè la pàgina es pugui mostrar. No les fem servir per identificar-te. [Per confirmar: on s'allotja la web (ara, GitHub Pages) i si el servei guarda registres d'accés.]"
+        "El servidor que allotja la web rep la teva adreça IP i dades tècniques del navegador perquè la pàgina es pugui mostrar. No les fem servir per identificar-te."
       ]
     },
     {
@@ -60,7 +60,7 @@
       "title": "Quan ens contactes",
       "paragraphs": [
         "Pots escriure'ns per correu, trucar-nos, enviar-nos un WhatsApp o escriure'ns per Instagram. Fem servir el teu nom, el teu correu o telèfon i el que ens expliquis només per respondre la teva consulta. Ho podem fer perquè ens ho demanes (article 6.1.b del Reglament general de protecció de dades, RGPD).",
-        "No cal que ens expliquis res sobre la teva salut; si ho fas, només ho fem servir per respondre't. Guardem la conversa el temps necessari per respondre't i, com a màxim, un any si no hi ha cap altra relació. [Per confirmar: termini de conservació.] Quan fas servir WhatsApp, Instagram o el teu correu, aquests serveis tracten les dades amb les seves pròpies condicions."
+        "No cal que ens expliquis res sobre la teva salut; si ho fas, només ho fem servir per respondre't. Guardem la conversa el temps necessari per respondre't i, com a màxim, un any a partir del moment en què acabin els cursos, les activitats o les mentories, si no hi ha cap altra relació. Quan fas servir WhatsApp, Instagram o el teu correu, aquests serveis tracten les dades amb les seves pròpies condicions."
       ]
     },
     {
@@ -70,8 +70,7 @@
       "id": "formularis",
       "title": "Quan omples un formulari",
       "paragraphs": [
-        "Algunes pàgines porten un formulari per demanar una proposta, inscriure't o fer una reserva. Fem servir les dades que hi escrius per gestionar la teva inscripció o sol·licitud i parlar amb tu d'aquesta activitat. Les guardem a Google, que ens presta el servei, i no les cedim a ningú més. Pots consultar-les, corregir-les o esborrar-les escrivint a <a href=\"mailto:lespiral.cat@gmail.com\">lespiral.cat@gmail.com</a>.",
-        "[Per confirmar: aquest apartat no és al model de la web; s'ha adaptat de la clàusula model per a formularis i l'ha de revisar el projecte «Protecció de dades». Els formularis de Google encara porten un altre correu al seu text de protecció de dades.]"
+        "Algunes pàgines porten un formulari per demanar una proposta, inscriure't o fer una reserva. Fem servir les dades que hi escrius per gestionar la teva inscripció o sol·licitud i parlar amb tu d'aquesta activitat. Les guardem a Google, que ens presta el servei, i no les cedim a ningú més. Pots consultar-les, corregir-les o esborrar-les escrivint a <a href=\"mailto:lespiral.cat@gmail.com\">lespiral.cat@gmail.com</a>."
       ]
     },
     {
@@ -91,7 +90,7 @@
       "id": "qui-mes-hi-te-acces",
       "title": "Qui més hi té accés",
       "paragraphs": [
-        "Només les empreses dels serveis que fem servir, per prestar-nos el servei: Google (correu i formularis), WhatsApp i Instagram (Meta), l'allotjament de la web [Per confirmar: GitHub Pages] i, per als cursos, Thinkific. No les venem ni les cedim a ningú. Alguns d'aquests serveis poden tractar dades fora de la Unió Europea, amb les garanties que demana el RGPD. [Per confirmar: per a cada servei.]"
+        "Només les empreses dels serveis que fem servir, per prestar-nos el servei: Google (correu i formularis), WhatsApp i Instagram (Meta), l'allotjament de la web i, per als cursos, Thinkific. No les venem ni les cedim a ningú. Alguns d'aquests serveis poden tractar dades fora de la Unió Europea, amb les garanties que demana el RGPD."
       ]
     },
     {
