@@ -22,15 +22,15 @@
     "legal": [
       {
         "title": "Aviso legal",
-        "href": "https://elarasocial.com/avis-legal/"
+        "slug": "aviso-legal"
       },
       {
         "title": "Política de privacidad",
-        "href": "https://elarasocial.com/politica-de-privacitat/"
+        "slug": "politica-de-privacidad"
       },
       {
         "title": "Política de cookies",
-        "href": "https://elarasocial.com/politica-de-galetes/"
+        "slug": "politica-de-cookies"
       }
     ]
   },

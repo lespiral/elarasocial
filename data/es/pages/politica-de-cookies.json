@@ -1,0 +1,20 @@
+{
+  "ca": "politica-de-galetes",
+  "title": "Política de cookies",
+  "kicker": "Elara Social",
+  "description": "Qué cookies y servicios de otras empresas utiliza esta web.",
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "cookies",
+      "html": true,
+      "paragraphs": [
+        "Esta web no utiliza cookies propias ni herramientas de análisis.",
+        "Los tipos de letra se sirven desde esta misma web: tu navegador no se conecta a Google para cargarlos.",
+        "Las páginas donde hay un formulario (para pedir una propuesta, inscribirte o hacer una reserva) llevan incrustado un formulario de Google Forms. Cuando se carga este formulario, Google recibe tu dirección IP y puede utilizar sus propias cookies, con sus propias condiciones. Si prefieres no utilizar el formulario, puedes escribirnos por correo, llamarnos o enviarnos un WhatsApp.",
+        "Si algún día utilizamos cookies de análisis, mapas, vídeos u otros servicios, lo indicaremos aquí y te pediremos el consentimiento antes de activarlas."
+      ]
+    }
+  ]
+}

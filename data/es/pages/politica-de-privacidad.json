@@ -1,0 +1,129 @@
+{
+  "ca": "politica-de-privacitat",
+  "title": "Política de privacidad de Elara Social",
+  "kicker": "Elara Social",
+  "lead": "Última actualización: 22 de noviembre de 2026",
+  "description": "Qué datos tuyos recogemos cuando visitas esta web o nos contactas, para qué los utilizamos y qué derechos tienes.",
+  "sections": [
+    {
+      "type": "text",
+      "html": true,
+      "band": "white",
+      "id": "introduccion",
+      "paragraphs": [
+        "Aquí te explicamos qué datos tuyos recogemos cuando visitas esta web o nos contactas, para qué los utilizamos y qué puedes hacer con ellos.",
+        "Si te inscribes en un curso en la escuela en línea, los datos se tratan según la política propia de la escuela: <a href=\"https://espiral-elara-social.thinkific.com/pages/privacy\" target=\"_blank\" rel=\"noopener\">política de privacidad de la escuela en línea</a>."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "id": "en-resumen",
+      "title": "En resumen",
+      "list_icon": "check",
+      "list": [
+        "Puedes visitar la web sin darnos ningún dato personal.",
+        "No utilizamos cookies propias ni de análisis. Los formularios de Google, si los utilizas, tienen las suyas (véase la política de cookies).",
+        "Si nos escribes o nos llamas, utilizamos tus datos solo para responderte.",
+        "No te pedimos información sobre tu salud.",
+        "No vendemos ni cedemos tus datos a nadie."
+      ],
+      "paragraphs": [
+        "Esto es lo más importante:"
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "white",
+      "id": "responsable",
+      "title": "Quién es responsable de los datos",
+      "paragraphs": [
+        "Aleix Boronat Monfort, C/ Jaume Casanovas 177, local 2, 08820 El Prat de Llobregat (Barcelona). Correo: <a href=\"mailto:lespiral.cat@gmail.com\">lespiral.cat@gmail.com</a>."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "id": "visitas",
+      "title": "Cuando solo visitas la web",
+      "paragraphs": [
+        "La web está alojada en GitHub Pages (GitHub, Inc.), y el dominio se gestiona con Bluehost. El servidor que aloja la web recibe tu dirección IP y datos técnicos del navegador para que la página pueda mostrarse. No los utilizamos para identificarte."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "white",
+      "id": "contacto",
+      "title": "Cuando nos contactas",
+      "paragraphs": [
+        "Puedes escribirnos por correo, llamarnos, enviarnos un WhatsApp o escribirnos por Instagram. Utilizamos tu nombre, tu correo o teléfono y lo que nos cuentes solo para responder a tu consulta. Podemos hacerlo porque nos lo pides (artículo 6.1.b del Reglamento general de protección de datos, RGPD).",
+        "No hace falta que nos cuentes nada sobre tu salud; si lo haces, solo lo utilizamos para responderte. Guardamos la conversación el tiempo necesario para responderte y, como máximo, un año a partir del momento en que terminen los cursos, las actividades o las mentorías, si no hay ninguna otra relación. Cuando utilizas WhatsApp, Instagram o tu correo, estos servicios tratan los datos con sus propias condiciones."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "id": "formularios",
+      "title": "Cuando rellenas un formulario",
+      "paragraphs": [
+        "Algunas páginas llevan un formulario para pedir una propuesta, inscribirte o hacer una reserva. Utilizamos los datos que escribes en él para gestionar tu inscripción o solicitud, hablar contigo de esa actividad y, si nos lo has pedido o has dado tu consentimiento, enviarte información de otras actividades que puedan interesarte, por correo electrónico u otros medios. Los guardamos en Google, que nos presta el servicio, y no los cedemos a nadie más. Puedes consultarlos, corregirlos o borrarlos escribiendo a <a href=\"mailto:lespiral.cat@gmail.com\">lespiral.cat@gmail.com</a>."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "white",
+      "id": "informacion-de-actividades",
+      "title": "Información de actividades",
+      "paragraphs": [
+        "Solo te enviamos información de actividades si nos lo has pedido o has dado tu consentimiento, que puedes retirar cuando quieras respondiendo BAJA o escribiéndonos."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "id": "quien-mas-tiene-acceso",
+      "title": "Quién más tiene acceso",
+      "paragraphs": [
+        "Solo las empresas de los servicios que utilizamos, para prestarnos el servicio: Google (correo y formularios), WhatsApp e Instagram (Meta), GitHub (alojamiento de la web), Bluehost (gestión del dominio) y, para los cursos, Thinkific. No los vendemos ni los cedemos a nadie. Algunos de estos servicios pueden tratar datos fuera de la Unión Europea, con las garantías que exige el RGPD."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "white",
+      "id": "derechos",
+      "title": "Tus derechos",
+      "paragraphs": [
+        "Puedes pedirnos ver tus datos, corregirlos, borrarlos, limitar su uso u oponerte a él, recibirlos en un formato portable y retirar el consentimiento. Escríbenos a <a href=\"mailto:lespiral.cat@gmail.com\">lespiral.cat@gmail.com</a> y te responderemos en un máximo de un mes. Solo te pediremos un documento de identidad si tenemos dudas razonables de que la petición sea tuya.",
+        "Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href=\"https://www.aepd.es\" target=\"_blank\" rel=\"noopener\">www.aepd.es</a>)."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "soft",
+      "id": "edad",
+      "title": "Edad",
+      "paragraphs": [
+        "La web se dirige a personas adultas."
+      ]
+    },
+    {
+      "type": "text",
+      "html": true,
+      "band": "white",
+      "id": "cambios",
+      "title": "Cambios en esta política",
+      "paragraphs": [
+        "Si la cambiamos, publicaremos la versión nueva en esta página con la fecha de actualización."
+      ]
+    }
+  ]
+}

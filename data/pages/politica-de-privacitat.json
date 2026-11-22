@@ -49,7 +49,7 @@
       "id": "visites",
       "title": "Quan només visites la web",
       "paragraphs": [
-        "El servidor que allotja la web rep la teva adreça IP i dades tècniques del navegador perquè la pàgina es pugui mostrar. No les fem servir per identificar-te."
+        "La web és allotjada a GitHub Pages (GitHub, Inc.), i el domini es gestiona amb Bluehost. El servidor que allotja la web rep la teva adreça IP i dades tècniques del navegador perquè la pàgina es pugui mostrar. No les fem servir per identificar-te."
       ]
     },
     {
@@ -90,7 +90,7 @@
       "id": "qui-mes-hi-te-acces",
       "title": "Qui més hi té accés",
       "paragraphs": [
-        "Només les empreses dels serveis que fem servir, per prestar-nos el servei: Google (correu i formularis), WhatsApp i Instagram (Meta), l'allotjament de la web i, per als cursos, Thinkific. No les venem ni les cedim a ningú. Alguns d'aquests serveis poden tractar dades fora de la Unió Europea, amb les garanties que demana el RGPD."
+        "Només les empreses dels serveis que fem servir, per prestar-nos el servei: Google (correu i formularis), WhatsApp i Instagram (Meta), GitHub (allotjament de la web), Bluehost (gestió del domini) i, per als cursos, Thinkific. No les venem ni les cedim a ningú. Alguns d'aquests serveis poden tractar dades fora de la Unió Europea, amb les garanties que demana el RGPD."
       ]
     },
     {
