@@ -1,0 +1,110 @@
+{
+  "title": "Un curso a medida para vuestra institución",
+  "kicker": "Curso a medida",
+  "lead": "Cogemos el camino de los 7 pasos y lo hacemos vuestro: con textos, vídeos nuevos y recursos propios.",
+  "section": "entidades",
+  "actions": [
+    {
+      "text": "Pide presupuesto",
+      "href": "entidades#formulario-entidades"
+    }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "per-a-qui",
+      "title": "Para quién",
+      "paragraphs": [
+        "Ayuntamientos, servicios públicos, instituciones y grandes entidades."
+      ]
+    },
+    {
+      "type": "list",
+      "band": "soft",
+      "id": "que-inclou",
+      "title": "Qué incluye",
+      "list_icon": "check",
+      "items": [
+        "Un curso aparte en Thinkific.",
+        "Vídeos nuevos.",
+        "Textos propios.",
+        "Enlaces a vuestros recursos.",
+        "Mantenimiento: la duración la concretamos en la primera conversación."
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "white",
+      "id": "que-no-es",
+      "title": "Qué no es",
+      "paragraphs": [
+        "No es el curso gratuito con vuestro logo ni una copia editada."
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "com-es-treballa",
+      "title": "Cómo se trabaja",
+      "items": [
+        {
+          "title": "Conversación"
+        },
+        {
+          "title": "Presupuesto a medida"
+        },
+        {
+          "title": "Guion y grabación"
+        },
+        {
+          "title": "Montaje y revisión conjunta"
+        },
+        {
+          "title": "Publicación y seguimiento"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "preu",
+      "title": "Precio",
+      "paragraphs": [
+        "Se presupuesta como encargo.",
+        "Si hace falta contratarlo, miramos juntas qué procedimiento encaja. No es asesoramiento jurídico."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "id": "grup-propi",
+      "title": "¿Solo queréis un grupo propio de los cursos gratuitos?",
+      "paragraphs": [
+        "Se puede hacer un grupo privado en Thinkific, con una bienvenida personalizada. El precio, a concretar en la primera conversación."
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "id": "pressupost",
+      "kicker": "Pide presupuesto",
+      "paragraphs": [
+        "Os respondemos en 5 días laborables. La primera conversación es sin compromiso."
+      ],
+      "buttons": [
+        {
+          "text": "Pide presupuesto",
+          "href": "entidades#formulario-entidades"
+        },
+        {
+          "text": "Centro colaborador",
+          "href": "entidades-centro-colaborador"
+        }
+      ]
+    }
+  ],
+  "description": "Cogemos el camino de los 7 pasos y lo hacemos vuestro: con textos, vídeos nuevos y recursos propios.",
+  "ca": "entitats-curs-a-mida"
+}

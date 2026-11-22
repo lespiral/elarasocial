@@ -1,108 +1,228 @@
 {
-  "title": "Quan el context us supera, deixeu-vos acompanyar.",
-  "kicker": "Entitats i comunitats",
-  "lead": "Transformem el desgast de l'equip i l'aïllament del territori en claredat, vincle i un pas col·lectiu possible.",
-  "escena": "dia",
+  "title": "Doneu a les persones que atenen alguna cosa concreta a fer",
+  "kicker": "Per a entitats, serveis i comunitats",
+  "lead": "Esperança Activa són cursos en línia gratuïts i caminades que surten de la porta del vostre espai. Vosaltres només orienteu; cada persona ho fa al seu ritme.",
+  "description": "Cursos en línia gratuïts i caminades que surten de la porta del vostre espai, i propostes per a entitats, serveis i comunitats.",
   "actions": [
     {
-      "text": "Veure propostes",
-      "href": "#equip"
+      "text": "Veure què rebran les persones",
+      "href": "#persones-reben"
     },
     {
-      "text": "Demana una proposta",
+      "text": "Parlem de la vostra entitat",
       "href": "#demana-proposta"
     }
   ],
   "sections": [
     {
-      "type": "doors",
-      "id": "camins",
-      "items": [
+      "type": "feature",
+      "band": "white",
+      "id": "persones-reben",
+      "variant": "sun",
+      "pill": "El que rebran les persones del vostre espai",
+      "title": "Proveu-ho com ho faria una persona",
+      "paragraphs": [
+        "Al buscador de rutes de Camins, una persona escriu un poble, una ciutat o una adreça (o fa servir la seva ubicació) i veu, per a cada curs, les rutes que comencen més a prop.",
+        "Si el poble encara no té ruta: us ho diem clarament. Els cursos en línia es poden fer des de qualsevol lloc.",
+        "La ubicació no surt del dispositiu. Si s'escriu una adreça, s'envia a Nominatim (OpenStreetMap) per localitzar-la."
+      ],
+      "buttons": [
         {
-          "kicker": "Equips i entitats",
-          "title": "Un equip, cooperativa o col·lectiu",
-          "ask": "Us hi reconeixeu?",
-          "style": "dark",
-          "list": [
-            "L'equip va esgotat",
-            "Volem posar la cura al centre"
-          ],
-          "href": "#equip",
-          "button": "Propostes per a equips"
+          "text": "Obrir el buscador de rutes",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
         },
         {
-          "kicker": "Territori i comunitats",
-          "title": "Una comunitat, un barri, una xarxa",
-          "ask": "Us hi reconeixeu?",
-          "style": "light",
-          "list": [
-            "Ens falten espais de trobada",
-            "La preocupació ens paralitza",
-            "Volem actuar plegats al territori"
-          ],
-          "href": "#territori",
-          "button": "Propostes per al territori"
+          "text": "Veure les ciutats amb ruta",
+          "href": "https://xn--esperanaactiva-mjb.cat/ciutats/"
         }
       ]
     },
     {
-      "type": "text",
-      "band": "white",
-      "kicker": "sabem que sostenir un projecte a vegades es fa una muntanya.",
-      "title": "Per més que us esforceu, el dia a dia i les inèrcies us passen per sobre?",
-      "paragraphs": [
-        "A Elara Social, ajudem organitzacions i cooperatives a **transformar l’estancament en força d’equip**. Transformarem aquest desgast en impuls per fer el següent pas col·lectiu.",
-        "Sostenir la vida és al centre de la nostra activitat. Per això no oferim “solucions ràpides” que no canvien el dia a dia: treballem perquè el vostre equip recuperi ritme, coherència i capacitat de decisió.",
-        "A Elara Social fem servir metodologies estructurades i pràctiques vivencials per passar **de l’apaga-focs a acords clars**, i del desgast crònic a una cultura de cura i responsabilitat compartida.",
-        "Un enfoc pensat per al benestar de les persones i la sostenibilitat del projecte."
+      "type": "cards",
+      "tone": "courses",
+      "band": "soft",
+      "id": "cursos",
+      "title": "Els quatre cursos",
+      "intro": "Gratuïts i en línia, a fer al seu ritme. Els cursos són en preparació; les rutes ja es poden fer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Properament",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Properament",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "globe",
+          "badge": "Properament",
+          "title": "Quan el futur del planeta et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "house",
+          "badge": "Properament",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
+        }
       ],
-      "id": "equips-intro"
+      "buttons": [
+        {
+          "text": "Veure tots els cursos a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "white",
+      "id": "com-ho-viuria",
+      "title": "Com ho viuria una persona del vostre espai",
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Rep l'orientació al vostre espai",
+          "text": "Amb un cartell, un QR o paraules vostres."
+        },
+        {
+          "icon": "headphones",
+          "title": "Fa la pràctica",
+          "text": "Guiada, d'uns 15 minuts, a casa."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina des del vostre espai",
+          "text": "Al seu ritme."
+        },
+        {
+          "icon": "sparkle",
+          "title": "S'ho porta al dia a dia",
+          "text": "Un petit pas possible."
+        }
+      ]
+    },
+    {
+      "type": "doors",
+      "band": "soft",
+      "id": "portes",
+      "title": "Quin és el vostre espai?",
+      "items": [
+        {
+          "title": "Salut i serveis comunitaris",
+          "text": "CAP i serveis socials: orientar des de la consulta o l'atenció.",
+          "style": "dark",
+          "href": "entitats-salut",
+          "button": "Veure què us proposem"
+        },
+        {
+          "title": "Escoles i projectes educatius",
+          "text": "De moment, per a mestres, educadors i famílies.",
+          "style": "light",
+          "href": "entitats-escoles",
+          "button": "Veure què us proposem"
+        },
+        {
+          "title": "Administració i prescripció social",
+          "text": "Un recurs públic i gratuït per orientar des de serveis municipals.",
+          "style": "light",
+          "href": "entitats-administracio",
+          "button": "Veure què us proposem"
+        },
+        {
+          "title": "Entitats i col·lectius",
+          "text": "Economia social i solidària, tercer sector i espais afins.",
+          "style": "dark",
+          "href": "entitats-collectius",
+          "button": "Veure què us proposem"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "guanyeu-demanem",
+      "title": "Què hi guanyeu i què us demanem",
+      "gain": {
+        "title": "Què hi guanyeu",
+        "items": [
+          "Un recurs gratuït i sense llista d'espera.",
+          "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
+          "Només cal orientar: la resta ho fa cada persona al seu ritme."
+        ]
+      },
+      "ask": {
+        "title": "Què us demanem",
+        "items": [
+          "Per orientar, res: sense acord ni tràmit.",
+          "Per ser centre col·laborador, un acord per escrit que concretem plegats.",
+          "Que no substitueixi cap atenció que ja feu."
+        ]
+      }
+    },
+    {
+      "type": "limits",
+      "band": "soft",
+      "id": "limits",
+      "title": "Els límits",
+      "paragraphs": [
+        "No és teràpia ni un servei d'urgències. Si algú es troba malament, orienteu cap a aquests números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (només Catalunya)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atenció a la conducta suïcida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergències",
+          "href": "tel:112"
+        }
+      ]
     },
     {
       "type": "cards",
       "tone": "accent",
-      "title": "Comencem a transformar-ho",
+      "band": "white",
+      "id": "mes-enlla",
+      "title": "Si voleu anar més enllà",
+      "intro": "Tres maneres de fer-ho, de menys a més compromís. Podeu parar quan vulgueu.",
       "items": [
         {
-          "icon": "nav",
-          "title": "Bloqueig estratègic o desorientació?",
-          "text": "La situació global o sectorial us pesa, i l'equip es queda atrapat en l'apaga-focs sense saber com avançar.",
-          "href": "#equip-propostes",
-          "button": "Veure opcions"
+          "icon": "seal-check",
+          "title": "1. Centre col·laborador",
+          "text": "Pàgina pròpia a Camins, cartell amb QR i segell. El cost el concretem en la primera conversa.",
+          "href": "entitats-centre-colaborador",
+          "button": "Veure com funciona"
         },
         {
-          "icon": "cloud-rain",
-          "title": "Burnout i desgast a l'equip?",
-          "text": "Aneu amb el pilot automàtic, complint els objectius però desconnectats del propòsit inicial, i necessiteu un respir.",
-          "href": "#equip-propostes",
-          "button": "Veure opcions"
+          "icon": "lightbulb",
+          "title": "2. Curs a mida",
+          "text": "Un curs separat, amb els vostres recursos i vídeos nous. Es pressuposta com a encàrrec.",
+          "href": "entitats-curs-a-mida",
+          "button": "Veure com funciona"
         },
         {
-          "icon": "check",
-          "title": "Buscant coherència interna?",
-          "paragraphs": [
-            "Us pesa la contradicció entre allò que feu i com ho feu.",
-            "Ajudem a retrobar el sentit i els valors de la vostra organització."
-          ],
-          "href": "#equip-propostes",
-          "button": "Veure opcions"
+          "icon": "hand-heart",
+          "title": "3. Acompanyament al vostre equip o territori",
+          "text": "Fins a 20 persones, presencial, en línia o híbrid; preu a mida, amb pressupost previ i sense compromís.",
+          "href": "#equip",
+          "button": "Veure les propostes"
         }
-      ],
-      "id": "equips-situacions"
-    },
-    {
-      "type": "text",
-      "band": "soft",
-      "id": "preu",
-      "title": "Com es calcula el preu",
-      "paragraphs": [
-        "Les propostes per a equips i entitats no tenen preu fix: el calculem a mida, segons el nombre de persones, les sessions i el lloc.",
-        "Quan ens expliqueu què necessiteu, us enviem un pressupost abans de decidir res. Sense compromís."
       ]
     },
     {
       "type": "offers",
-      "band": "white",
+      "band": "soft",
       "id": "equip",
       "title": "Propostes per a equips i entitats",
       "intro": "Dues propostes pensades per a un equip: fins a 20 persones, presencials, en línia o híbrides, a convenir.",
@@ -159,130 +279,6 @@
       ]
     },
     {
-      "type": "text",
-      "band": "white",
-      "kicker": "l'acció ha de ser col·lectiva.",
-      "title": "Sentiu que els reptes actuals són massa grans per entomar-los en solitari?",
-      "paragraphs": [
-        "A Elara Social facilitem llocs de trobada on **la preocupació es transforma en vincle, i el vincle en capacitat d’acció col·lectiva**.",
-        "Sostenir la vida és al centre de la nostra activitat. Per això no busquem solucions ràpides: construïm vincles, ritmes i estructura perquè l’esperança es pugui sostenir.",
-        "A Elara Social dissenyem i facilitem espais segurs on la vulnerabilitat es transforma en suport mutu, i les ganes d’actuar es concreten en **passos petits, compartits i arrelats al territori**.",
-        "Una proposta pensada per al benestar individual i la força col·lectiva."
-      ],
-      "id": "territori-intro"
-    },
-    {
-      "type": "cards",
-      "tone": "accent",
-      "title": "Transformem la preocupació en comunitat, i la comunitat en passos possibles.",
-      "items": [
-        {
-          "icon": "users-three",
-          "title": "Aïllament en un món fragmentat?",
-          "text": "Recuperem espais autèntics de trobada, vincle i col·laboració real.",
-          "href": "#territori-propostes",
-          "button": "Veure opcions"
-        },
-        {
-          "icon": "cloud-rain",
-          "title": "Sobrecàrrega ecosocial?",
-          "text": "Quan la por i la incertesa paralitzen, el grup ajuda a sostenir i ordenar.",
-          "href": "#territori-propostes",
-          "button": "Veure opcions"
-        },
-        {
-          "icon": "house",
-          "title": "Manca de recursos compartits?",
-          "text": "Si hi ha idees però falten eines, sabers o tribu, fem xarxa al voltant de necessitats comunes.",
-          "href": "#territori-propostes",
-          "button": "Veure opcions"
-        }
-      ],
-      "id": "territori-situacions"
-    },
-    {
-      "type": "cards",
-      "band": "soft",
-      "title": "Com ens organitzem?",
-      "infografia": "itinerari",
-      "itinerari": {
-        "aria": "Un camí en tres parades: trobades comunitàries, espais de recursos i grups d'acció",
-        "inici": [
-          "L’aïllament",
-          "Sentiu que els reptes actuals són massa grans per entomar-los en solitari?"
-        ],
-        "final": [
-          "L’acció col·lectiva",
-          "A Elara Social facilitem llocs de trobada on la preocupació es transforma en vincle, i el vincle en capacitat d’acció col·lectiva."
-        ],
-        "icones": [
-          "people",
-          "box",
-          "flag"
-        ]
-      },
-      "before": [
-        "Oferim diferents formats de participació adaptats a l’energia i disponibilitat de cadascú, posant sempre la comunitat al centre."
-      ],
-      "items": [
-        {
-          "title": "Trobades comunitàries",
-          "text": "Espais de diàleg i connexió per teixir vincles de confiança entre veïnes i col·lectius.",
-          "propostes": [
-            [
-              "L'Espiral de l'Esperança Activa",
-              "lespiral-de-lesperanca-activa"
-            ],
-            [
-              "Un pont d'esperança comunitària",
-              "un-pont-desperanca-2"
-            ],
-            [
-              "El Treball que Reconnecta (grup regular)",
-              "grup-regular-de-el-treball-que-reconnecta"
-            ]
-          ]
-        },
-        {
-          "title": "Espais de recursos",
-          "text": "Una plataforma on compartir eines, estratègies i coneixements pràctics ecosocials.",
-          "propostes": [
-            [
-              "7 passes cap a l'Esperança Activa",
-              "7-passes-cap-a-lesperanca-activa-comunitats"
-            ],
-            [
-              "Camins d'Esperança [Activa] (en català)",
-              "https://xn--esperanaactiva-mjb.cat/"
-            ],
-            [
-              "Caminos de Esperanza [Activa] (en castellà)",
-              "https://esperanzaactiva.org/"
-            ]
-          ]
-        },
-        {
-          "title": "Grups d'acció",
-          "text": "Acompanyament a grups de treball enfocats a resoldre reptes concrets del territori.",
-          "propostes": [
-            [
-              "El Treball que Reconnecta",
-              "el-treball-que-reconnecta"
-            ],
-            [
-              "Burnout",
-              "burnout"
-            ],
-            [
-              "Parlem-ne",
-              "contacte"
-            ]
-          ]
-        }
-      ],
-      "id": "territori-formats"
-    },
-    {
       "type": "offers",
       "band": "white",
       "id": "territori",
@@ -321,7 +317,11 @@
             }
           ]
         }
-      ]
+      ],
+      "after": [
+        "Per a grups del territori, també fem <a href=\"lespiral-de-lesperanca-activa\">L'Espiral de l'Esperança Activa</a> i el <a href=\"grup-regular-de-el-treball-que-reconnecta\">grup regular d'El Treball que Reconnecta</a>."
+      ],
+      "html": true
     },
     {
       "type": "steps",
@@ -351,9 +351,15 @@
       "type": "contact",
       "band": "white",
       "id": "demana-proposta",
-      "title": "Demana una proposta",
+      "title": "Parlem de la vostra entitat",
       "paragraphs": [
-        "Explica'ns què necessiteu i us responem amb una proposta o una primera conversa."
+        "Us responem en 5 dies laborables. La primera conversa és sense compromís i decidiu amb el pressupost a la mà."
+      ],
+      "buttons": [
+        {
+          "text": "Omple el formulari",
+          "href": "#formulari-entitats"
+        }
       ]
     },
     {
@@ -366,11 +372,12 @@
           "form": "1FAIpQLSejHP-fDmCZ45zeOBVjpRFbqFLmIhIXJ2uoo9kCHsZLw4F5Bw",
           "height": 3000
         }
-      ]
+      ],
+      "band": "soft"
     },
     {
       "type": "steps",
-      "band": "soft",
+      "band": "white",
       "id": "despres",
       "title": "Què passa després?",
       "items": [
@@ -394,6 +401,14 @@
       "title": "Preguntes freqüents",
       "items": [
         [
+          "Cal pagar per orientar cap a Camins?",
+          "No. Orientar no demana cap acord ni cap tràmit, i els cursos i les rutes són gratuïts."
+        ],
+        [
+          "Què és un centre col·laborador?",
+          "Un espai que orienta cap a Camins i comparteix els valors del projecte. Té pàgina pròpia a Camins, cartell amb QR i segell, i ho concretem amb un acord per escrit."
+        ],
+        [
           "Quant costa?",
           "Depèn de les sessions, del nombre de persones i del lloc. Us enviem un pressupost a mida, sense compromís."
         ],
@@ -403,9 +418,10 @@
         ],
         [
           "És teràpia?",
-          "No. Són espais vivencials i segurs, i participar és voluntari."
+          "No. No és teràpia ni un servei d'urgències. Si algú es troba malament, orienteu cap a 061 (Catalunya), 024 o 112."
         ]
-      ]
+      ],
+      "band": "soft"
     }
   ]
 }

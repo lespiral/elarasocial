@@ -1,0 +1,211 @@
+{
+  "title": "Para entidades, colectivos y espacios afines",
+  "kicker": "Para entidades, colectivos y espacios afines",
+  "lead": "Si vuestro espacio trabaja por el bien común, la economía social y solidaria, el cuidado del clima o la atención a personas, podéis ofrecer un camino gratuito a quien pasa por él y, si queréis, acompañar a vuestro equipo.",
+  "description": "Si vuestro espacio trabaja por el bien común, la economía social y solidaria, el cuidado del clima o la atención a personas, podéis ofrecer un camino gratuito a quien pasa por él y, si queréis, acompañar a vuestro equipo.",
+  "section": "entidades",
+  "actions": [
+    {
+      "text": "Hablemos de cómo lo haríamos en vuestro espacio",
+      "href": "entidades#pide-propuesta"
+    },
+    {
+      "text": "Ver la ruta",
+      "href": "entidades#personas-reciben"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "exemple",
+      "label": "Ejemplo de formato",
+      "text": "Muestra cómo podría ser para vuestro sector. Ninguna entidad colabora todavía."
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "cami",
+      "vertical": true,
+      "title": "Un camino que pasa por vuestro espacio",
+      "items": [
+        {
+          "icon": "cloud-rain",
+          "title": "El dolor y la incertidumbre"
+        },
+        {
+          "icon": "house",
+          "title": "Vuestro espacio"
+        },
+        {
+          "icon": "compass",
+          "title": "Claridad, apoyo y acción"
+        },
+        {
+          "icon": "sun",
+          "title": "Esperanza Activa sostenida por la comunidad"
+        }
+      ],
+      "after": [
+        "Una breve explicación, una práctica guiada y una caminata de reflexión, desde Lo que amo hasta El siguiente paso posible."
+      ],
+      "buttons": [
+        {
+          "text": "Ver los 7 pasos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "ganais-pedimos",
+      "title": "Qué ganáis y qué os pedimos",
+      "gain": {
+        "title": "Qué ganáis",
+        "items": [
+          "Un recurso gratuito y sin lista de espera.",
+          "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
+          "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
+        ]
+      },
+      "ask": {
+        "title": "Qué os pedimos",
+        "items": [
+          "Para orientar, nada: sin acuerdo ni trámite.",
+          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
+          "Que no sustituya ninguna atención que ya hacéis."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "soft",
+      "id": "cursos",
+      "title": "Qué curso orientar",
+      "intro": "Los cursos están en preparación; las rutas ya se pueden hacer.",
+      "items": [
+        {
+          "icon": "house",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
+        },
+        {
+          "icon": "globe",
+          "badge": "Próximamente",
+          "title": "Cuando el futuro del planeta te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "lifebuoy",
+          "badge": "Próximamente",
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Próximamente",
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Ver todos los cursos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta de ejemplo",
+      "intro": "Rutas de dos espacios promotores del proyecto, como muestra de formato: una caminata que sale de la puerta del espacio.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Ejemplo de formato",
+          "title": "L'Espiral del Prat",
+          "text": "Una caminata de 1,29 km que sale de la puerta del espacio.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
+          "button": "Ver la ruta"
+        },
+        {
+          "icon": "map-trifold",
+          "badge": "Ejemplo de formato",
+          "title": "Elara Social",
+          "text": "Una caminata de 6,42 km que sale de la puerta del espacio.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339523",
+          "button": "Ver la ruta"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "band": "soft",
+      "id": "donar-ho-a-coneixer",
+      "title": "Cómo darlo a conocer",
+      "list_icon": "signpost",
+      "items": [
+        "Orientar sin ningún acuerdo.",
+        "Haceros centro colaborador: página propia en Caminos, cartel con QR y sello (para espacios afines).",
+        "Acompañamiento al equipo: Burnout y El Trabajo que Reconecta (4 × 2 h), con precio a medida.",
+        "Un curso a medida, si tenéis recursos propios."
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Los límites",
+      "paragraphs": [
+        "No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia estos números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (solo Cataluña)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atención a la conducta suicida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergencias",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "id": "parlem",
+      "kicker": "Hablemos de cómo lo haríamos en vuestro espacio",
+      "paragraphs": [
+        "Os respondemos en 5 días laborables. La primera conversación es sin compromiso."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos de cómo lo haríamos en vuestro espacio",
+          "href": "entidades#pide-propuesta"
+        },
+        {
+          "text": "Centro colaborador",
+          "href": "entidades-centro-colaborador"
+        },
+        {
+          "text": "Administración y prescripción social",
+          "href": "entidades-administracion"
+        }
+      ]
+    }
+  ],
+  "ca": "entitats-collectius"
+}

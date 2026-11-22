@@ -1,109 +1,228 @@
 {
-  "ca": "entitats",
-  "title": "Cuando el contexto os supera, dejaos acompañar.",
-  "kicker": "Entidades y comunidades",
-  "lead": "Transformamos el desgaste del equipo y el aislamiento del territorio en claridad, vínculo y un paso colectivo posible.",
-  "escena": "dia",
+  "title": "Dad a las personas que atendéis algo concreto que hacer",
+  "kicker": "Para entidades, servicios y comunidades",
+  "lead": "Esperanza Activa son cursos en línea gratuitos y caminatas que salen de la puerta de vuestro espacio. Vosotros solo orientáis; cada persona lo hace a su ritmo.",
+  "description": "Cursos en línea gratuitos y caminatas que salen de la puerta de vuestro espacio, y propuestas para entidades, servicios y comunidades.",
   "actions": [
     {
-      "text": "Ver propuestas",
-      "href": "#equipo"
+      "text": "Ver qué recibirán las personas",
+      "href": "#personas-reciben"
     },
     {
-      "text": "Pide una propuesta",
+      "text": "Hablemos de vuestra entidad",
       "href": "#pide-propuesta"
     }
   ],
   "sections": [
     {
-      "type": "doors",
-      "id": "caminos",
-      "items": [
+      "type": "feature",
+      "band": "white",
+      "id": "personas-reciben",
+      "variant": "sun",
+      "pill": "Lo que recibirán las personas de vuestro espacio",
+      "title": "Probadlo como lo haría una persona",
+      "paragraphs": [
+        "En el buscador de rutas de Caminos, una persona escribe un pueblo, una ciudad o una dirección (o usa su ubicación) y ve, para cada curso, las rutas que empiezan más cerca.",
+        "Si vuestro pueblo aún no tiene ruta: os lo decimos claramente. Los cursos en línea se pueden hacer desde cualquier lugar.",
+        "La ubicación no sale del dispositivo. Si se escribe una dirección, se envía a Nominatim (OpenStreetMap) para localizarla."
+      ],
+      "buttons": [
         {
-          "kicker": "Equipos y entidades",
-          "title": "Un equipo, cooperativa o colectivo",
-          "ask": "¿Os reconocéis?",
-          "style": "dark",
-          "list": [
-            "El equipo va agotado",
-            "Queremos poner el cuidado en el centro"
-          ],
-          "href": "#equipo",
-          "button": "Propuestas para equipos"
+          "text": "Abrir el buscador de rutas",
+          "href": "https://esperanzaactiva.org/"
         },
         {
-          "kicker": "Territorio y comunidades",
-          "title": "Una comunidad, un barrio, una red",
-          "ask": "¿Os reconocéis?",
-          "style": "light",
-          "list": [
-            "Nos faltan espacios de encuentro",
-            "La preocupación nos paraliza",
-            "Queremos actuar juntos en el territorio"
-          ],
-          "href": "#territorio",
-          "button": "Propuestas para el territorio"
+          "text": "Ver las ciudades con ruta",
+          "href": "https://esperanzaactiva.org/ciutats/"
         }
       ]
     },
     {
-      "type": "text",
-      "band": "white",
-      "kicker": "sabemos que sostener un proyecto a veces se hace una montaña.",
-      "title": "Por mucho que os esforcéis, ¿el día a día y las inercias os pasan por encima?",
-      "paragraphs": [
-        "En Elara Social, ayudamos a organizaciones y cooperativas a **transformar el estancamiento en fuerza de equipo**. Transformaremos este desgaste en impulso para dar el siguiente paso colectivo.",
-        "Sostener la vida está en el centro de nuestra actividad. Por eso no ofrecemos “soluciones rápidas” que no cambian el día a día: trabajamos para que vuestro equipo recupere ritmo, coherencia y capacidad de decisión.",
-        "En Elara Social utilizamos metodologías estructuradas y prácticas vivenciales para pasar **de apagar fuegos a acuerdos claros**, y del desgaste crónico a una cultura de cuidado y responsabilidad compartida.",
-        "Un enfoque pensado para el bienestar de las personas y la sostenibilidad del proyecto."
+      "type": "cards",
+      "tone": "courses",
+      "band": "soft",
+      "id": "cursos",
+      "title": "Los cuatro cursos",
+      "intro": "Gratuitos y en línea, a hacer a su ritmo. Los cursos están en preparación; las rutas ya se pueden hacer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Próximamente",
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Próximamente",
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        },
+        {
+          "icon": "globe",
+          "badge": "Próximamente",
+          "title": "Cuando el futuro del planeta te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "house",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
+        }
       ],
-      "id": "equipos-intro"
+      "buttons": [
+        {
+          "text": "Ver todos los cursos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "white",
+      "id": "como-lo-viviria",
+      "title": "Cómo lo viviría una persona de vuestro espacio",
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Recibe la orientación en vuestro espacio",
+          "text": "Con un cartel, un QR o palabras vuestras."
+        },
+        {
+          "icon": "headphones",
+          "title": "Hace la práctica",
+          "text": "Guiada, de unos 15 minutos, en casa."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina desde vuestro espacio",
+          "text": "A su ritmo."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Se lo lleva al día a día",
+          "text": "Un pequeño paso posible."
+        }
+      ]
+    },
+    {
+      "type": "doors",
+      "band": "soft",
+      "id": "puertas",
+      "title": "¿Cuál es vuestro espacio?",
+      "items": [
+        {
+          "title": "Salud y servicios comunitarios",
+          "text": "Atención primaria y servicios sociales: orientar desde la consulta o la atención.",
+          "style": "dark",
+          "href": "entidades-salud",
+          "button": "Ver qué os proponemos"
+        },
+        {
+          "title": "Escuelas y proyectos educativos",
+          "text": "De momento, para maestros, educadores y familias.",
+          "style": "light",
+          "href": "entidades-escuelas",
+          "button": "Ver qué os proponemos"
+        },
+        {
+          "title": "Administración y prescripción social",
+          "text": "Un recurso público y gratuito para orientar desde servicios municipales.",
+          "style": "light",
+          "href": "entidades-administracion",
+          "button": "Ver qué os proponemos"
+        },
+        {
+          "title": "Entidades y colectivos",
+          "text": "Economía social y solidaria, tercer sector y espacios afines.",
+          "style": "dark",
+          "href": "entidades-colectivos",
+          "button": "Ver qué os proponemos"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "ganais-pedimos",
+      "title": "Qué ganáis y qué os pedimos",
+      "gain": {
+        "title": "Qué ganáis",
+        "items": [
+          "Un recurso gratuito y sin lista de espera.",
+          "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
+          "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
+        ]
+      },
+      "ask": {
+        "title": "Qué os pedimos",
+        "items": [
+          "Para orientar, nada: sin acuerdo ni trámite.",
+          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
+          "Que no sustituya ninguna atención que ya hacéis."
+        ]
+      }
+    },
+    {
+      "type": "limits",
+      "band": "soft",
+      "id": "limits",
+      "title": "Los límites",
+      "paragraphs": [
+        "No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia estos números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (solo Cataluña)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atención a la conducta suicida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergencias",
+          "href": "tel:112"
+        }
+      ]
     },
     {
       "type": "cards",
       "tone": "accent",
-      "title": "Empecemos a transformarlo",
+      "band": "white",
+      "id": "mas-alla",
+      "title": "Si queréis ir más allá",
+      "intro": "Tres maneras de hacerlo, de menos a más compromiso. Podéis parar cuando queráis.",
       "items": [
         {
-          "icon": "nav",
-          "title": "¿Bloqueo estratégico o desorientación?",
-          "text": "La situación global o sectorial os pesa, y el equipo se queda atrapado apagando fuegos sin saber cómo avanzar.",
-          "href": "#equipo-propostes",
-          "button": "Ver opciones"
+          "icon": "seal-check",
+          "title": "1. Centro colaborador",
+          "text": "Página propia en Caminos, cartel con QR y sello. El coste lo concretamos en la primera conversación.",
+          "href": "entidades-centro-colaborador",
+          "button": "Ver cómo funciona"
         },
         {
-          "icon": "cloud-rain",
-          "title": "¿Burnout y desgaste en el equipo?",
-          "text": "Vais con el piloto automático, cumpliendo los objetivos pero desconectados del propósito inicial, y necesitáis un respiro.",
-          "href": "#equipo-propostes",
-          "button": "Ver opciones"
+          "icon": "lightbulb",
+          "title": "2. Curso a medida",
+          "text": "Un curso aparte, con vuestros recursos y vídeos nuevos. Se presupuesta como encargo.",
+          "href": "entidades-curso-a-medida",
+          "button": "Ver cómo funciona"
         },
         {
-          "icon": "check",
-          "title": "¿Buscáis coherencia interna?",
-          "paragraphs": [
-            "Os pesa la contradicción entre lo que hacéis y cómo lo hacéis.",
-            "Ayudamos a reencontrar el sentido y los valores de vuestra organización."
-          ],
-          "href": "#equipo-propostes",
-          "button": "Ver opciones"
+          "icon": "hand-heart",
+          "title": "3. Acompañamiento a vuestro equipo o territorio",
+          "text": "Hasta 20 personas, presencial, en línea o híbrido; precio a medida, con presupuesto previo y sin compromiso.",
+          "href": "#equipo",
+          "button": "Ver las propuestas"
         }
-      ],
-      "id": "equipos-situaciones"
-    },
-    {
-      "type": "text",
-      "band": "soft",
-      "id": "precio",
-      "title": "Cómo se calcula el precio",
-      "paragraphs": [
-        "Las propuestas para equipos y entidades no tienen precio fijo: lo calculamos a medida, según el número de personas, las sesiones y el lugar.",
-        "Cuando nos contéis qué necesitáis, os enviamos un presupuesto antes de decidir nada. Sin compromiso."
       ]
     },
     {
       "type": "offers",
-      "band": "white",
+      "band": "soft",
       "id": "equipo",
       "title": "Propuestas para equipos y entidades",
       "intro": "Dos propuestas pensadas para un equipo: hasta 20 personas, presenciales, en línea o híbridas, a convenir.",
@@ -160,130 +279,6 @@
       ]
     },
     {
-      "type": "text",
-      "band": "white",
-      "kicker": "la acción tiene que ser colectiva.",
-      "title": "¿Sentís que los retos actuales son demasiado grandes para asumirlos en solitario?",
-      "paragraphs": [
-        "En Elara Social facilitamos lugares de encuentro donde **la preocupación se transforma en vínculo, y el vínculo en capacidad de acción colectiva**.",
-        "Sostener la vida está en el centro de nuestra actividad. Por eso no buscamos soluciones rápidas: construimos vínculos, ritmos y estructura para que la esperanza pueda sostenerse.",
-        "En Elara Social diseñamos y facilitamos espacios seguros donde la vulnerabilidad se transforma en apoyo mutuo, y las ganas de actuar se concretan en **pasos pequeños, compartidos y arraigados en el territorio**.",
-        "Una propuesta pensada para el bienestar individual y la fuerza colectiva."
-      ],
-      "id": "territorio-intro"
-    },
-    {
-      "type": "cards",
-      "tone": "accent",
-      "title": "Transformamos la preocupación en comunidad, y la comunidad en pasos posibles.",
-      "items": [
-        {
-          "icon": "users-three",
-          "title": "¿Aislamiento en un mundo fragmentado?",
-          "text": "Recuperamos espacios auténticos de encuentro, vínculo y colaboración real.",
-          "href": "#territorio-propostes",
-          "button": "Ver opciones"
-        },
-        {
-          "icon": "cloud-rain",
-          "title": "¿Sobrecarga ecosocial?",
-          "text": "Cuando el miedo y la incertidumbre paralizan, el grupo ayuda a sostener y ordenar.",
-          "href": "#territorio-propostes",
-          "button": "Ver opciones"
-        },
-        {
-          "icon": "house",
-          "title": "¿Faltan recursos compartidos?",
-          "text": "Si hay ideas pero faltan herramientas, saberes o tribu, hacemos red alrededor de necesidades comunes.",
-          "href": "#territorio-propostes",
-          "button": "Ver opciones"
-        }
-      ],
-      "id": "territorio-situaciones"
-    },
-    {
-      "type": "cards",
-      "band": "soft",
-      "title": "¿Cómo nos organizamos?",
-      "infografia": "itinerari",
-      "itinerari": {
-        "aria": "Un camino en tres paradas: encuentros comunitarios, espacios de recursos y grupos de acción",
-        "inici": [
-          "El aislamiento",
-          "¿Sentís que los retos actuales son demasiado grandes para asumirlos en solitario?"
-        ],
-        "final": [
-          "La acción colectiva",
-          "En Elara Social facilitamos lugares de encuentro donde la preocupación se transforma en vínculo, y el vínculo en capacidad de acción colectiva."
-        ],
-        "icones": [
-          "people",
-          "box",
-          "flag"
-        ]
-      },
-      "before": [
-        "Ofrecemos diferentes formatos de participación adaptados a la energía y la disponibilidad de cada cual, poniendo siempre la comunidad en el centro."
-      ],
-      "items": [
-        {
-          "title": "Encuentros comunitarios",
-          "text": "Espacios de diálogo y conexión para tejer vínculos de confianza entre vecinas y colectivos.",
-          "propostes": [
-            [
-              "La Espiral de la Esperanza Activa",
-              "la-espiral-de-la-esperanza-activa"
-            ],
-            [
-              "Un puente de esperanza comunitaria",
-              "un-puente-de-esperanza"
-            ],
-            [
-              "El Trabajo que Reconecta (grupo regular)",
-              "grupo-regular-de-el-trabajo-que-reconecta"
-            ]
-          ]
-        },
-        {
-          "title": "Espacios de recursos",
-          "text": "Una plataforma donde compartir herramientas, estrategias y conocimientos prácticos ecosociales.",
-          "propostes": [
-            [
-              "7 pasos hacia la Esperanza Activa",
-              "7-pasos-hacia-la-esperanza-activa-comunidades"
-            ],
-            [
-              "Caminos de Esperanza [Activa] (en castellano)",
-              "https://esperanzaactiva.org/"
-            ],
-            [
-              "Camins d'Esperança [Activa] (en catalán)",
-              "https://xn--esperanaactiva-mjb.cat/"
-            ]
-          ]
-        },
-        {
-          "title": "Grupos de acción",
-          "text": "Acompañamiento a grupos de trabajo enfocados a resolver retos concretos del territorio.",
-          "propostes": [
-            [
-              "El Trabajo que Reconecta",
-              "el-trabajo-que-reconecta"
-            ],
-            [
-              "Burnout",
-              "burnout"
-            ],
-            [
-              "Hablemos",
-              "contacto"
-            ]
-          ]
-        }
-      ],
-      "id": "territorio-formatos"
-    },
-    {
       "type": "offers",
       "band": "white",
       "id": "territorio",
@@ -322,7 +317,11 @@
             }
           ]
         }
-      ]
+      ],
+      "after": [
+        "Para grupos del territorio, también hacemos <a href=\"la-espiral-de-la-esperanza-activa\">La Espiral de la Esperanza Activa</a> y el <a href=\"grupo-regular-de-el-trabajo-que-reconecta\">grupo regular de El Trabajo que Reconecta</a>."
+      ],
+      "html": true
     },
     {
       "type": "steps",
@@ -352,9 +351,15 @@
       "type": "contact",
       "band": "white",
       "id": "pide-propuesta",
-      "title": "Pide una propuesta",
+      "title": "Hablemos de vuestra entidad",
       "paragraphs": [
-        "Cuéntanos qué necesitáis y te respondemos con una propuesta o una primera conversación."
+        "Os respondemos en 5 días laborables. La primera conversación es sin compromiso y decidís con el presupuesto en la mano."
+      ],
+      "buttons": [
+        {
+          "text": "Rellena el formulario",
+          "href": "#formulario-entidades"
+        }
       ]
     },
     {
@@ -367,11 +372,12 @@
           "form": "1FAIpQLSfiKArvyh91JIE2lJROdN1V9H0tmNvnozcRqQUWmPd_8DDpTA",
           "height": 3000
         }
-      ]
+      ],
+      "band": "soft"
     },
     {
       "type": "steps",
-      "band": "soft",
+      "band": "white",
       "id": "despues",
       "title": "¿Qué pasa después?",
       "items": [
@@ -395,6 +401,14 @@
       "title": "Preguntas frecuentes",
       "items": [
         [
+          "¿Hay que pagar por orientar hacia Caminos?",
+          "No. Orientar no pide ningún acuerdo ni trámite, y los cursos y las rutas son gratuitos."
+        ],
+        [
+          "¿Qué es un centro colaborador?",
+          "Un espacio que orienta hacia Caminos y comparte los valores del proyecto. Tiene página propia en Caminos, cartel con QR y sello, y lo concretamos con un acuerdo por escrito."
+        ],
+        [
           "¿Cuánto cuesta?",
           "Depende de las sesiones, del número de personas y del lugar. Os enviamos un presupuesto a medida, sin compromiso."
         ],
@@ -404,9 +418,11 @@
         ],
         [
           "¿Es terapia?",
-          "No. Son espacios vivenciales y seguros, y participar es voluntario."
+          "No. No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia 061 (Cataluña), 024 o 112."
         ]
-      ]
+      ],
+      "band": "soft"
     }
-  ]
+  ],
+  "ca": "entitats"
 }

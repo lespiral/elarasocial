@@ -36,7 +36,7 @@
 
 {# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "links": [{"text", "href"}], "badge"}] #}
 {% macro cards(items, root, heading_level=3, align='center', tone='') -%}
-<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}{% if tone == 'accent' %} cards--accent{% endif %}{% if tone == 'row' %} cards--row{% endif %}">
+<ul class="cards cards--3{% if align == 'left' %} cards--left{% endif %}{% if tone == 'blue' %} cards--blue{% endif %}{% if tone == 'accent' %} cards--accent{% endif %}{% if tone == 'row' %} cards--row{% endif %}{% if tone == 'courses' %} cards--courses{% endif %}">
   {% for c in items %}
   <li class="card card--course"{% if c.id %} id="{{ c.id }}"{% endif %}>
     {% if c.photo %}<span class="card__photo"><img src="{{ aroot }}assets/img/{{ c.photo }}" alt="" width="320" height="320" loading="lazy" decoding="async"></span>{% endif %}
@@ -319,6 +319,28 @@
     {% elif s.type == 'offers' %}
       {{ offer_groups(s, root, false) }}
       {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
+    {% elif s.type == 'ribbon' %}
+      {# Rètol d'una pàgina d'exemple: "label" i "text" #}
+      <p class="ribbon"><strong class="ribbon__l">{{ icon('info') }}{{ s.label }}</strong> <span>{{ s.text }}</span></p>
+    {% elif s.type == 'flow' %}
+      {# Una cadena de passos amb icona: [{"icon", "title", "text"}]. "vertical": al mòbil, en columna amb fletxes avall; si no, 2 columnes. #}
+      {% for p in s.paragraphs or [] %}<p class="flow__lead">{{ p }}</p>{% endfor %}
+      <ol class="flow{% if s.vertical %} flow--v{% endif %}">
+        {% for it in s["items"] %}<li class="flow__i"><span class="flow__ic" aria-hidden="true">{{ icon(it.icon) }}</span><strong class="flow__t">{{ it.title }}</strong>{% if it.text %}<span class="flow__d">{{ it.text }}</span>{% endif %}</li>{% endfor %}
+      </ol>
+      {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
+    {% elif s.type == 'gains' %}
+      {# Dues columnes: "gain" (què hi guanyeu) i "ask" (què us demanem), cada una amb "title" i "items" #}
+      <div class="gains">
+        <div class="gains__c gains__c--gain"><h3 class="gains__t">{{ s.gain.title }}</h3><ul class="gains__l">{% for i in s.gain["items"] %}<li><span class="door__tick" aria-hidden="true">{{ icon('check') }}</span><span>{{ i }}</span></li>{% endfor %}</ul></div>
+        <div class="gains__c gains__c--ask"><h3 class="gains__t">{{ s.ask.title }}</h3><ul class="gains__l">{% for i in s.ask["items"] %}<li><span class="door__tick" aria-hidden="true">{{ icon('check') }}</span><span>{{ i }}</span></li>{% endfor %}</ul></div>
+      </div>
+    {% elif s.type == 'limits' %}
+      {# Caixa de límits amb botons de trucada grans: "buttons": [{"text", "note", "href": "tel:061"}] #}
+      <aside class="limits">
+        {% for p in s.paragraphs or [] %}<p class="limits__p">{{ p }}</p>{% endfor %}
+        <p class="limits__calls">{% for b in s.buttons %}<a class="btn btn--call" href="{{ b.href }}"><strong>{{ icon('phone') }}{{ b.text }}</strong>{% if b.note %}<small>{{ b.note }}</small>{% endif %}</a>{% endfor %}</p>
+      </aside>
     {% elif s.type == 'contact' %}
       <div class="contact-box">
         {% for p in s.paragraphs or [] %}<p>{{ p }}</p>{% endfor %}
@@ -335,7 +357,7 @@
       </div>
     {% endif %}
 
-    {% if s.buttons and s.type not in ('cta', 'feature', 'strip') %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+    {% if s.buttons and s.type not in ('cta', 'feature', 'strip', 'limits') %}<p class="block__actions block__actions--center">{% for b in s.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
   </div>
 </section>
 {%- endmacro %}

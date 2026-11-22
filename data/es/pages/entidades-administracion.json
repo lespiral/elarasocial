@@ -1,0 +1,208 @@
+{
+  "title": "Para la administración y la prescripción social",
+  "kicker": "Para la administración y la prescripción social",
+  "lead": "Un recurso público y gratuito para orientar a personas con malestar, soledad o incertidumbre, sin crear ningún circuito nuevo ni lista de espera.",
+  "description": "Un recurso público y gratuito para orientar a personas con malestar, soledad o incertidumbre, sin crear ningún circuito nuevo ni lista de espera.",
+  "section": "entidades",
+  "actions": [
+    {
+      "text": "Hablemos de cómo lo haríamos en vuestro servicio",
+      "href": "entidades#pide-propuesta"
+    },
+    {
+      "text": "Ver la ruta",
+      "href": "entidades#personas-reciben"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "exemple",
+      "label": "Ejemplo de formato",
+      "text": "Muestra cómo podría ser para vuestro sector. Ninguna entidad colabora todavía."
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "cami",
+      "vertical": true,
+      "title": "Un camino que pasa por vuestro espacio",
+      "items": [
+        {
+          "icon": "cloud-rain",
+          "title": "El dolor y la incertidumbre"
+        },
+        {
+          "icon": "house",
+          "title": "Vuestro servicio municipal"
+        },
+        {
+          "icon": "compass",
+          "title": "Claridad, apoyo y acción"
+        },
+        {
+          "icon": "sun",
+          "title": "Esperanza Activa sostenida por la comunidad"
+        }
+      ],
+      "after": [
+        "Una breve explicación, una práctica guiada y una caminata de reflexión, desde Lo que amo hasta El siguiente paso posible."
+      ],
+      "buttons": [
+        {
+          "text": "Ver los 7 pasos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "ganais-pedimos",
+      "title": "Qué ganáis y qué os pedimos",
+      "gain": {
+        "title": "Qué ganáis",
+        "items": [
+          "Un recurso gratuito y sin lista de espera.",
+          "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
+          "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
+        ]
+      },
+      "ask": {
+        "title": "Qué os pedimos",
+        "items": [
+          "Para orientar, nada: sin acuerdo ni trámite.",
+          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
+          "Que no sustituya ninguna atención que ya hacéis."
+        ]
+      }
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "white",
+      "id": "condicions",
+      "title": "Contratación",
+      "paragraphs": [
+        "Si hace falta contratarlo, miramos juntas qué procedimiento encaja. No es asesoramiento jurídico."
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "soft",
+      "id": "cursos",
+      "title": "Qué curso orientar",
+      "intro": "Los cursos están en preparación; las rutas ya se pueden hacer.",
+      "items": [
+        {
+          "icon": "users-three",
+          "badge": "Próximamente",
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        },
+        {
+          "icon": "lifebuoy",
+          "badge": "Próximamente",
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Ver todos los cursos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta de ejemplo",
+      "intro": "Rutas de dos espacios promotores del proyecto, como muestra de formato: una caminata que sale de la puerta del espacio.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Ejemplo de formato",
+          "title": "L'Espiral del Prat",
+          "text": "Una caminata de 1,29 km que sale de la puerta del espacio.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
+          "button": "Ver la ruta"
+        },
+        {
+          "icon": "map-trifold",
+          "badge": "Ejemplo de formato",
+          "title": "Elara Social",
+          "text": "Una caminata de 6,42 km que sale de la puerta del espacio.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339523",
+          "button": "Ver la ruta"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "band": "soft",
+      "id": "donar-ho-a-coneixer",
+      "title": "Cómo darlo a conocer",
+      "list_icon": "signpost",
+      "items": [
+        "Orientación desde servicios sociales, centros cívicos o equipamientos.",
+        "Un texto y una ficha para profesionales.",
+        "Un curso a medida con recursos propios de la administración."
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Los límites",
+      "paragraphs": [
+        "No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia estos números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (solo Cataluña)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atención a la conducta suicida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergencias",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "id": "parlem",
+      "kicker": "Hablemos de cómo lo haríamos en vuestro servicio",
+      "paragraphs": [
+        "Os respondemos en 5 días laborables. La primera conversación es sin compromiso."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos de cómo lo haríamos en vuestro servicio",
+          "href": "entidades#pide-propuesta"
+        },
+        {
+          "text": "Curso a medida",
+          "href": "entidades-curso-a-medida"
+        },
+        {
+          "text": "Entidades y colectivos",
+          "href": "entidades-colectivos"
+        }
+      ]
+    }
+  ],
+  "ca": "entitats-administracio"
+}

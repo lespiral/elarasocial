@@ -1,0 +1,116 @@
+{
+  "title": "Com és fer-ho amb Esperança Activa",
+  "kicker": "Entitats i comunitats",
+  "lead": "Un exemple de com podria ser per al vostre espai: orientar, fer el curs i fer la caminada.",
+  "section": "entitats",
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "exemple",
+      "label": "Exemple de format",
+      "text": "Mostra com podria ser per al vostre sector. Cap entitat hi col·labora encara."
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "cami-espai",
+      "title": "Un camí que passa per l'espai",
+      "items": [
+        {
+          "title": "Orientar",
+          "text": "Una frase, un cartell o l'enllaç de la ruta del vostre espai."
+        },
+        {
+          "title": "Fer el curs",
+          "text": "Una pràctica guiada d'uns 15 minuts, a casa."
+        },
+        {
+          "title": "Fer la caminada",
+          "text": "Una ruta curta que surt de la porta del vostre espai."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta d'exemple",
+      "intro": "Rutes de dos espais promotors del projecte, com a mostra de format: una caminada que surt de la porta de l'espai.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Exemple de format",
+          "title": "L'Espiral del Prat",
+          "text": "Una caminada de 1,29 km que surt de la porta de l'espai.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
+          "button": "Veure la ruta"
+        },
+        {
+          "icon": "map-trifold",
+          "badge": "Exemple de format",
+          "title": "Elara Social",
+          "text": "Una caminada de 6,42 km que surt de la porta de l'espai.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339523",
+          "button": "Veure la ruta"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "id": "cartell-qr",
+      "title": "Un cartell amb QR",
+      "paragraphs": [
+        "Un codi QR que porta directament a la ruta de l'espai, per penjar-lo a la recepció o a la sala."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "text-butlleti",
+      "title": "Un text per al butlletí",
+      "paragraphs": [
+        "Un text llest per al butlletí, les xarxes o el taulell:"
+      ],
+      "quote": "Una caminada curta, gratuïta i amb mapa surt de la porta del vostre espai. Forma part de Camins d'Esperança [Activa], amb cursos en línia gratuïts i rutes a peu. Tota la informació, a esperançaactiva.cat."
+    },
+    {
+      "type": "list",
+      "band": "soft",
+      "id": "pagina-de-centre",
+      "title": "Una pàgina de centre",
+      "list_icon": "check",
+      "intro": "Si us feu centre col·laborador, la vostra pàgina a Camins porta aquests blocs. Només es publica amb el vostre consentiment per escrit.",
+      "items": [
+        "Una benvinguda del centre.",
+        "Fes la teva primera passa: els cursos.",
+        "Rutes a prop del centre.",
+        "Com funciona, en quatre passos.",
+        "Sobre el centre.",
+        "Els límits: no és teràpia, 061 · 024 · 112."
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "id": "fer-vos-centre",
+      "kicker": "Fer-vos centre col·laborador",
+      "paragraphs": [
+        "Encara no hi ha centres col·laboradors: busquem els primers."
+      ],
+      "buttons": [
+        {
+          "text": "Fer-vos centre col·laborador",
+          "href": "entitats-centre-colaborador"
+        },
+        {
+          "text": "Parlem-ne",
+          "href": "entitats#demana-proposta"
+        }
+      ]
+    }
+  ],
+  "description": "Un exemple de com podria ser per al vostre espai: orientar, fer el curs i fer la caminada."
+}

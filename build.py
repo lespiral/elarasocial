@@ -29,7 +29,7 @@ ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
 # Tipus de secció que saben pintar les plantilles (src/templates/parts.html, macro «section»)
 SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews", "articles",
-                 "doors", "steps", "formats", "feature", "strip", "offers", "prices"}
+                 "doors", "steps", "formats", "feature", "strip", "offers", "prices", "ribbon", "flow", "gains", "limits"}
 
 # Formulari de Google inserit a la pàgina (les respostes continuen arribant al compte que el va crear)
 FORM_URL = "https://docs.google.com/forms/d/e/{}/viewform"
@@ -247,6 +247,10 @@ def prepare_sections(sections, where, lang="ca"):
             for it in s.get("items", []):
                 if it.get("scene") and it["scene"] not in ESCENES:
                     errors.append(f"{where}: l'escena {it['scene']!r} no existeix")
+        if t == "flow":
+            for it in s.get("items", []):
+                if it.get("icon") not in ICONS:
+                    errors.append(f"{where}: la icona {it.get('icon')!r} no és a src/icons.json")
         if t == "strip":
             for pe in s.get("people", []):
                 if not (SRC / "img" / pe["photo"]).exists():
@@ -478,7 +482,7 @@ for lang, L in LANG.items():
     pre = LANGS[lang]["prefix"]
     pending += len(PENDENT.findall(render("home.html", pre.rstrip("/"), lang, "", section="", h=L["home"])))
     for p in L["pages"]:
-        pending += len(PENDENT.findall(render("page.html", pre + p["slug"], lang, p["slug"], section=p["slug"], page_title=p["title"], page_description=p.get("description") or p.get("lead"), page=p)))
+        pending += len(PENDENT.findall(render("page.html", pre + p["slug"], lang, p["slug"], section=p.get("section", p["slug"]), page_title=p["title"], page_description=p.get("description") or p.get("lead"), page=p)))
     art_section = next((p["slug"] for p in L["pages"] if any(s.get("type") == "articles" for s in p["sections"])), "articles")
     for a in L["articles"]:
         pending += len(PENDENT.findall(render("article.html", pre + a["slug"], lang, a["slug"], section=art_section, page_title=a["title"], page_description=a["summary"], article=a, articles_slug=art_section)))

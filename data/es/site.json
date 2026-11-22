@@ -32,7 +32,28 @@
         "title": "Política de cookies",
         "slug": "politica-de-cookies"
       }
-    ]
+    ],
+    "entitats": {
+      "title": "Entidades",
+      "items": [
+        {
+          "title": "Salud y servicios comunitarios",
+          "slug": "entidades-salud"
+        },
+        {
+          "title": "Escuelas y proyectos educativos",
+          "slug": "entidades-escuelas"
+        },
+        {
+          "title": "Administración y prescripción social",
+          "slug": "entidades-administracion"
+        },
+        {
+          "title": "Entidades y colectivos",
+          "slug": "entidades-colectivos"
+        }
+      ]
+    }
   },
   "nav": [
     {

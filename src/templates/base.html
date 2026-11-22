@@ -70,6 +70,12 @@
         <p class="footer__h">La web</p>
         <ul>{% for n in site.nav %}<li><a href="{{ n.href or (root ~ (n.slug ~ '/' if n.slug else '')) }}">{{ n.title }}</a></li>{% endfor %}</ul>
       </div>
+      {% if site.footer.entitats %}
+      <div class="footer__col">
+        <p class="footer__h">{{ site.footer.entitats.title }}</p>
+        <ul>{% for n in site.footer.entitats["items"] %}<li><a href="{{ root }}{{ n.slug }}/">{{ n.title }}</a></li>{% endfor %}</ul>
+      </div>
+      {% endif %}
       <div class="footer__col">
         <p class="footer__h">Contacte</p>
         <ul class="footer__contact">

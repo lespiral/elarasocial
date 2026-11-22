@@ -1,0 +1,120 @@
+{
+  "title": "Feu-vos centre col·laborador d'Esperança Activa",
+  "kicker": "Centre col·laborador",
+  "lead": "Els mateixos cursos gratuïts per a tothom, amb una porta d'entrada al vostre espai.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Vull ser centre col·laborador",
+      "href": "entitats#formulari-entitats"
+    },
+    {
+      "text": "Veure l'exemple d'una pàgina de centre",
+      "href": "entitats-com-es-fa#pagina-de-centre"
+    }
+  ],
+  "sections": [
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "guanyeu-demanem",
+      "title": "Què hi guanyeu i què us demanem",
+      "gain": {
+        "title": "Què hi guanyeu",
+        "items": [
+          "Un recurs gratuït i sense llista d'espera.",
+          "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
+          "Només cal orientar: la resta ho fa cada persona al seu ritme."
+        ]
+      },
+      "ask": {
+        "title": "Què us demanem",
+        "items": [
+          "Per orientar, res: sense acord ni tràmit.",
+          "Per ser centre col·laborador, un acord per escrit que concretem plegats.",
+          "Que no substitueixi cap atenció que ja feu."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "accent",
+      "band": "soft",
+      "id": "criteri-cost",
+      "title": "Criteri d'entrada i cost",
+      "items": [
+        {
+          "icon": "seal-check",
+          "title": "Criteri d'entrada",
+          "text": "Es dona en començar la col·laboració."
+        },
+        {
+          "icon": "coins",
+          "title": "Quant costa",
+          "text": "A concretar en la primera conversa."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "white",
+      "id": "com-es-fa",
+      "title": "Com es fa",
+      "items": [
+        {
+          "title": "Ens escriviu"
+        },
+        {
+          "title": "Parlem i confirmem que encaixem"
+        },
+        {
+          "title": "Signeu el consentiment"
+        },
+        {
+          "title": "Preparem la pàgina i el cartell"
+        },
+        {
+          "title": "Us ho ensenyem abans de publicar"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "soft",
+      "id": "comencem",
+      "variant": "sun",
+      "pill": "Estem començant",
+      "title": "Busquem els primers centres col·laboradors",
+      "paragraphs": [
+        "Encara no hi ha centres col·laboradors. Busquem els primers."
+      ],
+      "buttons": [
+        {
+          "text": "Vull ser centre col·laborador",
+          "href": "entitats#formulari-entitats"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "band": "white",
+      "id": "preguntes",
+      "title": "Preguntes freqüents",
+      "items": [
+        [
+          "Cal pagar?",
+          "A concretar en la primera conversa."
+        ],
+        [
+          "I si no encaixem amb els valors?",
+          "Us ho diem clar i us orientem cap al recurs gratuït."
+        ],
+        [
+          "Se'n pot sortir?",
+          "Sí: retirem la pàgina."
+        ]
+      ]
+    }
+  ],
+  "description": "Els mateixos cursos gratuïts per a tothom, amb una porta d'entrada al vostre espai."
+}

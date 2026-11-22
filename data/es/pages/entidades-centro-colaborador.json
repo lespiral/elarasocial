@@ -1,0 +1,121 @@
+{
+  "title": "Haceos centro colaborador de Esperanza Activa",
+  "kicker": "Centro colaborador",
+  "lead": "Los mismos cursos gratuitos para todo el mundo, con una puerta de entrada a vuestro espacio.",
+  "section": "entidades",
+  "actions": [
+    {
+      "text": "Quiero ser centro colaborador",
+      "href": "entidades#formulario-entidades"
+    },
+    {
+      "text": "Ver el ejemplo de una página de centro",
+      "href": "entidades-como-se-hace#pagina-de-centre"
+    }
+  ],
+  "sections": [
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "ganais-pedimos",
+      "title": "Qué ganáis y qué os pedimos",
+      "gain": {
+        "title": "Qué ganáis",
+        "items": [
+          "Un recurso gratuito y sin lista de espera.",
+          "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
+          "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
+        ]
+      },
+      "ask": {
+        "title": "Qué os pedimos",
+        "items": [
+          "Para orientar, nada: sin acuerdo ni trámite.",
+          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
+          "Que no sustituya ninguna atención que ya hacéis."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "accent",
+      "band": "soft",
+      "id": "criteri-cost",
+      "title": "Criterio de entrada y coste",
+      "items": [
+        {
+          "icon": "seal-check",
+          "title": "Criterio de entrada",
+          "text": "Se da al empezar la colaboración."
+        },
+        {
+          "icon": "coins",
+          "title": "Cuánto cuesta",
+          "text": "A concretar en la primera conversación."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "white",
+      "id": "com-es-fa",
+      "title": "Cómo se hace",
+      "items": [
+        {
+          "title": "Nos escribís"
+        },
+        {
+          "title": "Hablamos y confirmamos que encajamos"
+        },
+        {
+          "title": "Firmáis el consentimiento"
+        },
+        {
+          "title": "Preparamos la página y el cartel"
+        },
+        {
+          "title": "Os lo enseñamos antes de publicar"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "soft",
+      "id": "comencem",
+      "variant": "sun",
+      "pill": "Estamos empezando",
+      "title": "Buscamos los primeros centros colaboradores",
+      "paragraphs": [
+        "Todavía no hay centros colaboradores. Buscamos los primeros."
+      ],
+      "buttons": [
+        {
+          "text": "Quiero ser centro colaborador",
+          "href": "entidades#formulario-entidades"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "band": "white",
+      "id": "preguntes",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿Hay que pagar?",
+          "A concretar en la primera conversación."
+        ],
+        [
+          "¿Y si no encajamos con los valores?",
+          "Os lo decimos claro y os orientamos hacia el recurso gratuito."
+        ],
+        [
+          "¿Se puede salir?",
+          "Sí: retiramos la página."
+        ]
+      ]
+    }
+  ],
+  "description": "Los mismos cursos gratuitos para todo el mundo, con una puerta de entrada a vuestro espacio.",
+  "ca": "entitats-centre-colaborador"
+}

@@ -1,0 +1,109 @@
+{
+  "title": "Un curs a mida per a la vostra institució",
+  "kicker": "Curs a mida",
+  "lead": "Agafem el camí de les 7 passes i el fem vostre: amb textos, vídeos nous i recursos propis.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Demana pressupost",
+      "href": "entitats#formulari-entitats"
+    }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "per-a-qui",
+      "title": "Per a qui",
+      "paragraphs": [
+        "Ajuntaments, serveis públics, institucions i grans entitats."
+      ]
+    },
+    {
+      "type": "list",
+      "band": "soft",
+      "id": "que-inclou",
+      "title": "Què inclou",
+      "list_icon": "check",
+      "items": [
+        "Un curs separat a Thinkific.",
+        "Vídeos nous.",
+        "Textos propis.",
+        "Enllaços als vostres recursos.",
+        "Manteniment: la durada la concretem en la primera conversa."
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "white",
+      "id": "que-no-es",
+      "title": "Què no és",
+      "paragraphs": [
+        "No és el curs gratuït amb el vostre logo ni una còpia editada."
+      ]
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "com-es-treballa",
+      "title": "Com es treballa",
+      "items": [
+        {
+          "title": "Conversa"
+        },
+        {
+          "title": "Pressupost a mida"
+        },
+        {
+          "title": "Guió i gravació"
+        },
+        {
+          "title": "Muntatge i revisió conjunta"
+        },
+        {
+          "title": "Publicació i seguiment"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "id": "preu",
+      "title": "Preu",
+      "paragraphs": [
+        "Es pressuposta com a encàrrec.",
+        "Si cal contractar-ho, mirem juntes quin procediment encaixa. No és assessorament jurídic."
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "id": "grup-propi",
+      "title": "Només voleu un grup propi dels cursos gratuïts?",
+      "paragraphs": [
+        "Es pot fer un grup privat a Thinkific, amb una benvinguda personalitzada. El preu, a concretar en la primera conversa."
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "id": "pressupost",
+      "kicker": "Demana pressupost",
+      "paragraphs": [
+        "Us responem en 5 dies laborables. La primera conversa és sense compromís."
+      ],
+      "buttons": [
+        {
+          "text": "Demana pressupost",
+          "href": "entitats#formulari-entitats"
+        },
+        {
+          "text": "Centre col·laborador",
+          "href": "entitats-centre-colaborador"
+        }
+      ]
+    }
+  ],
+  "description": "Agafem el camí de les 7 passes i el fem vostre: amb textos, vídeos nous i recursos propis."
+}

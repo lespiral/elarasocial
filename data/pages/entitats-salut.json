@@ -1,0 +1,201 @@
+{
+  "title": "Un recurs comunitari per al vostre centre de salut",
+  "kicker": "Per a centres de salut, serveis socials i serveis comunitaris",
+  "lead": "Cursos en línia gratuïts i rutes a peu que surten del vostre centre. Una opció més per orientar les persones que arriben amb malestar emocional. No cal cap tràmit i no substitueix l'atenció clínica.",
+  "description": "Cursos en línia gratuïts i rutes a peu que surten del vostre centre. Una opció més per orientar les persones que arriben amb malestar emocional. No cal cap tràmit i no substitueix l'atenció clínica.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Parlem de com ho faríem al vostre centre",
+      "href": "entitats#demana-proposta"
+    },
+    {
+      "text": "Veure la ruta",
+      "href": "entitats#persones-reben"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "exemple",
+      "label": "Exemple de format",
+      "text": "Mostra com podria ser per al vostre sector. Cap entitat hi col·labora encara."
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "cami",
+      "vertical": true,
+      "title": "Un camí que passa pel vostre espai",
+      "items": [
+        {
+          "icon": "cloud-rain",
+          "title": "El dolor i la incertesa"
+        },
+        {
+          "icon": "house",
+          "title": "El vostre centre de salut"
+        },
+        {
+          "icon": "compass",
+          "title": "Claredat, suport i acció"
+        },
+        {
+          "icon": "sun",
+          "title": "Esperança Activa sostinguda per la comunitat"
+        }
+      ],
+      "after": [
+        "Una breu explicació, una pràctica guiada i una caminada de reflexió, des d'Allò que estimo fins a El següent pas possible."
+      ],
+      "buttons": [
+        {
+          "text": "Veure les 7 passes a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "white",
+      "id": "guanyeu-demanem",
+      "title": "Què hi guanyeu i què us demanem",
+      "gain": {
+        "title": "Què hi guanyeu",
+        "items": [
+          "Un recurs gratuït i sense llista d'espera.",
+          "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
+          "Només cal orientar: la resta ho fa cada persona al seu ritme."
+        ]
+      },
+      "ask": {
+        "title": "Què us demanem",
+        "items": [
+          "Per orientar, res: sense acord ni tràmit.",
+          "Per ser centre col·laborador, un acord per escrit que concretem plegats.",
+          "Que no substitueixi cap atenció que ja feu."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "soft",
+      "id": "cursos",
+      "title": "Quin curs orientar",
+      "intro": "Els cursos són en preparació; les rutes ja es poden fer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Properament",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Properament",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Veure tots els cursos a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta d'exemple",
+      "intro": "Rutes de dos espais promotors del projecte, com a mostra de format: una caminada que surt de la porta de l'espai.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Exemple de format",
+          "title": "L'Espiral del Prat",
+          "text": "Una caminada de 1,29 km que surt de la porta de l'espai.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
+          "button": "Veure la ruta"
+        },
+        {
+          "icon": "map-trifold",
+          "badge": "Exemple de format",
+          "title": "Elara Social",
+          "text": "Una caminada de 6,42 km que surt de la porta de l'espai.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339523",
+          "button": "Veure la ruta"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "id": "donar-ho-a-coneixer",
+      "title": "Com donar-ho a conèixer",
+      "list_icon": "signpost",
+      "paragraphs": [
+        "Un text per a la visita, com a proposta:"
+      ],
+      "quote": "Hi ha un recurs gratuït, amb cursos en línia i caminades que surten d'aquest centre. Cada persona ho fa al seu ritme. No és teràpia.",
+      "list": [
+        "Una fitxa per a la consulta, amb QR.",
+        "Un text per a la visita.",
+        "Cap dada de pacients: només es comparteix un enllaç."
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Els límits",
+      "paragraphs": [
+        "No és teràpia ni un servei d'urgències. Si algú es troba malament, orienteu cap a aquests números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (només Catalunya)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atenció a la conducta suïcida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergències",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "white",
+      "id": "parlem",
+      "kicker": "Parlem de com ho faríem al vostre centre",
+      "paragraphs": [
+        "Us responem en 5 dies laborables. La primera conversa és sense compromís."
+      ],
+      "buttons": [
+        {
+          "text": "Parlem de com ho faríem al vostre centre",
+          "href": "entitats#demana-proposta"
+        },
+        {
+          "text": "Centre col·laborador",
+          "href": "entitats-centre-colaborador"
+        },
+        {
+          "text": "Curs a mida",
+          "href": "entitats-curs-a-mida"
+        }
+      ]
+    }
+  ]
+}

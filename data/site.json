@@ -46,7 +46,28 @@
         "title": "Política de galetes",
         "slug": "politica-de-galetes"
       }
-    ]
+    ],
+    "entitats": {
+      "title": "Entitats",
+      "items": [
+        {
+          "title": "Salut i serveis comunitaris",
+          "slug": "entitats-salut"
+        },
+        {
+          "title": "Escoles i projectes educatius",
+          "slug": "entitats-escoles"
+        },
+        {
+          "title": "Administració i prescripció social",
+          "slug": "entitats-administracio"
+        },
+        {
+          "title": "Entitats i col·lectius",
+          "slug": "entitats-collectius"
+        }
+      ]
+    }
   },
   "nav": [
     {
