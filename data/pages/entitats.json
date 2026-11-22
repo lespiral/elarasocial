@@ -28,14 +28,16 @@
       ],
       "buttons": [
         {
-          "text": "Obrir el buscador de rutes",
-          "href": "https://xn--esperanaactiva-mjb.cat/"
-        },
-        {
           "text": "Veure les ciutats amb ruta",
           "href": "https://xn--esperanaactiva-mjb.cat/ciutats/"
         }
-      ]
+      ],
+      "search": {
+        "action": "https://xn--esperanaactiva-mjb.cat/ciutats/",
+        "label": "Escriviu un poble, una ciutat o una adreça",
+        "placeholder": "Per exemple: Vic",
+        "button": "Veure les rutes properes"
+      }
     },
     {
       "type": "cards",

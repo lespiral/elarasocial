@@ -293,6 +293,10 @@
           {% if s.pill %}<p class="feature__pill">{{ s.pill }}</p>{% endif %}
           {% if s.title %}<h2 class="feature__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
           {% for p in s.paragraphs or [] %}<p class="feature__p">{{ p }}</p>{% endfor %}
+          {% if s.search %}<form class="feature__search" action="{{ s.search.action }}" method="get" role="search">
+            <label class="feature__searchlabel" for="fs-{{ s.id }}">{{ s.search.label }}</label>
+            <div class="feature__searchrow"><input id="fs-{{ s.id }}" name="q" type="search" required maxlength="200" placeholder="{{ s.search.placeholder }}" enterkeyhint="search" autocomplete="off"><button class="btn btn--primary" type="submit">{{ s.search.button }}</button></div>
+          </form>{% endif %}
           {% if s.chips %}<ul class="chips chips--dark">{% for c in s.chips %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
           {% if s.buttons %}<p class="feature__actions">{% for b in s.buttons %}{{ button(b, root, ('btn--light' if s.variant != 'sun' else 'btn--primary') if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
         </div>

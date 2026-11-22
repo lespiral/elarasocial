@@ -28,14 +28,16 @@
       ],
       "buttons": [
         {
-          "text": "Abrir el buscador de rutas",
-          "href": "https://esperanzaactiva.org/"
-        },
-        {
           "text": "Ver las ciudades con ruta",
           "href": "https://esperanzaactiva.org/ciutats/"
         }
-      ]
+      ],
+      "search": {
+        "action": "https://esperanzaactiva.org/ciutats/",
+        "label": "Escribid un pueblo, una ciudad o una dirección",
+        "placeholder": "Por ejemplo: Vic",
+        "button": "Ver las rutas cercanas"
+      }
     },
     {
       "type": "cards",
