@@ -26,7 +26,7 @@
 {# Una adreça sense http, mailto, tel ni # és una pàgina de la web: "contacte" → /contacte/, "persones/#propostes" → /persones/#propostes #}
 {% macro link_href(href, root) -%}
 {%- if href.startswith('http') or href.startswith('mailto:') or href.startswith('tel:') or href.startswith('#') -%}{{ href }}
-{%- else -%}{% set p = href.split('#') %}{{ root }}{{ p[0].strip('/') }}{{ '/' if p[0].strip('/') else '' }}{% if p|length > 1 %}#{{ p[1] }}{% endif %}
+{%- else -%}{% set p = href.split('#') %}{% set q = p[0].split('?') %}{{ root }}{{ q[0].strip('/') }}{{ '/' if q[0].strip('/') else '' }}{% if q|length > 1 %}?{{ q[1] }}{% endif %}{% if p|length > 1 %}#{{ p[1] }}{% endif %}
 {%- endif -%}
 {%- endmacro %}
 
@@ -125,7 +125,7 @@
 
 {# Un formulari de Google inserit. Si n'hi ha més d'un (p. ex. el taller obert i la versió per a un equip), cada un es plega. #}
 {% macro forms(s) -%}
-<div class="forms">
+<div class="forms"{% if s.prefill %} data-prefill="{{ s.prefill }}"{% endif %}>
   {% for f in s.forms %}
   {% if s.forms|length > 1 %}<details class="faq form-box"{% if loop.first %} open{% endif %}>
     <summary><span>{{ f.label }}</span>{{ icon('caret', 'faq__caret') }}</summary>
@@ -171,6 +171,30 @@
 {% endfor %}
 {%- endmacro %}
 
+{# «Propera edició» d'El Treball que Reconnecta. "eds": les edicions que encara no han passat (data/edicions.json); "page": adreça de la pàgina de la proposta
+   (si el bloc és a una altra pàgina, p. ex. Persones); "value": el valor que es preomple al formulari quan no hi ha edició. #}
+{% macro edition_block(eds, root, page=none, value='', names=none) -%}
+{% set ui = site.ui.edicions %}
+<div class="edi">
+  <p class="edi__t">{{ icon('calendar-dots') }}{{ ui.title }}</p>
+  {% if eds %}
+  <ul class="edi__l">
+    {% for e in eds %}
+    <li class="edi__i">
+      <p class="edi__h">{{ e.label }}</p>
+      <p class="edi__d">{{ e.date_text }} · {{ e.place }}<br>{{ e.sessions_text }}</p>
+      {{ tiers(e.price_rows, names or site.ui.tiers) }}
+      <a class="btn btn--primary btn--block edi__go" href="{{ e.link or (link_href(page ~ '?durada=' ~ e.format ~ '&edicio=' ~ e.iso ~ '#inscripcio', root) if page else '#inscripcio') }}" data-form-value="{{ e.value }}" data-edicio="{{ e.iso }}"{% if e.link %} rel="noopener"{% endif %}>{{ ui.book }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="edi__none">{{ ui.none }}</p>
+  <a class="btn btn--primary btn--block edi__go" href="{{ link_href(page ~ '#inscripcio', root) if page else '#inscripcio' }}" data-form-value="{{ value }}">{{ ui.notify }}</a>
+  {% endif %}
+</div>
+{%- endmacro %}
+
 {# Propostes en grups: "prices" (amb els tres preus de cada proposta) i "offers" (sense preu fix: «a mida») #}
 {% macro offer_groups(s, root, with_prices) -%}
 {% for g in s.groups %}
@@ -200,8 +224,8 @@
 {% macro section(s, root) -%}
 {% set band = {'white': ' band--white', 'soft': ' band--soft', 'slim': ' band--slim', 'navy': ' band--navy'}.get(s.band, '') %}
 {# Amplada: els textos, estrets; si porten una llista de 4 o més elements (en dues columnes), una mica més amples #}
-{% set wcls = ' wrap--mid' if s.type == 'text' and (s.list or [])|length >= 4 else ' wrap--narrow' if s.type in ('text', 'faq', 'note', 'list', 'form') and not s.wide else '' %}
-<section class="band{{ band }} band--{{ s.type }}" id="{{ s.id }}"{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
+{% set wcls = ' wrap--mid' if s.type == 'text' and (s.list or [])|length >= 4 else ' wrap--narrow' if s.type in ('text', 'faq', 'note', 'list', 'form', 'durades') and not s.wide else '' %}
+<section class="band{{ band }} band--{{ s.type }}{% if s.durada %} dur-item{% if s.durada_on %} is-on{% endif %}{% endif %}" id="{{ s.id }}"{% if s.durada %} data-durada="{{ s.durada }}"{% endif %}{% if s.title %} aria-labelledby="h-{{ s.id }}"{% endif %}>
   <div class="wrap{{ wcls }}">
     {% if s.type == 'cta' %}<div class="cta-box">{% endif %}
     {% if s.kicker %}<p class="band__kicker">{{ s.kicker|cap }}</p>{% endif %}
@@ -270,22 +294,54 @@
       {{ steps(s["items"]) }}
       {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
     {% elif s.type == 'formats' %}
-      {# Cada format amb la seva escena (infografia «metafora»). A mòbil es plega (el primer, obert); a l'ordinador, tot obert (site.js). #}
+      {# Cada format amb la seva escena (infografia «metafora»). Portada: a mòbil es plega (el primer, obert); a l'ordinador, tot obert (site.js).
+         "layout": "list" (Persones): una columna, es pot plegar a tots els amples; només s'obre la targeta amb "open": true. Cada targeta pot portar
+         "id", "summary", "meta", "prices" (proposta de la qual surten els preus), "range" (proposta de la qual surt «31–179 €»), "durations" (enllaços de cada durada),
+         "editions": true (bloc «Propera edició») i "buttons". #}
       {% set metafora = none %}{% include "infografies/infografia-metafora.html" %}
-      <ul class="formats">
+      {% set lst = s.layout == 'list' %}
+      <ul class="formats{% if lst %} formats--list{% endif %}">
         {% for f in s["items"] %}
-        <li class="fmt-li"><details class="fmt" open>
-          <summary class="fmt__sum"><span class="fmt__h"><span class="fmt__k">{{ f.kicker }}</span><span class="fmt__t">{{ f.title }}</span></span>{{ icon('caret', 'fmt__caret') }}</summary>
+        <li class="fmt-li"><details class="fmt"{% if f.id %} id="{{ f.id }}"{% endif %}{% if not lst or f.open %} open{% endif %}>
+          <summary class="fmt__sum"><span class="fmt__h"><span class="fmt__k">{{ f.kicker }}</span><span class="fmt__t">{{ f.title }}</span>{% if f.summary %}<span class="fmt__s">{{ f.summary }}</span>{% endif %}{% if f.meta or f.range_text %}<span class="fmt__m">{{ f.meta }}{% if f.meta and f.range_text %} · {% endif %}{% if f.range_text %}<span class="fmt__r">{{ f.range_text }}</span>{% endif %}</span>{% endif %}</span>{{ icon('caret', 'fmt__caret') }}</summary>
           <div class="fmt__body">
-            {% if f.scene %}<div class="mt" data-metafora="{{ f.scene }}" aria-label="{{ f.title }}"></div>{% endif %}
+            {% if f.scene %}<div class="mt" data-metafora="{{ f.scene }}"{% if lst %} data-once{% endif %} aria-label="{{ f.title }}"></div>{% endif %}
             <p class="fmt__text">{{ f.text }}</p>
             {% if f.rows %}<dl class="fmt__rows">{% for k, v in f.rows %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl>{% endif %}
+            {% if f.price_rows %}<div class="fmt__prices">
+              {% if f.durations %}{% for o in f.price_rows %}{% set d = f.durations[loop.index0] %}<div class="dur"><a class="dur__l" href="{{ link_href(d.href, root) }}">{{ o.label }}</a>{{ tiers([{'values': o['values']}], s.tiers) }}</div>{% endfor %}
+              {% else %}{{ tiers(f.price_rows, s.tiers) }}{% endif %}
+              {% if f.price_note %}<p class="pcard__pnote">{{ f.price_note }}</p>{% endif %}
+            </div>{% endif %}
+            {% if f.editions %}{{ edition_block(edicions, root, f.editions_page, f.editions_value, s.tiers) }}{% endif %}
             {% if f.button %}<p class="fmt__go">{{ button(f.button, root, 'btn--primary') }}</p>{% endif %}
+            {% for l in f.links or [] %}<p class="fmt__go">{{ button(l, root, 'btn--outline') }}</p>{% endfor %}
           </div>
         </details></li>
         {% endfor %}
       </ul>
       {% if s.chips %}<ul class="chips">{% for c in s.chips %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+    {% elif s.type == 'durades' %}
+      {# Selector de durada d'El Treball que Reconnecta: "items": [{"key", "tab", "tab_sub", "phrase", "title", "paragraphs", "dades", "buttons", "value"}], "default".
+         Les seccions amb "durada": "<key>" només es veuen amb aquella durada (site.js; sense JS es veuen totes). #}
+      <div class="durades" data-durades data-default="{{ s.default }}">
+        <div class="durades__tabs" role="tablist" aria-label="{{ s.label }}">
+          {% for it in s["items"] %}<button type="button" class="durades__tab" role="tab" id="tab-{{ it.key }}" aria-controls="dur-{{ it.key }}" data-d="{{ it.key }}" aria-selected="{{ 'true' if it.key == s.default else 'false' }}"><strong>{{ it.tab }}</strong><span>{{ it.tab_sub }}</span></button>{% endfor %}
+        </div>
+        {% for it in s["items"] %}
+        <div class="durades__panel dur-item{% if it.key == s.default %} is-on{% endif %}" role="tabpanel" id="dur-{{ it.key }}" aria-labelledby="tab-{{ it.key }}" data-durada="{{ it.key }}" data-form-value="{{ it.value }}">
+          <p class="durades__phrase">{{ it.phrase }}</p>
+          {% set pars = it.paragraphs or [] %}
+          <div class="prose">
+            {% if pars %}<p class="prose__lead">{{ pars[0] }}</p>{% endif %}
+            {% if pars|length > 1 %}<div class="prose__box">{% for p in pars[1:] %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+          </div>
+          {{ note({'style': 'info', 'id': 'dades-' ~ it.key, 'title': it.title, 'rows': it.rows}) }}
+          {{ edition_block(edicions|selectattr('format', 'equalto', it.key)|list, root, none, it.value, s.tiers) }}
+          {% if it.buttons %}<p class="block__actions">{% for b in it.buttons %}{{ button(b, root, 'btn--primary' if loop.first else 'btn--outline') }}{% endfor %}</p>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
     {% elif s.type == 'feature' %}
       {# Quadre destacat: "variant": "dark" (blau marí) o "sun" (crema); "pill", "title", "paragraphs", "chips", "buttons", "side": {"title", "items": [{"title", "text", "href"}]} #}
       <div class="feature feature--{{ s.variant or 'dark' }}{% if s.side %} feature--2{% endif %}">

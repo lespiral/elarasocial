@@ -378,9 +378,23 @@
     ]
   },
   "redirects": {
+    "la-espiral-de-la-esperanza-activa": "el-trabajo-que-reconecta/?durada=taller",
+    "un-puente-de-esperanza": "el-trabajo-que-reconecta/?durada=cap-de-setmana",
     "organizaciones": "entidades/#equipo",
     "comunidades": "entidades/#territorio",
     "circulos-de-palabra-para-gestionar-conflictos": "entidades/#equipo",
     "circulos-para-sostener-organizaciones-y-colectivos": "entidades/#equipo"
+  },
+  "ui": {
+    "tiers": ["Reducido", "Estándar", "De apoyo"],
+    "edicions": {
+      "title": "Próxima edición",
+      "none": "Próximas fechas por determinar",
+      "notify": "Avísame de la próxima edición",
+      "book": "Reservar mi plaza",
+      "sessions": "{n} sesiones de {d}",
+      "sessions_one": "{n} sesión de {d}",
+      "formats": {"taller": "Taller · 4 h", "cicle": "Ciclo · 4 × 2 h", "cap-de-setmana": "Fin de semana · 2 × 6 h"}
+    }
   }
 }

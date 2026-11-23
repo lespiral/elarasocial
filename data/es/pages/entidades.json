@@ -300,8 +300,8 @@
               "button": "Ver la propuesta"
             },
             {
-              "page": "un-pont-desperanca-2",
-              "href": "un-puente-de-esperanza",
+              "page": "el-treball-que-reconnecta",
+              "href": "el-trabajo-que-reconecta?durada=cap-de-setmana",
               "badge": "Fin de semana",
               "title": "Un puente de esperanza comunitaria",
               "text": "Una inmersión de dos días para tejer vínculo y acción compartida en el territorio.",
@@ -321,7 +321,7 @@
         }
       ],
       "after": [
-        "Para grupos del territorio, también hacemos <a href=\"la-espiral-de-la-esperanza-activa\">La Espiral de la Esperanza Activa</a> y el <a href=\"grupo-regular-de-el-trabajo-que-reconecta\">grupo regular de El Trabajo que Reconecta</a>."
+        "Para grupos del territorio, también hacemos <a href=\"../el-trabajo-que-reconecta/?durada=taller\">La Espiral de la Esperanza Activa</a> y el <a href=\"../grupo-regular-de-el-trabajo-que-reconecta/\">grupo regular de El Trabajo que Reconecta</a>."
       ],
       "html": true
     },

@@ -1,0 +1,4 @@
+{
+  "_ajuda": "Edicions programades d'El Treball que Reconnecta. Cada edició: format (taller | cicle | cap-de-setmana), data_inici (AAAA-MM-DD), sessions (número), durada_per_sessio (p. ex. \"2 h\"), lloc i, si cal, enllac (adreça d'inscripció pròpia; si no, s'usa el formulari de la pàgina). Els preus no hi van: surten de la pàgina d'El Treball que Reconnecta. Les edicions que ja han passat deixen de mostrar-se soles. Exemple: {\"format\": \"cicle\", \"data_inici\": \"2027-01-12\", \"sessions\": 4, \"durada_per_sessio\": \"2 h\", \"lloc\": \"El Prat de Llobregat\"}. Sense cap edició a la llista, la web diu «Properes dates per determinar».",
+  "edicions": []
+}

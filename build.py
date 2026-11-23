@@ -29,7 +29,7 @@ ICONS = json.loads((SRC / "icons.json").read_text(encoding="utf-8"))
 
 # Tipus de secció que saben pintar les plantilles (src/templates/parts.html, macro «section»)
 SECTION_TYPES = {"text", "cards", "list", "faq", "note", "infografia", "cta", "contact", "form", "reviews", "articles",
-                 "doors", "steps", "formats", "feature", "strip", "offers", "prices", "ribbon", "flow", "gains", "limits"}
+                 "doors", "steps", "formats", "feature", "strip", "offers", "prices", "ribbon", "flow", "gains", "limits", "durades"}
 
 # Formulari de Google inserit a la pàgina (les respostes continuen arribant al compte que el va crear)
 FORM_URL = "https://docs.google.com/forms/d/e/{}/viewform"
@@ -76,9 +76,7 @@ CARD_ICONS = {
     "7-passes-cap-a-lesperanca-activa": "steps",
     "7-passes-cap-a-lesperanca-activa-comunitats": "steps",
     "acompanyament-individual": "hand-heart",
-    "lespiral-de-lesperanca-activa": "spiral",
     "el-treball-que-reconnecta": "tree",
-    "un-pont-desperanca-2": "bridge",
     "grup-regular-de-el-treball-que-reconnecta": "moon-stars",
     "burnout": "campfire",
     "contacte": "chat-circle-dots",
@@ -138,6 +136,9 @@ errors = []
 # tradueix els rètols de cada opció.
 PRICES = {}
 PRICE_WHERE = {}
+# Les tres durades de la pàgina única d'El Treball que Reconnecta (data/pages/el-treball-que-reconnecta.json, "prices": una opció per durada, en aquest ordre)
+TQR_SLUG = "el-treball-que-reconnecta"
+TQR_FORMATS = ["taller", "cicle", "cap-de-setmana"]
 
 
 def fmt_price(v):
@@ -152,7 +153,21 @@ def collect_prices(raw):
 
 
 def info_text(sections):
-    return " ".join(" ".join(s.get("paragraphs", []) if s.get("paragraphs") else []) for s in sections or [] if s.get("type") == "note" and s.get("id") == "dades")
+    """El text de «Durada i preus»: la nota «dades» d'una proposta o, a la pàgina del Treball que Reconnecta, les «dades» de cada durada."""
+    out = []
+    for s in sections or []:
+        if s.get("type") == "note" and s.get("id") == "dades":
+            out += s.get("paragraphs") or []
+        if s.get("type") == "durades":
+            for it in s.get("items", []):
+                out += it.get("dades") or []
+    return " ".join(out)
+
+
+def price_range(slug):
+    """«31–179» (el preu més baix i el més alt de totes les opcions d'una proposta)."""
+    vals = [v for o in PRICES.get(slug, []) for v in o["values"]]
+    return f"{fmt_price(min(vals))}–{fmt_price(max(vals))} €" if vals else ""
 
 
 def check_prices(raw):
@@ -247,6 +262,21 @@ def prepare_sections(sections, where, lang="ca"):
             for it in s.get("items", []):
                 if it.get("scene") and it["scene"] not in ESCENES:
                     errors.append(f"{where}: l'escena {it['scene']!r} no existeix")
+                # "prices": "<proposta>" → els preus d'aquella proposta (una sola font); "range": "<proposta>" → «31–179 €» al capçal
+                if it.get("prices"):
+                    it["price_rows"] = price_rows(it["prices"], lang, where)
+                if it.get("range"):
+                    it["range_text"] = price_range(it["range"]) + (" " + it["range_suffix"] if it.get("range_suffix") else "")
+        if t == "durades":
+            keys = [it.get("key") for it in s.get("items", [])]
+            if len(set(keys)) != len(keys) or any(k not in TQR_FORMATS for k in keys):
+                errors.append(f"{where}: les durades han de ser {', '.join(TQR_FORMATS)} (cada una una vegada)")
+            if s.get("default") not in keys:
+                errors.append(f"{where}: \"default\" ha de ser una de les durades ({', '.join(map(str, keys))})")
+            for it in s.get("items", []):
+                it["rows"] = note_rows(bold(it.get("dades")))
+        if s.get("durada") and s["durada"] not in TQR_FORMATS:
+            errors.append(f"{where}: la secció «{s.get('title') or s['id']}» té una durada desconeguda ({s['durada']!r})")
         if t == "flow":
             for it in s.get("items", []):
                 if it.get("icon") not in ICONS:
@@ -260,6 +290,11 @@ def prepare_sections(sections, where, lang="ca"):
         for k in list(s):
             if k not in ("rows",):
                 s[k] = bold(s[k]) if k not in ("id", "type", "band", "infografia", "variant", "name", "list_icon", "style", "align") else s[k]
+    # Seccions que només es veuen amb una durada (pàgina d'El Treball que Reconnecta): la de la durada per defecte surt oberta
+    dd = next((x.get("default") for x in sections or [] if x.get("type") == "durades"), None)
+    for x in sections or []:
+        if x.get("durada"):
+            x["durada_on"] = x["durada"] == dd
     dup = {i for i in ids if ids.count(i) > 1}
     if dup:
         errors.append(f"{where}: seccions amb el mateix id {sorted(dup)}: posa'ls un \"id\" diferent")
@@ -386,6 +421,43 @@ for lang in LANGS:
 # Compatibilitat amb la resta del fitxer (adreces antigues): les pàgines en català
 slugs = LANG["ca"]["slugs"]
 
+# ---------- Edicions d'El Treball que Reconnecta (data/edicions.json) ----------
+# {"edicions": [{"format": "taller|cicle|cap-de-setmana", "data_inici": "2027-01-12", "sessions": 4, "durada_per_sessio": "2 h",
+#                "lloc": "…", "enllac": "(opcional) adreça d'inscripció pròpia"}]}
+# Els preus no hi van: es llegeixen de la proposta (una sola font). Les edicions que ja han passat no es mostren.
+EDICIONS_RAW = []
+_ed = DATA / "edicions.json"
+if _ed.exists():
+    EDICIONS_RAW = json.loads(_ed.read_text(encoding="utf-8")).get("edicions", [])
+for _i, _e in enumerate(EDICIONS_RAW, 1):
+    for _k in ("format", "data_inici", "sessions", "durada_per_sessio", "lloc"):
+        if not _e.get(_k):
+            errors.append(f"data/edicions.json: l'edició {_i} no porta «{_k}»")
+    if _e.get("format") not in TQR_FORMATS:
+        errors.append(f"data/edicions.json: l'edició {_i} té un format desconegut ({_e.get('format')!r}); ha de ser {', '.join(TQR_FORMATS)}")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(_e.get("data_inici", ""))):
+        errors.append(f"data/edicions.json: l'edició {_i} ha de portar la data com a AAAA-MM-DD (ara: {_e.get('data_inici')!r})")
+
+
+def edicions_de(lang):
+    """Les edicions que encara no han passat, per ordre de data, amb els textos de la llengua i els preus del seu format."""
+    ui = LANG[lang]["site"].get("ui", {}).get("edicions", {})
+    today = time.strftime("%Y-%m-%d")
+    out = []
+    for e in sorted(EDICIONS_RAW, key=lambda e: e.get("data_inici", "")):
+        if e.get("data_inici", "") < today or e.get("format") not in TQR_FORMATS:
+            continue
+        k = e["format"]
+        n = int(e["sessions"])
+        fmt = ui.get("formats", {}).get(k, k)
+        date_text = data_llarga(e["data_inici"], lang)
+        rows = price_rows(TQR_SLUG, lang, "data/edicions.json")
+        out.append({"format": k, "label": fmt, "iso": e["data_inici"], "date_text": date_text, "place": e["lloc"],
+                    "sessions_text": (ui.get("sessions_one", "{n} × {d}") if n == 1 else ui.get("sessions", "{n} × {d}")).format(n=n, d=e["durada_per_sessio"]),
+                    "price_rows": [{"values": rows[TQR_FORMATS.index(k)]["values"]}] if rows else [], "link": e.get("enllac", ""),
+                    "value": f"{fmt} · {date_text}"})
+    return out
+
 if errors:
     print("No s'ha generat la web. Cal arreglar:", *("- " + e for e in errors), sep="\n")
     sys.exit(1)
@@ -433,7 +505,7 @@ for lang in LANGS:
     env = Environment(loader=loader, autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     # |cap: la primera lletra en majúscula (els avantítols de WordPress anaven en minúscula perquè es pintaven en majúscules)
     env.filters["cap"] = cap
-    env.globals.update(icon=icon, site=LANG[lang]["site"], noindex=NOINDEX, version=str(int(time.time())),
+    env.globals.update(icon=icon, site=LANG[lang]["site"], edicions=edicions_de(lang), tqr_formats=TQR_FORMATS, noindex=NOINDEX, version=str(int(time.time())),
                        logo=(img / "logo-elara.png").exists(),
                        favicon=(img / "favicon-48.png").exists(),
                        partners_logo=(img / "lespiral-elara.png").exists(),
@@ -512,7 +584,7 @@ for lang in LANGS:
             errors.append(f"{where}: /{pre}{old}/ és una pàgina de la web; no pot portar a una altra")
             continue
         if not to.startswith("http"):
-            page = to.split("#")[0].strip("/")
+            page = to.split("#")[0].split("?")[0].strip("/")
             if page and page not in lslugs:
                 errors.append(f"{where}: /{pre}{old}/ porta a /{pre}{page}/, que no existeix")
                 continue

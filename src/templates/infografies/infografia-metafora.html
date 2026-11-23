@@ -492,6 +492,7 @@
   function build(el) {
     var key = el.getAttribute("data-metafora"), mk = SCENES[key] || SCENES.passes, id = "-" + (uid++);
     var sc = mk(id);
+    if (el.hasAttribute("data-once")) sc.loop = false; // a les targetes desplegables: una sola vegada, sense bucles
     el.classList.add("mt--" + (SCENES[key] ? key : "passes"));
     el.setAttribute("role", "img");
     el.setAttribute("tabindex", "0");

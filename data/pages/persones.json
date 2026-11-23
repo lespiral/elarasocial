@@ -36,22 +36,22 @@
           "icon": "cloud-rain",
           "title": "Sents bloqueig o desorientació?",
           "text": "La situació global o personal et pesa, i la preocupació es queda atrapada al cap sense saber cap a on tirar.",
-          "href": "#propostes",
-          "button": "Opcions per començar"
+          "href": "#prop-7-passes",
+          "button": "Provar el minicurs gratuït"
         },
         {
           "icon": "sun",
           "title": "Notes cansament profund?",
           "text": "Vas amb el pilot automàtic, complint amb tot però connectant amb poc, i necessites un respir real.",
-          "href": "#propostes",
-          "button": "Opcions per començar"
+          "href": "#prop-individual",
+          "button": "Reservar una sessió individual"
         },
         {
           "icon": "users-three",
           "title": "Busques gent amb qui parlar de veritat?",
           "text": "Si et pesa la buidor i carregar-ho tot en soledat... Aquí toquem de peus a terra. Vine a trobar sentit amb gent com tu.",
-          "href": "#propostes",
-          "button": "Opcions per començar"
+          "href": "#prop-treball-que-reconnecta",
+          "button": "Trobar el meu grup"
         }
       ]
     },
@@ -132,16 +132,8 @@
           "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència.",
           "propostes": [
             [
-              "L'Espiral de l'Esperança Activa (4 h)",
-              "lespiral-de-lesperanca-activa"
-            ],
-            [
-              "El Treball que Reconnecta (cicle, 4 × 2 h)",
+              "El Treball que Reconnecta (taller, cicle o cap de setmana)",
               "el-treball-que-reconnecta"
-            ],
-            [
-              "Un pont d'Esperança (2 × 6 h)",
-              "un-pont-desperanca-2"
             ],
             [
               "Burnout",
@@ -203,171 +195,159 @@
       ]
     },
     {
-      "type": "prices",
+      "type": "formats",
+      "layout": "list",
       "band": "soft",
       "id": "propostes",
       "title": "Propostes i preus",
-      "intro": "Tres preus a cada proposta. L'estàndard cobreix preparació, facilitació, materials i espai. El de suport finança places reduïdes. Tria el que et sigui just, sense justificar-te.",
+      "intro": "Tres preus a cada proposta. L'estàndard cobreix preparació, facilitació, materials i espai. El de suport finança places reduïdes. Tria el que et sigui just, sense justificar-te. És el mateix camí, el Treball que Reconnecta, en quatre durades.",
       "tiers": [
         "Reduït",
         "Estàndard",
         "De suport"
       ],
-      "groups": [
+      "items": [
         {
-          "id": "per-comencar",
-          "kicker": "Per començar",
-          "title": "Sense compromís, al teu ritme",
-          "items": [
+          "id": "prop-7-passes",
+          "open": true,
+          "kicker": "Sol/a · al teu ritme",
+          "title": "7 passes cap a l'Esperança Activa",
+          "summary": "Un minicurs per provar el camí a casa.",
+          "meta": "7 passes · gratuït",
+          "scene": "passes",
+          "text": "Una pràctica guiada d'uns 15 minuts i una pregunta per pensar a cada pas.",
+          "rows": [
+            [
+              "Durada",
+              "7 passes, en 7 dies o al teu ritme"
+            ],
+            [
+              "Format",
+              "Àudio i reflexió, en línia"
+            ],
+            [
+              "Preu",
+              "Gratuït"
+            ]
+          ],
+          "button": {
+            "text": "Comença el minicurs gratuït",
+            "href": "7-passes-cap-a-lesperanca-activa"
+          }
+        },
+        {
+          "id": "prop-camins",
+          "kicker": "Sol/a · caminant",
+          "title": "Camins d'Esperança [Activa]",
+          "summary": "Cursos digitals i rutes a peu a prop de casa.",
+          "meta": "Gratuït · en línia + rutes a peu",
+          "text": "Cursos digitals de 7 passes combinats amb rutes a peu a prop de casa. Viu a la seva pròpia web.",
+          "rows": [
+            [
+              "Cursos",
+              "Quatre, segons què et preocupa"
+            ],
+            [
+              "Rutes",
+              "Per pobles i ciutats"
+            ],
+            [
+              "Preu",
+              "Gratuït"
+            ]
+          ],
+          "button": {
+            "text": "Vés a la web en català",
+            "href": "https://xn--esperanaactiva-mjb.cat/"
+          },
+          "links": [
             {
-              "page": "7-passes-cap-a-lesperanca-activa",
-              "href": "7-passes-cap-a-lesperanca-activa",
-              "badge": "Gratuït · en línia",
-              "title": "7 passes cap a l'Esperança Activa",
-              "text": "Minicurs per provar el camí a casa: una pràctica guiada d'uns 15 minuts i una pregunta per pensar a cada pas.",
-              "rows": [
-                [
-                  "Durada",
-                  "7 passes, en 7 dies o al teu ritme"
-                ],
-                [
-                  "Format",
-                  "Àudio i reflexió, en línia"
-                ]
-              ],
-              "price_text": "Preu: gratuït",
-              "button": "Comença el minicurs gratuït"
-            },
-            {
-              "href": "https://xn--esperanaactiva-mjb.cat/",
-              "badge": "Gratuït · en línia + rutes a peu",
-              "title": "Camins d'Esperança [Activa]",
-              "text": "Cursos digitals de 7 passes combinats amb rutes a peu a prop de casa. Viu a la seva pròpia web.",
-              "rows": [
-                [
-                  "Cursos",
-                  "Quatre, segons què et preocupa"
-                ],
-                [
-                  "Rutes",
-                  "Per pobles i ciutats"
-                ]
-              ],
-              "button": "Vés a la web en català",
-              "links": [
-                {
-                  "text": "Vés a la web en castellà",
-                  "href": "https://esperanzaactiva.org/"
-                }
-              ]
+              "text": "Vés a la web en castellà",
+              "href": "https://esperanzaactiva.org/"
             }
           ]
         },
         {
-          "id": "treball-que-reconnecta",
-          "kicker": "El Treball que Reconnecta",
-          "title": "Transitem l’Espiral d’El Treball que Reconnecta, en quatre durades.",
-          "text": "Com més llarg, més aprofundiment, comprensió i integració de les etapes de l’Espiral: el camí cap a l’Esperança Activa.",
-          "items": [
+          "id": "prop-treball-que-reconnecta",
+          "kicker": "Taller, cicle o cap de setmana",
+          "title": "El Treball que Reconnecta",
+          "summary": "Un camí en grup per recórrer l'espiral.",
+          "meta": "De 4 h a 2 dies",
+          "range": "el-treball-que-reconnecta",
+          "scene": "arrels",
+          "text": "Un camí en grup per recórrer l'espiral: arrelar, fer lloc al dolor, mirar amb ulls nous i passar a l'acció. Com més durada, més espai per a dinàmiques, reflexió i aprofundiment.",
+          "rows": [
+            [
+              "Grup",
+              "Màx. 16 persones"
+            ]
+          ],
+          "prices": "el-treball-que-reconnecta",
+          "durations": [
             {
-              "page": "lespiral-de-lesperanca-activa",
-              "href": "lespiral-de-lesperanca-activa",
-              "badge": "Taller · 4 h",
-              "title": "L'Espiral de l'Esperança Activa",
-              "text": "Un taller segur per reconnectar amb la vida i transformar el dolor en compromís concret.",
-              "rows": [
-                [
-                  "Durada",
-                  "4 hores · màx. 16 persones"
-                ],
-                [
-                  "Propera edició",
-                  "Properes dates per determinar"
-                ]
-              ],
-              "button": "Veure el taller"
+              "href": "el-treball-que-reconnecta?durada=taller"
             },
             {
-              "page": "el-treball-que-reconnecta",
-              "href": "el-treball-que-reconnecta",
-              "badge": "Cicle · 4 × 2 h",
-              "title": "El Treball que Reconnecta",
-              "text": "Quatre sessions per recórrer l'espiral: arrelar, fer lloc al dolor, mirar amb ulls nous i passar a l'acció.",
-              "rows": [
-                [
-                  "Durada",
-                  "4 sessions de 2 h · màx. 16"
-                ],
-                [
-                  "Propera edició",
-                  "Properes dates per determinar"
-                ]
-              ],
-              "button": "Veure el cicle"
+              "href": "el-treball-que-reconnecta?durada=cicle"
             },
             {
-              "page": "un-pont-desperanca-2",
-              "href": "un-pont-desperanca-2",
-              "badge": "Cap de setmana · 2 × 6 h",
-              "title": "Un pont d'esperança",
-              "text": "Una immersió de dos dies per aprofundir en grup, amb temps per integrar-ho.",
-              "rows": [
-                [
-                  "Durada",
-                  "2 sessions de 6 h · màx. 16"
-                ],
-                [
-                  "Propera edició",
-                  "Properes dates per determinar"
-                ]
-              ],
-              "button": "Veure el cap de setmana"
-            },
-            {
-              "page": "grup-regular-de-el-treball-que-reconnecta",
-              "href": "grup-regular-de-el-treball-que-reconnecta",
-              "badge": "Grup · continuïtat",
-              "title": "El Treball que Reconnecta · grup regular",
-              "text": "Un espai estable per aturar-te i reconnectar. Cada sessió es modela segons el que necessita el grup.",
-              "rows": [
-                [
-                  "Durada",
-                  "Sessions de 2 h · màx. 16"
-                ],
-                [
-                  "Freqüència",
-                  "Cada mes o cada 15 dies"
-                ]
-              ],
-              "price_note": "Preus per mes.",
-              "button": "Veure el grup regular"
+              "href": "el-treball-que-reconnecta?durada=cap-de-setmana"
             }
-          ]
+          ],
+          "editions": true,
+          "editions_page": "el-treball-que-reconnecta",
+          "editions_value": ""
         },
         {
-          "id": "individual",
-          "kicker": "De tu a tu",
-          "title": "Un espai només per a tu",
-          "items": [
-            {
-              "page": "acompanyament-individual",
-              "href": "acompanyament-individual#inscripcio",
-              "badge": "De tu a tu",
-              "title": "Acompanyament individual",
-              "text": "Parlem del que et pesa, practiquem eines per regular-te i dissenyem un pla d'acció i d'autocura.",
-              "rows": [
-                [
-                  "Durada",
-                  "Sessions d'1 h o d'1,5 h"
-                ],
-                [
-                  "Format",
-                  "En línia o presencial"
-                ]
-              ],
-              "button": "Reserva una sessió"
-            }
-          ]
+          "id": "prop-grup-regular",
+          "kicker": "Grup · continuïtat",
+          "title": "El Treball que Reconnecta · grup regular",
+          "summary": "Un espai estable per aturar-te i reconnectar.",
+          "meta": "2 h · cada mes o cada 15 dies",
+          "range": "grup-regular-de-el-treball-que-reconnecta",
+          "range_suffix": "al mes",
+          "text": "Cada sessió es modela segons el que necessita el grup.",
+          "rows": [
+            [
+              "Durada",
+              "Sessions de 2 h · màx. 16"
+            ],
+            [
+              "Freqüència",
+              "Cada mes o cada 15 dies"
+            ]
+          ],
+          "prices": "grup-regular-de-el-treball-que-reconnecta",
+          "price_note": "Preus per mes.",
+          "button": {
+            "text": "Veure el grup regular",
+            "href": "grup-regular-de-el-treball-que-reconnecta"
+          }
+        },
+        {
+          "id": "prop-individual",
+          "kicker": "Tu i una persona acompanyant",
+          "title": "Acompanyament individual",
+          "summary": "Parlem del que et pesa i dissenyem un pla d'acció.",
+          "meta": "1 h o 1,5 h",
+          "range": "acompanyament-individual",
+          "scene": "costat",
+          "text": "Parlem del que et pesa, practiquem eines per regular-te i dissenyem un pla d'acció i d'autocura.",
+          "rows": [
+            [
+              "Durada",
+              "Sessions d'1 h o d'1,5 h"
+            ],
+            [
+              "Format",
+              "En línia o presencial"
+            ]
+          ],
+          "prices": "acompanyament-individual",
+          "button": {
+            "text": "Reserva una sessió",
+            "href": "acompanyament-individual#inscripcio"
+          }
         }
       ]
     },

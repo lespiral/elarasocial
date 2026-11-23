@@ -101,9 +101,11 @@
     "proposes-a-nivell-de-grups-o-organitzacions": "entitats/#equip",
     "propostes-a-nivell-de-comunitats": "entitats/#territori",
     "acompanyament-individual-formulari": "acompanyament-individual/#inscripcio",
-    "lespiral-de-lesperanca-activa-formulari": "lespiral-de-lesperanca-activa/#inscripcio",
-    "el-treball-que-reconnecta-formulari": "el-treball-que-reconnecta/#inscripcio",
-    "un-pont-desperanca-formulari": "un-pont-desperanca-2/#inscripcio",
+    "lespiral-de-lesperanca-activa": "el-treball-que-reconnecta/?durada=taller",
+    "un-pont-desperanca-2": "el-treball-que-reconnecta/?durada=cap-de-setmana",
+    "lespiral-de-lesperanca-activa-formulari": "el-treball-que-reconnecta/?durada=taller#inscripcio",
+    "el-treball-que-reconnecta-formulari": "el-treball-que-reconnecta/?durada=cicle#inscripcio",
+    "un-pont-desperanca-formulari": "el-treball-que-reconnecta/?durada=cap-de-setmana#inscripcio",
     "grup-regular-de-el-treball-que-reconnecta-formulari": "grup-regular-de-el-treball-que-reconnecta/#inscripcio",
     "cercles-per-sostenir-organitzacions-i-col·lectius-formulari": "entitats/#equip",
     "cercles-personalitzats-per-sostenir-organitzacions-i-col·lectius-formulari": "entitats/#equip",
@@ -460,5 +462,17 @@
         "Un gran curs per descobrir molt més de un mateix"
       ]
     ]
+  },
+  "ui": {
+    "tiers": ["Reduït", "Estàndard", "De suport"],
+    "edicions": {
+      "title": "Propera edició",
+      "none": "Properes dates per determinar",
+      "notify": "Avisa'm de la propera edició",
+      "book": "Reserva la meva plaça",
+      "sessions": "{n} sessions de {d}",
+      "sessions_one": "{n} sessió de {d}",
+      "formats": {"taller": "Taller · 4 h", "cicle": "Cicle · 4 × 2 h", "cap-de-setmana": "Cap de setmana · 2 × 6 h"}
+    }
   }
 }

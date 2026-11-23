@@ -86,7 +86,7 @@
   });
   // Formats de la portada: a l'ordinador, tot obert; al mòbil i a la tauleta, plegats (només el primer, obert)
   (function () {
-    var fmts = Array.prototype.slice.call(document.querySelectorAll('.fmt'));
+    var fmts = Array.prototype.slice.call(document.querySelectorAll('.formats:not(.formats--list) .fmt'));
     if (!fmts.length || !window.matchMedia) return;
     var wide = window.matchMedia('(min-width: 1100px)');
     function apply() {
@@ -99,5 +99,76 @@
     // Es plega un cop les escenes ja s'han construït (el seu codi corre a DOMContentLoaded, abans d'aquest)
     if (document.readyState === 'complete') apply(); else document.addEventListener('DOMContentLoaded', apply);
     if (wide.addEventListener) wide.addEventListener('change', apply); else if (wide.addListener) wide.addListener(apply);
+  })();
+
+  // Persones: els enllaços cap a una targeta (#prop-…) l'obren i hi porten; si la pàgina s'obre amb aquesta ancora, també
+  (function () {
+    var reduceM = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function card(id) { var el = id && document.getElementById(id); return el && el.matches && el.matches('.formats--list details.fmt') ? el : null; }
+    function openCard(el, hash) {
+      el.open = true;
+      el.scrollIntoView({ behavior: reduceM ? 'auto' : 'smooth', block: 'start' });
+      var sum = el.querySelector('summary'); if (sum) { try { sum.focus({ preventScroll: true }); } catch (e) { sum.focus(); } }
+      if (hash && history.replaceState) history.replaceState(null, '', hash);
+    }
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      var el = a && card(decodeURIComponent(a.getAttribute('href').slice(1)));
+      if (el) { e.preventDefault(); openCard(el, a.getAttribute('href')); }
+    });
+    function fromHash() { var el = card(decodeURIComponent(location.hash.slice(1))); if (el) { el.open = true; setTimeout(function () { el.scrollIntoView(); }, 60); } }
+    if (document.readyState === 'complete') fromHash(); else window.addEventListener('load', fromHash);
+    window.addEventListener('hashchange', fromHash);
+  })();
+
+  // El Treball que Reconnecta: selector de durada (?durada=taller|cicle|cap-de-setmana), i formulari d'inscripció preomplert amb la durada o l'edició triada
+  (function () {
+    var box = document.querySelector('[data-durades]');
+    if (!box) return;
+    var tabs = Array.prototype.slice.call(box.querySelectorAll('[data-d]'));
+    var items = Array.prototype.slice.call(document.querySelectorAll('.dur-item'));
+    var forms = document.querySelector('.forms[data-prefill]');
+    var frame = forms && forms.querySelector('iframe.form-frame');
+    var alt = forms && forms.querySelector('.form-alt a');
+    var entry = forms && forms.getAttribute('data-prefill');
+    var base = frame && frame.getAttribute('src'), altBase = alt && alt.getAttribute('href'), cur = '';
+    function setForm(v) {
+      v = v || '';
+      if (!frame || !entry || v === cur) return;
+      cur = v;
+      frame.setAttribute('src', v ? base + '&' + entry + '=' + encodeURIComponent(v) : base);
+      if (alt) alt.setAttribute('href', v ? altBase + '?' + entry + '=' + encodeURIComponent(v) : altBase);
+    }
+    function panel(key) { return box.querySelector('.durades__panel[data-durada="' + key + '"]'); }
+    function show(key, prefill, url) {
+      items.forEach(function (el) { el.classList.toggle('is-on', el.getAttribute('data-durada') === key); });
+      tabs.forEach(function (t) { var on = t.getAttribute('data-d') === key; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.setAttribute('tabindex', on ? '0' : '-1'); });
+      if (prefill && panel(key)) setForm(panel(key).getAttribute('data-form-value'));
+      if (url && window.URL && history.replaceState) { var u = new URL(location.href); u.searchParams.set('durada', key); u.searchParams.delete('edicio'); history.replaceState(null, '', u); }
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { show(t.getAttribute('data-d'), true, true); });
+      t.addEventListener('keydown', function (e) {
+        var n = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!n) return;
+        e.preventDefault();
+        var o = tabs[(i + n + tabs.length) % tabs.length];
+        o.focus(); show(o.getAttribute('data-d'), true, true);
+      });
+    });
+    // Un botó que porta al formulari («Inscripció», «Reserva la meva plaça», «Avisa'm…») el preomple amb la seva durada o edició
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a');
+      if (!a) return;
+      if (a.hasAttribute('data-form-value')) setForm(a.getAttribute('data-form-value'));
+      else if (a.getAttribute('href') === '#inscripcio' && a.closest('.durades__panel')) setForm(a.closest('.durades__panel').getAttribute('data-form-value'));
+    });
+    var q = window.URLSearchParams ? new URLSearchParams(location.search) : null;
+    var key = q && q.get('durada');
+    if (key && panel(key)) {
+      show(key, true, false);
+      var ed = q.get('edicio'), b = ed && panel(key).querySelector('[data-edicio="' + ed.replace(/"/g, '') + '"]');
+      if (b) setForm(b.getAttribute('data-form-value'));
+    } else show(box.getAttribute('data-default'), false, false);
   })();
 })();

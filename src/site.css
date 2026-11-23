@@ -679,6 +679,47 @@ h1 { font-weight: 800; letter-spacing: -.022em; }
 .fmt__rows dt { font: 700 .88rem/1.3 var(--font-head); color: var(--muted); }
 .fmt__rows dd { margin: 0; font-weight: 700; line-height: 1.4; color: var(--ink); }
 @media (min-width: 1100px) { .fmt--static .fmt__sum { cursor: default; } .fmt--static .fmt__caret { display: none; } }
+/* Persones: propostes en acordió (formats--list): una columna, es poden plegar a tots els amples; la il·lustració és baixa (uns 112–147 px) */
+.formats--list { grid-template-columns: 1fr; max-width: 860px; margin-left: auto; margin-right: auto; gap: 14px; }
+.formats--list .fmt-li:nth-child(5) .fmt { border-top: 6px solid var(--blau-700); }
+.fmt { scroll-margin-top: 90px; }
+.formats--list .fmt__sum { min-height: 64px; cursor: pointer; }
+.fmt__s { font: 400 1rem/1.4 var(--font-body); color: var(--ink-soft); }
+.fmt__m { font: 700 .95rem/1.35 var(--font-head); color: var(--blau-800); }
+.fmt__r { white-space: nowrap; }
+.formats--list .fmt__body { gap: 16px; }
+.formats--list .fmt .mt, .formats--list .mt { aspect-ratio: 1000 / 320; width: 100%; max-width: 460px; margin: 0 auto; border-bottom: 1px solid var(--line); border-radius: 14px; cursor: default; }
+.formats--list .fmt__rows { margin: 0; }
+.fmt__prices { display: grid; gap: 14px; }
+.dur { display: grid; gap: 6px; }
+.dur__l { display: inline-flex; align-items: center; min-height: 44px; font: 800 1rem/1.3 var(--font-head); color: var(--blau-900); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--verd-clar); text-decoration-thickness: 2px; }
+.dur__l:hover { color: var(--blau-700); }
+.fmt__go .btn { min-height: 48px; }
+/* «Propera edició» (data/edicions.json) */
+.edi { display: grid; gap: 12px; padding: 16px; border-radius: 14px; background: var(--verd-50); border: 1px dashed var(--verd-200); }
+.edi__t { margin: 0; display: flex; align-items: center; gap: 8px; font: 800 .9rem/1.3 var(--font-head); letter-spacing: .06em; text-transform: uppercase; color: var(--verd-ink); }
+.edi__t .i { width: 1.25em; height: 1.25em; flex: none; }
+.edi__l { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.edi__i { display: grid; gap: 8px; }
+.edi__h { margin: 0; font: 800 1.05rem/1.3 var(--font-head); color: var(--blau-900); }
+.edi__d { margin: 0; color: var(--ink-soft); line-height: 1.5; }
+.edi__none { margin: 0; font-weight: 700; color: var(--verd-ink); line-height: 1.4; }
+.edi__go { min-height: 48px; }
+/* Selector de durada d'El Treball que Reconnecta (sense JS es veuen les tres durades una darrere l'altra) */
+.durades { display: grid; gap: 22px; }
+.durades__tabs { display: none; }
+.js .durades__tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 6px; border-radius: 18px; background: var(--blau-50); }
+.durades__tab { display: grid; align-content: center; justify-items: center; gap: 2px; min-height: 58px; padding: 8px 6px; border: 2px solid transparent; border-radius: 14px; background: transparent; cursor: pointer; font-family: var(--font-head); color: var(--blau-900); text-align: center; }
+.durades__tab strong { font-size: 1rem; line-height: 1.2; }
+.durades__tab span { font-size: .92rem; line-height: 1.2; color: var(--muted); }
+.durades__tab:hover { background: rgba(255, 255, 255, .7); }
+.durades__tab[aria-selected="true"] { background: var(--blau-800); color: #fff; }
+.durades__tab[aria-selected="true"] span { color: #dfe8f1; }
+.durades__tab:focus-visible { outline: 3px solid var(--blau-700); outline-offset: 2px; }
+.durades__panel { display: grid; gap: 22px; }
+.durades__phrase { margin: 0; text-align: center; text-wrap: balance; font: italic 400 1.1rem/1.45 var(--font-body); color: var(--ink-soft); }
+.durades__panel .prose__box { margin-top: 18px; }
+.js .dur-item:not(.is-on) { display: none; }
 .chips { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .chips li { padding: 9px 16px; border-radius: 999px; background: var(--paper); font: 700 .95rem/1.3 var(--font-head); color: var(--blau-900); box-shadow: var(--shadow-sm); }
 .chips--dark { justify-content: flex-start; margin-top: 4px; }

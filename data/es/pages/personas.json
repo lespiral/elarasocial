@@ -37,22 +37,22 @@
           "icon": "cloud-rain",
           "title": "¿Sientes bloqueo o desorientación?",
           "text": "La situación global o personal te pesa, y la preocupación se queda atrapada en la cabeza sin saber hacia dónde tirar.",
-          "href": "#propuestas",
-          "button": "Opciones para empezar"
+          "href": "#propuesta-7-passes",
+          "button": "Probar el minicurso gratuito"
         },
         {
           "icon": "sun",
           "title": "¿Notas un cansancio profundo?",
           "text": "Vas con el piloto automático, cumpliendo con todo pero conectando con poco, y necesitas un respiro de verdad.",
-          "href": "#propuestas",
-          "button": "Opciones para empezar"
+          "href": "#propuesta-individual",
+          "button": "Reservar una sesión individual"
         },
         {
           "icon": "users-three",
           "title": "¿Buscas gente con quien hablar de verdad?",
           "text": "Si te pesa el vacío y cargarlo todo en soledad... Aquí tocamos de pies en el suelo. Ven a encontrar sentido con gente como tú.",
-          "href": "#propuestas",
-          "button": "Opciones para empezar"
+          "href": "#propuesta-treball-que-reconnecta",
+          "button": "Encontrar mi grupo"
         }
       ]
     },
@@ -133,16 +133,8 @@
           "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia.",
           "propostes": [
             [
-              "La Espiral de la Esperanza Activa (4 h)",
-              "la-espiral-de-la-esperanza-activa"
-            ],
-            [
-              "El Trabajo que Reconecta (ciclo, 4 × 2 h)",
+              "El Trabajo que Reconecta (taller, ciclo o fin de semana)",
               "el-trabajo-que-reconecta"
-            ],
-            [
-              "Un puente de Esperanza (2 × 6 h)",
-              "un-puente-de-esperanza"
             ],
             [
               "Burnout",
@@ -204,171 +196,159 @@
       ]
     },
     {
-      "type": "prices",
+      "type": "formats",
+      "layout": "list",
       "band": "soft",
       "id": "propuestas",
       "title": "Propuestas y precios",
-      "intro": "Tres precios en cada propuesta. El estándar cubre preparación, facilitación, materiales y espacio. El de apoyo financia plazas reducidas. Elige el que te resulte justo, sin justificarte.",
+      "intro": "Tres precios en cada propuesta. El estándar cubre preparación, facilitación, materiales y espacio. El de apoyo financia plazas reducidas. Elige el que te resulte justo, sin justificarte. Es el mismo camino, El Trabajo que Reconecta, en cuatro duraciones.",
       "tiers": [
         "Reducido",
         "Estándar",
         "De apoyo"
       ],
-      "groups": [
+      "items": [
         {
-          "id": "para-empezar",
-          "kicker": "Para empezar",
-          "title": "Sin compromiso, a tu ritmo",
-          "items": [
+          "id": "propuesta-7-passes",
+          "open": true,
+          "kicker": "Solo/a · a tu ritmo",
+          "title": "7 pasos hacia la Esperanza Activa",
+          "summary": "Un minicurso para probar el camino en casa.",
+          "meta": "7 pasos · gratuito",
+          "scene": "passes",
+          "text": "Una práctica guiada de unos 15 minutos y una pregunta para pensar en cada paso.",
+          "rows": [
+            [
+              "Duración",
+              "7 pasos, en 7 días o a tu ritmo"
+            ],
+            [
+              "Formato",
+              "Audio y reflexión, en línea"
+            ],
+            [
+              "Precio",
+              "Gratuito"
+            ]
+          ],
+          "button": {
+            "text": "Empieza el minicurso gratuito",
+            "href": "7-pasos-hacia-la-esperanza-activa"
+          }
+        },
+        {
+          "id": "propuesta-camins",
+          "kicker": "Solo/a · caminando",
+          "title": "Caminos de Esperanza [Activa]",
+          "summary": "Cursos digitales y rutas a pie cerca de casa.",
+          "meta": "Gratuito · en línea + rutas a pie",
+          "text": "Cursos digitales de 7 pasos combinados con rutas a pie cerca de casa. Vive en su propia web.",
+          "rows": [
+            [
+              "Cursos",
+              "Cuatro, según lo que te preocupa"
+            ],
+            [
+              "Rutas",
+              "Por pueblos y ciudades"
+            ],
+            [
+              "Precio",
+              "Gratuito"
+            ]
+          ],
+          "button": {
+            "text": "Ir a la web en castellano",
+            "href": "https://esperanzaactiva.org/"
+          },
+          "links": [
             {
-              "page": "7-passes-cap-a-lesperanca-activa",
-              "href": "7-pasos-hacia-la-esperanza-activa",
-              "badge": "Gratuito · en línea",
-              "title": "7 pasos hacia la Esperanza Activa",
-              "text": "Minicurso para probar el camino en casa: una práctica guiada de unos 15 minutos y una pregunta para pensar en cada paso.",
-              "rows": [
-                [
-                  "Duración",
-                  "7 pasos, en 7 días o a tu ritmo"
-                ],
-                [
-                  "Formato",
-                  "Audio y reflexión, en línea"
-                ]
-              ],
-              "price_text": "Precio: gratuito",
-              "button": "Empieza el minicurso gratuito"
-            },
-            {
-              "href": "https://esperanzaactiva.org/",
-              "badge": "Gratuito · en línea + rutas a pie",
-              "title": "Caminos de Esperanza [Activa]",
-              "text": "Cursos digitales de 7 pasos combinados con rutas a pie cerca de casa. Vive en su propia web.",
-              "rows": [
-                [
-                  "Cursos",
-                  "Cuatro, según lo que te preocupa"
-                ],
-                [
-                  "Rutas",
-                  "Por pueblos y ciudades"
-                ]
-              ],
-              "button": "Ir a la web en castellano",
-              "links": [
-                {
-                  "text": "Ir a la web en catalán",
-                  "href": "https://xn--esperanaactiva-mjb.cat/"
-                }
-              ]
+              "text": "Ir a la web en catalán",
+              "href": "https://xn--esperanaactiva-mjb.cat/"
             }
           ]
         },
         {
-          "id": "trabajo-que-reconecta",
-          "kicker": "El Trabajo que Reconecta",
-          "title": "Transitamos la Espiral de El Trabajo que Reconecta, en cuatro duraciones.",
-          "text": "Cuanto más largo, más profundización, comprensión e integración de las etapas de la Espiral: el camino hacia la Esperanza Activa.",
-          "items": [
+          "id": "propuesta-treball-que-reconnecta",
+          "kicker": "Taller, ciclo o fin de semana",
+          "title": "El Trabajo que Reconecta",
+          "summary": "Un camino en grupo para recorrer la espiral.",
+          "meta": "De 4 h a 2 días",
+          "range": "el-treball-que-reconnecta",
+          "scene": "arrels",
+          "text": "Un camino en grupo para recorrer la espiral: arraigar, hacer sitio al dolor, mirar con ojos nuevos y pasar a la acción. Cuanta más duración, más espacio para dinámicas, reflexión y profundización.",
+          "rows": [
+            [
+              "Grupo",
+              "Máx. 16 personas"
+            ]
+          ],
+          "prices": "el-treball-que-reconnecta",
+          "durations": [
             {
-              "page": "lespiral-de-lesperanca-activa",
-              "href": "la-espiral-de-la-esperanza-activa",
-              "badge": "Taller · 4 h",
-              "title": "La Espiral de la Esperanza Activa",
-              "text": "Un taller seguro para reconectar con la vida y transformar el dolor en compromiso concreto.",
-              "rows": [
-                [
-                  "Duración",
-                  "4 horas · máx. 16 personas"
-                ],
-                [
-                  "Próxima edición",
-                  "Próximas fechas por determinar"
-                ]
-              ],
-              "button": "Ver el taller"
+              "href": "el-trabajo-que-reconecta?durada=taller"
             },
             {
-              "page": "el-treball-que-reconnecta",
-              "href": "el-trabajo-que-reconecta",
-              "badge": "Ciclo · 4 × 2 h",
-              "title": "El Trabajo que Reconecta",
-              "text": "Cuatro sesiones para recorrer la espiral: arraigar, hacer sitio al dolor, mirar con ojos nuevos y pasar a la acción.",
-              "rows": [
-                [
-                  "Duración",
-                  "4 sesiones de 2 h · máx. 16"
-                ],
-                [
-                  "Próxima edición",
-                  "Próximas fechas por determinar"
-                ]
-              ],
-              "button": "Ver el ciclo"
+              "href": "el-trabajo-que-reconecta?durada=cicle"
             },
             {
-              "page": "un-pont-desperanca-2",
-              "href": "un-puente-de-esperanza",
-              "badge": "Fin de semana · 2 × 6 h",
-              "title": "Un puente de esperanza",
-              "text": "Una inmersión de dos días para profundizar en grupo, con tiempo para integrarlo.",
-              "rows": [
-                [
-                  "Duración",
-                  "2 sesiones de 6 h · máx. 16"
-                ],
-                [
-                  "Próxima edición",
-                  "Próximas fechas por determinar"
-                ]
-              ],
-              "button": "Ver el fin de semana"
-            },
-            {
-              "page": "grup-regular-de-el-treball-que-reconnecta",
-              "href": "grupo-regular-de-el-trabajo-que-reconecta",
-              "badge": "Grupo · continuidad",
-              "title": "El Trabajo que Reconecta · grupo regular",
-              "text": "Un espacio estable para detenerte y reconectar. Cada sesión se modela según lo que necesita el grupo.",
-              "rows": [
-                [
-                  "Duración",
-                  "Sesiones de 2 h · máx. 16"
-                ],
-                [
-                  "Frecuencia",
-                  "Cada mes o cada 15 días"
-                ]
-              ],
-              "price_note": "Precios por mes.",
-              "button": "Ver el grupo regular"
+              "href": "el-trabajo-que-reconecta?durada=cap-de-setmana"
             }
-          ]
+          ],
+          "editions": true,
+          "editions_page": "el-trabajo-que-reconecta",
+          "editions_value": ""
         },
         {
-          "id": "individual",
-          "kicker": "De tú a tú",
-          "title": "Un espacio solo para ti",
-          "items": [
-            {
-              "page": "acompanyament-individual",
-              "href": "acompanamiento-individual#inscripcion",
-              "badge": "De tú a tú",
-              "title": "Acompañamiento individual",
-              "text": "Hablamos de lo que te pesa, practicamos herramientas para regularte y diseñamos un plan de acción y de autocuidado.",
-              "rows": [
-                [
-                  "Duración",
-                  "Sesiones de 1 h o de 1,5 h"
-                ],
-                [
-                  "Formato",
-                  "En línea o presencial"
-                ]
-              ],
-              "button": "Reserva una sesión"
-            }
-          ]
+          "id": "propuesta-grup-regular",
+          "kicker": "Grupo · continuidad",
+          "title": "El Trabajo que Reconecta · grupo regular",
+          "summary": "Un espacio estable para detenerte y reconectar.",
+          "meta": "2 h · cada mes o cada 15 días",
+          "range": "grup-regular-de-el-treball-que-reconnecta",
+          "range_suffix": "al mes",
+          "text": "Cada sesión se modela según lo que necesita el grupo.",
+          "rows": [
+            [
+              "Duración",
+              "Sesiones de 2 h · máx. 16"
+            ],
+            [
+              "Frecuencia",
+              "Cada mes o cada 15 días"
+            ]
+          ],
+          "prices": "grup-regular-de-el-treball-que-reconnecta",
+          "price_note": "Precios por mes.",
+          "button": {
+            "text": "Ver el grupo regular",
+            "href": "grupo-regular-de-el-trabajo-que-reconecta"
+          }
+        },
+        {
+          "id": "propuesta-individual",
+          "kicker": "Tú y una persona acompañante",
+          "title": "Acompañamiento individual",
+          "summary": "Hablamos de lo que te pesa y diseñamos un plan de acción.",
+          "meta": "1 h o 1,5 h",
+          "range": "acompanyament-individual",
+          "scene": "costat",
+          "text": "Hablamos de lo que te pesa, practicamos herramientas para regularte y diseñamos un plan de acción y de autocuidado.",
+          "rows": [
+            [
+              "Duración",
+              "Sesiones de 1 h o de 1,5 h"
+            ],
+            [
+              "Formato",
+              "En línea o presencial"
+            ]
+          ],
+          "prices": "acompanyament-individual",
+          "button": {
+            "text": "Reserva una sesión",
+            "href": "acompanamiento-individual#inscripcion"
+          }
         }
       ]
     },

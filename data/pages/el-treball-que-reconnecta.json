@@ -1,51 +1,180 @@
 {
   "title": "El Treball que Reconnecta",
-  "metafora": {"name": "arrels", "text": "Sota terra, les arrels es troben: formem part d’una xarxa viva."},
+  "metafora": {
+    "name": "arrels",
+    "text": "Sota terra, les arrels es troben: formem part d’una xarxa viva."
+  },
   "kicker": "Propostes",
   "lead": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
   "description": "Un espai per reconnectar amb la vida, transformar el dolor personal i/o pel món en força activa i trobar formes concretes de compromís personal i comunitari.",
-  "prices": {"options": [{"values": [61, 90, 119]}]},
+  "prices": {
+    "options": [
+      {
+        "label": "Taller · 4 h",
+        "values": [
+          31,
+          45,
+          59
+        ]
+      },
+      {
+        "label": "Cicle · 4 × 2 h",
+        "values": [
+          61,
+          90,
+          119
+        ]
+      },
+      {
+        "label": "Cap de setmana · 2 × 6 h",
+        "values": [
+          92,
+          135,
+          179
+        ]
+      }
+    ]
+  },
   "sections": [
     {
-      "type": "text",
+      "type": "durades",
       "band": "white",
-      "id": "presentacio",
-      "paragraphs": [
-        "Aquest cicle ofereix **un lloc segur** per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
+      "id": "durada",
+      "title": "Tria la durada",
+      "label": "Durada",
+      "default": "cicle",
+      "tiers": [
+        "Reduït",
+        "Estàndard",
+        "Sostenidor"
       ],
-      "buttons": [
+      "items": [
         {
-          "text": "Inscripció",
-          "href": "#inscripcio"
+          "key": "taller",
+          "tab": "Taller",
+          "tab_sub": "4 h",
+          "phrase": "Una primera immersió a l'espiral, en una sola trobada.",
+          "value": "Taller (4 h)",
+          "title": "4 hores",
+          "paragraphs": [
+            "**Un taller segur** per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
+          ],
+          "dades": [
+            "Màx. 16 participants.",
+            "31 / 45 / 59 €: preu reduït / estàndard / sostenidor.",
+            "**Si sou una entitat, cooperativa o col·lectiu** i voleu fer aquest taller, els preus són per a grups i a mida: escriviu-nos i us enviem un pressupost."
+          ],
+          "buttons": [
+            {
+              "text": "Inscripció",
+              "href": "#inscripcio"
+            },
+            {
+              "text": "Contacta amb nosaltres",
+              "href": "contacte"
+            }
+          ]
         },
         {
-          "text": "Contacta amb nosaltres",
-          "href": "contacte"
+          "key": "cicle",
+          "tab": "Cicle",
+          "tab_sub": "4 × 2 h",
+          "phrase": "Temps entre sessions per integrar el que va sorgint.",
+          "value": "Cicle (4 × 2 h)",
+          "title": "4 sessions de 2 hores",
+          "paragraphs": [
+            "Aquest cicle ofereix **un lloc segur** per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides)."
+          ],
+          "dades": [
+            "Màx. 16 participants.",
+            "61 € preu reduït / 90 € preu estàndard / 119 € preu sostenidor.",
+            "**Si sou una entitat, cooperativa o col·lectiu** i voleu fer aquest taller, els preus són per a grups i a mida: escriviu-nos i us enviem un pressupost."
+          ],
+          "buttons": [
+            {
+              "text": "Inscripció",
+              "href": "#inscripcio"
+            },
+            {
+              "text": "Contacta amb nosaltres",
+              "href": "contacte"
+            }
+          ]
+        },
+        {
+          "key": "cap-de-setmana",
+          "tab": "Cap de setmana",
+          "tab_sub": "2 × 6 h",
+          "phrase": "Dos dies d'immersió, amb més espai per anar a fons.",
+          "value": "Cap de setmana (2 × 6 h)",
+          "title": "2 sessions de 6 hores (dissabte i diumenge)",
+          "paragraphs": [
+            "De vegades, per metabolitzar tot allò que ens travessa, necessitem una pausa més llarga.",
+            "Aquest taller de cap de setmana és **un espai d’immersió** per reconnectar amb la vida i transformar el dolor en força compartida.",
+            "Durant dos dies, teixirem un lloc segur per treballar amb calma tant les crisis personals (l’estrès, la incertesa vital) com l’esgotament que ens generen els grans reptes globals.",
+            "Temps de qualitat per trobar, en comunitat, **formes concretes d’acció i compromís**."
+          ],
+          "dades": [
+            "Màx. 16 participants.",
+            "92 € preu reduït / 135 € preu estàndard / 179 € preu sostenidor.",
+            "**Si sou una entitat, cooperativa o col·lectiu** i voleu fer aquest taller, els preus són per a grups i a mida: escriviu-nos i us enviem un pressupost."
+          ],
+          "buttons": [
+            {
+              "text": "Inscripció",
+              "href": "#inscripcio"
+            },
+            {
+              "text": "Contacta amb nosaltres",
+              "href": "contacte"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "type": "note",
-      "style": "info",
-      "id": "dades",
-      "title": "4 sessions de 2 hores",
-      "paragraphs": [
-        "Màx. 16 participants.",
-        "61 € preu reduït / 90 € preu estàndard / 119 € preu sostenidor.",
-        "**Si sou una entitat, cooperativa o col·lectiu** i voleu fer aquest taller, els preus són per a grups i a mida: escriviu-nos i us enviem un pressupost."
       ]
     },
     {
       "type": "text",
       "html": true,
-      "title": "Què t’emportaràs del cicle",
+      "title": "Què t'emportaràs",
       "infografia": "espiral",
-      "variant": "cicle",
+      "variant": "tqr",
+      "id": "que-temportaras"
+    },
+    {
+      "type": "text",
+      "html": true,
+      "list": [
+        "Recorrerem de manera vivencial l’Espiral d’El Treball que Reconnecta (Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
+        "Treballarem autocura, resiliència i suport comunitari per transformar dolor i incertesa en claredat, esperança activa i acció significativa."
+      ],
+      "durada": "taller",
+      "band": "white",
+      "id": "emportaras-taller"
+    },
+    {
+      "type": "text",
+      "html": true,
       "paragraphs": [
         "Recorrerem de manera vivencial l’espiral d’El Treball que Reconnecta de Joanna Macy: Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.",
         "En 4 sessions, anirem fent **un camí compartit** que combina autocura, resiliència i suport comunitari.",
         "Treballarem recursos per sostenir emocions difícils i recuperar claredat quan hi ha incertesa. L’objectiu és que puguis sortir amb més força interior, una mirada més ampla i **passos concrets** per sostenir en el temps allò que hagis descobert i viscut."
-      ]
+      ],
+      "durada": "cicle",
+      "band": "white",
+      "id": "emportaras-cicle"
+    },
+    {
+      "type": "text",
+      "html": true,
+      "paragraphs": [
+        "En aquest espai tindrem el temps necessari per aturar-nos i connectar a fons amb allò que realment ens importa.",
+        "Treballarem des del marc d'El Treball que Reconnecta, recorrent la famosa espiral de Joanna Macy (Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).",
+        "Un camí compartit d’autocura i xarxa per aprendre a sostenir les emocions difícils davant la incertesa.",
+        "L’objectiu és que recuperis la claredat i surtis d’aquí amb **la força interior i els passos concrets** per sostenir-te en el temps."
+      ],
+      "durada": "cap-de-setmana",
+      "band": "white",
+      "id": "emportaras-cap-de-setmana"
     },
     {
       "type": "text",
@@ -77,11 +206,11 @@
       "type": "faq",
       "id": "preguntes",
       "title": "FAQ",
-      "intro": "Si tens dubtes sobre si aquest taller és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
+      "intro": "Si tens dubtes sobre si aquesta proposta és per a tu, aquí tens respostes ràpides. Si vols, escriu-nos i t’orientem.",
       "items": [
         [
-          "Aquest cicle és per a mi si estic passant un moment difícil?",
-          "<p>Pot ser-ho. El cicle està pensat com un lloc segur per explorar emocions difícils i enfortir resiliència i autocura.</p><p>Tu marques el ritme i esculls què compartir.</p><p>Si estàs en una crisi aguda, és millor valorar-ho abans per assegurar el suport adequat.</p><p>Consulta’ns. En el nostre equip hi ha professionals de la psicoteràpia i et podem ajudar a valorar-ho.</p>"
+          "Aquesta proposta és per a mi si estic passant un moment difícil?",
+          "<p>Pot ser-ho. El Treball que Reconnecta està pensat com un lloc segur per explorar emocions difícils i enfortir resiliència i autocura.</p><p>Tu marques el ritme i esculls què compartir.</p><p>Si estàs en una crisi aguda, és millor valorar-ho abans per assegurar el suport adequat.</p><p>Consulta’ns. En el nostre equip hi ha professionals de la psicoteràpia i et podem ajudar a valorar-ho.</p>"
         ],
         [
           "Cal experiència prèvia en atenció plena o treball grupal?",
@@ -92,7 +221,7 @@
           "<p>De crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també de crisis globals (polarització, discursos d’odi, canvi climàtic…).</p>"
         ],
         [
-          "Què passa després del cicle?",
+          "Què passa després?",
           "<p>Tanquem amb passos petits i concrets i amb la idea de continuïtat: xarxes de suport i compromís compartit.</p>"
         ],
         [
@@ -108,8 +237,8 @@
           "<p>És el resultat d’aquest recorregut: transformar dolor i incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.</p>"
         ],
         [
-          "I si em preocupa “desbordar-me” emocionalment durant el cicle?",
-          "<p>És una preocupació habitual. El cicle està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar, no compartir o sortir un moment si ho necessites.</p><p>Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
+          "I si em preocupa “desbordar-me” emocionalment?",
+          "<p>És una preocupació habitual. El Treball que Reconnecta està plantejat com un espai segur i respectuós, on tu marques el ritme: pots parar, respirar, no compartir o sortir un moment si ho necessites.</p><p>Treballem recursos d’autocura i estabilització perquè les emocions difícils puguin ser escoltades sense quedar-hi atrapats. Si estàs en un moment especialment sensible, ens ho pots comentar abans i ho valorem plegats per assegurar que sigui l’entorn adequat per a tu.</p>"
         ],
         [
           "Per què tres preus? (Reduït / Estàndard / Sostenidor)",
@@ -127,7 +256,8 @@
           "form": "1FAIpQLSfKqEO_6g0B2jL59h_0nN983hoacescR_bPOTuv1lc7-RZyvA",
           "height": 3000
         }
-      ]
+      ],
+      "prefill": "entry.1055864060"
     }
   ]
 }

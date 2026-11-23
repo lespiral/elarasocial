@@ -300,8 +300,8 @@
               "button": "Veure la proposta"
             },
             {
-              "page": "un-pont-desperanca-2",
-              "href": "un-pont-desperanca-2",
+              "page": "el-treball-que-reconnecta",
+              "href": "el-treball-que-reconnecta?durada=cap-de-setmana",
               "badge": "Cap de setmana",
               "title": "Un pont d'esperança comunitària",
               "text": "Una immersió de dos dies per teixir vincle i acció compartida al territori.",
@@ -321,7 +321,7 @@
         }
       ],
       "after": [
-        "Per a grups del territori, també fem <a href=\"lespiral-de-lesperanca-activa\">L'Espiral de l'Esperança Activa</a> i el <a href=\"grup-regular-de-el-treball-que-reconnecta\">grup regular d'El Treball que Reconnecta</a>."
+        "Per a grups del territori, també fem <a href=\"../el-treball-que-reconnecta/?durada=taller\">L'Espiral de l'Esperança Activa</a> i el <a href=\"../grup-regular-de-el-treball-que-reconnecta/\">grup regular d'El Treball que Reconnecta</a>."
       ],
       "html": true
     },
