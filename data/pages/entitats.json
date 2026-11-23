@@ -308,6 +308,7 @@
         },
         {
           "id": "prop-camins",
+          "open": true,
           "kicker": "Per a les persones que atenguéu",
           "title": "Camins d'Esperança [Activa] per a les persones que atenguéu",
           "summary": "Cursos en línia i caminades que surten del vostre espai. Només cal orientar.",

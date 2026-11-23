@@ -951,3 +951,16 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .feature__search ~ .feature__actions .btn{background:transparent;color:inherit;border:2px solid currentColor}
 
 @media (min-width: 900px) { .flow--3 { grid-template-columns: repeat(3, 1fr); max-width: 920px; margin-inline: auto; } }
+
+/* Cursos «en preparació» a /entitats/camins/: targetes compactes en fila (icona petita a l'esquerra) */
+.cards--compact { grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 760px) { .cards--compact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; } }
+.cards--compact .card--course { display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: 14px; align-items: start; justify-items: start; text-align: left; padding: 14px 16px; min-width: 0; }
+.cards--compact .card--course:hover { transform: none; box-shadow: var(--shadow-sm); }
+.cards--compact .card__icon { grid-row: 1 / span 3; width: 44px; height: 44px; margin: 0; }
+.cards--compact .card__icon .i { width: 24px; height: 24px; }
+.cards--compact .card__badge { margin: 0 0 4px; font-size: .8rem; }
+.cards--compact .card__title { font-size: 1rem; margin-bottom: 2px; }
+.cards--compact .card__text { margin: 0; font-size: .95rem; flex: none; }
+.cards--compact .card__text p { margin: 0; }
+

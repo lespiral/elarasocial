@@ -309,6 +309,7 @@
         },
         {
           "id": "prop-camins",
+          "open": true,
           "kicker": "Para las personas que atendéis",
           "title": "Caminos de Esperanza [Activa] para las personas que atendéis",
           "summary": "Cursos en línea y caminatas que salen de vuestro espacio. Solo hace falta orientar.",

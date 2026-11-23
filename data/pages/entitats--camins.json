@@ -142,7 +142,7 @@
     },
     {
       "type": "cards",
-      "tone": "courses",
+      "tone": "compact",
       "band": "white",
       "id": "cursos",
       "title": "Els quatre cursos",
@@ -178,8 +178,7 @@
           "text": "Veure tots els cursos a Camins",
           "href": "https://xn--esperanaactiva-mjb.cat/"
         }
-      ],
-      "compact": true
+      ]
     },
     {
       "type": "limits",

@@ -142,7 +142,7 @@
     },
     {
       "type": "cards",
-      "tone": "courses",
+      "tone": "compact",
       "band": "white",
       "id": "cursos",
       "title": "Los cuatro cursos",
@@ -178,8 +178,7 @@
           "text": "Ver todos los cursos en Caminos",
           "href": "https://esperanzaactiva.org/"
         }
-      ],
-      "compact": true
+      ]
     },
     {
       "type": "limits",
