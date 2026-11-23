@@ -722,6 +722,25 @@ h1 { font-weight: 800; letter-spacing: -.022em; }
 .durades__phrase { margin: 0; text-align: center; text-wrap: balance; font: italic 400 1.1rem/1.45 var(--font-body); color: var(--ink-soft); }
 .durades__panel .prose__box { margin-top: 18px; }
 .js .dur-item:not(.is-on) { display: none; }
+/* Entitats: acordió de propostes en grups, i la targeta gratuïta de Camins amb una franja i una etiqueta diferents */
+.fmt-group { margin: 14px 0 12px; }
+.fmt-li--g { flex-direction: column; }
+.fmt-li--g:not(:first-child) { margin-top: 18px; }
+.fmt-group__t { margin: 0 0 4px; font: 800 1.2rem/1.25 var(--font-head); color: var(--blau-900); }
+.fmt-group__p { margin: 0; font-size: 1rem; line-height: 1.5; color: var(--ink-soft); }
+.fmt-li .fmt.fmt--free { border-top: 6px solid var(--sol); background: #fffdf6; }
+.fmt__tag { display: inline-block; justify-self: start; align-self: flex-start; margin: 0 0 6px; padding: 4px 12px; border-radius: 999px; background: #fbf3d9; color: #6b5410; font: 800 .8rem/1.3 var(--font-head); letter-spacing: .03em; }
+.fmt__h { align-items: flex-start; }
+.flow__go { text-align: center; margin: 22px 0 0; }
+/* Passos que apareixen un darrere l'altre, una sola vegada (sense JS o amb moviment reduït es veuen tots d'entrada) */
+@media (prefers-reduced-motion: no-preference) {
+  .js .flow--anim:not(.is-go) .flow__i { opacity: 0; transform: translateY(14px); }
+  .js .flow--anim .flow__i { transition: opacity .7s ease, transform .7s ease; }
+  .js .flow--anim.is-go .flow__i:nth-child(2) { transition-delay: .5s; }
+  .js .flow--anim.is-go .flow__i:nth-child(3) { transition-delay: 1s; }
+  .js .flow--anim.is-go .flow__i:nth-child(4) { transition-delay: 1.5s; }
+}
+
 .chips { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .chips li { padding: 9px 16px; border-radius: 999px; background: var(--paper); font: 700 .95rem/1.3 var(--font-head); color: var(--blau-900); box-shadow: var(--shadow-sm); }
 .chips--dark { justify-content: flex-start; margin-top: 4px; }
@@ -930,3 +949,5 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .feature__searchrow .btn{min-height:48px}
 .feature__searchrow input{flex:1 1 320px;max-width:460px}
 .feature__search ~ .feature__actions .btn{background:transparent;color:inherit;border:2px solid currentColor}
+
+@media (min-width: 900px) { .flow--3 { grid-template-columns: repeat(3, 1fr); max-width: 920px; margin-inline: auto; } }

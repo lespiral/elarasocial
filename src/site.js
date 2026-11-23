@@ -172,4 +172,12 @@
       if (b) setForm(b.getAttribute('data-form-value'));
     } else show(box.getAttribute('data-default'), false, false);
   })();
+  // Els passos animats (flow--anim) apareixen una sola vegada en veure's
+  (function () {
+    var els = document.querySelectorAll('[data-flow]');
+    if (!els.length) return;
+    if (!('IntersectionObserver' in window)) { Array.prototype.forEach.call(els, function (e) { e.classList.add('is-go'); }); return; }
+    var io = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('is-go'); io.unobserve(x.target); } }); }, { threshold: .35 });
+    Array.prototype.forEach.call(els, function (e) { io.observe(e); });
+  })();
 })();

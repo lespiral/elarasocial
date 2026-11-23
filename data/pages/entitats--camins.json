@@ -1,0 +1,258 @@
+{
+  "title": "Doneu a les persones que atenen alguna cosa concreta a fer",
+  "kicker": "Camins d'Esperança [Activa] per a entitats",
+  "lead": "Esperança Activa són cursos en línia gratuïts i caminades que surten de la porta del vostre espai. Vosaltres només orienteu; cada persona ho fa al seu ritme.",
+  "description": "Cursos en línia gratuïts i caminades que surten de la porta del vostre espai: com ho fa una persona, què hi guanyeu i què us demanem.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Veure què rebran les persones",
+      "href": "#persones-reben"
+    },
+    {
+      "text": "Parlem de la vostra entitat",
+      "href": "entitats#demana-proposta"
+    }
+  ],
+  "sections": [
+    {
+      "type": "flow",
+      "vertical": true,
+      "band": "white",
+      "id": "persones-reben",
+      "title": "Com ho fa una persona",
+      "animated": true,
+      "items": [
+        {
+          "icon": "map-trifold",
+          "title": "Escriu on viu",
+          "text": "Un poble, una ciutat o una adreça, o la seva ubicació."
+        },
+        {
+          "icon": "signpost",
+          "title": "Veu les rutes properes",
+          "text": "Per a cada curs, les rutes que comencen més a prop."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Tria un curs i camina",
+          "text": "El curs en línia al seu ritme i la ruta a peu."
+        }
+      ],
+      "after": [
+        "Si el poble encara no té ruta, Camins ho diu clarament. Els cursos en línia es poden fer des de qualsevol lloc."
+      ],
+      "buttons": [
+        {
+          "text": "Veure les rutes a Camins d'Esperança [Activa]",
+          "href": "https://xn--esperanaactiva-mjb.cat/ciutats/"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "com-ho-viuria",
+      "title": "Com ho viuria una persona del vostre espai",
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Rep l'orientació al vostre espai",
+          "text": "Amb un cartell, un QR o paraules vostres."
+        },
+        {
+          "icon": "headphones",
+          "title": "Fa la pràctica",
+          "text": "Guiada, d'uns 15 minuts, a casa."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina des del vostre espai",
+          "text": "Al seu ritme."
+        },
+        {
+          "icon": "sparkle",
+          "title": "S'ho porta al dia a dia",
+          "text": "Un petit pas possible."
+        }
+      ],
+      "animated": true
+    },
+    {
+      "type": "doors",
+      "band": "white",
+      "id": "portes",
+      "title": "Quin és el vostre espai?",
+      "items": [
+        {
+          "title": "Salut i serveis comunitaris",
+          "text": "CAP i serveis socials: orientar des de la consulta o l'atenció.",
+          "style": "dark",
+          "href": "entitats-salut",
+          "button": "Veure el recurs per a salut",
+          "id": "salut"
+        },
+        {
+          "title": "Escoles i projectes educatius",
+          "text": "De moment, per a mestres, educadors i famílies.",
+          "style": "light",
+          "href": "entitats-escoles",
+          "button": "Veure el recurs per a escoles",
+          "id": "escoles"
+        },
+        {
+          "title": "Administració i prescripció social",
+          "text": "Un recurs públic i gratuït per orientar des de serveis municipals.",
+          "style": "light",
+          "href": "entitats-administracio",
+          "button": "Veure el recurs per a l'administració",
+          "id": "administracio"
+        },
+        {
+          "title": "Entitats i col·lectius",
+          "text": "Economia social i solidària, tercer sector i espais afins.",
+          "style": "dark",
+          "href": "entitats-collectius",
+          "button": "Veure el recurs per a entitats",
+          "id": "entitats"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "soft",
+      "id": "guanyeu-demanem",
+      "title": "Què hi guanyeu i què us demanem",
+      "gain": {
+        "title": "Què hi guanyeu",
+        "items": [
+          "Un recurs gratuït i sense llista d'espera.",
+          "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
+          "Només cal orientar: la resta ho fa cada persona al seu ritme."
+        ]
+      },
+      "ask": {
+        "title": "Què us demanem",
+        "items": [
+          "Per orientar, res: sense acord ni tràmit.",
+          "Per ser centre col·laborador, un acord per escrit que concretem plegats.",
+          "Que no substitueixi cap atenció que ja feu."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "white",
+      "id": "cursos",
+      "title": "Els quatre cursos",
+      "intro": "Gratuïts i en línia, a fer al seu ritme. Els cursos són en preparació; les rutes ja es poden fer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Properament",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Properament",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "globe",
+          "badge": "Properament",
+          "title": "Quan el futur del planeta et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "house",
+          "badge": "Properament",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Veure tots els cursos a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "type": "limits",
+      "band": "soft",
+      "id": "limits",
+      "title": "Els límits",
+      "paragraphs": [
+        "No és teràpia ni un servei d'urgències. Si algú es troba malament, orienteu cap a aquests números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (només Catalunya)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atenció a la conducta suïcida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergències",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "accent",
+      "band": "white",
+      "id": "mes-enlla",
+      "title": "Si voleu anar més enllà",
+      "intro": "Tres maneres de fer-ho, de menys a més compromís. Podeu parar quan vulgueu.",
+      "items": [
+        {
+          "icon": "seal-check",
+          "title": "1. Centre col·laborador",
+          "text": "Pàgina pròpia a Camins, cartell amb QR i segell. El cost el concretem en la primera conversa.",
+          "href": "entitats-centre-colaborador",
+          "button": "Veure com funciona",
+          "id": "centre-colaborador"
+        },
+        {
+          "icon": "lightbulb",
+          "title": "2. Curs a mida",
+          "text": "Un curs separat, amb els vostres recursos i vídeos nous. Es pressuposta com a encàrrec.",
+          "href": "entitats-curs-a-mida",
+          "button": "Veure com funciona"
+        },
+        {
+          "icon": "hand-heart",
+          "title": "3. Acompanyament al vostre equip o territori",
+          "text": "Fins a 20 persones, presencial, en línia o híbrid; preu a mida, amb pressupost previ i sense compromís.",
+          "href": "entitats#equip",
+          "button": "Veure les propostes"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "band": "soft",
+      "id": "parlem",
+      "title": "Parlem de com ho faríem al vostre espai",
+      "paragraphs": [
+        "Us responem en 5 dies laborables. La primera conversa és sense compromís."
+      ],
+      "buttons": [
+        {
+          "text": "Parlem de la vostra entitat",
+          "href": "entitats#demana-proposta"
+        }
+      ]
+    }
+  ]
+}

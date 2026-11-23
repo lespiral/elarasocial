@@ -142,7 +142,7 @@
 {% macro doors(items, root) -%}
 <div class="doors">
   {% for d in items %}
-  <article class="door door--{{ d.style or 'light' }}">
+  <article class="door door--{{ d.style or 'light' }}"{% if d.id %} id="{{ d.id }}"{% endif %}>
     {% if d.kicker %}<p class="door__kicker">{{ d.kicker }}</p>{% endif %}
     <h2 class="door__title">{{ d.title }}</h2>
     {% if d.ask %}<p class="door__ask">{{ d.ask }}</p>{% endif %}
@@ -300,10 +300,11 @@
          "editions": true (bloc «Propera edició») i "buttons". #}
       {% set metafora = none %}{% include "infografies/infografia-metafora.html" %}
       {% set lst = s.layout == 'list' %}
+      {# "group": {"id", "title", "text"} en una targeta: davant d'ella surt el títol del grup (Entitats). "tag": etiqueta destacada (p. ex. «Gratuït per a les persones»); "free": true → franja de color diferent. #}
       <ul class="formats{% if lst %} formats--list{% endif %}">
         {% for f in s["items"] %}
-        <li class="fmt-li"><details class="fmt"{% if f.id %} id="{{ f.id }}"{% endif %}{% if not lst or f.open %} open{% endif %}>
-          <summary class="fmt__sum"><span class="fmt__h"><span class="fmt__k">{{ f.kicker }}</span><span class="fmt__t">{{ f.title }}</span>{% if f.summary %}<span class="fmt__s">{{ f.summary }}</span>{% endif %}{% if f.meta or f.range_text %}<span class="fmt__m">{{ f.meta }}{% if f.meta and f.range_text %} · {% endif %}{% if f.range_text %}<span class="fmt__r">{{ f.range_text }}</span>{% endif %}</span>{% endif %}</span>{{ icon('caret', 'fmt__caret') }}</summary>
+        <li class="fmt-li{% if f.free %} fmt-li--free{% endif %}{% if f.group %} fmt-li--g{% endif %}">{% if f.group %}<div class="fmt-group"><h3 class="fmt-group__t"{% if f.group.id %} id="{{ f.group.id }}"{% endif %}>{{ f.group.title }}</h3>{% if f.group.text %}<p class="fmt-group__p">{{ f.group.text }}</p>{% endif %}</div>{% endif %}<details class="fmt{% if f.free %} fmt--free{% endif %}"{% if f.id %} id="{{ f.id }}"{% endif %}{% if not lst or f.open %} open{% endif %}>
+          <summary class="fmt__sum"><span class="fmt__h">{% if f.tag %}<span class="fmt__tag">{{ f.tag }}</span>{% endif %}<span class="fmt__k">{{ f.kicker }}</span><span class="fmt__t">{{ f.title }}</span>{% if f.summary %}<span class="fmt__s">{{ f.summary }}</span>{% endif %}{% if f.meta or f.range_text %}<span class="fmt__m">{{ f.meta }}{% if f.meta and f.range_text %} · {% endif %}{% if f.range_text %}<span class="fmt__r">{{ f.range_text }}</span>{% endif %}</span>{% endif %}</span>{{ icon('caret', 'fmt__caret') }}</summary>
           <div class="fmt__body">
             {% if f.scene %}<div class="mt" data-metafora="{{ f.scene }}"{% if lst %} data-once{% endif %} aria-label="{{ f.title }}"></div>{% endif %}
             <p class="fmt__text">{{ f.text }}</p>
@@ -386,7 +387,7 @@
     {% elif s.type == 'flow' %}
       {# Una cadena de passos amb icona: [{"icon", "title", "text"}]. "vertical": al mòbil, en columna amb fletxes avall; si no, 2 columnes. #}
       {% for p in s.paragraphs or [] %}<p class="flow__lead">{{ p }}</p>{% endfor %}
-      <ol class="flow{% if s.vertical %} flow--v{% endif %}">
+      <ol class="flow{% if s.vertical %} flow--v{% endif %}{% if s["items"]|length == 3 %} flow--3{% endif %}{% if s.animated %} flow--anim{% endif %}"{% if s.animated %} data-flow{% endif %}>
         {% for it in s["items"] %}<li class="flow__i"><span class="flow__ic" aria-hidden="true">{{ icon(it.icon) }}</span><strong class="flow__t">{{ it.title }}</strong>{% if it.text %}<span class="flow__d">{{ it.text }}</span>{% endif %}</li>{% endfor %}
       </ol>
       {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}

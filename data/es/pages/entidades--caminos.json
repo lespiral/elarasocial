@@ -1,0 +1,259 @@
+{
+  "title": "Dad a las personas que atendéis algo concreto que hacer",
+  "kicker": "Caminos de Esperanza [Activa] para entidades",
+  "lead": "Esperanza Activa son cursos en línea gratuitos y caminatas que salen de la puerta de vuestro espacio. Vosotros solo orientáis; cada persona lo hace a su ritmo.",
+  "description": "Cursos en línea gratuitos y caminatas que salen de la puerta de vuestro espacio: cómo lo hace una persona, qué ganáis y qué os pedimos.",
+  "section": "entidades",
+  "actions": [
+    {
+      "text": "Ver qué recibirán las personas",
+      "href": "#personas-reciben"
+    },
+    {
+      "text": "Hablemos de vuestra entidad",
+      "href": "entidades#pide-propuesta"
+    }
+  ],
+  "sections": [
+    {
+      "type": "flow",
+      "vertical": true,
+      "band": "white",
+      "id": "personas-reciben",
+      "title": "Cómo lo hace una persona",
+      "animated": true,
+      "items": [
+        {
+          "icon": "map-trifold",
+          "title": "Escribe dónde vive",
+          "text": "Un pueblo, una ciudad o una dirección, o su ubicación."
+        },
+        {
+          "icon": "signpost",
+          "title": "Ve las rutas cercanas",
+          "text": "Para cada curso, las rutas que empiezan más cerca."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Elige un curso y camina",
+          "text": "El curso en línea a su ritmo y la ruta a pie."
+        }
+      ],
+      "after": [
+        "Si el pueblo aún no tiene ruta, Caminos lo dice claramente. Los cursos en línea se pueden hacer desde cualquier lugar."
+      ],
+      "buttons": [
+        {
+          "text": "Ver las rutas en Caminos de Esperanza [Activa]",
+          "href": "https://esperanzaactiva.org/ciutats/"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "como-lo-viviria",
+      "title": "Cómo lo viviría una persona de vuestro espacio",
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Recibe la orientación en vuestro espacio",
+          "text": "Con un cartel, un QR o palabras vuestras."
+        },
+        {
+          "icon": "headphones",
+          "title": "Hace la práctica",
+          "text": "Guiada, de unos 15 minutos, en casa."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina desde vuestro espacio",
+          "text": "A su ritmo."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Se lo lleva al día a día",
+          "text": "Un pequeño paso posible."
+        }
+      ],
+      "animated": true
+    },
+    {
+      "type": "doors",
+      "band": "white",
+      "id": "puertas",
+      "title": "¿Cuál es vuestro espacio?",
+      "items": [
+        {
+          "title": "Salud y servicios comunitarios",
+          "text": "Atención primaria y servicios sociales: orientar desde la consulta o la atención.",
+          "style": "dark",
+          "href": "entidades-salud",
+          "button": "Ver el recurso para salud",
+          "id": "salud"
+        },
+        {
+          "title": "Escuelas y proyectos educativos",
+          "text": "De momento, para maestros, educadores y familias.",
+          "style": "light",
+          "href": "entidades-escuelas",
+          "button": "Ver el recurso para escuelas",
+          "id": "escuelas"
+        },
+        {
+          "title": "Administración y prescripción social",
+          "text": "Un recurso público y gratuito para orientar desde servicios municipales.",
+          "style": "light",
+          "href": "entidades-administracion",
+          "button": "Ver el recurso para la administración",
+          "id": "administracion"
+        },
+        {
+          "title": "Entidades y colectivos",
+          "text": "Economía social y solidaria, tercer sector y espacios afines.",
+          "style": "dark",
+          "href": "entidades-colectivos",
+          "button": "Ver el recurso para entidades",
+          "id": "entidades"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "soft",
+      "id": "ganais-pedimos",
+      "title": "Qué ganáis y qué os pedimos",
+      "gain": {
+        "title": "Qué ganáis",
+        "items": [
+          "Un recurso gratuito y sin lista de espera.",
+          "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
+          "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
+        ]
+      },
+      "ask": {
+        "title": "Qué os pedimos",
+        "items": [
+          "Para orientar, nada: sin acuerdo ni trámite.",
+          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
+          "Que no sustituya ninguna atención que ya hacéis."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "white",
+      "id": "cursos",
+      "title": "Los cuatro cursos",
+      "intro": "Gratuitos y en línea, a hacer a su ritmo. Los cursos están en preparación; las rutas ya se pueden hacer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Próximamente",
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Próximamente",
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        },
+        {
+          "icon": "globe",
+          "badge": "Próximamente",
+          "title": "Cuando el futuro del planeta te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "house",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Ver todos los cursos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "type": "limits",
+      "band": "soft",
+      "id": "limits",
+      "title": "Los límites",
+      "paragraphs": [
+        "No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia estos números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (solo Cataluña)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atención a la conducta suicida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergencias",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "accent",
+      "band": "white",
+      "id": "mas-alla",
+      "title": "Si queréis ir más allá",
+      "intro": "Tres maneras de hacerlo, de menos a más compromiso. Podéis parar cuando queráis.",
+      "items": [
+        {
+          "icon": "seal-check",
+          "title": "1. Centro colaborador",
+          "text": "Página propia en Caminos, cartel con QR y sello. El coste lo concretamos en la primera conversación.",
+          "href": "entidades-centro-colaborador",
+          "button": "Ver cómo funciona",
+          "id": "centro-colaborador"
+        },
+        {
+          "icon": "lightbulb",
+          "title": "2. Curso a medida",
+          "text": "Un curso aparte, con vuestros recursos y vídeos nuevos. Se presupuesta como encargo.",
+          "href": "entidades-curso-a-medida",
+          "button": "Ver cómo funciona"
+        },
+        {
+          "icon": "hand-heart",
+          "title": "3. Acompañamiento a vuestro equipo o territorio",
+          "text": "Hasta 20 personas, presencial, en línea o híbrido; precio a medida, con presupuesto previo y sin compromiso.",
+          "href": "entidades#equipo",
+          "button": "Ver las propuestas"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "band": "soft",
+      "id": "hablemos",
+      "title": "Hablemos de cómo lo haríamos en vuestro espacio",
+      "paragraphs": [
+        "Os respondemos en 5 días laborables. La primera conversación es sin compromiso."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos de vuestra entidad",
+          "href": "entidades#pide-propuesta"
+        }
+      ]
+    }
+  ],
+  "ca": "entitats/camins"
+}

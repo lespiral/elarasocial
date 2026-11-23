@@ -349,9 +349,10 @@ def load_lang(lang):
     pgs = []
     for f in sorted((d / "pages").glob("*.json")):
         p = json.loads(f.read_text(encoding="utf-8"))
-        p.setdefault("slug", f.stem)
-        if p["slug"] != f.stem:
-            errors.append(f"{f.relative_to(ROOT)}: el camp slug ({p['slug']}) ha de ser igual que el nom del fitxer")
+        # Adreces amb subcarpeta (p. ex. /entitats/camins/): el fitxer porta «--» en lloc de «/» (entitats--camins.json)
+        p.setdefault("slug", f.stem.replace("--", "/"))
+        if p["slug"] != f.stem.replace("--", "/"):
+            errors.append(f"{f.relative_to(ROOT)}: el camp slug ({p['slug']}) ha de ser igual que el nom del fitxer (amb «--» per a «/»)")
         pgs.append((f, p))
     arts = []
     for f in sorted((d / "articles").glob("*.json")) if (d / "articles").exists() else []:
