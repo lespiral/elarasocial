@@ -183,7 +183,7 @@
     {
       "type": "limits",
       "band": "soft",
-      "id": "limits",
+      "id": "limites",
       "title": "Los límites",
       "paragraphs": [
         "No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia estos números:"
