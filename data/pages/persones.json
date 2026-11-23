@@ -200,11 +200,11 @@
       "band": "soft",
       "id": "propostes",
       "title": "Propostes i preus",
-      "intro": "Tres preus a cada proposta. L'estàndard cobreix preparació, facilitació, materials i espai. El de suport finança places reduïdes. Tria el que et sigui just, sense justificar-te. És el mateix camí, el Treball que Reconnecta, en quatre durades.",
+      "intro": "Tres preus a cada proposta. L'estàndard cobreix preparació, facilitació, materials i espai. El sostenidor finança places reduïdes. Tria el que et sigui just, sense justificar-te. És el mateix camí, el Treball que Reconnecta, en quatre durades.",
       "tiers": [
         "Reduït",
         "Estàndard",
-        "De suport"
+        "Sostenidor"
       ],
       "items": [
         {
@@ -265,7 +265,8 @@
               "text": "Vés a la web en castellà",
               "href": "https://esperanzaactiva.org/"
             }
-          ]
+          ],
+          "scene": "ruta"
         },
         {
           "id": "prop-treball-que-reconnecta",
@@ -322,7 +323,8 @@
           "button": {
             "text": "Veure el grup regular",
             "href": "grup-regular-de-el-treball-que-reconnecta"
-          }
+          },
+          "scene": "llunes"
         },
         {
           "id": "prop-individual",
@@ -382,7 +384,7 @@
         ],
         [
           "Quin preu he de triar?",
-          "El que et sigui just. L'estàndard cobreix el cost de la proposta i el de suport ajuda a finançar places reduïdes."
+          "El que et sigui just. L'estàndard cobreix el cost de la proposta i el sostenidor ajuda a finançar places reduïdes."
         ],
         [
           "Cal experiència prèvia?",

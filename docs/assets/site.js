@@ -141,8 +141,9 @@
     }
     function panel(key) { return box.querySelector('.durades__panel[data-durada="' + key + '"]'); }
     function show(key, prefill, url) {
+      box.classList.toggle('is-empty', !key);
       items.forEach(function (el) { el.classList.toggle('is-on', el.getAttribute('data-durada') === key); });
-      tabs.forEach(function (t) { var on = t.getAttribute('data-d') === key; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.setAttribute('tabindex', on ? '0' : '-1'); });
+      tabs.forEach(function (t) { var on = t.getAttribute('data-d') === key; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.setAttribute('tabindex', on || (!key && t === tabs[0]) ? '0' : '-1'); });
       if (prefill && panel(key)) setForm(panel(key).getAttribute('data-form-value'));
       if (url && window.URL && history.replaceState) { var u = new URL(location.href); u.searchParams.set('durada', key); u.searchParams.delete('edicio'); history.replaceState(null, '', u); }
     }

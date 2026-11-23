@@ -42,7 +42,7 @@
       "id": "durada",
       "title": "Tria la durada",
       "label": "Durada",
-      "default": "cicle",
+      "default": "",
       "tiers": [
         "Reduït",
         "Estàndard",
@@ -130,7 +130,8 @@
             }
           ]
         }
-      ]
+      ],
+      "hint": "Tria una durada per veure'n el detall, els preus i les properes dates."
     },
     {
       "type": "text",

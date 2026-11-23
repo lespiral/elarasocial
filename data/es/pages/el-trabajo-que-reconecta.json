@@ -22,7 +22,7 @@
       "id": "durada",
       "title": "Elige la duración",
       "label": "Duración",
-      "default": "cicle",
+      "default": "",
       "tiers": [
         "Reducido",
         "Estándar",
@@ -110,7 +110,8 @@
             }
           ]
         }
-      ]
+      ],
+      "hint": "Elige una duración para ver su detalle, los precios y las próximas fechas."
     },
     {
       "type": "text",

@@ -713,6 +713,8 @@ h1 { font-weight: 800; letter-spacing: -.022em; }
 .durades__tab strong { font-size: 1rem; line-height: 1.2; }
 .durades__tab span { font-size: .92rem; line-height: 1.2; color: var(--muted); }
 .durades__tab:hover { background: rgba(255, 255, 255, .7); }
+.durades__hint { display: none; margin: 14px 0 0; text-align: center; color: var(--muted); font-size: 1rem; }
+.js .durades.is-empty .durades__hint { display: block; }
 .durades__tab[aria-selected="true"] { background: var(--blau-800); color: #fff; }
 .durades__tab[aria-selected="true"] span { color: #dfe8f1; }
 .durades__tab:focus-visible { outline: 3px solid var(--blau-700); outline-offset: 2px; }

@@ -271,8 +271,8 @@ def prepare_sections(sections, where, lang="ca"):
             keys = [it.get("key") for it in s.get("items", [])]
             if len(set(keys)) != len(keys) or any(k not in TQR_FORMATS for k in keys):
                 errors.append(f"{where}: les durades han de ser {', '.join(TQR_FORMATS)} (cada una una vegada)")
-            if s.get("default") not in keys:
-                errors.append(f"{where}: \"default\" ha de ser una de les durades ({', '.join(map(str, keys))})")
+            if s.get("default") and s.get("default") not in keys:
+                errors.append(f"{where}: \"default\" ha de ser una de les durades ({', '.join(map(str, keys))}) o anar buit (cap durada triada)")
             for it in s.get("items", []):
                 it["rows"] = note_rows(bold(it.get("dades")))
         if s.get("durada") and s["durada"] not in TQR_FORMATS:
@@ -291,10 +291,10 @@ def prepare_sections(sections, where, lang="ca"):
             if k not in ("rows",):
                 s[k] = bold(s[k]) if k not in ("id", "type", "band", "infografia", "variant", "name", "list_icon", "style", "align") else s[k]
     # Seccions que només es veuen amb una durada (pàgina d'El Treball que Reconnecta): la de la durada per defecte surt oberta
-    dd = next((x.get("default") for x in sections or [] if x.get("type") == "durades"), None)
+    dd = next((x.get("default") or "" for x in sections or [] if x.get("type") == "durades"), "")
     for x in sections or []:
         if x.get("durada"):
-            x["durada_on"] = x["durada"] == dd
+            x["durada_on"] = bool(dd) and x["durada"] == dd
     dup = {i for i in ids if ids.count(i) > 1}
     if dup:
         errors.append(f"{where}: seccions amb el mateix id {sorted(dup)}: posa'ls un \"id\" diferent")

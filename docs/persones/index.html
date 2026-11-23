@@ -13,7 +13,7 @@
   <meta property="og:locale" content="ca_ES">
 <link rel="alternate" hreflang="ca" href="https://elarasocial.com/persones/">
 <link rel="alternate" hreflang="es" href="https://elarasocial.com/es/personas/">
-<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/persones/"><link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../assets/site.css?v=1795423260">
+<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/persones/"><link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../assets/site.css?v=1795426168">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -875,7 +875,7 @@
   </div>
 </section><section class="band band--soft band--formats" id="propostes" aria-labelledby="h-propostes">
   <div class="wrap">
-<h2 class="band__title" id="h-propostes">Propostes i preus</h2><div class="band__intro"><p>Tres preus a cada proposta. L&#39;estàndard cobreix preparació, facilitació, materials i espai. El de suport finança places reduïdes. Tria el que et sigui just, sense justificar-te. És el mateix camí, el Treball que Reconnecta, en quatre durades.</p></div>
+<h2 class="band__title" id="h-propostes">Propostes i preus</h2><div class="band__intro"><p>Tres preus a cada proposta. L&#39;estàndard cobreix preparació, facilitació, materials i espai. El sostenidor finança places reduïdes. Tria el que et sigui just, sense justificar-te. És el mateix camí, el Treball que Reconnecta, en quatre durades.</p></div>
 
 <style>
 .metafora { max-width: 860px; margin: 26px auto 0; }
@@ -944,6 +944,14 @@
 .m-net { fill: none; stroke: #c9a53c; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; opacity: .85; }
 .is-on .m-net { stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s 1.5s cubic-bezier(.4, 0, .2, 1); }
 .m-pulse { fill: #e2c668; opacity: 0; }
+
+/* Ruta: el traç dorat de la ruta es dibuixa i les fites s'encenen */
+.m-route { stroke: #c9a53c; stroke-width: 3.4; stroke-linecap: round; stroke-dasharray: 1; }
+.m-flagpole { stroke: #8a7356; stroke-width: 2.4; stroke-linecap: round; fill: none; }
+.m-flagcloth { fill: #a3a9af; transition: fill .6s; }
+.m-flagfoot { fill: #a3a9af; transition: fill .6s; }
+.m-flag.is-lit .m-flagcloth { fill: #557e4c; }
+.m-flag.is-lit .m-flagfoot { fill: #e2c668; }
 
 /* Pont: els taulons es posen un a un */
 .m-bank { fill: #c2c7cc; transition: fill 2.4s; }
@@ -1276,6 +1284,31 @@
     };
   };
 
+  // Camins d'Esperança [Activa]: un camí que serpenteja pels turons, amb la ruta marcada i fites que s'encenen en passar-hi
+  SCENES.ruta = function (id) {
+    var d = "M150 306C260 290 300 250 400 252S520 282 600 252S690 196 760 204S850 214 880 188";
+    var flags = [.22, .46, .7, .94], fl = "";
+    flags.forEach(function (u, i) { fl += '<g class="m-flag" data-u="' + u + '" id="m-fl' + id + '-' + i + '"><path class="m-flagpole" d="M0 0v-26"/><path class="m-flagcloth" d="M0 -26l15 5-15 6z"/><circle class="m-flagfoot" r="3.4"/></g>'; });
+    return {
+      svg: sky({ id: id, sx: 820, sy: 98 }) + HILL1 + HILL2 + HILL3 +
+        '<path d="' + d + '" fill="none" stroke="#f3eee3" stroke-width="20" stroke-linecap="round" stroke-opacity=".92"/>' +
+        '<path class="m-route" d="' + d + '" fill="none" pathLength="1"/>' +
+        '<path class="m-road" d="' + d + '" fill="none" stroke="none"/>' +
+        tree(250, 252, .8, 0) + tree(690, 232, .62, .3) + tree(540, 292, .5, .15) + fl + BIRDS + fog(id) + walker(),
+      dur: 5200, hope: .3,
+      frame: function (f, el) {
+        var road = el.querySelector(".m-road"), u = .02 + ease(f) * .96, p = along(road, u);
+        el.querySelector(".m-walker").setAttribute("transform", "translate(" + r1(p.x) + "," + r1(p.y) + ")");
+        el.querySelector(".m-route").style.strokeDashoffset = r1((1 - u) * 1000) / 1000;
+        Array.prototype.forEach.call(el.querySelectorAll(".m-flag"), function (g) {
+          var fu = parseFloat(g.getAttribute("data-u"));
+          if (!g.getAttribute("transform")) { var q = along(road, fu); g.setAttribute("transform", "translate(" + r1(q.x) + " " + r1(q.y - 8) + ")"); }
+          g.classList.toggle("is-lit", u >= fu - .01);
+        });
+      }
+    };
+  };
+
   // Grup regular: una nit amb la lluna que canvia de fase sobre una rotllana al voltant del foc
   SCENES.llunes = function (id) {
     var moons = "", stars = "", masks = "", n = 7, R = 15;
@@ -1429,7 +1462,7 @@
         <li class="fmt-li"><details class="fmt" id="prop-camins">
           <summary class="fmt__sum"><span class="fmt__h"><span class="fmt__k">Sol/a · caminant</span><span class="fmt__t">Camins d&#39;Esperança [Activa]</span><span class="fmt__s">Cursos digitals i rutes a peu a prop de casa.</span><span class="fmt__m">Gratuït · en línia + rutes a peu</span></span><svg class="i fmt__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
           <div class="fmt__body">
-            <p class="fmt__text">Cursos digitals de 7 passes combinats amb rutes a peu a prop de casa. Viu a la seva pròpia web.</p>
+<div class="mt" data-metafora="ruta" data-once aria-label="Camins d&#39;Esperança [Activa]"></div>            <p class="fmt__text">Cursos digitals de 7 passes combinats amb rutes a peu a prop de casa. Viu a la seva pròpia web.</p>
 <dl class="fmt__rows"><div><dt>Cursos</dt><dd>Quatre, segons què et preocupa</dd></div><div><dt>Rutes</dt><dd>Per pobles i ciutats</dd></div><div><dt>Preu</dt><dd>Gratuït</dd></div></dl><p class="fmt__go"><a class="btn btn--primary" href="https://xn--esperanaactiva-mjb.cat/" rel="noopener">Vés a la web en català <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p><p class="fmt__go"><a class="btn btn--outline" href="https://esperanzaactiva.org/" rel="noopener">Vés a la web en castellà <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>          </div>
         </details></li>
         <li class="fmt-li"><details class="fmt" id="prop-treball-que-reconnecta">
@@ -1438,13 +1471,13 @@
 <div class="mt" data-metafora="arrels" data-once aria-label="El Treball que Reconnecta"></div>            <p class="fmt__text">Un camí en grup per recórrer l&#39;espiral: arrelar, fer lloc al dolor, mirar amb ulls nous i passar a l&#39;acció. Com més durada, més espai per a dinàmiques, reflexió i aprofundiment.</p>
 <dl class="fmt__rows"><div><dt>Grup</dt><dd>Màx. 16 persones</dd></div></dl><div class="fmt__prices">
 <div class="dur"><a class="dur__l" href="../el-treball-que-reconnecta/?durada=taller">Taller · 4 h</a><div class="tiers">
-  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">31 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">45 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">59 €</strong></li></ul>
+  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">31 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">45 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">59 €</strong></li></ul>
 </div>
 </div><div class="dur"><a class="dur__l" href="../el-treball-que-reconnecta/?durada=cicle">Cicle · 4 × 2 h</a><div class="tiers">
-  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">61 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">90 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">119 €</strong></li></ul>
+  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">61 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">90 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">119 €</strong></li></ul>
 </div>
 </div><div class="dur"><a class="dur__l" href="../el-treball-que-reconnecta/?durada=cap-de-setmana">Cap de setmana · 2 × 6 h</a><div class="tiers">
-  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">92 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">135 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">179 €</strong></li></ul>
+  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">92 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">135 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">179 €</strong></li></ul>
 </div>
 </div>            </div><div class="edi">
   <p class="edi__t"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-68-76a12,12,0,1,1-12-12A12,12,0,0,1,140,132Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,184,132ZM96,172a12,12,0,1,1-12-12A12,12,0,0,1,96,172Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,140,172Zm44,0a12,12,0,1,1-12-12A12,12,0,0,1,184,172Z"/></svg>Propera edició</p>
@@ -1455,13 +1488,13 @@
         <li class="fmt-li"><details class="fmt" id="prop-grup-regular">
           <summary class="fmt__sum"><span class="fmt__h"><span class="fmt__k">Grup · continuïtat</span><span class="fmt__t">El Treball que Reconnecta · grup regular</span><span class="fmt__s">Un espai estable per aturar-te i reconnectar.</span><span class="fmt__m">2 h · cada mes o cada 15 dies · <span class="fmt__r">15–60 € al mes</span></span></span><svg class="i fmt__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
           <div class="fmt__body">
-            <p class="fmt__text">Cada sessió es modela segons el que necessita el grup.</p>
+<div class="mt" data-metafora="llunes" data-once aria-label="El Treball que Reconnecta · grup regular"></div>            <p class="fmt__text">Cada sessió es modela segons el que necessita el grup.</p>
 <dl class="fmt__rows"><div><dt>Durada</dt><dd>Sessions de 2 h · màx. 16</dd></div><div><dt>Freqüència</dt><dd>Cada mes o cada 15 dies</dd></div></dl><div class="fmt__prices">
 <div class="tiers">
-<p class="tiers__l">Mensual (1 sessió al mes)</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">15 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">22,50 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">30 €</strong></li></ul>
+<p class="tiers__l">Mensual (1 sessió al mes)</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">15 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">22,50 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">30 €</strong></li></ul>
 </div>
 <div class="tiers">
-<p class="tiers__l">Quinzenal (2 sessions al mes)</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">30 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">45 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">60 €</strong></li></ul>
+<p class="tiers__l">Quinzenal (2 sessions al mes)</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">30 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">45 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">60 €</strong></li></ul>
 </div>
 <p class="pcard__pnote">Preus per mes.</p>            </div><p class="fmt__go"><a class="btn btn--primary" href="../grup-regular-de-el-treball-que-reconnecta/">Veure el grup regular <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>          </div>
         </details></li>
@@ -1471,10 +1504,10 @@
 <div class="mt" data-metafora="costat" data-once aria-label="Acompanyament individual"></div>            <p class="fmt__text">Parlem del que et pesa, practiquem eines per regular-te i dissenyem un pla d&#39;acció i d&#39;autocura.</p>
 <dl class="fmt__rows"><div><dt>Durada</dt><dd>Sessions d&#39;1 h o d&#39;1,5 h</dd></div><div><dt>Format</dt><dd>En línia o presencial</dd></div></dl><div class="fmt__prices">
 <div class="tiers">
-<p class="tiers__l">Sessió d&#39;1 hora</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">60 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">70 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">80 €</strong></li></ul>
+<p class="tiers__l">Sessió d&#39;1 hora</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">60 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">70 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">80 €</strong></li></ul>
 </div>
 <div class="tiers">
-<p class="tiers__l">Sessió d&#39;1,5 hores</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">90 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">110 €</strong></li><li><span class="tiers__n">De suport</span><strong class="tiers__p">120 €</strong></li></ul>
+<p class="tiers__l">Sessió d&#39;1,5 hores</p>  <ul class="tiers__v"><li><span class="tiers__n">Reduït</span><strong class="tiers__p">90 €</strong></li><li><span class="tiers__n">Estàndard</span><strong class="tiers__p">110 €</strong></li><li><span class="tiers__n">Sostenidor</span><strong class="tiers__p">120 €</strong></li></ul>
 </div>
             </div><p class="fmt__go"><a class="btn btn--primary" href="../acompanyament-individual/#inscripcio">Reserva una sessió <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>          </div>
         </details></li>
@@ -1496,7 +1529,7 @@
   <div class="faq__body">No. Són espais vivencials i segurs, i participar és voluntari. Si ara passes un moment difícil, explica-ho'ns abans i ho valorem junts.</div>
 </details><details class="faq" id="quin-preu-he-de-triar">
   <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Quin preu he de triar?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
-  <div class="faq__body">El que et sigui just. L'estàndard cobreix el cost de la proposta i el de suport ajuda a finançar places reduïdes.</div>
+  <div class="faq__body">El que et sigui just. L'estàndard cobreix el cost de la proposta i el sostenidor ajuda a finançar places reduïdes.</div>
 </details><details class="faq" id="cal-experiencia-previa">
   <summary><span class="faq__q"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Cal experiència prèvia?</span></span><svg class="i faq__caret" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></svg></summary>
   <div class="faq__body">No. Pots venir sense haver fet mai res semblant.</div>
@@ -1543,6 +1576,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1795423260" defer></script>
+  <script src="../assets/site.js?v=1795426168" defer></script>
 </body>
 </html>

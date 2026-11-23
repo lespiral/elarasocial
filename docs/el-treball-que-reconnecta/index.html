@@ -13,7 +13,7 @@
   <meta property="og:locale" content="ca_ES">
 <link rel="alternate" hreflang="ca" href="https://elarasocial.com/el-treball-que-reconnecta/">
 <link rel="alternate" hreflang="es" href="https://elarasocial.com/es/el-trabajo-que-reconecta/">
-<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/el-treball-que-reconnecta/"><link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../assets/site.css?v=1795423260">
+<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/el-treball-que-reconnecta/"><link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../assets/site.css?v=1795426168">
 </head>
 <body>
   <a class="skip" href="#contingut">Salta al contingut</a>
@@ -119,6 +119,14 @@
 .m-net { fill: none; stroke: #c9a53c; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; opacity: .85; }
 .is-on .m-net { stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s 1.5s cubic-bezier(.4, 0, .2, 1); }
 .m-pulse { fill: #e2c668; opacity: 0; }
+
+/* Ruta: el traç dorat de la ruta es dibuixa i les fites s'encenen */
+.m-route { stroke: #c9a53c; stroke-width: 3.4; stroke-linecap: round; stroke-dasharray: 1; }
+.m-flagpole { stroke: #8a7356; stroke-width: 2.4; stroke-linecap: round; fill: none; }
+.m-flagcloth { fill: #a3a9af; transition: fill .6s; }
+.m-flagfoot { fill: #a3a9af; transition: fill .6s; }
+.m-flag.is-lit .m-flagcloth { fill: #557e4c; }
+.m-flag.is-lit .m-flagfoot { fill: #e2c668; }
 
 /* Pont: els taulons es posen un a un */
 .m-bank { fill: #c2c7cc; transition: fill 2.4s; }
@@ -451,6 +459,31 @@
     };
   };
 
+  // Camins d'Esperança [Activa]: un camí que serpenteja pels turons, amb la ruta marcada i fites que s'encenen en passar-hi
+  SCENES.ruta = function (id) {
+    var d = "M150 306C260 290 300 250 400 252S520 282 600 252S690 196 760 204S850 214 880 188";
+    var flags = [.22, .46, .7, .94], fl = "";
+    flags.forEach(function (u, i) { fl += '<g class="m-flag" data-u="' + u + '" id="m-fl' + id + '-' + i + '"><path class="m-flagpole" d="M0 0v-26"/><path class="m-flagcloth" d="M0 -26l15 5-15 6z"/><circle class="m-flagfoot" r="3.4"/></g>'; });
+    return {
+      svg: sky({ id: id, sx: 820, sy: 98 }) + HILL1 + HILL2 + HILL3 +
+        '<path d="' + d + '" fill="none" stroke="#f3eee3" stroke-width="20" stroke-linecap="round" stroke-opacity=".92"/>' +
+        '<path class="m-route" d="' + d + '" fill="none" pathLength="1"/>' +
+        '<path class="m-road" d="' + d + '" fill="none" stroke="none"/>' +
+        tree(250, 252, .8, 0) + tree(690, 232, .62, .3) + tree(540, 292, .5, .15) + fl + BIRDS + fog(id) + walker(),
+      dur: 5200, hope: .3,
+      frame: function (f, el) {
+        var road = el.querySelector(".m-road"), u = .02 + ease(f) * .96, p = along(road, u);
+        el.querySelector(".m-walker").setAttribute("transform", "translate(" + r1(p.x) + "," + r1(p.y) + ")");
+        el.querySelector(".m-route").style.strokeDashoffset = r1((1 - u) * 1000) / 1000;
+        Array.prototype.forEach.call(el.querySelectorAll(".m-flag"), function (g) {
+          var fu = parseFloat(g.getAttribute("data-u"));
+          if (!g.getAttribute("transform")) { var q = along(road, fu); g.setAttribute("transform", "translate(" + r1(q.x) + " " + r1(q.y - 8) + ")"); }
+          g.classList.toggle("is-lit", u >= fu - .01);
+        });
+      }
+    };
+  };
+
   // Grup regular: una nit amb la lluna que canvia de fase sobre una rotllana al voltant del foc
   SCENES.llunes = function (id) {
     var moons = "", stars = "", masks = "", n = 7, R = 15;
@@ -600,10 +633,10 @@
 <section class="band band--white band--durades" id="durada" aria-labelledby="h-durada">
   <div class="wrap wrap--narrow">
 <h2 class="band__title" id="h-durada">Tria la durada</h2>
-      <div class="durades" data-durades data-default="cicle">
+      <div class="durades" data-durades data-default="">
         <div class="durades__tabs" role="tablist" aria-label="Durada">
-<button type="button" class="durades__tab" role="tab" id="tab-taller" aria-controls="dur-taller" data-d="taller" aria-selected="false"><strong>Taller</strong><span>4 h</span></button><button type="button" class="durades__tab" role="tab" id="tab-cicle" aria-controls="dur-cicle" data-d="cicle" aria-selected="true"><strong>Cicle</strong><span>4 × 2 h</span></button><button type="button" class="durades__tab" role="tab" id="tab-cap-de-setmana" aria-controls="dur-cap-de-setmana" data-d="cap-de-setmana" aria-selected="false"><strong>Cap de setmana</strong><span>2 × 6 h</span></button>        </div>
-        <div class="durades__panel dur-item" role="tabpanel" id="dur-taller" aria-labelledby="tab-taller" data-durada="taller" data-form-value="Taller (4 h)">
+<button type="button" class="durades__tab" role="tab" id="tab-taller" aria-controls="dur-taller" data-d="taller" aria-selected="false"><strong>Taller</strong><span>4 h</span></button><button type="button" class="durades__tab" role="tab" id="tab-cicle" aria-controls="dur-cicle" data-d="cicle" aria-selected="false"><strong>Cicle</strong><span>4 × 2 h</span></button><button type="button" class="durades__tab" role="tab" id="tab-cap-de-setmana" aria-controls="dur-cap-de-setmana" data-d="cap-de-setmana" aria-selected="false"><strong>Cap de setmana</strong><span>2 × 6 h</span></button>        </div>
+<p class="durades__hint">Tria una durada per veure&#39;n el detall, els preus i les properes dates.</p>        <div class="durades__panel dur-item" role="tabpanel" id="dur-taller" aria-labelledby="tab-taller" data-durada="taller" data-form-value="Taller (4 h)">
           <p class="durades__phrase">Una primera immersió a l&#39;espiral, en una sola trobada.</p>
           <div class="prose">
 <p class="prose__lead"><strong>Un taller segur</strong> per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats d’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides).</p>          </div>
@@ -616,7 +649,7 @@
   <a class="btn btn--primary btn--block edi__go" href="#inscripcio" data-form-value="Taller (4 h)">Avisa&#39;m de la propera edició</a>
 </div>
 <p class="block__actions"><a class="btn btn--primary" href="#inscripcio">Inscripció <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a><a class="btn btn--outline" href="../contacte/">Contacta amb nosaltres <svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>        </div>
-        <div class="durades__panel dur-item is-on" role="tabpanel" id="dur-cicle" aria-labelledby="tab-cicle" data-durada="cicle" data-form-value="Cicle (4 × 2 h)">
+        <div class="durades__panel dur-item" role="tabpanel" id="dur-cicle" aria-labelledby="tab-cicle" data-durada="cicle" data-form-value="Cicle (4 × 2 h)">
           <p class="durades__phrase">Temps entre sessions per integrar el que va sorgint.</p>
           <div class="prose">
 <p class="prose__lead">Aquest cicle ofereix <strong>un lloc segur</strong> per treballar crisis personals (angoixa pel futur, estrès laboral, dificultats amb l’habitatge…) i també crisis globals (polarització social, discursos d’odi, canvi climàtic i altres amenaces compartides).</p>          </div>
@@ -1157,7 +1190,7 @@
 <li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg></span><span class="tile__t">Recorrerem de manera vivencial l’Espiral d’El Treball que Reconnecta (Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció).</span></li><li class="tile"><span class="tile__i" aria-hidden="true"><svg class="i" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg></span><span class="tile__t">Treballarem autocura, resiliència i suport comunitari per transformar dolor i incertesa en claredat, esperança activa i acció significativa.</span></li></ul>      </div>
 
   </div>
-</section><section class="band band--white band--text dur-item is-on" id="emportaras-cicle" data-durada="cicle">
+</section><section class="band band--white band--text dur-item" id="emportaras-cicle" data-durada="cicle">
   <div class="wrap wrap--narrow">
 
       <div class="prose">
@@ -1262,6 +1295,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1795423260" defer></script>
+  <script src="../assets/site.js?v=1795426168" defer></script>
 </body>
 </html>

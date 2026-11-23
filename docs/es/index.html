@@ -13,7 +13,7 @@
   <meta property="og:locale" content="es_ES">
 <link rel="alternate" hreflang="ca" href="https://elarasocial.com/">
 <link rel="alternate" hreflang="es" href="https://elarasocial.com/es/">
-<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/"><link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../assets/site.css?v=1795423260">
+<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/"><link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../assets/site.css?v=1795426168">
 </head>
 <body>
   <a class="skip" href="#contingut">Saltar al contenido</a>
@@ -554,6 +554,14 @@
 .is-on .m-net { stroke-dashoffset: 0; transition: stroke-dashoffset 1.4s 1.5s cubic-bezier(.4, 0, .2, 1); }
 .m-pulse { fill: #e2c668; opacity: 0; }
 
+/* Ruta: el traç dorat de la ruta es dibuixa i les fites s'encenen */
+.m-route { stroke: #c9a53c; stroke-width: 3.4; stroke-linecap: round; stroke-dasharray: 1; }
+.m-flagpole { stroke: #8a7356; stroke-width: 2.4; stroke-linecap: round; fill: none; }
+.m-flagcloth { fill: #a3a9af; transition: fill .6s; }
+.m-flagfoot { fill: #a3a9af; transition: fill .6s; }
+.m-flag.is-lit .m-flagcloth { fill: #557e4c; }
+.m-flag.is-lit .m-flagfoot { fill: #e2c668; }
+
 /* Pont: els taulons es posen un a un */
 .m-bank { fill: #c2c7cc; transition: fill 2.4s; }
 .is-hope .m-bank { fill: #b7cfb2; }
@@ -885,6 +893,31 @@
     };
   };
 
+  // Camins d'Esperança [Activa]: un camí que serpenteja pels turons, amb la ruta marcada i fites que s'encenen en passar-hi
+  SCENES.ruta = function (id) {
+    var d = "M150 306C260 290 300 250 400 252S520 282 600 252S690 196 760 204S850 214 880 188";
+    var flags = [.22, .46, .7, .94], fl = "";
+    flags.forEach(function (u, i) { fl += '<g class="m-flag" data-u="' + u + '" id="m-fl' + id + '-' + i + '"><path class="m-flagpole" d="M0 0v-26"/><path class="m-flagcloth" d="M0 -26l15 5-15 6z"/><circle class="m-flagfoot" r="3.4"/></g>'; });
+    return {
+      svg: sky({ id: id, sx: 820, sy: 98 }) + HILL1 + HILL2 + HILL3 +
+        '<path d="' + d + '" fill="none" stroke="#f3eee3" stroke-width="20" stroke-linecap="round" stroke-opacity=".92"/>' +
+        '<path class="m-route" d="' + d + '" fill="none" pathLength="1"/>' +
+        '<path class="m-road" d="' + d + '" fill="none" stroke="none"/>' +
+        tree(250, 252, .8, 0) + tree(690, 232, .62, .3) + tree(540, 292, .5, .15) + fl + BIRDS + fog(id) + walker(),
+      dur: 5200, hope: .3,
+      frame: function (f, el) {
+        var road = el.querySelector(".m-road"), u = .02 + ease(f) * .96, p = along(road, u);
+        el.querySelector(".m-walker").setAttribute("transform", "translate(" + r1(p.x) + "," + r1(p.y) + ")");
+        el.querySelector(".m-route").style.strokeDashoffset = r1((1 - u) * 1000) / 1000;
+        Array.prototype.forEach.call(el.querySelectorAll(".m-flag"), function (g) {
+          var fu = parseFloat(g.getAttribute("data-u"));
+          if (!g.getAttribute("transform")) { var q = along(road, fu); g.setAttribute("transform", "translate(" + r1(q.x) + " " + r1(q.y - 8) + ")"); }
+          g.classList.toggle("is-lit", u >= fu - .01);
+        });
+      }
+    };
+  };
+
   // Grup regular: una nit amb la lluna que canvia de fase sobre una rotllana al voltant del foc
   SCENES.llunes = function (id) {
     var moons = "", stars = "", masks = "", n = 7, R = 15;
@@ -1124,6 +1157,6 @@
     </div>
   </footer>
 
-  <script src="../assets/site.js?v=1795423260" defer></script>
+  <script src="../assets/site.js?v=1795426168" defer></script>
 </body>
 </html>

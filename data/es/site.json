@@ -386,7 +386,7 @@
     "circulos-para-sostener-organizaciones-y-colectivos": "entidades/#equipo"
   },
   "ui": {
-    "tiers": ["Reducido", "Estándar", "De apoyo"],
+    "tiers": ["Reducido", "Estándar", "Sostenedor"],
     "edicions": {
       "title": "Próxima edición",
       "none": "Próximas fechas por determinar",

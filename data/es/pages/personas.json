@@ -201,11 +201,11 @@
       "band": "soft",
       "id": "propuestas",
       "title": "Propuestas y precios",
-      "intro": "Tres precios en cada propuesta. El estándar cubre preparación, facilitación, materiales y espacio. El de apoyo financia plazas reducidas. Elige el que te resulte justo, sin justificarte. Es el mismo camino, El Trabajo que Reconecta, en cuatro duraciones.",
+      "intro": "Tres precios en cada propuesta. El estándar cubre preparación, facilitación, materiales y espacio. El sostenedor financia plazas reducidas. Elige el que te resulte justo, sin justificarte. Es el mismo camino, El Trabajo que Reconecta, en cuatro duraciones.",
       "tiers": [
         "Reducido",
         "Estándar",
-        "De apoyo"
+        "Sostenedor"
       ],
       "items": [
         {
@@ -383,7 +383,7 @@
         ],
         [
           "¿Qué precio debo elegir?",
-          "El que te resulte justo. El estándar cubre el coste de la propuesta y el de apoyo ayuda a financiar plazas reducidas."
+          "El que te resulte justo. El estándar cubre el coste de la propuesta y el sostenedor ayuda a financiar plazas reducidas."
         ],
         [
           "¿Hace falta experiencia previa?",

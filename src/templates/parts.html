@@ -324,10 +324,11 @@
     {% elif s.type == 'durades' %}
       {# Selector de durada d'El Treball que Reconnecta: "items": [{"key", "tab", "tab_sub", "phrase", "title", "paragraphs", "dades", "buttons", "value"}], "default".
          Les seccions amb "durada": "<key>" només es veuen amb aquella durada (site.js; sense JS es veuen totes). #}
-      <div class="durades" data-durades data-default="{{ s.default }}">
+      <div class="durades" data-durades data-default="{{ s.default or '' }}">
         <div class="durades__tabs" role="tablist" aria-label="{{ s.label }}">
           {% for it in s["items"] %}<button type="button" class="durades__tab" role="tab" id="tab-{{ it.key }}" aria-controls="dur-{{ it.key }}" data-d="{{ it.key }}" aria-selected="{{ 'true' if it.key == s.default else 'false' }}"><strong>{{ it.tab }}</strong><span>{{ it.tab_sub }}</span></button>{% endfor %}
         </div>
+        {% if s.hint %}<p class="durades__hint">{{ s.hint }}</p>{% endif %}
         {% for it in s["items"] %}
         <div class="durades__panel dur-item{% if it.key == s.default %} is-on{% endif %}" role="tabpanel" id="dur-{{ it.key }}" aria-labelledby="tab-{{ it.key }}" data-durada="{{ it.key }}" data-form-value="{{ it.value }}">
           <p class="durades__phrase">{{ it.phrase }}</p>

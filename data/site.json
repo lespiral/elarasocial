@@ -464,7 +464,7 @@
     ]
   },
   "ui": {
-    "tiers": ["Reduït", "Estàndard", "De suport"],
+    "tiers": ["Reduït", "Estàndard", "Sostenidor"],
     "edicions": {
       "title": "Propera edició",
       "none": "Properes dates per determinar",
