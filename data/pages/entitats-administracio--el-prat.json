@@ -206,15 +206,15 @@
       "id": "ruta",
       "tone": "accent",
       "title": "Una ruta d'exemple al Prat",
-      "intro": "Una caminada que surt de la porta de L'Espiral del Prat, un dels espais promotors del projecte, com a mostra de format.",
+      "intro": "Una caminada que surt de la porta de L'Espiral del Prat, un dels espais promotors del projecte, com a mostra de format. A Camins podeu veure les rutes del Prat, cadascuna amb el mapa i la ruta a Wikiloc.",
       "items": [
         {
           "icon": "map-trifold",
           "badge": "Exemple de format",
           "title": "L'Espiral del Prat",
           "text": "Una caminada de 1,29 km que surt de la porta de l'espai.",
-          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
-          "button": "Veure la ruta"
+          "href": "https://xn--esperanaactiva-mjb.cat/el-prat/",
+          "button": "Veure les rutes del Prat a Camins"
         }
       ]
     },

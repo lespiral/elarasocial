@@ -206,15 +206,15 @@
       "id": "ruta",
       "tone": "accent",
       "title": "Una ruta de ejemplo en El Prat",
-      "intro": "Una caminata que sale de la puerta de L'Espiral del Prat, uno de los espacios promotores del proyecto, como muestra de formato.",
+      "intro": "Una caminata que sale de la puerta de L'Espiral del Prat, uno de los espacios promotores del proyecto, como muestra de formato. En Caminos podéis ver las rutas, cada una con su mapa y su ruta en Wikiloc.",
       "items": [
         {
           "icon": "map-trifold",
           "badge": "Ejemplo de formato",
           "title": "L'Espiral del Prat",
           "text": "Una caminata de 1,29 km que sale de la puerta del espacio.",
-          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
-          "button": "Ver la ruta"
+          "href": "https://esperanzaactiva.org/",
+          "button": "Ver las rutas en Caminos"
         }
       ]
     },
