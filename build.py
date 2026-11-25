@@ -533,7 +533,7 @@ def render(template, path, lang="ca", slug=None, **ctx):
     aroot = ctx.pop("aroot", "../" * depth)                  # fins a l'arrel de la web (assets/)
     root = ctx.pop("root", "../" * (depth - pre))            # fins a l'inici de la llengua (enllaços)
     canonical = None if path.endswith(".html") else SITE_URL + (path + "/" if path else "")
-    if canonical:
+    if canonical and not (ctx.get("page") or {}).get("noindex"):
         PAGES.append(canonical)
     alts = alternates(lang, slug if slug is not None else "") if canonical and len(LANGS) > 1 else []
     for a in alts:

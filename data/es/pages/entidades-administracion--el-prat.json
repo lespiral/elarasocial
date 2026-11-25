@@ -293,5 +293,6 @@
       ]
     }
   ],
-  "ca": "entitats-administracio/el-prat"
+  "ca": "entitats-administracio/el-prat",
+  "noindex": true
 }

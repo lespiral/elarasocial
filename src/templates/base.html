@@ -7,7 +7,7 @@
   <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.elaraMoviment)document.documentElement.classList.remove("js")},4000)</script>
   <title>{% if page_title %}{{ page_title }} · {% endif %}{{ site.name }}</title>
   <meta name="description" content="{{ page_description or site.description }}">
-  {% if noindex %}<meta name="robots" content="noindex">{% endif %}
+  {% if noindex or (page and page.noindex) %}<meta name="robots" content="noindex">{% endif %}
   {% if canonical %}<link rel="canonical" href="{{ canonical }}">
   <meta property="og:url" content="{{ canonical }}">{% endif %}
   <meta property="og:title" content="{{ page_title or site.name }}">
