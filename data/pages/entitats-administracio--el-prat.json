@@ -149,7 +149,7 @@
       "ask": {
         "title": "Què us demanem",
         "items": [
-          "Parlar amb vosaltres: una entrevista o un espai de trobada per veure com podem encaixar-ho."
+          "Parlar amb vosaltres i que ens ajudeu a visibilitzar i donar a conèixer aquest projecte a la ciutadania del Prat, per empoderar les persones i ajudar-les a passar del malestar individual a l'acció col·lectiva."
         ]
       }
     },
@@ -162,16 +162,10 @@
       "intro": "Els cursos són en preparació; les rutes ja es poden fer.",
       "items": [
         {
-          "icon": "hand-heart",
+          "icon": "lifebuoy",
           "badge": "Properament",
-          "title": "Quan sostenir la vida es fa difícil",
-          "text": "Feina, habitatge, precarietat i incertesa econòmica"
-        },
-        {
-          "icon": "tree",
-          "badge": "Properament",
-          "title": "Quan el futur del planeta et preocupa",
-          "text": "Canvi climàtic, degradació dels ecosistemes i incertesa davant del futur"
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
         },
         {
           "icon": "users-three",
@@ -180,10 +174,16 @@
           "text": "Suport mutu, xarxes de cura i necessitat de connexió"
         },
         {
-          "icon": "lifebuoy",
+          "icon": "tree",
           "badge": "Properament",
-          "title": "Quan la vida et desborda",
-          "text": "Ansietat, dol, conflictes i cansament emocional"
+          "title": "Quan el món et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "hand-heart",
+          "badge": "Properament",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
         }
       ],
       "buttons": [

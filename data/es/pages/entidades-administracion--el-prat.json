@@ -149,7 +149,7 @@
       "ask": {
         "title": "Qué os pedimos",
         "items": [
-          "Hablar con vosotros: una entrevista o un espacio de encuentro para ver cómo podemos encajarlo."
+          "Hablar con vosotros y que nos ayudéis a visibilizar y dar a conocer este proyecto a la ciudadanía del Prat, para empoderar a las personas y ayudarlas a pasar del malestar individual a la acción colectiva."
         ]
       }
     },
@@ -162,16 +162,10 @@
       "intro": "Los cursos están en preparación; las rutas ya se pueden hacer.",
       "items": [
         {
-          "icon": "hand-heart",
+          "icon": "lifebuoy",
           "badge": "Próximamente",
-          "title": "Cuando sostener la vida se hace difícil",
-          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
-        },
-        {
-          "icon": "tree",
-          "badge": "Próximamente",
-          "title": "Cuando el futuro del planeta te preocupa",
-          "text": "Cambio climático, degradación de los ecosistemas e incertidumbre ante el futuro"
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
         },
         {
           "icon": "users-three",
@@ -180,10 +174,16 @@
           "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
         },
         {
-          "icon": "lifebuoy",
+          "icon": "tree",
           "badge": "Próximamente",
-          "title": "Cuando la vida te desborda",
-          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+          "title": "Cuando el mundo te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "hand-heart",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
         }
       ],
       "buttons": [
