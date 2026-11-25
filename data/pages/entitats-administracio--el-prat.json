@@ -94,14 +94,21 @@
       ]
     },
     {
+      "type": "ribbon",
+      "band": "white",
+      "id": "nota-camins",
+      "label": "Important",
+      "text": "Això és la proposta oberta a tothom, que no passa per cap entitat ni administració. La pàgina per al vostre servei —disseny, maquetació i què diu i què no— l'acordaríem amb vosaltres."
+    },
+    {
       "type": "feature",
       "band": "white",
       "id": "entra-a-camins",
       "variant": "dark",
-      "pill": "Entreu-hi i mireu com és",
+      "pill": "Què veu qui hi entra avui",
       "title": "Entreu a Camins d'Esperança [Activa]",
       "paragraphs": [
-        "Camins d'Esperança [Activa] és on una persona tria un curs i una caminada. Proveu-ho tal com ho faria qui vosaltres orienteu.",
+        "Això és el que troba avui qualsevol persona que se n'assabenta del projecte pel carrer i hi entra: una proposta oberta a tothom. Només és una idea de com seria; no és la pàgina del vostre servei.",
         "El botó us porta a la pàgina del Prat de Camins: les rutes a peu i els cursos que hi ha per al Prat, de la salut mental comunitària al canvi climàtic."
       ],
       "buttons": [

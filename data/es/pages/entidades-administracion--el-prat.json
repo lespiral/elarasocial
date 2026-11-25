@@ -94,14 +94,21 @@
       ]
     },
     {
+      "type": "ribbon",
+      "band": "white",
+      "id": "nota-camins",
+      "label": "Importante",
+      "text": "Esta es la propuesta abierta a todo el mundo, que no pasa por ninguna entidad ni administración. La página para vuestro servicio —diseño, maquetación y qué dice y qué no— la acordaríamos con vosotros."
+    },
+    {
       "type": "feature",
       "band": "white",
       "id": "entra-a-camins",
       "variant": "dark",
-      "pill": "Entrad y mirad cómo es",
+      "pill": "Qué ve quien entra hoy",
       "title": "Entrad en Caminos de Esperanza [Activa]",
       "paragraphs": [
-        "Caminos de Esperanza [Activa] es donde una persona elige un curso y una caminata. Probadlo tal como lo haría quien vosotros orientáis.",
+        "Esto es lo que encuentra hoy cualquier persona que se entera del proyecto por la calle y entra: una propuesta abierta a todo el mundo. Solo es una idea de cómo sería; no es la página de vuestro servicio.",
         "El botón os lleva a Caminos de Esperanza [Activa]: las rutas a pie y los cursos, de la salud mental comunitaria al cambio climático."
       ],
       "buttons": [
