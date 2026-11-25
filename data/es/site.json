@@ -101,7 +101,7 @@
               "Quiero actuar, pero no solo ni sola"
             ],
             "href": "personas",
-            "button": "Ver cómo podemos acompañarte"
+            "button": "Cómo te acompañamos"
           },
           {
             "kicker": "Para entidades",
@@ -113,7 +113,7 @@
               "Queremos poner el cuidado y el bien común en el centro"
             ],
             "href": "entidades",
-            "button": "Ver qué podemos hacer en vuestro espacio"
+            "button": "Qué podemos hacer en vuestro espacio"
           }
         ]
       },
@@ -129,8 +129,8 @@
         "kicker": "qué hacemos exactamente",
         "title": "¿Qué es la Esperanza Activa?",
         "paragraphs": [
-          "No es optimismo ni esperar que todo vaya bien. Es una práctica: **mirar de frente lo que nos preocupa y elegir, con otras personas, un paso concreto**.",
-          "Lo trabajamos con **El Trabajo que Reconecta**, un camino en cuatro pasos desarrollado por Joanna Macy. Lo llamamos la espiral, porque volvemos a ella siempre que hace falta."
+          "**No es optimismo. Es una práctica:** mirar de frente lo que nos preocupa y elegir, con otras personas, un paso concreto.",
+          "Lo hacemos con **El Trabajo que Reconecta**, un camino en espiral de cuatro pasos. **Os acompañamos para que podáis hacerlo vuestro y reconectar con lo que os sostiene cuando el día a día se hace difícil.**"
         ],
         "items": [
           {
@@ -152,7 +152,7 @@
         ],
         "buttons": [
           {
-            "text": "¿Quieres saber más sobre El Trabajo que Reconecta?",
+            "text": "Saber más",
             "href": "que-hacemos"
           }
         ]
@@ -162,21 +162,21 @@
         "band": "white",
         "id": "formatos",
         "title": "¿Cómo son las propuestas?",
-        "intro": "**Depende del formato.** No es lo mismo un minicurso que un taller o un acompañamiento. Aquí tienes qué pasa en cada uno.",
+        "intro": "Tienes diferentes formatos, según lo que necesites: un minicurso, un taller o un acompañamiento. Aquí verás qué pasa en cada uno.",
         "items": [
           {
             "kicker": "Solo/a · a tu ritmo",
             "title": "Minicurso en línea",
             "scene": "passes",
-            "text": "Cada paso: una práctica guiada de unos 15 minutos y una pregunta para pensar.",
+            "text": "Cada paso: una práctica guiada de unos 15 minutos y una pregunta para reflexionar.",
             "rows": [
               [
                 "Duración",
-                "7 pasos, en 7 días o a tu ritmo"
+                "7 pasos a tu ritmo"
               ],
               [
                 "Formato",
-                "Audio y reflexión, en línea"
+                "En línea"
               ],
               [
                 "Precio",
@@ -192,11 +192,11 @@
             "kicker": "Tú y una persona acompañante",
             "title": "Acompañamiento individual",
             "scene": "costat",
-            "text": "Hablamos de lo que te pesa, practicamos herramientas para regularte y diseñamos un plan de acción y de autocuidado.",
+            "text": "Hablamos de lo que te preocupa, practicamos herramientas para sostenerte y diseñamos un plan de acción y de autocuidado.",
             "rows": [
               [
                 "Duración",
-                "Sesiones de 1 h o 1,5 h, semanales o cada 15 días"
+                "Sesiones de 1 h o 1,5 h"
               ],
               [
                 "Formato",
@@ -216,7 +216,7 @@
             "rows": [
               [
                 "Duración",
-                "Taller de 4 h, ciclo de 4 × 2 h, grupo regular de 2 h o fin de semana"
+                "Diferentes duraciones: desde un taller de pocas horas hasta un fin de semana"
               ],
               [
                 "Formato",
@@ -232,11 +232,11 @@
             "kicker": "Vuestro equipo · hasta 20",
             "title": "Para equipos y entidades",
             "scene": "sostenir",
-            "text": "Prácticas y dinámicas de El Trabajo que Reconecta, trabajo con el grupo y un paso concreto para pasar a la acción. Prácticas breves entre sesiones y espacios para cuidaros como equipo. Os lleváis un plan propio para mantenerlo.",
+            "text": "Dinámicas de El Trabajo que Reconecta para cuidaros como equipo y elegir un paso concreto. Haced prácticas breves entre sesiones y terminad con un plan propio para mantenerlo.",
             "rows": [
               [
                 "Duración",
-                "Burnout: 8 sesiones · El Trabajo que Reconecta: 4 × 2 h"
+                "De 4 a 8 sesiones, o un taller a medida según vuestra demanda"
               ],
               [
                 "Formato",

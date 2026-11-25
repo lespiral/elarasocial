@@ -143,7 +143,7 @@
               "Vull actuar, però no sol ni sola"
             ],
             "href": "persones",
-            "button": "Veure com et podem acompanyar"
+            "button": "Com t'acompanyem"
           },
           {
             "kicker": "Per a entitats",
@@ -155,7 +155,7 @@
               "Volem posar la cura i el bé comú al centre"
             ],
             "href": "entitats",
-            "button": "Veure què podem fer al vostre espai"
+            "button": "Què podem fer al vostre espai"
           }
         ]
       },
@@ -171,8 +171,8 @@
         "kicker": "què fem exactament",
         "title": "Què és l'Esperança Activa?",
         "paragraphs": [
-          "No és optimisme ni esperar que tot vagi bé. És una pràctica: **mirar de cara allò que ens preocupa i triar, amb altres persones, un pas concret**.",
-          "Ho treballem amb **El Treball que Reconnecta**, un camí en quatre passos desenvolupat per Joanna Macy. L'anomenem l'espiral, perquè hi tornem sempre que cal."
+          "**No és optimisme. És una pràctica:** mirar de cara el que ens preocupa i triar, amb altres persones, un pas concret.",
+          "Ho fem amb **El Treball que Reconnecta**, un camí en espiral de quatre passos. **Us hi acompanyem perquè el pugueu fer vostre i reconnectar amb allò que us sosté quan el dia a dia es fa difícil.**"
         ],
         "items": [
           {
@@ -194,7 +194,7 @@
         ],
         "buttons": [
           {
-            "text": "Vols saber-ne més, sobre El Treball que Reconnecta?",
+            "text": "Saber-ne més",
             "href": "que-fem"
           }
         ]
@@ -204,21 +204,21 @@
         "band": "white",
         "id": "formats",
         "title": "Com són les propostes?",
-        "intro": "**Depèn del format.** No és el mateix un minicurs que un taller o un acompanyament. Aquí tens què passa a cada un.",
+        "intro": "Tens diferents formats, segons el que necessitis: un minicurs, un taller o un acompanyament. Aquí veuràs què passa a cada un.",
         "items": [
           {
             "kicker": "Sol/a · al teu ritme",
             "title": "Minicurs en línia",
             "scene": "passes",
-            "text": "Cada pas: una pràctica guiada d'uns 15 minuts i una pregunta per pensar.",
+            "text": "Cada pas: una pràctica guiada d'uns 15 minuts i una pregunta per reflexionar.",
             "rows": [
               [
                 "Durada",
-                "7 passes, en 7 dies o al teu ritme"
+                "7 passes al teu ritme"
               ],
               [
                 "Format",
-                "Àudio i reflexió, en línia"
+                "En línia"
               ],
               [
                 "Preu",
@@ -234,11 +234,11 @@
             "kicker": "Tu i una persona acompanyant",
             "title": "Acompanyament individual",
             "scene": "costat",
-            "text": "Parlem del que et pesa, practiquem eines per regular-te i dissenyem un pla d'acció i d'autocura.",
+            "text": "Parlem del que et preocupa, practiquem eines per sostenir-te i dissenyem un pla d'acció i d'autocura.",
             "rows": [
               [
                 "Durada",
-                "Sessions d'1 h o 1,5 h, setmanals o cada 15 dies"
+                "Sessions d'1 h o 1,5 h"
               ],
               [
                 "Format",
@@ -258,7 +258,7 @@
             "rows": [
               [
                 "Durada",
-                "Taller de 4 h, cicle de 4 × 2 h, grup regular de 2 h o cap de setmana"
+                "Diferents durades: des d'un taller de poques hores fins a un cap de setmana"
               ],
               [
                 "Format",
@@ -274,11 +274,11 @@
             "kicker": "El vostre equip · fins a 20",
             "title": "Per a equips i entitats",
             "scene": "sostenir",
-            "text": "Pràctiques i dinàmiques d'El Treball que Reconnecta, treball amb el grup i un pas concret per passar a l'acció. Pràctiques breus entre sessions i espais per cuidar-vos com a equip. Us n'emporteu un pla propi per mantenir-ho.",
+            "text": "Dinàmiques d'El Treball que Reconnecta per cuidar-vos com a equip i triar un pas concret. Feu pràctiques breus entre sessions i acabeu amb un pla propi per mantenir-ho.",
             "rows": [
               [
                 "Durada",
-                "Burnout: 8 sessions · El Treball que Reconnecta: 4 × 2 h"
+                "De 4 a 8 sessions, o un taller a mida segons la vostra demanda"
               ],
               [
                 "Format",
