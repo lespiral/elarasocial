@@ -1,0 +1,274 @@
+{
+  "title": "Esperança Activa als serveis municipals del Prat de Llobregat",
+  "kicker": "Proposta per a l'Ajuntament del Prat de Llobregat",
+  "lead": "Un recurs públic i gratuït per orientar persones amb malestar, soledat o incertesa, sense crear cap circuit nou ni llista d'espera.",
+  "description": "Proposta per a l'Ajuntament del Prat de Llobregat: un recurs públic i gratuït per orientar persones amb malestar, soledat o incertesa, des dels serveis i equipaments municipals.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Parlem de com ho faríem al Prat",
+      "href": "entitats#demana-proposta"
+    },
+    {
+      "text": "Entrar a Camins",
+      "href": "#entra-a-camins"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "proposta",
+      "label": "Proposta",
+      "text": "Pàgina informativa per a l'Ajuntament del Prat de Llobregat. Cap servei municipal hi col·labora encara."
+    },
+    {
+      "type": "list",
+      "band": "white",
+      "id": "en-una-mirada",
+      "title": "En una mirada",
+      "list_icon": "check",
+      "items": [
+        "**Gratuït** per a les persones, sense llista d'espera.",
+        "**Sense cap circuit nou**: només cal orientar.",
+        "Cursos en línia i **caminades que surten de la porta** del vostre espai.",
+        "**No substitueix** cap atenció que ja feu."
+      ]
+    },
+    {
+      "type": "infografia",
+      "name": "administracio",
+      "band": "soft",
+      "id": "cami",
+      "title": "Què passa quan una persona arriba al vostre servei",
+      "intro": "El desgast actual no és només individual, és estructural. Des del vostre servei orienteu cap a El Treball que Reconnecta."
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "id": "set-passes",
+      "title": "Per on passa una persona: les 7 passes",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "paragraphs": [
+        "Una breu explicació, una pràctica guiada i una caminada de reflexió, des d'Allò que estimo fins a El següent pas possible."
+      ],
+      "list": [
+        "<strong>“M’encanta… / M’estimo…”:</strong> Tornar a l’arrel: reconèixer el que et nodreix i et dona força.",
+        "<strong>“M’agradaria donar les gràcies a…”:</strong> Obrir la gratitud cap als altres i recordar la interdependència.",
+        "<strong>“Quan miro el futur, les meves preocupacions inclouen…”:</strong> Donar espai al que inquieta amb honestedat i tendresa.",
+        "<strong>“El que m’inspira és…”:</strong> Eixamplar la mirada: deixar entrar aire, perspectiva i sentit.",
+        "<strong>“El que espero profundament és…”:</strong> Escoltar l’esperança profunda com una direcció interna (encara que sigui subtil).",
+        "<strong>“Un paper que m’agradaria tenir és…”:</strong> Reconèixer quin tipus de presència vols aportar al món (i a la teva vida).",
+        "<strong>“Un pas que faré la setmana vinent és…”:</strong> Aterrar l’espiral en un gest realista, coherent i amable."
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "com-ho-viuria",
+      "title": "Com ho viuria una persona del vostre servei",
+      "animated": true,
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Rep l'orientació al vostre espai",
+          "text": "Amb un cartell, un QR o paraules vostres."
+        },
+        {
+          "icon": "headphones",
+          "title": "Fa la pràctica",
+          "text": "Guiada, d'uns 15 minuts, a casa."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina des del vostre espai",
+          "text": "Al seu ritme."
+        },
+        {
+          "icon": "sparkle",
+          "title": "S'ho porta al dia a dia",
+          "text": "Un petit pas possible."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "white",
+      "id": "entra-a-camins",
+      "variant": "dark",
+      "pill": "Entreu-hi i mireu com és",
+      "title": "Entreu a Camins d'Esperança [Activa]",
+      "paragraphs": [
+        "Aquí és on una persona escriu on viu, veu les rutes que té a prop i tria un curs i una caminada. Proveu-ho tal com ho faria qui vosaltres orienteu."
+      ],
+      "search": {
+        "action": "https://xn--esperanaactiva-mjb.cat/ciutats/",
+        "label": "Escriviu una adreça del Prat i veureu les rutes més properes",
+        "placeholder": "Carrer, plaça o barri del Prat de Llobregat",
+        "button": "Veure les rutes"
+      },
+      "buttons": [
+        {
+          "text": "Veure les rutes del Prat",
+          "href": "https://xn--esperanaactiva-mjb.cat/el-prat/"
+        }
+      ],
+      "side": {
+        "title": "Dues webs, una per llengua",
+        "items": [
+          {
+            "title": "esperançaactiva.cat",
+            "text": "Camins d'Esperança [Activa], en català",
+            "href": "https://xn--esperanaactiva-mjb.cat/"
+          },
+          {
+            "title": "esperanzaactiva.org",
+            "text": "Caminos de Esperanza [Activa], en castellà",
+            "href": "https://esperanzaactiva.org/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "gains",
+      "band": "soft",
+      "id": "guanyeu-demanem",
+      "title": "Què hi guanyeu i què us demanem",
+      "gain": {
+        "title": "Què hi guanyeu",
+        "items": [
+          "Un recurs gratuït i sense llista d'espera.",
+          "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
+          "Només cal orientar: la resta ho fa cada persona al seu ritme."
+        ]
+      },
+      "ask": {
+        "title": "Què us demanem",
+        "items": [
+          "Per orientar, res: sense acord ni tràmit.",
+          "Per ser centre col·laborador, un acord per escrit que concretem plegats.",
+          "Que no substitueixi cap atenció que ja feu."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "white",
+      "id": "cursos",
+      "title": "Quin curs orientar",
+      "intro": "Els cursos són en preparació; les rutes ja es poden fer.",
+      "items": [
+        {
+          "icon": "users-three",
+          "badge": "Properament",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "lifebuoy",
+          "badge": "Properament",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Veure tots els cursos a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta d'exemple al Prat",
+      "intro": "Una caminada que surt de la porta de L'Espiral del Prat, un dels espais promotors del projecte, com a mostra de format.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Exemple de format",
+          "title": "L'Espiral del Prat",
+          "text": "Una caminada de 1,29 km que surt de la porta de l'espai.",
+          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
+          "button": "Veure la ruta"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "band": "white",
+      "id": "donar-ho-a-coneixer",
+      "title": "Com donar-ho a conèixer",
+      "list_icon": "signpost",
+      "items": [
+        "Orientació des de serveis socials, centres cívics o equipaments.",
+        "Un text i una fitxa per a professionals.",
+        "Un curs a mida amb recursos propis de l'administració."
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "condicions",
+      "title": "Contractació",
+      "paragraphs": [
+        "Si cal contractar-ho, mirem juntes quin procediment encaixa. No és assessorament jurídic."
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Els límits",
+      "paragraphs": [
+        "No és teràpia ni un servei d'urgències. Si algú es troba malament, orienteu cap a aquests números:"
+      ],
+      "buttons": [
+        {
+          "text": "061",
+          "note": "Salut Respon (només Catalunya)",
+          "href": "tel:061"
+        },
+        {
+          "text": "024",
+          "note": "Atenció a la conducta suïcida",
+          "href": "tel:024"
+        },
+        {
+          "text": "112",
+          "note": "Emergències",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "parlem",
+      "kicker": "Parlem de com ho faríem al Prat",
+      "paragraphs": [
+        "Us responem en 5 dies laborables. La primera conversa és sense compromís."
+      ],
+      "buttons": [
+        {
+          "text": "Parlem de com ho faríem al Prat",
+          "href": "entitats#demana-proposta"
+        },
+        {
+          "text": "Administració i prescripció social",
+          "href": "entitats-administracio"
+        },
+        {
+          "text": "Curs a mida",
+          "href": "entitats-curs-a-mida"
+        }
+      ]
+    }
+  ]
+}
