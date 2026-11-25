@@ -141,7 +141,7 @@
       "gain": {
         "title": "Qué ganáis",
         "items": [
-          "Un recurso gratuito y sin lista de espera.",
+          "Un recurso que puede ser gratuito para las personas que atendéis y sin lista de espera.",
           "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
           "Solo hay que orientar: el resto lo hace cada persona a su ritmo."
         ]
@@ -149,9 +149,7 @@
       "ask": {
         "title": "Qué os pedimos",
         "items": [
-          "Para orientar, nada: sin acuerdo ni trámite.",
-          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
-          "Que no sustituya ninguna atención que ya hacéis."
+          "Hablar con vosotros: una entrevista o un espacio de encuentro para ver cómo podemos encajarlo."
         ]
       }
     },
@@ -163,6 +161,18 @@
       "title": "Qué curso orientar",
       "intro": "Los cursos están en preparación; las rutas ya se pueden hacer.",
       "items": [
+        {
+          "icon": "hand-heart",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
+        },
+        {
+          "icon": "tree",
+          "badge": "Próximamente",
+          "title": "Cuando el futuro del planeta te preocupa",
+          "text": "Cambio climático, degradación de los ecosistemas e incertidumbre ante el futuro"
+        },
         {
           "icon": "users-three",
           "badge": "Próximamente",
@@ -181,6 +191,16 @@
           "text": "Ver todos los cursos en Caminos",
           "href": "https://esperanzaactiva.org/"
         }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "cursos-a-mida",
+      "title": "Cursos adaptables a vuestro espacio",
+      "paragraphs": [
+        "Podemos adecuarlos específicamente y redefinirlos para que encajen aún más con vuestro espacio, de modo que, cuando estén disponibles, las personas que atendéis puedan hacerlos teniendo esto presente."
       ]
     },
     {
