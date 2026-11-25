@@ -1,8 +1,8 @@
 {
-  "title": "Esperança Activa als serveis municipals del Prat de Llobregat",
-  "kicker": "Proposta per a l'Ajuntament del Prat de Llobregat",
+  "title": "Esperança Activa als serveis i entitats del Prat de Llobregat",
+  "kicker": "Proposta per als serveis i entitats del Prat de Llobregat",
   "lead": "Un recurs públic i gratuït per orientar persones amb malestar, soledat o incertesa, sense crear cap circuit nou ni llista d'espera.",
-  "description": "Proposta per a l'Ajuntament del Prat de Llobregat: un recurs públic i gratuït per orientar persones amb malestar, soledat o incertesa, des dels serveis i equipaments municipals.",
+  "description": "Proposta per als serveis i entitats del Prat de Llobregat: un recurs públic i gratuït per orientar persones amb malestar, soledat o incertesa, des dels serveis, equipaments i entitats del municipi.",
   "section": "entitats",
   "actions": [
     {
@@ -20,7 +20,7 @@
       "band": "white",
       "id": "proposta",
       "label": "Proposta",
-      "text": "Pàgina informativa per a l'Ajuntament del Prat de Llobregat. Cap servei municipal hi col·labora encara."
+      "text": "Pàgina informativa per als serveis i entitats del Prat de Llobregat. Cap servei ni entitat hi col·labora encara."
     },
     {
       "type": "list",
@@ -230,7 +230,7 @@
       "items": [
         "Orientació des de serveis socials, centres cívics o equipaments.",
         "Un text i una fitxa per a professionals.",
-        "Un curs a mida amb recursos propis de l'administració."
+        "Un curs a mida, si teniu recursos propis."
       ]
     },
     {
