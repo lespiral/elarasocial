@@ -1,0 +1,297 @@
+{
+  "title": "Esperança Activa a Osona Ioga",
+  "kicker": "Proposta per a Osona Ioga",
+  "lead": "Un recurs gratuït per orientar persones amb malestar, soledat o incertesa, que pot sortir de la porta del vostre espai, sense crear cap circuit nou ni llista d'espera.",
+  "description": "Proposta per a Osona Ioga: un recurs gratuït per orientar persones amb malestar, soledat o incertesa, amb una caminada que surt de la porta del vostre espai.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Parlem de com ho faríem a Osona Ioga",
+      "href": "entitats#demana-proposta"
+    },
+    {
+      "text": "Entrar a Camins",
+      "href": "#entra-a-camins"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "proposta",
+      "label": "Proposta",
+      "text": "Pàgina informativa per a Osona Ioga."
+    },
+    {
+      "type": "list",
+      "band": "white",
+      "id": "en-una-mirada",
+      "title": "Com és la nostra proposta",
+      "list_icon": "check",
+      "items": [
+        "**Gratuït** per a les persones, sense llista d'espera.",
+        "**Sense cap circuit nou**: només cal orientar.",
+        "Cursos en línia i **caminades que surten de la porta** del vostre espai.",
+        "**No substitueix** cap classe, teràpia ni activitat que ja feu."
+      ]
+    },
+    {
+      "type": "infografia",
+      "name": "administracio",
+      "band": "soft",
+      "id": "cami",
+      "title": "Què passa quan una persona arriba al vostre espai",
+      "intro": "El desgast actual no és només individual, és estructural. Des del vostre espai orienteu cap a El Treball que Reconnecta.",
+      "edifici": "espai",
+      "lloc": "espai"
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "id": "set-passes",
+      "title": "Per on passa una persona: les 7 passes",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "paragraphs": [
+        "Una breu explicació, una pràctica guiada i una caminada de reflexió, des d'Allò que estimo fins a El següent pas possible."
+      ],
+      "list": [
+        "<strong>“M’encanta… / M’estimo…”:</strong> Tornar a l’arrel: reconèixer el que et nodreix i et dona força.",
+        "<strong>“M’agradaria donar les gràcies a…”:</strong> Obrir la gratitud cap als altres i recordar la interdependència.",
+        "<strong>“Quan miro el futur, les meves preocupacions inclouen…”:</strong> Donar espai al que inquieta amb honestedat i tendresa.",
+        "<strong>“El que m’inspira és…”:</strong> Eixamplar la mirada: deixar entrar aire, perspectiva i sentit.",
+        "<strong>“El que espero profundament és…”:</strong> Escoltar l’esperança profunda com una direcció interna (encara que sigui subtil).",
+        "<strong>“Un paper que m’agradaria tenir és…”:</strong> Reconèixer quin tipus de presència vols aportar al món (i a la teva vida).",
+        "<strong>“Un pas que faré la setmana vinent és…”:</strong> Aterrar l’espiral en un gest realista, coherent i amable."
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "com-ho-viuria",
+      "title": "Com ho viuria una persona del vostre espai",
+      "animated": true,
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Rep l'orientació al vostre espai",
+          "text": "Amb un cartell, un QR o una pàgina pròpia del vostre espai, que podeu enviar per correu o posar a la vostra web."
+        },
+        {
+          "icon": "headphones",
+          "title": "Fa la pràctica",
+          "text": "Guiada, d'uns 15 minuts, a casa. Pot ser una que ja tenim o una que valorem crear perquè encaixi amb el vostre espai."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina des del vostre espai",
+          "text": "Al seu ritme, per una ruta que ja tenim o per una de creada a mida: de diverses llargades o passant per diferents espais."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Torna amb una nova mirada",
+          "text": "Una nova comprensió i una passa decidida per al seu dia a dia i per a la relació amb el vostre espai."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "white",
+      "id": "entra-a-camins",
+      "variant": "dark",
+      "pill": "Què veu qui hi entra avui",
+      "title": "Entreu a Camins d'Esperança [Activa]",
+      "paragraphs": [
+        "Això és el que troba avui qualsevol persona que se n'assabenta del projecte pel carrer i hi entra.",
+        "El botó us porta a Camins: les rutes a peu i els quatre cursos, del malestar individual al canvi climàtic, la prescripció social i el bé comú."
+      ],
+      "buttons": [
+        {
+          "text": "Veure Camins d'Esperança [Activa]",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ],
+      "side": {
+        "title": "Dues webs, una per llengua",
+        "items": [
+          {
+            "title": "esperançaactiva.cat",
+            "text": "Camins d'Esperança [Activa], en català",
+            "href": "https://xn--esperanaactiva-mjb.cat/"
+          },
+          {
+            "title": "esperanzaactiva.org",
+            "text": "Caminos de Esperanza [Activa], en castellà",
+            "href": "https://esperanzaactiva.org/"
+          }
+        ]
+      },
+      "notice": {
+        "label": "Important",
+        "text": "Això és la proposta oberta a tothom, que no passa per cap espai ni entitat. La pàgina per a les persones que vénen a Osona Ioga —disseny, maquetació i què diu i què no— l'acordaríem amb vosaltres. A sota en teniu una proposta."
+      }
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "pagina-persones",
+      "kicker": "Una proposta de pàgina per a les persones que vénen a Osona Ioga",
+      "paragraphs": [
+        "Així la veurien: la podeu enviar per correu o WhatsApp o posar a la vostra web. Es pot canviar tot el que calgui."
+      ],
+      "buttons": [
+        {
+          "text": "Veure la proposta de pàgina per a les persones",
+          "href": "entitats-collectius/osona-ioga/esperanca-activa"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "soft",
+      "id": "guanyeu-demanem",
+      "title": "Què hi guanyeu i què us demanem",
+      "gain": {
+        "title": "Què hi guanyeu",
+        "items": [
+          "Un recurs que pot ser gratuït per a les persones que atengueu i sense llista d'espera.",
+          "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
+          "Només cal orientar: la resta ho fa cada persona al seu ritme."
+        ]
+      },
+      "ask": {
+        "title": "Què us demanem",
+        "items": [
+          "Parlar amb vosaltres i que ens ajudeu a visibilitzar i donar a conèixer aquest projecte a les persones que atengueu i a la vostra comunitat, per empoderar-les i ajudar-les a passar del malestar individual a l'acció col·lectiva."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "white",
+      "id": "cursos",
+      "title": "Quatre àmbits, quatre cursos",
+      "intro": "El dolor i la incertesa tenen moltes cares. Cada curs parteix d'un àmbit: el malestar individual, la prescripció social, l'acció climàtica i el bé comú. Els cursos són en preparació; les rutes ja es poden fer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Malestar individual",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Prescripció social",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "globe",
+          "badge": "Acció climàtica",
+          "title": "Quan el món et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "house",
+          "badge": "Bé comú",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Veure tots els cursos a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "cursos-a-mida",
+      "title": "Cursos adaptables al vostre espai",
+      "paragraphs": [
+        "Podem adequar-los específicament i redefinir-los perquè encaixin encara més amb el vostre espai, de manera que, quan estiguin disponibles, les persones que atengueu els puguin fer tenint-ho present."
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta d'exemple",
+      "intro": "Una caminada que surt de la porta d'un espai, com a mostra de format: la d'Osona Ioga. A Camins podeu veure les rutes de Vic, cadascuna amb el mapa i la ruta a Wikiloc.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Exemple de format",
+          "title": "Osona Ioga",
+          "text": "Una caminada que surt de la porta de l'espai.",
+          "href": "https://xn--esperanaactiva-mjb.cat/vic/",
+          "button": "Veure les rutes de Vic a Camins"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "band": "white",
+      "id": "donar-ho-a-coneixer",
+      "title": "Com donar-ho a conèixer",
+      "list_icon": "signpost",
+      "items": [
+        "Un enllaç o un QR, per enviar per correu o WhatsApp i per posar a la vostra web o al butlletí.",
+        "Una pàgina pròpia per a les persones que vénen a Osona Ioga, com la proposta que podeu veure aquí.",
+        "Un curs a mida, si teniu recursos propis."
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Els límits",
+      "paragraphs": [
+        "No és teràpia ni un servei d'urgències. Si algú necessita un acompanyament més profund, Elara Social forma part de L'Espiral, on hi ha psicòlegs, terapeutes i tallers: podem encaminar-lo o oferir-li aquests serveis. En una urgència, orienteu cap al 061 o el 112."
+      ],
+      "buttons": [
+        {
+          "text": "L'Espiral",
+          "note": "Psicòlegs, terapeutes i acompanyament emocional",
+          "href": "https://lespiral.cat/"
+        },
+        {
+          "text": "061",
+          "note": "Salut Respon (només Catalunya)",
+          "href": "tel:061"
+        },
+        {
+          "text": "112",
+          "note": "Emergències",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "parlem",
+      "kicker": "Parlem de com ho faríem a Osona Ioga",
+      "paragraphs": [
+        "Us responem en 5 dies laborables. La primera conversa és sense compromís."
+      ],
+      "buttons": [
+        {
+          "text": "Parlem de com ho faríem a Osona Ioga",
+          "href": "entitats#demana-proposta"
+        },
+        {
+          "text": "Curs a mida",
+          "href": "entitats-curs-a-mida"
+        }
+      ]
+    }
+  ],
+  "noindex": true
+}

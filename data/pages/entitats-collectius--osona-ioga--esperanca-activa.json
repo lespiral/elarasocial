@@ -1,0 +1,214 @@
+{
+  "title": "Esperança Activa, a Osona Ioga",
+  "kicker": "Una proposta per a tu",
+  "lead": "Un recurs gratuït per a quan sents malestar, soledat o incertesa: una pràctica guiada, una caminada que surt de la porta d'Osona Ioga i quatre cursos per anar més enllà. Cadascú hi va al seu ritme.",
+  "description": "Esperança Activa a Osona Ioga: un recurs gratuït amb una pràctica guiada i una caminada que surt de la porta de l'espai.",
+  "section": "entitats",
+  "actions": [
+    {
+      "text": "Com es fa",
+      "href": "#com-es-fa"
+    },
+    {
+      "text": "Veure les rutes a Camins",
+      "href": "https://xn--esperanaactiva-mjb.cat/vic/"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "proposta",
+      "label": "Proposta",
+      "text": "Un recurs gratuït que pots fer al teu ritme, des d'Osona Ioga."
+    },
+    {
+      "type": "list",
+      "band": "soft",
+      "id": "en-una-mirada",
+      "title": "Què trobaràs",
+      "list_icon": "check",
+      "items": [
+        "**Gratuït** i sense llista d'espera.",
+        "Una **pràctica guiada** d'uns 15 minuts, a casa.",
+        "Una **caminada que surt de la porta** d'Osona Ioga.",
+        "**No és teràpia** ni cal experiència prèvia: hi vas al teu ritme."
+      ]
+    },
+    {
+      "type": "infografia",
+      "name": "administracio",
+      "band": "white",
+      "id": "cami",
+      "title": "Del malestar i la incertesa a la claredat, el suport i l'acció",
+      "intro": "El desgast actual no és només individual, és estructural. Aquest camí t'ajuda a transformar-lo, acompanyat per la comunitat.",
+      "edifici": "espai",
+      "lloc": "espai"
+    },
+    {
+      "type": "text",
+      "band": "soft",
+      "html": true,
+      "id": "set-passes",
+      "title": "Per on passa una persona: les 7 passes",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "paragraphs": [
+        "Una breu explicació, una pràctica guiada i una caminada de reflexió, des d'Allò que estimo fins a El següent pas possible."
+      ],
+      "list": [
+        "<strong>“M’encanta… / M’estimo…”:</strong> Tornar a l’arrel: reconèixer el que et nodreix i et dona força.",
+        "<strong>“M’agradaria donar les gràcies a…”:</strong> Obrir la gratitud cap als altres i recordar la interdependència.",
+        "<strong>“Quan miro el futur, les meves preocupacions inclouen…”:</strong> Donar espai al que inquieta amb honestedat i tendresa.",
+        "<strong>“El que m’inspira és…”:</strong> Eixamplar la mirada: deixar entrar aire, perspectiva i sentit.",
+        "<strong>“El que espero profundament és…”:</strong> Escoltar l’esperança profunda com una direcció interna (encara que sigui subtil).",
+        "<strong>“Un paper que m’agradaria tenir és…”:</strong> Reconèixer quin tipus de presència vols aportar al món (i a la teva vida).",
+        "<strong>“Un pas que faré la setmana vinent és…”:</strong> Aterrar l’espiral en un gest realista, coherent i amable."
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "white",
+      "id": "com-es-fa",
+      "title": "Com ho faràs",
+      "animated": true,
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Reps l'enllaç o el QR",
+          "text": "A Osona Ioga, o per correu o WhatsApp."
+        },
+        {
+          "icon": "headphones",
+          "title": "Fas la pràctica",
+          "text": "Guiada, d'uns 15 minuts, a casa."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camines des d'Osona Ioga",
+          "text": "Al teu ritme, per una ruta curta que surt de la porta de l'espai."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Tornes amb una nova mirada",
+          "text": "Una nova comprensió i una passa decidida per al teu dia a dia."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "soft",
+      "id": "cursos",
+      "title": "Quatre àmbits, quatre cursos",
+      "intro": "El dolor i la incertesa tenen moltes cares. Cada curs parteix d'un àmbit: el malestar individual, la prescripció social, l'acció climàtica i el bé comú. Els cursos són en preparació; les rutes ja es poden fer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Malestar individual",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Prescripció social",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "globe",
+          "badge": "Acció climàtica",
+          "title": "Quan el món et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "house",
+          "badge": "Bé comú",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Veure tots els cursos a Camins",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "white",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una caminada des d'Osona Ioga",
+      "intro": "Surt de la porta de l'espai i la fas al teu ritme. A Camins hi trobaràs el mapa i la ruta a Wikiloc.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "La ruta",
+          "title": "Osona Ioga",
+          "text": "Una caminada que surt de la porta de l'espai.",
+          "href": "https://xn--esperanaactiva-mjb.cat/vic/",
+          "button": "Veure les rutes de Vic a Camins"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "mes",
+      "kicker": "Més a Osona Ioga",
+      "paragraphs": [
+        "Classes de ioga, meditació i feldenkrais, teràpies i activitats: tot a l'agenda d'Osona Ioga."
+      ],
+      "buttons": [
+        {
+          "text": "Veure l'agenda d'Osona Ioga",
+          "href": "https://osonaioga.com/agenda/"
+        }
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Els límits",
+      "paragraphs": [
+        "No és teràpia ni un servei d'urgències. Si algú necessita un acompanyament més profund, Elara Social forma part de L'Espiral, on hi ha psicòlegs, terapeutes i tallers: podem encaminar-lo o oferir-li aquests serveis. En una urgència, orienteu cap al 061 o el 112."
+      ],
+      "buttons": [
+        {
+          "text": "L'Espiral",
+          "note": "Psicòlegs, terapeutes i acompanyament emocional",
+          "href": "https://lespiral.cat/"
+        },
+        {
+          "text": "061",
+          "note": "Salut Respon (només Catalunya)",
+          "href": "tel:061"
+        },
+        {
+          "text": "112",
+          "note": "Emergències",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "parlem",
+      "kicker": "Tens dubtes?",
+      "paragraphs": [
+        "Escriu-nos i t'ho expliquem. Responem en 5 dies laborables."
+      ],
+      "buttons": [
+        {
+          "text": "Contacte",
+          "href": "contacte"
+        }
+      ]
+    }
+  ],
+  "noindex": true
+}

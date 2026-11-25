@@ -1,0 +1,298 @@
+{
+  "title": "Esperanza Activa en Osona Ioga",
+  "kicker": "Propuesta para Osona Ioga",
+  "lead": "Un recurso gratuito para orientar a personas con malestar, soledad o incertidumbre, que puede salir de la puerta de vuestro espacio, sin crear ningún circuito nuevo ni lista de espera.",
+  "description": "Propuesta para Osona Ioga: un recurso gratuito para orientar a personas con malestar, soledad o incertidumbre, con una caminata que sale de la puerta de vuestro espacio.",
+  "section": "entidades",
+  "actions": [
+    {
+      "text": "Hablemos de cómo lo haríamos en Osona Ioga",
+      "href": "entidades#pide-propuesta"
+    },
+    {
+      "text": "Entrar en Caminos",
+      "href": "#entra-a-camins"
+    }
+  ],
+  "sections": [
+    {
+      "type": "ribbon",
+      "band": "white",
+      "id": "proposta",
+      "label": "Propuesta",
+      "text": "Página informativa para Osona Ioga."
+    },
+    {
+      "type": "list",
+      "band": "white",
+      "id": "en-una-mirada",
+      "title": "Cómo es nuestra propuesta",
+      "list_icon": "check",
+      "items": [
+        "**Gratuito** para las personas, sin lista de espera.",
+        "**Sin ningún circuito nuevo**: solo hay que orientar.",
+        "Cursos en línea y **caminatas que salen de la puerta** de vuestro espacio.",
+        "**No sustituye** ninguna clase, terapia ni actividad que ya hacéis."
+      ]
+    },
+    {
+      "type": "infografia",
+      "name": "administracio",
+      "band": "soft",
+      "id": "cami",
+      "title": "Qué pasa cuando una persona llega a vuestro espacio",
+      "intro": "El desgaste actual no es solo individual, es estructural. Desde vuestro espacio orientáis hacia El Trabajo que Reconecta.",
+      "edifici": "espai",
+      "lloc": "espacio"
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "id": "set-passes",
+      "title": "Por dónde pasa una persona: los 7 pasos",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "paragraphs": [
+        "Una breve explicación, una práctica guiada y una caminata de reflexión, desde Lo que amo hasta El siguiente paso posible."
+      ],
+      "list": [
+        "<strong>“Amo… / Me encanta…”:</strong> Volver a la raíz: reconocer lo que te nutre y te da fuerza.",
+        "<strong>“Me gustaría dar las gracias a…”:</strong> Abrir la gratitud hacia los demás y recordar la interdependencia.",
+        "<strong>“Cuando miro el futuro, mis preocupaciones incluyen…”:</strong> Dar espacio a lo que inquieta con honestidad y ternura.",
+        "<strong>“Lo que me inspira es…”:</strong> Ensanchar la mirada: dejar entrar aire, perspectiva y sentido.",
+        "<strong>“Lo que espero profundamente es…”:</strong> Escuchar la esperanza profunda como una dirección interna (aunque sea sutil).",
+        "<strong>“Un papel que me gustaría tener es…”:</strong> Reconocer qué tipo de presencia quieres aportar al mundo (y a tu vida).",
+        "<strong>“Un paso que daré la semana que viene es…”:</strong> Aterrizar la espiral en un gesto realista, coherente y amable."
+      ]
+    },
+    {
+      "type": "flow",
+      "band": "soft",
+      "id": "com-ho-viuria",
+      "title": "Cómo lo viviría una persona de vuestro espacio",
+      "animated": true,
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Recibe la orientación en vuestro espacio",
+          "text": "Con un cartel, un QR o una página propia de vuestro espacio, que podéis enviar por correo o poner en vuestra web."
+        },
+        {
+          "icon": "headphones",
+          "title": "Hace la práctica",
+          "text": "Guiada, de unos 15 minutos, en casa. Puede ser una que ya tenemos o una que valoramos crear para que encaje con vuestro espacio."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina desde vuestro espacio",
+          "text": "A su ritmo, por una ruta que ya tenemos o por una creada a medida: de distintas longitudes o pasando por diferentes espacios."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Vuelve con una nueva mirada",
+          "text": "Una nueva comprensión y un paso decidido para su día a día y para la relación con vuestro espacio."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "white",
+      "id": "entra-a-camins",
+      "variant": "dark",
+      "pill": "Qué ve quien entra hoy",
+      "title": "Entrad en Caminos de Esperanza [Activa]",
+      "paragraphs": [
+        "Esto es lo que encuentra hoy cualquier persona que se entera del proyecto por la calle y entra.",
+        "El botón os lleva a Caminos: las rutas a pie y los cuatro cursos, del malestar individual al cambio climático, la prescripción social y el bien común."
+      ],
+      "buttons": [
+        {
+          "text": "Ver Caminos de Esperanza [Activa]",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ],
+      "side": {
+        "title": "Dos webs, una por idioma",
+        "items": [
+          {
+            "title": "esperançaactiva.cat",
+            "text": "Camins d'Esperança [Activa], en catalán",
+            "href": "https://xn--esperanaactiva-mjb.cat/"
+          },
+          {
+            "title": "esperanzaactiva.org",
+            "text": "Caminos de Esperanza [Activa], en castellano",
+            "href": "https://esperanzaactiva.org/"
+          }
+        ]
+      },
+      "notice": {
+        "label": "Importante",
+        "text": "Esta es la propuesta abierta a todo el mundo, que no pasa por ningún espacio ni entidad. La página para las personas que vienen a Osona Ioga —diseño, maquetación y qué dice y qué no— la acordaríamos con vosotros. Abajo tenéis una propuesta."
+      }
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "pagina-persones",
+      "kicker": "Una propuesta de página para las personas que vienen a Osona Ioga",
+      "paragraphs": [
+        "Así la verían: la podéis enviar por correo o WhatsApp o poner en vuestra web. Se puede cambiar todo lo que haga falta."
+      ],
+      "buttons": [
+        {
+          "text": "Ver la propuesta de página para las personas",
+          "href": "entidades-colectivos/osona-ioga/esperanza-activa"
+        }
+      ]
+    },
+    {
+      "type": "gains",
+      "band": "soft",
+      "id": "guanyeu-demanem",
+      "title": "Qué ganáis y qué os pedimos",
+      "gain": {
+        "title": "Qué ganáis",
+        "items": [
+          "Un recurso que puede ser gratuito para las personas que atendéis y sin lista de espera.",
+          "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
+          "Solo hay que orientar: el resto lo hace cada persona a su ritmo."
+        ]
+      },
+      "ask": {
+        "title": "Qué os pedimos",
+        "items": [
+          "Hablar con vosotros y que nos ayudéis a visibilizar y dar a conocer este proyecto a las personas que atendéis y a vuestra comunidad, para empoderarlas y ayudarlas a pasar del malestar individual a la acción colectiva."
+        ]
+      }
+    },
+    {
+      "type": "cards",
+      "tone": "courses",
+      "band": "white",
+      "id": "cursos",
+      "title": "Cuatro ámbitos, cuatro cursos",
+      "intro": "El dolor y la incertidumbre tienen muchas caras. Cada curso parte de un ámbito: el malestar individual, la prescripción social, la acción climática y el bien común. Los cursos están en preparación; las rutas ya se pueden hacer.",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Malestar individual",
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Prescripción social",
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        },
+        {
+          "icon": "globe",
+          "badge": "Acción climática",
+          "title": "Cuando el mundo te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "house",
+          "badge": "Bien común",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Ver todos los cursos en Caminos",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "cursos-a-mida",
+      "title": "Cursos adaptables a vuestro espacio",
+      "paragraphs": [
+        "Podemos adecuarlos específicamente y redefinirlos para que encajen aún más con vuestro espacio, de modo que, cuando estén disponibles, las personas que atendéis puedan hacerlos teniendo esto presente."
+      ]
+    },
+    {
+      "type": "cards",
+      "band": "soft",
+      "id": "ruta",
+      "tone": "accent",
+      "title": "Una ruta de ejemplo",
+      "intro": "Una caminata que sale de la puerta de un espacio, como muestra de formato: la de Osona Ioga. En Caminos podéis ver las rutas de Vic, cada una con su mapa y su ruta en Wikiloc.",
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "Ejemplo de formato",
+          "title": "Osona Ioga",
+          "text": "Una caminata que sale de la puerta del espacio.",
+          "href": "https://esperanzaactiva.org/vic/",
+          "button": "Ver las rutas de Vic en Caminos"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "band": "white",
+      "id": "donar-ho-a-coneixer",
+      "title": "Cómo darlo a conocer",
+      "list_icon": "signpost",
+      "items": [
+        "Un enlace o un QR, para enviar por correo o WhatsApp y para poner en vuestra web o boletín.",
+        "Una página propia para las personas que vienen a Osona Ioga, como la propuesta que podéis ver aquí.",
+        "Un curso a medida, si tenéis recursos propios."
+      ]
+    },
+    {
+      "type": "limits",
+      "band": "white",
+      "id": "limits",
+      "title": "Los límites",
+      "paragraphs": [
+        "No es terapia ni un servicio de urgencias. Si alguien necesita un acompañamiento más profundo, Elara Social forma parte de L'Espiral, donde hay psicólogos, terapeutas y talleres: podemos encaminarlo u ofrecerle esos servicios. En una urgencia, orientad hacia el 061 o el 112."
+      ],
+      "buttons": [
+        {
+          "text": "L'Espiral",
+          "note": "Psicólogos, terapeutas y acompañamiento emocional",
+          "href": "https://lespiral.cat/"
+        },
+        {
+          "text": "061",
+          "note": "Salut Respon (solo Cataluña)",
+          "href": "tel:061"
+        },
+        {
+          "text": "112",
+          "note": "Emergencias",
+          "href": "tel:112"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "parlem",
+      "kicker": "Hablemos de cómo lo haríamos en Osona Ioga",
+      "paragraphs": [
+        "Os respondemos en 5 días laborables. La primera conversación es sin compromiso."
+      ],
+      "buttons": [
+        {
+          "text": "Hablemos de cómo lo haríamos en Osona Ioga",
+          "href": "entidades#pide-propuesta"
+        },
+        {
+          "text": "Curso a medida",
+          "href": "entidades-curso-a-medida"
+        }
+      ]
+    }
+  ],
+  "ca": "entitats-collectius/osona-ioga",
+  "noindex": true
+}
