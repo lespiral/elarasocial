@@ -208,16 +208,16 @@
       "band": "soft",
       "id": "ruta",
       "tone": "accent",
-      "title": "Una ruta desde vuestro centro",
-      "intro": "Una caminata que sale de la puerta de vuestro centro educativo, como muestra de formato. Todavía no hay ninguna de centros educativos: la diseñaríamos con vosotros. En Caminos podéis ver las rutas que ya existen, cada una con su mapa y su ruta en Wikiloc.",
+      "title": "Rutas desde centros educativos",
+      "intro": "Las caminatas de «Cuando cuidarnos es una tarea colectiva» salen de la puerta de espacios donde la gente se encuentra, también de centros educativos. Para vuestro centro, diseñaríamos una con vosotros.",
       "items": [
         {
           "icon": "map-trifold",
-          "badge": "Ejemplo de formato",
-          "title": "Desde vuestro centro educativo",
-          "text": "Una caminata corta que sale de la puerta, al ritmo de cada persona.",
-          "href": "https://esperanzaactiva.org/",
-          "button": "Ver las rutas en Caminos"
+          "badge": "Prescripción social",
+          "title": "Girona: rutas desde centros educativos",
+          "text": "Caminatas que salen de la puerta de centros educativos de Girona.",
+          "href": "https://esperanzaactiva.org/terres-gironines/#girona-centres-educatius",
+          "button": "Ver las rutas de Girona"
         }
       ]
     },

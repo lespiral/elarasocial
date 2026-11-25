@@ -208,16 +208,16 @@
       "band": "soft",
       "id": "ruta",
       "tone": "accent",
-      "title": "Una ruta desde vuestro centro",
-      "intro": "Una caminata que sale de la puerta de vuestro centro de salud, como muestra de formato. Todavía no hay ninguna de centros de salud: la diseñaríamos con vosotros. En Caminos podéis ver las rutas que ya existen, cada una con su mapa y su ruta en Wikiloc.",
+      "title": "Rutas desde servicios públicos de cuidado",
+      "intro": "Las caminatas de «Cuando la vida te desborda» salen de servicios públicos de cuidado, inspiradas en las Rutas Saludables del PAFES. Para vuestro centro, diseñaríamos una con vosotros.",
       "items": [
         {
           "icon": "map-trifold",
-          "badge": "Ejemplo de formato",
-          "title": "Desde vuestro centro de salud",
-          "text": "Una caminata corta que sale de la puerta, al ritmo de cada persona.",
-          "href": "https://esperanzaactiva.org/",
-          "button": "Ver las rutas en Caminos"
+          "badge": "Malestar individual",
+          "title": "El Prat: «Cuando la vida te desborda»",
+          "text": "Caminatas cortas (de 2 a 4 km aproximadamente) que salen de servicios públicos de cuidado.",
+          "href": "https://esperanzaactiva.org/el-prat/",
+          "button": "Ver las rutas del Prat"
         }
       ]
     },

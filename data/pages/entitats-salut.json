@@ -208,16 +208,16 @@
       "band": "soft",
       "id": "ruta",
       "tone": "accent",
-      "title": "Una ruta des del vostre centre",
-      "intro": "Una caminada que surt de la porta del vostre centre de salut, com a mostra de format. Encara no n'hi ha cap de centres de salut: la dissenyaríem amb vosaltres. A Camins podeu veure les rutes que ja existeixen, cadascuna amb el mapa i la ruta a Wikiloc.",
+      "title": "Rutes des de serveis públics de cura",
+      "intro": "Les caminades de «Quan la vida et desborda» surten de serveis públics de cura, inspirades en les Rutes Saludables del PAFES. Per al vostre centre, en dissenyaríem una amb vosaltres.",
       "items": [
         {
           "icon": "map-trifold",
-          "badge": "Exemple de format",
-          "title": "Des del vostre centre de salut",
-          "text": "Una caminada curta que surt de la porta, al ritme de cada persona.",
-          "href": "https://xn--esperanaactiva-mjb.cat/ciutats/",
-          "button": "Veure les rutes a Camins"
+          "badge": "Malestar individual",
+          "title": "El Prat: «Quan la vida et desborda»",
+          "text": "Caminades curtes (de 2 a 4 km aproximadament) que surten de serveis públics de cura.",
+          "href": "https://xn--esperanaactiva-mjb.cat/el-prat/",
+          "button": "Veure les rutes del Prat"
         }
       ]
     },
