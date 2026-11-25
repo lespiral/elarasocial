@@ -243,12 +243,12 @@
       "id": "limits",
       "title": "Los límites",
       "paragraphs": [
-        "No es terapia ni un servicio de urgencias. Si alguien necesita terapia o un acompañamiento emocional más profundo, puede ponerse en contacto con L'Espiral, con quien Elara Social está ligada: hay psicólogos y terapeutas, talleres y recursos, y podemos encaminarlo u ofrecerle esos servicios. Si alguien se encuentra mal, orientad hacia estos contactos:"
+        "No es terapia ni un servicio de urgencias. Si alguien necesita un acompañamiento más profundo, Elara Social forma parte de L'Espiral, donde hay psicólogos, terapeutas y talleres: podemos encaminarlo u ofrecerle esos servicios. En una urgencia, orientad hacia el 061 o el 112."
       ],
       "buttons": [
         {
           "text": "L'Espiral",
-          "note": "Terapia y acompañamiento emocional",
+          "note": "Psicólogos, terapeutas y acompañamiento emocional",
           "href": "https://lespiral.cat/"
         },
         {
