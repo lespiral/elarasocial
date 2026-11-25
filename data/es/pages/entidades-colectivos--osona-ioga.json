@@ -223,13 +223,13 @@
       "id": "ruta",
       "tone": "accent",
       "title": "Una ruta de ejemplo",
-      "intro": "Una caminata que sale de la puerta de un espacio, como muestra de formato: la de Osona Ioga. En Caminos podéis ver las rutas de Vic, cada una con su mapa y su ruta en Wikiloc.",
+      "intro": "Una caminata que sale de la puerta de un espacio, como muestra de formato: la que ya hacemos desde entidades y equipamientos públicos de Vic. En Caminos podéis verlas, cada una con su mapa y su ruta en Wikiloc.",
       "items": [
         {
           "icon": "map-trifold",
           "badge": "Ejemplo de formato",
-          "title": "Osona Ioga",
-          "text": "Una caminata que sale de la puerta del espacio.",
+          "title": "Rutas desde entidades y equipamientos de Vic",
+          "text": "Cada ruta sale de la puerta de un servicio o de una entidad. La vuestra podría ser una más.",
           "href": "https://esperanzaactiva.org/vic/",
           "button": "Ver las rutas de Vic en Caminos"
         }

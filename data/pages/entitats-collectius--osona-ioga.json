@@ -223,13 +223,13 @@
       "id": "ruta",
       "tone": "accent",
       "title": "Una ruta d'exemple",
-      "intro": "Una caminada que surt de la porta d'un espai, com a mostra de format: la d'Osona Ioga. A Camins podeu veure les rutes de Vic, cadascuna amb el mapa i la ruta a Wikiloc.",
+      "intro": "Una caminada que surt de la porta d'un espai, com a mostra de format: la que ja fem des d'entitats i equipaments públics de Vic. A Camins podeu veure-les, cadascuna amb el mapa i la ruta a Wikiloc.",
       "items": [
         {
           "icon": "map-trifold",
           "badge": "Exemple de format",
-          "title": "Osona Ioga",
-          "text": "Una caminada que surt de la porta de l'espai.",
+          "title": "Rutes des d'entitats i equipaments de Vic",
+          "text": "Cada ruta surt de la porta d'un servei o d'una entitat. La vostra podria ser-ne una més.",
           "href": "https://xn--esperanaactiva-mjb.cat/vic/",
           "button": "Veure les rutes de Vic a Camins"
         }
