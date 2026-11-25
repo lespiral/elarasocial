@@ -402,7 +402,7 @@
       {# Caixa de límits amb botons de trucada grans: "buttons": [{"text", "note", "href": "tel:061"}] #}
       <aside class="limits">
         {% for p in s.paragraphs or [] %}<p class="limits__p">{{ p }}</p>{% endfor %}
-        <p class="limits__calls">{% for b in s.buttons %}<a class="btn btn--call" href="{{ b.href }}"><strong>{{ icon('phone') }}{{ b.text }}</strong>{% if b.note %}<small>{{ b.note }}</small>{% endif %}</a>{% endfor %}</p>
+        <p class="limits__calls">{% for b in s.buttons %}<a class="btn btn--call" href="{{ b.href }}"><strong>{{ icon('phone' if b.href.startswith('tel:') else 'hand-heart') }}{{ b.text }}</strong>{% if b.note %}<small>{{ b.note }}</small>{% endif %}</a>{% endfor %}</p>
       </aside>
     {% elif s.type == 'contact' %}
       <div class="contact-box">
