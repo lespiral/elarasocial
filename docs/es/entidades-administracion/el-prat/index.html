@@ -13,7 +13,7 @@
   <meta property="og:locale" content="es_ES">
 <link rel="alternate" hreflang="ca" href="https://elarasocial.com/entitats-administracio/el-prat/">
 <link rel="alternate" hreflang="es" href="https://elarasocial.com/es/entidades-administracion/el-prat/">
-<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/entitats-administracio/el-prat/"><link rel="icon" type="image/png" sizes="48x48" href="../../../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../../../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../../../assets/site.css?v=1795605353">
+<link rel="alternate" hreflang="x-default" href="https://elarasocial.com/entitats-administracio/el-prat/"><link rel="icon" type="image/png" sizes="48x48" href="../../../assets/img/favicon-48.png"><link rel="apple-touch-icon" href="../../../assets/img/apple-touch-icon.png">  <link rel="stylesheet" href="../../../assets/site.css?v=1795606040">
 </head>
 <body>
   <a class="skip" href="#contingut">Saltar al contenido</a>
@@ -126,8 +126,8 @@
 <g class="adm__center" data-k="c" role="button" tabindex="0" aria-label="Esperanza Activa"><circle cx="180" cy="690" r="60" fill="#fff" fill-opacity="0.001"/><text x="180" y="688" text-anchor="middle" class="adm__ct">Esperanza</text><text x="180" y="709" text-anchor="middle" class="adm__ct">Activa</text><text x="180" y="820" text-anchor="middle" class="adm__cs">sostenida por la comunidad</text></g>
 <g class="adm__pain" data-k="p" role="button" tabindex="0" aria-label="El malestar y la incertidumbre"><rect x="62.0" y="14" width="236" height="42" rx="12" fill="#fff" fill-opacity=".94" stroke="#b9bec2" stroke-width="2.4"/><text x="180" y="41" text-anchor="middle" class="adm__pl">El malestar y la incertidumbre</text></g>
 </svg>
+    <div class="adm__pop" aria-live="polite"><p class="adm__pk"></p><p class="adm__ptt"></p><p class="adm__px"></p></div>
   </div>
-  <div class="adm__pop" aria-live="polite" hidden><p class="adm__pk"></p><p class="adm__ptt"></p><p class="adm__px"></p></div>
   <p class="adm__foot">Toca cada parte para saber más.</p>
 </div>
 
@@ -160,12 +160,13 @@
 .adm__center.is-sel .adm__ct { text-decoration: underline; text-decoration-color: var(--cs); text-decoration-thickness: 3px; text-underline-offset: 4px; }
 .adm__thr, .adm__in, .adm__strand { stroke-dasharray: 1 1; stroke-dashoffset: 0; }
 .adm__knot, .adm__med, .adm__fig, .adm__tag { transform-box: fill-box; transform-origin: center; }
-.adm__pop { padding: 16px 22px 18px; background: #fbf8ee; border-top: 1px solid var(--cline); text-align: center; }
-.adm__pop[hidden] { display: none; }
-.adm__pk { margin: 0; font: italic 700 14px var(--fb); color: var(--verd-fosc, #46703d); }
+.adm__scene { position: relative; }
+.adm__pop { position: absolute; left: 0; top: 0; z-index: 3; width: min(330px, calc(100% - 24px)); padding: 12px 15px 14px; background: #fff; border: 1px solid var(--cline); border-radius: 14px; box-shadow: 0 2px 4px rgba(1,49,91,.06), 0 14px 32px rgba(1,49,91,.16); text-align: left; opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; }
+.adm__pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.adm__pk { margin: 0; font: 700 11.5px/1.3 var(--fh); letter-spacing: .08em; text-transform: uppercase; color: var(--cs-ink, #6f5711); }
 .adm__pk:empty { display: none; }
-.adm__ptt { margin: 2px 0 0; font: 700 clamp(17px, 2.6cqi, 20px)/1.25 var(--fh); color: var(--c8); }
-.adm__px { margin: 6px auto 0; max-width: 640px; font-size: clamp(15px, 2.1cqi, 16.5px); line-height: 1.5; color: var(--cink); }
+.adm__ptt { margin: 3px 0 0; font: 700 16px/1.3 var(--fh); color: var(--c9); }
+.adm__px { margin: 3px 0 0; font-size: 15.5px; line-height: 1.45; color: var(--cmuted); }
 .adm__foot { margin: 0; padding: 12px 20px 14px; text-align: center; font-size: 14.5px; color: var(--cmuted); background: #fff; border-top: 1px solid var(--cline); }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -199,18 +200,39 @@
     t2: { kick: "Se transforma en", title: "Acción significativa", text: "Te acompañamos a dar pasos concretos y arraigados en tierra firme, huyendo de la inmediatez para construir cambios reales que tu día a día pueda sostener." },
     c: { kick: "¿Qué significa «esperanza activa»?", title: "Esperanza Activa", text: "Transformar el dolor y la incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad." }
   };
-  var pop = root.querySelector(".adm__pop"), cur = null;
+  var pop = root.querySelector(".adm__pop"), scene = root.querySelector(".adm__scene"), cur = null;
+  function vis(k) {
+    var els = root.querySelectorAll('[data-k="' + k + '"]');
+    for (var i = 0; i < els.length; i++) if (els[i].getBoundingClientRect().width) return els[i];
+    return els[0];
+  }
+  function place() {
+    if (!cur) return;
+    var el = vis(cur), r = el.getBoundingClientRect(), sr = scene.getBoundingClientRect();
+    var pw = pop.offsetWidth, ph = pop.offsetHeight, cx = r.left - sr.left + r.width / 2;
+    var x = Math.max(12, Math.min(cx - pw / 2, sr.width - pw - 12));
+    var below = r.bottom - sr.top + 10, above = r.top - sr.top - 10 - ph;
+    var y = below + ph + 8 <= sr.height ? below : above;
+    pop.style.left = x.toFixed(1) + "px";
+    pop.style.top = Math.max(8, Math.min(y, sr.height - ph - 8)).toFixed(1) + "px";
+  }
   function show(k) {
     var all = root.querySelectorAll("[data-k]");
     Array.prototype.forEach.call(all, function (e) { e.classList.toggle("is-sel", e.getAttribute("data-k") === k && cur !== k); });
-    if (cur === k) { cur = null; pop.hidden = true; return; }
+    if (cur === k) { cur = null; pop.classList.remove("is-open"); return; }
     cur = k; var d = DATA[k];
     pop.querySelector(".adm__pk").textContent = d.kick;
     pop.querySelector(".adm__ptt").textContent = d.title;
     pop.querySelector(".adm__px").textContent = d.text;
-    pop.hidden = false;
+    pop.classList.add("is-open");
+    place();
   }
-  root.addEventListener("click", function (e) { var t = e.target.closest && e.target.closest("[data-k]"); if (t) show(t.getAttribute("data-k")); });
+  window.addEventListener("resize", place);
+  root.addEventListener("click", function (e) {
+    var t = e.target.closest && e.target.closest("[data-k]");
+    if (t) show(t.getAttribute("data-k"));
+    else if (cur && !(e.target.closest && e.target.closest(".adm__pop"))) show(cur);
+  });
   root.addEventListener("keydown", function (e) {
     if (e.key !== "Enter" && e.key !== " ") return;
     var t = e.target.closest && e.target.closest("[data-k]"); if (t) { e.preventDefault(); show(t.getAttribute("data-k")); }
@@ -797,6 +819,6 @@
     </div>
   </footer>
 
-  <script src="../../../assets/site.js?v=1795605353" defer></script>
+  <script src="../../../assets/site.js?v=1795606040" defer></script>
 </body>
 </html>
