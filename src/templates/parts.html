@@ -389,7 +389,7 @@
       {# Una cadena de passos amb icona: [{"icon", "title", "text"}]. "vertical": al mòbil, en columna amb fletxes avall; si no, 2 columnes. #}
       {% for p in s.paragraphs or [] %}<p class="flow__lead">{{ p }}</p>{% endfor %}
       <ol class="flow{% if s.vertical %} flow--v{% endif %}{% if s["items"]|length == 3 %} flow--3{% endif %}{% if s.animated %} flow--anim{% endif %}"{% if s.animated %} data-flow{% endif %}>
-        {% for it in s["items"] %}<li class="flow__i"><span class="flow__ic" aria-hidden="true">{{ icon(it.icon) }}</span><strong class="flow__t">{{ it.title }}</strong>{% if it.text %}<span class="flow__d">{{ it.text }}</span>{% endif %}</li>{% endfor %}
+        {% for it in s["items"] %}<li class="flow__i"><span class="flow__ic" aria-hidden="true">{{ icon(it.icon) }}</span><strong class="flow__t">{{ it.title }}</strong>{% if it.text %}<span class="flow__d">{{ it.text }}</span>{% endif %}{% if it.link %}<a class="flow__go" href="{{ link_href(it.link.href, root) }}">{{ it.link.text }}</a>{% endif %}</li>{% endfor %}
       </ol>
       {% for p in s.after or [] %}<p class="nsteps__after">{{ p }}</p>{% endfor %}
     {% elif s.type == 'gains' %}

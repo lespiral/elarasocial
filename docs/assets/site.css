@@ -889,6 +889,7 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .flow__ic .i { width: 34px; height: 34px; }
 .flow__t { font: 800 1.02rem/1.25 var(--font-head); color: var(--blau-900); }
 .flow__d { font-size: .96rem; line-height: 1.45; color: var(--ink-soft); }
+.flow__go { display: inline-block; margin-top: .35rem; font-size: .96rem; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .flow__i:last-child .flow__ic { background: #fbf3d9; color: #8a6d10; }
 @media (min-width: 900px) {
   .flow { grid-template-columns: repeat(4, 1fr); gap: 36px; }

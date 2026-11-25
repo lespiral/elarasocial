@@ -76,7 +76,11 @@
         {
           "icon": "signpost",
           "title": "Recibe la orientación en vuestro espacio",
-          "text": "Con un cartel, un QR o una página propia de vuestro espacio, que podéis enviar por correo o poner en vuestra web."
+          "text": "Con un cartel, un QR o una página propia de vuestro espacio, que podéis enviar por correo o poner en vuestra web.",
+          "link": {
+            "text": "¿Quieres ver cómo lo vería la persona? ↓",
+            "href": "#pagina-persones"
+          }
         },
         {
           "icon": "headphones",
@@ -92,6 +96,21 @@
           "icon": "sparkle",
           "title": "Vuelve con una nueva mirada",
           "text": "Una nueva comprensión y un paso decidido para su día a día y para la relación con vuestro espacio."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "pagina-persones",
+      "kicker": "Una propuesta de página para las personas que vienen a Osona Ioga",
+      "paragraphs": [
+        "Así la verían: la podéis enviar por correo o WhatsApp o poner en vuestra web. Se puede cambiar todo lo que haga falta."
+      ],
+      "buttons": [
+        {
+          "text": "Ver la propuesta de página para las personas",
+          "href": "entidades-colectivos/osona-ioga/esperanza-activa"
         }
       ]
     },
@@ -131,21 +150,6 @@
         "label": "Importante",
         "text": "Esta es la propuesta abierta a todo el mundo, que no pasa por ningún espacio ni entidad. La página para las personas que vienen a Osona Ioga —diseño, maquetación y qué dice y qué no— la acordaríamos con vosotros. Abajo tenéis una propuesta."
       }
-    },
-    {
-      "type": "cta",
-      "band": "soft",
-      "id": "pagina-persones",
-      "kicker": "Una propuesta de página para las personas que vienen a Osona Ioga",
-      "paragraphs": [
-        "Así la verían: la podéis enviar por correo o WhatsApp o poner en vuestra web. Se puede cambiar todo lo que haga falta."
-      ],
-      "buttons": [
-        {
-          "text": "Ver la propuesta de página para las personas",
-          "href": "entidades-colectivos/osona-ioga/esperanza-activa"
-        }
-      ]
     },
     {
       "type": "gains",

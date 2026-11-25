@@ -76,7 +76,11 @@
         {
           "icon": "signpost",
           "title": "Rep l'orientació al vostre espai",
-          "text": "Amb un cartell, un QR o una pàgina pròpia del vostre espai, que podeu enviar per correu o posar a la vostra web."
+          "text": "Amb un cartell, un QR o una pàgina pròpia del vostre espai, que podeu enviar per correu o posar a la vostra web.",
+          "link": {
+            "text": "Vols veure com ho veuria la persona? ↓",
+            "href": "#pagina-persones"
+          }
         },
         {
           "icon": "headphones",
@@ -92,6 +96,21 @@
           "icon": "sparkle",
           "title": "Torna amb una nova mirada",
           "text": "Una nova comprensió i una passa decidida per al seu dia a dia i per a la relació amb el vostre espai."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "band": "soft",
+      "id": "pagina-persones",
+      "kicker": "Una proposta de pàgina per a les persones que vénen a Osona Ioga",
+      "paragraphs": [
+        "Així la veurien: la podeu enviar per correu o WhatsApp o posar a la vostra web. Es pot canviar tot el que calgui."
+      ],
+      "buttons": [
+        {
+          "text": "Veure la proposta de pàgina per a les persones",
+          "href": "entitats-collectius/osona-ioga/esperanca-activa"
         }
       ]
     },
@@ -131,21 +150,6 @@
         "label": "Important",
         "text": "Això és la proposta oberta a tothom, que no passa per cap espai ni entitat. La pàgina per a les persones que vénen a Osona Ioga —disseny, maquetació i què diu i què no— l'acordaríem amb vosaltres. A sota en teniu una proposta."
       }
-    },
-    {
-      "type": "cta",
-      "band": "soft",
-      "id": "pagina-persones",
-      "kicker": "Una proposta de pàgina per a les persones que vénen a Osona Ioga",
-      "paragraphs": [
-        "Així la veurien: la podeu enviar per correu o WhatsApp o posar a la vostra web. Es pot canviar tot el que calgui."
-      ],
-      "buttons": [
-        {
-          "text": "Veure la proposta de pàgina per a les persones",
-          "href": "entitats-collectius/osona-ioga/esperanca-activa"
-        }
-      ]
     },
     {
       "type": "gains",
