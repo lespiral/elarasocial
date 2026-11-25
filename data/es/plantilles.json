@@ -640,12 +640,12 @@
   ],
   "infografies/infografia-7-passes.html": [
     [
-      "aria-label=\"L'espiral de les 7 passes; cada passa té quatre moments\"",
-      "aria-label=\"La espiral de los 7 pasos; cada paso tiene cuatro momentos\""
+      "aria-label=\"L'espiral de les 7 passes; cada passa té tres moments\"",
+      "aria-label=\"La espiral de los 7 pasos; cada paso tiene tres momentos\""
     ],
     [
-      "Cada passa, quatre moments",
-      "Cada paso, cuatro momentos"
+      "Cada passa, tres moments",
+      "Cada paso, tres momentos"
     ],
     [
       "Toca una passa per veure'n la pregunta.",
@@ -746,14 +746,6 @@
     [
       "\"Quan miro cap al futur, una de les coses que em preocupen és…\"",
       "\"Cuando miro hacia el futuro, una de las cosas que me preocupan es…\""
-    ],
-    [
-      "\"Escolta\"",
-      "\"Escucha\""
-    ],
-    [
-      "\"Un primer àudio que dona context i orienta la pràctica\"",
-      "\"Un primer audio que da contexto y orienta la práctica\""
     ],
     [
       "\"uns 15 min\"",
@@ -942,68 +934,120 @@
   ],
   "infografies/infografia-administracio.html": [
     [
-      "El malestar i la incertesa passen pel vostre servei municipal, on El Treball que Reconnecta els transforma en claredat, suport i acció",
-      "El malestar y la incertidumbre pasan por vuestro servicio municipal, donde El Trabajo que Reconecta los transforma en claridad, apoyo y acción"
+      "El malestar i la incertesa passen pel vostre servei municipal, on El Treball que Reconnecta els transforma en claredat, suport i acció, que s'entrellacen en Esperança Activa",
+      "El malestar y la incertidumbre pasan por vuestro servicio municipal, donde El Trabajo que Reconecta los transforma en claridad, apoyo y acción, que se entrelazan en Esperanza Activa"
     ],
     [
-      ">El malestar i la incertesa<",
-      ">El malestar y la incertidumbre<"
-    ],
-    [
-      ">El vostre servei municipal<",
-      ">Vuestro servicio municipal<"
-    ],
-    [
-      ">El Treball<",
-      ">El Trabajo<"
+      ">El Treball que<",
+      ">El Trabajo que<"
     ],
     [
       ">Reconnecta<",
       ">Reconecta<"
     ],
     [
+      ">El malestar i la incertesa<",
+      ">El malestar y la incertidumbre<"
+    ],
+    [
+      "aria-label=\"El malestar i la incertesa\"",
+      "aria-label=\"El malestar y la incertidumbre\""
+    ],
+    [
       ">Claredat<",
       ">Claridad<"
     ],
     [
-      ">recuperar direcció<",
-      ">recuperar dirección<"
+      "aria-label=\"Claredat\"",
+      "aria-label=\"Claridad\""
     ],
     [
       ">Suport<",
       ">Apoyo<"
     ],
     [
-      ">xarxes de confiança<",
-      ">redes de confianza<"
+      "aria-label=\"Suport\"",
+      "aria-label=\"Apoyo\""
     ],
     [
       ">Acció<",
       ">Acción<"
     ],
     [
-      ">un pas possible<",
-      ">un paso posible<"
+      "aria-label=\"Acció\"",
+      "aria-label=\"Acción\""
     ],
     [
-      "Transformar el malestar i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.",
-      "Transformar el malestar y la incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad."
+      ">Esperança<",
+      ">Esperanza<"
     ],
     [
-      ">direcció<",
-      ">dirección<"
+      ">Activa<",
+      ">Activa<"
     ],
     [
-      ">xarxes<",
-      ">redes<"
+      "aria-label=\"Esperança Activa\"",
+      "aria-label=\"Esperanza Activa\""
     ],
     [
-      ">de confiança<",
-      ">de confianza<"
+      ">sostinguda per la comunitat<",
+      ">sostenida por la comunidad<"
     ],
     [
-      ">pas possible<",
-      ">paso posible<"
+      "Toca cada part per saber-ne més.",
+      "Toca cada parte para saber más."
+    ],
+    [
+      "\"On comences\"",
+      "\"Dónde empiezas\""
+    ],
+    [
+      "\"El malestar i la incertesa\"",
+      "\"El malestar y la incertidumbre\""
+    ],
+    [
+      "\"El desgast actual no és només individual, és estructural.\"",
+      "\"El desgaste actual no es solo individual, es estructural.\""
+    ],
+    [
+      "\"Es transforma en\"",
+      "\"Se transforma en\""
+    ],
+    [
+      "\"Claredat\"",
+      "\"Claridad\""
+    ],
+    [
+      "\"Espais per sostenir moments difícils, elaborar el malestar i recuperar direcció.\"",
+      "\"Espacios para sostener momentos difíciles, elaborar el malestar y recuperar dirección.\""
+    ],
+    [
+      "\"Suport\"",
+      "\"Apoyo\""
+    ],
+    [
+      "\"Generem xarxes de confiança on sostenir-nos emocionalment i materialment davant la incertesa del context.\"",
+      "\"Generamos redes de confianza donde sostenernos emocional y materialmente ante la incertidumbre del contexto.\""
+    ],
+    [
+      "\"Acció significativa\"",
+      "\"Acción significativa\""
+    ],
+    [
+      "\"T’acompanyem a fer passos concrets i arrelats a terra ferma, fugint de la immediatesa per construir canvis reals que el teu dia a dia pugui sostenir.\"",
+      "\"Te acompañamos a dar pasos concretos y arraigados en tierra firme, huyendo de la inmediatez para construir cambios reales que tu día a día pueda sostener.\""
+    ],
+    [
+      "\"Què vol dir «esperança activa»?\"",
+      "\"¿Qué significa «esperanza activa»?\""
+    ],
+    [
+      "\"Esperança Activa\"",
+      "\"Esperanza Activa\""
+    ],
+    [
+      "\"Transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.\"",
+      "\"Transformar el dolor y la incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.\""
     ]
   ]
 }
