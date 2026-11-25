@@ -1,8 +1,8 @@
 {
-  "title": "Para la administración y la prescripción social",
-  "kicker": "Para la administración y la prescripción social",
+  "title": "Esperanza Activa para administraciones, servicios y entidades",
+  "kicker": "Para administraciones, servicios y entidades",
   "lead": "Un recurso público y gratuito para orientar a personas con malestar, soledad o incertidumbre, sin crear ningún circuito nuevo ni lista de espera.",
-  "description": "Un recurso público y gratuito para orientar a personas con malestar, soledad o incertidumbre, sin crear ningún circuito nuevo ni lista de espera.",
+  "description": "Un recurso público y gratuito para orientar a personas con malestar, soledad o incertidumbre desde cualquier administración, servicio o entidad, sin crear ningún circuito nuevo ni lista de espera.",
   "section": "entidades",
   "actions": [
     {
@@ -10,50 +10,58 @@
       "href": "entidades#pide-propuesta"
     },
     {
-      "text": "Ver la ruta",
-      "href": "entidades/caminos#personas-reciben"
+      "text": "Entrar en Caminos",
+      "href": "#entra-a-camins"
     }
   ],
   "sections": [
     {
       "type": "ribbon",
       "band": "white",
-      "id": "exemple",
-      "label": "Ejemplo de formato",
-      "text": "Muestra cómo podría ser para vuestro sector."
+      "id": "proposta",
+      "label": "Propuesta",
+      "text": "Página informativa para cualquier administración, servicio o entidad."
     },
     {
-      "type": "flow",
+      "type": "list",
+      "band": "white",
+      "id": "en-una-mirada",
+      "title": "Cómo es nuestra propuesta",
+      "list_icon": "check",
+      "items": [
+        "**Gratuito** para las personas, sin lista de espera.",
+        "**Sin ningún circuito nuevo**: solo hay que orientar.",
+        "Cursos en línea y **caminatas que salen de la puerta** de vuestro espacio.",
+        "**No sustituye** ninguna atención que ya hacéis."
+      ]
+    },
+    {
+      "type": "infografia",
+      "name": "administracio",
       "band": "soft",
       "id": "cami",
-      "vertical": true,
-      "title": "Un camino que pasa por vuestro espacio",
-      "items": [
-        {
-          "icon": "cloud-rain",
-          "title": "El dolor y la incertidumbre"
-        },
-        {
-          "icon": "house",
-          "title": "Vuestro servicio municipal"
-        },
-        {
-          "icon": "compass",
-          "title": "Claridad, apoyo y acción"
-        },
-        {
-          "icon": "sun",
-          "title": "Esperanza Activa sostenida por la comunidad"
-        }
-      ],
-      "after": [
+      "title": "Qué pasa cuando una persona llega a vuestro servicio",
+      "intro": "El desgaste actual no es solo individual, es estructural. Desde vuestro servicio orientáis hacia El Trabajo que Reconecta."
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "id": "set-passes",
+      "title": "Por dónde pasa una persona: los 7 pasos",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "paragraphs": [
         "Una breve explicación, una práctica guiada y una caminata de reflexión, desde Lo que amo hasta El siguiente paso posible."
       ],
-      "buttons": [
-        {
-          "text": "Ver los 7 pasos en Caminos",
-          "href": "https://esperanzaactiva.org/"
-        }
+      "list": [
+        "<strong>“Amo… / Me encanta…”:</strong> Volver a la raíz: reconocer lo que te nutre y te da fuerza.",
+        "<strong>“Me gustaría dar las gracias a…”:</strong> Abrir la gratitud hacia los demás y recordar la interdependencia.",
+        "<strong>“Cuando miro el futuro, mis preocupaciones incluyen…”:</strong> Dar espacio a lo que inquieta con honestidad y ternura.",
+        "<strong>“Lo que me inspira es…”:</strong> Ensanchar la mirada: dejar entrar aire, perspectiva y sentido.",
+        "<strong>“Lo que espero profundamente es…”:</strong> Escuchar la esperanza profunda como una dirección interna (aunque sea sutil).",
+        "<strong>“Un papel que me gustaría tener es…”:</strong> Reconocer qué tipo de presencia quieres aportar al mundo (y a tu vida).",
+        "<strong>“Un paso que daré la semana que viene es…”:</strong> Aterrizar la espiral en un gesto realista, coherente y amable."
       ]
     },
     {
@@ -86,65 +94,91 @@
       ]
     },
     {
-      "type": "gains",
+      "type": "feature",
       "band": "white",
-      "id": "ganais-pedimos",
+      "id": "entra-a-camins",
+      "variant": "dark",
+      "pill": "Qué ve quien entra hoy",
+      "title": "Entrad en Caminos de Esperanza [Activa]",
+      "paragraphs": [
+        "Esto es lo que encuentra hoy cualquier persona que se entera del proyecto por la calle y entra.",
+        "El botón os lleva a Caminos: las rutas a pie y los cuatro cursos, del malestar individual al cambio climático, la prescripción social y el bien común."
+      ],
+      "buttons": [
+        {
+          "text": "Ver Caminos de Esperanza [Activa]",
+          "href": "https://esperanzaactiva.org/"
+        }
+      ],
+      "side": {
+        "title": "Dos webs, una por idioma",
+        "items": [
+          {
+            "title": "esperançaactiva.cat",
+            "text": "Camins d'Esperança [Activa], en catalán",
+            "href": "https://xn--esperanaactiva-mjb.cat/"
+          },
+          {
+            "title": "esperanzaactiva.org",
+            "text": "Caminos de Esperanza [Activa], en castellano",
+            "href": "https://esperanzaactiva.org/"
+          }
+        ]
+      },
+      "notice": {
+        "label": "Importante",
+        "text": "Esta es la propuesta abierta a todo el mundo, que no pasa por ninguna entidad ni administración. La página para vuestro servicio —diseño, maquetación y qué dice y qué no— la acordaríamos con vosotros."
+      }
+    },
+    {
+      "type": "gains",
+      "band": "soft",
+      "id": "guanyeu-demanem",
       "title": "Qué ganáis y qué os pedimos",
       "gain": {
         "title": "Qué ganáis",
         "items": [
           "Un recurso que puede ser gratuito para las personas que atendéis y sin lista de espera.",
           "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
-          "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
+          "Solo hay que orientar: el resto lo hace cada persona a su ritmo."
         ]
       },
       "ask": {
         "title": "Qué os pedimos",
         "items": [
-          "Hablar con vosotros y que nos ayudéis a visibilizar y dar a conocer este proyecto a las personas que atendéis y a vuestra comunidad, para empoderarlas y ayudarlas a pasar del malestar individual a la acción colectiva.",
-          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos."
+          "Hablar con vosotros y que nos ayudéis a visibilizar y dar a conocer este proyecto a la ciudadanía del Prat, para empoderar a las personas y ayudarlas a pasar del malestar individual a la acción colectiva."
         ]
       }
     },
     {
-      "type": "note",
-      "style": "care",
-      "band": "white",
-      "id": "condicions",
-      "title": "Contratación",
-      "paragraphs": [
-        "Si hace falta contratarlo, miramos juntas qué procedimiento encaja. No es asesoramiento jurídico."
-      ]
-    },
-    {
       "type": "cards",
       "tone": "courses",
-      "band": "soft",
+      "band": "white",
       "id": "cursos",
-      "title": "Qué curso orientar",
-      "intro": "Los cursos están en preparación; las rutas ya se pueden hacer.",
+      "title": "Cuatro ámbitos, cuatro cursos",
+      "intro": "El dolor y la incertidumbre tienen muchas caras. Cada curso parte de un ámbito: el malestar individual, la prescripción social, la acción climática y el bien común. Los cursos están en preparación; las rutas ya se pueden hacer.",
       "items": [
         {
           "icon": "lifebuoy",
-          "badge": "Próximamente",
+          "badge": "Malestar individual",
           "title": "Cuando la vida te desborda",
           "text": "Ansiedad, duelo, conflictos y cansancio emocional"
         },
         {
           "icon": "users-three",
-          "badge": "Próximamente",
+          "badge": "Prescripción social",
           "title": "Cuando cuidarnos es una tarea colectiva",
           "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
         },
         {
           "icon": "globe",
-          "badge": "Próximamente",
+          "badge": "Acción climática",
           "title": "Cuando el mundo te preocupa",
           "text": "Crisis climática, ecoansiedad y futuro incierto"
         },
         {
           "icon": "house",
-          "badge": "Próximamente",
+          "badge": "Bien común",
           "title": "Cuando sostener la vida se hace difícil",
           "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
         }
@@ -168,46 +202,48 @@
     },
     {
       "type": "cards",
-      "band": "white",
+      "band": "soft",
       "id": "ruta",
       "tone": "accent",
       "title": "Una ruta de ejemplo",
-      "intro": "Rutas de dos espacios promotores del proyecto, como muestra de formato: una caminata que sale de la puerta del espacio.",
+      "intro": "Una caminata que sale de la puerta de un espacio, como muestra de formato: la de L'Espiral del Prat, uno de los espacios promotores del proyecto. En Caminos podéis ver las rutas, cada una con su mapa y su ruta en Wikiloc.",
       "items": [
         {
           "icon": "map-trifold",
           "badge": "Ejemplo de formato",
           "title": "L'Espiral del Prat",
           "text": "Una caminata de 1,29 km que sale de la puerta del espacio.",
-          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
-          "button": "Ver la ruta"
-        },
-        {
-          "icon": "map-trifold",
-          "badge": "Ejemplo de formato",
-          "title": "Elara Social",
-          "text": "Una caminata de 6,42 km que sale de la puerta del espacio.",
-          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339523",
-          "button": "Ver la ruta"
+          "href": "https://esperanzaactiva.org/",
+          "button": "Ver las rutas en Caminos"
         }
       ]
     },
     {
       "type": "list",
-      "band": "soft",
+      "band": "white",
       "id": "donar-ho-a-coneixer",
       "title": "Cómo darlo a conocer",
       "list_icon": "signpost",
       "items": [
-        "Orientación desde servicios sociales, centros cívicos o equipamientos.",
+        "Orientación desde servicios sociales, centros cívicos, equipamientos o entidades.",
         "Un texto y una ficha para profesionales.",
-        "Un curso a medida con recursos propios de la administración."
+        "Un curso a medida, si tenéis recursos propios."
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "condicions",
+      "title": "Contratación",
+      "paragraphs": [
+        "Si hay que contratarlo, miramos juntas qué procedimiento encaja. No es asesoramiento jurídico."
       ]
     },
     {
       "type": "limits",
       "band": "white",
-      "id": "limits",
+      "id": "limites",
       "title": "Los límites",
       "paragraphs": [
         "No es terapia ni un servicio de urgencias. Si alguien se encuentra mal, orientad hacia estos números:"
@@ -232,7 +268,7 @@
     },
     {
       "type": "cta",
-      "band": "white",
+      "band": "soft",
       "id": "parlem",
       "kicker": "Hablemos de cómo lo haríamos en vuestro servicio",
       "paragraphs": [
@@ -246,10 +282,6 @@
         {
           "text": "Curso a medida",
           "href": "entidades-curso-a-medida"
-        },
-        {
-          "text": "Entidades y colectivos",
-          "href": "entidades-colectivos"
         }
       ]
     }

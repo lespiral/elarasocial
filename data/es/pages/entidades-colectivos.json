@@ -116,25 +116,25 @@
       "items": [
         {
           "icon": "lifebuoy",
-          "badge": "Próximamente",
+          "badge": "Malestar individual",
           "title": "Cuando la vida te desborda",
           "text": "Ansiedad, duelo, conflictos y cansancio emocional"
         },
         {
           "icon": "users-three",
-          "badge": "Próximamente",
+          "badge": "Prescripción social",
           "title": "Cuando cuidarnos es una tarea colectiva",
           "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
         },
         {
           "icon": "globe",
-          "badge": "Próximamente",
+          "badge": "Acción climática",
           "title": "Cuando el mundo te preocupa",
           "text": "Crisis climática, ecoansiedad y futuro incierto"
         },
         {
           "icon": "house",
-          "badge": "Próximamente",
+          "badge": "Bien común",
           "title": "Cuando sostener la vida se hace difícil",
           "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
         }
@@ -239,7 +239,7 @@
           "href": "entidades-centro-colaborador"
         },
         {
-          "text": "Administración y prescripción social",
+          "text": "Administraciones y servicios",
           "href": "entidades-administracion"
         }
       ]

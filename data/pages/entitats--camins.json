@@ -101,11 +101,11 @@
           "id": "escoles"
         },
         {
-          "title": "Administració i prescripció social",
-          "text": "Un recurs públic i gratuït per orientar des de serveis municipals.",
+          "title": "Administracions i serveis",
+          "text": "Un recurs públic i gratuït per orientar des de qualsevol administració, servei o entitat.",
           "style": "light",
           "href": "entitats-administracio",
-          "button": "Veure el recurs per a l'administració",
+          "button": "Veure el recurs per a administracions i serveis",
           "id": "administracio"
         },
         {
@@ -149,25 +149,25 @@
       "items": [
         {
           "icon": "lifebuoy",
-          "badge": "Properament",
+          "badge": "Malestar individual",
           "title": "Quan la vida et desborda",
           "text": "Ansietat, dol, conflictes i cansament emocional"
         },
         {
           "icon": "users-three",
-          "badge": "Properament",
+          "badge": "Prescripció social",
           "title": "Quan cuidar-nos és una tasca col·lectiva",
           "text": "Suport mutu, xarxes de cura i necessitat de connexió"
         },
         {
           "icon": "globe",
-          "badge": "Properament",
+          "badge": "Acció climàtica",
           "title": "Quan el món et preocupa",
           "text": "Crisi climàtica, ecoansietat i futur incert"
         },
         {
           "icon": "house",
-          "badge": "Properament",
+          "badge": "Bé comú",
           "title": "Quan sostenir la vida es fa difícil",
           "text": "Feina, habitatge, precarietat i incertesa econòmica"
         }
