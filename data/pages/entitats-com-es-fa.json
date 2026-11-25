@@ -19,15 +19,15 @@
       "items": [
         {
           "title": "Orientar",
-          "text": "Una frase, un cartell o l'enllaç de la ruta del vostre espai."
+          "text": "Una frase, un cartell, un QR o l'enllaç de la ruta del vostre espai; o una pàgina pròpia del vostre espai, que podeu enviar per correu o posar a la vostra web."
         },
         {
           "title": "Fer el curs",
-          "text": "Una pràctica guiada d'uns 15 minuts, a casa."
+          "text": "Una pràctica guiada d'uns 15 minuts, a casa. Pot ser una que ja tenim o una que valorem crear perquè encaixi amb el vostre espai."
         },
         {
           "title": "Fer la caminada",
-          "text": "Una ruta curta que surt de la porta del vostre espai."
+          "text": "Una ruta curta que surt de la porta del vostre espai: una que ja tenim o una de creada a mida, de diverses llargades o passant per diferents espais."
         }
       ]
     },
