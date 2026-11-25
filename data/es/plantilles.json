@@ -934,8 +934,8 @@
   ],
   "infografies/infografia-administracio.html": [
     [
-      "El malestar i la incertesa passen pel vostre servei, on El Treball que Reconnecta els transforma en claredat, suport i acció, que s'entrellacen en Esperança Activa",
-      "El malestar y la incertidumbre pasan por vuestro servicio, donde El Trabajo que Reconecta los transforma en claridad, apoyo y acción, que se entrelazan en Esperanza Activa"
+      "El malestar i la incertesa passen pel vostre {{ s.lloc|default('servei') }}, on El Treball que Reconnecta els transforma en claredat, suport i acció, que s'entrellacen en Esperança Activa",
+      "El malestar y la incertidumbre pasan por vuestro {{ s.lloc|default('servicio') }}, donde El Trabajo que Reconecta los transforma en claridad, apoyo y acción, que se entrelazan en Esperanza Activa"
     ],
     [
       ">El Treball que<",

@@ -289,7 +289,7 @@ def prepare_sections(sections, where, lang="ca"):
             s["rows"] = note_rows(bold(s.get("paragraphs")))
         for k in list(s):
             if k not in ("rows",):
-                s[k] = bold(s[k]) if k not in ("id", "type", "band", "infografia", "variant", "name", "list_icon", "style", "align") else s[k]
+                s[k] = bold(s[k]) if k not in ("id", "type", "band", "infografia", "variant", "name", "edifici", "lloc", "list_icon", "style", "align") else s[k]
     # Seccions que només es veuen amb una durada (pàgina d'El Treball que Reconnecta): la de la durada per defecte surt oberta
     dd = next((x.get("default") or "" for x in sections or [] if x.get("type") == "durades"), "")
     for x in sections or []:

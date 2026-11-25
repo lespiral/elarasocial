@@ -10,50 +10,60 @@
       "href": "entitats#demana-proposta"
     },
     {
-      "text": "Veure la ruta",
-      "href": "entitats/camins#persones-reben"
+      "text": "Entrar a Camins",
+      "href": "#entra-a-camins"
     }
   ],
   "sections": [
     {
       "type": "ribbon",
       "band": "white",
-      "id": "exemple",
-      "label": "Exemple de format",
-      "text": "Mostra com podria ser per al vostre sector."
+      "id": "proposta",
+      "label": "Proposta",
+      "text": "Pàgina informativa per a qualsevol centre educatiu o projecte educatiu."
     },
     {
-      "type": "flow",
+      "type": "list",
+      "band": "white",
+      "id": "en-una-mirada",
+      "title": "Com és la nostra proposta",
+      "list_icon": "check",
+      "items": [
+        "**Gratuït** per a les persones, sense llista d'espera.",
+        "**Sense cap circuit nou**: només cal orientar.",
+        "Cursos en línia i **caminades que surten de la porta** del vostre espai.",
+        "**No substitueix** cap atenció ni projecte que ja feu."
+      ]
+    },
+    {
+      "type": "infografia",
+      "name": "administracio",
       "band": "soft",
       "id": "cami",
-      "vertical": true,
-      "title": "Un camí que passa pel vostre espai",
-      "items": [
-        {
-          "icon": "cloud-rain",
-          "title": "El dolor i la incertesa"
-        },
-        {
-          "icon": "house",
-          "title": "El vostre centre educatiu"
-        },
-        {
-          "icon": "compass",
-          "title": "Claredat, suport i acció"
-        },
-        {
-          "icon": "sun",
-          "title": "Esperança Activa sostinguda per la comunitat"
-        }
-      ],
-      "after": [
+      "title": "Què passa quan una persona arriba al vostre centre educatiu",
+      "intro": "El desgast actual no és només individual, és estructural. Des del vostre centre orienteu cap a El Treball que Reconnecta.",
+      "edifici": "escola",
+      "lloc": "centre educatiu"
+    },
+    {
+      "type": "text",
+      "band": "white",
+      "html": true,
+      "id": "set-passes",
+      "title": "Per on passa una persona: les 7 passes",
+      "infografia": "7-passes",
+      "variant": "persones",
+      "paragraphs": [
         "Una breu explicació, una pràctica guiada i una caminada de reflexió, des d'Allò que estimo fins a El següent pas possible."
       ],
-      "buttons": [
-        {
-          "text": "Veure les 7 passes a Camins",
-          "href": "https://xn--esperanaactiva-mjb.cat/"
-        }
+      "list": [
+        "<strong>“M’encanta… / M’estimo…”:</strong> Tornar a l’arrel: reconèixer el que et nodreix i et dona força.",
+        "<strong>“M’agradaria donar les gràcies a…”:</strong> Obrir la gratitud cap als altres i recordar la interdependència.",
+        "<strong>“Quan miro el futur, les meves preocupacions inclouen…”:</strong> Donar espai al que inquieta amb honestedat i tendresa.",
+        "<strong>“El que m’inspira és…”:</strong> Eixamplar la mirada: deixar entrar aire, perspectiva i sentit.",
+        "<strong>“El que espero profundament és…”:</strong> Escoltar l’esperança profunda com una direcció interna (encara que sigui subtil).",
+        "<strong>“Un paper que m’agradaria tenir és…”:</strong> Reconèixer quin tipus de presència vols aportar al món (i a la teva vida).",
+        "<strong>“Un pas que faré la setmana vinent és…”:</strong> Aterrar l’espiral en un gest realista, coherent i amable."
       ]
     },
     {
@@ -86,8 +96,45 @@
       ]
     },
     {
-      "type": "gains",
+      "type": "feature",
       "band": "white",
+      "id": "entra-a-camins",
+      "variant": "dark",
+      "pill": "Què veu qui hi entra avui",
+      "title": "Entreu a Camins d'Esperança [Activa]",
+      "paragraphs": [
+        "Això és el que troba avui qualsevol persona que se n'assabenta del projecte pel carrer i hi entra.",
+        "El botó us porta a Camins: les rutes a peu i els quatre cursos, del malestar individual al canvi climàtic, la prescripció social i el bé comú."
+      ],
+      "buttons": [
+        {
+          "text": "Veure Camins d'Esperança [Activa]",
+          "href": "https://xn--esperanaactiva-mjb.cat/"
+        }
+      ],
+      "side": {
+        "title": "Dues webs, una per llengua",
+        "items": [
+          {
+            "title": "esperançaactiva.cat",
+            "text": "Camins d'Esperança [Activa], en català",
+            "href": "https://xn--esperanaactiva-mjb.cat/"
+          },
+          {
+            "title": "esperanzaactiva.org",
+            "text": "Caminos de Esperanza [Activa], en castellà",
+            "href": "https://esperanzaactiva.org/"
+          }
+        ]
+      },
+      "notice": {
+        "label": "Important",
+        "text": "Això és la proposta oberta a tothom, que no passa per cap centre ni entitat. La pàgina per al vostre centre —disseny, maquetació i què diu i què no— l'acordaríem amb vosaltres."
+      }
+    },
+    {
+      "type": "gains",
+      "band": "soft",
       "id": "guanyeu-demanem",
       "title": "Què hi guanyeu i què us demanem",
       "gain": {
@@ -107,19 +154,9 @@
       }
     },
     {
-      "type": "note",
-      "style": "care",
-      "band": "white",
-      "id": "condicions",
-      "title": "Condicions",
-      "paragraphs": [
-        "De moment és un recurs per a persones adultes. Qualsevol activitat amb alumnat té condicions pròpies, que concretem en la primera conversa."
-      ]
-    },
-    {
       "type": "cards",
       "tone": "courses",
-      "band": "soft",
+      "band": "white",
       "id": "cursos",
       "title": "Quin curs orientar",
       "intro": "Els cursos són en preparació; les rutes ja es poden fer.",
@@ -168,33 +205,25 @@
     },
     {
       "type": "cards",
-      "band": "white",
+      "band": "soft",
       "id": "ruta",
       "tone": "accent",
-      "title": "Una ruta d'exemple",
-      "intro": "Rutes de dos espais promotors del projecte, com a mostra de format: una caminada que surt de la porta de l'espai.",
+      "title": "Una ruta des del vostre centre",
+      "intro": "Una caminada que surt de la porta del vostre centre educatiu, com a mostra de format. Encara no n'hi ha cap de centres educatius: la dissenyaríem amb vosaltres. A Camins podeu veure les rutes que ja existeixen, cadascuna amb el mapa i la ruta a Wikiloc.",
       "items": [
         {
           "icon": "map-trifold",
           "badge": "Exemple de format",
-          "title": "L'Espiral del Prat",
-          "text": "Una caminada de 1,29 km que surt de la porta de l'espai.",
-          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339249",
-          "button": "Veure la ruta"
-        },
-        {
-          "icon": "map-trifold",
-          "badge": "Exemple de format",
-          "title": "Elara Social",
-          "text": "Una caminada de 6,42 km que surt de la porta de l'espai.",
-          "href": "https://www.wikiloc.com/wikiloc/view.do?id=297339523",
-          "button": "Veure la ruta"
+          "title": "Des del vostre centre educatiu",
+          "text": "Una caminada curta que surt de la porta, al ritme de cada persona.",
+          "href": "https://xn--esperanaactiva-mjb.cat/ciutats/",
+          "button": "Veure les rutes a Camins"
         }
       ]
     },
     {
       "type": "list",
-      "band": "soft",
+      "band": "white",
       "id": "donar-ho-a-coneixer",
       "title": "Com donar-ho a conèixer",
       "list_icon": "signpost",
@@ -202,6 +231,16 @@
         "Una ruta que surt del centre (en preparació).",
         "Materials per a l'AFA i el claustre.",
         "El centre només comparteix el recurs."
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "condicions",
+      "title": "Condicions",
+      "paragraphs": [
+        "De moment és un recurs per a persones adultes. Qualsevol activitat amb alumnat té condicions pròpies, que concretem en la primera conversa."
       ]
     },
     {
@@ -232,7 +271,7 @@
     },
     {
       "type": "cta",
-      "band": "white",
+      "band": "soft",
       "id": "parlem",
       "kicker": "Parlem de com ho faríem al vostre centre educatiu",
       "paragraphs": [
