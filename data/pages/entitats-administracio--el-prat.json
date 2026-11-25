@@ -101,17 +101,12 @@
       "pill": "Entreu-hi i mireu com és",
       "title": "Entreu a Camins d'Esperança [Activa]",
       "paragraphs": [
-        "Aquí és on una persona escriu on viu, veu les rutes que té a prop i tria un curs i una caminada. Proveu-ho tal com ho faria qui vosaltres orienteu."
+        "Camins d'Esperança [Activa] és on una persona tria un curs i una caminada. Proveu-ho tal com ho faria qui vosaltres orienteu.",
+        "El botó us porta a la pàgina del Prat de Camins: les rutes a peu i els cursos que hi ha per al Prat, de la salut mental comunitària al canvi climàtic."
       ],
-      "search": {
-        "action": "https://xn--esperanaactiva-mjb.cat/ciutats/",
-        "label": "Escriviu una adreça del Prat i veureu les rutes més properes",
-        "placeholder": "Carrer, plaça o barri del Prat de Llobregat",
-        "button": "Veure les rutes"
-      },
       "buttons": [
         {
-          "text": "Veure les rutes del Prat",
+          "text": "Veure la pàgina del Prat a Camins",
           "href": "https://xn--esperanaactiva-mjb.cat/el-prat/"
         }
       ],

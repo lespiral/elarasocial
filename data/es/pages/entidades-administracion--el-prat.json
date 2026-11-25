@@ -101,17 +101,12 @@
       "pill": "Entrad y mirad cómo es",
       "title": "Entrad en Caminos de Esperanza [Activa]",
       "paragraphs": [
-        "Aquí es donde una persona escribe dónde vive, ve las rutas que tiene cerca y elige un curso y una caminata. Probadlo tal como lo haría quien vosotros orientáis."
+        "Caminos de Esperanza [Activa] es donde una persona elige un curso y una caminata. Probadlo tal como lo haría quien vosotros orientáis.",
+        "El botón os lleva a Caminos de Esperanza [Activa]: las rutas a pie y los cursos, de la salud mental comunitaria al cambio climático."
       ],
-      "search": {
-        "action": "https://esperanzaactiva.org/ciudades/",
-        "label": "Escribid una dirección de El Prat y veréis las rutas más cercanas",
-        "placeholder": "Calle, plaza o barrio de El Prat de Llobregat",
-        "button": "Ver las rutas"
-      },
       "buttons": [
         {
-          "text": "Ver las rutas de El Prat",
+          "text": "Ver Caminos de Esperanza [Activa]",
           "href": "https://esperanzaactiva.org/"
         }
       ],
