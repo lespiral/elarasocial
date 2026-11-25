@@ -57,6 +57,35 @@
       ]
     },
     {
+      "type": "flow",
+      "band": "soft",
+      "id": "com-ho-viuria",
+      "title": "Cómo lo viviría una persona de vuestro centro",
+      "animated": true,
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Recibe la orientación en vuestro espacio",
+          "text": "Con un cartel, un QR o una página propia de vuestro centro, que podéis enviar por correo o poner en vuestra web."
+        },
+        {
+          "icon": "headphones",
+          "title": "Hace la práctica",
+          "text": "Guiada, de unos 15 minutos, en casa. Puede ser una que ya tenemos o una que valoramos crear para que encaje con vuestro espacio."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina desde vuestro espacio",
+          "text": "A su ritmo, por una ruta que ya tenemos o por una creada a medida: de distintas longitudes o pasando por diferentes espacios."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Vuelve con una nueva mirada",
+          "text": "Una nueva comprensión y un paso decidido para su día a día y para la relación con vuestro espacio."
+        }
+      ]
+    },
+    {
       "type": "gains",
       "band": "white",
       "id": "ganais-pedimos",
@@ -64,7 +93,7 @@
       "gain": {
         "title": "Qué ganáis",
         "items": [
-          "Un recurso gratuito y sin lista de espera.",
+          "Un recurso que puede ser gratuito para las personas que atendéis y sin lista de espera.",
           "Algo concreto que ofrecer a quien atendéis, cerca de casa.",
           "Solo hace falta orientar: el resto lo hace cada persona a su ritmo."
         ]
@@ -72,9 +101,8 @@
       "ask": {
         "title": "Qué os pedimos",
         "items": [
-          "Para orientar, nada: sin acuerdo ni trámite.",
-          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos.",
-          "Que no sustituya ninguna atención que ya hacéis."
+          "Hablar con vosotros y que nos ayudéis a visibilizar y dar a conocer este proyecto a las personas que atendéis y a vuestra comunidad, para empoderarlas y ayudarlas a pasar del malestar individual a la acción colectiva.",
+          "Para ser centro colaborador, un acuerdo por escrito que concretamos juntos."
         ]
       }
     },
@@ -107,6 +135,18 @@
           "badge": "Próximamente",
           "title": "Cuando cuidarnos es una tarea colectiva",
           "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        },
+        {
+          "icon": "globe",
+          "badge": "Próximamente",
+          "title": "Cuando el mundo te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "house",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
         }
       ],
       "buttons": [
@@ -114,6 +154,16 @@
           "text": "Ver todos los cursos en Caminos",
           "href": "https://esperanzaactiva.org/"
         }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "cursos-a-mida",
+      "title": "Cursos adaptables a vuestro espacio",
+      "paragraphs": [
+        "Podemos adecuarlos específicamente y redefinirlos para que encajen aún más con vuestro espacio, de modo que, cuando estén disponibles, las personas que atendéis puedan hacerlos teniendo esto presente."
       ]
     },
     {

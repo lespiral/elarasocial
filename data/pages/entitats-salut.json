@@ -57,6 +57,35 @@
       ]
     },
     {
+      "type": "flow",
+      "band": "soft",
+      "id": "com-ho-viuria",
+      "title": "Com ho viuria una persona del vostre centre",
+      "animated": true,
+      "items": [
+        {
+          "icon": "signpost",
+          "title": "Rep l'orientació al vostre espai",
+          "text": "Amb un cartell, un QR o una pàgina pròpia del vostre centre, que podeu enviar per correu o posar a la vostra web."
+        },
+        {
+          "icon": "headphones",
+          "title": "Fa la pràctica",
+          "text": "Guiada, d'uns 15 minuts, a casa. Pot ser una que ja tenim o una que valorem crear perquè encaixi amb el vostre espai."
+        },
+        {
+          "icon": "person-simple-walk",
+          "title": "Camina des del vostre espai",
+          "text": "Al seu ritme, per una ruta que ja tenim o per una de creada a mida: de diverses llargades o passant per diferents espais."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Torna amb una nova mirada",
+          "text": "Una nova comprensió i una passa decidida per al seu dia a dia i per a la relació amb el vostre espai."
+        }
+      ]
+    },
+    {
       "type": "gains",
       "band": "white",
       "id": "guanyeu-demanem",
@@ -64,7 +93,7 @@
       "gain": {
         "title": "Què hi guanyeu",
         "items": [
-          "Un recurs gratuït i sense llista d'espera.",
+          "Un recurs que pot ser gratuït per a les persones que atengueu i sense llista d'espera.",
           "Alguna cosa concreta a oferir a qui atenen, a prop de casa.",
           "Només cal orientar: la resta ho fa cada persona al seu ritme."
         ]
@@ -72,9 +101,8 @@
       "ask": {
         "title": "Què us demanem",
         "items": [
-          "Per orientar, res: sense acord ni tràmit.",
-          "Per ser centre col·laborador, un acord per escrit que concretem plegats.",
-          "Que no substitueixi cap atenció que ja feu."
+          "Parlar amb vosaltres i que ens ajudeu a visibilitzar i donar a conèixer aquest projecte a les persones que atengueu i a la vostra comunitat, per empoderar-les i ajudar-les a passar del malestar individual a l'acció col·lectiva.",
+          "Per ser centre col·laborador, un acord per escrit que concretem plegats."
         ]
       }
     },
@@ -97,6 +125,18 @@
           "badge": "Properament",
           "title": "Quan cuidar-nos és una tasca col·lectiva",
           "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "globe",
+          "badge": "Properament",
+          "title": "Quan el món et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "house",
+          "badge": "Properament",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
         }
       ],
       "buttons": [
@@ -104,6 +144,16 @@
           "text": "Veure tots els cursos a Camins",
           "href": "https://xn--esperanaactiva-mjb.cat/"
         }
+      ]
+    },
+    {
+      "type": "note",
+      "style": "care",
+      "band": "soft",
+      "id": "cursos-a-mida",
+      "title": "Cursos adaptables al vostre espai",
+      "paragraphs": [
+        "Podem adequar-los específicament i redefinir-los perquè encaixin encara més amb el vostre espai, de manera que, quan estiguin disponibles, les persones que atengueu els puguin fer tenint-ho present."
       ]
     },
     {
