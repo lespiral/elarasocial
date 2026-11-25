@@ -165,30 +165,6 @@
         "intro": "Tienes diferentes formatos, según lo que necesites: un minicurso, un taller o un acompañamiento. Aquí verás qué pasa en cada uno.",
         "items": [
           {
-            "kicker": "Solo/a · a tu ritmo",
-            "title": "Minicurso en línea",
-            "scene": "passes",
-            "text": "Cada paso: una práctica guiada de unos 15 minutos y una pregunta para reflexionar.",
-            "rows": [
-              [
-                "Duración",
-                "7 pasos a tu ritmo"
-              ],
-              [
-                "Formato",
-                "En línea"
-              ],
-              [
-                "Precio",
-                "Gratuito"
-              ]
-            ],
-            "button": {
-              "text": "Me inscribo al minicurso gratuito",
-              "href": "7-pasos-hacia-la-esperanza-activa"
-            }
-          },
-          {
             "kicker": "Tú y una persona acompañante",
             "title": "Acompañamiento individual",
             "scene": "costat",
@@ -259,20 +235,15 @@
         "band": "slim",
         "id": "minicurso",
         "variant": "dark",
-        "pill": "¿Quieres probarlo antes? · Gratuito · En línea · A tu ritmo",
-        "title": "«7 pasos hacia la Esperanza Activa»",
+        "pill": "Próximamente · Gratuito",
+        "title": "Caminos de Esperanza [Activa]",
         "paragraphs": [
-          "Una experiencia fácil y accesible para probar el camino. Puedes hacerlo a tu ritmo. Cada paso lleva una práctica guiada y un vídeo para reflexionar."
-        ],
-        "chips": [
-          "Audios guiados",
-          "Una pregunta por paso",
-          "No es terapia"
+          "Cursos en línea de 7 pasos, con audio y una pregunta para reflexionar en cada paso. Si te apetece, también puedes hacer rutas a pie cerca de casa."
         ],
         "buttons": [
           {
-            "text": "Empieza el minicurso gratuito",
-            "href": "7-pasos-hacia-la-esperanza-activa"
+            "text": "Avísame cuando se abra",
+            "href": "https://esperanzaactiva.org/#t-avisem"
           }
         ],
         "side": {
@@ -280,22 +251,22 @@
           "items": [
             {
               "title": "Cuando la vida te desborda",
-              "text": "Ansiedad, duelo, conflictos y cansancio emocional",
+              "text": "Próximamente · Ansiedad, duelo, conflictos y cansancio emocional",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa"
             },
             {
               "title": "Cuando cuidarnos es una tarea colectiva",
-              "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión",
+              "text": "Próximamente · Apoyo mutuo, redes de cuidado y necesidad de conexión",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa"
             },
             {
-              "title": "Cuando el futuro del planeta te preocupa",
-              "text": "Crisis climática, ecoansiedad y futuro incierto",
+              "title": "Cuando el mundo te preocupa",
+              "text": "Próximamente · Crisis climática, ecoansiedad y futuro incierto",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa"
             },
             {
               "title": "Cuando sostener la vida se hace difícil",
-              "text": "Trabajo, vivienda, precariedad e incertidumbre económica",
+              "text": "Próximamente · Trabajo, vivienda, precariedad e incertidumbre económica",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa"
             }
           ]
@@ -328,7 +299,7 @@
           }
         ],
         "paragraphs": [
-          "Facilitadores de El Trabajo que Reconecta y profesionales de la psicoterapia y el acompañamiento."
+          "Facilitadores de El Trabajo que Reconecta y profesionales del acompañamiento."
         ],
         "buttons": [
           {
@@ -342,14 +313,14 @@
         "band": "slim",
         "id": "alianzas",
         "variant": "sun",
-        "pill": "¿Te interesa?",
-        "title": "Buscamos entidades aliadas",
+        "pill": "Para entidades",
+        "title": "Un taller a medida para vuestro espacio",
         "paragraphs": [
-          "Cooperativas, asociaciones, colectivos y entidades de la economía social y solidaria que quieran probar estos talleres en su espacio. Lo diseñamos juntos."
+          "Cooperativas, asociaciones y colectivos de la economía social: lo diseñamos juntos, según lo que necesitéis."
         ],
         "buttons": [
           {
-            "text": "Propónnos una colaboración",
+            "text": "Pedid una propuesta",
             "href": "contacto"
           }
         ]
@@ -360,7 +331,7 @@
         "id": "cta-final",
         "kicker": "Cuéntanos qué necesitas",
         "paragraphs": [
-          "Sin compromiso. Te respondemos en 5 días laborables con una propuesta o una primera conversación. Si tienes prisa, escríbenos por WhatsApp."
+          "Sin compromiso. Te respondemos en 5 días laborables."
         ],
         "buttons": [
           {

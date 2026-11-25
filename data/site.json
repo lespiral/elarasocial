@@ -207,30 +207,6 @@
         "intro": "Tens diferents formats, segons el que necessitis: un minicurs, un taller o un acompanyament. Aquí veuràs què passa a cada un.",
         "items": [
           {
-            "kicker": "Sol/a · al teu ritme",
-            "title": "Minicurs en línia",
-            "scene": "passes",
-            "text": "Cada pas: una pràctica guiada d'uns 15 minuts i una pregunta per reflexionar.",
-            "rows": [
-              [
-                "Durada",
-                "7 passes al teu ritme"
-              ],
-              [
-                "Format",
-                "En línia"
-              ],
-              [
-                "Preu",
-                "Gratuït"
-              ]
-            ],
-            "button": {
-              "text": "M'inscric al minicurs gratuït",
-              "href": "7-passes-cap-a-lesperanca-activa"
-            }
-          },
-          {
             "kicker": "Tu i una persona acompanyant",
             "title": "Acompanyament individual",
             "scene": "costat",
@@ -301,20 +277,15 @@
         "band": "slim",
         "id": "minicurs",
         "variant": "dark",
-        "pill": "Vols provar-ho abans? · Gratuït · En línia · Al teu ritme",
-        "title": "«7 passes cap a l'Esperança Activa»",
+        "pill": "Properament · Gratuït",
+        "title": "Camins d'Esperança [Activa]",
         "paragraphs": [
-          "Una experiència fàcil i accessible per provar el camí. Pots fer-lo al teu ritme. Cada pas porta una pràctica guiada i un vídeo per reflexionar."
-        ],
-        "chips": [
-          "Àudios guiats",
-          "Una pregunta per pas",
-          "No és teràpia"
+          "Cursos en línia de 7 passes, amb àudio i una pregunta per reflexionar a cada pas. Si t'abelleix, també pots fer rutes a peu a prop de casa."
         ],
         "buttons": [
           {
-            "text": "Comença el minicurs gratuït",
-            "href": "7-passes-cap-a-lesperanca-activa"
+            "text": "Avisa'm quan s'obri",
+            "href": "https://xn--esperanaactiva-mjb.cat/#t-avisem"
           }
         ],
         "side": {
@@ -322,22 +293,22 @@
           "items": [
             {
               "title": "Quan la vida et desborda",
-              "text": "Ansietat, dol, conflictes i cansament emocional",
+              "text": "Properament · Ansietat, dol, conflictes i cansament emocional",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-la-vida-et-desborda-ansietat-malestar-emocional-7-passes-cap-esperanca-activa"
             },
             {
               "title": "Quan cuidar-nos és una tasca col·lectiva",
-              "text": "Suport mutu, xarxes de cura i necessitat de connexió",
+              "text": "Properament · Suport mutu, xarxes de cura i necessitat de connexió",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-cuidar-nos-es-una-tasca-col-lectiva-7-passes-esperanca-activa"
             },
             {
-              "title": "Quan el futur del planeta et preocupa",
-              "text": "Crisi climàtica, ecoansietat i futur incert",
+              "title": "Quan el món et preocupa",
+              "text": "Properament · Crisi climàtica, ecoansietat i futur incert",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-el-mon-et-preocupa-7-passes-esperanca-activa"
             },
             {
               "title": "Quan sostenir la vida es fa difícil",
-              "text": "Feina, habitatge, precarietat i incertesa econòmica",
+              "text": "Properament · Feina, habitatge, precarietat i incertesa econòmica",
               "href": "https://espiral-elara-social.thinkific.com/products/courses/Quan-sostenir-la-vida-es-fa-difIcil-7-passes-esperanca-activa"
             }
           ]
@@ -370,7 +341,7 @@
           }
         ],
         "paragraphs": [
-          "Facilitadors d'El Treball que Reconnecta i professionals de la psicoteràpia i l'acompanyament."
+          "Facilitadors d'El Treball que Reconnecta i professionals de l'acompanyament."
         ],
         "buttons": [
           {
@@ -384,14 +355,14 @@
         "band": "slim",
         "id": "aliances",
         "variant": "sun",
-        "pill": "T'interessa?",
-        "title": "Busquem entitats aliades",
+        "pill": "Per a entitats",
+        "title": "Un taller a mida per al vostre espai",
         "paragraphs": [
-          "Cooperatives, associacions, col·lectius i entitats de l'economia social i solidària que vulguin provar aquests tallers al seu espai. Ho dissenyem plegats."
+          "Cooperatives, associacions i col·lectius de l'economia social: ho dissenyem plegats, segons el que necessiteu."
         ],
         "buttons": [
           {
-            "text": "Proposa'ns una col·laboració",
+            "text": "Demaneu una proposta",
             "href": "contacte"
           }
         ]
@@ -402,7 +373,7 @@
         "id": "cta-final",
         "kicker": "Explica'ns què necessites",
         "paragraphs": [
-          "Sense compromís. Et responem en 5 dies laborables amb una proposta o una primera conversa. Si tens pressa, escriu-nos per WhatsApp."
+          "Sense compromís. Et responem en 5 dies laborables."
         ],
         "buttons": [
           {
