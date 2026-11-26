@@ -230,9 +230,9 @@
   <div class="wrap{{ wcls }}">
     {% if s.type == 'cta' %}<div class="cta-box">{% endif %}
     {% if s.kicker %}<p class="band__kicker">{{ s.kicker|cap }}</p>{% endif %}
-    {# "pretitle": una frase destacada entre el kicker i el títol (p. ex. el pont de la portada) #}
-    {% if s.pretitle %}<p class="band__bridge">{{ s.pretitle }}</p>{% endif %}
-    {% if s.title and s.type not in ('note', 'feature', 'strip') %}<h2 class="band__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
+    {% if s.title and s.type not in ('note', 'feature', 'strip') %}<h2 class="band__title{% if s.subtitle %} band__title--bridge{% endif %}" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
+    {# "subtitle": un h3 més petit sota el títol (p. ex. «Què és l'Esperança Activa?» a la portada) #}
+    {% if s.subtitle %}<h3 class="band__subtitle">{{ s.subtitle }}</h3>{% endif %}
     {% if s.intro %}<div class="band__intro"><p>{{ s.intro }}</p></div>{% endif %}
     {# "infografia": "<nom>" a qualsevol secció: la infografia surt sota el títol (o sota el text de "before" de les targetes), a tota l'amplada, i després el contingut #}
     {% if s.infografia and not (s.type == 'cards' and s.before) %}
