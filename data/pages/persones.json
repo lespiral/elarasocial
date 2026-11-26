@@ -82,82 +82,6 @@
     },
     {
       "type": "cards",
-      "band": "soft",
-      "title": "Què fem exactament?",
-      "infografia": "itinerari",
-      "itinerari": {
-        "aria": "Un itinerari en tres parades: per començar, per aprofundir i per sostenir",
-        "inici": [
-          "Tal com estàs avui",
-          "Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix."
-        ],
-        "final": [
-          "Un pas concret amb sentit",
-          "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit."
-        ],
-        "icones": [
-          "sprout",
-          "spiral",
-          "people"
-        ]
-      },
-      "before": [
-        "T’oferim **un itinerari continu** amb diferents portes d’entrada, perquè puguis participar segons la teva energia disponible."
-      ],
-      "items": [
-        {
-          "title": "Per començar",
-          "subtitle": "Baixa intensitat",
-          "text": "Mini-rituals i recursos autoguiats per quan necessites parar, respirar i orientar-te sense exposar-te.",
-          "propostes": [
-            [
-              "7 passes cap a l’Esperança Activa",
-              "7-passes-cap-a-lesperanca-activa"
-            ],
-            [
-              "Camins d'Esperança [Activa] (en català)",
-              "https://xn--esperanaactiva-mjb.cat/"
-            ],
-            [
-              "Caminos de Esperanza [Activa] (en castellà)",
-              "https://esperanzaactiva.org/"
-            ]
-          ]
-        },
-        {
-          "title": "Per aprofundir",
-          "subtitle": "Estructura",
-          "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència.",
-          "propostes": [
-            [
-              "El Treball que Reconnecta (taller, cicle o cap de setmana)",
-              "el-treball-que-reconnecta"
-            ],
-            [
-              "Burnout",
-              "burnout"
-            ]
-          ]
-        },
-        {
-          "title": "Per sostenir",
-          "subtitle": "Comunitat",
-          "text": "Trobades mensuals i mentories per teixir xarxa, compartir inquietuds i generar iniciatives transformadores.",
-          "propostes": [
-            [
-              "El Treball que Reconnecta (grup regular)",
-              "grup-regular-de-el-treball-que-reconnecta"
-            ],
-            [
-              "Acompanyament individual",
-              "acompanyament-individual"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "type": "cards",
       "band": "white",
       "tone": "blue",
       "kicker": "què ens mou?",
@@ -207,6 +131,7 @@
       "items": [
         {
           "id": "prop-camins",
+          "group": {"id": "per-comencar", "title": "Per començar", "text": "Mini-rituals i recursos autoguiats per quan necessites parar, respirar i orientar-te sense exposar-te."},
           "open": true,
           "kicker": "Sol/a · caminant",
           "title": "Camins d'Esperança [Activa]",
@@ -241,6 +166,7 @@
         },
         {
           "id": "prop-treball-que-reconnecta",
+          "group": {"id": "per-aprofundir", "title": "Per aprofundir", "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."},
           "kicker": "Taller, cicle o cap de setmana",
           "title": "El Treball que Reconnecta",
           "summary": "Un camí en grup per recórrer l'espiral.",
@@ -272,6 +198,7 @@
         },
         {
           "id": "prop-grup-regular",
+          "group": {"id": "per-sostenir", "title": "Per sostenir", "text": "Trobades mensuals i mentories per teixir xarxa, compartir inquietuds i generar iniciatives transformadores."},
           "kicker": "Grup · continuïtat",
           "title": "El Treball que Reconnecta · grup regular",
           "summary": "Un espai estable per aturar-te i reconnectar.",
@@ -299,6 +226,7 @@
         },
         {
           "id": "prop-individual",
+          "group": {"id": "de-tu-a-tu", "title": "De tu a tu"},
           "kicker": "Tu i una persona acompanyant",
           "title": "Acompanyament individual",
           "summary": "Parlem del que et preocupa i dissenyem un pla d'acció.",

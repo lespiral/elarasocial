@@ -83,82 +83,6 @@
     },
     {
       "type": "cards",
-      "band": "soft",
-      "title": "¿Qué hacemos exactamente?",
-      "infografia": "itinerari",
-      "itinerari": {
-        "aria": "Un itinerario en tres paradas: para empezar, para profundizar y para sostener",
-        "inici": [
-          "Tal como estás hoy",
-          "Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo."
-        ],
-        "final": [
-          "Un paso concreto con sentido",
-          "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido."
-        ],
-        "icones": [
-          "sprout",
-          "spiral",
-          "people"
-        ]
-      },
-      "before": [
-        "Te ofrecemos **un itinerario continuo** con diferentes puertas de entrada, para que puedas participar según tu energía disponible."
-      ],
-      "items": [
-        {
-          "title": "Para empezar",
-          "subtitle": "Baja intensidad",
-          "text": "Mini-rituales y recursos autoguiados para cuando necesitas parar, respirar y orientarte sin exponerte.",
-          "propostes": [
-            [
-              "7 pasos hacia la Esperanza Activa",
-              "7-pasos-hacia-la-esperanza-activa"
-            ],
-            [
-              "Caminos de Esperanza [Activa] (en castellano)",
-              "https://esperanzaactiva.org/"
-            ],
-            [
-              "Camins d'Esperança [Activa] (en catalán)",
-              "https://xn--esperanaactiva-mjb.cat/"
-            ]
-          ]
-        },
-        {
-          "title": "Para profundizar",
-          "subtitle": "Estructura",
-          "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia.",
-          "propostes": [
-            [
-              "El Trabajo que Reconecta (taller, ciclo o fin de semana)",
-              "el-trabajo-que-reconecta"
-            ],
-            [
-              "Burnout",
-              "burnout"
-            ]
-          ]
-        },
-        {
-          "title": "Para sostener",
-          "subtitle": "Comunidad",
-          "text": "Encuentros mensuales y mentorías para tejer red, compartir inquietudes y generar iniciativas transformadoras.",
-          "propostes": [
-            [
-              "El Trabajo que Reconecta (grupo regular)",
-              "grupo-regular-de-el-trabajo-que-reconecta"
-            ],
-            [
-              "Acompañamiento individual",
-              "acompanamiento-individual"
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "type": "cards",
       "band": "white",
       "tone": "blue",
       "kicker": "¿qué nos mueve?",
@@ -208,6 +132,7 @@
       "items": [
         {
           "id": "propuesta-camins",
+          "group": {"id": "para-empezar", "title": "Para empezar", "text": "Mini-rituales y recursos autoguiados para cuando necesitas parar, respirar y orientarte sin exponerte."},
           "open": true,
           "kicker": "Solo/a · caminando",
           "title": "Caminos de Esperanza [Activa]",
@@ -241,6 +166,7 @@
         },
         {
           "id": "propuesta-treball-que-reconnecta",
+          "group": {"id": "para-profundizar", "title": "Para profundizar", "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia."},
           "kicker": "Taller, ciclo o fin de semana",
           "title": "El Trabajo que Reconecta",
           "summary": "Un camino en grupo para recorrer la espiral.",
@@ -272,6 +198,7 @@
         },
         {
           "id": "propuesta-grup-regular",
+          "group": {"id": "para-sostener", "title": "Para sostener", "text": "Encuentros mensuales y mentorías para tejer red, compartir inquietudes y generar iniciativas transformadoras."},
           "kicker": "Grupo · continuidad",
           "title": "El Trabajo que Reconecta · grupo regular",
           "summary": "Un espacio estable para detenerte y reconectar.",
@@ -298,6 +225,7 @@
         },
         {
           "id": "propuesta-individual",
+          "group": {"id": "de-tu-a-tu", "title": "De tú a tú"},
           "kicker": "Tú y una persona acompañante",
           "title": "Acompañamiento individual",
           "summary": "Hablamos de lo que te preocupa y diseñamos un plan de acción.",
