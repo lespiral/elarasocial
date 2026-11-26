@@ -975,5 +975,8 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 /* Mini escena decorativa dins d'una targeta destacada (portada, Camins) */
 .feature__scene { align-self: stretch; width: 100%; margin: 6px 0 4px; }
 
-/* Frase destacada entre el kicker i el títol d'una secció */
-.band__bridge { margin: 0 auto 10px; max-width: 760px; text-align: center; font: 800 clamp(1.15rem, 2.6vw, 1.45rem)/1.3 var(--font-head); color: var(--verd-ink, var(--blau-800)); }
+/* Secció amb el títol gran i un subtítol (p. ex. el pont de la portada): h2 sense traç + h3 més petit, en verd, amb el traç */
+.band__title--bridge { color: var(--blau-800); margin-bottom: 0; }
+.band__title--bridge::after { display: none; }
+.band__subtitle { text-align: center; margin: 64px auto 34px; max-width: 760px; font: 800 clamp(1.2rem, 2.8vw, 1.55rem)/1.25 var(--font-head); letter-spacing: -.01em; color: var(--verd-ink); }
+.band__subtitle::after { content: ""; display: block; width: 104px; height: 16px; margin: 14px auto 0; background: var(--onada) no-repeat center / contain; }
