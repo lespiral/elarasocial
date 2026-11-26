@@ -208,35 +208,8 @@
       ],
       "items": [
         {
-          "id": "prop-7-passes",
-          "open": true,
-          "kicker": "Sol/a · al teu ritme",
-          "title": "7 passes cap a l'Esperança Activa",
-          "summary": "Un minicurs per provar el camí a casa.",
-          "meta": "7 passes · gratuït",
-          "scene": "passes",
-          "text": "Una pràctica guiada d'uns 15 minuts i una pregunta per pensar a cada pas.",
-          "rows": [
-            [
-              "Durada",
-              "7 passes, en 7 dies o al teu ritme"
-            ],
-            [
-              "Format",
-              "Àudio i reflexió, en línia"
-            ],
-            [
-              "Preu",
-              "Gratuït"
-            ]
-          ],
-          "button": {
-            "text": "Comença el minicurs gratuït",
-            "href": "7-passes-cap-a-lesperanca-activa"
-          }
-        },
-        {
           "id": "prop-camins",
+          "open": true,
           "kicker": "Sol/a · caminant",
           "title": "Camins d'Esperança [Activa]",
           "summary": "Cursos digitals i rutes a peu a prop de casa.",

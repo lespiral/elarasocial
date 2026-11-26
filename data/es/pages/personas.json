@@ -209,35 +209,8 @@
       ],
       "items": [
         {
-          "id": "propuesta-7-passes",
-          "open": true,
-          "kicker": "Solo/a · a tu ritmo",
-          "title": "7 pasos hacia la Esperanza Activa",
-          "summary": "Un minicurso para probar el camino en casa.",
-          "meta": "7 pasos · gratuito",
-          "scene": "passes",
-          "text": "Una práctica guiada de unos 15 minutos y una pregunta para pensar en cada paso.",
-          "rows": [
-            [
-              "Duración",
-              "7 pasos, en 7 días o a tu ritmo"
-            ],
-            [
-              "Formato",
-              "Audio y reflexión, en línea"
-            ],
-            [
-              "Precio",
-              "Gratuito"
-            ]
-          ],
-          "button": {
-            "text": "Empieza el minicurso gratuito",
-            "href": "7-pasos-hacia-la-esperanza-activa"
-          }
-        },
-        {
           "id": "propuesta-camins",
+          "open": true,
           "kicker": "Solo/a · caminando",
           "title": "Caminos de Esperanza [Activa]",
           "summary": "Cursos digitales y rutas a pie cerca de casa.",
