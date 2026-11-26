@@ -237,6 +237,8 @@ def prepare_sections(sections, where, lang="ca"):
             f = SRC / "templates" / "infografies" / f"infografia-{name}.html"
             if not f.exists():
                 errors.append(f"{where}: no trobo la infografia {f.relative_to(ROOT)}")
+        if s.get("scene") and not (SRC / "templates" / "infografies" / f"infografia-{s['scene']}.html").exists():
+            errors.append(f"{where}: no trobo l'escena src/templates/infografies/infografia-{s['scene']}.html")
         for it in s.get("items", []) if t in ("cards", "list") else []:
             if isinstance(it, dict) and "icon" not in it and card_icon(it.get("href"), lang):
                 it["icon"] = card_icon(it.get("href"), lang)

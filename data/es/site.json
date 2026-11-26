@@ -235,6 +235,7 @@
         "band": "slim",
         "id": "minicurso",
         "variant": "dark",
+        "scene": "camins-mini",
         "pill": "Próximamente · Gratuito",
         "title": "Caminos de Esperanza [Activa]",
         "paragraphs": [

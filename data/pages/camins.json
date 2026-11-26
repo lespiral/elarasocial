@@ -36,13 +36,13 @@
       "band": "soft",
       "id": "com-funciona",
       "title": "Com funciona",
-      "intro": "Del que et preocupa, a un pas amb altres. Toca cada etapa per saber-ne més.",
+      "intro": "Del que et preocupa, a un pas en comunitat. Toca cada etapa per saber-ne més.",
       "camins": {
         "aria": "Una persona seu en un banc davant d'un edifici comunitari, mira el mòbil i es posa uns auriculars. S'aixeca, fa una ruta circular pel parc i torna al banc, on cinc persones han sortit de l'edifici i la reben amb un gest suau d'acollida.",
         "steps": [
-          {"label": "Gratuït · En línia · Pràctica guiada", "title": "Comences on ets", "text": "Tries el curs que s'ajusta al moment que vius (n'hi ha quatre). A cada pas escoltes un àudio i et fas una pregunta. És gratuït i en línia."},
+          {"label": "Gratuït · En línia · Pràctica guiada", "title": "Comences on ets", "text": "Tries el curs que s'ajusta al moment que vius (n'hi ha quatre). A cada pas fas una pràctica guiada i completes una frase. És gratuït i en línia."},
           {"label": "Reflexió · Al teu ritme", "title": "Camines i hi dones voltes", "text": "Si et ve de gust, fas una ruta a peu a prop de casa i reflexiones sobre el que has sentit. És opcional, cadascú al seu ritme."},
-          {"label": "Esperança Activa · Acció col·lectiva", "title": "Un pas concret, amb altres", "text": "L'Esperança Activa és mirar de cara el que ens preocupa i triar, en companyia, un pas possible."}
+          {"label": "Esperança Activa · Acció col·lectiva", "title": "Un pas concret", "text": "L'Esperança Activa és mirar de cara el que ens preocupa i triar, en companyia, un pas possible."}
         ],
         "note": "Camins comença amb tu, a l'espai on siguis, i es va obrint a la comunitat. Aquest és el recorregut dels cursos, no una promesa de resultat.",
         "replay": "Torna a veure-ho"

@@ -359,6 +359,8 @@
           {% if s.pill %}<p class="feature__pill">{{ s.pill }}</p>{% endif %}
           {% if s.title %}<h2 class="feature__title" id="h-{{ s.id }}">{{ s.title }}</h2>{% endif %}
           {% for p in s.paragraphs or [] %}<p class="feature__p">{{ p }}</p>{% endfor %}
+          {# "scene": "<nom>": una mini escena decorativa (sense text) entre el text i els botons, a tot l'ample de la columna #}
+          {% if s.scene %}<div class="feature__scene" aria-hidden="true">{% include "infografies/infografia-" ~ s.scene ~ ".html" %}</div>{% endif %}
           {% if s.notice %}<p class="ribbon ribbon--in"><strong class="ribbon__l">{{ icon('info') }}{{ s.notice.label }}</strong> <span>{{ s.notice.text }}</span></p>{% endif %}
           {% if s.search %}<form class="feature__search" action="{{ s.search.action }}" method="get" role="search">
             <label class="feature__searchlabel" for="fs-{{ s.id }}">{{ s.search.label }}</label>

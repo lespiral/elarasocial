@@ -277,10 +277,11 @@
         "band": "slim",
         "id": "minicurs",
         "variant": "dark",
-        "pill": "Properament · Gratuït",
+        "scene": "camins-mini",
+        "pill": "Gratuït",
         "title": "Camins d'Esperança [Activa]",
         "paragraphs": [
-          "Cursos en línia de 7 passes, amb àudio i una pregunta per reflexionar a cada pas. Si et ve de gust, també pots fer rutes a peu a prop de casa."
+          "Cursos en línia de 7 passes: a cada pas, una pràctica guiada i una frase per completar. I rutes a peu a prop de casa."
         ],
         "buttons": [
           {
@@ -289,7 +290,7 @@
           }
         ],
         "side": {
-          "title": "Tria des d'on vols començar",
+          "title": "Els cursos que estem preparant",
           "items": [
             {
               "title": "Quan la vida et desborda",

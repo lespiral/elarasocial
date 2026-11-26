@@ -36,13 +36,13 @@
       "band": "soft",
       "id": "como-funciona",
       "title": "Cómo funciona",
-      "intro": "De lo que te preocupa, a un paso con otras personas. Toca cada etapa para saber más.",
+      "intro": "De lo que te preocupa, a un paso en comunidad. Toca cada etapa para saber más.",
       "camins": {
         "aria": "Una persona sentada en un banco delante de un edificio comunitario, mira el móvil y se pone unos auriculares. Se levanta, hace una ruta circular por el parque y vuelve al banco, donde varias personas han salido del edificio y la reciben con un gesto suave de acogida.",
         "steps": [
-          {"label": "Gratuito · En línea · Práctica guiada", "title": "Empiezas donde estás", "text": "Eliges el curso que se ajusta al momento que vives (hay cuatro). En cada paso escuchas un audio y te haces una pregunta. Es gratuito y en línea."},
+          {"label": "Gratuito · En línea · Práctica guiada", "title": "Empiezas donde estás", "text": "Eliges el curso que se ajusta al momento que vives (hay cuatro). En cada paso haces una práctica guiada y completas una frase. Es gratuito y en línea."},
           {"label": "Reflexión · A tu ritmo", "title": "Caminas y le das vueltas", "text": "Si te apetece, haces una ruta a pie cerca de casa y reflexionas sobre lo que has sentido. Es opcional, cada cual a su ritmo."},
-          {"label": "Esperanza Activa · Acción colectiva", "title": "Un paso concreto, con otras personas", "text": "La Esperanza Activa es mirar de frente lo que nos preocupa y elegir, en compañía, un paso posible."}
+          {"label": "Esperanza Activa · Acción colectiva", "title": "Un paso concreto", "text": "La Esperanza Activa es mirar de frente lo que nos preocupa y elegir, en compañía, un paso posible."}
         ],
         "note": "Caminos empieza contigo, en el espacio en el que estés, y se va abriendo a la comunidad. Este es el recorrido de los cursos, no una promesa de resultado.",
         "replay": "Volver a verlo"
