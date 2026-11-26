@@ -1,55 +1,55 @@
 {
   "title": "Quan el món et desborda, deixa't acompanyar.",
-  "kicker": "Persones",
-  "lead": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
+  "kicker": "Per a persones i grups",
+  "lead": "Acompanyament individual i en grup, perquè no hagis de portar-ho tot en solitud i puguis fer un pas possible, al teu ritme.",
   "actions": [
     {
-      "text": "Troba la teva proposta",
+      "text": "Veure com et podem acompanyar",
       "href": "#propostes"
     },
     {
-      "text": "Camins: cursos gratuïts",
+      "text": "Camins d'Esperança: el camí gratuït",
       "href": "camins"
     }
   ],
-  "description": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
+  "description": "Acompanyament individual i en grup, perquè no hagis de portar-ho tot en solitud i puguis fer un pas possible, al teu ritme.",
   "escena": "vida",
   "sections": [
     {
       "type": "text",
       "band": "white",
-      "kicker": "no ho sostinguis sol/a",
+      "kicker": "això es pot fer en companyia",
       "title": "Per més que t'hi esforcis, el dia a dia et passa per sobre?",
       "paragraphs": [
-        "A Elara Social, **transformem aquest estancament en força compartida**.",
+        "A Elara Social **fem aquest camí en companyia, perquè l'estancament es converteixi en força compartida**.",
         "**Sostenir la vida és al centre de la nostra activitat**. Per això no busquem solucions ràpides, sinó processos que es puguin sostenir en el temps, cuidant alhora el que et passa a tu i el món que compartim."
       ]
     },
     {
       "type": "cards",
       "tone": "accent",
-      "title": "Si t'hi reconeixes, descobreix les nostres propostes",
+      "title": "Si t'hi reconeixes, mira per on pots començar:",
       "items": [
         {
           "icon": "cloud-rain",
           "title": "Sents bloqueig o desorientació?",
           "text": "La situació global o personal et sobrepassa, i la preocupació es queda atrapada al cap sense saber cap a on tirar.",
           "href": "camins",
-          "button": "Descobrir Camins"
+          "button": "Conèixer Camins d'Esperança"
         },
         {
           "icon": "sun",
-          "title": "Notes cansament profund?",
-          "text": "Vas amb el pilot automàtic, complint amb tot però connectant amb poc, i necessites un respir real.",
+          "title": "Vas amb el pilot automàtic?",
+          "text": "Compleixes amb tot però connectes poc, i necessites una pausa de debò.",
           "href": "#prop-individual",
-          "button": "Reservar una sessió individual"
+          "button": "Veure l'acompanyament individual"
         },
         {
           "icon": "users-three",
           "title": "Busques gent amb qui parlar de veritat?",
-          "text": "Si et costa portar-ho tot sol/a, aquí trobaràs gent amb qui parlar de veritat.",
+          "text": "Si et costa portar-ho tot en solitud, hi ha espais de grup on compartir el que et passa amb altres persones.",
           "href": "#prop-treball-que-reconnecta",
-          "button": "Trobar el meu grup"
+          "button": "Veure els grups"
         }
       ]
     },
@@ -57,21 +57,21 @@
       "type": "cards",
       "tone": "row",
       "band": "white",
-      "title": "De la paràlisi al pas concret.",
+      "title": "Del bloqueig a un primer pas",
       "before": [
-        "“Potser el món semblarà que continua igual, però tu el veuràs amb uns altres ulls… i en companyia.”",
-        "A Elara Social t’oferim un camí en companyia per sortir de l’aïllament i fer un pas concret, amb sentit."
+        "Potser el món sembla que continua igual, però tu el pots mirar amb uns altres ulls.",
+        "A Elara Social t’oferim un camí per sortir de l’aïllament i fer un primer pas amb sentit."
       ],
       "items": [
         {
           "icon": "heart",
-          "title": "No estaràs sol/a",
+          "title": "Amb suport mutu",
           "text": "Creem un marc de seguretat on poder compartir el malestar, en comunitat."
         },
         {
           "icon": "plant",
           "title": "Esperança Activa",
-          "text": "Acollirem el malestar i el dolor, convertint el que sents en motor cap al canvi, fent passos petits, realistes i revisables."
+          "text": "Acollim el malestar i el dolor, i el portem cap al canvi amb passos petits, realistes i revisables."
         },
         {
           "icon": "footprints",
@@ -85,33 +85,33 @@
       "band": "white",
       "tone": "blue",
       "kicker": "què ens mou?",
-      "title": "En un món que ens vol ràpides i eficients, la nostra aposta és la humanitat.",
+      "title": "En un món que ens exigeix velocitat i eficiència, la nostra aposta és la humanitat.",
       "before": [
-        "Prioritzem la teva cura i la de l’entorn per sobre de tot."
+        "Posem la teva cura i la de l’entorn al centre."
       ],
       "items": [
         {
           "icon": "lifebuoy",
-          "title": "Seguretat Relacional Radical",
+          "title": "Seguretat relacional",
           "paragraphs": [
             "Aquí pots treure't la màscara.",
-            "Creem espais on no cal \"quedar bé\", on pots parlar en primera persona i on tens permís per no saber-ho tot."
+            "Creem espais on no cal «quedar bé», on pots parlar des de tu i on tens permís per no saber-ho tot."
           ]
         },
         {
           "icon": "tree",
-          "title": "Integració i arrelament",
+          "title": "Arrelament",
           "paragraphs": [
             "Tot està connectat: la teva ment, el teu cos i el lloc on vius.",
-            "Entenem que estar bé amb tu mateix passa, inevitablement, per reconnectar amb el món."
+            "Entenem que cuidar-te passa també per reconnectar amb el món."
           ]
         },
         {
           "icon": "sneaker",
           "title": "Acció conscient",
           "paragraphs": [
-            "T'acompanyem a moure't connectant amb els altres.",
-            "Caminem junts cap a un futur millor, amb passos realistes i assolibles."
+            "T'acompanyem a moure't, i a fer-ho amb altres persones.",
+            "Fem camí junts, amb passos realistes i a la teva mida."
           ]
         }
       ]
@@ -122,7 +122,7 @@
       "band": "soft",
       "id": "propostes",
       "title": "Propostes i preus",
-      "intro": "Tres preus a cada proposta. L'estàndard cobreix preparació, facilitació, materials i espai. El sostenidor finança places reduïdes. Tria el que et sigui just, sense justificar-te. És el mateix camí, el Treball que Reconnecta, en quatre durades.",
+      "intro": "Cada proposta té tres preus: un de reduït, un d'estàndard i un de sostenidor. L'estàndard cobreix preparació, facilitació, materials i espai; el sostenidor ajuda a finançar les places reduïdes.",
       "tiers": [
         "Reduït",
         "Estàndard",
@@ -133,15 +133,15 @@
           "id": "prop-camins",
           "group": {"id": "per-comencar", "title": "Per començar", "text": "Mini-rituals i recursos autoguiats per quan necessites parar, respirar i orientar-te sense exposar-te."},
           "open": true,
-          "kicker": "Sol/a · caminant",
+          "kicker": "Al teu ritme · en línia i a peu",
           "title": "Camins d'Esperança [Activa]",
-          "summary": "Cursos digitals i rutes a peu a prop de casa.",
-          "meta": "Gratuït · en línia + rutes a peu",
-          "text": "Cursos digitals de 7 passes combinats amb rutes a peu a prop de casa. Viu a la seva pròpia web.",
+          "summary": "Cursos en línia i rutes a peu a prop de casa.",
+          "meta": "Gratuït · Properament",
+          "text": "Cursos en línia de 7 passes, amb una pràctica guiada i una frase per completar a cada pas, i rutes a peu opcionals. Els trobaràs a la seva pròpia web.",
           "rows": [
             [
               "Cursos",
-              "Quatre, segons què et preocupa"
+              "Quatre, segons el moment que vius"
             ],
             [
               "Rutes",
@@ -153,14 +153,14 @@
             ]
           ],
           "button": {
-          "text": "Saber-ne més",
+          "text": "Conèixer Camins d'Esperança",
           "href": "camins"
         },
           "scene": "ruta"
         },
         {
           "id": "prop-treball-que-reconnecta",
-          "group": {"id": "per-aprofundir", "title": "Per aprofundir", "text": "Cursos i tallers vivencials on aprenem a transformar el malestar i a construir resiliència per poder viure amb coherència."},
+          "group": {"id": "per-aprofundir", "title": "Per aprofundir", "text": "Tallers, cicles i caps de setmana vivencials, per dedicar-hi cos i temps i aprendre a viure més d'acord amb el que és important per a tu."},
           "kicker": "Taller, cicle o cap de setmana",
           "title": "El Treball que Reconnecta",
           "summary": "Un camí en grup per recórrer l'espiral.",
@@ -192,7 +192,7 @@
         },
         {
           "id": "prop-grup-regular",
-          "group": {"id": "per-sostenir", "title": "Per sostenir", "text": "Trobades mensuals i mentories per teixir xarxa, compartir inquietuds i generar iniciatives transformadores."},
+          "group": {"id": "per-sostenir", "title": "Per sostenir", "text": "Trobades regulars per teixir xarxa, compartir el que ens preocupa i tirar endavant iniciatives en comunitat."},
           "kicker": "Grup · continuïtat",
           "title": "El Treball que Reconnecta · grup regular",
           "summary": "Un espai estable per aturar-te i reconnectar.",
@@ -223,11 +223,11 @@
           "group": {"id": "de-tu-a-tu", "title": "De tu a tu"},
           "kicker": "Tu i una persona acompanyant",
           "title": "Acompanyament individual",
-          "summary": "Parlem del que et preocupa i dissenyem un pla d'acció.",
+          "summary": "Parlem del que et preocupa i trobem, plegats, un pas possible.",
           "meta": "1 h o 1,5 h",
           "range": "acompanyament-individual",
           "scene": "costat",
-          "text": "Parlem del que et preocupa, practiquem eines per sostenir-te i dissenyem un pla d'acció i d'autocura.",
+          "text": "Parlem del que et preocupa, practiquem eines per cuidar-te i trobem plegats un pas possible.",
           "rows": [
             [
               "Durada",
@@ -254,15 +254,15 @@
       "items": [
         {
           "title": "Tria la proposta",
-          "text": "Mira durada, grup i preu. Si dubtes, escriu-nos."
+          "text": "Mira la durada, el grup i el preu. Si dubtes, escriu-nos."
         },
         {
           "title": "Omple el formulari",
-          "text": "Tres dades i el preu que triïs. Cap compromís fins que confirmem."
+          "text": "Tres dades i el preu que triïs. No et compromets a res fins que confirmem."
         },
         {
           "title": "Et confirmem",
-          "text": "Et responem en 5 dies laborables amb les dates, el lloc i com fer el pagament."
+          "text": "Et responem en 5 dies laborables."
         }
       ]
     },
@@ -273,7 +273,7 @@
       "items": [
         [
           "És teràpia?",
-          "No. Són espais vivencials i segurs, i participar és voluntari. Si ara passes un moment difícil, explica-ho'ns abans i ho valorem junts."
+          "No. Són espais vivencials de pràctica i reflexió, i no substitueixen la psicoteràpia ni un tractament mèdic o psicològic. Elara Social és la branca comunitària de L'Espiral: si en algun moment ho necessites, els psicòlegs i terapeutes de L'Espiral et poden acompanyar. Si ara passes un moment difícil, explica-ho'ns abans i ho valorem junts."
         ],
         [
           "Quin preu he de triar?",
@@ -285,21 +285,20 @@
         ],
         [
           "Puc cancel·lar?",
-          "Sí. Si ens ho dius amb 7 dies o més d'antelació, et retornem tot l'import. Amb menys temps no hi ha devolució, però pots cedir la plaça a una altra persona o passar-la a una edició futura. Si som nosaltres qui cancel·lem, et retornem tot l'import o et guardem la plaça per a la propera edició. Les sessions d'acompanyament individual es poden anul·lar o canviar sense cost fins a 24 hores abans."
+          "<p>Sí. Si ens ho dius amb 7 dies o més d'antelació, et retornem tot l'import. Amb menys temps no hi ha devolució, però pots cedir la plaça a una altra persona o passar-la a una edició futura.</p><p>Si som nosaltres qui cancel·lem, et retornem tot l'import o et guardem la plaça per a la propera edició.</p><p>Les sessions d'acompanyament individual es poden anul·lar o canviar sense cost fins a 24 hores abans.</p>"
         ]
       ]
     },
     {
       "type": "cta",
       "band": "white",
-      "kicker": "et sumes a fer camí en companyia?",
+      "kicker": "et ve de gust començar?",
       "paragraphs": [
-        "Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix.",
-        "Adaptem la nostra metodologia a la teva realitat."
+        "Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu."
       ],
       "buttons": [
         {
-          "text": "Parlem-ne",
+          "text": "Escriu-nos i en parlem",
           "href": "contacte"
         }
       ]
