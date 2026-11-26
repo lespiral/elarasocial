@@ -51,7 +51,8 @@
       {% if c.list %}<ul class="ticks">{% for i in c.list %}<li>{{ i }}</li>{% endfor %}</ul>{% endif %}
       {% if c.foot %}<p class="card__foot">{{ c.foot }}</p>{% endif %}
     </div>
-    {% if c.href %}<a class="btn btn--soft btn--block" href="{{ link_href(c.href, root) }}">{{ c.button or 'Saber-ne més' }}</a>{% endif %}
+    {# "external": true → la fletxa d'enllaç extern; "aria": el nom llarg del botó per als lectors de pantalla #}
+    {% if c.href %}<a class="btn btn--soft btn--block" href="{{ link_href(c.href, root) }}"{% if c.href.startswith('http') %} rel="noopener"{% endif %}{% if c.aria %} aria-label="{{ c.aria }}"{% endif %}>{{ c.button or 'Saber-ne més' }}{% if c.external %} {{ icon('external') }}{% endif %}</a>{% endif %}
     {# "links": [{"text", "href"}]: més botons a sota (p. ex. la mateixa web en una altra llengua) #}
     {% for l in c.links or [] %}<a class="btn btn--outline btn--block card__more" href="{{ link_href(l.href, root) }}"{% if l.href.startswith('http') %} rel="noopener"{% endif %}>{{ l.text }}</a>{% endfor %}
   </li>
@@ -256,6 +257,13 @@
     {% elif s.type == 'cards' %}
       {% if s.before %}<div class="prose prose--before">{% for p in s.before %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
       {% if s.infografia and s.before %}<div class="infografia infografia--top">{% include "infografies/infografia-" ~ s.infografia ~ ".html" %}</div>{% endif %}
+      {# "notice": un sol avís sobre les targetes {"title", "text", "button": {"text", "href"}} (groc clar) #}
+      {% if s.notice %}
+      <aside class="notice" aria-label="{{ s.notice.title }}">
+        <p class="notice__text"><strong>{{ s.notice.title }}</strong> {{ s.notice.text }}</p>
+        <a class="btn btn--primary" href="{{ link_href(s.notice.button.href, root) }}">{{ s.notice.button.text }}</a>
+      </aside>
+      {% endif %}
       {{ cards(s["items"], root, align=s.align or 'center', tone=s.tone or '') }}
     {% elif s.type == 'list' %}
       {{ tiles(s["items"], s.list_icon or 'check') }}

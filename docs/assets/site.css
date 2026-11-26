@@ -967,3 +967,7 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 
 
 .ribbon--in { margin: 18px 0 4px; max-width: none; }
+
+/* Avís sobre les targetes d'una secció (p. ex. «Els cursos s'obriran aviat» a /camins/) */
+.notice { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; margin: 0 auto 28px; max-width: 760px; padding: 16px 20px; background: #FBF3D9; border: 1.5px solid #E6C45A; border-radius: 16px; }
+.notice__text { margin: 0; flex: 1 1 320px; color: var(--ink); }
