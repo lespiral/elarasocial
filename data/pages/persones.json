@@ -1,5 +1,5 @@
 {
-  "title": "Quan el món et pesa, deixa't acompanyar.",
+  "title": "Quan el món et desborda, deixa't acompanyar.",
   "kicker": "Persones",
   "lead": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
   "actions": [
@@ -22,9 +22,7 @@
       "title": "Per més que t'hi esforcis, el dia a dia et passa per sobre?",
       "paragraphs": [
         "A Elara Social, **transformem aquest estancament en força compartida**.",
-        "**Sostenir la vida és al centre de la nostra activitat**. Per això no busquem solucions ràpides, sinó processos que es puguin sostenir en el temps.",
-        "A Elara Social treballem amb metodologies estructurades i pràctiques vivencials que t’ajuden a **passar de “aguantar” a recuperar direcció, vincle i capacitat d’acció**.",
-        "Ho fem cuidant alhora el benestar personal i la dimensió comunitària: **el que et passa a tu també té a veure amb el món que compartim**."
+        "**Sostenir la vida és al centre de la nostra activitat**. Per això no busquem solucions ràpides, sinó processos que es puguin sostenir en el temps, cuidant alhora el que et passa a tu i el món que compartim."
       ]
     },
     {
@@ -35,7 +33,7 @@
         {
           "icon": "cloud-rain",
           "title": "Sents bloqueig o desorientació?",
-          "text": "La situació global o personal et pesa, i la preocupació es queda atrapada al cap sense saber cap a on tirar.",
+          "text": "La situació global o personal et sobrepassa, i la preocupació es queda atrapada al cap sense saber cap a on tirar.",
           "href": "#prop-7-passes",
           "button": "Provar el minicurs gratuït"
         },
@@ -49,7 +47,7 @@
         {
           "icon": "users-three",
           "title": "Busques gent amb qui parlar de veritat?",
-          "text": "Si et pesa la buidor i carregar-ho tot en soledat... Aquí toquem de peus a terra. Vine a trobar sentit amb gent com tu.",
+          "text": "Si et costa portar-ho tot sol/a, aquí trobaràs gent amb qui parlar de veritat.",
           "href": "#prop-treball-que-reconnecta",
           "button": "Trobar el meu grup"
         }
@@ -62,13 +60,13 @@
       "title": "De la paràlisi al pas concret.",
       "before": [
         "“Potser el món semblarà que continua igual, però tu el veuràs amb uns altres ulls… i en companyia.”",
-        "A Elara Social t’oferim un camí provat per passar de l’aïllament i el desbordament a la claredat i l’acció amb sentit, coherència i dignitat."
+        "A Elara Social t’oferim un camí en companyia per sortir de l’aïllament i fer un pas concret, amb sentit."
       ],
       "items": [
         {
           "icon": "heart",
-          "title": "Estaràs acompanyat, acompanyada",
-          "text": "Creem un marc de seguretat on poder compartir el malestar i dissoldre'l en comunitat."
+          "title": "No estaràs sol/a",
+          "text": "Creem un marc de seguretat on poder compartir el malestar, en comunitat."
         },
         {
           "icon": "plant",
@@ -303,11 +301,11 @@
           "id": "prop-individual",
           "kicker": "Tu i una persona acompanyant",
           "title": "Acompanyament individual",
-          "summary": "Parlem del que et pesa i dissenyem un pla d'acció.",
+          "summary": "Parlem del que et preocupa i dissenyem un pla d'acció.",
           "meta": "1 h o 1,5 h",
           "range": "acompanyament-individual",
           "scene": "costat",
-          "text": "Parlem del que et pesa, practiquem eines per regular-te i dissenyem un pla d'acció i d'autocura.",
+          "text": "Parlem del que et preocupa, practiquem eines per sostenir-te i dissenyem un pla d'acció i d'autocura.",
           "rows": [
             [
               "Durada",
@@ -342,7 +340,7 @@
         },
         {
           "title": "Et confirmem",
-          "text": "Et responem en 5 dies laborables amb les dates, el lloc i com fer el pagament. Si tens pressa, escriu-nos per WhatsApp."
+          "text": "Et responem en 5 dies laborables amb les dates, el lloc i com fer el pagament."
         }
       ]
     },
