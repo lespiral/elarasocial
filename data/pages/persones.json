@@ -8,8 +8,8 @@
       "href": "#propostes"
     },
     {
-      "text": "Prova el minicurs gratuït",
-      "href": "7-passes-cap-a-lesperanca-activa"
+      "text": "Camins: cursos gratuïts",
+      "href": "camins"
     }
   ],
   "description": "Acompanyament individual i grupal per transformar el malestar en impuls i fer un pas concret amb sentit.",
@@ -34,8 +34,8 @@
           "icon": "cloud-rain",
           "title": "Sents bloqueig o desorientació?",
           "text": "La situació global o personal et sobrepassa, i la preocupació es queda atrapada al cap sense saber cap a on tirar.",
-          "href": "#prop-7-passes",
-          "button": "Provar el minicurs gratuït"
+          "href": "camins",
+          "button": "Descobrir Camins"
         },
         {
           "icon": "sun",
@@ -153,15 +153,9 @@
             ]
           ],
           "button": {
-            "text": "Vés a la web en català",
-            "href": "https://xn--esperanaactiva-mjb.cat/"
-          },
-          "links": [
-            {
-              "text": "Vés a la web en castellà",
-              "href": "https://esperanzaactiva.org/"
-            }
-          ],
+          "text": "Saber-ne més",
+          "href": "camins"
+        },
           "scene": "ruta"
         },
         {

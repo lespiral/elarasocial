@@ -9,8 +9,8 @@
       "href": "#propuestas"
     },
     {
-      "text": "Prueba el minicurso gratuito",
-      "href": "7-pasos-hacia-la-esperanza-activa"
+      "text": "Caminos: cursos gratuitos",
+      "href": "caminos"
     }
   ],
   "description": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
@@ -35,8 +35,8 @@
           "icon": "cloud-rain",
           "title": "¿Sientes bloqueo o desorientación?",
           "text": "La situación global o personal te sobrepasa, y la preocupación se queda atrapada en la cabeza sin saber hacia dónde tirar.",
-          "href": "#propuesta-7-passes",
-          "button": "Probar el minicurso gratuito"
+          "href": "caminos",
+          "button": "Descubrir Caminos"
         },
         {
           "icon": "sun",
@@ -154,15 +154,9 @@
             ]
           ],
           "button": {
-            "text": "Ir a la web en castellano",
-            "href": "https://esperanzaactiva.org/"
-          },
-          "links": [
-            {
-              "text": "Ir a la web en catalán",
-              "href": "https://xn--esperanaactiva-mjb.cat/"
-            }
-          ]
+            "text": "Saber más",
+            "href": "caminos"
+          }
         },
         {
           "id": "propuesta-treball-que-reconnecta",
