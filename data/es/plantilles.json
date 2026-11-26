@@ -340,136 +340,6 @@
       "\"Una calle apagada se ilumina y una casa torcida se endereza, sostenida\""
     ]
   ],
-  "infografies/infografia-nivells.html": [
-    [
-      "aria-label=\"Tres nivells d'impacte, com cercles que s'obren: tu, persones i grups, equips i organitzacions, i la comunitat\"",
-      "aria-label=\"Tres niveles de impacto, como círculos que se abren: tú, personas y grupos, equipos y organizaciones, y la comunidad\""
-    ],
-    [
-      "<span>Des de la salut mental comunitària, l’Economia Social i Solidària i l’acció climàtica</span>",
-      "<span>Desde la salud mental comunitaria, la Economía Social y Solidaria y la acción climática</span>"
-    ],
-    [
-      "Toca cada cercle per saber-ne més.",
-      "Toca cada círculo para saber más."
-    ],
-    [
-      "Torna-ho a veure",
-      "Volver a verlo"
-    ],
-    [
-      "\"Tu\"",
-      "\"Tú\""
-    ],
-    [
-      "\"Tal com estàs avui\"",
-      "\"Tal como estás hoy\""
-    ],
-    [
-      "\"El centre\"",
-      "\"El centro\""
-    ],
-    [
-      "\"Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix.\"",
-      "\"Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo.\""
-    ],
-    [
-      "\"Persones i grups\"",
-      "\"Personas y grupos\""
-    ],
-    [
-      "\"Per a persones i grups\"",
-      "\"Para personas y grupos\""
-    ],
-    [
-      "\"Processos individuals i grups de suport\"",
-      "\"Procesos individuales y grupos de apoyo\""
-    ],
-    [
-      "\"El primer cercle\"",
-      "\"El primer círculo\""
-    ],
-    [
-      "\"Oferim espais individuals i grupals de mentoria i psicoteràpia per arrelar, recuperar el centre i avançar des de la coherència.\"",
-      "\"Ofrecemos espacios individuales y grupales de mentoría y psicoterapia para arraigar, recuperar el centro y avanzar desde la coherencia.\""
-    ],
-    [
-      "href: \"persones\"",
-      "href: \"personas\""
-    ],
-    [
-      "\"Equips i organitzacions\"",
-      "\"Equipos y organizaciones\""
-    ],
-    [
-      "\"Per a equips i organitzacions\"",
-      "\"Para equipos y organizaciones\""
-    ],
-    [
-      "\"Cohesió interna i prevenció del burnout\"",
-      "\"Cohesión interna y prevención del burnout\""
-    ],
-    [
-      "\"El segon cercle\"",
-      "\"El segundo círculo\""
-    ],
-    [
-      "\"Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, transformant conflictes en oportunitats.\"",
-      "\"Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, transformando conflictos en oportunidades.\""
-    ],
-    [
-      "href: \"entitats/#equip\"",
-      "href: \"entidades/#equipo\""
-    ],
-    [
-      "\"Comunitat\"",
-      "\"Comunidad\""
-    ],
-    [
-      "\"Per a la comunitat\"",
-      "\"Para la comunidad\""
-    ],
-    [
-      "\"Tallers, cercles i espais de trobada\"",
-      "\"Talleres, círculos y espacios de encuentro\""
-    ],
-    [
-      "\"El tercer cercle\"",
-      "\"El tercer círculo\""
-    ],
-    [
-      "\"Creem espais de trobada on compartir recursos, sabers i suport mutu per fer front als reptes ecosocials.\"",
-      "\"Creamos espacios de encuentro donde compartir recursos, saberes y apoyo mutuo para hacer frente a los retos ecosociales.\""
-    ],
-    [
-      "href: \"entitats/#territori\"",
-      "href: \"entidades/#territorio\""
-    ],
-    [
-      "\"Des d’on treballem\"",
-      "\"Desde dónde trabajamos\""
-    ],
-    [
-      "\"La intersecció\"",
-      "\"La intersección\""
-    ],
-    [
-      "\"Treballem des de la intersecció entre la salut mental comunitària, l’Economia Social i Solidària, i l’acció climàtica i la cultura del bé comú.\"",
-      "\"Trabajamos desde la intersección entre la salud mental comunitaria, la Economía Social y Solidaria, y la acción climática y la cultura del bien común.\""
-    ],
-    [
-      "\"Tres nivells d’impacte\"",
-      "\"Tres niveles de impacto\""
-    ],
-    [
-      "\"Del procés personal a la transformació col·lectiva.\"",
-      "\"Del proceso personal a la transformación colectiva.\""
-    ],
-    [
-      "\"Adaptem la nostra metodologia a la teva realitat.\"",
-      "\"Adaptamos nuestra metodología a tu realidad.\""
-    ]
-  ],
   "infografies/infografia-itinerari.html": [
     [
       "'Un camí amb tres parades'",
@@ -1048,6 +918,306 @@
     [
       "\"Transformar el dolor i la incertesa en claredat, suport i acció significativa, sostinguda per la comunitat.\"",
       "\"Transformar el dolor y la incertidumbre en claridad, apoyo y acción significativa, sostenida por la comunidad.\""
+    ]
+  ],
+  "infografies/infografia-nivells-v2.html": [
+    [
+      "Toca cada cercle per saber-ne més.",
+      "Toca cada círculo para saber más."
+    ],
+    [
+      "Torna-ho a veure",
+      "Volver a verlo"
+    ],
+    [
+      "\"Tu\"",
+      "\"Tú\""
+    ],
+    [
+      "\"Tal com estàs avui\"",
+      "\"Tal como estás hoy\""
+    ],
+    [
+      "\"El centre\"",
+      "\"El centro\""
+    ],
+    [
+      "\"Pots venir tal com estàs avui. El primer pas no és estar bé, sinó buscar un espai on poder ser tu mateix.\"",
+      "\"Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo.\""
+    ],
+    [
+      "\"Persones i grups\"",
+      "\"Personas y grupos\""
+    ],
+    [
+      "\"Per a persones i grups\"",
+      "\"Para personas y grupos\""
+    ],
+    [
+      "\"El primer cercle\"",
+      "\"El primer círculo\""
+    ],
+    [
+      "href: \"persones\"",
+      "href: \"personas\""
+    ],
+    [
+      "\"Equips i organitzacions\"",
+      "\"Equipos y organizaciones\""
+    ],
+    [
+      "\"Per a equips i organitzacions\"",
+      "\"Para equipos y organizaciones\""
+    ],
+    [
+      "\"El segon cercle\"",
+      "\"El segundo círculo\""
+    ],
+    [
+      "href: \"entitats/#equip\"",
+      "href: \"entidades/#equipo\""
+    ],
+    [
+      "\"Comunitat\"",
+      "\"Comunidad\""
+    ],
+    [
+      "\"Per a la comunitat\"",
+      "\"Para la comunidad\""
+    ],
+    [
+      "\"Tallers, cercles i espais de trobada\"",
+      "\"Talleres, círculos y espacios de encuentro\""
+    ],
+    [
+      "\"El tercer cercle\"",
+      "\"El tercer círculo\""
+    ],
+    [
+      "href: \"entitats/#territori\"",
+      "href: \"entidades/#territorio\""
+    ],
+    [
+      "\"Des d’on treballem\"",
+      "\"Desde dónde trabajamos\""
+    ],
+    [
+      "\"La intersecció\"",
+      "\"La intersección\""
+    ],
+    [
+      "\"Treballem des de la intersecció entre la salut mental comunitària, l’Economia Social i Solidària, i l’acció climàtica i la cultura del bé comú.\"",
+      "\"Trabajamos desde la intersección entre la salud mental comunitaria, la Economía Social y Solidaria, y la acción climática y la cultura del bien común.\""
+    ],
+    [
+      "\"Del procés personal a la transformació col·lectiva.\"",
+      "\"Del proceso personal a la transformación colectiva.\""
+    ],
+    [
+      "\"Adaptem la nostra metodologia a la teva realitat.\"",
+      "\"Adaptamos nuestra metodología a tu realidad.\""
+    ],
+    [
+      "aria-label=\"Tres nivells, com cercles que s'obren: tu, persones i grups, equips i organitzacions, i la comunitat\"",
+      "aria-label=\"Tres niveles, como círculos que se abren: tú, personas y grupos, equipos y organizaciones, y la comunidad\""
+    ],
+    [
+      "<span>Des de la mirada comunitària, l’economia social i solidària i l’acció climàtica.</span>",
+      "<span>Desde la mirada comunitaria, la economía social y solidaria y la acción climática.</span>"
+    ],
+    [
+      "\"Processos individuals i grups de suport mutu\"",
+      "\"Procesos individuales y grupos de apoyo mutuo\""
+    ],
+    [
+      "\"Espais individuals i de grup, de mentoria i acompanyament, per tornar a trobar-te i fer el següent pas des del que és important per a tu.\"",
+      "\"Espacios individuales y de grupo, de mentoría y acompañamiento, para volver a encontrarte y dar el siguiente paso desde lo que es importante para ti.\""
+    ],
+    [
+      "\"Cohesió d’equip i cura del desgast\"",
+      "\"Cohesión de equipo y cuidado del desgaste\""
+    ],
+    [
+      "\"Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, i aprendre dels conflictes en comptes d’evitar-los.\"",
+      "\"Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, y aprender de los conflictos en lugar de evitarlos.\""
+    ],
+    [
+      "\"Creem espais de trobada on compartir recursos, coneixements i suport mutu per afrontar junts els reptes socials i ecològics.\"",
+      "\"Creamos espacios de encuentro donde compartir recursos, conocimientos y apoyo mutuo para afrontar juntos los retos sociales y ecológicos.\""
+    ]
+  ],
+  "infografies/infografia-espiral-v2.html": [
+    [
+      "aria-label=\"L'Espiral d'El Treball que Reconnecta en quatre estacions: gratitud, dolor, noves mirades i acció; i torna a començar\"",
+      "aria-label=\"La Espiral de El Trabajo que Reconecta en cuatro estaciones: gratitud, dolor, nuevas miradas y acción; y vuelta a empezar\""
+    ],
+    [
+      "Toca un punt per saber-ne més.",
+      "Toca un punto para saber más."
+    ],
+    [
+      "Torna-ho a veure",
+      "Volver a verlo"
+    ],
+    [
+      "\"Acollir el que fa mal\"",
+      "\"Acoger lo que duele\""
+    ],
+    [
+      "\"Per poder avançar\"",
+      "\"Para poder avanzar\""
+    ],
+    [
+      "\"Una mirada sistèmica\"",
+      "\"Una mirada sistémica\""
+    ],
+    [
+      "\"Veure amb nous ulls\"",
+      "\"Ver con nuevos ojos\""
+    ],
+    [
+      "\"Acció des del vincle\"",
+      "\"Acción desde el vínculo\""
+    ],
+    [
+      "\"I torna a començar\"",
+      "\"Y vuelta a empezar\""
+    ],
+    [
+      "\"Al ritme que el cos pot sostenir\"",
+      "\"Al ritmo que el cuerpo puede sostener\""
+    ],
+    [
+      "\"L’Espiral d'El Treball que Reconnecta\"",
+      "\"La Espiral de El Trabajo que Reconecta\""
+    ],
+    [
+      "\"Les quatre estacions per transformar la incertesa: Arrelar, Dolor, Noves Mirades i Acció.\"",
+      "\"Las cuatro estaciones para transformar la incertidumbre: Arraigar, Dolor, Nuevas Miradas y Acción.\""
+    ],
+    [
+      "\"La gratitud com a arrel\"",
+      "\"La gratitud como raíz\""
+    ],
+    [
+      "\"Allò que ens sosté (persones, recursos interns, natura).\"",
+      "\"Aquello que nos sostiene (personas, recursos internos, naturaleza).\""
+    ],
+    [
+      "\"El sentit del dolor pel món\"",
+      "\"El sentido del dolor por el mundo\""
+    ],
+    [
+      "\"Emocions difícils (tristesa, por, ràbia) com a expressió de vincle amb la vida.\"",
+      "\"Emociones difíciles (tristeza, miedo, rabia) como expresión de vínculo con la vida.\""
+    ],
+    [
+      "\"Del «jo separat» al «jo comunitari»\"",
+      "\"Del «yo separado» al «yo comunitario»\""
+    ],
+    [
+      "\"Mirada sistèmica i pertinença al teixit de la vida.\"",
+      "\"Mirada sistémica y pertenencia al tejido de la vida.\""
+    ],
+    [
+      "\"Passar a l’acció\"",
+      "\"Pasar a la acción\""
+    ],
+    [
+      "\"Com tancar amb petits passos\"",
+      "\"Cómo cerrar con pequeños pasos\""
+    ],
+    [
+      "\"Propòsit vital, continuïtat i xarxes de suport.\"",
+      "\"Propósito vital, continuidad y redes de apoyo.\""
+    ],
+    [
+      "\"L’arrel de la Gratitud\"",
+      "\"La raíz de la Gratitud\""
+    ],
+    [
+      "\"Com utilitzar-la com a eina de resiliència quan tot trontolla.\"",
+      "\"Cómo utilizarla como herramienta de resiliencia cuando todo se tambalea.\""
+    ],
+    [
+      "\"El sentit del malestar\"",
+      "\"El sentido del malestar\""
+    ],
+    [
+      "\"Aprendre a mirar les emocions difícils de cara per transformar-les en força.\"",
+      "\"Aprender a mirar de frente las emociones difíciles para transformarlas en fuerza.\""
+    ],
+    [
+      "\"El salt al «nosaltres»\"",
+      "\"El salto al «nosotros»\""
+    ],
+    [
+      "\"Eines per entendre el nostre lloc al món des de la pertinença i no des de la soledat.\"",
+      "\"Herramientas para entender nuestro lugar en el mundo desde la pertenencia y no desde la soledad.\""
+    ],
+    [
+      "\"El tancament actiu\"",
+      "\"El cierre activo\""
+    ],
+    [
+      "\"Com definir petits passos i propòsits que puguis sostenir en el teu dia a dia.\"",
+      "\"Cómo definir pequeños pasos y propósitos que puedas sostener en tu día a día.\""
+    ],
+    [
+      "\"4 hores\"",
+      "\"4 horas\""
+    ],
+    [
+      "\"4 sessions de 2 hores\"",
+      "\"4 sesiones de 2 horas\""
+    ],
+    [
+      "\"2 sessions de 6 hores (dissabte i diumenge)\"",
+      "\"2 sesiones de 6 horas (sábado y domingo)\""
+    ],
+    [
+      "\"Mensual o quinzenal\"",
+      "\"Mensual o quincenal\""
+    ],
+    [
+      "\"En lloc de seguir un temari rígid, farem servir El Treball que Reconnecta com a brúixola.\"",
+      "\"En lugar de seguir un temario rígido, utilizaremos El Trabajo que Reconecta como brújula.\""
+    ],
+    [
+      "\"Recorrerem de manera vivencial l’Espiral d’El Treball que Reconnecta: Arrelar, Honrar el dolor, Veure amb nous ulls i Passar a l’acció.\"",
+      "\"Recorreremos de manera vivencial la Espiral de El Trabajo que Reconecta: Arraigar, Honrar el dolor, Ver con nuevos ojos y Pasar a la acción.\""
+    ],
+    [
+      "\"Estació \" + n + \" de 4\"",
+      "\"Estación \" + n + \" de 4\""
+    ],
+    [
+      "\"Arrelar\"",
+      "\"Arraigar\""
+    ],
+    [
+      "\"El primer pas: tornar a la terra\"",
+      "\"El primer paso: volver a la tierra\""
+    ],
+    [
+      "\"Quan el sistema accelera, a vegades el primer pas no és arreglar el cel, sinó retrobar la terra. Entenem la gratitud lluny de l’optimisme ingenu: com un gest d’arrelament. Tornem al cos i reconeixem què ens sosté, per recuperar-hi les forces.\"",
+      "\"Cuando el sistema acelera, a veces el primer paso no es arreglar el cielo, sino reencontrar la tierra. Entendemos la gratitud lejos del optimismo ingenuo: como un gesto de arraigo. Volvemos al cuerpo y reconocemos qué nos sostiene, para recuperar las fuerzas.\""
+    ],
+    [
+      "\"Mirem de cara el malestar. Reconeixem la tristesa, la por o el dolor sense maquillar-los. L’espiral ens dona un espai segur per posar-hi paraules i sostenir-ho en comunitat. Així el dolor no es tanca en una identitat, i es pot transformar en consciència i cura.\"",
+      "\"Miramos de frente el malestar. Reconocemos la tristeza, el miedo o el dolor sin maquillarlos. La espiral nos da un espacio seguro para ponerles palabras y sostenerlo en comunidad. Así el dolor no se encierra en una identidad, y se puede transformar en conciencia y cuidado.\""
+    ],
+    [
+      "\"Deixem de sentir-nos només víctimes i ens fem part activa del canvi. Veiem que la incertesa és part del camí, i que arrelar no és rendir-se. Ampliem la mirada cap a la comunitat, per construir junts un futur que puguem sostenir.\"",
+      "\"Dejamos de sentirnos solo víctimas y nos hacemos parte activa del cambio. Vemos que la incertidumbre es parte del camino, y que arraigar no es rendirse. Ampliamos la mirada hacia la comunidad, para construir juntos un futuro que podamos sostener.\""
+    ],
+    [
+      "\"Anar endavant: acció des del vincle\"",
+      "\"Seguir adelante: acción desde el vínculo\""
+    ],
+    [
+      "\"Passar a l’acció vol dir sortir al món acompanyats. La comunitat és la xarxa que ens sosté: un suport mutu que ens ajuda a fer el pas sense sentir-nos sols.\"",
+      "\"Pasar a la acción quiere decir salir al mundo acompañados. La comunidad es la red que nos sostiene: un apoyo mutuo que nos ayuda a dar el paso sin sentirnos solos.\""
     ]
   ]
 }

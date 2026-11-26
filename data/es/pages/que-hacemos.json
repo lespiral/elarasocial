@@ -1,8 +1,8 @@
 {
   "ca": "que-fem",
-  "title": "Transformamos el malestar en Esperanza Activa",
+  "title": "La Esperanza Activa: mirar de frente lo que nos preocupa y elegir un paso",
   "kicker": "Qué es la Esperanza Activa",
-  "lead": "Trabajamos en tres niveles de impacto: individual, grupal y comunitario.",
+  "lead": "Trabajamos en tres niveles: la persona, el grupo y la comunidad.",
   "sections": [
     {
       "type": "text",
@@ -20,7 +20,7 @@
       "id": "metodologia",
       "kicker": "El Trabajo que Reconecta",
       "title": "Nuestra metodología",
-      "infografia": "espiral",
+      "infografia": "espiral-v2",
       "before": [
         "Nuestro trabajo se inspira en la Espiral de El Trabajo que Reconecta: esta espiral nos permite **integrar emoción, conciencia y acción**.",
         "No buscamos solo comprender el malestar. Buscamos traducirlo en compromiso y transformación."
@@ -28,11 +28,11 @@
       "items": [
         {
           "icon": "plant",
-          "title": "Arraigar: el primer paso hacia la resiliencia",
+          "title": "Arraigar: el primer paso, volver a la tierra",
           "paragraphs": [
             "Cuando el sistema acelera, a veces el primer paso no es arreglar el cielo, sino reencontrar la tierra.",
-            "Entendemos la gratitud lejos del optimismo naíf; la trabajamos como un gesto radical de arraigo.",
-            "Es la práctica de volver a la base, al cuerpo, y reconocer qué nos sostiene para, desde ahí, recuperar la fuerza vital."
+            "Entendemos la gratitud lejos del optimismo ingenuo: como un gesto de arraigo.",
+            "Volvemos al cuerpo y reconocemos qué nos sostiene, para recuperar las fuerzas."
           ]
         },
         {
@@ -40,27 +40,26 @@
           "title": "Acoger lo que duele para poder avanzar",
           "paragraphs": [
             "Miramos de frente el malestar.",
-            "Reconocemos la tristeza, el miedo o el trauma sin maquillarlos.",
-            "La Espiral nos ofrece un espacio seguro para hacer algo revolucionario: reconocer la herida, ponerle palabras y sostenerla en comunidad.",
-            "Evitamos que el dolor se convierta en una identidad cerrada y lo transformamos en conciencia y amor activo."
+            "Reconocemos la tristeza, el miedo o el dolor sin maquillarlos.",
+            "La espiral nos da un espacio seguro para ponerles palabras y sostenerlo en comunidad.",
+            "Así el dolor no se encierra en una identidad, y se puede transformar en conciencia y cuidado."
           ]
         },
         {
           "icon": "globe",
           "title": "Una mirada sistémica",
           "paragraphs": [
-            "Dejamos de ser víctimas pasivas para convertirnos en parte activa de la transformación.",
-            "Entendemos que la incertidumbre es metabolismo y que arraigar no es rendirse.",
-            "Ampliamos nuestra perspectiva hacia una visión comunitaria y sistémica, encontrando la inspiración necesaria para construir un futuro que podamos sostener juntas."
+            "Dejamos de sentirnos solo víctimas y nos hacemos parte activa del cambio.",
+            "Vemos que la incertidumbre es parte del camino, y que arraigar no es rendirse.",
+            "Ampliamos la mirada hacia la comunidad, para construir juntos un futuro que podamos sostener."
           ]
         },
         {
           "icon": "footprints",
           "title": "Seguir adelante: acción desde el vínculo",
           "paragraphs": [
-            "Pasar a la acción quiere decir salir al mundo con conexión.",
-            "El paso final es moverse desde una relación estable.",
-            "La comunidad es esa red que sostiene: un apoyo mutuo que hace posible nuestro movimiento hacia delante, garantizando que podamos actuar con fuerza sin miedo a perdernos en el vacío."
+            "Pasar a la acción quiere decir salir al mundo acompañados.",
+            "La comunidad es la red que nos sostiene: un apoyo mutuo que nos ayuda a dar el paso sin sentirnos solos."
           ]
         }
       ]
@@ -72,56 +71,58 @@
       "align": "left",
       "id": "para-quien",
       "kicker": "¿para quién?",
-      "title": "Adaptamos nuestra metodología a tres niveles de impacto",
-      "infografia": "nivells",
+      "title": "Un mismo camino, tres maneras de acompañar",
+      "infografia": "nivells-v2",
       "before": [
-        "Acompañamiento individual y grupal, dinamización para colectivos y organizaciones, y creación y apoyo a comunidades comprometidas con el bienestar común."
+        "Acompañamos a personas y grupos, equipos y organizaciones, y comunidades que quieren cuidar el bienestar común."
       ],
       "items": [
         {
           "icon": "users-three",
           "title": "Para personas y grupos",
           "paragraphs": [
-            "¿Sientes el peso de la responsabilidad o la pérdida de sentido?",
-            "Ofrecemos espacios individuales y grupales de mentoría y psicoterapia para arraigar, recuperar el centro y avanzar desde la coherencia."
+            "¿Te pesa la responsabilidad o has perdido el sentido de lo que haces?",
+            "Espacios individuales y de grupo, de mentoría y acompañamiento, para volver a encontrarte y dar el siguiente paso desde lo que es importante para ti."
           ],
-          "href": "personas"
+          "href": "personas",
+          "button": "Ver propuestas para personas"
         },
         {
           "icon": "buildings",
           "title": "Para equipos y organizaciones",
           "paragraphs": [
-            "¿Notáis que la inercia os está quemando?",
-            "Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, transformando conflictos en oportunidades."
+            "¿Sentís que la inercia os desgasta?",
+            "Acompañamos a colectivos que quieren cuidar la salud relacional sin renunciar a su misión, y aprender de los conflictos en lugar de evitarlos."
           ],
-          "href": "entidades/#equipo"
+          "href": "entidades/#equipo",
+          "button": "Ver propuestas para equipos"
         },
         {
           "icon": "tree",
           "title": "Para la comunidad",
           "paragraphs": [
-            "¿Queréis tejer redes reales en un mundo fragmentado?",
-            "Creamos espacios de encuentro donde compartir recursos, saberes y apoyo mutuo para hacer frente a los retos ecosociales."
+            "¿Queréis tejer redes de apoyo en un mundo cada vez más fragmentado?",
+            "Creamos espacios de encuentro donde compartir recursos, conocimientos y apoyo mutuo para afrontar juntos los retos sociales y ecológicos."
           ],
-          "href": "entidades/#territorio"
+          "href": "entidades/#territorio",
+          "button": "Ver propuestas para la comunidad"
         }
       ]
     },
     {
       "type": "cta",
       "band": "white",
-      "kicker": "descubre nuestras propuestas",
+      "title": "Encuentra la propuesta que se ajusta a ti",
       "paragraphs": [
-        "Tanto si necesitas arraigo individual como si quieres impulsar una transformación colectiva, en Elara Social encontrarás las herramientas y el acompañamiento para hacerlo realidad.",
-        "Adaptamos nuestra metodología a tu realidad. Ya sea para sostener procesos individuales o para fortalecer la salud de una organización entera."
+        "Tanto si buscas arraigarte como si quieres impulsar un cambio colectivo, en Elara Social te acompañamos a dar el paso. Adaptamos las propuestas a cada persona, equipo o comunidad."
       ],
       "buttons": [
         {
-          "text": "Personas",
+          "text": "Soy una persona",
           "href": "personas/#propuestas"
         },
         {
-          "text": "Entidades y comunidades",
+          "text": "Somos una entidad o comunidad",
           "href": "entidades"
         }
       ]

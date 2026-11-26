@@ -127,7 +127,8 @@
         "band": "soft",
         "id": "que-es",
         "kicker": "qué hacemos exactamente",
-        "title": "¿Qué es la Esperanza Activa?",
+        "title": "Somos el puente entre el malestar individual y la acción colectiva.",
+        "subtitle": "¿Qué es la Esperanza Activa?",
         "paragraphs": [
           "**No es optimismo. Es una práctica:** mirar de frente lo que nos preocupa y elegir, con otras personas, un paso concreto.",
           "Lo hacemos con **El Trabajo que Reconecta**, un camino en espiral de cuatro pasos. **Os acompañamos para que podáis hacerlo vuestro y reconectar con lo que os sostiene cuando el día a día se hace difícil.**"
@@ -236,10 +237,10 @@
         "id": "minicurso",
         "variant": "dark",
         "scene": "camins-mini",
-        "pill": "Próximamente · Gratuito",
+        "pill": "Gratuito",
         "title": "Caminos de Esperanza [Activa]",
         "paragraphs": [
-          "Cursos en línea de 7 pasos, con audio y una pregunta para reflexionar en cada paso. Si te apetece, también puedes hacer rutas a pie cerca de casa."
+          "Cursos en línea de 7 pasos: en cada paso, una práctica guiada y una frase para completar. Y rutas a pie cerca de casa."
         ],
         "buttons": [
           {
@@ -248,7 +249,7 @@
           }
         ],
         "side": {
-          "title": "Elige desde dónde quieres empezar",
+          "title": "Los cursos que estamos preparando",
           "items": [
             {
               "title": "Cuando la vida te desborda",

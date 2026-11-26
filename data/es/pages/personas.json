@@ -1,56 +1,56 @@
 {
   "ca": "persones",
   "title": "Cuando el mundo te desborda, déjate acompañar.",
-  "kicker": "Personas",
-  "lead": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
+  "kicker": "Para personas y grupos",
+  "lead": "Acompañamiento individual y en grupo, para que no tengas que llevarlo todo en soledad y puedas dar un paso posible, a tu ritmo.",
   "actions": [
     {
-      "text": "Encuentra tu propuesta",
+      "text": "Ver cómo podemos acompañarte",
       "href": "#propuestas"
     },
     {
-      "text": "Caminos: cursos gratuitos",
+      "text": "Caminos de Esperanza: el camino gratuito",
       "href": "caminos"
     }
   ],
-  "description": "Acompañamiento individual y grupal para transformar el malestar en impulso y dar un paso concreto con sentido.",
+  "description": "Acompañamiento individual y en grupo, para que no tengas que llevarlo todo en soledad y puedas dar un paso posible, a tu ritmo.",
   "escena": "vida",
   "sections": [
     {
       "type": "text",
       "band": "white",
-      "kicker": "no lo sostengas solo/a",
+      "kicker": "esto se puede hacer en compañía",
       "title": "Por mucho que te esfuerces, ¿el día a día te pasa por encima?",
       "paragraphs": [
-        "En Elara Social, **transformamos este estancamiento en fuerza compartida**.",
+        "En Elara Social **hacemos este camino en compañía, para que el estancamiento se convierta en fuerza compartida**.",
         "**Sostener la vida está en el centro de nuestra actividad**. Por eso no buscamos soluciones rápidas, sino procesos que puedan sostenerse en el tiempo, cuidando a la vez lo que te pasa a ti y el mundo que compartimos."
       ]
     },
     {
       "type": "cards",
       "tone": "accent",
-      "title": "Si te reconoces, descubre nuestras propuestas",
+      "title": "Si te reconoces, mira por dónde puedes empezar:",
       "items": [
         {
           "icon": "cloud-rain",
           "title": "¿Sientes bloqueo o desorientación?",
           "text": "La situación global o personal te sobrepasa, y la preocupación se queda atrapada en la cabeza sin saber hacia dónde tirar.",
           "href": "caminos",
-          "button": "Descubrir Caminos"
+          "button": "Conocer Caminos de Esperanza"
         },
         {
           "icon": "sun",
-          "title": "¿Notas un cansancio profundo?",
-          "text": "Vas con el piloto automático, cumpliendo con todo pero conectando con poco, y necesitas un respiro de verdad.",
+          "title": "¿Vas con el piloto automático?",
+          "text": "Cumples con todo pero conectas poco, y necesitas una pausa de verdad.",
           "href": "#propuesta-individual",
-          "button": "Reservar una sesión individual"
+          "button": "Ver el acompañamiento individual"
         },
         {
           "icon": "users-three",
           "title": "¿Buscas gente con quien hablar de verdad?",
-          "text": "Si te cuesta llevarlo todo solo/a, aquí encontrarás gente con quien hablar de verdad.",
+          "text": "Si te cuesta llevarlo todo en soledad, hay espacios de grupo donde compartir lo que te pasa con otras personas.",
           "href": "#propuesta-treball-que-reconnecta",
-          "button": "Encontrar mi grupo"
+          "button": "Ver los grupos"
         }
       ]
     },
@@ -58,21 +58,21 @@
       "type": "cards",
       "tone": "row",
       "band": "white",
-      "title": "De la parálisis al paso concreto.",
+      "title": "Del bloqueo a un primer paso",
       "before": [
-        "“Puede que el mundo parezca seguir igual, pero tú lo verás con otros ojos… y en compañía.”",
-        "En Elara Social te ofrecemos un camino en compañía para salir del aislamiento y dar un paso concreto, con sentido."
+        "Puede que el mundo parezca seguir igual, pero tú lo puedes mirar con otros ojos.",
+        "En Elara Social te ofrecemos un camino para salir del aislamiento y dar un primer paso con sentido."
       ],
       "items": [
         {
           "icon": "heart",
-          "title": "No estarás solo/a",
+          "title": "Con apoyo mutuo",
           "text": "Creamos un marco de seguridad donde poder compartir el malestar, en comunidad."
         },
         {
           "icon": "plant",
           "title": "Esperanza Activa",
-          "text": "Acogeremos el malestar y el dolor, convirtiendo lo que sientes en motor hacia el cambio, con pasos pequeños, realistas y revisables."
+          "text": "Acogemos el malestar y el dolor, y lo llevamos hacia el cambio con pasos pequeños, realistas y revisables."
         },
         {
           "icon": "footprints",
@@ -86,33 +86,33 @@
       "band": "white",
       "tone": "blue",
       "kicker": "¿qué nos mueve?",
-      "title": "En un mundo que nos quiere rápidas y eficientes, nuestra apuesta es la humanidad.",
+      "title": "En un mundo que nos exige velocidad y eficiencia, nuestra apuesta es la humanidad.",
       "before": [
-        "Priorizamos tu cuidado y el de tu entorno por encima de todo."
+        "Ponemos tu cuidado y el de tu entorno en el centro."
       ],
       "items": [
         {
           "icon": "lifebuoy",
-          "title": "Seguridad Relacional Radical",
+          "title": "Seguridad relacional",
           "paragraphs": [
             "Aquí puedes quitarte la máscara.",
-            "Creamos espacios donde no hace falta \"quedar bien\", donde puedes hablar en primera persona y donde tienes permiso para no saberlo todo."
+            "Creamos espacios donde no hace falta «quedar bien», donde puedes hablar desde ti y donde tienes permiso para no saberlo todo."
           ]
         },
         {
           "icon": "tree",
-          "title": "Integración y arraigo",
+          "title": "Arraigo",
           "paragraphs": [
             "Todo está conectado: tu mente, tu cuerpo y el lugar donde vives.",
-            "Entendemos que estar bien contigo mismo pasa, inevitablemente, por reconectar con el mundo."
+            "Entendemos que cuidarte pasa también por reconectar con el mundo."
           ]
         },
         {
           "icon": "sneaker",
           "title": "Acción consciente",
           "paragraphs": [
-            "Te acompañamos a moverte conectando con los demás.",
-            "Caminamos juntos hacia un futuro mejor, con pasos realistas y alcanzables."
+            "Te acompañamos a moverte, y a hacerlo con otras personas.",
+            "Hacemos camino juntos, con pasos realistas y a tu medida."
           ]
         }
       ]
@@ -123,7 +123,7 @@
       "band": "soft",
       "id": "propuestas",
       "title": "Propuestas y precios",
-      "intro": "Tres precios en cada propuesta. El estándar cubre preparación, facilitación, materiales y espacio. El sostenedor financia plazas reducidas. Elige el que te resulte justo, sin justificarte. Es el mismo camino, El Trabajo que Reconecta, en cuatro duraciones.",
+      "intro": "Cada propuesta tiene tres precios: uno reducido, uno estándar y uno sostenedor. El estándar cubre preparación, facilitación, materiales y espacio; el sostenedor ayuda a financiar las plazas reducidas.",
       "tiers": [
         "Reducido",
         "Estándar",
@@ -132,17 +132,21 @@
       "items": [
         {
           "id": "propuesta-camins",
-          "group": {"id": "para-empezar", "title": "Para empezar", "text": "Mini-rituales y recursos autoguiados para cuando necesitas parar, respirar y orientarte sin exponerte."},
+          "group": {
+            "id": "para-empezar",
+            "title": "Para empezar",
+            "text": "Mini-rituales y recursos autoguiados para cuando necesitas parar, respirar y orientarte sin exponerte."
+          },
           "open": true,
-          "kicker": "Solo/a · caminando",
+          "kicker": "A tu ritmo · en línea y a pie",
           "title": "Caminos de Esperanza [Activa]",
-          "summary": "Cursos digitales y rutas a pie cerca de casa.",
-          "meta": "Gratuito · en línea + rutas a pie",
-          "text": "Cursos digitales de 7 pasos combinados con rutas a pie cerca de casa. Vive en su propia web.",
+          "summary": "Cursos en línea y rutas a pie cerca de casa.",
+          "meta": "Gratuito · Próximamente",
+          "text": "Cursos en línea de 7 pasos, con una práctica guiada y una frase para completar en cada paso, y rutas a pie opcionales. Los encontrarás en su propia web.",
           "rows": [
             [
               "Cursos",
-              "Cuatro, según lo que te preocupa"
+              "Cuatro, según el momento que vives"
             ],
             [
               "Rutas",
@@ -154,13 +158,17 @@
             ]
           ],
           "button": {
-            "text": "Saber más",
+            "text": "Conocer Caminos de Esperanza",
             "href": "caminos"
           }
         },
         {
           "id": "propuesta-treball-que-reconnecta",
-          "group": {"id": "para-profundizar", "title": "Para profundizar", "text": "Cursos y talleres vivenciales donde aprendemos a transformar el malestar y a construir resiliencia para poder vivir con coherencia."},
+          "group": {
+            "id": "para-profundizar",
+            "title": "Para profundizar",
+            "text": "Talleres, ciclos y fines de semana vivenciales, para dedicarles cuerpo y tiempo y aprender a vivir más de acuerdo con lo que es importante para ti."
+          },
           "kicker": "Taller, ciclo o fin de semana",
           "title": "El Trabajo que Reconecta",
           "summary": "Un camino en grupo para recorrer la espiral.",
@@ -192,7 +200,11 @@
         },
         {
           "id": "propuesta-grup-regular",
-          "group": {"id": "para-sostener", "title": "Para sostener", "text": "Encuentros mensuales y mentorías para tejer red, compartir inquietudes y generar iniciativas transformadoras."},
+          "group": {
+            "id": "para-sostener",
+            "title": "Para sostener",
+            "text": "Encuentros regulares para tejer red, compartir lo que nos preocupa y sacar adelante iniciativas en comunidad."
+          },
           "kicker": "Grupo · continuidad",
           "title": "El Trabajo que Reconecta · grupo regular",
           "summary": "Un espacio estable para detenerte y reconectar.",
@@ -219,14 +231,17 @@
         },
         {
           "id": "propuesta-individual",
-          "group": {"id": "de-tu-a-tu", "title": "De tú a tú"},
+          "group": {
+            "id": "de-tu-a-tu",
+            "title": "De tú a tú"
+          },
           "kicker": "Tú y una persona acompañante",
           "title": "Acompañamiento individual",
-          "summary": "Hablamos de lo que te preocupa y diseñamos un plan de acción.",
+          "summary": "Hablamos de lo que te preocupa y encontramos, juntos, un paso posible.",
           "meta": "1 h o 1,5 h",
           "range": "acompanyament-individual",
           "scene": "costat",
-          "text": "Hablamos de lo que te preocupa, practicamos herramientas para sostenerte y diseñamos un plan de acción y de autocuidado.",
+          "text": "Hablamos de lo que te preocupa, practicamos herramientas para cuidarte y encontramos juntos un paso posible.",
           "rows": [
             [
               "Duración",
@@ -253,15 +268,15 @@
       "items": [
         {
           "title": "Elige la propuesta",
-          "text": "Mira duración, grupo y precio. Si dudas, escríbenos."
+          "text": "Mira la duración, el grupo y el precio. Si dudas, escríbenos."
         },
         {
           "title": "Rellena el formulario",
-          "text": "Tres datos y el precio que elijas. Ningún compromiso hasta que confirmemos."
+          "text": "Tres datos y el precio que elijas. No te comprometes a nada hasta que confirmemos."
         },
         {
           "title": "Te confirmamos",
-          "text": "Te respondemos en 5 días laborables con las fechas, el lugar y cómo hacer el pago."
+          "text": "Te respondemos en 5 días laborables."
         }
       ]
     },
@@ -272,7 +287,7 @@
       "items": [
         [
           "¿Es terapia?",
-          "No. Son espacios vivenciales y seguros, y participar es voluntario. Si ahora estás pasando un momento difícil, cuéntanoslo antes y lo valoramos juntos."
+          "No. Son espacios vivenciales de práctica y reflexión, y no sustituyen la psicoterapia ni un tratamiento médico o psicológico. Elara Social es la rama comunitaria de L’Espiral: si en algún momento lo necesitas, los psicólogos y terapeutas de L’Espiral te pueden acompañar. Si ahora estás pasando un momento difícil, cuéntanoslo antes y lo valoramos juntos."
         ],
         [
           "¿Qué precio debo elegir?",
@@ -284,21 +299,20 @@
         ],
         [
           "¿Puedo cancelar?",
-          "Sí. Si nos avisas con 7 días o más de antelación, te devolvemos todo el importe. Con menos tiempo no hay devolución, pero puedes ceder la plaza a otra persona o pasarla a una edición futura. Si somos nosotros quienes cancelamos, te devolvemos todo el importe o te guardamos la plaza para la próxima edición. Las sesiones de acompañamiento individual se pueden anular o cambiar sin coste hasta 24 horas antes."
+          "<p>Sí. Si nos avisas con 7 días o más de antelación, te devolvemos todo el importe. Con menos tiempo no hay devolución, pero puedes ceder la plaza a otra persona o pasarla a una edición futura.</p><p>Si somos nosotros quienes cancelamos, te devolvemos todo el importe o te guardamos la plaza para la próxima edición.</p><p>Las sesiones de acompañamiento individual se pueden anular o cambiar sin coste hasta 24 horas antes.</p>"
         ]
       ]
     },
     {
       "type": "cta",
       "band": "white",
-      "kicker": "¿te sumas a hacer camino en compañía?",
+      "kicker": "¿te apetece empezar?",
       "paragraphs": [
-        "Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú mismo.",
-        "Adaptamos nuestra metodología a tu realidad."
+        "Puedes venir tal como estás hoy. El primer paso no es estar bien, sino buscar un espacio donde poder ser tú."
       ],
       "buttons": [
         {
-          "text": "Hablemos",
+          "text": "Escríbenos y lo hablamos",
           "href": "contacto"
         }
       ]
