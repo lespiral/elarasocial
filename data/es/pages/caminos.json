@@ -1,12 +1,12 @@
 {
   "title": "Caminos de Esperanza [Activa]",
   "kicker": "Gratuito · Próximamente",
-  "lead": "Cursos en línea de 7 pasos y rutas a pie cerca de casa. El botón te abrirá la web de Caminos: esperanzaactiva.org.",
+  "lead": "Cursos en línea de 7 pasos y rutas a pie cerca de casa. El botón abre un correo a esperanza@elarasocial.com.",
   "description": "Caminos de Esperanza [Activa]: cursos gratuitos en línea de 7 pasos y rutas a pie cerca de casa. Qué es, cómo funciona y por qué vive en otra web.",
   "actions": [
     {
-      "text": "Avísame cuando se abra",
-      "href": "https://esperanzaactiva.org/#t-avisem"
+      "text": "Avísame cuando se abran",
+      "href": "mailto:esperanza@elarasocial.com?subject=Av%C3%ADsame%20cuando%20se%20abran%20los%20cursos%20de%20Caminos"
     },
     {
       "text": "Cómo funciona",
@@ -21,7 +21,7 @@
       "kicker": "qué es caminos",
       "title": "Un camino para empezar",
       "paragraphs": [
-        "Una iniciativa gratuita de L'Espiral y Elara Social para empezar a hacer camino. Eliges un curso según lo que te preocupa, lo haces a tu ritmo y, si te apetece, caminas una ruta cerca de casa."
+        "Una iniciativa gratuita de L'Espiral y Elara Social para empezar a hacer camino. Eliges un curso según el momento que vives, lo haces a tu ritmo y, si te apetece, caminas una ruta cerca de casa."
       ],
       "list": [
         "Gratuito",
@@ -31,53 +31,52 @@
       "list_icon": "check"
     },
     {
-      "type": "steps",
+      "type": "infografia",
+      "name": "camins-com-funciona",
       "band": "soft",
       "id": "como-funciona",
       "title": "Cómo funciona",
-      "items": [
-        {
-          "title": "Elige el curso",
-          "text": "Según lo que te preocupa. Hay cuatro."
-        },
-        {
-          "title": "Haz los 7 pasos",
-          "text": "A tu ritmo: un audio y una pregunta para reflexionar en cada paso."
-        },
-        {
-          "title": "Camina, si quieres",
-          "text": "Si te apetece, haz una ruta a pie cerca de casa. Es opcional."
-        }
-      ]
+      "intro": "De lo que te preocupa, a un paso con otras personas. Toca cada etapa para saber más.",
+      "camins": {
+        "aria": "Una persona sentada en un banco delante de un edificio comunitario, mira el móvil y se pone unos auriculares. Se levanta, hace una ruta circular por el parque y vuelve al banco, donde varias personas han salido del edificio y la reciben con un gesto suave de acogida.",
+        "steps": [
+          {"label": "Gratuito · En línea · Práctica guiada", "title": "Empiezas donde estás", "text": "Eliges el curso que se ajusta al momento que vives (hay cuatro). En cada paso escuchas un audio y te haces una pregunta. Es gratuito y en línea."},
+          {"label": "Reflexión · A tu ritmo", "title": "Caminas y le das vueltas", "text": "Si te apetece, haces una ruta a pie cerca de casa y reflexionas sobre lo que has sentido. Es opcional, cada cual a su ritmo."},
+          {"label": "Esperanza Activa · Acción colectiva", "title": "Un paso concreto, con otras personas", "text": "La Esperanza Activa es mirar de frente lo que nos preocupa y elegir, en compañía, un paso posible."}
+        ],
+        "note": "Caminos empieza contigo, en el espacio en el que estés, y se va abriendo a la comunidad. Este es el recorrido de los cursos, no una promesa de resultado.",
+        "replay": "Volver a verlo"
+      }
     },
     {
       "type": "cards",
       "tone": "compact",
       "band": "white",
       "id": "cursos",
-      "title": "Cuatro cursos, según lo que te preocupa",
+      "title": "Cuatro cursos, según el momento que vives",
+      "notice": {
+        "title": "Los cursos se abrirán pronto.",
+        "text": "Escríbenos y te avisaremos cuando se abran.",
+        "button": {"text": "Avísame cuando se abran", "href": "mailto:esperanza@elarasocial.com?subject=Av%C3%ADsame%20cuando%20se%20abran%20los%20cursos%20de%20Caminos"}
+      },
       "items": [
         {
           "icon": "lifebuoy",
-          "badge": "Próximamente",
           "title": "Cuando la vida te desborda",
           "text": "Ansiedad, duelo, conflictos y cansancio emocional"
         },
         {
           "icon": "users-three",
-          "badge": "Próximamente",
           "title": "Cuando cuidarnos es una tarea colectiva",
           "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
         },
         {
           "icon": "globe",
-          "badge": "Próximamente",
           "title": "Cuando el mundo te preocupa",
           "text": "Crisis climática, ecoansiedad y futuro incierto"
         },
         {
           "icon": "house",
-          "badge": "Próximamente",
           "title": "Cuando sostener la vida se hace difícil",
           "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
         }
@@ -88,26 +87,28 @@
       "tone": "accent",
       "band": "soft",
       "id": "otra-web",
-      "title": "¿Por qué es otra web?",
+      "title": "Los cursos y las rutas están en la web de Caminos de Esperanza",
       "before": [
-        "Caminos tiene su propia web, con el mapa de rutas y los cursos. Hay dos versiones, en catalán y en castellano. Cuando vayas, se abrirá otra web."
+        "Caminos de Esperanza tiene su propia web, con los cursos y el mapa de rutas. Elige la versión que te vaya mejor: al abrirla, pasarás a otra web."
       ],
       "items": [
         {
           "icon": "map-trifold",
-          "badge": "En catalán",
           "title": "Camins d'Esperança [Activa]",
           "text": "Rutas sobre todo de Cataluña.",
           "href": "https://xn--esperanaactiva-mjb.cat/",
-          "button": "Abrir esperançaactiva.cat"
+          "button": "Som-hi",
+          "external": true,
+          "aria": "Abrir la web de Camins en catalán"
         },
         {
           "icon": "signpost",
-          "badge": "En castellano",
           "title": "Caminos de Esperanza [Activa]",
           "text": "Rutas de toda España, incluida Cataluña.",
           "href": "https://esperanzaactiva.org/",
-          "button": "Abrir esperanzaactiva.org"
+          "button": "Vamos",
+          "external": true,
+          "aria": "Abrir la web de Caminos en castellano"
         }
       ]
     },
@@ -122,7 +123,7 @@
         ],
         [
           "¿Hay que caminar?",
-          "No. Puedes hacer solo el curso; las rutas son un complemento, si te apetece."
+          "No. Puedes hacer solo el curso. Las rutas son un complemento, si te apetece, y las puedes sustituir por un rato contigo mismo, tomando un café, por ejemplo."
         ],
         [
           "¿Hay que registrarse?",
@@ -130,7 +131,7 @@
         ],
         [
           "¿Es terapia?",
-          "No. Es un curso vivencial de prácticas y reflexión, y no sustituye la psicoterapia ni un tratamiento médico o psicológico."
+          "No. Es un curso vivencial de prácticas y reflexión, y no sustituye la psicoterapia ni un tratamiento médico o psicológico. Elara Social es la rama comunitaria de L'Espiral: si en algún momento lo necesitas, los psicólogos y terapeutas de L'Espiral pueden acompañarte. Escríbenos a <a href=\"mailto:lespiral@lespiral.cat\">lespiral@lespiral.cat</a>."
         ]
       ]
     },

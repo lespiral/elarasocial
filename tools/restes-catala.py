@@ -16,7 +16,7 @@ ES = ROOT / "docs" / "es"
 
 # Noms propis i adreces que es queden en català
 ALLOWED = [
-    "Camins d'Esperança [Activa]", "Camins d’Esperança [Activa]", "esperançaactiva.cat", "L’Espiral", "L'Espiral",
+    "Camins d'Esperança [Activa]", "Camins d’Esperança [Activa]", "Som-hi", "esperançaactiva.cat", "L’Espiral", "L'Espiral",
     "El Prat de Llobregat", "cap-de-setmana", "Jaume Casanovas", "Ferran Castellarnau", "Català", "lespiral.cat", "elarasocial.com",
 ]
 WORDS = set("""amb els les per perquè també molt sense fins dins aquest aquesta aquests aquestes nosaltres vosaltres
