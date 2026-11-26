@@ -1,7 +1,7 @@
 {
-  "title": "Transformem el malestar en Esperança Activa",
+  "title": "L’Esperança Activa: mirar de cara el que ens preocupa i triar un pas",
   "kicker": "Què és l'Esperança Activa",
-  "lead": "Treballem a tres nivells d’impacte: individual, grupal i comunitari.",
+  "lead": "Treballem en tres nivells: la persona, el grup i la comunitat.",
   "sections": [
     {
       "type": "text",
@@ -19,7 +19,7 @@
       "id": "metodologia",
       "kicker": "El Treball que Reconnecta",
       "title": "La nostra metodologia",
-      "infografia": "espiral",
+      "infografia": "espiral-v2",
       "before": [
         "El nostre treball s’inspira en l’Espiral d’El Treball que Reconnecta: aquesta espiral ens permet **integrar emoció, consciència i acció**.",
         "No busquem només comprendre el malestar. Busquem traduir-lo en compromís i transformació."
@@ -27,11 +27,11 @@
       "items": [
         {
           "icon": "plant",
-          "title": "Arrelar: el primer pas cap a la resiliència",
+          "title": "Arrelar: el primer pas, tornar a la terra",
           "paragraphs": [
             "Quan el sistema accelera, a vegades el primer pas no és arreglar el cel, sinó retrobar la terra.",
-            "Entenem la gratitud lluny de l’optimisme naïf; la treballem com un gest radical d’arrelament.",
-            "És la pràctica de tornar a la base, al cos, i reconèixer què ens sosté per, des d’aquí, recuperar la força vital."
+            "Entenem la gratitud lluny de l’optimisme ingenu: com un gest d’arrelament.",
+            "Tornem al cos i reconeixem què ens sosté, per recuperar-hi les forces."
           ]
         },
         {
@@ -39,27 +39,26 @@
           "title": "Acollir el que fa mal per poder avançar",
           "paragraphs": [
             "Mirem de cara el malestar.",
-            "Reconeixem la tristesa, la por o el trauma sense maquillar-los.",
-            "L’Espiral ens ofereix un espai segur per fer una cosa revolucionària: reconèixer la ferida, posar-li paraules i sostenir-la en comunitat.",
-            "Evitem que el dolor es converteixi en una identitat tancada i el transformem en consciència i amor actiu."
+            "Reconeixem la tristesa, la por o el dolor sense maquillar-los.",
+            "L’espiral ens dona un espai segur per posar-hi paraules i sostenir-ho en comunitat.",
+            "Així el dolor no es tanca en una identitat, i es pot transformar en consciència i cura."
           ]
         },
         {
           "icon": "globe",
           "title": "Una mirada sistèmica",
           "paragraphs": [
-            "Deixem de ser víctimes passives per convertir-nos en part activa de la transformació.",
-            "Entenem que la incertesa és metabolisme i que arrelar no és rendir-se.",
-            "Ampliem la nostra perspectiva cap a una visió comunitària i sistèmica, trobant la inspiració necessària per construir un futur que puguem sostenir juntes."
+            "Deixem de sentir-nos només víctimes i ens fem part activa del canvi.",
+            "Veiem que la incertesa és part del camí, i que arrelar no és rendir-se.",
+            "Ampliem la mirada cap a la comunitat, per construir junts un futur que puguem sostenir."
           ]
         },
         {
           "icon": "footprints",
           "title": "Anar endavant: acció des del vincle",
           "paragraphs": [
-            "Passar a l’acció vol dir sortir al món amb connexió.",
-            "El pas final és moure’s des d’una relació estable.",
-            "La comunitat és aquesta xarxa que sosté: un suport mutu que fa possible el nostre moviment cap endavant, garantint que puguem actuar amb força sense por a perdre’ns en el buit."
+            "Passar a l’acció vol dir sortir al món acompanyats.",
+            "La comunitat és la xarxa que ens sosté: un suport mutu que ens ajuda a fer el pas sense sentir-nos sols."
           ]
         }
       ]
@@ -71,56 +70,58 @@
       "align": "left",
       "id": "per-a-qui",
       "kicker": "per a qui?",
-      "title": "Adaptem la nostra metodologia a tres nivells d’impacte",
-      "infografia": "nivells",
+      "title": "Un mateix camí, tres maneres d’acompanyar",
+      "infografia": "nivells-v2",
       "before": [
-        "Acompanyament individual i grupal, dinamització per a col·lectius i organitzacions, i creació i suport a comunitats compromeses amb el benestar comú."
+        "Acompanyem persones i grups, equips i organitzacions, i comunitats que volen cuidar el benestar comú."
       ],
       "items": [
         {
           "icon": "users-three",
           "title": "Per a persones i grups",
           "paragraphs": [
-            "Sents el pes de la responsabilitat o la pèrdua de sentit?",
-            "Oferim espais individuals i grupals de mentoria i psicoteràpia per arrelar, recuperar el centre i avançar des de la coherència."
+            "Et pesa la responsabilitat o has perdut el sentit del que fas?",
+            "Espais individuals i de grup, de mentoria i acompanyament, per tornar a trobar-te i fer el següent pas des del que és important per a tu."
           ],
-          "href": "persones"
+          "href": "persones",
+          "button": "Veure propostes per a persones"
         },
         {
           "icon": "buildings",
           "title": "Per a equips i organitzacions",
           "paragraphs": [
-            "Noteu que la inèrcia us està cremant?",
-            "Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, transformant conflictes en oportunitats."
+            "Sentiu que la inèrcia us desgasta?",
+            "Acompanyem col·lectius que volen cuidar la salut relacional sense renunciar a la seva missió, i aprendre dels conflictes en comptes d’evitar-los."
           ],
-          "href": "entitats/#equip"
+          "href": "entitats/#equip",
+          "button": "Veure propostes per a equips"
         },
         {
           "icon": "tree",
           "title": "Per a la comunitat",
           "paragraphs": [
-            "Voleu teixir xarxes reals en un món fragmentat?",
-            "Creem espais de trobada on compartir recursos, sabers i suport mutu per fer front als reptes ecosocials."
+            "Voleu teixir xarxes de suport en un món cada cop més fragmentat?",
+            "Creem espais de trobada on compartir recursos, coneixements i suport mutu per afrontar junts els reptes socials i ecològics."
           ],
-          "href": "entitats/#territori"
+          "href": "entitats/#territori",
+          "button": "Veure propostes per a la comunitat"
         }
       ]
     },
     {
       "type": "cta",
       "band": "white",
-      "kicker": "descobreix les nostres propostes",
+      "title": "Troba la proposta que s’ajusta a tu",
       "paragraphs": [
-        "Tant si necessites arrelament individual com si vols impulsar una transformació col·lectiva, a Elara Social trobaràs les eines i l'acompanyament per fer-ho realitat.",
-        "Adaptem la nostra metodologia a la teva realitat. Ja sigui per sostenir processos individuals o per enfortir la salut d’una organització sencera."
+        "Tant si busques arrelar-te com si vols impulsar un canvi col·lectiu, a Elara Social t’acompanyem a fer-ne el pas. Adaptem les propostes a cada persona, equip o comunitat."
       ],
       "buttons": [
         {
-          "text": "Persones",
+          "text": "Sóc una persona",
           "href": "persones/#propostes"
         },
         {
-          "text": "Entitats i comunitats",
+          "text": "Som una entitat o comunitat",
           "href": "entitats"
         }
       ]
