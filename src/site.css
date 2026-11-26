@@ -974,3 +974,6 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 
 /* Mini escena decorativa dins d'una targeta destacada (portada, Camins) */
 .feature__scene { align-self: stretch; width: 100%; margin: 6px 0 4px; }
+
+/* Frase destacada entre el kicker i el títol d'una secció */
+.band__bridge { margin: 0 auto 10px; max-width: 760px; text-align: center; font: 800 clamp(1.15rem, 2.6vw, 1.45rem)/1.3 var(--font-head); color: var(--verd-ink, var(--blau-800)); }
