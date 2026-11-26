@@ -1,11 +1,12 @@
 {
   "title": "Caminos de Esperanza [Activa]",
   "kicker": "Gratuito · Próximamente",
-  "lead": "Cursos en línea de 7 pasos y rutas a pie cerca de casa. El botón abre un correo a esperanza@elarasocial.com.",
+  "lead": "Cursos en línea de 7 pasos y rutas a pie cerca de casa.",
   "description": "Caminos de Esperanza [Activa]: cursos gratuitos en línea de 7 pasos y rutas a pie cerca de casa. Qué es, cómo funciona y por qué vive en otra web.",
   "actions": [
     {
       "text": "Avísame cuando se abran",
+      "aria": "Avísame cuando se abran los cursos (abre un correo)",
       "href": "mailto:esperanza@elarasocial.com?subject=Av%C3%ADsame%20cuando%20se%20abran%20los%20cursos%20de%20Caminos"
     },
     {

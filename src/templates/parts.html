@@ -31,7 +31,7 @@
 {%- endmacro %}
 
 {% macro button(b, root, cls='btn--primary') -%}
-<a class="btn {{ b.style or cls }}" href="{{ link_href(b.href, root) }}"{% if b.href.startswith('http') %} rel="noopener"{% endif %}>{{ b.text }}{% if b.arrow is not defined or b.arrow %} {{ icon('arrow') }}{% endif %}</a>
+<a class="btn {{ b.style or cls }}" href="{{ link_href(b.href, root) }}"{% if b.href.startswith('http') %} rel="noopener"{% endif %}{% if b.aria %} aria-label="{{ b.aria }}"{% endif %}>{{ b.text }}{% if b.arrow is not defined or b.arrow %} {{ icon('arrow') }}{% endif %}</a>
 {%- endmacro %}
 
 {# Targetes: [{"photo" (src/img/…), "icon", "title", "subtitle", "meta": [...], "text", "paragraphs": [...], "list": [...], "foot", "href", "button", "links": [{"text", "href"}], "badge"}] #}

@@ -1,11 +1,12 @@
 {
   "title": "Camins d'Esperança [Activa]",
   "kicker": "Gratuït · Properament",
-  "lead": "Cursos en línia de 7 passes i rutes a peu a prop de casa. El botó obre un correu a esperanza@elarasocial.com.",
+  "lead": "Cursos en línia de 7 passes i rutes a peu a prop de casa.",
   "description": "Camins d'Esperança [Activa]: cursos gratuïts en línia de 7 passes i rutes a peu a prop de casa. Què és, com funciona i per què viu en una altra web.",
   "actions": [
     {
       "text": "Avisa'm quan s'obrin",
+      "aria": "Avisa'm quan s'obrin els cursos (obre un correu)",
       "href": "mailto:esperanza@elarasocial.com?subject=Avisa'm%20quan%20s'obrin%20els%20cursos%20de%20Camins"
     },
     {
