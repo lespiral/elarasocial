@@ -1,0 +1,155 @@
+{
+  "title": "Caminos de Esperanza [Activa]",
+  "kicker": "Gratuito · Próximamente",
+  "lead": "Cursos en línea de 7 pasos y rutas a pie cerca de casa. El botón te abrirá la web de Caminos: esperanzaactiva.org.",
+  "description": "Caminos de Esperanza [Activa]: cursos gratuitos en línea de 7 pasos y rutas a pie cerca de casa. Qué es, cómo funciona y por qué vive en otra web.",
+  "actions": [
+    {
+      "text": "Avísame cuando se abra",
+      "href": "https://esperanzaactiva.org/#t-avisem"
+    },
+    {
+      "text": "Cómo funciona",
+      "href": "#como-funciona"
+    }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "que-es",
+      "kicker": "qué es caminos",
+      "title": "Un camino para empezar",
+      "paragraphs": [
+        "Una iniciativa gratuita de L'Espiral y Elara Social para empezar a hacer camino. Eliges un curso según lo que te preocupa, lo haces a tu ritmo y, si te apetece, caminas una ruta cerca de casa."
+      ],
+      "list": [
+        "Gratuito",
+        "En línea",
+        "A tu ritmo"
+      ],
+      "list_icon": "check"
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "como-funciona",
+      "title": "Cómo funciona",
+      "items": [
+        {
+          "title": "Elige el curso",
+          "text": "Según lo que te preocupa. Hay cuatro."
+        },
+        {
+          "title": "Haz los 7 pasos",
+          "text": "A tu ritmo: un audio y una pregunta para reflexionar en cada paso."
+        },
+        {
+          "title": "Camina, si quieres",
+          "text": "Si te apetece, haz una ruta a pie cerca de casa. Es opcional."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "compact",
+      "band": "white",
+      "id": "cursos",
+      "title": "Cuatro cursos, según lo que te preocupa",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Próximamente",
+          "title": "Cuando la vida te desborda",
+          "text": "Ansiedad, duelo, conflictos y cansancio emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Próximamente",
+          "title": "Cuando cuidarnos es una tarea colectiva",
+          "text": "Apoyo mutuo, redes de cuidado y necesidad de conexión"
+        },
+        {
+          "icon": "globe",
+          "badge": "Próximamente",
+          "title": "Cuando el mundo te preocupa",
+          "text": "Crisis climática, ecoansiedad y futuro incierto"
+        },
+        {
+          "icon": "house",
+          "badge": "Próximamente",
+          "title": "Cuando sostener la vida se hace difícil",
+          "text": "Trabajo, vivienda, precariedad e incertidumbre económica"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "accent",
+      "band": "soft",
+      "id": "otra-web",
+      "title": "¿Por qué es otra web?",
+      "before": [
+        "Caminos tiene su propia web, con el mapa de rutas y los cursos. Hay dos versiones, en catalán y en castellano. Cuando vayas, se abrirá otra web."
+      ],
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "En catalán",
+          "title": "Camins d'Esperança [Activa]",
+          "text": "Rutas sobre todo de Cataluña.",
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Abrir esperançaactiva.cat"
+        },
+        {
+          "icon": "signpost",
+          "badge": "En castellano",
+          "title": "Caminos de Esperanza [Activa]",
+          "text": "Rutas de toda España, incluida Cataluña.",
+          "href": "https://esperanzaactiva.org/",
+          "button": "Abrir esperanzaactiva.org"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntas-frecuentes",
+      "title": "Preguntas frecuentes",
+      "items": [
+        [
+          "¿Es gratuito?",
+          "Sí. Los cursos son gratuitos."
+        ],
+        [
+          "¿Hay que caminar?",
+          "No. Puedes hacer solo el curso; las rutas son un complemento, si te apetece."
+        ],
+        [
+          "¿Hay que registrarse?",
+          "Sí, hay que darse de alta en la plataforma de los cursos. Es gratuito."
+        ],
+        [
+          "¿Es terapia?",
+          "No. Es un curso vivencial de prácticas y reflexión, y no sustituye la psicoterapia ni un tratamiento médico o psicológico."
+        ]
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "slim",
+      "id": "entidades",
+      "variant": "sun",
+      "title": "¿Eres una entidad, un centro o un ayuntamiento?",
+      "paragraphs": [
+        "Mira cómo lo podemos hacer en vuestro espacio."
+      ],
+      "buttons": [
+        {
+          "text": "Para entidades",
+          "href": "entidades/caminos"
+        }
+      ]
+    }
+  ],
+  "ca": "camins"
+}

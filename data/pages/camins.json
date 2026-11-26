@@ -1,0 +1,154 @@
+{
+  "title": "Camins d'Esperança [Activa]",
+  "kicker": "Gratuït · Properament",
+  "lead": "Cursos en línia de 7 passes i rutes a peu a prop de casa. El botó t'obrirà la web de Camins: esperançaactiva.cat.",
+  "description": "Camins d'Esperança [Activa]: cursos gratuïts en línia de 7 passes i rutes a peu a prop de casa. Què és, com funciona i per què viu en una altra web.",
+  "actions": [
+    {
+      "text": "Avisa'm quan s'obri",
+      "href": "https://xn--esperanaactiva-mjb.cat/#t-avisem"
+    },
+    {
+      "text": "Com funciona",
+      "href": "#com-funciona"
+    }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "band": "white",
+      "id": "que-es",
+      "kicker": "què és camins",
+      "title": "Un camí per començar",
+      "paragraphs": [
+        "Una iniciativa gratuïta de L'Espiral i Elara Social per començar a fer camí. Tries un curs segons el que et preocupa, el fas al teu ritme i, si t'abelleix, camines una ruta a prop de casa."
+      ],
+      "list": [
+        "Gratuït",
+        "En línia",
+        "Al teu ritme"
+      ],
+      "list_icon": "check"
+    },
+    {
+      "type": "steps",
+      "band": "soft",
+      "id": "com-funciona",
+      "title": "Com funciona",
+      "items": [
+        {
+          "title": "Tria el curs",
+          "text": "Segons el que et preocupa. N'hi ha quatre."
+        },
+        {
+          "title": "Fes les 7 passes",
+          "text": "Al teu ritme: un àudio i una pregunta per reflexionar a cada pas."
+        },
+        {
+          "title": "Camina, si vols",
+          "text": "Si t'abelleix, fes una ruta a peu a prop de casa. És opcional."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "compact",
+      "band": "white",
+      "id": "cursos",
+      "title": "Quatre cursos, segons el que et preocupa",
+      "items": [
+        {
+          "icon": "lifebuoy",
+          "badge": "Properament",
+          "title": "Quan la vida et desborda",
+          "text": "Ansietat, dol, conflictes i cansament emocional"
+        },
+        {
+          "icon": "users-three",
+          "badge": "Properament",
+          "title": "Quan cuidar-nos és una tasca col·lectiva",
+          "text": "Suport mutu, xarxes de cura i necessitat de connexió"
+        },
+        {
+          "icon": "globe",
+          "badge": "Properament",
+          "title": "Quan el món et preocupa",
+          "text": "Crisi climàtica, ecoansietat i futur incert"
+        },
+        {
+          "icon": "house",
+          "badge": "Properament",
+          "title": "Quan sostenir la vida es fa difícil",
+          "text": "Feina, habitatge, precarietat i incertesa econòmica"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "tone": "accent",
+      "band": "soft",
+      "id": "altra-web",
+      "title": "Per què és una altra web?",
+      "before": [
+        "Camins té la seva pròpia web, amb el mapa de rutes i els cursos. N'hi ha dues versions, en català i en castellà. Quan hi vagis, s'obrirà una altra web."
+      ],
+      "items": [
+        {
+          "icon": "map-trifold",
+          "badge": "En català",
+          "title": "Camins d'Esperança [Activa]",
+          "text": "Rutes sobretot de Catalunya.",
+          "href": "https://xn--esperanaactiva-mjb.cat/",
+          "button": "Obrir esperançaactiva.cat"
+        },
+        {
+          "icon": "signpost",
+          "badge": "En castellà",
+          "title": "Caminos de Esperanza [Activa]",
+          "text": "Rutes de tota Espanya, inclosa Catalunya.",
+          "href": "https://esperanzaactiva.org/",
+          "button": "Obrir esperanzaactiva.org"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "preguntes-frequents",
+      "title": "Preguntes freqüents",
+      "items": [
+        [
+          "És gratuït?",
+          "Sí. Els cursos són gratuïts."
+        ],
+        [
+          "Cal caminar?",
+          "No. Pots fer només el curs; les rutes són un complement, si t'abelleix."
+        ],
+        [
+          "Cal registrar-se?",
+          "Sí, cal donar-se d'alta a la plataforma dels cursos. És gratuït."
+        ],
+        [
+          "És teràpia?",
+          "No. És un curs vivencial de pràctiques i reflexió, i no substitueix la psicoteràpia ni un tractament mèdic o psicològic."
+        ]
+      ]
+    },
+    {
+      "type": "feature",
+      "band": "slim",
+      "id": "entitats",
+      "variant": "sun",
+      "title": "Ets una entitat, un centre o un ajuntament?",
+      "paragraphs": [
+        "Mira com ho podem fer al vostre espai."
+      ],
+      "buttons": [
+        {
+          "text": "Per a entitats",
+          "href": "entitats/camins"
+        }
+      ]
+    }
+  ]
+}
