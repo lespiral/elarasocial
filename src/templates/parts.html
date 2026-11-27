@@ -266,7 +266,15 @@
         <a class="btn btn--primary" href="{{ link_href(s.notice.button.href, root) }}">{{ s.notice.button.text }}</a>
       </aside>
       {% endif %}
+      {# "groups": diversos grups de targetes dins d'un sol bloc, cadascun amb un subtítol (h3) i targetes d'h4 #}
+      {% if s.groups %}
+      {% for g in s.groups %}
+      <h3 class="card-group__title">{{ g.title }}</h3>
+      {{ cards(g["items"], root, heading_level=4, align=s.align or 'center', tone=s.tone or '') }}
+      {% endfor %}
+      {% else %}
       {{ cards(s["items"], root, align=s.align or 'center', tone=s.tone or '') }}
+      {% endif %}
     {% elif s.type == 'list' %}
       {{ tiles(s["items"], s.list_icon or 'check') }}
     {% elif s.type == 'faq' %}

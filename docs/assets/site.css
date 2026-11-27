@@ -980,3 +980,6 @@ a.feature__opt:hover { background: #245786; color: #fff; }
 .band__title--bridge::after { display: none; }
 .band__subtitle { text-align: center; margin: 64px auto 34px; max-width: 760px; font: 800 clamp(1.2rem, 2.8vw, 1.55rem)/1.25 var(--font-head); letter-spacing: -.01em; color: var(--verd-ink); }
 .band__subtitle::after { content: ""; display: block; width: 104px; height: 16px; margin: 14px auto 0; background: var(--onada) no-repeat center / contain; }
+
+.card-group__title { text-align: center; margin: 40px auto 22px; max-width: 760px; font: 800 clamp(1.1rem, 2.6vw, 1.4rem)/1.25 var(--font-head); letter-spacing: -.01em; color: var(--verd-ink); }
+.card-group__title:first-of-type { margin-top: 8px; }
